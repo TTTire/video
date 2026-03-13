@@ -1,0 +1,209 @@
+{
+  "main": {
+    "id": "ef2b1bff2c9bac92",
+    "type": "split",
+    "children": [
+      {
+        "id": "1a7b90ab9bc8c0f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2517a8f4e2d8f740",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "进行中/外卖盒子为什么是方的，饮料瓶却是圆的.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "外卖盒子为什么是方的，饮料瓶却是圆的"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "482b187d7c6e0a7b",
+    "type": "split",
+    "children": [
+      {
+        "id": "aa538863cdca2133",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d9d3c2dff1789271",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "24539881b4848dcc",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "c5e8d2173b2c00a4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 206.5
+  },
+  "right": {
+    "id": "c32cea4efaf4157c",
+    "type": "split",
+    "children": [
+      {
+        "id": "453b5966394c633e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f763977eb69232b",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "0a3dad11d48e507f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "欢迎.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "欢迎 的出链列表"
+            }
+          },
+          {
+            "id": "a38324887f2e0207",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "a35a340ca0f12e76",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "060e5dcd8ab82a21",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "进行中/外卖盒子为什么是方的，饮料瓶却是圆的.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "外卖盒子为什么是方的，饮料瓶却是圆的 的大纲"
+            }
+          },
+          {
+            "id": "5ecaf56758f0b4e5",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "2517a8f4e2d8f740",
+  "lastOpenFiles": [
+    "测试图片",
+    "测试批量生成.py",
+    "批量图片生成工具.py",
+    "待写选题.md",
+    "进行中/外卖盒子为什么是方的，饮料瓶却是圆的.md",
+    "模板/标准脚本模板.md",
+    "未命名.md",
+    "未命名.base",
+    "未命名",
+    "欢迎.md"
+  ]
+}
