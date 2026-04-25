@@ -1,0 +1,2479 @@
+1
+00:00:00,166 --> 00:00:02,366
+你有没有觉得AI特别懂你
+Have you ever felt like AI really gets you
+
+2
+00:00:02,600 --> 00:00:04,200
+打开ChatGPT
+Open ChatGPT
+
+3
+00:00:04,200 --> 00:00:05,366
+问它一个问题
+Ask it a question
+
+4
+00:00:05,666 --> 00:00:06,833
+它给你一个答案
+It gives you an answer
+
+5
+00:00:06,833 --> 00:00:07,800
+你看了看
+You take a look
+
+6
+00:00:07,833 --> 00:00:10,500
+觉得嗯有道理
+Think hmm that makes sense
+
+7
+00:00:10,633 --> 00:00:12,533
+然后你就按它说的做了
+And then you just do what it says
+
+8
+00:00:12,666 --> 00:00:13,766
+买什么基金
+What fund to buy
+
+9
+00:00:14,033 --> 00:00:15,233
+选什么工作
+What job to choose
+
+10
+00:00:15,366 --> 00:00:16,700
+怎么跟老板谈判
+How to negotiate with your boss
+
+11
+00:00:16,766 --> 00:00:18,133
+你越来越依赖它
+You rely on it more and more
+
+12
+00:00:18,366 --> 00:00:21,900
+但今天我要告诉你一个你可能不愿意承认的事实
+But today I want to tell you a truth you might not want to admit
+
+13
+00:00:22,033 --> 00:00:24,433
+当你在用AI做决策的时候
+When you use AI to make decisions
+
+14
+00:00:25,000 --> 00:00:28,433
+你的大脑正在被三个认知偏差操控
+Your brain is being manipulated by three cognitive biases
+
+15
+00:00:28,566 --> 00:00:30,333
+你不仅没有变得更聪明
+Not only are you not getting smarter
+
+16
+00:00:30,333 --> 00:00:31,900
+反而可能变得更蠢了
+You might actually be getting dumber
+
+17
+00:00:32,033 --> 00:00:33,200
+这不是我瞎说
+I am not making this up
+
+18
+00:00:33,400 --> 00:00:35,866
+诺贝尔经济学奖得主丹尼尔·卡尼曼
+Nobel Prize winner in Economics Daniel Kahneman
+
+19
+00:00:35,866 --> 00:00:38,133
+研究了一辈子人的决策偏差
+Spent his whole life studying human decision biases
+
+20
+00:00:38,366 --> 00:00:39,166
+他发现
+He found that
+
+21
+00:00:39,633 --> 00:00:41,566
+人的大脑有两套系统
+The human brain has two systems
+
+22
+00:00:41,766 --> 00:00:42,566
+系统一
+System one
+
+23
+00:00:42,566 --> 00:00:43,000
+快
+Fast
+
+24
+00:00:43,000 --> 00:00:43,733
+直觉
+Intuitive
+
+25
+00:00:43,800 --> 00:00:44,700
+情绪化
+Emotional
+
+26
+00:00:44,900 --> 00:00:45,700
+系统二
+System two
+
+27
+00:00:45,700 --> 00:00:46,266
+慢
+Slow
+
+28
+00:00:46,266 --> 00:00:47,100
+理性
+Rational
+
+29
+00:00:47,133 --> 00:00:48,033
+需要费力
+Requires effort
+
+30
+00:00:48,200 --> 00:00:49,166
+问题来了
+Here is the problem
+
+31
+00:00:49,333 --> 00:00:50,766
+当你打开AI
+When you open AI
+
+32
+00:00:50,766 --> 00:00:52,633
+拿到一个现成答案的时候
+And get a ready made answer
+
+33
+00:00:52,833 --> 00:00:53,966
+你的系统一
+Your system one
+
+34
+00:00:54,333 --> 00:00:55,433
+也就是直觉
+That is your intuition
+
+35
+00:00:55,966 --> 00:00:56,800
+会怎么做
+What does it do
+
+36
+00:00:57,033 --> 00:00:57,966
+它会偷懒
+It takes the easy way out
+
+37
+00:00:58,133 --> 00:01:01,033
+它会直接把AI的答案当成自己的判断
+It directly adopts AIs answer as its own judgment
+
+38
+00:01:01,166 --> 00:01:03,100
+你觉得自己在做决策
+You think you are making decisions
+
+39
+00:01:03,733 --> 00:01:06,100
+其实你只是AI的复读机
+Actually you are just AIs parrot
+
+40
+00:01:06,266 --> 00:01:07,433
+你回想一下
+Think back for a moment
+
+41
+00:01:07,766 --> 00:01:10,366
+上一次你用AI做重要决定
+The last time you used AI to make an important decision
+
+42
+00:01:10,566 --> 00:01:12,733
+是真的自己想清楚了的
+Did you really think it through yourself
+
+43
+00:01:12,766 --> 00:01:17,400
+还是看了AI的答案之后觉得嗯好像有道理就拍了板
+Or did you just see AIs answer think hmm seems reasonable and make the call
+
+44
+00:01:17,566 --> 00:01:19,900
+心理学上有个概念叫自动化偏见
+There is a concept in psychology called automation bias
+
+45
+00:01:20,066 --> 00:01:21,233
+简单说就是
+Simply put
+
+46
+00:01:21,833 --> 00:01:25,633
+人天然倾向于相信机器的判断
+People naturally tend to trust machine judgments
+
+47
+00:01:25,866 --> 00:01:27,600
+胜过相信自己的判断
+More than their own
+
+48
+00:01:27,766 --> 00:01:28,800
+研究表明
+Research shows
+
+49
+00:01:28,933 --> 00:01:31,800
+当人类和AI给出不同建议时
+When humans and AI give different suggestions
+
+50
+00:01:31,800 --> 00:01:33,533
+即使AI是错的
+Even when AI is wrong
+
+51
+00:01:33,533 --> 00:01:36,333
+人们依然有85%的概率选择相信AI
+People still have an 85 percent chance of choosing to trust AI
+
+52
+00:01:36,333 --> 00:01:37,366
+85%
+85 percent
+
+53
+00:01:38,233 --> 00:01:40,333
+也就是说10个人里有8个半
+That means out of 10 people 8 and a half
+
+54
+00:01:40,566 --> 00:01:42,433
+在AI和自己的判断之间
+Between AI and their own judgment
+
+55
+00:01:42,433 --> 00:01:43,233
+会选AI
+Will choose AI
+
+56
+00:01:43,433 --> 00:01:45,700
+哪怕AI那个答案是错的
+Even if that AI answer is wrong
+
+57
+00:01:45,700 --> 00:01:46,200
+好
+OK
+
+58
+00:01:46,200 --> 00:01:47,166
+现在注意听
+Now pay attention
+
+59
+00:01:47,333 --> 00:01:48,533
+接下来的内容
+What comes next
+
+60
+00:01:48,633 --> 00:01:53,300
+可能会让你重新审视你每天都在用的AI工具
+Might make you rethink the AI tools you use every day
+
+61
+00:01:53,400 --> 00:01:55,200
+因为真正危险的
+Because what is truly dangerous
+
+62
+00:01:55,200 --> 00:01:58,100
+不是AI给出的答案本身
+Is not the answer AI gives itself
+
+63
+00:01:58,266 --> 00:02:00,600
+而是你在接收这个答案的过程中
+But rather during the process of receiving that answer
+
+64
+00:02:01,133 --> 00:02:03,100
+你的大脑偷偷做了三件事
+Your brain secretly does three things
+
+65
+00:02:03,266 --> 00:02:04,100
+第一件
+First
+
+66
+00:02:04,700 --> 00:02:05,500
+锚定
+Anchoring
+
+67
+00:02:05,766 --> 00:02:07,600
+AI给你的第一个数字
+The first number AI gives you
+
+68
+00:02:07,666 --> 00:02:09,000
+成了你的天花板
+Becomes your ceiling
+
+69
+00:02:09,233 --> 00:02:10,166
+第二件
+Second
+
+70
+00:02:10,800 --> 00:02:11,600
+确认
+Confirmation
+
+71
+00:02:11,733 --> 00:02:13,733
+你不是在用AI搜索答案
+You are not using AI to search for answers
+
+72
+00:02:13,733 --> 00:02:16,133
+你是在用AI找同意你的答案
+You are using AI to find answers that agree with you
+
+73
+00:02:16,333 --> 00:02:17,166
+第三件
+Third
+
+74
+00:02:17,800 --> 00:02:18,600
+框架
+Framing
+
+75
+00:02:18,633 --> 00:02:19,700
+同一个事实
+The same fact
+
+76
+00:02:19,800 --> 00:02:21,333
+AI换种说法
+AI phrases it differently
+
+77
+00:02:21,400 --> 00:02:23,433
+你就做了完全不同的选择
+And you make a completely different choice
+
+78
+00:02:23,633 --> 00:02:24,933
+我们一个一个讲
+Let us go through them one by one
+
+79
+00:02:25,166 --> 00:02:26,300
+先讲第一个
+Let us start with the first one
+
+80
+00:02:26,366 --> 00:02:28,600
+这个偏差一旦你理解了
+Once you understand this bias
+
+81
+00:02:28,600 --> 00:02:30,533
+你会发现你每天都在中招
+You will realize you fall for it every day
+
+82
+00:02:30,733 --> 00:02:32,000
+你打开ChatGPT
+You open ChatGPT
+
+83
+00:02:32,000 --> 00:02:32,733
+问它
+Ask it
+
+84
+00:02:32,733 --> 00:02:35,100
+你觉得我这个年终奖该不该跳槽
+Should I change jobs with this year end bonus
+
+85
+00:02:35,333 --> 00:02:36,766
+AI分析了一大堆
+AI analyzes a whole bunch
+
+86
+00:02:36,766 --> 00:02:37,900
+最后说了一句
+And finally says
+
+87
+00:02:38,600 --> 00:02:41,900
+建议薪资涨幅低于30%不建议跳槽
+Suggests that if the salary increase is below 30 percent it is not recommended to change jobs
+
+88
+00:02:42,066 --> 00:02:44,300
+然后你去跟HR谈薪资
+Then you go negotiate salary with HR
+
+89
+00:02:44,533 --> 00:02:46,600
+HR给了你20%的涨幅
+HR offers you a 20 percent increase
+
+90
+00:02:46,833 --> 00:02:47,933
+你心里怎么想
+What do you think in your heart
+
+91
+00:02:48,133 --> 00:02:48,966
+才20%
+Only 20 percent
+
+92
+00:02:49,400 --> 00:02:50,200
+不够
+Not enough
+
+93
+00:02:50,333 --> 00:02:51,366
+但问题是
+But here is the thing
+
+94
+00:02:51,933 --> 00:02:55,033
+如果AI没跟你说30%这个数字
+If AI had not told you the number 30 percent
+
+95
+00:02:55,266 --> 00:02:56,966
+你觉得20%的涨幅
+Do you think a 20 percent increase
+
+96
+00:02:57,400 --> 00:02:58,633
+你会觉得不够吗
+Would you feel it is not enough
+
+97
+00:02:58,833 --> 00:02:59,833
+大概率不会
+Probably not
+
+98
+00:03:00,000 --> 00:03:01,900
+你甚至会觉得不错了
+You might even think it is pretty good
+
+99
+00:03:02,033 --> 00:03:04,200
+AI给你的第一个数字
+The first number AI gives you
+
+100
+00:03:04,400 --> 00:03:06,300
+没有增加你的信息
+Does not add to your information
+
+101
+00:03:06,766 --> 00:03:09,166
+它只是锁死了你的期望
+It just locks in your expectations
+
+102
+00:03:09,266 --> 00:03:11,366
+这在心理学上叫锚定效应
+In psychology this is called the anchoring effect
+
+103
+00:03:11,533 --> 00:03:12,800
+1974年
+In 1974
+
+104
+00:03:13,033 --> 00:03:16,100
+特沃斯基和卡尼曼做过一个经典实验
+Tversky and Kahneman conducted a classic experiment
+
+105
+00:03:16,233 --> 00:03:18,600
+他们在一个转盘上随机转出一个数字
+They spun a random number on a wheel
+
+106
+00:03:19,333 --> 00:03:20,600
+0到100之间
+Between 0 and 100
+
+107
+00:03:20,733 --> 00:03:22,166
+然后问被试者
+Then asked the participants
+
+108
+00:03:22,233 --> 00:03:24,800
+联合国里非洲国家的比例
+The percentage of African countries in the United Nations
+
+109
+00:03:24,933 --> 00:03:27,333
+是高于还是低于这个数字
+Is higher or lower than this number
+
+110
+00:03:27,533 --> 00:03:28,500
+结果发现
+The results showed
+
+111
+00:03:28,733 --> 00:03:30,100
+转到65的人
+Those who landed on 65
+
+112
+00:03:30,266 --> 00:03:31,433
+平均猜45%
+On average guessed 45 percent
+
+113
+00:03:32,066 --> 00:03:33,166
+转到10的人
+Those who landed on 10
+
+114
+00:03:33,166 --> 00:03:34,400
+平均猜25%
+On average guessed 25 percent
+
+115
+00:03:34,933 --> 00:03:36,900
+一个完全随机的数字
+A completely random number
+
+116
+00:03:36,933 --> 00:03:39,500
+就把人的判断拉偏了20个百分点
+Skewed peoples judgments by 20 percentage points
+
+117
+00:03:39,500 --> 00:03:39,833
+好
+OK
+
+118
+00:03:39,833 --> 00:03:41,033
+记住这个实验
+Remember this experiment
+
+119
+00:03:41,200 --> 00:03:42,700
+现在我们回到AI
+Now let us go back to AI
+
+120
+00:03:42,800 --> 00:03:44,533
+AI给你的第一个答案
+The first answer AI gives you
+
+121
+00:03:44,766 --> 00:03:47,000
+就是那个转盘上的随机数字
+Is like that random number on the wheel
+
+122
+00:03:47,166 --> 00:03:48,833
+它看起来很专业
+It looks very professional
+
+123
+00:03:48,833 --> 00:03:49,733
+很权威
+Very authoritative
+
+124
+00:03:49,733 --> 00:03:50,833
+有理有据
+Well reasoned
+
+125
+00:03:51,266 --> 00:03:53,100
+但它给你的作用
+But its effect on you
+
+126
+00:03:53,200 --> 00:03:55,733
+和那个随机数字一模一样
+Is exactly the same as that random number
+
+127
+00:03:55,933 --> 00:03:58,633
+你现在去翻翻你跟ChatGPT的聊天记录
+Go check your ChatGPT chat history now
+
+128
+00:03:58,766 --> 00:04:00,300
+看看你问的每一个问题
+Look at every question you asked
+
+129
+00:04:00,400 --> 00:04:02,133
+AI给你的第一个回答
+The first answer AI gives you
+
+130
+00:04:02,133 --> 00:04:04,633
+你是不是基本都在围绕它思考
+Are you mostly just thinking around it
+
+131
+00:04:04,800 --> 00:04:06,766
+有没有真正跳出来想过
+Have you ever truly stepped back and thought
+
+132
+00:04:06,866 --> 00:04:08,633
+如果AI不说这个数字
+If AI did not mention this number
+
+133
+00:04:08,733 --> 00:04:10,200
+我自己会怎么判断
+How would I judge it myself
+
+134
+00:04:10,400 --> 00:04:13,000
+锚定效应在商业上用得太多了
+The anchoring effect is used so much in business
+
+135
+00:04:13,133 --> 00:04:14,366
+你去买一件衣服
+You go buy a piece of clothing
+
+136
+00:04:14,366 --> 00:04:15,533
+标价299
+Price tag 299
+
+137
+00:04:15,933 --> 00:04:16,833
+你心里想
+You think to yourself
+
+138
+00:04:17,000 --> 00:04:18,200
+太贵了
+Too expensive
+
+139
+00:04:18,400 --> 00:04:20,233
+然后旁边贴了个原价
+Then you see the original price next to it
+
+140
+00:04:20,433 --> 00:04:21,233
+599
+599
+
+141
+00:04:21,300 --> 00:04:22,100
+划掉
+Crossed out
+
+142
+00:04:22,133 --> 00:04:23,300
+现价299
+Now 299
+
+143
+00:04:23,600 --> 00:04:24,633
+你立刻觉得
+You immediately feel
+
+144
+00:04:24,833 --> 00:04:25,566
+哇
+Wow
+
+145
+00:04:25,566 --> 00:04:26,300
+赚了
+What a deal
+
+146
+00:04:26,533 --> 00:04:28,233
+599这个数字就是锚
+The number 599 is the anchor
+
+147
+00:04:28,466 --> 00:04:30,400
+它让你觉得299很便宜
+It makes you think 299 is cheap
+
+148
+00:04:30,666 --> 00:04:32,966
+但这件衣服的成本可能就50块
+But this piece of clothing might only cost 50 to make
+
+149
+00:04:33,066 --> 00:04:34,233
+你不是省了300
+You did not save 300
+
+150
+00:04:34,233 --> 00:04:36,333
+你是被300这个锚锁住了
+You are locked by the anchor of 300
+
+151
+00:04:36,433 --> 00:04:38,400
+AI在做同样的事
+AI is doing the exact same thing
+
+152
+00:04:38,566 --> 00:04:40,633
+它给你的价格建议
+The price suggestions it gives you
+
+153
+00:04:40,666 --> 00:04:41,900
+薪资预期
+Salary expectations
+
+154
+00:04:42,033 --> 00:04:43,333
+投资回报率
+Return on investment
+
+155
+00:04:43,533 --> 00:04:45,900
+这些数字一旦出现在你面前
+Once these numbers appear in front of you
+
+156
+00:04:46,066 --> 00:04:47,233
+就成了你的锚
+They become your anchors
+
+157
+00:04:47,400 --> 00:04:49,233
+你之后的所有思考
+All your thinking afterwards
+
+158
+00:04:49,233 --> 00:04:51,233
+都是在围绕这个锚打转
+Just revolves around this anchor
+
+159
+00:04:51,466 --> 00:04:52,800
+更危险的是
+What is more dangerous is
+
+160
+00:04:53,200 --> 00:04:56,800
+AI有时候连自己都不知道自己在锚定你
+Sometimes AI does not even know it is anchoring you
+
+161
+00:04:57,033 --> 00:04:58,000
+2023年
+In 2023
+
+162
+00:04:58,000 --> 00:05:01,633
+有一项研究让两组人估算一个项目的成本
+A study had two groups estimate the cost of a project
+
+163
+00:05:01,800 --> 00:05:03,400
+第一组没有AI辅助
+The first group had no AI assistance
+
+164
+00:05:03,400 --> 00:05:04,733
+第二组用了AI
+The second group used AI
+
+165
+00:05:05,000 --> 00:05:05,800
+结果呢
+And the result
+
+166
+00:05:05,966 --> 00:05:07,333
+用AI的那组
+The group that used AI
+
+167
+00:05:07,333 --> 00:05:08,800
+给出的估算数字
+The estimates they gave
+
+168
+00:05:08,833 --> 00:05:11,800
+和AI第一次给出的数字高度重合
+Highly overlapped with the number AI first gave
+
+169
+00:05:12,166 --> 00:05:13,366
+偏差不到5%
+Deviation less than 5 percent
+
+170
+00:05:13,866 --> 00:05:14,866
+没用的那组
+The group that did not use AI
+
+171
+00:05:14,866 --> 00:05:16,700
+人跟人之间的差异很大
+Had huge differences between people
+
+172
+00:05:16,800 --> 00:05:18,433
+有人估高有人估低
+Some estimated high some estimated low
+
+173
+00:05:18,466 --> 00:05:21,333
+但平均下来反而更接近真实成本
+But on average it was actually closer to the real cost
+
+174
+00:05:21,533 --> 00:05:23,066
+用了AI的那组
+The group that used AI
+
+175
+00:05:23,066 --> 00:05:26,700
+所有人都挤在了AI给的那个数字附近
+Everyone crowded around the number AI gave
+
+176
+00:05:26,800 --> 00:05:29,500
+AI没有帮你做出更好的判断
+AI did not help you make better judgments
+
+177
+00:05:29,966 --> 00:05:32,500
+它只是让所有人都做出了同样的判断
+It just made everyone make the same judgment
+
+178
+00:05:32,533 --> 00:05:33,333
+你想想
+Think about it
+
+179
+00:05:33,600 --> 00:05:36,000
+你现在做任何重要决定之前
+Before you make any important decision now
+
+180
+00:05:36,366 --> 00:05:38,633
+是不是第一反应都是先问AI
+Is your first reaction always to ask AI first
+
+181
+00:05:38,833 --> 00:05:39,700
+如果是
+If so
+
+182
+00:05:40,366 --> 00:05:41,733
+你已经被锚了
+You have already been anchored
+
+183
+00:05:41,933 --> 00:05:42,833
+但等一下
+But wait
+
+184
+00:05:43,000 --> 00:05:44,633
+锚定只是第一个陷阱
+Anchoring is only the first trap
+
+185
+00:05:44,800 --> 00:05:46,333
+还有一个更隐蔽的
+There is an even more hidden one
+
+186
+00:05:46,466 --> 00:05:48,933
+第二个偏差叫确认偏误
+The second bias is called confirmation bias
+
+187
+00:05:49,133 --> 00:05:50,166
+听起来很学术
+Sounds very academic
+
+188
+00:05:50,166 --> 00:05:51,400
+但你一定中过招
+But you have definitely fallen for it
+
+189
+00:05:51,600 --> 00:05:53,066
+你觉得自己是对的
+You think you are right
+
+190
+00:05:53,066 --> 00:05:55,900
+所以你去找证据证明自己是对的
+So you look for evidence to prove you are right
+
+191
+00:05:55,966 --> 00:05:58,766
+你会选择性地看到支持你的信息
+You selectively see information that supports you
+
+192
+00:05:58,800 --> 00:06:01,133
+自动忽略反对你的信息
+And automatically ignore information that contradicts you
+
+193
+00:06:01,233 --> 00:06:02,133
+现在有了AI
+Now with AI
+
+194
+00:06:02,133 --> 00:06:04,033
+这个过程变得更可怕了
+This process has become even more terrifying
+
+195
+00:06:04,200 --> 00:06:05,666
+你打开ChatGPT
+You open ChatGPT
+
+196
+00:06:05,666 --> 00:06:06,433
+问它
+Ask it
+
+197
+00:06:06,600 --> 00:06:08,633
+2026年买房是不是一个好时机
+Is 2026 a good time to buy a house
+
+198
+00:06:08,800 --> 00:06:10,600
+如果你自己心里觉得不该买
+If deep down you feel you should not buy
+
+199
+00:06:10,600 --> 00:06:12,133
+你大概率不会这么问
+You probably would not ask it that way
+
+200
+00:06:12,266 --> 00:06:13,066
+你会问
+You would ask
+
+201
+00:06:13,433 --> 00:06:15,333
+2026年房价会不会跌
+Will housing prices drop in 2026
+
+202
+00:06:15,466 --> 00:06:16,333
+发现了吗
+Notice the pattern
+
+203
+00:06:16,533 --> 00:06:19,733
+你的提问方式本身就已经暴露了你的立场
+The way you ask the question already reveals your stance
+
+204
+00:06:19,866 --> 00:06:22,166
+AI不是在帮你做判断
+AI is not helping you make a judgment
+
+205
+00:06:22,166 --> 00:06:23,800
+它是在帮你找理由
+It is helping you find reasons
+
+206
+00:06:23,833 --> 00:06:26,100
+支持你已经做好的判断
+To support the judgment you already made
+
+207
+00:06:26,233 --> 00:06:27,566
+心理学研究发现
+Psychology research has found
+
+208
+00:06:27,566 --> 00:06:29,766
+当人们用搜索引擎
+When people use search engines
+
+209
+00:06:30,233 --> 00:06:31,966
+不管是Google还是AI
+Whether Google or AI
+
+210
+00:06:32,033 --> 00:06:33,833
+来验证自己的观点时
+To verify their own views
+
+211
+00:06:33,833 --> 00:06:38,566
+他们找到的证据有87%是支持自己原本立场的
+87 percent of the evidence they find supports their original stance
+
+212
+00:06:38,733 --> 00:06:40,133
+不是AI偏心
+It is not that AI is biased
+
+213
+00:06:40,266 --> 00:06:41,233
+是你偏心
+You are the biased one
+
+214
+00:06:41,366 --> 00:06:44,000
+AI只是在忠实地回答你的问题
+AI is just faithfully answering your questions
+
+215
+00:06:44,133 --> 00:06:46,433
+但你的问题本身就是偏的
+But your questions themselves are biased
+
+216
+00:06:46,566 --> 00:06:48,833
+你现在打开你的AI聊天记录
+Open your AI chat history now
+
+217
+00:06:48,966 --> 00:06:50,833
+翻翻你最近问的那些问题
+Look through the questions you asked recently
+
+218
+00:06:51,166 --> 00:06:52,233
+你有没有发现
+Have you noticed
+
+219
+00:06:52,766 --> 00:06:54,333
+你问问题的方式
+The way you ask questions
+
+220
+00:06:54,333 --> 00:06:56,100
+已经在替你做决定了
+Is already making decisions for you
+
+221
+00:06:56,200 --> 00:06:58,633
+这个偏差在专业领域更致命
+This bias is even more deadly in professional fields
+
+222
+00:06:58,933 --> 00:07:00,833
+2024年有一项研究
+A 2024 study
+
+223
+00:07:00,833 --> 00:07:03,433
+让医生用AI辅助诊断
+Had doctors use AI assisted diagnosis
+
+224
+00:07:03,666 --> 00:07:04,633
+结果发现
+The results found
+
+225
+00:07:05,166 --> 00:07:09,400
+当AI给出的初步诊断和医生自己的判断一致时
+When the initial diagnosis from AI matched the doctors own judgment
+
+226
+00:07:09,433 --> 00:07:11,633
+医生几乎从不质疑AI
+Doctors almost never questioned AI
+
+227
+00:07:11,833 --> 00:07:13,333
+当不一致时
+When they disagreed
+
+228
+00:07:13,333 --> 00:07:15,966
+医生改变自己判断的概率
+The probability of doctors changing their own judgment
+
+229
+00:07:16,166 --> 00:07:18,800
+远远高于改变AI判断的概率
+Was far higher than changing the AI judgment
+
+230
+00:07:18,966 --> 00:07:19,800
+换句话说
+In other words
+
+231
+00:07:19,833 --> 00:07:22,600
+医生不是在用AI做更好的诊断
+Doctors were not using AI to make better diagnoses
+
+232
+00:07:22,800 --> 00:07:25,700
+他们是在用AI给自己的直觉盖章
+They were using AI to rubber stamp their own intuition
+
+233
+00:07:25,866 --> 00:07:27,100
+更可怕的是
+What is even scarier
+
+234
+00:07:27,633 --> 00:07:29,533
+AI不一定是对的
+AI is not necessarily right
+
+235
+00:07:29,666 --> 00:07:33,566
+ChatGPT曾经信誓旦旦地编造了不存在的学术论文
+ChatGPT once confidently fabricated non existent academic papers
+
+236
+00:07:33,666 --> 00:07:35,333
+虚构的历史事件
+Made up historical events
+
+237
+00:07:35,333 --> 00:07:37,233
+甚至编造了不存在的人
+Even invented people who do not exist
+
+238
+00:07:37,433 --> 00:07:38,966
+它叫AI幻觉
+This is called AI hallucination
+
+239
+00:07:39,166 --> 00:07:40,966
+但因为它说得太自信了
+But because it sounds so confident
+
+240
+00:07:41,466 --> 00:07:42,666
+排版整齐
+Perfectly formatted
+
+241
+00:07:42,666 --> 00:07:43,800
+引文规范
+Properly cited
+
+242
+00:07:43,800 --> 00:07:45,033
+语气坚定
+Firm tone
+
+243
+00:07:45,533 --> 00:07:48,266
+你的确认偏误加上自动化偏见
+Your confirmation bias plus automation bias
+
+244
+00:07:48,266 --> 00:07:50,233
+让你根本不会怀疑它
+Makes you not doubt it at all
+
+245
+00:07:50,433 --> 00:07:51,566
+AI给你答案
+AI gives you an answer
+
+246
+00:07:51,566 --> 00:07:52,633
+你给它信任
+You give it trust
+
+247
+00:07:52,800 --> 00:07:54,166
+你以为你在思考
+You think you are thinking
+
+248
+00:07:54,166 --> 00:07:58,300
+其实你只是在给自己的偏见找了一个更有说服力的复读机
+Actually you are just finding a more convincing parrot for your own biases
+
+249
+00:07:58,300 --> 00:07:59,000
+好
+OK
+
+250
+00:07:59,000 --> 00:08:00,800
+前面讲了锚定和确认
+We covered anchoring and confirmation
+
+251
+00:08:00,966 --> 00:08:02,400
+现在讲第三个
+Now the third one
+
+252
+00:08:03,033 --> 00:08:04,600
+这个最隐蔽
+This one is the most hidden
+
+253
+00:08:04,600 --> 00:08:06,433
+也最容易被忽视
+And the easiest to overlook
+
+254
+00:08:06,600 --> 00:08:07,633
+1981年
+In 1981
+
+255
+00:08:07,633 --> 00:08:12,000
+卡尼曼和特沃斯基做了心理学史上最著名的实验之一
+Kahneman and Tversky conducted one of the most famous experiments in psychology history
+
+256
+00:08:12,133 --> 00:08:14,200
+他们告诉两组医生同一个事实
+They told two groups of doctors the same fact
+
+257
+00:08:14,333 --> 00:08:16,100
+一种手术的存活率是90%
+A surgery has a 90 percent survival rate
+
+258
+00:08:16,666 --> 00:08:18,733
+但他们对第一组医生说
+But they told the first group of doctors
+
+259
+00:08:19,266 --> 00:08:21,133
+这个手术的存活率是90%
+The survival rate of this surgery is 90 percent
+
+260
+00:08:21,666 --> 00:08:23,066
+对第二组医生说
+They told the second group of doctors
+
+261
+00:08:23,066 --> 00:08:25,100
+这个手术的死亡率是10%
+The mortality rate of this surgery is 10 percent
+
+262
+00:08:25,633 --> 00:08:26,433
+结果
+The result
+
+263
+00:08:27,166 --> 00:08:30,500
+听到存活率90%的医生
+Doctors who heard 90 percent survival rate
+
+264
+00:08:30,600 --> 00:08:33,100
+有84%推荐这个手术
+84 percent recommended this surgery
+
+265
+00:08:33,233 --> 00:08:35,333
+听到死亡率10%的医生
+Doctors who heard 10 percent mortality rate
+
+266
+00:08:35,566 --> 00:08:37,500
+只有50%推荐
+Only 50 percent recommended it
+
+267
+00:08:37,633 --> 00:08:38,766
+同一个事实
+The same fact
+
+268
+00:08:38,833 --> 00:08:40,766
+两组数据一模一样
+Two identical sets of data
+
+269
+00:08:40,766 --> 00:08:42,300
+只是换了个说法
+Just phrased differently
+
+270
+00:08:42,366 --> 00:08:44,333
+推荐率差了34个百分点
+The recommendation rate differed by 34 percentage points
+
+271
+00:08:44,433 --> 00:08:46,633
+人不是在根据事实做决定
+People do not make decisions based on facts
+
+272
+00:08:46,666 --> 00:08:49,366
+人是在根据事实的包装方式做决定
+People make decisions based on how facts are packaged
+
+273
+00:08:49,533 --> 00:08:50,333
+现在
+Now
+
+274
+00:08:50,400 --> 00:08:53,400
+这个效应被AI放大了无数倍
+This effect has been amplified countless times by AI
+
+275
+00:08:53,600 --> 00:08:54,500
+你问AI
+You ask AI
+
+276
+00:08:54,566 --> 00:08:56,033
+这个投资产品怎么样
+How about this investment product
+
+277
+00:08:56,166 --> 00:08:56,966
+AI说
+AI says
+
+278
+00:08:56,966 --> 00:08:58,733
+历史年化收益8%
+Historical annualized return of 8 percent
+
+279
+00:08:59,033 --> 00:09:01,000
+同期银行存款利率2%
+Bank deposit rate in the same period is 2 percent
+
+280
+00:09:01,400 --> 00:09:02,200
+你一听
+You hear that
+
+281
+00:09:02,800 --> 00:09:03,600
+8%
+8 percent
+
+282
+00:09:03,966 --> 00:09:04,833
+不错啊
+Not bad
+
+283
+00:09:05,066 --> 00:09:06,300
+但你再问一遍
+But ask again
+
+284
+00:09:06,366 --> 00:09:07,800
+这个产品有风险吗
+Does this product have risks
+
+285
+00:09:07,833 --> 00:09:08,466
+AI说
+AI says
+
+286
+00:09:08,466 --> 00:09:10,333
+过去三年最大回撤25%
+Maximum drawdown of 25 percent over the past three years
+
+287
+00:09:10,566 --> 00:09:13,333
+42%的投资者出现过亏损
+42 percent of investors experienced losses
+
+288
+00:09:13,466 --> 00:09:14,433
+同一个产品
+The same product
+
+289
+00:09:14,433 --> 00:09:15,400
+两种说法
+Two different ways to describe it
+
+290
+00:09:15,566 --> 00:09:16,533
+你选哪个
+Which one do you choose
+
+291
+00:09:16,666 --> 00:09:20,533
+大部分人在听到第一种描述的时候倾向于买入
+Most people tend to buy when they hear the first description
+
+292
+00:09:20,966 --> 00:09:23,566
+听到第二种描述的时候倾向于放弃
+And tend to give up when they hear the second description
+
+293
+00:09:23,633 --> 00:09:26,300
+但真正的问题不在于AI在帮你分析
+But the real problem is not that AI is helping you analyze
+
+294
+00:09:26,433 --> 00:09:28,300
+它确实给了你真实的数据
+It did give you real data
+
+295
+00:09:28,433 --> 00:09:29,366
+问题是
+The problem is
+
+296
+00:09:29,400 --> 00:09:31,666
+AI在回答你的那一刻
+At the moment AI answers you
+
+297
+00:09:31,666 --> 00:09:33,500
+已经帮你选了框架
+It has already chosen a frame for you
+
+298
+00:09:33,633 --> 00:09:35,233
+你问AI该不该做
+You ask AI whether you should do it
+
+299
+00:09:35,400 --> 00:09:37,400
+它会从做的理由开始分析
+It will start analyzing reasons to do it
+
+300
+00:09:37,533 --> 00:09:39,200
+你问AI有什么风险
+You ask AI what the risks are
+
+301
+00:09:39,433 --> 00:09:41,800
+它会从不做的好处开始分析
+It will start analyzing the benefits of not doing it
+
+302
+00:09:41,933 --> 00:09:45,200
+你的提问方式决定了AI的回答框架
+The way you ask determines AIs response frame
+
+303
+00:09:45,566 --> 00:09:48,533
+AI的回答框架决定了你的最终选择
+AIs response frame determines your final choice
+
+304
+00:09:48,766 --> 00:09:50,166
+举个真实的例子
+Let me give you a real example
+
+305
+00:09:50,333 --> 00:09:53,566
+有人在考虑要不要辞掉稳定的工作去创业
+Someone was considering quitting a stable job to start a business
+
+306
+00:09:53,666 --> 00:09:54,766
+他问AI
+He asked AI
+
+307
+00:09:55,033 --> 00:09:57,300
+辞职创业的成功率有多高
+How high is the success rate of quitting to start a business
+
+308
+00:09:57,533 --> 00:09:58,766
+AI告诉他
+AI told him
+
+309
+00:10:00,000 --> 00:10:02,500
+90%的创业公司在三年内失败
+90 percent of startups fail within three years
+
+310
+00:10:02,633 --> 00:10:03,600
+他看了
+He saw that
+
+311
+00:10:03,600 --> 00:10:04,366
+吓到了
+Got scared
+
+312
+00:10:04,366 --> 00:10:05,200
+放弃了
+And gave up
+
+313
+00:10:05,366 --> 00:10:07,033
+但如果他换一种问法呢
+But what if he asked differently
+
+314
+00:10:07,233 --> 00:10:09,533
+创业失败的人后来过得怎么样
+How do people who fail at entrepreneurship end up
+
+315
+00:10:09,733 --> 00:10:11,366
+AI可能会告诉他
+AI might tell him
+
+316
+00:10:11,966 --> 00:10:14,400
+大多数创业者即使失败了
+Most entrepreneurs even if they fail
+
+317
+00:10:14,400 --> 00:10:16,366
+也找到了更好的工作
+Still found better jobs
+
+318
+00:10:16,366 --> 00:10:18,033
+积累了人脉和经验
+Built networks and experience
+
+319
+00:10:18,366 --> 00:10:20,400
+收入最终超过了之前
+And eventually earned more than before
+
+320
+00:10:20,600 --> 00:10:21,800
+同一个决定
+The same decision
+
+321
+00:10:21,966 --> 00:10:23,166
+换一种问法
+Asked differently
+
+322
+00:10:23,233 --> 00:10:25,333
+你的人生走向可能完全不同
+Your life trajectory could be completely different
+
+323
+00:10:25,466 --> 00:10:28,433
+而你甚至不知道自己只看到了真相的一半
+And you do not even know you only saw half the truth
+
+324
+00:10:28,733 --> 00:10:30,000
+三个偏差讲完了
+Three biases covered
+
+325
+00:10:30,200 --> 00:10:31,000
+锚定
+Anchoring
+
+326
+00:10:31,133 --> 00:10:32,266
+确认偏误
+Confirmation bias
+
+327
+00:10:32,266 --> 00:10:33,333
+框架效应
+Framing effect
+
+328
+00:10:33,533 --> 00:10:34,400
+你想想看
+Think about it
+
+329
+00:10:35,033 --> 00:10:37,500
+你今天用AI做的每一个决定
+Every decision you made using AI today
+
+330
+00:10:37,566 --> 00:10:39,800
+有没有同时踩中这三个坑
+Did you fall into all three traps at once
+
+331
+00:10:40,066 --> 00:10:41,533
+AI给你一个数字
+AI gives you a number
+
+332
+00:10:41,600 --> 00:10:42,633
+你被锚了
+You are anchored
+
+333
+00:10:42,800 --> 00:10:44,800
+你用你想要的方式提问
+You ask the question the way you want
+
+334
+00:10:44,933 --> 00:10:47,033
+你被确认偏误左右了
+You are swayed by confirmation bias
+
+335
+00:10:47,200 --> 00:10:49,600
+AI用它的方式包装答案
+AI packages the answer its way
+
+336
+00:10:49,600 --> 00:10:51,733
+你被框架效应操纵了
+You are manipulated by the framing effect
+
+337
+00:10:51,866 --> 00:10:52,966
+三重暴击
+A triple blow
+
+338
+00:10:53,166 --> 00:10:55,366
+但你先别急着卸载ChatGPT
+But do not rush to uninstall ChatGPT just yet
+
+339
+00:10:55,566 --> 00:10:56,833
+AI不是敌人
+AI is not the enemy
+
+340
+00:10:57,033 --> 00:10:59,400
+认知偏差也不是AI发明的
+Cognitive biases were not invented by AI either
+
+341
+00:10:59,966 --> 00:11:01,700
+它写进了人类的基因里
+They are written into human genes
+
+342
+00:11:01,833 --> 00:11:02,900
+几万年了
+For tens of thousands of years
+
+343
+00:11:02,966 --> 00:11:05,733
+AI只是让这些偏差变得更高效
+AI just makes these biases more efficient
+
+344
+00:11:05,733 --> 00:11:06,700
+更隐蔽
+More hidden
+
+345
+00:11:06,733 --> 00:11:07,766
+更难察觉
+Harder to detect
+
+346
+00:11:07,866 --> 00:11:10,900
+真正的问题不是该不该用AI
+The real question is not whether to use AI
+
+347
+00:11:11,000 --> 00:11:11,800
+而是
+But rather
+
+348
+00:11:12,333 --> 00:11:13,800
+你该怎么用
+How you should use it
+
+349
+00:11:13,966 --> 00:11:15,966
+才能让AI成为你的武器
+So that AI becomes your weapon
+
+350
+00:11:16,033 --> 00:11:17,400
+而不是你的枷锁
+Instead of your shackle
+
+351
+00:11:17,400 --> 00:11:18,133
+好
+OK
+
+352
+00:11:18,133 --> 00:11:19,300
+道理讲完了
+The principles have been covered
+
+353
+00:11:19,466 --> 00:11:20,900
+最后一个章节
+The final chapter
+
+354
+00:11:20,933 --> 00:11:22,233
+我们回到你自己
+Let us come back to you
+
+355
+00:11:22,533 --> 00:11:24,100
+给你三个方法
+Three methods for you
+
+356
+00:11:24,200 --> 00:11:28,000
+让你在AI时代做出真正属于你自己的判断
+To help you make truly your own judgments in the AI era
+
+357
+00:11:28,200 --> 00:11:29,500
+这三个方法
+These three methods
+
+358
+00:11:30,033 --> 00:11:32,366
+都是顶级决策者在用的
+Are all used by top decision makers
+
+359
+00:11:32,533 --> 00:11:34,033
+不是什么心灵鸡汤
+Not some inspirational fluff
+
+360
+00:11:34,266 --> 00:11:36,233
+是经过实验验证的
+They are experimentally verified
+
+361
+00:11:36,400 --> 00:11:37,933
+切实可行的策略
+Practical and actionable strategies
+
+362
+00:11:38,133 --> 00:11:39,100
+第一个方法
+The first method
+
+363
+00:11:39,166 --> 00:11:40,933
+叫先想后问
+Is called think first ask later
+
+364
+00:11:41,066 --> 00:11:42,700
+每次用AI之前
+Every time before using AI
+
+365
+00:11:42,766 --> 00:11:44,200
+先给自己30秒
+Give yourself 30 seconds first
+
+366
+00:11:44,400 --> 00:11:45,433
+问自己一个问题
+Ask yourself a question
+
+367
+00:11:45,433 --> 00:11:46,900
+如果AI不存在
+If AI did not exist
+
+368
+00:11:46,966 --> 00:11:48,000
+我会怎么想
+How would I think
+
+369
+00:11:48,066 --> 00:11:49,966
+把你自己的判断先写下来
+Write down your own judgment first
+
+370
+00:11:50,133 --> 00:11:51,566
+然后再去问AI
+Then go ask AI
+
+371
+00:11:51,766 --> 00:11:53,800
+这个动作有一个巨大的作用
+This action has a huge effect
+
+372
+00:11:54,000 --> 00:11:55,700
+它让你有了自己的锚
+It gives you your own anchor
+
+373
+00:11:55,866 --> 00:11:58,000
+当你先形成了自己的判断
+When you form your own judgment first
+
+374
+00:11:58,000 --> 00:12:00,533
+AI的回答就不再是你的锚点了
+AIs answer is no longer your anchor point
+
+375
+00:12:00,633 --> 00:12:01,766
+你可以对比
+You can compare
+
+376
+00:12:01,800 --> 00:12:02,800
+可以质疑
+You can question
+
+377
+00:12:02,800 --> 00:12:05,300
+可以选择同意或者不同意
+You can choose to agree or disagree
+
+378
+00:12:05,400 --> 00:12:06,366
+但至少
+But at least
+
+379
+00:12:06,466 --> 00:12:08,366
+你是真的在做选择了
+You are truly making a choice
+
+380
+00:12:08,533 --> 00:12:10,500
+行为经济学实验证实
+Behavioral economics experiments have confirmed
+
+381
+00:12:10,600 --> 00:12:13,800
+先做独立判断再参考外部信息的人
+People who make independent judgments first before referring to external information
+
+382
+00:12:13,833 --> 00:12:18,433
+决策准确率比直接参考外部信息的人高出30%
+Have a 30 percent higher decision accuracy than those who directly reference external information
+
+383
+00:12:19,166 --> 00:12:20,800
+30%是什么概念
+What does 30 percent mean
+
+384
+00:12:20,933 --> 00:12:23,333
+如果你原来的决策准确率是60%
+If your original decision accuracy was 60 percent
+
+385
+00:12:24,033 --> 00:12:26,600
+这一个动作就能帮你拉到接近80%
+This one action can push you to nearly 80 percent
+
+386
+00:12:26,900 --> 00:12:27,700
+30秒
+30 seconds
+
+387
+00:12:27,733 --> 00:12:28,733
+先想后问
+Think first ask later
+
+388
+00:12:28,933 --> 00:12:33,500
+这可能是你对抗锚定效应最简单有效的方法
+This might be the simplest and most effective way to fight the anchoring effect
+
+389
+00:12:33,666 --> 00:12:34,833
+第二个方法
+The second method
+
+390
+00:12:34,966 --> 00:12:36,366
+叫红队提问
+Is called red team questioning
+
+391
+00:12:36,600 --> 00:12:38,733
+红队是军事术语
+Red team is a military term
+
+392
+00:12:38,966 --> 00:12:42,566
+意思是专门扮演敌对方来检验你的计划
+Meaning playing the opposing side specifically to test your plan
+
+393
+00:12:42,766 --> 00:12:44,333
+用到AI上就是
+Applied to AI it means
+
+394
+00:12:45,033 --> 00:12:46,766
+你问完一个问题之后
+After you ask a question
+
+395
+00:12:46,933 --> 00:12:48,200
+再追问一句
+Follow up with another question
+
+396
+00:12:48,233 --> 00:12:50,200
+有没有跟这个相反的观点
+Are there any opposing views to this
+
+397
+00:12:50,366 --> 00:12:53,066
+比如你问AI现在是不是该买房
+For example you ask AI if you should buy a house now
+
+398
+00:12:53,066 --> 00:12:55,600
+AI给你分析了一堆该买的理由
+AI gives you a bunch of reasons to buy
+
+399
+00:12:55,800 --> 00:12:57,300
+你不要停在这里
+Do not stop there
+
+400
+00:12:57,400 --> 00:12:58,566
+再追问一句
+Follow up with
+
+401
+00:12:58,866 --> 00:13:02,366
+给我5个不应该在这个时候买房的理由
+Give me 5 reasons not to buy a house right now
+
+402
+00:13:02,466 --> 00:13:04,166
+然后你看这两个答案
+Then look at both answers
+
+403
+00:13:04,266 --> 00:13:05,433
+你自己做判断
+And make your own judgment
+
+404
+00:13:05,566 --> 00:13:08,166
+这个方法直接攻击了确认偏误
+This method directly attacks confirmation bias
+
+405
+00:13:08,333 --> 00:13:10,833
+你不再是只看你想看的
+You are no longer only seeing what you want to see
+
+406
+00:13:11,333 --> 00:13:13,533
+你主动逼自己看另一面
+You actively force yourself to see the other side
+
+407
+00:13:13,666 --> 00:13:16,600
+真正的高手不是只看自己想看的
+Real experts do not just look at what they want to see
+
+408
+00:13:16,733 --> 00:13:18,400
+是两面的信息都看完了
+They look at information from both sides
+
+409
+00:13:18,400 --> 00:13:19,633
+还能做出判断
+And still make a judgment
+
+410
+00:13:19,800 --> 00:13:21,000
+这种能力
+This kind of ability
+
+411
+00:13:21,033 --> 00:13:22,500
+叫灰度思维
+Is called gray thinking
+
+412
+00:13:22,666 --> 00:13:24,366
+每次问AI一个问题
+Every time you ask AI a question
+
+413
+00:13:24,466 --> 00:13:26,600
+就再追问一句反面的
+Follow up with the opposite
+
+414
+00:13:26,766 --> 00:13:27,933
+养成习惯
+Make it a habit
+
+415
+00:13:28,133 --> 00:13:29,933
+你会发现自己做的决定
+You will find the decisions you make
+
+416
+00:13:30,033 --> 00:13:31,433
+质量完全不一样了
+Are of completely different quality
+
+417
+00:13:31,600 --> 00:13:32,800
+第三个方法
+The third method
+
+418
+00:13:32,833 --> 00:13:34,966
+叫脱框架思考
+Is called deframing thinking
+
+419
+00:13:35,200 --> 00:13:36,300
+记住一件事
+Remember one thing
+
+420
+00:13:36,566 --> 00:13:38,533
+AI回答你的方式
+The way AI answers you
+
+421
+00:13:38,600 --> 00:13:41,900
+只是无数种可能的表达方式之一
+Is just one of countless possible ways to express it
+
+422
+00:13:42,033 --> 00:13:44,033
+当你看到AI的答案时
+When you see AIs answer
+
+423
+00:13:44,266 --> 00:13:47,433
+试着在心里把它翻过来重新说一遍
+Try to mentally flip it and rephrase it
+
+424
+00:13:47,600 --> 00:13:50,100
+AI说这个产品过去一年涨了30%
+AI says this product went up 30 percent in the past year
+
+425
+00:13:50,733 --> 00:13:53,800
+你心里翻成这个产品还有70%没涨
+You mentally flip it to this product still has 70 percent that did not go up
+
+426
+00:13:54,000 --> 00:13:57,200
+AI说这个岗位的月薪比行业平均高5000
+AI says this positions monthly salary is 5000 higher than the industry average
+
+427
+00:13:57,200 --> 00:14:01,133
+你心里翻成这个行业平均月薪只有这么多
+You mentally flip it to the industry average monthly salary is only this much
+
+428
+00:14:01,400 --> 00:14:02,900
+这不是文字游戏
+This is not a word game
+
+429
+00:14:03,033 --> 00:14:05,333
+每次你主动转换框架
+Every time you actively switch frames
+
+430
+00:14:05,333 --> 00:14:07,300
+你就在训练自己的系统二
+You are training your own system two
+
+431
+00:14:07,400 --> 00:14:08,533
+那个慢的
+The slow one
+
+432
+00:14:08,566 --> 00:14:09,433
+理性的
+The rational one
+
+433
+00:14:09,433 --> 00:14:11,433
+需要费力的思考系统
+The effort requiring thinking system
+
+434
+00:14:11,600 --> 00:14:14,433
+金融行业有个术语叫压力测试
+The finance industry has a term called stress testing
+
+435
+00:14:14,566 --> 00:14:19,566
+就是故意用最极端的框架来审视一个投资决策
+Which means deliberately using the most extreme frame to examine an investment decision
+
+436
+00:14:19,733 --> 00:14:22,000
+你用AI的时候也可以这么做
+You can do the same when using AI
+
+437
+00:14:22,466 --> 00:14:23,300
+问AI
+Ask AI
+
+438
+00:14:23,566 --> 00:14:26,433
+如果用最悲观的眼光看这个问题
+If you look at this problem from the most pessimistic perspective
+
+439
+00:14:26,666 --> 00:14:27,500
+会怎样
+What would happen
+
+440
+00:14:27,633 --> 00:14:28,966
+脱框架思考
+Deframing thinking
+
+441
+00:14:29,033 --> 00:14:32,200
+不要只看AI给你的那面镜子
+Do not just look at the mirror AI gives you
+
+442
+00:14:32,333 --> 00:14:33,233
+走过去
+Walk over
+
+443
+00:14:33,333 --> 00:14:34,900
+看看镜子的背面
+Look at the back of the mirror
+
+444
+00:14:35,033 --> 00:14:35,966
+三个方法
+Three methods
+
+445
+00:14:36,166 --> 00:14:37,266
+先想后问
+Think first ask later
+
+446
+00:14:37,266 --> 00:14:38,300
+对抗锚定
+Against anchoring
+
+447
+00:14:38,466 --> 00:14:39,566
+红队提问
+Red team questioning
+
+448
+00:14:39,566 --> 00:14:40,966
+对抗确认偏误
+Against confirmation bias
+
+449
+00:14:41,133 --> 00:14:42,533
+脱框架思考
+Deframing thinking
+
+450
+00:14:42,566 --> 00:14:44,166
+对抗框架效应
+Against framing effect
+
+451
+00:14:44,266 --> 00:14:47,200
+AI是这个时代最强大的工具之一
+AI is one of the most powerful tools of this era
+
+452
+00:14:47,400 --> 00:14:49,000
+但工具的价值
+But the value of a tool
+
+453
+00:14:49,033 --> 00:14:50,800
+取决于使用工具的人
+Depends on the person using it
+
+454
+00:14:51,000 --> 00:14:52,100
+你现在想想
+Think about it now
+
+455
+00:14:52,400 --> 00:14:55,000
+上一次你用AI做了什么重要决定
+What important decision did you last make using AI
+
+456
+00:14:55,200 --> 00:14:56,200
+那个决定
+That decision
+
+457
+00:14:56,400 --> 00:14:57,566
+是你做的
+Did you make it
+
+458
+00:14:57,600 --> 00:14:59,033
+还是AI帮你做的
+Or did AI make it for you
+
+459
+00:14:59,166 --> 00:15:00,233
+如果你不确定
+If you are not sure
+
+460
+00:15:00,666 --> 00:15:02,000
+那大概率是后者
+Then it is most likely the latter
+
+461
+00:15:02,166 --> 00:15:03,733
+AI不会替你做决定
+AI will not make decisions for you
+
+462
+00:15:03,833 --> 00:15:05,700
+它只是让你以为
+It just makes you think
+
+463
+00:15:05,766 --> 00:15:07,566
+那个决定是你自己做的
+That you made that decision yourself
+
+464
+00:15:07,666 --> 00:15:10,566
+在这个AI越来越强的时代
+In this era where AI gets stronger and stronger
+
+465
+00:15:10,800 --> 00:15:13,500
+最值钱的能力不是会用AI
+The most valuable skill is not knowing how to use AI
+
+466
+00:15:13,966 --> 00:15:16,400
+是知道什么时候不该信AI
+It is knowing when not to trust AI
+
+467
+00:15:16,666 --> 00:15:19,133
+所以下次打开ChatGPT之前
+So next time before you open ChatGPT
+
+468
+00:15:19,200 --> 00:15:20,300
+给自己30秒
+Give yourself 30 seconds
+
+469
+00:15:20,466 --> 00:15:21,433
+先想后问
+Think first ask later
+
+470
+00:15:21,600 --> 00:15:23,733
+你不需要比AI更聪明
+You do not need to be smarter than AI
+
+471
+00:15:23,933 --> 00:15:25,300
+你只需要保证
+You just need to make sure
+
+472
+00:15:25,800 --> 00:15:27,366
+那个最终拍板的人
+The person who makes the final call
+
+473
+00:15:27,433 --> 00:15:28,233
+是你自己
+Is you
+
+474
+00:15:28,433 --> 00:15:29,966
+AI给你答案
+AI gives you an answer
+
+475
+00:15:30,066 --> 00:15:32,033
+不代表那个答案是对的
+Does not mean that answer is right
+
+476
+00:15:32,166 --> 00:15:34,333
+更不代表那个答案是你的
+Even less does it mean that answer is yours
+
+477
+00:15:34,466 --> 00:15:35,733
+真正的聪明
+True intelligence
+
+478
+00:15:35,733 --> 00:15:37,433
+不是找到最好的答案
+Is not finding the best answer
+
+479
+00:15:37,566 --> 00:15:39,300
+而是确保那个答案
+But making sure that answer
+
+480
+00:15:39,366 --> 00:15:41,233
+真的经过了你的大脑
+Truly passed through your brain
+
+481
+00:15:41,366 --> 00:15:43,933
+如果你觉得今天的内容对你有启发
+If you found todays content inspiring
+
+482
+00:15:43,933 --> 00:15:44,766
+点个关注
+Drop a follow
+
+483
+00:15:44,833 --> 00:15:46,900
+我每周讲一个经济学故事
+I tell one economics story every week
+
+484
+00:15:47,033 --> 00:15:49,466
+帮你看透那些你每天都在踩
+Helping you see through those traps you step into every day
+
+485
+00:15:49,466 --> 00:15:51,733
+但从来没注意到的思维陷阱
+But never noticed
+
+486
+00:15:51,833 --> 00:15:52,600
+下一期
+Next episode
+
+487
+00:15:52,600 --> 00:15:53,400
+我们聊聊
+We will talk about
+
+488
+00:15:53,733 --> 00:15:56,733
+为什么你用了AI效率反而更低
+Why your efficiency is actually lower after using AI
+
+489
+00:15:56,866 --> 00:15:58,833
+帕金森定律和工具悖论
+Parkinsons Law and the tool paradox
+
+490
+00:15:58,833 --> 00:16:00,766
+讲一个你绝对踩过的坑
+Telling you about a trap you definitely fell into
+
+491
+00:16:01,000 --> 00:16:03,133
+现在就打开你的AI聊天记录
+Open your AI chat history right now
+
+492
+00:16:03,233 --> 00:16:04,566
+看看你最近问的问题
+Look at your recent questions
+
+493
+00:16:04,800 --> 00:16:06,200
+你是真的在思考
+Are you truly thinking
+
+494
+00:16:06,266 --> 00:16:08,533
+还是在给偏见找复读机
+Or just finding a parrot for your biases
+
+495
+00:16:08,766 --> 00:16:09,800
+评论区聊聊
+Let us chat in the comments
+
+496
+00:16:10,000 --> 00:16:11,133
+我们下期见
+See you next time
