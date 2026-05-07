@@ -1,0 +1,649 @@
+1
+00:00:00,133 --> 00:00:01,366
+我先问你一件事
+Let me ask you something first
+
+2
+00:00:01,566 --> 00:00:03,100
+你上一次换手机
+The last time you got a new phone
+
+3
+00:00:03,333 --> 00:00:04,200
+花了多少钱
+How much did you spend
+
+4
+00:00:04,366 --> 00:00:05,466
+8000
+8000
+
+5
+00:00:05,466 --> 00:00:06,300
+10000
+10000
+
+6
+00:00:06,433 --> 00:00:07,900
+还是12000
+Or 12000
+
+7
+00:00:08,166 --> 00:00:09,400
+你有没有想过
+Have you ever wondered
+
+8
+00:00:09,566 --> 00:00:12,266
+10年前最贵的iPhone才5288
+10 years ago the most expensive iPhone was only 5288
+
+9
+00:00:12,733 --> 00:00:15,400
+现在ProMax1TB
+Now a ProMax 1TB
+
+10
+00:00:15,400 --> 00:00:17,166
+13999
+13999
+
+11
+00:00:17,466 --> 00:00:19,000
+价格翻了快3倍
+The price nearly tripled
+
+12
+00:00:19,133 --> 00:00:20,300
+但你这10年
+But in these 10 years
+
+13
+00:00:20,333 --> 00:00:21,666
+工资涨了几倍
+How many times has your salary gone up
+
+14
+00:00:21,866 --> 00:00:23,000
+更怪的是
+What's even weirder
+
+15
+00:00:23,466 --> 00:00:24,266
+越贵
+The more expensive
+
+16
+00:00:24,400 --> 00:00:25,400
+越多人抢
+The more people fight for it
+
+17
+00:00:25,566 --> 00:00:27,400
+苹果2024年财报
+Apple's 2024 financial report
+
+18
+00:00:27,466 --> 00:00:29,366
+iPhone卖出23亿台
+iPhone sold 230 million units
+
+19
+00:00:29,366 --> 00:00:31,166
+Pro系列占一半以上
+Pro series accounted for over half
+
+20
+00:00:31,400 --> 00:00:32,500
+你是不是也这样过
+Have you been like this too
+
+21
+00:00:33,000 --> 00:00:34,466
+预算本来8000
+Your budget was 8000 to begin with
+
+22
+00:00:34,466 --> 00:00:36,766
+到了店里咬咬牙加2000买Pro
+Then at the store you grit your teeth and added 2000 for the Pro
+
+23
+00:00:37,266 --> 00:00:38,333
+反正都买了
+Might as well go all in
+
+24
+00:00:38,533 --> 00:00:39,900
+这不是你一个人
+You're not the only one
+
+25
+00:00:40,133 --> 00:00:41,100
+真相是
+The truth is
+
+26
+00:00:41,533 --> 00:00:43,533
+一部手机为什么越来越贵
+Why phones keep getting more expensive
+
+27
+00:00:43,666 --> 00:00:45,633
+跟成本几乎没关系
+Has almost nothing to do with cost
+
+28
+00:00:45,633 --> 00:00:47,133
+跟你的脑子有关系
+It has everything to do with your brain
+
+29
+00:00:47,233 --> 00:00:48,900
+今天我用10分钟
+Today I'll use 10 minutes
+
+30
+00:00:49,066 --> 00:00:53,200
+告诉你手机变贵背后的3个经济学陷阱
+To tell you about the 3 economic traps behind rising phone prices
+
+31
+00:00:53,333 --> 00:00:54,200
+搞懂它
+Understand them
+
+32
+00:00:54,333 --> 00:00:56,800
+你下次买手机至少能少花3000块
+And you'll save at least 3000 on your next phone
+
+33
+00:00:56,933 --> 00:00:58,533
+而且这3个陷阱
+And these 3 traps
+
+34
+00:00:58,633 --> 00:01:00,066
+不只在手机店
+Aren't just at the phone store
+
+35
+00:01:00,233 --> 00:01:01,300
+你买车
+When you buy a car
+
+36
+00:01:01,500 --> 00:01:02,300
+买包
+Buy a bag
+
+37
+00:01:02,333 --> 00:01:03,166
+买电脑
+Buy a computer
+
+38
+00:01:03,166 --> 00:01:04,166
+报培训班
+Sign up for a training course
+
+39
+00:01:04,466 --> 00:01:05,500
+全在踩
+You're falling for all of them
+
+40
+00:01:05,566 --> 00:01:06,800
+你想想这个画面
+Picture this scene
+
+41
+00:01:07,033 --> 00:01:08,100
+你坐地铁
+You're on the subway
+
+42
+00:01:08,366 --> 00:01:11,700
+对面那个人掏出一台折叠的MateXT
+The person across from you pulls out a foldable MateXT
+
+43
+00:01:11,866 --> 00:01:14,000
+你5000块的iPhone拿手里
+And your 5000-yuan iPhone in hand
+
+44
+00:01:14,133 --> 00:01:15,966
+都觉得有点寒酸
+Suddenly feels a bit embarrassing
+
+45
+00:01:16,133 --> 00:01:16,933
+注意听
+Pay attention
+
+46
+00:01:17,000 --> 00:01:18,900
+这种感觉不是你矫情
+This feeling isn't you being overly sensitive
+
+47
+00:01:19,200 --> 00:01:22,466
+是经济学家研究了100多年的一个规律
+It's a pattern economists have studied for over 100 years
+
+48
+00:01:22,666 --> 00:01:24,033
+1899年
+In 1899
+
+49
+00:01:24,033 --> 00:01:26,600
+美国经济学家凡勃伦写了一本书
+American economist Veblen wrote a book
+
+50
+00:01:26,600 --> 00:01:28,400
+叫有闲阶级论
+Called The Theory of the Leisure Class
+
+51
+00:01:28,466 --> 00:01:30,333
+他发现一个反常识的现象
+He discovered a counterintuitive phenomenon
+
+52
+00:01:30,366 --> 00:01:31,300
+有些东西
+Some things
+
+53
+00:01:31,533 --> 00:01:32,700
+价格越贵
+The higher the price
+
+54
+00:01:32,733 --> 00:01:34,166
+买的人反而越多
+The more people want to buy them
+
+55
+00:01:34,266 --> 00:01:35,966
+按经济学常识
+According to basic economics
+
+56
+00:01:35,966 --> 00:01:37,666
+一个商品涨价10%
+When a product's price goes up 10%
+
+57
+00:01:38,200 --> 00:01:39,733
+需求至少跌5%
+Demand should drop at least 5%
+
+58
+00:01:40,200 --> 00:01:42,066
+但有些东西反过来
+But some things work the other way
+
+59
+00:01:42,733 --> 00:01:43,966
+涨价30%
+Price goes up 30%
+
+60
+00:01:44,266 --> 00:01:45,366
+销量涨50%
+Sales go up 50%
+
+61
+00:01:45,866 --> 00:01:47,966
+这后来被叫做凡勃伦效应
+This later became known as the Veblen effect
+
+62
+00:01:48,066 --> 00:01:48,833
+劳力士
+Rolex
+
+63
+00:01:48,833 --> 00:01:49,700
+爱马仕
+Hermes
+
+64
+00:01:49,766 --> 00:01:50,966
+奔驰大G
+Mercedes G-Wagon
+
+65
+00:01:51,533 --> 00:01:52,466
+都是这一类
+All fall into this category
+
+66
+00:01:52,633 --> 00:01:54,266
+你猜苹果是不是
+Guess if Apple is one too
+
+67
+00:01:54,433 --> 00:01:55,233
+是
+It is
+
+68
+00:01:55,833 --> 00:01:57,766
+从乔布斯起就是
+Since Jobs it's always been
+
+69
+00:01:58,266 --> 00:02:01,533
+2007年第一代iPhone卖499美元
+In 2007 the first iPhone sold for 499 dollars
+
+70
+00:02:01,533 --> 00:02:04,533
+当时诺基亚最贵的型号也就300美元
+Back then Nokia's most expensive model was only 300 dollars
+
+71
+00:02:04,633 --> 00:02:08,300
+苹果一上来就把自己定在一个高出别人一档的位置
+Apple positioned itself a full tier above everyone else right from the start
+
+72
+00:02:08,433 --> 00:02:10,300
+之后每一代都涨
+Every generation after that went up
+
+73
+00:02:10,400 --> 00:02:12,100
+iPhone4卖4999
+iPhone 4 sold for 4999
+
+74
+00:02:12,166 --> 00:02:13,700
+iPhone8卖5888
+iPhone 8 sold for 5888
+
+75
+00:02:13,866 --> 00:02:15,500
+iPhone12卖6299
+iPhone 12 sold for 6299
+
+76
+00:02:15,866 --> 00:02:18,466
+iPhone15ProMax卖12999
+iPhone 15 ProMax sold for 12999
+
+77
+00:02:18,866 --> 00:02:20,766
+价格曲线一路向上
+The price curve just keeps climbing
+
+78
+00:02:21,400 --> 00:02:22,800
+销量也一路向上
+And sales keep climbing too
+
+79
+00:02:23,033 --> 00:02:24,000
+为什么
+Why
+
+80
+00:02:24,166 --> 00:02:25,733
+因为对一部分人来说
+Because for some people
+
+81
+00:02:25,733 --> 00:02:27,400
+手机已经不是手机了
+A phone is no longer just a phone
+
+82
+00:02:27,566 --> 00:02:28,633
+是身份
+It's status
+
+83
+00:02:28,633 --> 00:02:29,866
+是品味
+It's taste
+
+84
+00:02:29,966 --> 00:02:33,166
+是我跟别人不一样的那张标签
+It's the label that says I'm different from everyone else
+
+85
+00:02:33,366 --> 00:02:34,933
+凡勃伦自己说过一句话
+Veblen himself once said
+
+86
+00:02:35,200 --> 00:02:37,566
+消费某些商品真正的目的
+The real purpose of consuming certain goods
+
+87
+00:02:37,600 --> 00:02:39,766
+是炫耀有能力消费它们
+Is to show off the ability to afford them
+
+88
+00:02:39,933 --> 00:02:41,466
+苹果太懂这个了
+Apple understands this perfectly
+
+89
+00:02:41,566 --> 00:02:43,366
+他们卖的不是性能
+They're not selling performance
+
+90
+00:02:43,366 --> 00:02:45,066
+是我配得上的感觉
+They're selling the feeling that I deserve this
+
+91
+00:02:45,200 --> 00:02:46,366
+你回想一下
+Think back
+
+92
+00:02:46,366 --> 00:02:48,800
+你上次咬牙买Pro的那一秒
+The second you grit your teeth and bought the Pro
+
+93
+00:02:49,033 --> 00:02:51,533
+真的是因为120赫兹屏幕吗
+Was it really because of the 120Hz screen
+
+94
+00:02:51,733 --> 00:02:56,000
+还是只是不想拿那部看上去就便宜的标准版
+Or did you just not want to be seen with the cheap-looking standard model
+
+95
+00:02:56,200 --> 00:02:57,866
+请你诚实回答自己
+Be honest with yourself
+
+96
+00:02:58,066 --> 00:03:00,100
+我再给你一个更狠的数据
+Let me give you an even more brutal stat
+
+97
+00:03:00,233 --> 00:03:02,166
+茅台2024年涨价8%
+Maotai raised prices 8% in 2024
+
+98
+00:03:02,233 --> 00:03:03,866
+销量同比涨14%
+Sales jumped 14% year over year
+
+99
+00:03:04,166 --> 00:03:07,066
+爱马仕铂金包2025年涨价12%
+Hermes Birkin bag went up 12% in 2025
+
+100
+00:03:07,366 --> 00:03:09,166
+预约排到2027年
+The waitlist extends to 2027
+
+101
+00:03:09,333 --> 00:03:11,466
+这些品牌的财务报表里
+Hidden in these brands' financial reports
+
+102
+00:03:11,533 --> 00:03:13,066
+藏着同一个逻辑
+Is the exact same logic
+
+103
+00:03:13,133 --> 00:03:15,033
+涨价不是为了多赚一点钱
+Raising prices isn't about making a bit more money
+
+104
+00:03:15,033 --> 00:03:17,200
+是为了筛掉不够格的客户
+It's about filtering out customers who don't qualify
+
+105
+00:03:17,366 --> 00:03:18,466
+筛掉之后
+Once filtered out
+
+106
+00:03:18,466 --> 00:03:22,333
+剩下的客户更愿意为我跟别人不一样买单
+The remaining customers are more willing to pay for being different
+
+107
+00:03:22,600 --> 00:03:24,466
+苹果在手机行业里
+In the phone industry Apple
+
+108
+00:03:24,466 --> 00:03:26,266
+干的就是同一件事
+Is doing the exact same thing
+
+109
+00:03:26,433 --> 00:03:27,733
+每一次涨价
+Every price increase
+
+110
+00:03:27,800 --> 00:03:30,200
+都是一次身份门槛的拉高
+Is raising the status barrier another notch
+
+111
+00:03:30,400 --> 00:03:31,800
+你以为它在涨价
+You think they're raising prices
+
+112
+00:03:32,066 --> 00:03:34,933
+其实它在筛选谁配做苹果用户
+They're actually screening who deserves to be an Apple user
+
+113
+00:03:35,000 --> 00:03:35,800
+注意听
+Listen up
+
+114
+00:03:35,933 --> 00:03:39,100
+这里讲一个比凡勃伦效应更狠的招
+Here's a trick even more ruthless than the Veblen effect
+
+115
+00:03:39,266 --> 00:03:40,600
+它叫价格锚定
+It's called price anchoring
+
+116
+00:03:40,766 --> 00:03:42,066
+你去苹果店
+You walk into an Apple store
+
+117
+00:03:42,066 --> 00:03:44,533
+店员第一句话从来不会推标准版
+The staff will never lead with the standard model
+
+118
+00:03:44,666 --> 00:03:46,966
+他会先拉你去看ProMax
+They'll pull you over to look at the ProMax first
+
+119
+00:03:47,166 --> 00:03:48,533
+咱们这是顶配
+This is our top model
+
+120
+00:03:48,533 --> 00:03:49,566
+1TB
+1TB
+
+121
+00:03:49,800 --> 00:03:51,166
+钛合金边框
+Titanium frame
+
+122
+00:03:51,166 --> 00:03:52,166
+13999
+13999
+
+123
+00:03:52,600 --> 00:03:53,400
+你一听
+You hear that
+
+124
+00:03:53,833 --> 00:03:54,633
+好贵
+So expensive
+
+125
+00:03:54,800 --> 00:03:56,100
+然后他指向旁边
+Then they point to the side
+
+126
+00:03:56,800 --> 00:03:57,700
+这是Pro
+This is the Pro
+
+127
+00:03:57,766 --> 00:03:58,866
+512G
+512G
+
+128
+00:03:58,866 --> 00:03:59,933
+11499
+11499
+
+129
+00:04:00,233 --> 00:04:01,500
+你心里一比
+You compare in your head
+
+130
+00:04:02,000 --> 00:04:03,500
+便宜了2500
+2500 cheaper
