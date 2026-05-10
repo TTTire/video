@@ -1,0 +1,1959 @@
+1
+00:00:00,133 --> 00:00:01,566
+我先给你看一个数字
+Let me show you a number first
+
+2
+00:00:01,733 --> 00:00:02,766
+2025年
+2025
+
+3
+00:00:02,966 --> 00:00:04,833
+斯坦福大学发了一份报告
+Stanford University released a report
+
+4
+00:00:05,033 --> 00:00:08,000
+报告里有一组数据让所有人沉默了
+A set of data in that report silenced everyone
+
+5
+00:00:08,133 --> 00:00:10,333
+22到25岁的年轻程序员
+Young programmers aged 22 to 25
+
+6
+00:00:10,500 --> 00:00:12,166
+过去一年的就业率
+Their employment rate over the past year
+
+7
+00:00:12,400 --> 00:00:13,633
+下跌了13%
+Dropped by 13%
+
+8
+00:00:14,000 --> 00:00:16,366
+而40岁以上的资深程序员
+But senior programmers over 40
+
+9
+00:00:16,633 --> 00:00:18,366
+工资反而涨了8%
+Saw their salaries go up by 8%
+
+10
+00:00:19,000 --> 00:00:19,866
+为什么
+Why
+
+11
+00:00:20,100 --> 00:00:23,433
+因为AI替代了那些刚学会写代码的人
+Because AI replaced those who just learned to code
+
+12
+00:00:23,633 --> 00:00:26,533
+但让那些知道为什么这样写代码的人
+But made those who know why code is written this way
+
+13
+00:00:26,700 --> 00:00:27,766
+更值钱了
+More valuable
+
+14
+00:00:27,900 --> 00:00:28,866
+你可能在想
+You might be thinking
+
+15
+00:00:29,033 --> 00:00:30,333
+这是程序员的事
+This is a programmer's problem
+
+16
+00:00:30,533 --> 00:00:31,533
+跟我没关系
+None of my business
+
+17
+00:00:31,566 --> 00:00:32,366
+错
+Wrong
+
+18
+00:00:32,500 --> 00:00:34,633
+OpenAI内部有个推算
+Inside OpenAI there's an estimate
+
+19
+00:00:34,900 --> 00:00:36,766
+到2030年
+By 2030
+
+20
+00:00:37,000 --> 00:00:40,233
+全球60%的白领工作会被AI重塑
+60% of white-collar jobs worldwide will be reshaped by AI
+
+21
+00:00:40,366 --> 00:00:41,166
+注意
+Note
+
+22
+00:00:41,333 --> 00:00:42,633
+是重塑
+Reshaped
+
+23
+00:00:42,800 --> 00:00:43,966
+不是消失
+Not eliminated
+
+24
+00:00:44,166 --> 00:00:45,666
+重塑的意思是
+Reshaped means
+
+25
+00:00:46,033 --> 00:00:47,266
+同样一份工作
+The same job
+
+26
+00:00:47,500 --> 00:00:48,833
+会变成两批人
+Will split into two groups of people
+
+27
+00:00:48,966 --> 00:00:50,466
+一批人工资暴涨
+One group sees massive salary increases
+
+28
+00:00:50,633 --> 00:00:52,166
+另一批人直接归零
+The other group goes straight to zero
+
+29
+00:00:52,300 --> 00:00:53,566
+而你属于哪一批
+And which group you belong to
+
+30
+00:00:53,833 --> 00:00:55,200
+今天就在被决定
+Is being decided today
+
+31
+00:00:55,366 --> 00:00:56,400
+真相是
+The truth is
+
+32
+00:00:56,533 --> 00:00:58,133
+AI不是你的对手
+AI is not your opponent
+
+33
+00:00:58,300 --> 00:00:59,400
+它是个放大器
+It's an amplifier
+
+34
+00:00:59,533 --> 00:01:01,933
+它把勤奋的人放大成不可替代
+It amplifies hardworking people into irreplaceable ones
+
+35
+00:01:02,100 --> 00:01:04,633
+把听话的人放大成可以替换
+It amplifies obedient people into replaceable ones
+
+36
+00:01:04,833 --> 00:01:06,066
+今天我用10分钟
+Today I'll spend 10 minutes
+
+37
+00:01:06,300 --> 00:01:08,433
+告诉你这个放大器到底怎么运作
+Telling you how this amplifier actually works
+
+38
+00:01:08,633 --> 00:01:11,366
+以及怎么把自己放到被涨薪那一边
+And how to put yourself on the side that gets raises
+
+39
+00:01:11,533 --> 00:01:12,633
+听完这条视频
+After watching this video
+
+40
+00:01:13,000 --> 00:01:15,866
+你今晚的睡眠质量可能会跟昨天完全不一样
+Your sleep quality tonight might be completely different from last night
+
+41
+00:01:16,000 --> 00:01:17,000
+回到正题
+Back to the point
+
+42
+00:01:17,233 --> 00:01:18,200
+200年前
+200 years ago
+
+43
+00:01:18,400 --> 00:01:20,000
+英国发生过一件事
+Something happened in Britain
+
+44
+00:01:20,166 --> 00:01:21,433
+1811年
+In 1811
+
+45
+00:01:21,633 --> 00:01:23,166
+纺织工人组织起来
+Textile workers organized
+
+46
+00:01:23,333 --> 00:01:24,600
+开始砸纺织机
+And started smashing textile machines
+
+47
+00:01:24,800 --> 00:01:26,266
+他们的领袖叫卢德
+Their leader was named Ludd
+
+48
+00:01:26,533 --> 00:01:28,733
+所以这场运动叫卢德运动
+So this movement was called the Luddite movement
+
+49
+00:01:28,933 --> 00:01:30,033
+为什么砸机器
+Why smash machines
+
+50
+00:01:30,200 --> 00:01:32,000
+因为蒸汽纺织机一开
+Because once the steam-powered loom started
+
+51
+00:01:32,433 --> 00:01:33,733
+10个工人的活
+The work of 10 workers
+
+52
+00:01:33,933 --> 00:01:35,133
+1个人就能干完
+Could be done by just 1 person
+
+53
+00:01:35,300 --> 00:01:36,233
+工人觉得
+Workers felt
+
+54
+00:01:36,433 --> 00:01:38,166
+机器抢了我们的饭碗
+Machines are stealing our jobs
+
+55
+00:01:38,333 --> 00:01:40,333
+但你猜200年后回头看
+But guess what happened when you look back 200 years later
+
+56
+00:01:40,566 --> 00:01:41,800
+这事儿是什么结果
+What was the result
+
+57
+00:01:41,966 --> 00:01:43,966
+英国纺织业的工人数
+The number of textile workers in Britain
+
+58
+00:01:44,133 --> 00:01:46,733
+比1811年多了20倍
+Was 20 times more than in 1811
+
+59
+00:01:46,900 --> 00:01:47,866
+工资呢
+And wages
+
+60
+00:01:48,100 --> 00:01:49,266
+涨了40倍
+Went up 40 times
+
+61
+00:01:49,433 --> 00:01:50,833
+机器没抢走工作
+Machines didn't steal jobs
+
+62
+00:01:51,033 --> 00:01:52,633
+反而创造了更多工作
+They actually created more jobs
+
+63
+00:01:52,800 --> 00:01:54,800
+经济学家把这个错误的预判
+Economists call this wrong prediction
+
+64
+00:01:55,033 --> 00:01:56,600
+叫做卢德谬误
+The Luddite Fallacy
+
+65
+00:01:56,833 --> 00:01:57,733
+它是说
+It means
+
+66
+00:01:58,133 --> 00:02:00,733
+人类总是高估短期的破坏
+Humans always overestimate short-term disruption
+
+67
+00:02:00,900 --> 00:02:02,466
+低估长期的创造
+And underestimate long-term creation
+
+68
+00:02:02,700 --> 00:02:04,066
+我再给你一组数据
+Let me give you another set of data
+
+69
+00:02:04,400 --> 00:02:05,666
+1900年的时候
+In 1900
+
+70
+00:02:05,966 --> 00:02:08,400
+美国41%的劳动人口是农民
+41% of the US workforce were farmers
+
+71
+00:02:08,600 --> 00:02:09,866
+100年之后
+100 years later
+
+72
+00:02:10,100 --> 00:02:11,566
+这个比例只剩2%
+That ratio was down to just 2%
+
+73
+00:02:12,166 --> 00:02:14,266
+99%的农民去哪了
+Where did 99% of the farmers go
+
+74
+00:02:14,500 --> 00:02:15,566
+他们的孩子
+Their children
+
+75
+00:02:15,866 --> 00:02:16,666
+孙子
+Grandchildren
+
+76
+00:02:16,900 --> 00:02:18,466
+变成了汽车工程师
+Became automotive engineers
+
+77
+00:02:18,700 --> 00:02:19,533
+程序员
+Programmers
+
+78
+00:02:19,833 --> 00:02:20,633
+设计师
+Designers
+
+79
+00:02:20,833 --> 00:02:21,633
+医生
+Doctors
+
+80
+00:02:21,933 --> 00:02:22,733
+老师
+Teachers
+
+81
+00:02:23,033 --> 00:02:24,933
+整个社会的财富水平
+The overall wealth level of society
+
+82
+00:02:25,166 --> 00:02:27,200
+比1900年涨了20倍
+Went up 20 times compared to 1900
+
+83
+00:02:27,366 --> 00:02:29,400
+这就是技术革命的真实历史
+This is the real history of technological revolutions
+
+84
+00:02:29,533 --> 00:02:31,400
+它从来不是消灭工作
+It never eliminates jobs entirely
+
+85
+00:02:31,600 --> 00:02:33,466
+是消灭某一类工作
+It eliminates a certain type of job
+
+86
+00:02:33,700 --> 00:02:36,133
+然后创造另一类更复杂的工作
+Then creates a more complex type of job
+
+87
+00:02:36,333 --> 00:02:37,533
+但注意听
+But listen carefully
+
+88
+00:02:37,733 --> 00:02:39,400
+消灭和创造之间
+Between elimination and creation
+
+89
+00:02:39,566 --> 00:02:40,666
+有一个时间差
+There's a time gap
+
+90
+00:02:40,933 --> 00:02:41,866
+这个时间差
+This time gap
+
+91
+00:02:42,166 --> 00:02:43,366
+可能是10年
+Could be 10 years
+
+92
+00:02:43,533 --> 00:02:44,933
+也可能是30年
+Or even 30 years
+
+93
+00:02:45,133 --> 00:02:47,033
+死在这个时间差里的人
+People who die in this time gap
+
+94
+00:02:47,200 --> 00:02:50,233
+就成了卢德运动里那批砸机器的工人
+Become those machine-smashing workers in the Luddite movement
+
+95
+00:02:50,400 --> 00:02:51,933
+你今天面对AI
+You today facing AI
+
+96
+00:02:52,366 --> 00:02:54,533
+也站在同样的时间差里
+Are standing in the exact same time gap
+
+97
+00:02:54,733 --> 00:02:57,033
+问题不是会不会有新工作
+The question is not whether new jobs will appear
+
+98
+00:02:57,200 --> 00:02:58,000
+是
+It's whether
+
+99
+00:02:58,166 --> 00:03:00,666
+你能不能熬到新工作出现的那一天
+You can survive until the day those new jobs arrive
+
+100
+00:03:00,766 --> 00:03:01,566
+注意听
+Listen carefully
+
+101
+00:03:01,766 --> 00:03:04,966
+这里讲一个比卢德谬误更扎心的概念
+Here's a concept that hits harder than the Luddite Fallacy
+
+102
+00:03:05,133 --> 00:03:08,033
+经济学里把技术对工人的影响
+In economics the impact of technology on workers
+
+103
+00:03:08,233 --> 00:03:09,366
+分成两种
+Is divided into two types
+
+104
+00:03:09,566 --> 00:03:11,233
+第一种叫替代效应
+The first is called the substitution effect
+
+105
+00:03:11,366 --> 00:03:12,600
+机器能干的事
+What machines can do
+
+106
+00:03:12,766 --> 00:03:13,866
+工人就别干了
+Workers shouldn't bother doing
+
+107
+00:03:14,033 --> 00:03:15,366
+直接被替换掉
+You get directly replaced
+
+108
+00:03:15,500 --> 00:03:17,866
+100年前替代了纺织工人
+100 years ago it replaced textile workers
+
+109
+00:03:18,033 --> 00:03:20,600
+50年前替代了电话接线员
+50 years ago it replaced telephone operators
+
+110
+00:03:20,900 --> 00:03:22,766
+10年前替代了银行柜员
+10 years ago it replaced bank tellers
+
+111
+00:03:22,966 --> 00:03:24,166
+明天替代谁
+Who will it replace tomorrow
+
+112
+00:03:24,333 --> 00:03:25,733
+答案就在你周围
+The answer is all around you
+
+113
+00:03:25,933 --> 00:03:26,833
+初级客服
+Junior customer service
+
+114
+00:03:27,000 --> 00:03:27,866
+初级文案
+Junior copywriters
+
+115
+00:03:28,133 --> 00:03:29,266
+初级设计师
+Junior designers
+
+116
+00:03:29,500 --> 00:03:30,566
+初级翻译
+Junior translators
+
+117
+00:03:30,700 --> 00:03:31,800
+入门程序员
+Entry-level programmers
+
+118
+00:03:32,000 --> 00:03:32,800
+报税员
+Tax preparers
+
+119
+00:03:33,000 --> 00:03:34,033
+低级会计
+Junior accountants
+
+120
+00:03:34,166 --> 00:03:35,166
+合同审核员
+Contract reviewers
+
+121
+00:03:35,366 --> 00:03:36,766
+初级数据分析师
+Junior data analysts
+
+122
+00:03:36,933 --> 00:03:38,633
+凡是规则清晰
+Any job with clear rules
+
+123
+00:03:38,900 --> 00:03:39,800
+重复执行
+Repetitive execution
+
+124
+00:03:40,000 --> 00:03:42,066
+不需要复杂判断的工作
+That doesn't need complex judgment
+
+125
+00:03:42,300 --> 00:03:44,933
+AI在3年内会全部替代掉
+AI will replace all of them within 3 years
+
+126
+00:03:45,100 --> 00:03:47,066
+第二种叫互补效应
+The second is called the complementarity effect
+
+127
+00:03:47,233 --> 00:03:48,600
+机器干了基础活
+Machines handle the basic work
+
+128
+00:03:48,800 --> 00:03:51,000
+反而让人能干更高阶的事
+Which actually lets people do higher-level work
+
+129
+00:03:51,200 --> 00:03:52,166
+举个例子
+For example
+
+130
+00:03:52,366 --> 00:03:53,200
+10年前
+10 years ago
+
+131
+00:03:53,400 --> 00:03:55,866
+一个普通设计师每天的工作是什么
+What was a regular designer's daily work
+
+132
+00:03:56,033 --> 00:03:56,833
+切图
+Slicing images
+
+133
+00:03:57,033 --> 00:03:57,966
+调间距
+Adjusting spacing
+
+134
+00:03:58,166 --> 00:03:59,033
+做banner
+Making banners
+
+135
+00:03:59,233 --> 00:04:00,200
+改logo
+Tweaking logos
+
+136
+00:04:00,366 --> 00:04:03,733
+80%的时间花在这种纯执行上
+80% of their time was spent on pure execution
+
+137
+00:04:03,900 --> 00:04:05,533
+现在AI接手了
+Now AI has taken over
+
+138
+00:04:05,733 --> 00:04:07,133
+3秒出100张图
+Generating 100 images in 3 seconds
+
+139
+00:04:07,300 --> 00:04:08,400
+那设计师呢
+So what about the designer
+
+140
+00:04:08,633 --> 00:04:09,666
+不会被替代
+They won't be replaced
+
+141
+00:04:09,800 --> 00:04:11,466
+但他得变成创意总监
+But they have to become a creative director
+
+142
+00:04:11,633 --> 00:04:13,633
+他的价值不再是画得好
+Their value is no longer about drawing well
+
+143
+00:04:13,966 --> 00:04:15,766
+是知道哪个画得好
+It's about knowing which one is good
+
+144
+00:04:16,100 --> 00:04:18,000
+为什么这个对客户有用
+Why this works for the client
+
+145
+00:04:18,166 --> 00:04:19,433
+他得懂用户
+They need to understand users
+
+146
+00:04:19,633 --> 00:04:20,566
+懂品牌
+Understand branding
+
+147
+00:04:20,933 --> 00:04:21,933
+懂转化
+Understand conversion
+
+148
+00:04:22,166 --> 00:04:23,133
+懂市场
+Understand the market
+
+149
+00:04:23,366 --> 00:04:24,633
+这些AI还干不了
+These are things AI still can't do
+
+150
+00:04:24,900 --> 00:04:26,366
+升级后的设计师
+The upgraded designer
+
+151
+00:04:26,533 --> 00:04:29,200
+工资从一个月8000涨到4万
+Went from 8000 a month to 40000
+
+152
+00:04:29,366 --> 00:04:31,200
+被替代的设计师呢
+And the replaced designer
+
+153
+00:04:31,400 --> 00:04:33,466
+月薪从8000直接掉到0
+Their monthly salary went from 8000 straight to zero
+
+154
+00:04:33,766 --> 00:04:34,833
+同一个工种
+Same job title
+
+155
+00:04:35,100 --> 00:04:36,266
+同一个公司
+Same company
+
+156
+00:04:36,533 --> 00:04:37,366
+同一年
+Same year
+
+157
+00:04:37,633 --> 00:04:38,666
+两种命运
+Two completely different fates
+
+158
+00:04:38,900 --> 00:04:39,866
+差别在哪
+What's the difference
+
+159
+00:04:40,100 --> 00:04:41,800
+差别在你过去5年
+The difference is in your past 5 years
+
+160
+00:04:41,966 --> 00:04:44,000
+是只在低头切图
+Were you just head down slicing images
+
+161
+00:04:44,166 --> 00:04:46,166
+还是抬头看了一下整个游戏
+Or did you look up and see the whole game
+
+162
+00:04:46,300 --> 00:04:47,766
+我再给你一组数据
+Let me give you another set of data
+
+163
+00:04:47,966 --> 00:04:50,033
+LinkedIn2025年职位报告
+LinkedIn's 2025 jobs report
+
+164
+00:04:50,233 --> 00:04:52,033
+过去12个月里
+In the past 12 months
+
+165
+00:04:52,166 --> 00:04:55,466
+初级开头的岗位招聘量同比下跌31%
+Job postings for junior-level positions dropped 31% year over year
+
+166
+00:04:55,900 --> 00:04:59,533
+而主管/总监开头的岗位招聘量
+But postings for manager and director level positions
+
+167
+00:04:59,700 --> 00:05:00,833
+同比涨了22%
+Went up 22% year over year
+
+168
+00:05:01,400 --> 00:05:03,200
+中间的中级岗位呢
+What about mid-level positions in between
+
+169
+00:05:03,400 --> 00:05:04,366
+基本持平
+Roughly flat
+
+170
+00:05:04,533 --> 00:05:05,766
+你看出问题了吗
+Do you see the problem
+
+171
+00:05:05,966 --> 00:05:07,733
+AI不是均匀地裁人
+AI doesn't cut jobs evenly
+
+172
+00:05:07,833 --> 00:05:09,833
+它在掏空金字塔的底层
+It's hollowing out the bottom of the pyramid
+
+173
+00:05:10,033 --> 00:05:11,633
+垫高金字塔的顶层
+And raising the top of the pyramid
+
+174
+00:05:11,900 --> 00:05:13,766
+底层的人没机会上去了
+People at the bottom have no chance to move up
+
+175
+00:05:13,900 --> 00:05:15,766
+顶层的人越来越值钱
+People at the top become more and more valuable
+
+176
+00:05:15,833 --> 00:05:18,400
+你今天每多一个判断为什么的能力
+Every extra ability to judge why today
+
+177
+00:05:18,600 --> 00:05:20,766
+就是在金字塔上往上爬一格
+Is you climbing one level up the pyramid
+
+178
+00:05:20,900 --> 00:05:22,600
+我身边有个做文案的朋友
+I have a friend who's a copywriter
+
+179
+00:05:22,900 --> 00:05:24,833
+去年公司裁了一半文案
+Last year his company laid off half the copywriting team
+
+180
+00:05:25,033 --> 00:05:25,966
+他没被裁
+He wasn't laid off
+
+181
+00:05:26,333 --> 00:05:27,400
+反而涨薪40%
+Instead he got a 40% raise
+
+182
+00:05:27,933 --> 00:05:29,633
+我问他怎么做到的
+I asked him how he did it
+
+183
+00:05:29,833 --> 00:05:30,633
+他说
+He said
+
+184
+00:05:30,766 --> 00:05:33,566
+他从两年前就开始用AI写初稿
+He started using AI to write first drafts two years ago
+
+185
+00:05:33,766 --> 00:05:36,600
+但所有为什么这么写的判断都自己做
+But all the judgment on why to write it this way he did himself
+
+186
+00:05:36,733 --> 00:05:38,733
+老板看到的不是他写得多快
+His boss didn't see how fast he wrote
+
+187
+00:05:39,000 --> 00:05:41,400
+是他能解释每一个决定
+His boss saw that he could explain every decision
+
+188
+00:05:41,600 --> 00:05:43,066
+AI给他打下手
+AI was his assistant
+
+189
+00:05:43,233 --> 00:05:44,733
+他给老板打方向
+He set the direction for his boss
+
+190
+00:05:44,900 --> 00:05:46,633
+这就是互补效应的本质
+This is the essence of the complementarity effect
+
+191
+00:05:46,766 --> 00:05:48,833
+你和AI不是替代关系
+You and AI are not in a substitution relationship
+
+192
+00:05:48,966 --> 00:05:50,133
+是分工关系
+You're in a division of labor relationship
+
+193
+00:05:50,300 --> 00:05:52,266
+替代效应和互补效应
+The substitution effect and complementarity effect
+
+194
+00:05:52,433 --> 00:05:54,266
+决定你工资的方向
+Determine the direction of your salary
+
+195
+00:05:54,433 --> 00:05:55,733
+它们的分界线
+The dividing line between them
+
+196
+00:05:55,966 --> 00:05:56,833
+就一句话
+Is just one sentence
+
+197
+00:05:57,000 --> 00:05:59,233
+你做的事是听话执行
+Is what you do just obedient execution
+
+198
+00:05:59,433 --> 00:06:00,933
+还是判断为什么
+Or are you judging why
+
+199
+00:06:01,000 --> 00:06:01,933
+回到主线
+Back to the main point
+
+200
+00:06:02,133 --> 00:06:03,266
+200年前
+200 years ago
+
+201
+00:06:03,500 --> 00:06:06,966
+经济学家大卫李嘉图提出过一个理论
+200 years ago economist David Ricardo proposed a theory
+
+202
+00:06:07,200 --> 00:06:08,566
+叫比较优势
+Called comparative advantage
+
+203
+00:06:08,733 --> 00:06:09,533
+什么意思
+What does it mean
+
+204
+00:06:09,800 --> 00:06:11,766
+哪怕一件事AI做得比你好
+Even if AI does something better than you
+
+205
+00:06:11,966 --> 00:06:14,066
+只要你做得比别的事更好
+As long as you do it better than your other tasks
+
+206
+00:06:14,300 --> 00:06:15,533
+你就还有价值
+You still have value
+
+207
+00:06:15,633 --> 00:06:16,933
+我给你举个例子
+Let me give you an example
+
+208
+00:06:17,100 --> 00:06:19,233
+假设AI写代码比你快10倍
+Say AI writes code 10 times faster than you
+
+209
+00:06:19,433 --> 00:06:21,533
+但AI跟客户聊需求的时候
+But when AI talks to clients about requirements
+
+210
+00:06:21,900 --> 00:06:22,733
+会出错
+It makes mistakes
+
+211
+00:06:22,933 --> 00:06:25,066
+那你的价值就转向懂客户
+Then your value shifts to understanding clients
+
+212
+00:06:25,233 --> 00:06:26,566
+懂产品那一面
+And understanding the product side
+
+213
+00:06:26,733 --> 00:06:28,600
+你不跟AI比写代码
+You don't compete with AI on writing code
+
+214
+00:06:28,833 --> 00:06:30,766
+你比的是什么代码值得写
+You compete on what code is worth writing
+
+215
+00:06:30,966 --> 00:06:32,133
+这就是比较优势
+This is comparative advantage
+
+216
+00:06:32,200 --> 00:06:33,600
+它告诉你一个真相
+It tells you a truth
+
+217
+00:06:33,800 --> 00:06:36,366
+你不需要在所有事情上都打败AI
+You don't need to beat AI at everything
+
+218
+00:06:36,566 --> 00:06:38,533
+你只需要在AI最弱
+You just need to find where AI is weakest
+
+219
+00:06:38,766 --> 00:06:40,533
+人类最强的那个地带
+And humans are strongest
+
+220
+00:06:40,733 --> 00:06:42,600
+建立你不可替代的位置
+And build your irreplaceable position there
+
+221
+00:06:42,800 --> 00:06:44,633
+那AI最弱的地带在哪
+So where is AI weakest
+
+222
+00:06:44,833 --> 00:06:46,133
+我给你列3个
+Let me list 3 areas
+
+223
+00:06:46,366 --> 00:06:47,233
+第一个
+First
+
+224
+00:06:47,500 --> 00:06:48,733
+跨学科判断
+Cross-disciplinary judgment
+
+225
+00:06:48,833 --> 00:06:50,833
+需要同时调用心理学
+Tasks that require simultaneously drawing on psychology
+
+226
+00:06:51,033 --> 00:06:51,833
+商业
+Business
+
+227
+00:06:51,933 --> 00:06:52,733
+技术
+Technology
+
+228
+00:06:52,933 --> 00:06:55,600
+人文知识做综合判断的事
+And humanities knowledge to make comprehensive judgments
+
+229
+00:06:55,766 --> 00:06:57,600
+AI可以分别做这些
+AI can do each of these separately
+
+230
+00:06:57,766 --> 00:06:59,200
+但综合起来
+But when combined
+
+231
+00:06:59,500 --> 00:07:00,533
+它没内核
+It has no core understanding
+
+232
+00:07:00,733 --> 00:07:01,666
+第二个
+Second
+
+233
+00:07:01,833 --> 00:07:03,333
+复杂人际信任
+Complex interpersonal trust
+
+234
+00:07:03,466 --> 00:07:04,266
+谈判
+Negotiation
+
+235
+00:07:04,466 --> 00:07:05,266
+销售
+Sales
+
+236
+00:07:05,433 --> 00:07:06,233
+管理
+Management
+
+237
+00:07:06,433 --> 00:07:07,233
+教育
+Education
+
+238
+00:07:07,400 --> 00:07:08,600
+心理疏导
+Psychological counseling
+
+239
+00:07:08,766 --> 00:07:11,800
+任何需要看着对方眼睛建立信任的事
+Anything that requires looking someone in the eye to build trust
+
+240
+00:07:11,966 --> 00:07:13,033
+AI干不了
+AI can't do it
+
+241
+00:07:13,233 --> 00:07:14,866
+人是被人说服的
+People are persuaded by people
+
+242
+00:07:15,033 --> 00:07:16,800
+不是被算法说服的
+Not by algorithms
+
+243
+00:07:17,000 --> 00:07:18,166
+第三个
+Third
+
+244
+00:07:18,366 --> 00:07:19,733
+高责任决策
+High-stakes decision making
+
+245
+00:07:19,900 --> 00:07:20,866
+医生开刀
+Surgeons performing operations
+
+246
+00:07:21,166 --> 00:07:22,133
+法官判案
+Judges ruling on cases
+
+247
+00:07:22,366 --> 00:07:23,633
+CEO定战略
+CEOs setting strategy
+
+248
+00:07:23,766 --> 00:07:25,933
+这些事出了问题要担责的
+When things go wrong someone has to take responsibility
+
+249
+00:07:26,200 --> 00:07:27,600
+没人敢交给AI
+Nobody dares hand these over to AI
+
+250
+00:07:27,800 --> 00:07:30,533
+只要你的工作能往这3个方向之一靠
+As long as your work leans toward any of these 3 directions
+
+251
+00:07:30,766 --> 00:07:32,633
+你就在AI的射程之外
+You're out of AI's range
+
+252
+00:07:32,900 --> 00:07:34,166
+但反过来
+But conversely
+
+253
+00:07:34,433 --> 00:07:36,366
+如果你的工作是流程化
+If your work is process-driven
+
+254
+00:07:36,566 --> 00:07:37,566
+规则化
+Rule-based
+
+255
+00:07:37,833 --> 00:07:38,866
+可重复
+Repeatable
+
+256
+00:07:39,033 --> 00:07:40,966
+你就在AI的瞄准镜里
+You're in AI's crosshairs
+
+257
+00:07:41,133 --> 00:07:42,433
+你今天还没被裁
+You haven't been laid off today
+
+258
+00:07:42,733 --> 00:07:44,000
+不是因为你强
+Not because you're strong
+
+259
+00:07:44,233 --> 00:07:46,433
+是因为你的老板还没看清楚账
+It's because your boss hasn't figured out the math yet
+
+260
+00:07:46,600 --> 00:07:47,600
+讲了这么多
+So much said
+
+261
+00:07:47,766 --> 00:07:48,566
+怎么办
+What should you do
+
+262
+00:07:48,766 --> 00:07:50,633
+我给你3个具体方法
+I'll give you 3 specific methods
+
+263
+00:07:50,833 --> 00:07:52,133
+从今天开始用
+Start using them today
+
+264
+00:07:52,400 --> 00:07:53,433
+第一个方法
+Method one
+
+265
+00:07:53,633 --> 00:07:55,166
+叫AI杠杆法
+The AI leverage method
+
+266
+00:07:55,366 --> 00:07:56,866
+不要把AI当对手
+Don't treat AI as an opponent
+
+267
+00:07:57,000 --> 00:07:57,933
+当工具
+Treat it as a tool
+
+268
+00:07:58,100 --> 00:07:59,233
+每个工作流
+For every workflow
+
+269
+00:07:59,500 --> 00:08:00,766
+都问自己一句话
+Ask yourself one question
+
+270
+00:08:01,000 --> 00:08:02,766
+哪一段我可以让AI干
+Which parts can I let AI handle
+
+271
+00:08:03,000 --> 00:08:04,566
+哪一段必须我自己干
+Which parts must I do myself
+
+272
+00:08:04,733 --> 00:08:06,333
+让AI干的部分
+The parts AI can handle
+
+273
+00:08:06,533 --> 00:08:07,666
+立刻交出去
+Hand them over immediately
+
+274
+00:08:07,933 --> 00:08:09,200
+省下来的时间
+The time you save
+
+275
+00:08:09,433 --> 00:08:10,566
+不是去摸鱼
+Isn't for slacking off
+
+276
+00:08:10,900 --> 00:08:12,566
+是去做更高阶的事
+It's for doing higher-level work
+
+277
+00:08:12,733 --> 00:08:13,633
+举个例子
+For example
+
+278
+00:08:13,800 --> 00:08:15,166
+一个市场经理
+A marketing manager
+
+279
+00:08:15,366 --> 00:08:17,200
+本来一周做20份报表
+Used to spend a week making 20 reports
+
+280
+00:08:17,366 --> 00:08:19,233
+用了AI之后
+After using AI
+
+281
+00:08:19,500 --> 00:08:21,533
+一周20份报表只要1天
+20 reports now take just 1 day
+
+282
+00:08:21,766 --> 00:08:23,600
+剩下的4天去干嘛
+What to do with the remaining 4 days
+
+283
+00:08:23,900 --> 00:08:25,000
+去研究客户
+Go study clients
+
+284
+00:08:25,200 --> 00:08:26,566
+去做行业分析
+Do industry analysis
+
+285
+00:08:26,700 --> 00:08:28,333
+去给老板提战略建议
+Give the boss strategic advice
+
+286
+00:08:28,500 --> 00:08:31,166
+老板看到他从做表的变成出主意的
+The boss sees him go from a report maker to an idea person
+
+287
+00:08:31,366 --> 00:08:33,233
+下一个升职名单上就是他
+He's the next one on the promotion list
+
+288
+00:08:33,433 --> 00:08:34,533
+第二个方法
+Method two
+
+289
+00:08:34,800 --> 00:08:36,566
+叫不可替代清单
+The irreplaceability checklist
+
+290
+00:08:36,766 --> 00:08:38,033
+每3个月做一次
+Do this once every 3 months
+
+291
+00:08:38,200 --> 00:08:40,333
+写下你过去3个月做的所有事
+Write down everything you did in the past 3 months
+
+292
+00:08:40,500 --> 00:08:41,400
+逐条问
+Go through each item and ask
+
+293
+00:08:41,600 --> 00:08:43,033
+这件事AI能不能干
+Can AI do this
+
+294
+00:08:43,233 --> 00:08:44,200
+能干的
+If yes
+
+295
+00:08:44,400 --> 00:08:45,200
+标红
+Mark it red
+
+296
+00:08:45,333 --> 00:08:46,266
+不能干的
+If no
+
+297
+00:08:46,433 --> 00:08:47,233
+标绿
+Mark it green
+
+298
+00:08:47,500 --> 00:08:48,566
+红色越多
+The more red you have
+
+299
+00:08:48,800 --> 00:08:49,733
+你越危险
+The more danger you're in
+
+300
+00:08:49,900 --> 00:08:51,000
+绿色越多
+The more green you have
+
+301
+00:08:51,233 --> 00:08:52,333
+你越安全
+The safer you are
+
+302
+00:08:52,433 --> 00:08:53,633
+然后想办法
+Then find a way
+
+303
+00:08:53,833 --> 00:08:55,666
+把红色的活外包给AI
+Outsource the red tasks to AI
+
+304
+00:08:55,933 --> 00:08:57,866
+把绿色的活做厚做深
+And make the green tasks deeper and stronger
+
+305
+00:08:58,033 --> 00:08:59,633
+这是你的不可替代度
+This is your irreplaceability score
+
+306
+00:08:59,966 --> 00:09:01,466
+它不是岗位决定的
+It's not determined by your job title
+
+307
+00:09:01,700 --> 00:09:03,766
+是你每天的选择决定的
+It's determined by your daily choices
+
+308
+00:09:03,933 --> 00:09:05,233
+第三个方法
+Method three
+
+309
+00:09:05,433 --> 00:09:07,033
+叫向上半步法
+The step-up method
+
+310
+00:09:07,233 --> 00:09:08,566
+如果你是初级
+If you're at a junior level
+
+311
+00:09:08,766 --> 00:09:11,033
+别只想着把当前活干好
+Don't just think about doing your current job well
+
+312
+00:09:11,233 --> 00:09:13,466
+抬头看你的上级在干什么
+Look up and see what your manager is doing
+
+313
+00:09:13,700 --> 00:09:14,933
+他做的判断
+The judgments they make
+
+314
+00:09:15,166 --> 00:09:16,533
+他对接的人
+The people they connect with
+
+315
+00:09:16,800 --> 00:09:18,000
+他思考的问题
+The problems they think about
+
+316
+00:09:18,333 --> 00:09:20,133
+你能不能慢慢承接一点
+Can you gradually take on some of that
+
+317
+00:09:20,333 --> 00:09:21,366
+承接一点
+Take on just a little
+
+318
+00:09:21,533 --> 00:09:23,866
+你就向AI替代不了的那条线
+And you move one step toward the line that AI can't cross
+
+319
+00:09:24,000 --> 00:09:25,166
+往上半步
+Moving half a step up
+
+320
+00:09:25,400 --> 00:09:26,400
+10年下来
+Over 10 years
+
+321
+00:09:26,566 --> 00:09:27,466
+你会发现
+You'll find that
+
+322
+00:09:27,633 --> 00:09:30,366
+那些踏踏实实只把本职做好的同事
+Those colleagues who only focused on doing their core job well
+
+323
+00:09:30,700 --> 00:09:32,033
+被AI裁了
+Got replaced by AI
+
+324
+00:09:32,233 --> 00:09:34,633
+那些老想着多承担一点的同事
+Those who always wanted to take on more
+
+325
+00:09:34,833 --> 00:09:37,400
+被提拔成你的同事的同事
+Got promoted to manage the colleagues who didn't
+
+326
+00:09:37,566 --> 00:09:38,933
+我给你模拟一个场景
+Let me simulate a scenario for you
+
+327
+00:09:39,100 --> 00:09:40,966
+你是一个28岁的运营
+You're a 28-year-old operations person
+
+328
+00:09:41,166 --> 00:09:42,866
+做了5年公众号编辑
+Who's been a WeChat editor for 5 years
+
+329
+00:09:43,000 --> 00:09:44,566
+每天的工作是排版
+Your daily work is formatting
+
+330
+00:09:44,800 --> 00:09:45,600
+配图
+Image sourcing
+
+331
+00:09:45,833 --> 00:09:46,766
+改错字
+Fixing typos
+
+332
+00:09:46,900 --> 00:09:47,700
+发文
+Publishing
+
+333
+00:09:48,233 --> 00:09:49,666
+80%的时间在执行
+80% of your time is pure execution
+
+334
+00:09:49,800 --> 00:09:50,966
+突然有一天
+Then one day
+
+335
+00:09:51,166 --> 00:09:52,833
+老板说要降本增效
+The boss says we need to cut costs and boost efficiency
+
+336
+00:09:53,000 --> 00:09:54,200
+先砍编辑岗
+Editor positions are first on the chopping block
+
+337
+00:09:54,433 --> 00:09:55,400
+你怎么办
+What do you do
+
+338
+00:09:55,633 --> 00:09:56,433
+第一步
+Step one
+
+339
+00:09:56,633 --> 00:09:58,533
+立刻盘点你的工作里
+Immediately audit your work
+
+340
+00:09:58,700 --> 00:10:00,266
+AI能干的部分
+For the parts AI can handle
+
+341
+00:10:00,366 --> 00:10:01,166
+排版
+Formatting
+
+342
+00:10:01,300 --> 00:10:02,100
+配图
+Image sourcing
+
+343
+00:10:02,400 --> 00:10:03,533
+初步改错字
+Basic typo fixing
+
+344
+00:10:03,633 --> 00:10:04,433
+发文
+Publishing
+
+345
+00:10:04,566 --> 00:10:05,733
+AI都能干
+AI can do all of these
+
+346
+00:10:05,900 --> 00:10:08,000
+剩下的判断什么内容值得发
+What remains is judging what content is worth publishing
+
+347
+00:10:08,300 --> 00:10:09,666
+为什么这条会火
+Why a particular post will go viral
+
+348
+00:10:09,900 --> 00:10:11,366
+怎么跟用户互动
+How to engage with users
+
+349
+00:10:11,600 --> 00:10:12,600
+AI还干不了
+AI still can't do these
+
+350
+00:10:12,766 --> 00:10:13,666
+第二步
+Step two
+
+351
+00:10:13,900 --> 00:10:15,666
+把这80%交给AI
+Hand that 80% to AI
+
+352
+00:10:15,833 --> 00:10:17,633
+自己花时间研究第二部分
+Spend your own time studying the second part
+
+353
+00:10:17,800 --> 00:10:19,233
+研究3个月
+After 3 months of study
+
+354
+00:10:19,400 --> 00:10:21,033
+你成了团队里懂内容
+You become the person in the team who understands content
+
+355
+00:10:21,200 --> 00:10:22,133
+懂用户
+Understands users
+
+356
+00:10:22,333 --> 00:10:23,933
+懂数据的那个人
+And understands data
+
+357
+00:10:24,133 --> 00:10:25,000
+第三步
+Step three
+
+358
+00:10:25,200 --> 00:10:26,133
+跟老板谈
+Talk to your boss
+
+359
+00:10:26,366 --> 00:10:27,733
+我不要做编辑了
+I don't want to be an editor anymore
+
+360
+00:10:27,900 --> 00:10:29,800
+我要做内容主理人
+I want to be a content lead
+
+361
+00:10:30,000 --> 00:10:30,866
+带着AI
+Armed with AI
+
+362
+00:10:31,100 --> 00:10:33,033
+一个人做之前5个人的活
+One person doing the work of 5 people before
+
+363
+00:10:33,233 --> 00:10:35,066
+成本省给公司
+Saving costs for the company
+
+364
+00:10:35,333 --> 00:10:36,600
+价值变到自己身上
+And keeping the value for yourself
+
+365
+00:10:36,766 --> 00:10:40,066
+这就是从被裁那批到涨薪那批的全过程
+This is the complete process from the laid-off group to the raise group
+
+366
+00:10:40,200 --> 00:10:41,366
+不需要你换工作
+You don't need to change jobs
+
+367
+00:10:41,400 --> 00:10:42,433
+不需要你跳槽
+You don't need to job hop
+
+368
+00:10:42,633 --> 00:10:44,033
+不需要你重新读书
+You don't need to go back to school
+
+369
+00:10:44,300 --> 00:10:45,366
+需要的只是
+All you need is
+
+370
+00:10:45,600 --> 00:10:48,366
+你今天就开始重新看自己的工作
+To start rethinking your work today
+
+371
+00:10:48,566 --> 00:10:50,933
+其实关于AI和你的工资
+Actually about AI and your salary
+
+372
+00:10:51,300 --> 00:10:53,400
+最核心的真相只有一句
+The core truth comes down to just one sentence
+
+373
+00:10:53,566 --> 00:10:55,200
+AI不会消灭工作
+AI won't eliminate jobs
+
+374
+00:10:55,400 --> 00:10:57,733
+AI会消灭工资低的工人
+AI will eliminate low-wage workers
+
+375
+00:10:57,900 --> 00:10:58,933
+但同时
+But at the same time
+
+376
+00:10:59,100 --> 00:11:01,633
+AI也会创造前所未有高薪的人
+AI will also create unprecedentedly high-earning people
+
+377
+00:11:01,800 --> 00:11:03,166
+你站在哪一边
+Which side you stand on
+
+378
+00:11:03,366 --> 00:11:04,600
+不取决于AI
+Doesn't depend on AI
+
+379
+00:11:04,766 --> 00:11:06,400
+取决于你今天的选择
+It depends on your choice today
+
+380
+00:11:06,700 --> 00:11:08,166
+最后送你一句话
+One last thing for you
+
+381
+00:11:08,500 --> 00:11:09,866
+未来5年
+In the next 5 years
+
+382
+00:11:10,100 --> 00:11:12,466
+被裁掉的人不是输给了AI
+The people who get laid off won't lose to AI
+
+383
+00:11:12,633 --> 00:11:13,800
+是输给了
+They'll lose to
+
+384
+00:11:13,933 --> 00:11:16,533
+比他更早学会用AI的同事
+Colleagues who learned to use AI earlier than them
+
+385
+00:11:16,700 --> 00:11:19,133
+如果今天这条视频对你有启发
+If today's video inspired you
+
+386
+00:11:19,366 --> 00:11:20,333
+点个关注
+Hit subscribe
+
+387
+00:11:20,500 --> 00:11:22,533
+我每周讲一个经济学故事
+I share one economics story every week
+
+388
+00:11:22,633 --> 00:11:24,666
+帮你看穿那些每天都在踩
+To help you see through the thinking traps
+
+389
+00:11:24,933 --> 00:11:27,166
+却从来没注意到的思维陷阱
+You step on every day without even noticing
+
+390
+00:11:27,333 --> 00:11:29,566
+你今天每多让AI干一件事
+Every extra task you let AI handle today
+
+391
+00:11:29,966 --> 00:11:32,666
+未来都会多一份不被替代的底气
+Will give you more confidence in being irreplaceable in the future
+
+392
+00:11:32,833 --> 00:11:33,866
+我们下期见
+See you next time
