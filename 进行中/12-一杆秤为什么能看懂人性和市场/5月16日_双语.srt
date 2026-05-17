@@ -1,0 +1,1479 @@
+1
+00:00:00,133 --> 00:00:01,433
+你去菜市场买菜
+You go to the market to buy vegetables
+
+2
+00:00:01,600 --> 00:00:03,200
+老板抓起一把青菜
+The vendor grabs a handful of greens
+
+3
+00:00:03,366 --> 00:00:04,766
+往电子秤上一放
+Tosses them on the digital scale
+
+4
+00:00:05,033 --> 00:00:06,566
+屏幕跳出一个数字
+A number pops up on the screen
+
+5
+00:00:06,833 --> 00:00:07,700
+三块八
+Three eighty
+
+6
+00:00:07,866 --> 00:00:08,900
+你看一眼
+You glance at it
+
+7
+00:00:09,100 --> 00:00:09,900
+扫码
+Scan the code
+
+8
+00:00:10,000 --> 00:00:10,800
+走人
+And leave
+
+9
+00:00:10,966 --> 00:00:13,166
+整个过程可能不到十秒
+The whole thing takes maybe ten seconds
+
+10
+00:00:13,333 --> 00:00:14,566
+但这十秒里
+But in those ten seconds
+
+11
+00:00:15,033 --> 00:00:17,400
+藏着一个市场能不能运转的秘密
+Lies the secret of whether a market can function
+
+12
+00:00:17,533 --> 00:00:18,900
+你没有亲手称
+You didn't weigh it yourself
+
+13
+00:00:19,066 --> 00:00:20,400
+你没有拆开秤看
+You didn't take the scale apart
+
+14
+00:00:20,600 --> 00:00:22,600
+你甚至不知道这把秤准不准
+You don't even know if the scale is accurate
+
+15
+00:00:22,800 --> 00:00:24,100
+可你还是付钱了
+But you still paid
+
+16
+00:00:24,200 --> 00:00:25,100
+为什么
+Why
+
+17
+00:00:25,333 --> 00:00:27,366
+因为你默认这杆秤是可信的
+Because you assume the scale is trustworthy
+
+18
+00:00:27,466 --> 00:00:28,900
+这件事太普通了
+This is so ordinary
+
+19
+00:00:29,066 --> 00:00:31,800
+普通到我们几乎忘了它有多重要
+So ordinary we almost forget how important it is
+
+20
+00:00:31,966 --> 00:00:33,200
+如果没有秤
+Without a scale
+
+21
+00:00:33,400 --> 00:00:36,233
+每一次买菜，都会变成一次争吵
+Every grocery run would turn into an argument
+
+22
+00:00:36,466 --> 00:00:37,533
+老板说两斤
+The vendor says two jin
+
+23
+00:00:37,633 --> 00:00:39,200
+你说最多一斤半
+You say one and a half at most
+
+24
+00:00:39,366 --> 00:00:41,166
+老板说我做生意讲良心
+The vendor says I run an honest business
+
+25
+00:00:41,333 --> 00:00:43,133
+你说你这手是不是太重了
+You say aren't you being a bit heavy-handed
+
+26
+00:00:43,200 --> 00:00:44,700
+一条鱼还没下锅
+The fish hasn't even hit the pan yet
+
+27
+00:00:44,833 --> 00:00:46,133
+人先吵累了
+But you're already exhausted from arguing
+
+28
+00:00:46,266 --> 00:00:49,166
+所以一杆秤称的从来不只是重量
+So a scale has never just weighed goods
+
+29
+00:00:49,333 --> 00:00:50,566
+它称的是信任
+It weighs trust
+
+30
+00:00:50,666 --> 00:00:52,733
+也称的是一个市场的脾气
+And the temperament of a market
+
+31
+00:00:52,933 --> 00:00:55,900
+今天这条视频，我们就用一杆秤
+Today's video uses a scale
+
+32
+00:00:55,966 --> 00:00:57,700
+讲清楚三件事
+To explain three things
+
+33
+00:00:57,966 --> 00:01:00,800
+为什么市场最怕的不是贵，而是不准
+Why markets fear inaccuracy more than high prices
+
+34
+00:01:00,966 --> 00:01:03,300
+为什么中国古代要统一度量衡
+Why ancient China unified weights and measures
+
+35
+00:01:03,533 --> 00:01:06,266
+以及今天的评分 信用 算法
+And why today's ratings credit scores and algorithms
+
+36
+00:01:06,266 --> 00:01:07,700
+为什么都是新的秤
+Are all new kinds of scales
+
+37
+00:01:07,800 --> 00:01:09,433
+先想一个很小的场景
+Picture a small scene first
+
+38
+00:01:09,600 --> 00:01:10,966
+你买一斤苹果
+You buy a jin of apples
+
+39
+00:01:11,166 --> 00:01:12,800
+老板说这一袋刚好一斤
+The vendor says this bag is exactly one jin
+
+40
+00:01:12,966 --> 00:01:15,033
+如果没有秤，你怎么办
+Without a scale what do you do
+
+41
+00:01:15,233 --> 00:01:16,933
+你只能凭感觉
+You can only go by feel
+
+42
+00:01:17,033 --> 00:01:17,966
+你掂一掂
+You heft it
+
+43
+00:01:18,133 --> 00:01:19,166
+他也掂一掂
+He hefts it too
+
+44
+00:01:19,266 --> 00:01:20,566
+你觉得轻了
+You think it's light
+
+45
+00:01:20,766 --> 00:01:21,800
+他觉得够了
+He thinks it's enough
+
+46
+00:01:21,966 --> 00:01:23,400
+这时候交易就卡住了
+Now the transaction is stuck
+
+47
+00:01:23,566 --> 00:01:24,966
+不是因为苹果不好吃
+Not because the apples taste bad
+
+48
+00:01:25,166 --> 00:01:27,166
+也不是因为价格谈不拢
+Not because you can't agree on price
+
+49
+00:01:27,266 --> 00:01:29,900
+而是因为双方没有一个共同承认的标准
+But because neither side shares a recognized standard
+
+50
+00:01:30,000 --> 00:01:32,800
+经济学里有个词，叫交易成本
+Economics has a term called transaction costs
+
+51
+00:01:33,000 --> 00:01:36,766
+说白了，就是一笔买卖还没完成之前
+Simply put it's the time and energy spent
+
+52
+00:01:36,866 --> 00:01:39,766
+你为了确认 讨价 怀疑 防骗
+Before a deal closes verifying haggling doubting guarding against scams
+
+53
+00:01:39,866 --> 00:01:41,633
+花掉的时间和精力
+All that effort you spend
+
+54
+00:01:41,766 --> 00:01:44,766
+买菜的时候，你不想研究老板的人品
+When buying groceries you don't want to vet the vendor's character
+
+55
+00:01:44,933 --> 00:01:47,766
+老板也不想每卖一袋苹果都解释半天
+The vendor doesn't want to explain himself every time either
+
+56
+00:01:47,933 --> 00:01:49,500
+所以大家需要一杆秤
+So everyone needs a scale
+
+57
+00:01:49,733 --> 00:01:50,833
+秤站在那里
+The scale sits there
+
+58
+00:01:51,000 --> 00:01:52,966
+像一个不太说话的第三方
+Like a quiet third party
+
+59
+00:01:53,200 --> 00:01:54,500
+它不替老板说话
+It doesn't speak for the vendor
+
+60
+00:01:54,766 --> 00:01:55,800
+也不替你说话
+Or for you
+
+61
+00:01:55,933 --> 00:01:57,333
+它只给一个数字
+It just gives a number
+
+62
+00:01:57,433 --> 00:01:59,366
+这个数字不一定让你开心
+This number might not make you happy
+
+63
+00:01:59,533 --> 00:02:01,600
+但它让你们有办法继续交易
+But it lets you keep transacting
+
+64
+00:02:01,733 --> 00:02:03,500
+这就是秤最厉害的地方
+That's the scale's greatest power
+
+65
+00:02:03,600 --> 00:02:06,433
+它把一场可能发生的争吵
+It takes a potential argument
+
+66
+00:02:06,800 --> 00:02:08,400
+压缩成了一个数字
+And compresses it into a number
+
+67
+00:02:08,600 --> 00:02:09,533
+你会发现
+You'll notice
+
+68
+00:02:09,633 --> 00:02:12,500
+生活里很多东西都在做同样的事
+Many things in life do the same
+
+69
+00:02:12,633 --> 00:02:14,466
+餐厅菜单上的价格
+Prices on a restaurant menu
+
+70
+00:02:14,633 --> 00:02:16,066
+快递单上的重量
+Weight on a delivery slip
+
+71
+00:02:16,233 --> 00:02:18,066
+打车软件里的里程
+Distance in a ride-hailing app
+
+72
+00:02:18,333 --> 00:02:19,866
+电表上的度数
+Kilowatts on the meter
+
+73
+00:02:20,000 --> 00:02:21,700
+它们看起来只是数字
+They look like just numbers
+
+74
+00:02:21,800 --> 00:02:25,400
+但这些数字的背后，都是在减少争吵
+But behind each one is less arguing
+
+75
+00:02:25,566 --> 00:02:27,666
+你不可能每天跟电力公司吵
+You can't argue with the power company every day
+
+76
+00:02:27,900 --> 00:02:29,700
+说我家灯泡没开这么久
+Saying my lights weren't on that long
+
+77
+00:02:29,933 --> 00:02:32,466
+你也不可能每次坐车都跟司机争
+You can't fight with every driver over distance
+
+78
+00:02:32,600 --> 00:02:34,500
+说这段路没有五公里
+Saying this ride wasn't five kilometers
+
+79
+00:02:34,600 --> 00:02:36,400
+如果没有共同标准
+Without shared standards
+
+80
+00:02:36,500 --> 00:02:38,133
+生活会变得特别累
+Life becomes exhausting
+
+81
+00:02:38,300 --> 00:02:41,733
+你会发现，市场不是靠热情运转的
+Markets don't run on enthusiasm
+
+82
+00:02:41,900 --> 00:02:44,000
+市场是靠标准运转的
+Markets run on standards
+
+83
+00:02:44,200 --> 00:02:46,966
+一旦标准不稳，人就开始互相猜
+Once standards wobble people start guessing
+
+84
+00:02:47,133 --> 00:02:48,700
+你猜老板有没有骗你
+You guess if the vendor is cheating you
+
+85
+00:02:48,833 --> 00:02:50,733
+老板猜你是不是故意找茬
+The vendor guesses if you're being difficult on purpose
+
+86
+00:02:50,966 --> 00:02:52,800
+平台猜商家有没有刷单
+Platforms guess if merchants are faking orders
+
+87
+00:02:53,000 --> 00:02:54,966
+用户猜评价是不是买来的
+Users guess if reviews are bought
+
+88
+00:02:55,166 --> 00:02:57,666
+猜来猜去，交易就慢了
+All this guessing slows everything down
+
+89
+00:02:57,833 --> 00:03:01,933
+所以秤真正省下来的，不只是几毛钱
+So what the scale really saves isn't just a few cents
+
+90
+00:03:02,100 --> 00:03:04,900
+而是人和人之间那点宝贵的耐心
+It's that precious patience between people
+
+91
+00:03:05,033 --> 00:03:08,700
+很多时候，信任不是靠感动建立的
+Often trust isn't built through moving moments
+
+92
+00:03:08,833 --> 00:03:11,566
+信任是靠一个大家都认的标准
+Trust is built through a standard everyone accepts
+
+93
+00:03:11,700 --> 00:03:12,933
+慢慢省出来的
+Slowly accumulated over time
+
+94
+00:03:13,033 --> 00:03:14,966
+你可能听过一句话
+You may have heard this before
+
+95
+00:03:15,233 --> 00:03:16,866
+秦始皇统一文字
+Qin Shi Huang unified the writing system
+
+96
+00:03:17,033 --> 00:03:17,966
+统一货币
+Unified the currency
+
+97
+00:03:18,166 --> 00:03:19,300
+统一度量衡
+Unified weights and measures
+
+98
+00:03:19,433 --> 00:03:20,800
+前两个很好理解
+The first two are easy to understand
+
+99
+00:03:20,966 --> 00:03:23,566
+文字不统一，政令传不下去
+Without unified writing decrees can't spread
+
+100
+00:03:23,766 --> 00:03:26,066
+货币不统一，买卖做不顺
+Without unified currency trade doesn't flow
+
+101
+00:03:26,533 --> 00:03:28,400
+但度量衡为什么也这么重要
+But why are weights and measures equally important
+
+102
+00:03:28,533 --> 00:03:30,966
+这事儿如果只放在课本里看
+If you only see this in a textbook
+
+103
+00:03:31,200 --> 00:03:33,133
+很容易变成一句背诵题
+It's easy to treat it as a memorization question
+
+104
+00:03:33,300 --> 00:03:36,266
+你把它放到生意里，就立刻明白了
+Put it in business and it clicks immediately
+
+105
+00:03:36,400 --> 00:03:38,566
+假设你是一个卖布的人
+Say you're a cloth merchant
+
+106
+00:03:38,700 --> 00:03:41,100
+你从这个县买进一匹布
+You buy a bolt of cloth in one county
+
+107
+00:03:41,300 --> 00:03:43,000
+到了另一个县再卖出去
+And sell it in another
+
+108
+00:03:43,166 --> 00:03:44,166
+问题来了
+Here's the problem
+
+109
+00:03:44,366 --> 00:03:46,133
+这边一尺是这么长
+One chi here is this long
+
+110
+00:03:46,333 --> 00:03:48,266
+那边一尺又是另一个长度
+One chi there is a different length
+
+111
+00:03:48,433 --> 00:03:50,100
+这边一斤是这么重
+One jin here weighs this much
+
+112
+00:03:50,233 --> 00:03:51,666
+那边一斤又差一点
+One jin there is slightly different
+
+113
+00:03:51,800 --> 00:03:55,000
+你每走一个地方，都要重新换算一次
+Every new place means recalculating
+
+114
+00:03:55,166 --> 00:03:57,000
+你还得防着对方占便宜
+You also have to guard against being shortchanged
+
+115
+00:03:57,233 --> 00:04:00,733
+最后你会发现，赚钱不难，算账最累
+Eventually you realize earning money isn't hard the accounting is exhausting
+
+116
+00:04:00,900 --> 00:04:02,466
+很多买卖不是做不成
+Many deals don't fail
+
+117
+00:04:02,700 --> 00:04:05,266
+是被不统一的标准磨没了
+They get ground down by inconsistent standards
+
+118
+00:04:05,500 --> 00:04:07,333
+统一度量衡做的
+What unifying weights and measures did
+
+119
+00:04:07,366 --> 00:04:09,333
+就是把这种麻烦先拿掉
+Was remove this hassle upfront
+
+120
+00:04:09,500 --> 00:04:11,200
+你从 A 地买的东西
+What you bought in place A
+
+121
+00:04:11,533 --> 00:04:13,266
+到了 B 地还能被理解
+Is still understood in place B
+
+122
+00:04:13,400 --> 00:04:15,900
+你在这个城市签的契约
+A contract signed in one city
+
+123
+00:04:16,166 --> 00:04:18,166
+到了另一个城市还能执行
+Can still be enforced in another
+
+124
+00:04:18,300 --> 00:04:19,600
+你卖的是一斤
+You sell one jin
+
+125
+00:04:19,933 --> 00:04:22,866
+别人听到一斤，知道你说的是什么
+Others hear one jin and know what you mean
+
+126
+00:04:23,000 --> 00:04:24,366
+这看起来很朴素
+This seems simple
+
+127
+00:04:24,566 --> 00:04:26,333
+但它让市场变大了
+But it made markets bigger
+
+128
+00:04:26,533 --> 00:04:28,800
+原来只能在熟人之间交易
+Before you could only trade with people you knew
+
+129
+00:04:28,966 --> 00:04:30,766
+后来可以跟陌生人交易
+Later you could trade with strangers
+
+130
+00:04:30,900 --> 00:04:32,800
+原来只能在一个村里做买卖
+Before you could only do business in one village
+
+131
+00:04:32,933 --> 00:04:35,266
+后来可以跨城 跨省 跨地区
+Later across cities provinces and regions
+
+132
+00:04:35,400 --> 00:04:37,800
+一个市场真正变大的标志
+The real sign of a market growing
+
+133
+00:04:37,800 --> 00:04:39,366
+不是人变聪明了
+Isn't that people got smarter
+
+134
+00:04:39,500 --> 00:04:41,966
+而是陌生人之间也能放心交易
+It's that strangers can trade with confidence
+
+135
+00:04:42,133 --> 00:04:44,900
+秤 尺 斗 升，这些东西很小
+Scales rulers measuring cups these are small things
+
+136
+00:04:45,033 --> 00:04:47,066
+但它们像一根根看不见的线
+But they're like invisible threads
+
+137
+00:04:47,233 --> 00:04:49,700
+把很多陌生地方缝到了一起
+Stitching unfamiliar places together
+
+138
+00:04:49,833 --> 00:04:51,466
+你今天网购也是这样
+Online shopping today works the same way
+
+139
+00:04:51,566 --> 00:04:52,900
+你没见过卖家
+You've never met the seller
+
+140
+00:04:53,100 --> 00:04:54,333
+卖家也没见过你
+The seller has never met you
+
+141
+00:04:54,500 --> 00:04:56,333
+你不知道仓库在哪里
+You don't know where the warehouse is
+
+142
+00:04:56,533 --> 00:04:58,066
+你也不知道快递员是谁
+You don't know who the courier is
+
+143
+00:04:58,166 --> 00:04:59,666
+但你敢下单
+But you still place the order
+
+144
+00:04:59,800 --> 00:05:00,866
+因为有标准
+Because there are standards
+
+145
+00:05:01,033 --> 00:05:02,166
+商品规格
+Product specifications
+
+146
+00:05:02,400 --> 00:05:03,700
+快递重量
+Shipping weight
+
+147
+00:05:03,833 --> 00:05:04,866
+平台规则
+Platform rules
+
+148
+00:05:05,100 --> 00:05:06,266
+售后流程
+Return policies
+
+149
+00:05:06,433 --> 00:05:07,333
+支付记录
+Payment records
+
+150
+00:05:07,500 --> 00:05:10,466
+这些东西加起来，就是今天的度量衡
+All these together are today's weights and measures
+
+151
+00:05:10,633 --> 00:05:13,300
+没有它们，电商就不是电商
+Without them e-commerce wouldn't be e-commerce
+
+152
+00:05:13,500 --> 00:05:17,100
+它会退回成一场大型讨价还价
+It would regress into one giant bargaining session
+
+153
+00:05:17,233 --> 00:05:18,266
+你会每天问
+You'd ask every day
+
+154
+00:05:18,366 --> 00:05:20,066
+这件衣服到底多大
+How big is this shirt really
+
+155
+00:05:20,233 --> 00:05:22,466
+这瓶东西到底多少毫升
+How many milliliters are actually in this bottle
+
+156
+00:05:22,633 --> 00:05:24,933
+这个快递到底是不是少发了
+Did this package really ship everything
+
+157
+00:05:25,100 --> 00:05:27,166
+你看，标准一旦消失
+You see once standards disappear
+
+158
+00:05:27,200 --> 00:05:28,966
+信任就要靠人肉补上
+Trust has to be filled in manually
+
+159
+00:05:29,166 --> 00:05:31,900
+而人肉补信任，是最贵的
+And manual trust is the most expensive kind
+
+160
+00:05:31,933 --> 00:05:34,566
+菜市场里有一种场面，你应该见过
+There's a scene at the market you've probably seen
+
+161
+00:05:34,700 --> 00:05:38,166
+东西卖贵了，顾客最多嘀咕两句
+If something's overpriced customers grumble a bit
+
+162
+00:05:38,366 --> 00:05:39,700
+下次不来了
+And don't come back
+
+163
+00:05:39,900 --> 00:05:41,733
+但如果发现缺斤少两
+But if they catch short-weighting
+
+164
+00:05:41,900 --> 00:05:43,300
+气氛马上就不一样
+The mood shifts instantly
+
+165
+00:05:43,433 --> 00:05:44,533
+人会生气
+People get angry
+
+166
+00:05:44,733 --> 00:05:45,800
+会拍视频
+They film it
+
+167
+00:05:46,133 --> 00:05:47,700
+会喊旁边人来看
+They call people over to see
+
+168
+00:05:47,933 --> 00:05:48,800
+为什么
+Why
+
+169
+00:05:49,000 --> 00:05:50,866
+明明损失可能就几块钱
+The loss might only be a few bucks
+
+170
+00:05:51,000 --> 00:05:54,333
+但那种火气，比单纯涨价大多了
+But the anger is way bigger than from a price hike
+
+171
+00:05:54,433 --> 00:05:56,866
+因为贵和骗，是两回事
+Because expensive and cheated are two different things
+
+172
+00:05:57,133 --> 00:05:59,100
+贵，是你明码标价
+Expensive means the price is clear
+
+173
+00:05:59,233 --> 00:06:00,366
+我可以不买
+I can choose not to buy
+
+174
+00:06:00,566 --> 00:06:03,566
+骗，是你把选择权藏起来
+Cheated means you hid my choice
+
+175
+00:06:03,633 --> 00:06:05,366
+等我付完钱才发现不对
+I only find out after paying
+
+176
+00:06:05,533 --> 00:06:09,500
+人对被骗的痛感，往往比对花钱更强
+Being cheated hurts more than spending money
+
+177
+00:06:09,633 --> 00:06:11,866
+这也是为什么很多生意毁掉
+That's why many businesses fail
+
+178
+00:06:12,100 --> 00:06:13,400
+不是因为价格高
+Not because prices are high
+
+179
+00:06:13,600 --> 00:06:15,566
+而是因为用户觉得秤不准
+But because users feel the scale is rigged
+
+180
+00:06:15,700 --> 00:06:17,100
+网约车绕路
+Ride-hailing taking detours
+
+181
+00:06:17,366 --> 00:06:18,666
+外卖分量缩水
+Food delivery portions shrinking
+
+182
+00:06:18,800 --> 00:06:20,733
+会员规则藏得太深
+Membership rules buried too deep
+
+183
+00:06:20,900 --> 00:06:23,066
+平台推荐看起来不透明
+Platform recommendations feeling opaque
+
+184
+00:06:23,233 --> 00:06:25,266
+你不一定能说清楚哪里不对
+You might not be able to articulate what's wrong
+
+185
+00:06:25,433 --> 00:06:27,066
+但你会有一种感觉
+But you get a feeling
+
+186
+00:06:27,200 --> 00:06:28,700
+我好像被算计了
+Like I've been played
+
+187
+00:06:28,800 --> 00:06:30,766
+这一下，信任就裂了
+And just like that trust cracks
+
+188
+00:06:30,900 --> 00:06:33,500
+而信任一旦裂开，修起来很慢
+Once cracked trust takes a long time to repair
+
+189
+00:06:33,700 --> 00:06:34,800
+商家可以打折
+Merchants can offer discounts
+
+190
+00:06:34,966 --> 00:06:35,966
+可以送券
+Give coupons
+
+191
+00:06:36,233 --> 00:06:37,300
+可以道歉
+Apologize
+
+192
+00:06:37,400 --> 00:06:40,466
+但顾客心里那杆秤，已经偏了一次
+But the customer's inner scale has already tilted once
+
+193
+00:06:40,633 --> 00:06:42,966
+下次再买，他会多想一下
+Next time they'll hesitate a moment longer
+
+194
+00:06:43,166 --> 00:06:44,966
+这一下，就是成本
+That hesitation is the cost
+
+195
+00:06:45,100 --> 00:06:47,300
+你看很多老店为什么能活很久
+Notice how many old shops survive so long
+
+196
+00:06:47,433 --> 00:06:48,966
+不一定是因为它最便宜
+Not necessarily because they're cheapest
+
+197
+00:06:49,333 --> 00:06:51,500
+也不一定是因为它装修最好
+Or because they have the best decor
+
+198
+00:06:51,700 --> 00:06:55,000
+而是你知道，它不会在秤上动手脚
+But because you know they won't tamper with the scale
+
+199
+00:06:55,166 --> 00:06:56,266
+它可能话不多
+They might not say much
+
+200
+00:06:56,533 --> 00:06:57,700
+菜单也不花哨
+The menu isn't fancy
+
+201
+00:06:57,833 --> 00:07:00,100
+但你坐下来，心里是稳的
+But when you sit down you feel secure
+
+202
+00:07:00,233 --> 00:07:02,500
+这种稳，就是品牌
+That sense of security is a brand
+
+203
+00:07:02,766 --> 00:07:04,900
+品牌不是广告里喊出来的
+A brand isn't something shouted in ads
+
+204
+00:07:05,000 --> 00:07:07,600
+品牌是很多次小交易里
+A brand is built through many small transactions
+
+205
+00:07:07,633 --> 00:07:09,100
+你没有被坑出来的
+Where you weren't ripped off
+
+206
+00:07:09,200 --> 00:07:11,900
+一杆秤如果准，顾客不一定夸你
+If the scale is accurate customers won't necessarily praise you
+
+207
+00:07:12,033 --> 00:07:15,366
+但一杆秤如果不准，顾客一定记得你
+But if it's not they'll definitely remember
+
+208
+00:07:15,533 --> 00:07:17,500
+所以真正会做生意的人
+So people who truly know business
+
+209
+00:07:17,700 --> 00:07:19,933
+都会爱惜那杆看不见的秤
+All cherish that invisible scale
+
+210
+00:07:20,133 --> 00:07:21,366
+它可能是价格表
+It could be a price list
+
+211
+00:07:21,600 --> 00:07:23,266
+可能是退货规则
+A return policy
+
+212
+00:07:23,433 --> 00:07:25,066
+可能是客服承诺
+A customer service promise
+
+213
+00:07:25,233 --> 00:07:28,000
+也可能是你每次说到做到的习惯
+Or your habit of always keeping your word
+
+214
+00:07:28,133 --> 00:07:29,300
+别小看这些东西
+Don't underestimate these things
+
+215
+00:07:29,533 --> 00:07:31,500
+它们不一定马上让你赚钱
+They might not make you money right away
+
+216
+00:07:31,700 --> 00:07:34,500
+但它们让别人愿意下一次还找你
+But they make people want to come back next time
+
+217
+00:07:34,533 --> 00:07:36,966
+现在我们把那杆菜市场的秤
+Now let's take that market scale
+
+218
+00:07:36,966 --> 00:07:38,066
+搬到手机里
+And move it into your phone
+
+219
+00:07:38,166 --> 00:07:40,166
+你点外卖，看评分
+You order food and check ratings
+
+220
+00:07:40,333 --> 00:07:42,500
+你打车，看司机星级
+You hail a ride and check the driver's stars
+
+221
+00:07:42,700 --> 00:07:45,466
+你住酒店，看评论
+You book a hotel and read reviews
+
+222
+00:07:45,566 --> 00:07:47,900
+你买东西，看销量和差评
+You shop and check sales and negative reviews
+
+223
+00:07:48,033 --> 00:07:50,900
+你找工作，平台看你的履历
+You job hunt and platforms check your resume
+
+224
+00:07:51,033 --> 00:07:54,500
+你申请贷款，系统看你的信用记录
+You apply for a loan and systems check your credit
+
+225
+00:07:54,633 --> 00:07:56,800
+这些东西，都是秤
+All of these are scales
+
+226
+00:07:57,000 --> 00:07:59,333
+只是它们称的不是重量
+They just don't weigh physical weight
+
+227
+00:07:59,500 --> 00:08:01,300
+它们称的是可信度
+They weigh trustworthiness
+
+228
+00:08:01,500 --> 00:08:02,733
+这听起来挺方便
+Sounds pretty convenient
+
+229
+00:08:02,900 --> 00:08:05,700
+以前你要认识一个人，要靠熟人介绍
+Before you needed personal introductions to know someone
+
+230
+00:08:05,833 --> 00:08:08,866
+现在一个评分 一串记录 一堆评论
+Now a rating a record a bunch of reviews
+
+231
+00:08:08,900 --> 00:08:10,566
+就能帮你先判断一遍
+Can help you judge first
+
+232
+00:08:10,700 --> 00:08:13,066
+它确实让很多交易变快了
+It really has sped up many transactions
+
+233
+00:08:13,233 --> 00:08:14,666
+但问题也在这里
+But the problem is also here
+
+234
+00:08:14,800 --> 00:08:16,866
+菜市场的秤，你还能看见
+At the market you can at least see the scale
+
+235
+00:08:17,033 --> 00:08:18,100
+电子秤坏了
+If the digital scale breaks
+
+236
+00:08:18,100 --> 00:08:19,933
+你至少知道自己怀疑什么
+You at least know what to question
+
+237
+00:08:20,100 --> 00:08:23,133
+可手机里的秤，很多时候你看不见
+But the scale in your phone is often invisible
+
+238
+00:08:23,300 --> 00:08:25,766
+平台为什么给这家店更多流量
+Why does the platform give this shop more traffic
+
+239
+00:08:25,966 --> 00:08:28,500
+算法为什么先推荐这个商品
+Why does the algorithm recommend this product first
+
+240
+00:08:28,633 --> 00:08:30,500
+系统为什么觉得你风险高
+Why does the system think you're high risk
+
+241
+00:08:30,733 --> 00:08:32,866
+AI 为什么给出这个判断
+Why does AI make this judgment
+
+242
+00:08:33,000 --> 00:08:34,566
+你看到的是结果
+You see the result
+
+243
+00:08:34,700 --> 00:08:36,133
+但你看不到它怎么称
+But not how it weighed
+
+244
+00:08:36,333 --> 00:08:37,666
+这就带来一个新问题
+This raises a new problem
+
+245
+00:08:37,933 --> 00:08:39,666
+过去我们怕缺斤少两
+Before we feared short weight
+
+246
+00:08:39,800 --> 00:08:41,166
+现在我们怕的是
+Now we fear
+
+247
+00:08:41,366 --> 00:08:44,266
+被一杆看不见的秤悄悄称完
+Being silently weighed by an invisible scale
+
+248
+00:08:44,433 --> 00:08:45,966
+你可能没有做错什么
+You might not have done anything wrong
+
+249
+00:08:46,133 --> 00:08:49,266
+但因为某些记录 标签 模型判断
+But because of certain records tags or model judgments
+
+250
+00:08:49,566 --> 00:08:51,600
+你被分到一个更贵的价格
+You get assigned a higher price
+
+251
+00:08:51,733 --> 00:08:53,300
+一个更低的推荐
+A lower recommendation
+
+252
+00:08:53,400 --> 00:08:54,900
+一个更差的机会
+A worse opportunity
+
+253
+00:08:55,000 --> 00:08:56,066
+这不是科幻
+This isn't sci-fi
+
+254
+00:08:56,166 --> 00:08:57,933
+你日常已经在遇到了
+You encounter it daily
+
+255
+00:08:58,033 --> 00:08:59,133
+同一个酒店
+Same hotel
+
+256
+00:08:59,166 --> 00:09:01,566
+不同账号看到的排序可能不一样
+Different accounts see different rankings
+
+257
+00:09:01,766 --> 00:09:02,966
+同一个商品
+Same product
+
+258
+00:09:03,100 --> 00:09:06,100
+老用户和新用户拿到的优惠可能不一样
+New and old users get different discounts
+
+259
+00:09:06,333 --> 00:09:09,066
+同一段内容，有的人被推荐
+Same content gets recommended to some
+
+260
+00:09:09,533 --> 00:09:12,000
+有的人连被看见的机会都没有
+While others don't even get a chance to be seen
+
+261
+00:09:12,200 --> 00:09:15,300
+这时候，问题就不只是秤准不准
+Now the question isn't just whether the scale is accurate
+
+262
+00:09:15,500 --> 00:09:18,600
+还包括谁有权校准这杆秤
+It's also who has the right to calibrate it
+
+263
+00:09:18,833 --> 00:09:20,000
+谁能解释它
+Who can explain it
+
+264
+00:09:20,300 --> 00:09:21,566
+谁能申诉它
+Who can appeal it
+
+265
+00:09:21,766 --> 00:09:25,466
+谁能在它称错的时候，把数字改回来
+Who can correct the number when it weighs wrong
+
+266
+00:09:25,600 --> 00:09:28,466
+对普通人来说，这里有三个小判断
+For ordinary people here are three small guidelines
+
+267
+00:09:28,633 --> 00:09:32,033
+第一，凡是关系到钱和机会的评分
+First for any rating involving money or opportunities
+
+268
+00:09:32,033 --> 00:09:33,733
+都不要只看一个平台
+Don't rely on just one platform
+
+269
+00:09:33,900 --> 00:09:36,333
+多看一个来源，就是多一杆秤
+One more source is one more scale
+
+270
+00:09:36,533 --> 00:09:38,900
+第二，遇到不透明的规则
+Second when facing opaque rules
+
+271
+00:09:39,200 --> 00:09:40,300
+先别急着骂
+Don't rush to curse
+
+272
+00:09:40,500 --> 00:09:42,200
+把截图 记录 时间留好
+Save screenshots records and timestamps
+
+273
+00:09:42,366 --> 00:09:43,866
+因为看不见的秤
+Because invisible scales
+
+274
+00:09:43,900 --> 00:09:46,300
+最怕被具体证据照出来
+Fear concrete evidence the most
+
+275
+00:09:46,500 --> 00:09:48,933
+第三，不要把自己的信用
+Third don't stake your credit
+
+276
+00:09:48,966 --> 00:09:50,933
+只押在一个入口上
+On just one gateway
+
+277
+00:09:51,100 --> 00:09:52,766
+一个账号 一个平台 一个模型
+One account one platform one model
+
+278
+00:09:52,766 --> 00:09:54,700
+不能决定你全部的价值
+Cannot determine your full worth
+
+279
+00:09:54,800 --> 00:09:57,366
+你要给自己留几杆备用的秤
+Keep a few backup scales for yourself
+
+280
+00:09:57,600 --> 00:09:58,966
+作品是一杆秤
+Your portfolio is a scale
+
+281
+00:09:59,233 --> 00:10:01,266
+客户反馈是一杆秤
+Client feedback is a scale
+
+282
+00:10:01,433 --> 00:10:02,900
+朋友推荐是一杆秤
+Friend referrals are a scale
+
+283
+00:10:03,133 --> 00:10:05,966
+长期稳定的交付，也是一杆秤
+Consistent long-term delivery is also a scale
+
+284
+00:10:06,133 --> 00:10:07,333
+最后回到菜市场
+Finally back to the market
+
+285
+00:10:07,566 --> 00:10:11,000
+那杆秤放在摊位上，很安静
+The scale sits on the stall very quiet
+
+286
+00:10:11,166 --> 00:10:14,200
+你付钱的时候，可能连看都没认真看
+When you pay you might not even look closely
+
+287
+00:10:14,366 --> 00:10:15,700
+但只要它不准
+But if it's inaccurate
+
+288
+00:10:15,833 --> 00:10:18,100
+一条街的信任都会跟着晃一下
+The trust of a whole street wavers
+
+289
+00:10:18,300 --> 00:10:21,300
+市场不是靠大家都善良才运转
+Markets don't run because everyone is kind
+
+290
+00:10:21,500 --> 00:10:24,533
+市场是靠大家都有一杆愿意承认的秤
+Markets run because everyone accepts a common scale
+
+291
+00:10:24,733 --> 00:10:26,733
+下次你看到秤上的数字
+Next time you see a number on a scale
+
+292
+00:10:26,966 --> 00:10:28,300
+可以多停一秒
+Pause for an extra second
+
+293
+00:10:28,433 --> 00:10:30,366
+它称出来的不是一斤苹果
+It's not weighing a jin of apples
+
+294
+00:10:30,566 --> 00:10:32,933
+是你愿不愿意相信眼前这个人
+It's weighing whether you're willing to trust the person in front of you
+
+295
+00:10:33,133 --> 00:10:34,633
+也是这个世界
+And whether this world
+
+296
+00:10:34,633 --> 00:10:37,200
+愿不愿意把买卖做得轻松一点
+Is willing to make trade a little easier
