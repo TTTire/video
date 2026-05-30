@@ -1,86 +1,88 @@
 # 像素呼吸封面图片通用 Prompt
 
-> 用途：给 `gpt-image2` 生成抖音认知类视频封面底图，保持「日常物品经济学」系列统一视觉。
+> 用途：给 **GPT-image / DALL·E** 生成抖音认知类视频封面底图，保持「日常物品经济学」系列统一视觉。
 > 推荐做法：先用无字版生成封面底图，再在剪映/设计工具里统一加标题文字，这样系列感更稳定。
+>
+> **GPT-image 写法要点**：以正向描述为主，少用否定词（模型对一长串 `Do not...` 基本不理会）。把否定项压成一句简短结尾即可。
+
+## 〇、画幅怎么填（横竖通用）
+
+本系列同一个画面要能出 **3:4 竖版** 和 **4:3 横版**，画面内容不变，只换画幅。
+
+- 想要竖版：`[画幅]` 填 `3:4 (portrait)`
+- 想要横版：`[画幅]` 填 `4:3 (landscape)`
+- 为了横竖都不崩：构图统一让物品**居中、四周留出呼吸空间**，标题暗部留白放在**顶部**而不是侧边。
 
 ## 一、统一封面风格
 
-- 画幅：竖版 3:4
 - 主题：日常物品经济学。
 - 视觉承诺：一个普通物品，背后连接一个社会规则。
-- 构图：单个核心物品占画面 45%-60%，位于画面中上部或中央偏下。
-- 标题区：画面上方或中部保留大块干净留白，方便后期加 8-12 个中文字。
-- 风格：高级、克制、电影感、轻微像素质感、真实摄影与概念海报结合。
+- 构图：单个核心物品占画面 45%-60%，居中或略偏下，四周留呼吸感（保证横竖两版都成立）。
+- 标题区：画面**顶部**保留一块干净、偏暗、带轻微压暗渐变的留白，方便后期加 8-12 个中文字，白字能压得住。
+- 风格：高级、克制、电影感、**真实摄影**为主，概念海报为辅。
+- 质感关键词（治"廉价3D"）：实拍质感、真实材质、影棚布光、中画幅相机、浅景深、细腻表面细节。
 - 色彩：深色背景 + 暖色主光 + 少量青绿色/金色点缀。
-- 品牌感：统一使用暗色背景、强对比光影、物品大特写、干净留白。
-- 避免：杂乱背景、过多人物、卡通风、廉价 3D、夸张霓虹、过度赛博朋克、模型生成的乱码文字。
+- 品牌感：统一暗色背景、强对比光影、物品大特写、顶部干净留白。
+- 避免：杂乱背景、过多人物、卡通、廉价 3D/CGI 渲染感、夸张霓虹、过度赛博朋克、乱码文字。
 
-## 二、推荐无字版 Prompt
+## 二、推荐无字版 Prompt（主用）
 
-把下面的 `[变量]` 替换成当前选题即可。
+把下面的 `[变量]` 替换成当前选题即可。`[画幅]` 按第〇节填写。
 
 ```text
-Create a vertical 9:16 Douyin short-video cover image for a Chinese knowledge account named "像素呼吸".
+A premium [画幅] cover image for a Chinese knowledge channel, in the visual series "daily object economics" — one ordinary object that quietly reveals one hidden social rule.
 
-Series visual identity: "daily object economics" — one ordinary object reveals one hidden social rule.
-
-Main object: [物品].
-Core metaphor: [核心机制].
-Emotional tension: [现实痛点].
+Hero object: [物品]. Render it as a real, physical object captured with professional product photography.
+Core idea behind the object: [核心机制].
+Emotional undertone: [现实痛点].
 
 Composition:
-- one large, highly recognizable [物品] as the hero object
-- the object should occupy about 45% to 60% of the frame
-- place the object in the center or slightly lower center
-- leave a clean dark negative space area in the upper third for Chinese title text added later
-- use a strong diagonal light beam or warm spotlight to make the object feel important
-- add subtle background hints related to [相关场景], but keep them blurred and secondary
+- one large, instantly recognizable [物品] as the single hero, centered with breathing room on all sides so the same framing works in both portrait and landscape
+- the object occupies about 45% to 60% of the frame, in sharp focus
+- keep the top portion as a clean, darker, slightly vignetted negative space, reserved for Chinese title text added later
+- a single directional warm spotlight or soft diagonal light beam makes the object feel important and a little dramatic
+- faint, blurred background hints of [相关场景] far behind the object, kept dark and secondary, never cluttered
 
-Visual style:
-- premium cinematic editorial poster
-- realistic object photography mixed with conceptual visual storytelling
-- dark charcoal background, warm amber key light, subtle teal shadows
-- restrained, modern, intelligent, not flashy
-- slight pixel-grain texture as a subtle brand signature for "像素呼吸"
-- sharp focus on the object, shallow depth of field
-- high contrast, clean layout, strong readability on a phone screen
+Look and feel:
+- photographed, not a 3D render and not CGI — real materials with believable surface texture, fine grain, micro-scratches and natural wear
+- shot on a medium-format camera, 85mm lens, shallow depth of field, gentle bokeh
+- cinematic editorial poster mood, chiaroscuro lighting like a careful studio still life
+- dark charcoal background, warm amber key light, subtle teal shadows, rich high contrast
+- restrained, modern, intelligent, expensive-looking — not flashy, not neon
+- very subtle film grain as a quiet brand texture; the image must read clearly as a phone thumbnail
 
-Do not include any text, letters, logos, watermark, subtitles, messy UI, extra hands, distorted objects, low-quality rendering, cartoon style, cheap 3D style, or cluttered background.
+Keep it clean: no text, no letters, no logo, no watermark, no extra hands, no cartoon or cheap 3D style, no messy background.
 ```
 
-## 三、带字版 Prompt
+## 三、带字版 Prompt（仅测试用）
 
-如果你希望模型直接生成带标题的封面，用这个版本。但中文文字容易不稳定，建议只在测试时使用。
+GPT-image 中文渲染比以前稳，但仍可能出错或断字，**正式封面还是建议无字版 + 后期加字**。
 
 ```text
-Create a vertical 9:16 Douyin short-video cover image for a Chinese knowledge account named "像素呼吸".
+A premium [画幅] cover image for a Chinese knowledge channel named "像素呼吸", in the series "daily object economics".
 
-Main title text, in accurate simplified Chinese:
+Main title, in large bold accurate Simplified Chinese, placed across the top portion:
 "[封面标题]"
-
-Small brand text:
+Small brand text in a bottom corner, subtle:
 "像素呼吸"
 
-Main object: [物品].
-Core metaphor: [核心机制].
-Scene hints: [相关场景].
+Hero object: [物品], shot as a real physical object with professional product photography.
+Core idea: [核心机制]. Background hints: [相关场景], blurred and secondary.
 
 Composition:
-- one large [物品] as the visual center
-- keep the title in the upper third, large bold Chinese typography, white or warm off-white
-- put the small brand text near the lower corner, subtle and clean
-- leave enough spacing around all text
-- title must be clearly readable on a mobile phone screen
+- one large [物品] centered with breathing room, occupying 45%-60% of the frame, sharp focus
+- title sits in the top portion over a clean darker area, big bold modern sans-serif, white or warm off-white, strong contrast so it pops on a phone
+- small brand text near a lower corner, clean, not competing with the title
+- generous spacing around all text; title must be crisp and readable as a thumbnail
 
-Visual style:
-- premium cinematic editorial poster
-- realistic object photography mixed with conceptual visual storytelling
-- dark charcoal background, warm amber key light, subtle teal shadows
-- restrained, modern, intelligent
-- slight pixel-grain texture
-- high contrast, clean layout, no clutter
+Look and feel:
+- photographed, not a 3D render and not CGI — real materials, believable texture, fine grain
+- medium-format camera, 85mm lens, shallow depth of field
+- cinematic editorial poster, chiaroscuro studio lighting
+- dark charcoal background, warm amber key light, subtle teal shadows, high contrast
+- restrained, modern, expensive-looking, very subtle film grain
 
-The Chinese text must be exact and readable. Do not add extra text, random characters, watermark, subtitles, messy UI, distorted objects, cartoon style, cheap 3D style, or cluttered background.
+The Chinese text must be exact and clean. Keep it clean: no random characters, no watermark, no messy UI, no cartoon or cheap 3D style, no cluttered background.
 ```
 
 ## 四、统一标题模板
@@ -165,11 +167,13 @@ The Chinese text must be exact and readable. Do not add extra text, random chara
 [封面标题]：一枚印章代表信用
 ```
 
-## 六、后期加字规范
+## 六、后期加字规范（治"标题不吸睛"）
 
-- 主标题：白色或暖白色，粗体，8-12 字以内。
-- 字体气质：黑体、思源黑体、阿里巴巴普惠体、HarmonyOS Sans 这类现代无衬线。
-- 标题位置：上方三分之一，不要压住主体物品。
-- 字号：手机缩略图里也要能一眼读清。
-- 辅助字：尽量不用；如果必须用，控制在 4-6 字，例如“信任成本”“社交货币”。
-- 品牌字：右下角小字“像素呼吸”，不要抢标题。
+- 主标题：白色或暖白色，**粗体/特粗**，8-12 字以内，宁可少字也要大。
+- 字号：占满标题宽度的大部分，手机缩略图里一眼能读清；不够大就再放大。
+- 对比：底图顶部本身偏暗；如还压不住，给标题加一层**轻微深色渐变/半透明色块**或细描边，保证白字不糊在背景里。
+- 字体气质：思源黑体、阿里巴巴普惠体、HarmonyOS Sans 这类现代无衬线粗体。
+- 标题位置：顶部留白区，不要压住主体物品。
+- 关键词高亮：可把标题里最反直觉的 2-3 个字换成**暖黄/青绿**点缀色，制造视觉钩子（如「不是**重量**」「藏着**安全感**」）。
+- 辅助字：尽量不用；必须用时控制 4-6 字，如"信任成本""社交货币"。
+- 品牌字：右下角小字"像素呼吸"，低调，不抢标题。
