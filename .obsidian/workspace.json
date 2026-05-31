@@ -70,7 +70,8 @@
               "title": "文件列表"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -188,7 +189,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "24539881b4848dcc",
+  "active": "77d53f18c954c70d",
   "lastOpenFiles": [
     "封面图片通用Prompt.md.tmp.40240.4ee27060711e",
     "进行中/18-为什么你总在深夜下单/为什么你总在深夜下单-口播逐字稿.md",
