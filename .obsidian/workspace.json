@@ -169,13 +169,23 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "9a3f37308622f2cf",
+            "type": "leaf",
+            "state": {
+              "type": "claudian-view",
+              "state": {},
+              "icon": "bot",
+              "title": "Claudian"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 556.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -187,11 +197,13 @@
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
       "obsidian-git:Open Git source control": false,
-      "copilot:Open Copilot Chat": false
+      "copilot:Open Copilot Chat": false,
+      "realclaudian:Open Claudian": false
     }
   },
-  "active": "5ecaf56758f0b4e5",
+  "active": "63ec70c973b2d9bf",
   "lastOpenFiles": [
+    "进行中/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-发布清单.md",
     "copilot/copilot-custom-prompts/Clip Web Page.md",
     "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
     "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
@@ -226,7 +238,6 @@
     "已完成/18-为什么你总在深夜下单/为什么你总在深夜下单-封面Prompt.md",
     "已完成/18-为什么你总在深夜下单/为什么你总在深夜下单-口播逐字稿-剪映版.md",
     "已完成/18-为什么你总在深夜下单/为什么你总在深夜下单-口播逐字稿.md",
-    "已完成/18-为什么你总在深夜下单/为什么你总在深夜下单-发布清单.md",
-    "进行中/18-为什么你总在深夜下单/为什么你总在深夜下单-口播逐字稿.md"
+    "已完成/18-为什么你总在深夜下单/为什么你总在深夜下单-发布清单.md"
   ]
 }
