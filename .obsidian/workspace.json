@@ -11,14 +11,10 @@
             "id": "63ec70c973b2d9bf",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "进行中/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-发布清单.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "外卖越来越贵其实不是商家变坏-发布清单"
+              "title": "新标签页"
             }
           }
         ]
@@ -190,46 +186,47 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "copilot:Open Copilot Chat": false
     }
   },
-  "active": "63ec70c973b2d9bf",
+  "active": "5ecaf56758f0b4e5",
   "lastOpenFiles": [
+    "copilot/copilot-custom-prompts/Clip Web Page.md",
+    "copilot/copilot-custom-prompts/Clip YouTube Transcript.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet thread.md",
+    "copilot/copilot-custom-prompts/Rewrite as tweet.md",
+    "copilot/copilot-custom-prompts/Remove URLs.md",
+    "copilot/copilot-custom-prompts/Generate glossary.md",
+    "copilot/copilot-custom-prompts/Generate table of contents.md",
+    "copilot/copilot-custom-prompts/Make longer.md",
+    "copilot/copilot-custom-prompts/Make shorter.md",
+    "copilot/copilot-custom-prompts/Emojify.md",
+    "copilot/copilot-custom-prompts/Explain like I am 5.md",
+    "copilot/copilot-custom-prompts/Simplify.md",
+    "copilot/copilot-custom-prompts/Summarize.md",
+    "copilot/copilot-custom-prompts/Translate to Chinese.md",
+    "copilot/copilot-custom-prompts/Fix grammar and spelling.md",
+    "copilot/copilot-custom-prompts",
+    "copilot",
+    "已完成/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-英文字幕.srt",
+    "已完成/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-口播逐字稿.md",
+    "已完成/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-口播逐字稿-剪映版.md",
+    "已完成/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-发布清单.md",
+    "已完成/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-双语字幕.srt",
+    "已完成/19-外卖越来越贵其实不是商家变坏/外卖变坏.srt",
+    "已完成/19-外卖越来越贵其实不是商家变坏",
     "进行中/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-口播逐字稿.md",
     "进行中/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-口播逐字稿-剪映版.md",
     "进行中/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-英文字幕.srt",
     "进行中/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-英文字幕.srt.tmp.39672.ee61c103eda0",
     "进行中/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-双语字幕.srt",
     "进行中/19-外卖越来越贵其实不是商家变坏/外卖越来越贵其实不是商家变坏-双语字幕.srt.tmp.39672.ba8196ce5ebf",
-    "进行中/19-外卖越来越贵其实不是商家变坏/外卖变坏.srt",
     "进行中/18-为什么你总在深夜下单/为什么你总在深夜下单-发布清单.md",
-    "已完成/18-为什么你总在深夜下单/深夜下单.srt",
     "已完成/18-为什么你总在深夜下单/为什么你总在深夜下单-封面Prompt.md",
-    "已完成/18-为什么你总在深夜下单/深夜下单-英文字幕.srt",
-    "已完成/18-为什么你总在深夜下单/深夜下单-双语字幕.srt",
     "已完成/18-为什么你总在深夜下单/为什么你总在深夜下单-口播逐字稿-剪映版.md",
     "已完成/18-为什么你总在深夜下单/为什么你总在深夜下单-口播逐字稿.md",
     "已完成/18-为什么你总在深夜下单/为什么你总在深夜下单-发布清单.md",
-    "已完成/18-为什么你总在深夜下单",
-    "进行中/18-为什么你总在深夜下单/为什么你总在深夜下单-口播逐字稿.md",
-    "进行中/18-为什么你总在深夜下单/为什么你总在深夜下单-口播逐字稿-剪映版.md",
-    "进行中/18-为什么你总在深夜下单/深夜下单-英文字幕.srt",
-    "已完成/17-一枚印章为什么能代表权力和信用/一枚印章为什么能代表权力和信用-口播逐字稿.md",
-    "已完成/17-一枚印章为什么能代表权力和信用/一枚印章为什么能代表权力和信用-口播逐字稿-剪映版.md",
-    "已完成/17-一枚印章为什么能代表权力和信用/一枚印章为什么能代表权力和信用-发布清单.md",
-    "进行中/17-一枚印章为什么能代表权力和信用/一枚印章为什么能代表权力和信用-发布清单.md",
-    "进行中/17-一枚印章为什么能代表权力和信用/一枚印章为什么能代表权力和信用-口播逐字稿.md",
-    "进行中/17-一枚印章为什么能代表权力和信用/一枚印章为什么能代表权力和信用-口播逐字稿-剪映版.md",
-    "进行中/17-一枚印章为什么能代表权力和信用/一枚印章为什么能代表权力和信用-口播逐字稿-剪映版-tmp.md",
-    "待写选题.md",
-    "进行中/16-一枚铜钱为什么让普通人越来越焦虑/一枚铜钱为什么让普通人越来越焦虑-发布清单.md",
-    "已完成/16-一枚铜钱为什么让普通人越来越焦虑/一枚铜钱为什么让普通人越来越焦虑-口播逐字稿.md",
-    "已完成/16-一枚铜钱为什么让普通人越来越焦虑/一枚铜钱为什么让普通人越来越焦虑-口播逐字稿-剪映版.md",
-    "已完成/16-一枚铜钱为什么让普通人越来越焦虑/一枚铜钱为什么让普通人越来越焦虑-发布清单.md",
-    "进行中/16-一枚铜钱为什么让普通人越来越焦虑/一枚铜钱为什么让普通人越来越焦虑-口播逐字稿.md",
-    "进行中/16-一枚铜钱为什么让普通人越来越焦虑/一枚铜钱为什么让普通人越来越焦虑-口播逐字稿-剪映版.md",
-    "conflict-files-obsidian-git.md",
-    "进行中/21-陶渊明为什么不是躺平而是主动降本/陶渊明为什么不是躺平而是主动降本-口播逐字稿.md",
-    "进行中/21-陶渊明为什么不是躺平而是主动降本/陶渊明为什么不是躺平而是主动降本-口播逐字稿-剪映版.md"
+    "进行中/18-为什么你总在深夜下单/为什么你总在深夜下单-口播逐字稿.md"
   ]
 }
