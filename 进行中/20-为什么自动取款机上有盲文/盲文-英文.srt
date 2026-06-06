@@ -1,0 +1,1223 @@
+1
+00:00:00,366 --> 00:00:03,866
+Let me tell you something you've probably never really thought about
+
+2
+00:00:03,866 --> 00:00:06,233
+When you type your PIN at an ATM
+
+3
+00:00:06,233 --> 00:00:08,433
+have you ever looked down at those keys
+
+4
+00:00:09,066 --> 00:00:10,633
+On almost every number key
+
+5
+00:00:10,633 --> 00:00:12,600
+there's a row of raised dots
+
+6
+00:00:13,166 --> 00:00:13,966
+That's Braille
+
+7
+00:00:13,966 --> 00:00:15,833
+The first time people notice it
+
+8
+00:00:16,466 --> 00:00:18,166
+a question pops into their head
+
+9
+00:00:18,266 --> 00:00:20,566
+Would a blind person come withdraw cash alone
+
+10
+00:00:20,566 --> 00:00:22,133
+Even if they can feel out the numbers
+
+11
+00:00:22,133 --> 00:00:24,200
+how would they know what's on the screen
+
+12
+00:00:24,200 --> 00:00:26,566
+or which machine they walked up to
+
+13
+00:00:26,933 --> 00:00:28,066
+Just a few dots
+
+14
+00:00:28,066 --> 00:00:31,000
+hardly seem enough to handle the whole thing
+
+15
+00:00:31,433 --> 00:00:33,600
+So a lot of people instinctively think
+
+16
+00:00:33,600 --> 00:00:34,966
+isn't this just for show
+
+17
+00:00:34,966 --> 00:00:36,166
+just sitting there looking nice
+
+18
+00:00:36,633 --> 00:00:37,900
+a waste of money
+
+19
+00:00:38,666 --> 00:00:41,366
+But here's a fact that's exactly the opposite
+
+20
+00:00:41,366 --> 00:00:42,966
+Even if very few people use it
+
+21
+00:00:42,966 --> 00:00:44,533
+keeping this Braille
+
+22
+00:00:45,033 --> 00:00:46,733
+is actually the cheaper choice
+
+23
+00:00:46,733 --> 00:00:47,833
+What's really expensive
+
+24
+00:00:48,366 --> 00:00:51,100
+is making a separate batch of keypads without Braille
+
+25
+00:00:52,000 --> 00:00:53,566
+Don't rush to argue yet
+
+26
+00:00:53,566 --> 00:00:56,233
+This video starts from this one contrast
+
+27
+00:00:56,233 --> 00:00:57,066
+We always assume
+
+28
+00:00:57,066 --> 00:00:59,166
+something you don't use is a waste
+
+29
+00:00:59,466 --> 00:01:00,566
+But a lot of the time
+
+30
+00:01:00,566 --> 00:01:02,666
+leaving an entrance for those who can't
+
+31
+00:01:02,666 --> 00:01:04,566
+is actually the smarter move
+
+32
+00:01:05,066 --> 00:01:06,866
+This video isn't about trivia
+
+33
+00:01:06,866 --> 00:01:08,266
+nor about machine parts
+
+34
+00:01:08,266 --> 00:01:09,666
+It drives home one judgment
+
+35
+00:01:09,666 --> 00:01:11,366
+whether something is worth doing
+
+36
+00:01:11,366 --> 00:01:13,500
+isn't just about how many use it daily
+
+37
+00:01:14,066 --> 00:01:15,733
+It's also about whether without it
+
+38
+00:01:15,766 --> 00:01:18,300
+someone quietly gets shut out
+
+39
+00:01:18,666 --> 00:01:20,733
+Let's fully unpack the first contrast
+
+40
+00:01:20,733 --> 00:01:23,600
+Why do makers add Braille to every machine
+
+41
+00:01:23,600 --> 00:01:25,433
+even where it's rarely used
+
+42
+00:01:26,000 --> 00:01:27,266
+The answer is simple
+
+43
+00:01:27,266 --> 00:01:30,066
+because making one kind of keypad for all machines
+
+44
+00:01:30,066 --> 00:01:32,000
+is cheaper than making two
+
+45
+00:01:32,933 --> 00:01:35,166
+Think about how a factory works
+
+46
+00:01:35,166 --> 00:01:36,600
+One mold is made
+
+47
+00:01:36,600 --> 00:01:38,966
+and thousands of keypads are pressed together
+
+48
+00:01:38,966 --> 00:01:40,666
+You only stock one type
+
+49
+00:01:40,666 --> 00:01:42,433
+workers don't have to sort them
+
+50
+00:01:42,433 --> 00:01:44,200
+repairs don't have to tell them apart
+
+51
+00:01:44,733 --> 00:01:47,400
+This is the easiest and cheapest way
+
+52
+00:01:47,966 --> 00:01:49,366
+But say someone proposes
+
+53
+00:01:49,366 --> 00:01:51,333
+blind folks don't use it in most places
+
+54
+00:01:51,333 --> 00:01:53,700
+so let's make a batch without Braille
+
+55
+00:01:54,233 --> 00:01:56,733
+It sounds like you'd save a few percent
+
+56
+00:01:57,566 --> 00:01:58,433
+but in reality
+
+57
+00:01:58,433 --> 00:01:59,966
+you'd open another mold
+
+58
+00:01:59,966 --> 00:02:00,966
+run another line
+
+59
+00:02:00,966 --> 00:02:02,200
+stock another type
+
+60
+00:02:02,866 --> 00:02:05,000
+and redo it when workers mix them up
+
+61
+00:02:05,600 --> 00:02:06,433
+In the end
+
+62
+00:02:06,433 --> 00:02:08,233
+to remove those few dots
+
+63
+00:02:09,133 --> 00:02:11,500
+you spend far more than keeping them
+
+64
+00:02:12,233 --> 00:02:13,733
+That's the first contrast
+
+65
+00:02:13,733 --> 00:02:14,866
+Our gut says
+
+66
+00:02:14,866 --> 00:02:17,400
+caring for the few means extra spending
+
+67
+00:02:18,033 --> 00:02:19,233
+But in this case
+
+68
+00:02:19,233 --> 00:02:21,966
+caring for the few is the cheaper path
+
+69
+00:02:22,266 --> 00:02:23,566
+Shutting people out
+
+70
+00:02:23,566 --> 00:02:25,800
+actually costs extra money to do
+
+71
+00:02:26,233 --> 00:02:27,833
+I know you might say
+
+72
+00:02:27,833 --> 00:02:29,566
+isn't this just convenient
+
+73
+00:02:29,566 --> 00:02:31,300
+the makers aren't being kind
+
+74
+00:02:31,600 --> 00:02:32,400
+Right
+
+75
+00:02:32,933 --> 00:02:34,866
+But that's exactly my point
+
+76
+00:02:34,866 --> 00:02:37,266
+When leaving an entrance becomes the default
+
+77
+00:02:37,266 --> 00:02:38,900
+the cost of caring for the few
+
+78
+00:02:39,366 --> 00:02:41,766
+is low enough to be almost nothing
+
+79
+00:02:41,766 --> 00:02:42,933
+What's really expensive
+
+80
+00:02:43,533 --> 00:02:45,400
+is deliberately leaving others out
+
+81
+00:02:45,400 --> 00:02:47,533
+Many public designs work this way
+
+82
+00:02:48,133 --> 00:02:49,866
+A subway station builds an elevator
+
+83
+00:02:49,866 --> 00:02:52,933
+usually only a few elderly and people with carts use it
+
+84
+00:02:53,366 --> 00:02:54,166
+But do the math
+
+85
+00:02:54,166 --> 00:02:55,233
+without it
+
+86
+00:02:55,233 --> 00:02:59,433
+how many people stop daily to lift wheelchairs strollers and luggage
+
+87
+00:02:59,433 --> 00:03:01,766
+how many staff rush over to help
+
+88
+00:03:01,766 --> 00:03:03,966
+how much foot traffic gets blocked
+
+89
+00:03:04,233 --> 00:03:05,800
+That invisible hassle
+
+90
+00:03:05,800 --> 00:03:08,333
+costs far more than the elevator's electricity
+
+91
+00:03:09,000 --> 00:03:10,800
+So stop using head counts
+
+92
+00:03:10,800 --> 00:03:12,933
+to judge whether a design should exist
+
+93
+00:03:12,933 --> 00:03:13,633
+Some entrances
+
+94
+00:03:13,633 --> 00:03:15,700
+are cheaper to keep than to remove
+
+95
+00:03:16,133 --> 00:03:17,166
+It's just that this bill
+
+96
+00:03:17,233 --> 00:03:18,733
+nobody usually adds up for you
+
+97
+00:03:20,000 --> 00:03:22,033
+Now let's go one layer deeper
+
+98
+00:03:22,033 --> 00:03:24,266
+What do Braille keys really solve
+
+99
+00:03:24,266 --> 00:03:25,166
+Many think
+
+100
+00:03:25,166 --> 00:03:26,833
+they solve not being able to see
+
+101
+00:03:26,833 --> 00:03:28,900
+letting blind people feel out numbers
+
+102
+00:03:29,333 --> 00:03:30,733
+That's only half right
+
+103
+00:03:30,733 --> 00:03:31,833
+What they really solve
+
+104
+00:03:31,833 --> 00:03:33,433
+is whether a person who can't see
+
+105
+00:03:33,866 --> 00:03:36,366
+has to put themselves in someone else's hands
+
+106
+00:03:36,966 --> 00:03:38,433
+Picture this scene
+
+107
+00:03:38,966 --> 00:03:39,666
+Late at night
+
+108
+00:03:39,666 --> 00:03:42,333
+a visually impaired person stands at an ATM
+
+109
+00:03:42,333 --> 00:03:43,600
+no one they know nearby
+
+110
+00:03:43,600 --> 00:03:45,400
+If the machine has no Braille
+
+111
+00:03:45,400 --> 00:03:46,533
+and no voice guidance
+
+112
+00:03:46,966 --> 00:03:48,333
+they have only one choice
+
+113
+00:03:48,333 --> 00:03:49,466
+stop a stranger
+
+114
+00:03:49,466 --> 00:03:50,833
+hand over the bank card
+
+115
+00:03:50,833 --> 00:03:52,200
+say the PIN out loud
+
+116
+00:03:52,566 --> 00:03:54,733
+and bet the other person is good
+
+117
+00:03:55,433 --> 00:03:56,333
+Would you do it
+
+118
+00:03:56,333 --> 00:03:57,200
+Standing there
+
+119
+00:03:57,200 --> 00:04:00,133
+saying your six-digit PIN aloud to a stranger
+
+120
+00:04:00,433 --> 00:04:01,600
+Just imagining it
+
+121
+00:04:02,166 --> 00:04:03,833
+sends a chill down your spine
+
+122
+00:04:04,566 --> 00:04:06,000
+That's the second contrast
+
+123
+00:04:06,000 --> 00:04:08,166
+We tend to see help as kindness
+
+124
+00:04:08,166 --> 00:04:09,566
+someone willing to lend a hand
+
+125
+00:04:09,566 --> 00:04:10,766
+feels warm
+
+126
+00:04:11,200 --> 00:04:13,133
+But for the person being helped
+
+127
+00:04:13,133 --> 00:04:14,366
+every request for help
+
+128
+00:04:14,666 --> 00:04:16,100
+is an exposure
+
+129
+00:04:16,800 --> 00:04:17,833
+The PIN exposed
+
+130
+00:04:17,833 --> 00:04:18,866
+the balance exposed
+
+131
+00:04:18,866 --> 00:04:20,400
+how much was withdrawn exposed
+
+132
+00:04:20,933 --> 00:04:23,533
+plus a favor you don't know how to repay
+
+133
+00:04:23,533 --> 00:04:25,533
+Money is especially sensitive
+
+134
+00:04:25,533 --> 00:04:26,666
+It ties to privacy
+
+135
+00:04:26,666 --> 00:04:27,700
+to safety
+
+136
+00:04:28,166 --> 00:04:30,833
+to whether a person stays in control of their life
+
+137
+00:04:31,566 --> 00:04:33,566
+So Braille keys aren't decoration
+
+138
+00:04:33,566 --> 00:04:34,966
+They're more like a boundary
+
+139
+00:04:34,966 --> 00:04:37,133
+They let a person ask for help one less time
+
+140
+00:04:37,133 --> 00:04:38,366
+expose themselves one less time
+
+141
+00:04:38,933 --> 00:04:40,600
+and when being helped
+
+142
+00:04:40,600 --> 00:04:41,600
+lower their head one less time
+
+143
+00:04:42,200 --> 00:04:43,166
+You might say
+
+144
+00:04:43,166 --> 00:04:44,866
+can't we just rely on kind people
+
+145
+00:04:44,866 --> 00:04:46,433
+there are still more good people
+
+146
+00:04:47,000 --> 00:04:48,733
+Kind people are precious
+
+147
+00:04:49,433 --> 00:04:52,333
+But you can't stake someone's monthly cash withdrawal
+
+148
+00:04:52,400 --> 00:04:55,533
+on a good person happening to walk by
+
+149
+00:04:55,966 --> 00:04:57,200
+Today someone helps
+
+150
+00:04:57,266 --> 00:04:58,133
+what about tomorrow
+
+151
+00:04:58,133 --> 00:04:59,133
+what about rainy days
+
+152
+00:04:59,633 --> 00:05:00,566
+what about midnight
+
+153
+00:05:01,033 --> 00:05:02,266
+A mature system
+
+154
+00:05:02,266 --> 00:05:04,400
+doesn't count on kind people every day
+
+155
+00:05:04,400 --> 00:05:06,800
+it lets people not have to ask in the first place
+
+156
+00:05:06,800 --> 00:05:09,033
+It takes that hit-or-miss goodwill
+
+157
+00:05:09,600 --> 00:05:12,200
+and turns it into an entrance that's always there
+
+158
+00:05:12,200 --> 00:05:13,400
+When you need it
+
+159
+00:05:14,233 --> 00:05:14,866
+it's there
+
+160
+00:05:14,866 --> 00:05:16,266
+no need to prove anything
+
+161
+00:05:16,266 --> 00:05:17,800
+no need to owe anyone
+
+162
+00:05:19,300 --> 00:05:20,033
+At this point
+
+163
+00:05:20,033 --> 00:05:21,466
+you might still feel
+
+164
+00:05:21,466 --> 00:05:23,966
+these designs are ultimately for the few
+
+165
+00:05:23,966 --> 00:05:25,200
+not much to do with me
+
+166
+00:05:25,600 --> 00:05:28,500
+Then look at a set of things you use every day
+
+167
+00:05:28,600 --> 00:05:31,000
+The ramps in malls and subways
+
+168
+00:05:31,000 --> 00:05:33,433
+were first built for wheelchair users
+
+169
+00:05:33,833 --> 00:05:35,166
+But take a look
+
+170
+00:05:35,733 --> 00:05:37,500
+who uses them most now
+
+171
+00:05:38,066 --> 00:05:40,200
+It's you dragging a suitcase to catch a train
+
+172
+00:05:40,200 --> 00:05:41,666
+the mom pushing a stroller
+
+173
+00:05:41,666 --> 00:05:43,833
+the delivery rider on a little cart
+
+174
+00:05:43,833 --> 00:05:45,766
+the courier hauling a case of water
+
+175
+00:05:46,233 --> 00:05:48,566
+Wheelchair users are actually the minority
+
+176
+00:05:49,133 --> 00:05:50,266
+Now look at video subtitles
+
+177
+00:05:50,266 --> 00:05:52,633
+They were first made for the hearing impaired
+
+178
+00:05:52,966 --> 00:05:53,833
+but now
+
+179
+00:05:53,833 --> 00:05:55,666
+the subway's too loud so you turn them on
+
+180
+00:05:55,666 --> 00:05:57,800
+afraid of waking family at night so you turn them on
+
+181
+00:05:57,800 --> 00:06:00,300
+washing dishes while watching so you turn them on
+
+182
+00:06:00,566 --> 00:06:01,566
+Almost everyone
+
+183
+00:06:01,566 --> 00:06:04,700
+uses something that wasn't designed for them
+
+184
+00:06:05,333 --> 00:06:07,200
+And voice navigation on your phone
+
+185
+00:06:07,200 --> 00:06:09,233
+was first made for those who can't see
+
+186
+00:06:09,233 --> 00:06:10,533
+but when you're driving
+
+187
+00:06:11,000 --> 00:06:14,500
+don't you rely on it to call out turns at intersections
+
+188
+00:06:15,033 --> 00:06:16,633
+That's the third contrast
+
+189
+00:06:16,633 --> 00:06:19,000
+You think it's a small door opened for others
+
+190
+00:06:19,000 --> 00:06:20,333
+but who crowds through it
+
+191
+00:06:20,633 --> 00:06:22,600
+is ordinary people just like you
+
+192
+00:06:22,933 --> 00:06:24,933
+This phenomenon has a name
+
+193
+00:06:24,933 --> 00:06:26,766
+the curb-cut effect
+
+194
+00:06:27,266 --> 00:06:28,133
+It means
+
+195
+00:06:28,133 --> 00:06:30,666
+when you seriously solve the few's difficulties
+
+196
+00:06:30,666 --> 00:06:33,933
+you often solve everyone's difficulties along the way
+
+197
+00:06:33,933 --> 00:06:35,333
+The reason isn't hard
+
+198
+00:06:35,333 --> 00:06:37,233
+designing for the hardest case
+
+199
+00:06:37,233 --> 00:06:39,600
+forces you to make things very clear
+
+200
+00:06:39,600 --> 00:06:40,466
+very simple
+
+201
+00:06:40,466 --> 00:06:42,000
+needing no explanation
+
+202
+00:06:42,433 --> 00:06:44,600
+And clear simple and self-explanatory
+
+203
+00:06:44,600 --> 00:06:46,400
+is what everyone wants
+
+204
+00:06:46,633 --> 00:06:49,033
+A prompt even an elder understands at a glance
+
+205
+00:06:49,033 --> 00:06:51,200
+a rushed young person reads and moves on
+
+206
+00:06:51,200 --> 00:06:53,233
+A voice a blind person can follow
+
+207
+00:06:53,233 --> 00:06:55,633
+lets a driver keep their eyes on the road
+
+208
+00:06:55,966 --> 00:06:57,333
+So caring for the few
+
+209
+00:06:57,333 --> 00:06:59,166
+often isn't slowing things down
+
+210
+00:06:59,166 --> 00:07:00,400
+it helps you make things
+
+211
+00:07:00,400 --> 00:07:02,733
+work even for the least able
+
+212
+00:07:02,733 --> 00:07:03,833
+And everyone else
+
+213
+00:07:04,233 --> 00:07:05,433
+has it easy
+
+214
+00:07:06,233 --> 00:07:09,433
+Next time you see a design that seems pointless
+
+215
+00:07:09,433 --> 00:07:11,000
+don't rush to call it useless
+
+216
+00:07:11,000 --> 00:07:12,033
+chances are
+
+217
+00:07:12,566 --> 00:07:14,166
+it's quietly helping you
+
+218
+00:07:15,166 --> 00:07:18,266
+Finally the most overlooked contrast
+
+219
+00:07:18,266 --> 00:07:20,600
+We all assume we're normal users
+
+220
+00:07:20,600 --> 00:07:21,233
+we can see
+
+221
+00:07:21,233 --> 00:07:21,933
+we walk fast
+
+222
+00:07:21,933 --> 00:07:22,733
+we think clearly
+
+223
+00:07:22,733 --> 00:07:24,333
+we get any process at a glance
+
+224
+00:07:24,333 --> 00:07:25,166
+So we feel
+
+225
+00:07:25,166 --> 00:07:27,266
+those entrances left for the less able
+
+226
+00:07:27,266 --> 00:07:28,700
+have nothing to do with us
+
+227
+00:07:30,400 --> 00:07:31,800
+But your ease today
+
+228
+00:07:31,800 --> 00:07:33,866
+isn't because you're born stronger
+
+229
+00:07:33,866 --> 00:07:35,366
+it's just that this system
+
+230
+00:07:35,600 --> 00:07:37,800
+happens to be built for people like you
+
+231
+00:07:38,466 --> 00:07:39,566
+Life is long
+
+232
+00:07:39,600 --> 00:07:44,300
+no one stays forever in the most convenient clear and strong spot
+
+233
+00:07:44,933 --> 00:07:45,633
+You'll grow old
+
+234
+00:07:45,633 --> 00:07:47,333
+there'll be a day you can't read fine print
+
+235
+00:07:47,333 --> 00:07:48,200
+You'll get hurt
+
+236
+00:07:48,200 --> 00:07:50,600
+a day on crutches unable to climb steps
+
+237
+00:07:50,600 --> 00:07:51,400
+There'll be a day
+
+238
+00:07:51,400 --> 00:07:53,033
+holding a crying child in one arm
+
+239
+00:07:53,033 --> 00:07:54,066
+luggage in the other
+
+240
+00:07:54,066 --> 00:07:56,033
+standing in a totally unfamiliar station
+
+241
+00:07:56,366 --> 00:07:57,600
+tired and rushed
+
+242
+00:07:58,333 --> 00:07:59,166
+In that moment
+
+243
+00:07:59,966 --> 00:08:02,166
+you're the one who needs the extra entrance
+
+244
+00:08:02,600 --> 00:08:04,266
+That's the last contrast
+
+245
+00:08:04,266 --> 00:08:06,566
+The designs you find pointless today
+
+246
+00:08:06,566 --> 00:08:09,200
+are really paving the way ahead
+
+247
+00:08:09,566 --> 00:08:10,933
+for a future flustered you
+
+248
+00:08:11,733 --> 00:08:13,866
+So accessibility was never charity
+
+249
+00:08:13,866 --> 00:08:15,233
+it's insurance
+
+250
+00:08:15,800 --> 00:08:17,566
+Today you think ramps are useless
+
+251
+00:08:17,566 --> 00:08:19,400
+tomorrow you twist an ankle and thank them
+
+252
+00:08:19,400 --> 00:08:21,400
+Today you think large-print reminders are wordy
+
+253
+00:08:21,400 --> 00:08:23,133
+tomorrow rushing in a strange station
+
+254
+00:08:23,133 --> 00:08:24,866
+that big text saves you
+
+255
+00:08:24,866 --> 00:08:27,033
+Today you think Braille is far from you
+
+256
+00:08:27,033 --> 00:08:28,800
+tomorrow taking an elder to run errands
+
+257
+00:08:28,800 --> 00:08:32,166
+you'll be glad the machine has clear keys and voice
+
+258
+00:08:32,533 --> 00:08:34,533
+So what can an ordinary person
+
+259
+00:08:34,533 --> 00:08:35,666
+take from this Braille
+
+260
+00:08:35,666 --> 00:08:37,300
+Just three things
+
+261
+00:08:37,533 --> 00:08:38,200
+First
+
+262
+00:08:38,200 --> 00:08:40,466
+don't rush to mock a design you don't use
+
+263
+00:08:40,466 --> 00:08:41,133
+you not using it
+
+264
+00:08:41,133 --> 00:08:42,400
+doesn't mean no one needs it
+
+265
+00:08:42,400 --> 00:08:43,366
+what you find a hassle
+
+266
+00:08:43,366 --> 00:08:46,133
+may be someone's small step toward living independently
+
+267
+00:08:46,433 --> 00:08:47,066
+Second
+
+268
+00:08:47,066 --> 00:08:49,466
+turn respect from attitude into structure
+
+269
+00:08:49,466 --> 00:08:50,966
+Attitude changes
+
+270
+00:08:51,466 --> 00:08:52,366
+people get tired
+
+271
+00:08:52,366 --> 00:08:53,066
+get busy
+
+272
+00:08:53,066 --> 00:08:53,833
+forget
+
+273
+00:08:54,533 --> 00:08:57,533
+But an entrance built into the keys and the process
+
+274
+00:08:57,533 --> 00:08:59,133
+needs no special favor
+
+275
+00:08:59,133 --> 00:09:00,733
+it just stays steadily there
+
+276
+00:09:01,133 --> 00:09:01,833
+Third
+
+277
+00:09:01,833 --> 00:09:02,800
+in anything you do
+
+278
+00:09:02,800 --> 00:09:05,000
+don't only watch the most capable people
+
+279
+00:09:05,000 --> 00:09:07,166
+the capable ones manage anyway
+
+280
+00:09:07,433 --> 00:09:09,766
+What really tests whether you thought it through
+
+281
+00:09:09,766 --> 00:09:11,166
+is the slower person
+
+282
+00:09:11,166 --> 00:09:12,200
+the one who can't see well
+
+283
+00:09:12,200 --> 00:09:13,333
+the first-timer
+
+284
+00:09:13,333 --> 00:09:14,933
+the one too shy to ask
+
+285
+00:09:15,400 --> 00:09:17,533
+If even they can get through
+
+286
+00:09:17,533 --> 00:09:19,433
+then you really did it right
+
+287
+00:09:19,866 --> 00:09:21,566
+What moves me most about Braille keys
+
+288
+00:09:21,566 --> 00:09:22,766
+isn't how advanced they are
+
+289
+00:09:22,766 --> 00:09:24,000
+it's how quiet they are
+
+290
+00:09:24,000 --> 00:09:25,166
+They shout no slogans
+
+291
+00:09:25,166 --> 00:09:27,166
+nor explain how kind they are
+
+292
+00:09:27,800 --> 00:09:28,966
+They just sit there
+
+293
+00:09:28,966 --> 00:09:30,533
+waiting for the one who needs them
+
+294
+00:09:31,033 --> 00:09:32,166
+to reach out
+
+295
+00:09:32,866 --> 00:09:34,966
+What truly makes a society decent
+
+296
+00:09:34,966 --> 00:09:36,966
+isn't everyone looking strong
+
+297
+00:09:36,966 --> 00:09:38,666
+it's that when someone struggles
+
+298
+00:09:38,666 --> 00:09:40,333
+they don't first have to prove
+
+299
+00:09:40,733 --> 00:09:41,966
+they deserve to be cared for
+
+300
+00:09:42,566 --> 00:09:44,266
+Next time we'll talk about Tao Yuanming
+
+301
+00:09:44,266 --> 00:09:46,300
+many think he was just lying flat
+
+302
+00:09:47,000 --> 00:09:48,233
+but from another angle
+
+303
+00:09:48,233 --> 00:09:50,466
+he was doing something very modern
+
+304
+00:09:50,466 --> 00:09:52,800
+deliberately cutting the fixed costs
+
+305
+00:09:52,800 --> 00:09:53,633
+of his own life
+
+306
+00:09:54,066 --> 00:09:55,233
+See you next time
