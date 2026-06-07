@@ -4,8 +4,8 @@
   "title": "你现在可以用了？",
   "titleGenerationStatus": "failed",
   "createdAt": 1780577259056,
-  "updatedAt": 1780577274211,
-  "lastResponseAt": 1780577274210,
+  "updatedAt": 1780797288276,
+  "lastResponseAt": 1780797288276,
   "sessionId": "019e92ac-ceb9-7051-9ca6-c154ecbc4a2b",
   "providerState": {
     "threadId": "019e92ac-ceb9-7051-9ca6-c154ecbc4a2b",
@@ -13,13 +13,13 @@
     "transcriptRootPath": "C:\\Users\\14490\\.codex\\sessions"
   },
   "usage": {
-    "inputTokens": 16546,
+    "inputTokens": 16814,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 3456,
+    "cacheReadInputTokens": 15744,
     "contextWindow": 258400,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 16546,
-    "percentage": 6,
+    "contextTokens": 16814,
+    "percentage": 7,
     "model": "gpt-5.5"
   }
 }
