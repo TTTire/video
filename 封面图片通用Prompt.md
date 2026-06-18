@@ -1,5 +1,13 @@
 # 像素呼吸封面图片通用 Prompt
 
+## 陶渊明封面参考 Prompt
+
+```text
+A high impact 4:3 Chinese short video thumbnail cover, ancient Chinese poet inspired by Tao Yuanming standing calmly between two worlds, left side is a dark modern late-night office desk with glowing computer screen, rent bill, credit card statement, loan papers, phone notifications and coffee cup, right side fades into a quiet rural path with chrysanthemums under the fence, simple wooden table, rice bowl and distant mountains, the poet gently pushes away a pile of modern bills, calm but powerful expression, strong contrast between workplace pressure and pastoral freedom, dramatic cinematic close-up composition, intense rim light, emotional tension, bold Chinese headline text on the left side: "陶渊明 不是躺平 是在降本", huge yellow and white Chinese characters with thick black outline, sticker-like comic thumbnail typography, red warning accent, clean readable layout, no logo, no watermark, Cinematic lighting, hyper-realistic, dark moody color palette, 8k resolution --ar 4:3
+```
+
+## 详细中文封面 Prompt
+
 ```text
 参考上传图片的构图和视觉风格，生成一张16:9抖音知识类/历史人物解读视频封面。重点强化左侧文字区域，左侧占画面约60%，使用超大中文爆款标题字，两行主标题文字为“陶渊明”“不是躺平？”。文字必须清晰可读，黄色高饱和填充，黑色超厚描边，3D立体斜切效果，深色投影，字面带裂纹、划痕、破碎纹理和金属高光，整体略微向右上方倾斜，具有强烈压迫感和反差感。
 
@@ -9,3 +17,8 @@
 
 负面提示词：不要简约风，不要小清新，不要普通字体，不要扁平设计，不要文字太小，不要低对比，不要模糊，不要杂乱排版，不要真实清晰人脸，不要生成错误中文，不要过度留白，不要纯山水画风。
 ```
+
+## 英文负面 Prompt
+
+```text
+Negative prompt: blurry, low quality, messy layout, unreadable Chinese text, wrong Chinese characters, watermark, logo, extra fingers, distorted hands, cartoon, anime, overexposed, flat lighting, crowded composition
