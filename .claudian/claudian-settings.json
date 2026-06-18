@@ -33,7 +33,8 @@
       "environmentVariables": "CODEX_HOME=C:\\Users\\14490\\.codex",
       "environmentHash": "",
       "installationMethodsByHost": {
-        "device:7abe3d3e-8480-4c13-8f76-b216392dcdea": "native-windows"
+        "device:7abe3d3e-8480-4c13-8f76-b216392dcdea": "native-windows",
+        "device:adfec557-6caf-4da1-b748-3f12f74cc649": "native-windows"
       },
       "wslDistroOverridesByHost": {}
     },
