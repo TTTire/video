@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>像素呼吸章节转场示例</title>
+  <style>
+    :root {
+      --bg: #07090b;
+      --cyan: #6ee7f9;
+      --warm: #f5f1e8;
+      --muted: rgba(245, 241, 232, 0.58);
+      --red: #d14a3a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #111;
+      font-family: "Microsoft YaHei", "PingFang SC", system-ui, sans-serif;
+    }
+
+    .frame {
+      position: relative;
+      width: min(56.25vh, 100vw);
+      aspect-ratio: 9 / 16;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 50% 42%, rgba(110, 231, 249, 0.12), transparent 26%),
+        radial-gradient(circle at 30% 78%, rgba(209, 74, 58, 0.08), transparent 28%),
+        linear-gradient(180deg, #0d1114 0%, var(--bg) 58%, #050607 100%);
+      color: var(--warm);
+    }
+
+    .frame::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      opacity: 0.18;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+      background-size: 28px 28px;
+      animation: grid-breathe 3s ease-in-out infinite;
+    }
+
+    .brand {
+      position: absolute;
+      top: 7.5%;
+      left: 8%;
+      letter-spacing: 0.22em;
+      font-size: clamp(10px, 2.1vw, 18px);
+      color: rgba(245, 241, 232, 0.55);
+      animation: fade-up 3s ease-in-out infinite;
+    }
+
+    .pixel-cloud {
+      position: absolute;
+      inset: 0;
+      filter: drop-shadow(0 0 14px rgba(110, 231, 249, 0.32));
+    }
+
+    .p {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: var(--cyan);
+      opacity: 0;
+      animation: gather 3s cubic-bezier(.2, .8, .2, 1) infinite;
+    }
+
+    .p:nth-child(1) { left: 14%; top: 22%; --x: 42vw; --y: 48vh; animation-delay: .00s; }
+    .p:nth-child(2) { left: 78%; top: 18%; --x: -24vw; --y: 52vh; animation-delay: .03s; }
+    .p:nth-child(3) { left: 24%; top: 72%; --x: 30vw; --y: -6vh; animation-delay: .06s; }
+    .p:nth-child(4) { left: 70%; top: 76%; --x: -16vw; --y: -8vh; animation-delay: .09s; }
+    .p:nth-child(5) { left: 48%; top: 30%; --x: 2vw; --y: 32vh; animation-delay: .12s; }
+    .p:nth-child(6) { left: 12%; top: 52%; --x: 40vw; --y: 10vh; animation-delay: .15s; }
+    .p:nth-child(7) { left: 82%; top: 50%; --x: -30vw; --y: 10vh; animation-delay: .18s; }
+    .p:nth-child(8) { left: 36%; top: 12%; --x: 18vw; --y: 58vh; animation-delay: .21s; }
+    .p:nth-child(9) { left: 60%; top: 86%; --x: -6vw; --y: -22vh; animation-delay: .24s; }
+
+    .chapter {
+      position: absolute;
+      left: 8%;
+      right: 8%;
+      top: 35%;
+      text-align: center;
+      animation: title-breathe 3s ease-in-out infinite;
+    }
+
+    .chapter .kicker {
+      color: var(--cyan);
+      letter-spacing: 0.32em;
+      font-size: clamp(10px, 2vw, 17px);
+      margin-bottom: 22px;
+      opacity: 0;
+      animation: text-in 3s ease-in-out infinite;
+    }
+
+    .chapter .line {
+      display: block;
+      font-weight: 800;
+      font-size: clamp(32px, 8.2vw, 70px);
+      line-height: 1.12;
+      text-shadow: 0 0 26px rgba(245, 241, 232, 0.2);
+      opacity: 0;
+      animation: text-in 3s ease-in-out infinite;
+    }
+
+    .chapter .line:last-child {
+      color: rgba(245, 241, 232, 0.82);
+      font-size: clamp(28px, 7.2vw, 60px);
+      margin-top: 10px;
+    }
+
+    .stamp {
+      position: absolute;
+      right: 7%;
+      bottom: 6.4%;
+      display: grid;
+      grid-template-columns: repeat(3, 5px);
+      gap: 4px;
+      opacity: .48;
+      animation: stamp-pulse 3s ease-in-out infinite;
+    }
+
+    .stamp span {
+      width: 5px;
+      height: 5px;
+      background: var(--cyan);
+    }
+
+    .mark {
+      position: absolute;
+      right: 7%;
+      bottom: 3.8%;
+      font-size: clamp(8px, 1.6vw, 13px);
+      letter-spacing: .16em;
+      color: rgba(245, 241, 232, .42);
+    }
+
+    .warning {
+      position: absolute;
+      left: 8%;
+      bottom: 9%;
+      width: 34%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--red), transparent);
+      opacity: .62;
+    }
+
+    @keyframes gather {
+      0% { opacity: 0; transform: translate(0, 0) scale(.6); }
+      20% { opacity: .85; }
+      42% { opacity: 1; transform: translate(var(--x), var(--y)) scale(1); }
+      64% { opacity: .22; transform: translate(var(--x), var(--y)) scale(.55); }
+      100% { opacity: 0; transform: translate(var(--x), var(--y)) scale(.4); }
+    }
+
+    @keyframes text-in {
+      0%, 34% { opacity: 0; transform: translateY(18px); filter: blur(6px); }
+      48%, 86% { opacity: 1; transform: translateY(0); filter: blur(0); }
+      100% { opacity: 0; transform: translateY(-4px); filter: blur(3px); }
+    }
+
+    @keyframes title-breathe {
+      0%, 46% { transform: scale(.985); }
+      63% { transform: scale(1.02); }
+      86% { transform: scale(1); }
+      100% { transform: scale(.99); }
+    }
+
+    @keyframes stamp-pulse {
+      0%, 36% { opacity: .18; }
+      48%, 80% { opacity: .55; }
+      100% { opacity: .24; }
+    }
+
+    @keyframes fade-up {
+      0% { opacity: 0; transform: translateY(8px); }
+      22%, 84% { opacity: .55; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(-4px); }
+    }
+
+    @keyframes grid-breathe {
+      0%, 100% { transform: scale(1); opacity: .14; }
+      55% { transform: scale(1.018); opacity: .22; }
+    }
+  </style>
+</head>
+<body>
+  <main class="frame" aria-label="像素呼吸章节转场示例">
+    <div class="brand">像素呼吸</div>
+    <div class="pixel-cloud">
+      <i class="p"></i><i class="p"></i><i class="p"></i>
+      <i class="p"></i><i class="p"></i><i class="p"></i>
+      <i class="p"></i><i class="p"></i><i class="p"></i>
+    </div>
+    <section class="chapter">
+      <div class="kicker">CHAPTER 01</div>
+      <span class="line">讲不出来的那一秒</span>
+      <span class="line">最诚实</span>
+    </section>
+    <div class="warning"></div>
+    <div class="stamp" aria-hidden="true">
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+      <span></span><span></span><span></span>
+    </div>
+    <div class="mark">PIXEL BREATH ORIGINAL</div>
+  </main>
+</body>
+</html>
