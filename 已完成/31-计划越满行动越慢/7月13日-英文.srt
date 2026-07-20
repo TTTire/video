@@ -1,1439 +1,1799 @@
 1
 00:00:00,466 --> 00:00:02,866
+你刚把明天排满二十个格子
 You just filled tomorrow with twenty time slots
 
 2
 00:00:02,933 --> 00:00:04,433
+焦虑立刻轻了一半
 Your anxiety instantly felt half as heavy
 
 3
 00:00:04,766 --> 00:00:08,500
+可真正拖住你的可能正是这张看起来很努力的计划表
 But what is really holding you back may be this hardworking looking schedule
 
 4
 00:00:08,500 --> 00:00:09,800
+早上七点读书
 Read at seven in the morning
 
 5
 00:00:09,800 --> 00:00:11,066
+八点整理资料
 Organize materials at eight
 
 6
 00:00:11,133 --> 00:00:12,400
+九点开始工作
 Start work at nine
 
 7
 00:00:12,466 --> 00:00:13,866
+晚上还安排了运动
 Exercise in the evening
 
 8
 00:00:13,866 --> 00:00:14,500
+复盘
 Review
 
 9
 00:00:14,500 --> 00:00:15,000
+学习
 Study
 
 10
 00:00:15,000 --> 00:00:15,733
+剪视频
 Edit videos
 
 11
 00:00:15,766 --> 00:00:17,200
+你看着满满的日程
 Looking at the packed schedule
 
 12
 00:00:17,200 --> 00:00:19,066
+觉得生活终于回到手里
 you feel life is finally back in your hands
 
 13
 00:00:19,066 --> 00:00:20,133
+可第二天九点
 But at nine the next day
 
 14
 00:00:20,133 --> 00:00:21,233
+你坐在桌前
 you sit at your desk
 
 15
 00:00:21,266 --> 00:00:22,300
+先倒一杯水
 Pour yourself a glass of water first
 
 16
 00:00:22,300 --> 00:00:23,400
+再调一下字体
 then tweak the font
 
 17
 00:00:23,400 --> 00:00:24,866
+又换一个背景音乐
 then change the background music
 
 18
 00:00:24,900 --> 00:00:26,000
+二十分钟过去
 Twenty minutes pass
 
 19
 00:00:26,000 --> 00:00:27,000
+计划表很满
 The schedule is full
 
 20
 00:00:27,000 --> 00:00:28,166
+文档还是空的
 The document is still blank
 
 21
 00:00:28,166 --> 00:00:29,700
+这不一定是你不自律
 This does not necessarily mean you lack discipline
 
 22
 00:00:29,700 --> 00:00:33,300
+更可能是你提前拿到了行动之后才该有的掌控感
 More likely you got the sense of control that should come only after taking action
 
 23
 00:00:33,300 --> 00:00:35,400
+大脑很容易把安排当成进展
 The brain easily mistakes planning for progress
 
 24
 00:00:35,400 --> 00:00:37,800
+把焦虑变轻当成事情已经变好
 and feeling less anxious for things getting better
 
 25
 00:00:37,800 --> 00:00:39,666
+于是计划写得越完整
 So the more complete your plan becomes
 
 26
 00:00:39,666 --> 00:00:41,966
+真正开始时的落差反而越大
 the bigger the gap when you finally start
 
 27
 00:00:41,966 --> 00:00:44,133
+这条视频不是劝你别做计划
 This video is not telling you to stop planning
 
 28
 00:00:44,133 --> 00:00:46,133
+它只想帮你认清一条界线
 It only wants to help you see one boundary
 
 29
 00:00:46,133 --> 00:00:48,000
+让你更快动手的是计划
 A plan that gets you moving faster
 
 30
 00:00:48,000 --> 00:00:49,900
+让你继续准备的是拖延
 is action avoidance that keeps you preparing
 
 31
 00:00:49,900 --> 00:00:52,000
+看完以后你只需要多一个判断
 After watching you only need one extra question
 
 32
 00:00:52,000 --> 00:00:56,000
+计划里的这一格十分钟内能不能留下一个真实痕迹
 Can this time slot leave a real trace within ten minutes
 
 33
 00:00:56,133 --> 00:00:57,833
+你应该见过这种场景
 You have probably seen this scene
 
 34
 00:00:58,300 --> 00:01:00,000
+一个人买了新的笔记本
 Someone buys a new notebook
 
 35
 00:01:00,000 --> 00:01:01,233
+封面很干净
 The cover is spotless
 
 36
 00:01:01,266 --> 00:01:02,433
+纸张很顺手
 The paper feels smooth
 
 37
 00:01:02,700 --> 00:01:04,400
+第一页写着今年目标
 The first page says goals for this year
 
 38
 00:01:04,400 --> 00:01:06,033
+第二页写着月计划
 The second page says monthly plan
 
 39
 00:01:06,166 --> 00:01:08,000
+第三页写着本周任务
 The third page says tasks for this week
 
 40
 00:01:08,166 --> 00:01:09,433
+字写得很认真
 The handwriting is careful
 
 41
 00:01:09,500 --> 00:01:10,933
+颜色也分得很细
 The colors are carefully assigned
 
 42
 00:01:11,166 --> 00:01:13,966
+看起来像人生终于要重新开始了
 It looks like life is finally about to start over
 
 43
 00:01:14,166 --> 00:01:15,266
+可过了三天
 But three days later
 
 44
 00:01:15,400 --> 00:01:17,666
+那本笔记本被压在书桌角落
 the notebook is pushed into the corner of the desk
 
 45
 00:01:17,800 --> 00:01:19,400
+上面多了一张快递单
 with a delivery label on top
 
 46
 00:01:19,666 --> 00:01:20,900
+又过了一个星期
 Another week passes
 
 47
 00:01:20,900 --> 00:01:22,133
+它变成了杯垫
 and it becomes a coaster
 
 48
 00:01:22,466 --> 00:01:24,633
+这件事不是因为这个人没救
 This is not because the person is beyond saving
 
 49
 00:01:24,766 --> 00:01:27,600
+而是计划本来就有一种很强的安慰感
 It is because plans naturally offer powerful comfort
 
 50
 00:01:27,800 --> 00:01:29,600
+当你把混乱写成列表
 When you turn chaos into a list
 
 51
 00:01:29,966 --> 00:01:31,266
+把焦虑排进日程
 schedule your anxiety
 
 52
 00:01:31,400 --> 00:01:33,066
+把一堆说不清的事情
 and turn a pile of unclear things
 
 53
 00:01:33,066 --> 00:01:34,633
+变成一个个小方格
 into a series of little boxes
 
 54
 00:01:34,766 --> 00:01:35,933
+你会短暂地感觉
 you briefly feel
 
 55
 00:01:35,933 --> 00:01:37,833
+生活又回到自己手里了
 that life is back in your hands
 
 56
 00:01:38,033 --> 00:01:38,733
+问题是
 The problem is
 
 57
 00:01:38,733 --> 00:01:40,366
+这种感觉太舒服了
 this feeling is too comfortable
 
 58
 00:01:40,500 --> 00:01:41,933
+舒服到你会误会
 comfortable enough to make you think
 
 59
 00:01:42,066 --> 00:01:43,800
+自己已经开始变好了
 you have already started getting better
 
 60
 00:01:44,066 --> 00:01:45,933
+你明明只是写下了跑步
 You only wrote down go running
 
 61
 00:01:46,066 --> 00:01:47,766
+身体却还坐在椅子上
 but your body is still in the chair
 
 62
 00:01:47,966 --> 00:01:49,866
+你明明只是收藏了一节课
 You only saved a course
 
 63
 00:01:50,066 --> 00:01:52,000
+脑子却还没有真正处理它
 but your mind has not truly processed it
 
 64
 00:01:52,200 --> 00:01:54,600
+你明明只是给文件夹改了名字
 You only renamed a folder
 
 65
 00:01:54,700 --> 00:01:56,233
+作品却还没有出现
 but the work still does not exist
 
 66
 00:01:56,533 --> 00:01:59,133
+这就是很多人拖延最隐蔽的地方
 This is where procrastination hides most carefully
 
 67
 00:01:59,300 --> 00:02:01,366
+它不是躺在床上什么都不做
 It is not lying in bed doing nothing
 
 68
 00:02:01,533 --> 00:02:03,600
+它常常披着很认真的外衣
 It often wears the clothes of serious work
 
 69
 00:02:03,766 --> 00:02:04,833
+你整理资料
 You organize materials
 
 70
 00:02:04,866 --> 00:02:06,033
+你优化工具
 You optimize your tools
 
 71
 00:02:06,066 --> 00:02:07,200
+你研究方法
 You study methods
 
 72
 00:02:07,266 --> 00:02:08,933
+你反复调整时间表
 You keep adjusting your schedule
 
 73
 00:02:09,100 --> 00:02:11,133
+外人看见会觉得你很努力
 From the outside it looks like you are working hard
 
 74
 00:02:11,266 --> 00:02:12,600
+你自己也会觉得
 You also tell yourself
 
 75
 00:02:12,600 --> 00:02:13,600
+我不是没动
 I am not doing nothing
 
 76
 00:02:13,600 --> 00:02:14,800
+我只是在准备
 I am just preparing
 
 77
 00:02:15,100 --> 00:02:16,366
+但准备这件事
 But preparation
 
 78
 00:02:16,466 --> 00:02:18,533
+一旦没有通向一个具体动作
 once it does not lead to a concrete action
 
 79
 00:02:18,600 --> 00:02:20,633
+它就会变成一种高级拖延
 turns into sophisticated procrastination
 
 80
 00:02:21,066 --> 00:02:23,400
+如果一张计划能让你马上动手
 If a plan gets you to act right away
 
 81
 00:02:23,400 --> 00:02:24,533
+它当然有用
 it is clearly useful
 
 82
 00:02:24,733 --> 00:02:26,866
+这也不是一条反对规划的视频
 This is not a video against planning either
 
 83
 00:02:27,300 --> 00:02:29,466
+真正要警惕的是另一种时刻
 What you really need to watch for is another moment
 
 84
 00:02:29,966 --> 00:02:31,133
+计划越写越细
 The more detailed the plan becomes
 
 85
 00:02:31,300 --> 00:02:33,233
+任务却一毫米都没有往前
 the task does not move forward even a millimeter
 
 86
 00:02:33,500 --> 00:02:35,633
+这时你安排的可能不是时间
 At that point you may be scheduling
 
 87
 00:02:35,733 --> 00:02:38,466
+而是一个暂时不用面对结果的安全区
 a safe zone where you do not have to face the result yet
 
 88
 00:02:38,733 --> 00:02:40,333
+你不是在靠近结果
 You are not moving closer to the result
 
 89
 00:02:40,400 --> 00:02:43,200
+你是在靠近一种好像已经掌控的感觉
 You are moving closer to the feeling that you are in control
 
 90
 00:02:43,533 --> 00:02:45,266
+很多人最难承认的是
 The hardest thing for many people to admit is
 
 91
 00:02:45,333 --> 00:02:47,066
+自己并不是讨厌努力
 they do not actually hate hard work
 
 92
 00:02:47,200 --> 00:02:49,333
+自己是害怕真正开始以后
 They are afraid that once they truly begin
 
 93
 00:02:49,366 --> 00:02:51,133
+马上看见能力的边界
 they will immediately see the limits of their ability
 
 94
 00:02:51,366 --> 00:02:53,000
+计划表不会拒绝你
 A schedule will not reject you
 
 95
 00:02:53,066 --> 00:02:54,866
+待办软件不会评价你
 A to do app will not judge you
 
 96
 00:02:54,900 --> 00:02:56,766
+新的课程不会让你难堪
 A new course will not embarrass you
 
 97
 00:02:56,966 --> 00:02:58,766
+但真正写第一段文字
 But writing the first paragraph
 
 98
 00:02:58,866 --> 00:03:00,433
+真正录第一遍口播
 recording the first take
 
 99
 00:03:00,533 --> 00:03:02,133
+真正做第一版方案
 building the first draft of a proposal
 
 100
 00:03:02,200 --> 00:03:03,333
+它会立刻告诉你
 will immediately tell you
 
 101
 00:03:03,333 --> 00:03:04,233
+哪里不会
 what you do not know
 
 102
 00:03:04,266 --> 00:03:05,233
+哪里卡住
 where you are stuck
 
 103
 00:03:05,300 --> 00:03:06,933
+哪里根本没想清楚
 what you never really thought through
 
 104
 00:03:07,100 --> 00:03:09,400
+所以人会下意识逃回计划里
 So people instinctively retreat into planning
 
 105
 00:03:09,466 --> 00:03:11,133
+因为计划里没有失败
 because there is no failure inside a plan
 
 106
 00:03:11,200 --> 00:03:13,433
+计划里只有一个还没开始的自己
 Inside a plan there is only a version of yourself that has not started yet
 
 107
 00:03:13,733 --> 00:03:15,700
+那个自己看起来很有希望
 That version looks full of promise
 
 108
 00:03:15,700 --> 00:03:16,633
+也很安全
 and safe
 
 109
 00:03:17,100 --> 00:03:18,566
+心理学里有一个词
 Psychology has a term for this
 
 110
 00:03:18,966 --> 00:03:20,333
+叫控制幻觉
 the illusion of control
 
 111
 00:03:20,766 --> 00:03:21,933
+说人话就是
 In plain language
 
 112
 00:03:22,200 --> 00:03:23,933
+人在面对不确定的时候
 when people face uncertainty
 
 113
 00:03:24,200 --> 00:03:26,600
+很容易把一些可控制的小动作
 they easily mistake small actions they can control
 
 114
 00:03:26,733 --> 00:03:28,866
+误认为自己真的控制了结果
 for actually controlling the outcome
 
 115
 00:03:29,366 --> 00:03:31,333
+你不能保证明天状态好
 You cannot guarantee you will feel good tomorrow
 
 116
 00:03:31,566 --> 00:03:33,166
+但你能把明天排满
 but you can fill tomorrow with tasks
 
 117
 00:03:33,533 --> 00:03:35,533
+你不能保证文章写得出来
 You cannot guarantee you will finish the article
 
 118
 00:03:35,733 --> 00:03:37,566
+但你能先找十个参考
 but you can find ten references first
 
 119
 00:03:37,933 --> 00:03:39,966
+你不能保证视频会有人看
 You cannot guarantee anyone will watch the video
 
 120
 00:03:40,166 --> 00:03:41,633
+但你能先调封面
 but you can adjust the thumbnail first
 
 121
 00:03:42,166 --> 00:03:43,933
+这些动作本身没有错
 None of these actions is wrong by itself
 
 122
 00:03:44,400 --> 00:03:45,400
+问题出在
 The problem is
 
 123
 00:03:45,500 --> 00:03:48,000
+它们太容易给你一种假的进展感
 they are so good at giving you a false sense of progress
 
 124
 00:03:48,300 --> 00:03:50,166
+就像你站在健身房门口
 It is like standing at the gym entrance
 
 125
 00:03:50,333 --> 00:03:51,433
+换好了衣服
 already changed into workout clothes
 
 126
 00:03:51,566 --> 00:03:52,666
+拿好了水杯
 holding your water bottle
 
 127
 00:03:52,800 --> 00:03:54,166
+还拍了一张照片
 and even taking a photo
 
 128
 00:03:54,566 --> 00:03:56,466
+这一套动作很像健身
 This whole routine looks a lot like exercising
 
 129
 00:03:56,700 --> 00:03:59,600
+但肌肉并不会因为你穿得专业就增长
 but muscles do not grow just because you dress like a professional
 
 130
 00:03:59,966 --> 00:04:01,166
+学习也是这样
 Learning works the same way
 
 131
 00:04:01,333 --> 00:04:02,433
+你打开课程
 You open the course
 
 132
 00:04:02,600 --> 00:04:03,566
+做了目录
 make an outline
 
 133
 00:04:03,700 --> 00:04:04,666
+标了重点
 mark the key points
 
 134
 00:04:04,866 --> 00:04:07,433
+还把老师提到的书都加进购物车
 and add every book the teacher mentioned to your cart
 
 135
 00:04:07,733 --> 00:04:09,433
+这当然比完全不管强
 This is certainly better than ignoring everything
 
 136
 00:04:09,766 --> 00:04:11,600
+可如果你没有试着复述
 But if you never try to explain it from memory
 
 137
 00:04:11,800 --> 00:04:13,733
+没有拿一个真实问题去用
 never apply one idea to a real problem
 
 138
 00:04:13,933 --> 00:04:16,366
+没有把其中一个观点讲给别人听
 and never explain one point to someone else
 
 139
 00:04:16,666 --> 00:04:18,833
+那你只是把知识摆上了货架
 you have only put knowledge on a shelf
 
 140
 00:04:19,066 --> 00:04:20,833
+它还没有进入你的判断
 It has not entered your judgment yet
 
 141
 00:04:20,933 --> 00:04:22,600
+计划最危险的地方
 The most dangerous thing about planning
 
 142
 00:04:22,600 --> 00:04:23,666
+不是它没用
 is not that it is useless
 
 143
 00:04:23,800 --> 00:04:25,333
+而是它太像有用
 but that it looks so useful
 
 144
 00:04:25,566 --> 00:04:26,733
+它给你秩序
 It gives you order
 
 145
 00:04:26,800 --> 00:04:27,933
+给你安全感
 gives you a sense of safety
 
 146
 00:04:28,066 --> 00:04:30,366
+给你一个清清楚楚的开始姿势
 gives you a clear posture for starting
 
 147
 00:04:30,666 --> 00:04:31,966
+但真正的行动
 But real action
 
 148
 00:04:31,966 --> 00:04:33,533
+一开始往往很丑
 often looks ugly at the beginning
 
 149
 00:04:33,800 --> 00:04:35,233
+第一版文章会乱
 The first draft will be messy
 
 150
 00:04:35,400 --> 00:04:36,933
+第一遍口播会卡
 The first take will be full of stumbles
 
 151
 00:04:37,100 --> 00:04:38,733
+第一份方案会幼稚
 The first proposal will be naive
 
 152
 00:04:38,866 --> 00:04:40,200
+第一次运动会喘
 The first workout will leave you breathless
 
 153
 00:04:40,466 --> 00:04:41,666
+这些难看的东西
 These ugly things
 
 154
 00:04:41,866 --> 00:04:43,233
+才是真正的进展
 are real progress
 
 155
 00:04:43,400 --> 00:04:45,633
+因为它们把问题暴露出来了
 because they expose the problem
 
 156
 00:04:45,666 --> 00:04:47,766
+一个人只要还停在计划里
 As long as someone stays inside the plan
 
 157
 00:04:47,866 --> 00:04:50,066
+他面对的是想象中的任务
 they are facing an imagined task
 
 158
 00:04:50,333 --> 00:04:52,133
+想象中的任务很听话
 Imagined tasks are obedient
 
 159
 00:04:52,333 --> 00:04:53,866
+它会按你的日程走
 They follow your schedule
 
 160
 00:04:54,066 --> 00:04:55,400
+它不会突然变难
 They do not suddenly become harder
 
 161
 00:04:55,566 --> 00:04:57,366
+也不会暴露你哪里不会
 or expose what you do not know
 
 162
 00:04:57,600 --> 00:04:59,133
+可真实任务不一样
 But real tasks are different
 
 163
 00:04:59,333 --> 00:05:00,800
+真实任务会回嘴
 Real tasks talk back
 
 164
 00:05:00,966 --> 00:05:03,133
+你写着写着发现素材不够
 You discover you lack enough material while writing
 
 165
 00:05:03,300 --> 00:05:05,366
+你录着录着发现逻辑不顺
 You find the logic is off while recording
 
 166
 00:05:05,566 --> 00:05:08,233
+你学着学着发现前面的概念没懂
 You realize you never understood the earlier concept while studying
 
 167
 00:05:08,400 --> 00:05:10,966
+你做着做着发现自己高估了时间
 You find you overestimated your time while working
 
 168
 00:05:11,200 --> 00:05:13,433
+这时候你才真正进入了事情
 That is when you truly enter the task
 
 169
 00:05:13,533 --> 00:05:14,633
+也只有这时候
 And only then
 
 170
 00:05:14,766 --> 00:05:16,400
+事情才开始改变你
 does the task begin to change you
 
 171
 00:05:16,566 --> 00:05:18,400
+所以计划不是不能做
 So it is not that you cannot plan
 
 172
 00:05:18,666 --> 00:05:20,033
+计划的问题在于
 The problem with a plan is
 
 173
 00:05:20,066 --> 00:05:21,733
+它必须服务于行动
 it must serve action
 
 174
 00:05:21,766 --> 00:05:23,166
+而不是替代行动
 rather than replace action
 
 175
 00:05:23,366 --> 00:05:24,766
+如果一张计划表
 If a schedule
 
 176
 00:05:24,766 --> 00:05:26,066
+让你更快开始
 helps you start faster
 
 177
 00:05:26,133 --> 00:05:27,166
+它就是工具
 then it is a tool
 
 178
 00:05:27,400 --> 00:05:28,766
+如果一张计划表
 If a schedule
 
 179
 00:05:28,800 --> 00:05:31,366
+让你一直觉得还可以再准备一下
 keeps making you feel you should prepare a little more
 
 180
 00:05:31,500 --> 00:05:33,233
+它就变成了逃生通道
 it has become an escape route
 
 181
 00:05:33,500 --> 00:05:35,000
+一个人准备学英语
 Someone decides to learn English
 
 182
 00:05:35,166 --> 00:05:37,466
+他先研究哪个单词软件最好
 They first research the best vocabulary app
 
 183
 00:05:37,800 --> 00:05:39,133
+看完十个测评
 watch ten reviews
 
 184
 00:05:39,133 --> 00:05:40,600
+又去找记忆曲线
 then look up the forgetting curve
 
 185
 00:05:40,900 --> 00:05:43,166
+接着比较纸质书和电子书
 next they compare paper books and ebooks
 
 186
 00:05:43,466 --> 00:05:45,133
+等他终于选好工具
 By the time they choose a tool
 
 187
 00:05:45,133 --> 00:05:46,533
+一个星期过去了
 a week has passed
 
 188
 00:05:46,700 --> 00:05:48,033
+真正背过的单词
 The words they actually memorized
 
 189
 00:05:48,166 --> 00:05:50,500
+可能只有第一天试用时的二十个
 may be only the twenty they tried on day one
 
 190
 00:05:50,500 --> 00:05:51,933
+一个人准备剪视频
 Someone decides to edit videos
 
 191
 00:05:52,266 --> 00:05:54,066
+他先收藏运镜教程
 They first save camera movement tutorials
 
 192
 00:05:54,300 --> 00:05:55,800
+又研究字幕风格
 then study subtitle styles
 
 193
 00:05:55,966 --> 00:05:57,633
+再看别人怎么做封面
 then watch how others make thumbnails
 
 194
 00:05:57,866 --> 00:05:59,966
+他把素材文件夹分得很细
 They sort their media folders very carefully
 
 195
 00:06:00,100 --> 00:06:00,900
+访谈
 Interviews
 
 196
 00:06:00,966 --> 00:06:01,800
+电影感
 Cinematic
 
 197
 00:06:01,900 --> 00:06:02,933
+城市夜景
 City nights
 
 198
 00:06:02,966 --> 00:06:04,000
+人物特写
 Portrait closeups
 
 199
 00:06:04,166 --> 00:06:05,966
+每个文件夹都很干净
 Every folder is spotless
 
 200
 00:06:06,100 --> 00:06:07,866
+可时间线还是空的
 but the timeline is still empty
 
 201
 00:06:07,866 --> 00:06:09,200
+一个人准备读书
 Someone decides to read
 
 202
 00:06:09,366 --> 00:06:10,633
+他先去看书单
 They first look at book lists
 
 203
 00:06:10,866 --> 00:06:11,833
+十本必读
 ten must reads
 
 204
 00:06:11,866 --> 00:06:12,966
+二十本进阶
 twenty for the next level
 
 205
 00:06:13,066 --> 00:06:14,566
+一百本改变人生
 one hundred that will change your life
 
 206
 00:06:14,800 --> 00:06:16,066
+书架越来越满
 The bookshelf gets fuller and fuller
 
 207
 00:06:16,100 --> 00:06:17,133
+真正读完的
 But the books they actually finish
 
 208
 00:06:17,133 --> 00:06:18,533
+却总停在第一章
 always stop at chapter one
 
 209
 00:06:18,800 --> 00:06:20,366
+这些画面很熟悉
 These scenes feel familiar
 
 210
 00:06:20,466 --> 00:06:22,266
+因为它们都有一个共同点
 because they all share one thing
 
 211
 00:06:22,533 --> 00:06:23,733
+它们让人很忙
 They keep you busy
 
 212
 00:06:23,866 --> 00:06:25,566
+但不一定让人往前走
 but do not necessarily move you forward
 
 213
 00:06:25,766 --> 00:06:26,566
+忙和进展
 Being busy and making progress
 
 214
 00:06:26,566 --> 00:06:27,600
+不是一回事
 are not the same thing
 
 215
 00:06:27,866 --> 00:06:29,400
+忙是你消耗了时间
 Being busy means you spent time
 
 216
 00:06:29,600 --> 00:06:31,100
+进展是事情因为你
 Progress means the task changed
 
 217
 00:06:31,100 --> 00:06:33,000
+产生了一点不可逆的变化
 in some irreversible way because of you
 
 218
 00:06:33,200 --> 00:06:35,133
+你写了一段不满意的开头
 You write an opening you are not happy with
 
 219
 00:06:35,200 --> 00:06:36,000
+它很丑
 It is ugly
 
 220
 00:06:36,100 --> 00:06:37,266
+但它存在了
 but it now exists
 
 221
 00:06:37,466 --> 00:06:39,233
+你录了一遍磕巴的音频
 You record a stumbling audio take
 
 222
 00:06:39,300 --> 00:06:40,100
+它不好
 It is not good
 
 223
 00:06:40,133 --> 00:06:41,833
+但它告诉你哪里不顺
 but it shows you what sounds awkward
 
 224
 00:06:42,100 --> 00:06:44,000
+你做了一页很普通的方案
 You make a very ordinary proposal page
 
 225
 00:06:44,066 --> 00:06:45,033
+它不高级
 It is not impressive
 
 226
 00:06:45,100 --> 00:06:47,133
+但别人终于可以给你反馈
 but now someone can finally give you feedback
 
 227
 00:06:47,300 --> 00:06:48,866
+进展常常不体面
 Progress is often not pretty
 
 228
 00:06:49,000 --> 00:06:50,433
+而计划很体面
 while planning looks polished
 
 229
 00:06:50,600 --> 00:06:52,833
+这就是人会偏爱计划的原因
 That is why people prefer plans
 
 230
 00:06:53,100 --> 00:06:55,433
+计划让你保持一个聪明人的形象
 Plans let you keep looking like a smart person
 
 231
 00:06:55,666 --> 00:06:57,833
+行动会把你变回一个初学者
 Action turns you back into a beginner
 
 232
 00:06:57,933 --> 00:06:59,733
+一个成年人最难受的
 The hardest thing for an adult
 
 233
 00:06:59,966 --> 00:07:01,066
+不是不知道方法
 is not lacking a method
 
 234
 00:07:01,200 --> 00:07:03,066
+而是承认自己开始的时候
 but admitting that when they start
 
 235
 00:07:03,200 --> 00:07:04,266
+真的会很笨
 they will truly be clumsy
 
 236
 00:07:04,333 --> 00:07:06,000
+你在办公室里写方案
 You are writing a proposal at the office
 
 237
 00:07:06,100 --> 00:07:07,566
+光标闪了十分钟
 the cursor blinks for ten minutes
 
 238
 00:07:07,700 --> 00:07:08,633
+你突然想
 You suddenly think
 
 239
 00:07:08,700 --> 00:07:10,466
+我是不是该再查点资料
 Maybe I should look up more material
 
 240
 00:07:10,666 --> 00:07:11,800
+你拿起手机
 You pick up your phone
 
 241
 00:07:11,866 --> 00:07:13,466
+这一查就是半小时
 and that search takes half an hour
 
 242
 00:07:13,700 --> 00:07:15,533
+表面上你在完善信息
 On the surface you are improving the information
 
 243
 00:07:15,700 --> 00:07:17,533
+实际是在躲开第一句
 In reality you are avoiding the first sentence
 
 244
 00:07:17,666 --> 00:07:18,766
+你想做账号
 You want to build an account
 
 245
 00:07:18,900 --> 00:07:20,566
+看了很多爆款拆解
 You watch lots of breakdowns of viral videos
 
 246
 00:07:20,666 --> 00:07:22,766
+越看越觉得自己还没准备好
 The more you watch the less ready you feel
 
 247
 00:07:22,900 --> 00:07:24,433
+表面上你在学习
 On the surface you are learning
 
 248
 00:07:24,533 --> 00:07:26,400
+实际是在用别人的成熟
 In reality you are using other peoples maturity
 
 249
 00:07:26,466 --> 00:07:27,966
+吓退自己的第一版
 to scare your first version away
 
 250
 00:07:28,000 --> 00:07:29,066
+真正的改变
 Real change
 
 251
 00:07:29,133 --> 00:07:31,433
+往往不是从一个完美计划开始
 usually does not begin with a perfect plan
 
 252
 00:07:31,566 --> 00:07:33,933
+而是从一个不太好看的动作开始
 It begins with an action that does not look very good
 
 253
 00:07:34,066 --> 00:07:35,833
+比如今天只写一百字
 For example write just one hundred words today
 
 254
 00:07:35,900 --> 00:07:36,933
+只剪十秒
 edit just ten seconds
 
 255
 00:07:37,000 --> 00:07:38,066
+只背五个词
 memorize just five words
 
 256
 00:07:38,266 --> 00:07:40,566
+只给一个朋友讲清楚一个观点
 explain one idea clearly to just one friend
 
 257
 00:07:40,700 --> 00:07:43,066
+你甚至可以把这个动作写在纸上
 You can even write this action on paper
 
 258
 00:07:43,200 --> 00:07:45,066
+今天不是完成整件事
 Today is not about finishing the whole thing
 
 259
 00:07:45,200 --> 00:07:47,366
+今天只是让它出现一个开口
 Today is only about giving it an opening
 
 260
 00:07:47,500 --> 00:07:48,933
+一个开口就够了
 One opening is enough
 
 261
 00:07:48,966 --> 00:07:51,466
+因为很多大任务真正吓人的地方
 Because what truly scares people about big tasks
 
 262
 00:07:51,500 --> 00:07:52,666
+不是它有多难
 is not how difficult they are
 
 263
 00:07:52,800 --> 00:07:54,666
+而是它一直停在脑子里
 but that they stay inside the mind
 
 264
 00:07:54,800 --> 00:07:56,200
+只要它落到纸上
 Once they land on paper
 
 265
 00:07:56,266 --> 00:07:57,533
+落到时间线里
 land in the timeline
 
 266
 00:07:57,533 --> 00:07:59,333
+落到一段真实声音里
 or land in a real voice recording
 
 267
 00:07:59,333 --> 00:08:01,633
+它就不再只是一个压着你的念头
 they are no longer just a thought pressing down on you
 
 268
 00:08:01,700 --> 00:08:03,733
+这些动作小到没有仪式感
 These actions are so small they have no ceremony
 
 269
 00:08:03,800 --> 00:08:05,266
+但它们有一个好处
 But they have one advantage
 
 270
 00:08:05,400 --> 00:08:07,533
+它们会把你从想象里拉出来
 They pull you out of imagination
 
 271
 00:08:07,533 --> 00:08:09,000
+拉到真实世界里
 and into the real world
 
 272
 00:08:09,066 --> 00:08:10,566
+真实世界不温柔
 The real world is not gentle
 
 273
 00:08:10,566 --> 00:08:11,866
+但它会给反馈
 but it gives feedback
 
 274
 00:08:12,000 --> 00:08:12,866
+而反馈
 And feedback
 
 275
 00:08:12,933 --> 00:08:15,033
+才是行动真正值钱的地方
 is what makes action truly valuable
 
 276
 00:08:15,366 --> 00:08:16,566
+晚上十点半
 It is ten thirty at night
 
 277
 00:08:16,733 --> 00:08:18,366
+你又打开待办软件
 You open the to do app again
 
 278
 00:08:18,533 --> 00:08:20,700
+准备把今天没做完的十件事
 ready to carry the ten unfinished tasks from today
 
 279
 00:08:20,700 --> 00:08:22,066
+原样搬到明天
 over to tomorrow unchanged
 
 280
 00:08:22,366 --> 00:08:23,666
+先别急着复制
 Do not rush to copy them yet
 
 281
 00:08:23,766 --> 00:08:25,400
+也别急着重新排满
 and do not rush to fill tomorrow again
 
 282
 00:08:25,566 --> 00:08:27,033
+不要马上责怪自己
 Do not blame yourself right away
 
 283
 00:08:27,200 --> 00:08:29,133
+也不要马上给自己打鸡血
 and do not pump yourself up right away either
 
 284
 00:08:29,266 --> 00:08:30,466
+你只问一个问题
 Ask yourself just one question
 
 285
 00:08:30,766 --> 00:08:33,433
+这件事最小的十分钟动作是什么
 What is the smallest ten minute action for this task
 
 286
 00:08:33,566 --> 00:08:35,233
+不是今天要改变人生
 It is not about changing your life today
 
 287
 00:08:35,333 --> 00:08:37,066
+不是这个月要完成逆袭
 It is not about making a comeback this month
 
 288
 00:08:37,266 --> 00:08:39,066
+也不是我要建立一套系统
 and it is not about building an entire system
 
 289
 00:08:39,166 --> 00:08:40,166
+就十分钟
 Just ten minutes
 
 290
 00:08:40,266 --> 00:08:41,166
+十分钟里
 In ten minutes
 
 291
 00:08:41,166 --> 00:08:43,233
+能不能打开文档写三句话
 can you open the document and write three sentences
 
 292
 00:08:43,333 --> 00:08:45,100
+能不能把课程里的一个观点
 can you explain one idea from the course
 
 293
 00:08:45,100 --> 00:08:46,566
+讲给空气听一遍
 out loud to the air once
 
 294
 00:08:46,700 --> 00:08:49,133
+能不能把视频素材拖进时间线
 can you drag the video clips onto the timeline
 
 295
 00:08:49,266 --> 00:08:50,300
+能不能换上鞋
 can you put on your shoes
 
 296
 00:08:50,300 --> 00:08:51,233
+走到楼下
 and walk downstairs
 
 297
 00:08:51,400 --> 00:08:53,466
+能不能把那个一直不敢问的问题
 can you send that question you have been afraid to ask
 
 298
 00:08:53,533 --> 00:08:54,833
+发给一个懂的人
 to someone who knows
 
 299
 00:08:55,066 --> 00:08:56,666
+这个动作越小越好
 The smaller this action is the better
 
 300
 00:08:56,766 --> 00:08:58,966
+小到你不好意思说自己没时间
 Small enough that you would feel embarrassed to say you have no time
 
 301
 00:08:59,100 --> 00:09:01,233
+小到它不会触发太多恐惧
 Small enough that it will not trigger too much fear
 
 302
 00:09:01,333 --> 00:09:03,466
+小到你不用先变成另一个人
 Small enough that you do not need to become another person first
 
 303
 00:09:03,566 --> 00:09:04,733
+只要现在这个你
 The you who exists right now
 
 304
 00:09:04,733 --> 00:09:05,766
+就能开始
 can already begin
 
 305
 00:09:05,900 --> 00:09:07,200
+很多计划失败
 Many plans fail
 
 306
 00:09:07,266 --> 00:09:08,733
+不是因为目标太大
 not because the goal is too big
 
 307
 00:09:08,733 --> 00:09:10,033
+而是入口太重
 but because the entrance is too heavy
 
 308
 00:09:10,200 --> 00:09:12,233
+你把开始设计得太隆重
 You make the beginning too elaborate
 
 309
 00:09:12,333 --> 00:09:13,733
+必须有完整时间
 You need a full block of time
 
 310
 00:09:13,733 --> 00:09:15,033
+必须有好状态
 You need to be in a good state
 
 311
 00:09:15,100 --> 00:09:16,366
+必须桌面干净
 You need a clean desk
 
 312
 00:09:16,366 --> 00:09:17,733
+必须资料齐全
 You need all the materials ready
 
 313
 00:09:17,766 --> 00:09:19,066
+必须没人打扰
 You need no one to interrupt you
 
 314
 00:09:19,166 --> 00:09:20,933
+结果真正能开始的时刻
 As a result the moments when you can truly start
 
 315
 00:09:20,933 --> 00:09:21,833
+少得可怜
 are painfully few
 
 316
 00:09:22,066 --> 00:09:23,300
+真正有用的计划
 A truly useful plan
 
 317
 00:09:23,300 --> 00:09:24,666
+不是把一天填满
 does not fill the whole day
 
 318
 00:09:24,700 --> 00:09:26,200
+而是把开始变轻
 it makes starting lighter
 
 319
 00:09:26,400 --> 00:09:27,800
+你可以保留计划
 You can keep your plans
 
 320
 00:09:27,900 --> 00:09:29,366
+但每一条计划后面
 but after every planned task
 
 321
 00:09:29,366 --> 00:09:31,666
+都要接一个能马上做的小动作
 attach one small action you can do immediately
 
 322
 00:09:31,800 --> 00:09:32,600
+读书
 Reading
 
 323
 00:09:32,600 --> 00:09:35,066
+就写成翻开第十二页读五分钟
 becomes open to page twelve and read for five minutes
 
 324
 00:09:35,233 --> 00:09:35,966
+写稿
 Writing
 
 325
 00:09:35,966 --> 00:09:38,166
+就写成先写一个难看的开头
 becomes write one ugly opening first
 
 326
 00:09:38,266 --> 00:09:39,066
+运动
 Exercise
 
 327
 00:09:39,066 --> 00:09:41,400
+就写成换鞋出门走到路口
 becomes put on your shoes and walk to the corner
 
 328
 00:09:41,566 --> 00:09:42,400
+学英语
 Learning English
 
 329
 00:09:42,400 --> 00:09:44,800
+就写成把昨天那个句子读十遍
 becomes read the sentence from yesterday ten times
 
 330
 00:09:44,866 --> 00:09:46,366
+一旦动作变具体
 Once the action becomes concrete
 
 331
 00:09:46,400 --> 00:09:48,600
+拖延就少了一块藏身的地方
 procrastination loses one more place to hide
 
 332
 00:09:48,666 --> 00:09:51,266
+如果一条计划写不出十分钟动作
 If a planned task cannot be turned into a ten minute action
 
 333
 00:09:51,333 --> 00:09:52,966
+先别把它塞进明天
 do not put it into tomorrow yet
 
 334
 00:09:53,100 --> 00:09:54,433
+因为那不是计划
 because that is not a plan
 
 335
 00:09:54,500 --> 00:09:56,666
+那只是一个还没有入口的愿望
 it is only a wish with no entrance yet
 
 336
 00:09:56,766 --> 00:09:58,066
+你会慢慢发现
 You will slowly notice
 
 337
 00:09:58,200 --> 00:09:59,833
+计划不是越满越好
 a plan is not better just because it is fuller
 
 338
 00:09:59,966 --> 00:10:02,366
+人生也不是排得越紧越有希望
 Life is not more hopeful because it is packed tighter
 
 339
 00:10:02,466 --> 00:10:03,333
+很多时候
 Often
 
 340
 00:10:03,500 --> 00:10:05,100
+真正把你往前推的
 what really pushes you forward
 
 341
 00:10:05,100 --> 00:10:06,800
+不是那张漂亮日程表
 is not that beautiful schedule
 
 342
 00:10:06,800 --> 00:10:08,633
+而是某个很普通的下午
 but an ordinary afternoon
 
 343
 00:10:08,700 --> 00:10:10,166
+你明明不在状态
 when you are not in the mood
 
 344
 00:10:10,200 --> 00:10:11,666
+还是写下了第一句
 yet still write the first sentence
 
 345
 00:10:11,866 --> 00:10:13,300
+那个瞬间不响亮
 That moment is not loud
 
 346
 00:10:13,300 --> 00:10:14,200
+也不励志
 and it is not inspirational
 
 347
 00:10:14,266 --> 00:10:15,333
+甚至有点笨
 It may even feel a little clumsy
 
 348
 00:10:15,466 --> 00:10:17,400
+但它比一整页完美计划
 But compared with a whole page of perfect plans
 
 349
 00:10:17,466 --> 00:10:19,133
+更接近真实的改变
 it is closer to real change
 
 350
 00:10:19,200 --> 00:10:21,366
+下次你看着待办清单发呆
 Next time you stare at your to do list
 
 351
 00:10:21,466 --> 00:10:23,333
+可以先别急着再排一遍
 do not rush to schedule it again
 
 352
 00:10:23,400 --> 00:10:24,633
+把清单合上
 Close the list
 
 353
 00:10:24,733 --> 00:10:26,166
+选最小的一件事
 Choose the smallest task
 
 354
 00:10:26,200 --> 00:10:27,333
+给它十分钟
 Give it ten minutes
 
 355
 00:10:27,366 --> 00:10:28,433
+十分钟以后
 After ten minutes
 
 356
 00:10:28,500 --> 00:10:30,133
+你再决定要不要继续
 decide whether you want to continue
 
 357
 00:10:30,266 --> 00:10:31,266
+很多行动
 A lot of action
 
 358
 00:10:31,300 --> 00:10:33,266
+不是靠想明白才开始的
 does not begin once you have thought everything through
 
 359
 00:10:33,300 --> 00:10:34,400
+是开始以后
 It is after you begin
 
 360
 00:10:34,400 --> 00:10:35,833
+人才慢慢想明白的
 that you slowly figure things out
