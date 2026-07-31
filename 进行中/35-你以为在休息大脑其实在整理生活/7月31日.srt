@@ -1,1269 +1,1015 @@
 1
 00:00:00,366 --> 00:00:01,433
 午休到了
-Lunch break arrives
 
 2
 00:00:01,733 --> 00:00:03,000
 你把电脑合上
-You close your laptop
 
 3
 00:00:03,000 --> 00:00:04,833
 手却没有真正停下来
-But your hands dont really stop
 
 4
 00:00:05,100 --> 00:00:07,133
 短视频已经自动往下滑
-Short videos are already scrolling on their own
 
 5
 00:00:07,300 --> 00:00:08,733
 一条是别人旅游
-One is someone's vacation
 
 6
 00:00:08,733 --> 00:00:10,233
 一条是工作技巧
-One is a work hack
 
 7
 00:00:10,300 --> 00:00:11,833
 一条是情绪分析
-One is emotional analysis
 
 8
 00:00:11,966 --> 00:00:13,366
 你明明在休息
-You're supposedly resting
 
 9
 00:00:13,366 --> 00:00:16,533
 可看完二十分钟脑子像又开了二十个网页
-But after twenty minutes your brain feels like twenty new tabs are open
 
 10
 00:00:16,866 --> 00:00:18,100
 下午回到工位
-You're back at your desk in the afternoon
 
 11
 00:00:18,100 --> 00:00:19,266
 人坐下来了
-Your body sits down
 
 12
 00:00:19,300 --> 00:00:21,000
 可那种累一点没有散
-But that tiredness never really lifts
 
 13
 00:00:21,300 --> 00:00:23,166
 很多人会因此怀疑自己
-A lot of people start doubting themselves over this
 
 14
 00:00:23,333 --> 00:00:25,200
 是不是连休息都不会了
-Wondering if they've even forgotten how to rest
 
 15
 00:00:25,500 --> 00:00:27,833
 其实问题不一定是你不够自律
-The problem isn't that you lack discipline
 
 16
 00:00:27,966 --> 00:00:30,933
 你只是把没有工作误当成了正在恢复
-You just mistook not working for actually recovering
 
 17
 00:00:31,100 --> 00:00:32,733
 这两件事差很多
-Those two things are very different
 
 18
 00:00:33,000 --> 00:00:35,166
 不工作只是停止一项任务
-Not working just means stopping one task
 
 19
 00:00:35,200 --> 00:00:40,066
 恢复是让大脑有机会把刚才那些零散的东西放回该放的位置
-Recovering means letting your brain put those scattered pieces back where they belong
 
 20
 00:00:40,200 --> 00:00:41,666
 就像你下班回家
-It's like coming home from work
 
 21
 00:00:41,733 --> 00:00:43,333
 包可以先放在门口
-You can drop your bag by the door for now
 
 22
 00:00:43,400 --> 00:00:47,833
 但里面的充电线票据耳机和钥匙总要有人整理
-But someone still has to sort the charger receipts headphones and keys inside it
 
 23
 00:00:47,966 --> 00:00:49,200
 大脑也是这样
-Your brain works the same way
 
 24
 00:00:49,333 --> 00:00:50,433
 白天的会议
-The meetings from the day
 
 25
 00:00:50,466 --> 00:00:52,333
 别人一句让你不舒服的话
-That one comment that got under your skin
 
 26
 00:00:52,366 --> 00:00:53,666
 做到一半的方案
-The half finished proposal
 
 27
 00:00:53,666 --> 00:00:54,800
 没回的消息
-The message you never answered
 
 28
 00:00:54,900 --> 00:00:57,533
 还有你忽然冒出来又被打断的念头
-And that random thought that got interrupted
 
 29
 00:00:57,666 --> 00:00:59,000
 它们都塞在里面
-They're all still stuffed inside
 
 30
 00:00:59,166 --> 00:01:02,533
 如果你刚停下就立刻用新的内容把它填满
-If the moment you stop you immediately fill it with new content
 
 31
 00:01:02,600 --> 00:01:04,233
 这些东西不会消失
-None of that stuff disappears
 
 32
 00:01:04,300 --> 00:01:06,200
 它们只是继续挤在后台
-It just keeps piling up in the background
 
 33
 00:01:06,466 --> 00:01:09,466
 所以有些人最累的时候不是在干活
-So for some people the most exhausting part isn't the work itself
 
 34
 00:01:09,566 --> 00:01:10,866
 是在不断切换
-It's the constant switching
 
 35
 00:01:11,000 --> 00:01:12,400
 工作群跳一下
-A jump to the work group chat
 
 36
 00:01:12,500 --> 00:01:13,966
 新闻推送跳一下
-A jump to the news push
 
 37
 00:01:14,066 --> 00:01:15,433
 朋友发来一张图
-A friend sends you a photo
 
 38
 00:01:15,666 --> 00:01:18,166
 平台再给你推荐一个你可能喜欢
-The app recommends something else you might like
 
 39
 00:01:18,300 --> 00:01:19,966
 每件事都只占几秒
-Each thing only takes a few seconds
 
 40
 00:01:20,066 --> 00:01:22,966
 但它们会在脑子里留下没合上的小门
-But they leave tiny open doors in your head
 
 41
 00:01:23,133 --> 00:01:25,066
 你以为自己只是看得很杂
-You think you're just scrolling through random stuff
 
 42
 00:01:25,300 --> 00:01:28,766
 实际上你是在替很多没有结尾的事情守着门
-Really you're standing guard for a bunch of unfinished things
 
 43
 00:01:29,000 --> 00:01:30,666
 难怪晚上躺下以后
-No wonder when you finally lie down at night
 
 44
 00:01:30,766 --> 00:01:31,966
 身体很疲惫
-Your body is exhausted
 
 45
 00:01:32,000 --> 00:01:34,033
 脑子却突然开始翻旧账
-But your brain suddenly starts digging up old business
 
 46
 00:01:34,166 --> 00:01:35,933
 白天没来得及想的事
-The things you didn't have time to think about all day
 
 47
 00:01:35,966 --> 00:01:37,600
 晚上会排着队找你
-Line up to find you at night
 
 48
 00:01:37,700 --> 00:01:39,600
 这不是大脑故意折磨你
-Your brain isn't tormenting you on purpose
 
 49
 00:01:39,666 --> 00:01:41,766
 它只是终于拿到了一点安静
-It just finally got a little quiet
 
 50
 00:01:41,766 --> 00:01:43,066
 于是开始整理
-So it starts sorting things out
 
 51
 00:01:43,200 --> 00:01:45,533
 很多人对休息最大的误解是
-The biggest misunderstanding about rest is this
 
 52
 00:01:45,666 --> 00:01:48,366
 只要我没有继续努力就算在休息
-As long as I'm not actively working I count it as resting
 
 53
 00:01:48,500 --> 00:01:50,433
 但真正让人恢复的时刻
-But the moment that really lets you recover
 
 54
 00:01:50,533 --> 00:01:53,333
 常常不是你接收到了更多轻松内容
-Usually isn't when you take in more relaxing content
 
 55
 00:01:53,466 --> 00:01:55,866
 而是你终于没有再接收新的东西
-It's when you finally stop taking in anything new
 
 56
 00:01:56,466 --> 00:01:58,200
 你可能有过这样的时刻
-You've probably had a moment like this
 
 57
 00:01:58,566 --> 00:01:59,566
 洗澡的时候
-In the shower
 
 58
 00:01:59,966 --> 00:02:01,000
 水声很稳定
-The water sound is steady
 
 59
 00:02:01,166 --> 00:02:02,833
 你没有盯着任何屏幕
-You're not staring at any screen
 
 60
 00:02:03,133 --> 00:02:06,433
 一个白天想不明白的问题突然有了答案
-And a problem you couldn't solve all day suddenly has an answer
 
 61
 00:02:06,900 --> 00:02:08,266
 散步的时候也是
-Same thing happens on a walk
 
 62
 00:02:08,466 --> 00:02:10,233
 你本来只是去买瓶水
-You only meant to go buy a bottle of water
 
 63
 00:02:10,566 --> 00:02:13,966
 走到楼下忽然想起那封该怎么回的邮件
-Then halfway down the block you suddenly remember how to reply to that email
 
 64
 00:02:14,366 --> 00:02:16,233
 不是因为洗澡有魔法
-It's not that showers are magic
 
 65
 00:02:16,333 --> 00:02:19,200
 也不是因为散步会让人突然变聪明
-And it's not that walking makes you suddenly smarter
 
 66
 00:02:19,466 --> 00:02:22,833
 是因为那些时候你没有被新的任务追着跑
-It's that in those moments nothing new is chasing you
 
 67
 00:02:23,000 --> 00:02:24,933
 大脑终于能回头看一眼
-Your brain finally gets to look back for a second
 
 68
 00:02:25,200 --> 00:02:28,200
 有一类脑活动常被叫作默认模式网络
-There's a type of brain activity often called the default mode network
 
 69
 00:02:28,533 --> 00:02:30,600
 名字听着有点像设置页面
-The name sounds like a settings page
 
 70
 00:02:30,900 --> 00:02:32,066
 说人话就是
-In plain words it just means
 
 71
 00:02:32,133 --> 00:02:34,466
 当你不急着处理外面的信息时
-When you're not rushing to process outside information
 
 72
 00:02:34,666 --> 00:02:36,966
 脑子会开始整理刚才的经历
-Your brain starts sorting through what just happened
 
 73
 00:02:37,266 --> 00:02:40,000
 它会把一段对话接到过去的经验上
-It connects a conversation to something from your past
 
 74
 00:02:40,166 --> 00:02:43,733
 把一个模糊的不舒服翻译成你真正介意的东西
-It translates a vague discomfort into what's actually bothering you
 
 75
 00:02:44,166 --> 00:02:48,366
 也会把白天看过的材料和你原来知道的事放到一起
-It also lines up what you saw today with what you already knew
 
 76
 00:02:48,566 --> 00:02:51,433
 这不等于每次发呆都会想出好点子
-That doesn't mean every time you zone out you get a great idea
 
 77
 00:02:51,566 --> 00:02:54,533
 更不等于躺着刷手机也算深度休息
-And it definitely doesn't mean lying there scrolling counts as deep rest
 
 78
 00:02:54,733 --> 00:02:55,800
 它只是说明
-It just shows
 
 79
 00:02:55,900 --> 00:02:58,833
 人不是一台只要输入就会升级的机器
-A person isn't a machine that upgrades the moment you feed it input
 
 80
 00:02:59,066 --> 00:03:01,133
 输入之后还需要一点消化
-Input still needs a little time to digest
 
 81
 00:03:01,366 --> 00:03:03,200
 你吃了一顿很丰盛的饭
-You eat a big satisfying meal
 
 82
 00:03:03,266 --> 00:03:05,266
 不会立刻再往胃里塞一顿
-You don't immediately stuff another one into your stomach
 
 83
 00:03:05,466 --> 00:03:07,933
 可很多人对信息就是这么干的
-But a lot of people treat information exactly like that
 
 84
 00:03:08,100 --> 00:03:09,266
 早上听播客
-A podcast in the morning
 
 85
 00:03:09,300 --> 00:03:10,533
 午休刷知识
-Some knowledge content on lunch break
 
 86
 00:03:10,566 --> 00:03:11,800
 晚上看课程
-A course at night
 
 87
 00:03:11,933 --> 00:03:14,600
 睡前再把算法推来的观点看一遍
-And one more scroll through the algorithm's opinions before bed
 
 88
 00:03:14,800 --> 00:03:16,133
 看上去很上进
-It looks very driven
 
 89
 00:03:16,266 --> 00:03:19,133
 可第二天遇到真实问题脑子还是很乱
-But the next day when a real problem comes up your head is still a mess
 
 90
 00:03:19,333 --> 00:03:21,733
 因为信息还没有变成你的判断
-Because none of that information ever turned into your own judgment
 
 91
 00:03:21,866 --> 00:03:23,766
 它们只是排队停在门口
-It's all just queued up at the door
 
 92
 00:03:24,100 --> 00:03:25,966
 还有一种更常见的疲惫
-There's another kind of tiredness that's even more common
 
 93
 00:03:26,266 --> 00:03:27,966
 你明明没有干体力活
-You didn't do any physical labor
 
 94
 00:03:28,066 --> 00:03:30,200
 可一天结束像被掏空一样
-But by the end of the day you feel completely drained
 
 95
 00:03:30,366 --> 00:03:32,466
 这往往和注意力残留有关
-That usually comes from attention residue
 
 96
 00:03:32,700 --> 00:03:34,800
 你从一件事跳到另一件事
-You jump from one thing to another
 
 97
 00:03:34,900 --> 00:03:36,833
 上一件事不会立刻退出
-The last thing doesn't fully exit
 
 98
 00:03:37,000 --> 00:03:38,866
 它会带走一点你的注意力
-It takes a little of your attention with it
 
 99
 00:03:39,000 --> 00:03:41,166
 像衣服上粘住的细小纸屑
-Like a tiny bit of lint stuck to your clothes
 
 100
 00:03:41,333 --> 00:03:42,666
 单独看不明显
-On its own it's barely noticeable
 
 101
 00:03:42,733 --> 00:03:45,366
 可粘了一整天整个人都会不舒服
-But stuck there all day the whole thing feels uncomfortable
 
 102
 00:03:45,500 --> 00:03:48,200
 真正的空白作用不是让你什么都不想
-The real point of blank time isn't to make you think about nothing
 
 103
 00:03:48,266 --> 00:03:50,466
 而是让这些残留慢慢落下来
-It's to let that residue slowly settle
 
 104
 00:03:50,533 --> 00:03:53,033
 让你重新听见自己正在想什么
-So you can finally hear what you're actually thinking
 
 105
 00:03:53,266 --> 00:03:56,233
 很多好的判断不是在最用力的时候出现
-A lot of good judgment doesn't show up when you're trying hardest
 
 106
 00:03:56,366 --> 00:03:59,266
 它是在你暂停输入以后才慢慢浮出来
-It slowly surfaces after you pause taking things in
 
 107
 00:03:59,533 --> 00:04:00,366
 下班路上
-On the way home from work
 
 108
 00:04:00,400 --> 00:04:01,566
 你戴上耳机
-You put your headphones on
 
 109
 00:04:01,733 --> 00:04:02,733
 这很正常
-That's completely normal
 
 110
 00:04:03,000 --> 00:04:05,233
 声音可以挡住拥挤和疲惫
-Sound can block out the crowd and the fatigue
 
 111
 00:04:05,500 --> 00:04:06,966
 可有时你会发现
-But sometimes you notice
 
 112
 00:04:07,100 --> 00:04:09,633
 耳机摘下来以后心里还是很吵
-Once the headphones come off it's still loud in your head
 
 113
 00:04:09,900 --> 00:04:11,166
 不是歌不好听
-It's not that the songs are bad
 
 114
 00:04:11,300 --> 00:04:14,566
 是你从早到晚都没有一段时间真正听见自己
-It's that from morning to night you never once really heard yourself
 
 115
 00:04:14,800 --> 00:04:15,800
 有人会说
-Some people say
 
 116
 00:04:15,900 --> 00:04:17,666
 我不刷手机更焦虑
-I get more anxious when I'm not scrolling
 
 117
 00:04:17,700 --> 00:04:20,366
 安静下来反而会想到很多烦心事
-Getting quiet just brings up a bunch of worries
 
 118
 00:04:20,666 --> 00:04:22,000
 这句话很诚实
-That's a very honest thing to say
 
 119
 00:04:22,066 --> 00:04:23,433
 也正好说明了问题
-And it proves the point exactly
 
 120
 00:04:23,766 --> 00:04:25,600
 那些烦心事本来就在
-Those worries were already there
 
 121
 00:04:25,733 --> 00:04:27,833
 你刷屏不是把它们解决了
-Scrolling doesn't solve them
 
 122
 00:04:27,900 --> 00:04:29,733
 只是给它们盖了一层声音
-It just covers them with a layer of noise
 
 123
 00:04:29,966 --> 00:04:31,800
 到了晚上声音一停
-The moment the noise stops at night
 
 124
 00:04:31,966 --> 00:04:33,633
 它们就更大声地回来
-They come back even louder
 
 125
 00:04:33,733 --> 00:04:35,400
 这不是让你拒绝娱乐
-This isn't telling you to give up entertainment
 
 126
 00:04:35,500 --> 00:04:36,500
 一部好剧
-A good show
 
 127
 00:04:36,500 --> 00:04:37,533
 一场游戏
-A round of games
 
 128
 00:04:37,566 --> 00:04:38,733
 和朋友聊天
-Talking with friends
 
 129
 00:04:38,866 --> 00:04:40,733
 本来都可以是很好的放松
-All of that can be great relaxation
 
 130
 00:04:40,866 --> 00:04:41,866
 区别在于
-The difference is
 
 131
 00:04:41,933 --> 00:04:44,033
 你是在主动选择一段体验
-Are you actively choosing an experience
 
 132
 00:04:44,100 --> 00:04:48,033
 还是在下一条接下一条里被别人替你安排了两个小时
-Or did someone else schedule two hours for you one clip after another
 
 133
 00:04:48,200 --> 00:04:51,000
 主动选择的娱乐有开始也有结束
-Entertainment you actively choose has a start and an end
 
 134
 00:04:51,100 --> 00:04:52,200
 你看完一部电影
-After you finish watching a movie
 
 135
 00:04:52,200 --> 00:04:53,566
 会记得某个镜头
-You remember a certain scene
 
 136
 00:04:53,666 --> 00:04:55,033
 会和朋友聊两句
-You chat about it with a friend
 
 137
 00:04:55,100 --> 00:04:57,000
 它留下了一段完整的经历
-It leaves behind one complete experience
 
 138
 00:04:57,133 --> 00:04:59,400
 自动播放的娱乐很少有结尾
-Autoplay entertainment rarely has an ending
 
 139
 00:04:59,500 --> 00:05:02,233
 它让你一直停在再看一点的门槛上
-It keeps you stuck at just one more
 
 140
 00:05:02,333 --> 00:05:03,733
 你没有真正投入
-You never really commit
 
 141
 00:05:03,733 --> 00:05:05,066
 也没有真正离开
-And you never really leave either
 
 142
 00:05:05,266 --> 00:05:08,633
 最容易被它吞掉的是那些看似无用的小缝隙
-What it swallows most easily are those seemingly useless little gaps
 
 143
 00:05:08,766 --> 00:05:09,866
 等咖啡的时候
-Waiting for your coffee
 
 144
 00:05:09,966 --> 00:05:11,233
 排队付款的时候
-Standing in line to pay
 
 145
 00:05:11,333 --> 00:05:13,233
 从会议室走回工位的时候
-Walking back to your desk from a meeting
 
 146
 00:05:13,400 --> 00:05:15,533
 以前这些空档会让人发呆
-These gaps used to make people zone out
 
 147
 00:05:15,666 --> 00:05:17,566
 现在它们全被屏幕接管
-Now screens take over all of them completely
 
 148
 00:05:17,666 --> 00:05:19,666
 你当然不会因此立刻变笨
-You obviously won't get dumber right away because of it
 
 149
 00:05:19,766 --> 00:05:22,833
 但你会越来越难拥有一段完整的内心对话
-But it gets harder and harder to have one complete conversation with yourself
 
 150
 00:05:23,100 --> 00:05:25,566
 比如你明明对一份工作不满意
-Say you're clearly unhappy with your job
 
 151
 00:05:25,600 --> 00:05:27,666
 可每天一有空就刷信息
-But every free moment you scroll through information
 
 152
 00:05:27,766 --> 00:05:30,133
 你就很难把那份不满意想清楚
-It becomes really hard to actually work out that unhappiness
 
 153
 00:05:30,266 --> 00:05:32,333
 比如你很久没联系一个朋友
-Say you haven't talked to a friend in a long time
 
 154
 00:05:32,566 --> 00:05:35,200
 可每次想起他就被新的提醒打断
-But every time you think of them a new notification interrupts you
 
 155
 00:05:35,333 --> 00:05:37,833
 你也很难真的决定要不要打个电话
-It's hard to actually decide whether to make that call
 
 156
 00:05:38,000 --> 00:05:39,833
 再比如你刚学了一个东西
-Or say you just learned something new
 
 157
 00:05:40,100 --> 00:05:42,233
 如果马上跳去看下一个内容
-If you immediately jump to the next piece of content
 
 158
 00:05:42,300 --> 00:05:44,866
 它在你脑子里很可能只剩一个标题
-It probably only survives in your head as a title
 
 159
 00:05:45,066 --> 00:05:46,366
 空白不是浪费
-Blank space isn't wasted time
 
 160
 00:05:46,466 --> 00:05:48,366
 它是让经历落地的地方
-It's where experience actually lands
 
 161
 00:05:48,466 --> 00:05:51,366
 一段没有输入的时间未必看起来很精彩
-A stretch of time with no input might not look impressive
 
 162
 00:05:51,400 --> 00:05:54,000
 但它能让你不再只是被生活推着走
-But it stops you from just being pushed along by life
 
 163
 00:05:54,466 --> 00:05:55,933
 那到底怎么休息
-So how do you actually rest
 
 164
 00:05:56,133 --> 00:05:57,666
 不是关掉所有社交
-It's not shutting down all your social apps
 
 165
 00:05:57,800 --> 00:06:00,166
 也不是逼自己坐着冥想一小时
-And it's not forcing yourself to meditate for an hour
 
 166
 00:06:00,500 --> 00:06:03,966
 很多人一听到留白就以为又多了一项任务
-A lot of people hear leave some blank space and think it's one more task
 
 167
 00:06:03,966 --> 00:06:04,700
 不用
-It's not
 
 168
 00:06:04,866 --> 00:06:06,800
 你可以先从十分钟开始
-You can start with just ten minutes
 
 169
 00:06:06,966 --> 00:06:08,266
 下班到家之前
-Before you get home from work
 
 170
 00:06:08,366 --> 00:06:09,966
 或者午饭吃完以后
-Or right after lunch
 
 171
 00:06:10,133 --> 00:06:11,633
 把手机放进口袋
-Put your phone in your pocket
 
 172
 00:06:11,666 --> 00:06:12,666
 不听播客
-Don't listen to a podcast
 
 173
 00:06:12,700 --> 00:06:13,733
 不回消息
-Don't reply to messages
 
 174
 00:06:13,733 --> 00:06:15,666
 也不要求自己想出什么
-And don't force yourself to come up with anything
 
 175
 00:06:15,700 --> 00:06:16,966
 就走一小段路
-Just take a short walk
 
 176
 00:06:16,966 --> 00:06:19,033
 或者坐在窗边喝完一杯水
-Or sit by the window and finish a glass of water
 
 177
 00:06:19,166 --> 00:06:21,133
 刚开始你会觉得很无聊
-At first it'll feel pretty boring
 
 178
 00:06:21,266 --> 00:06:22,333
 甚至有点空
-Even a little empty
 
 179
 00:06:22,533 --> 00:06:23,466
 这很正常
-That's completely normal
 
 180
 00:06:23,700 --> 00:06:27,633
 因为你平时已经习惯让外面的声音一直替你占着位置
-Because you're used to letting outside noise hold that space for you
 
 181
 00:06:27,633 --> 00:06:28,433
 过一会儿
-After a while
 
 182
 00:06:28,466 --> 00:06:30,133
 脑子可能会开始乱跳
-Your mind might start jumping around
 
 183
 00:06:30,366 --> 00:06:31,400
 想起一个人
-Thinking of someone
 
 184
 00:06:31,466 --> 00:06:33,133
 想起一件没做完的事
-Thinking of something you didn't finish
 
 185
 00:06:33,200 --> 00:06:35,066
 想起今天说错的一句话
-Thinking of a wrong thing you said today
 
 186
 00:06:35,200 --> 00:06:36,666
 别急着把它们赶走
-Don't rush to chase those thoughts away
 
 187
 00:06:36,700 --> 00:06:38,733
 也别急着打开手机找答案
-And don't rush to grab your phone for an answer
 
 188
 00:06:38,766 --> 00:06:39,966
 你只要问一句
-Just ask yourself one thing
 
 189
 00:06:40,100 --> 00:06:41,966
 这件事我到底在意什么
-What do I actually care about here
 
 190
 00:06:42,000 --> 00:06:43,366
 有时候你会发现
-Sometimes you'll realize
 
 191
 00:06:43,366 --> 00:06:44,966
 自己累的不是工作量
-What's exhausting you isn't the workload
 
 192
 00:06:45,000 --> 00:06:47,133
 是一直没有把边界说出来
-It's that you never said where your boundary is
 
 193
 00:06:47,133 --> 00:06:48,533
 有时候你会发现
-Sometimes you'll realize
 
 194
 00:06:48,533 --> 00:06:50,466
 自己不是不知道该做什么
-It's not that you don't know what to do
 
 195
 00:06:50,466 --> 00:06:52,933
 只是从来没给那个答案一点安静
-You just never gave that answer any quiet
 
 196
 00:06:53,000 --> 00:06:55,333
 这十分钟不能替你解决人生
-These ten minutes can't solve your life for you
 
 197
 00:06:55,400 --> 00:06:57,766
 它也不会让你第二天就变得轻松
-And they won't make tomorrow suddenly easy either
 
 198
 00:06:57,900 --> 00:07:00,400
 但它能让你从自动播放里退一步
-But they let you step back from autoplay
 
 199
 00:07:00,400 --> 00:07:02,433
 重新把注意力拿回来一点
-And take a little of your attention back
 
 200
 00:07:02,466 --> 00:07:05,566
 你也可以给这十分钟换几个很普通的场景
-You can also swap in a few ordinary scenes for these ten minutes
 
 201
 00:07:05,600 --> 00:07:07,733
 午饭后不要马上回到座位
-Don't head straight back to your desk after lunch
 
 202
 00:07:07,766 --> 00:07:09,033
 绕着楼走一圈
-Walk a loop around the building
 
 203
 00:07:09,200 --> 00:07:11,866
 下班到家前在小区门口坐一会儿
-Sit outside your building for a bit before heading in after work
 
 204
 00:07:11,900 --> 00:07:14,966
 洗碗的时候不顺手把视频支在台面上
-Don't prop your phone up on the counter while doing dishes
 
 205
 00:07:15,100 --> 00:07:19,133
 周末早上醒来先把窗帘拉开再决定要不要看手机
-On weekend mornings open the curtains before deciding whether to check your phone
 
 206
 00:07:19,266 --> 00:07:21,200
 这些动作没有什么仪式感
-None of these actions need any ceremony
 
 207
 00:07:21,266 --> 00:07:23,066
 它们也不需要被拍下来
-They don't need to be filmed either
 
 208
 00:07:23,100 --> 00:07:25,633
 可它们会给大脑一个很清楚的信号
-But they send your brain a very clear signal
 
 209
 00:07:25,766 --> 00:07:27,466
 现在不用继续反应了
-You don't have to keep reacting right now
 
 210
 00:07:27,466 --> 00:07:28,733
 你可以先回来
-You can come back first
 
 211
 00:07:28,800 --> 00:07:31,466
 有的人会在这段时间里想起工作
-Some people will think about work during this time
 
 212
 00:07:31,566 --> 00:07:33,533
 有的人会突然感到难过
-Some people will suddenly feel sad
 
 213
 00:07:33,666 --> 00:07:35,533
 还有的人只会觉得无聊
-And some people will just feel bored
 
 214
 00:07:35,700 --> 00:07:36,733
 都没关系
-All of that is fine
 
 215
 00:07:36,800 --> 00:07:39,066
 留白不是为了让你始终舒服
-Blank space isn't there to keep you comfortable
 
 216
 00:07:39,133 --> 00:07:43,066
 它是让那些原来只能被噪音盖住的东西有机会露个面
-It's there to let things that noise used to bury finally show themselves
 
 217
 00:07:43,200 --> 00:07:45,366
 你看见它才有可能处理它
-You can only deal with something once you see it
 
 218
 00:07:45,533 --> 00:07:48,966
 你一直躲开它它只会在最不合适的时候冒出来
-If you keep avoiding it it'll only surface at the worst possible moment
 
 219
 00:07:48,966 --> 00:07:50,266
 比如凌晨一点
-Like one in the morning
 
 220
 00:07:50,300 --> 00:07:51,866
 比如一句争吵之后
-Like right after an argument
 
 221
 00:07:51,966 --> 00:07:54,666
 比如你已经累到完全不想再想的时候
-Like when you're already too tired to think about anything
 
 222
 00:07:54,866 --> 00:07:56,266
 还有一点要分清
-There's one more thing worth telling apart
 
 223
 00:07:56,400 --> 00:07:58,766
 真正的休息也可以是热闹的
-Real rest can be loud and lively too
 
 224
 00:07:58,766 --> 00:08:00,166
 和朋友打一场球
-Playing a game of ball with friends
 
 225
 00:08:00,266 --> 00:08:01,600
 认真看一部电影
-Watching a movie and really paying attention
 
 226
 00:08:01,600 --> 00:08:03,366
 陪孩子搭一晚上积木
-Building blocks with your kid all evening
 
 227
 00:08:03,400 --> 00:08:05,133
 它们之所以能让人恢复
-The reason these things help you recover
 
 228
 00:08:05,133 --> 00:08:06,600
 不是因为它们安静
-Isn't because they're quiet
 
 229
 00:08:06,600 --> 00:08:09,833
 而是因为你在那一段时间里只做了这一件事
-It's because for that stretch of time you only did that one thing
 
 230
 00:08:09,866 --> 00:08:12,766
 你的注意力没有被十几扇门同时拉住
-Your attention wasn't being pulled by a dozen open doors at once
 
 231
 00:08:12,766 --> 00:08:15,266
 所以别把停止接收理解得太死
-So don't take stop taking in information too literally
 
 232
 00:08:15,333 --> 00:08:17,466
 重点不是让生活变得寡淡
-The point isn't to make life boring
 
 233
 00:08:17,566 --> 00:08:21,600
 而是别把每一个缝隙都拿去塞进更多需要你反应的东西
-It's to stop stuffing every little gap with more things demanding a reaction
 
 234
 00:08:21,800 --> 00:08:23,566
 你要的不是逃离信息
-What you need isn't to escape information
 
 235
 00:08:23,666 --> 00:08:25,633
 你要的是重新拥有选择
-What you need is to get your choice back
 
 236
 00:08:25,800 --> 00:08:27,033
 什么时候接收
-When to take things in
 
 237
 00:08:27,066 --> 00:08:28,366
 什么时候停一下
-When to pause for a moment
 
 238
 00:08:28,366 --> 00:08:31,000
 什么时候把今天的感受先还给自己
-When to give today's feelings back to yourself
 
 239
 00:08:31,133 --> 00:08:32,633
 以后你再想休息
-Next time you want to rest
 
 240
 00:08:32,666 --> 00:08:34,800
 可以不只问自己有没有停工
-Don't just ask yourself if you stopped working
 
 241
 00:08:34,966 --> 00:08:35,933
 再问一句
-Ask one more question
 
 242
 00:08:35,933 --> 00:08:38,066
 我有没有停止接收新的东西
-Have I stopped taking in new things
 
 243
 00:08:38,266 --> 00:08:39,200
 如果没有
-If you haven't
 
 244
 00:08:39,200 --> 00:08:41,600
 那你可能只是换了一种更轻的忙
-You might have just switched to a lighter kind of busy
 
 245
 00:08:41,666 --> 00:08:44,333
 真正的休息不是把大脑彻底关掉
-Real rest isn't shutting your brain off completely
 
 246
 00:08:44,400 --> 00:08:47,433
 是让它终于有机会把今天的你收一收
-It's finally giving it a chance to gather up today's version of you
 
 247
 00:08:47,533 --> 00:08:48,633
 下一次洗澡
-Next time you're in the shower
 
 248
 00:08:48,666 --> 00:08:50,266
 下一次走回家的路上
-Next time you're walking home
 
 249
 00:08:50,300 --> 00:08:52,000
 先别急着把耳机戴上
-Don't rush to put your headphones on
 
 250
 00:08:52,000 --> 00:08:54,233
 留十分钟给没有声音的地方
-Leave ten minutes for somewhere without sound
 
 251
 00:08:54,266 --> 00:08:56,366
 也许你不会立刻想通什么
-Maybe you won't figure everything out right away
 
 252
 00:08:56,366 --> 00:08:58,633
 但那些被你塞了一整天的生活
-But all that life you've been stuffing in all day
 
 253
 00:08:58,700 --> 00:09:00,266
 会慢慢从一团噪音
-Will slowly turn from a mess of noise
 
 254
 00:09:00,400 --> 00:09:02,466
 变成几句真正属于你的话
-Into a few words that actually belong to you
