@@ -1,11 +1,25 @@
 {
   "id": "conv-1781768372684-eapbspmpa",
   "providerId": "codex",
-  "title": "看看现在还有git冲突吗",
+  "title": "这个给我归档下",
   "titleGenerationStatus": "failed",
   "createdAt": 1781768372686,
-  "updatedAt": 1781768373470,
-  "lastResponseAt": 1781768372977,
-  "sessionId": null,
-  "currentNote": "进行中/27-房租为什么比老板更能控制你/房租为什么比老板更能控制你-口播逐字稿.md"
+  "updatedAt": 1786167502442,
+  "lastResponseAt": 1786167502442,
+  "sessionId": "019fdfe0-828a-7e92-8228-ce6bb03ad774",
+  "providerState": {
+    "threadId": "019fdfe0-828a-7e92-8228-ce6bb03ad774",
+    "sessionFilePath": "C:\\Users\\14490\\.codex\\sessions\\2026\\08\\08\\rollout-2026-08-08T13-37-45-019fdfe0-828a-7e92-8228-ce6bb03ad774.jsonl",
+    "transcriptRootPath": "C:\\Users\\14490\\.codex\\sessions"
+  },
+  "usage": {
+    "inputTokens": 24413,
+    "cacheCreationInputTokens": 0,
+    "cacheReadInputTokens": 23424,
+    "contextWindow": 258400,
+    "contextWindowIsAuthoritative": true,
+    "contextTokens": 24413,
+    "percentage": 9,
+    "model": "gpt-5.5"
+  }
 }
