@@ -1,0 +1,799 @@
+1
+00:00:01,566 --> 00:00:04,200
+You walk into a phone shop just to replace the battery
+
+2
+00:00:04,266 --> 00:00:06,400
+The clerk glances at your old phone
+
+3
+00:00:06,566 --> 00:00:08,900
+He says this one really isn't worth fixing
+
+4
+00:00:08,900 --> 00:00:11,566
+Add two thousand more and you can get a better one
+
+5
+00:00:11,800 --> 00:00:13,033
+He sounds sincere
+
+6
+00:00:13,033 --> 00:00:15,166
+Not a single spec he cites is a lie
+
+7
+00:00:15,300 --> 00:00:17,800
+You even feel he's trying to save you money
+
+8
+00:00:18,200 --> 00:00:21,500
+But this is exactly the moment Munger most wants to warn you about
+
+9
+00:00:21,800 --> 00:00:24,066
+The most dangerous person isn't necessarily a scammer
+
+10
+00:00:24,100 --> 00:00:27,566
+It's someone who truly believes something that happens to benefit himself
+
+11
+00:00:28,100 --> 00:00:30,266
+Because a scammer knows he's lying
+
+12
+00:00:30,266 --> 00:00:32,133
+So you stay at least a little on guard
+
+13
+00:00:32,366 --> 00:00:35,600
+But when someone gains from a particular answer
+
+14
+00:00:35,633 --> 00:00:38,800
+His brain actively hunts for evidence to support it
+
+15
+00:00:38,966 --> 00:00:41,333
+Hunt long enough and he ends up believing it himself
+
+16
+00:00:41,500 --> 00:00:45,166
+That clerk may genuinely feel the new phone suits you better
+
+17
+00:00:45,400 --> 00:00:48,933
+The financial advisor may genuinely think that product is good
+
+18
+00:00:49,200 --> 00:00:54,100
+The boss may genuinely believe one more metric will boost efficiency
+
+19
+00:00:54,233 --> 00:00:55,500
+They aren't necessarily bad people
+
+20
+00:00:55,600 --> 00:00:59,366
+But the seat they sit in selects which facts they can see
+
+21
+00:01:00,100 --> 00:01:02,700
+This is the calculation most people get wrong
+
+22
+00:01:03,000 --> 00:01:05,566
+We keep judging whether someone is honest
+
+23
+00:01:05,700 --> 00:01:10,900
+Yet rarely check which answer their pay, KPI and pride are tied to
+
+24
+00:01:11,200 --> 00:01:15,300
+At month end you instinctively scan the bonus column on your payslip
+
+25
+00:01:15,466 --> 00:01:16,766
+Everyone else does too
+
+26
+00:01:17,066 --> 00:01:19,100
+Money isn't the only incentive
+
+27
+00:01:19,433 --> 00:01:26,066
+Commission, KPI, likes, promotion, fame, even dodging one scolding are all incentives
+
+28
+00:01:26,366 --> 00:01:28,666
+They act like an invisible magnet
+
+29
+00:01:28,766 --> 00:01:30,566
+They don't directly turn people bad
+
+30
+00:01:30,700 --> 00:01:34,166
+But they slowly pull everyone's attention toward the same direction
+
+31
+00:01:34,300 --> 00:01:37,400
+So this video isn't teaching you to doubt everyone
+
+32
+00:01:37,633 --> 00:01:39,733
+It just wants to help you see one layer deeper
+
+33
+00:01:40,033 --> 00:01:42,900
+Next time someone hands you a very certain answer
+
+34
+00:01:43,000 --> 00:01:45,666
+Don't rush to judge whether it makes sense
+
+35
+00:01:45,700 --> 00:01:46,766
+Ask first
+
+36
+00:01:46,800 --> 00:01:49,966
+If I believe this, who gains
+
+37
+00:01:50,666 --> 00:01:55,166
+Munger calls this incentive-caused bias
+
+38
+00:01:55,366 --> 00:01:57,400
+The name sounds stiff
+
+39
+00:01:57,666 --> 00:01:59,266
+In plain words
+
+40
+00:01:59,300 --> 00:02:03,500
+Whatever rewards you gets better and better at being seen by you
+
+41
+00:02:03,666 --> 00:02:06,266
+Munger once told a FedEx story
+
+42
+00:02:06,400 --> 00:02:09,700
+Night shift workers had to load planes fast
+
+43
+00:02:09,766 --> 00:02:13,933
+But process, discipline and duty talks did nothing
+
+44
+00:02:14,366 --> 00:02:16,700
+Then management changed how they paid
+
+45
+00:02:16,800 --> 00:02:19,333
+No longer just by hours spent
+
+46
+00:02:19,566 --> 00:02:23,000
+But letting anyone who finished the shift go home early
+
+47
+00:02:23,266 --> 00:02:26,366
+The same crew cleared the cargo in no time
+
+48
+00:02:26,600 --> 00:02:28,700
+People didn't suddenly get hardworking
+
+49
+00:02:28,766 --> 00:02:31,066
+The work didn't suddenly get easier
+
+50
+00:02:31,166 --> 00:02:35,333
+The reward direction finally lined up with what the company wanted
+
+51
+00:02:35,700 --> 00:02:40,500
+The real lesson isn't how smart per-shift pay is
+
+52
+00:02:40,633 --> 00:02:43,266
+It's that persuasion is usually weaker than incentive
+
+53
+00:02:43,600 --> 00:02:45,233
+Ten slogans on the wall
+
+54
+00:02:45,233 --> 00:02:47,966
+Can lose to one number on the paysheet
+
+55
+00:02:48,166 --> 00:02:50,866
+You've probably seen this at your company
+
+56
+00:02:51,100 --> 00:02:53,600
+When support is graded on call count
+
+57
+00:02:53,700 --> 00:02:55,466
+Calls get shorter and shorter
+
+58
+00:02:55,800 --> 00:02:58,066
+When sales is graded on deal size
+
+59
+00:02:58,300 --> 00:03:01,533
+Bad-fit clients get pitched as perfect matches
+
+60
+00:03:01,866 --> 00:03:04,000
+When a content team is graded on click rate
+
+61
+00:03:04,166 --> 00:03:06,333
+Headlines get more and more provocative
+
+62
+00:03:06,466 --> 00:03:09,566
+These people aren't scheming to deceive every morning
+
+63
+00:03:09,766 --> 00:03:12,733
+More often they hit the target first
+
+64
+00:03:12,866 --> 00:03:16,666
+Then let the brain backfill a plausible explanation
+
+65
+00:03:16,866 --> 00:03:18,366
+The client really does need it
+
+66
+00:03:18,433 --> 00:03:19,933
+Users really do love it
+
+67
+00:03:20,433 --> 00:03:22,533
+The team really should push harder
+
+68
+00:03:22,800 --> 00:03:25,966
+The more they explain, the deeper they believe
+
+69
+00:03:26,233 --> 00:03:28,166
+That's where the problem is
+
+70
+00:03:28,466 --> 00:03:31,733
+Once a person is rewarded by a conclusion
+
+71
+00:03:31,900 --> 00:03:33,800
+He doesn't just defend the interest
+
+72
+00:03:33,900 --> 00:03:37,266
+He also defends the story that makes him feel justified
+
+73
+00:03:37,500 --> 00:03:42,066
+So incentive bias is often harder to spot than outright lying
+
+74
+00:03:42,266 --> 00:03:44,366
+Outright lying leaves traces
+
+75
+00:03:44,466 --> 00:03:49,500
+Sincere self-persuasion can look complete in face, tone and evidence
+
+76
+00:03:49,766 --> 00:03:52,566
+You walk away thinking this person is so professional
+
+77
+00:03:52,600 --> 00:03:55,200
+But professional only means he can explain
+
+78
+00:03:55,433 --> 00:03:58,200
+Not that his viewing angle isn't tilted
+
+79
+00:03:58,566 --> 00:04:00,800
+Interest doesn't automatically invalidate a view
+
+80
+00:04:00,900 --> 00:04:03,366
+But interest is always worth seeing
+
+81
+00:04:04,300 --> 00:04:06,666
+Start with the most common case, sales recommendations
+
+82
+00:04:06,833 --> 00:04:08,000
+You go get glasses
+
+83
+00:04:08,000 --> 00:04:10,533
+The clerk says these lenses are better for your eyes
+
+84
+00:04:10,666 --> 00:04:12,300
+Maybe they really are better
+
+85
+00:04:12,433 --> 00:04:15,400
+But if different lenses pay him different commissions
+
+86
+00:04:15,500 --> 00:04:18,900
+That fact should sit on the table next to the specs
+
+87
+00:04:19,033 --> 00:04:21,166
+Not to prove he's lying
+
+88
+00:04:21,466 --> 00:04:25,900
+But to remind you he more easily sees the merits of the pricier pair
+
+89
+00:04:26,066 --> 00:04:27,366
+Now take financial advisors
+
+90
+00:04:27,433 --> 00:04:29,266
+Some products suit you
+
+91
+00:04:29,366 --> 00:04:32,733
+Some products suit his sales quota better
+
+92
+00:04:32,900 --> 00:04:34,600
+The two sometimes overlap
+
+93
+00:04:34,800 --> 00:04:37,466
+But you can't assume they always do
+
+94
+00:04:37,700 --> 00:04:41,066
+When you hear "capital-guaranteed, high return, limited spots"
+
+95
+00:04:41,200 --> 00:04:42,900
+Don't get carried away by the tone
+
+96
+00:04:43,066 --> 00:04:46,700
+First check whether his pay comes from fees or commissions
+
+97
+00:04:46,900 --> 00:04:50,000
+How he's paid won't tell you if the answer is right
+
+98
+00:04:50,200 --> 00:04:54,000
+But it tells you which answer is easier for him to give
+
+99
+00:04:54,366 --> 00:04:56,366
+KPIs inside a company work the same way
+
+100
+00:04:56,666 --> 00:04:59,166
+If a department only watches new users
+
+101
+00:04:59,400 --> 00:05:03,133
+It tends to ignore whether existing users are happy
+
+102
+00:05:03,366 --> 00:05:05,866
+If a team only watches launch speed
+
+103
+00:05:05,966 --> 00:05:09,933
+Testing and maintenance become someone else's future headache
+
+104
+00:05:10,166 --> 00:05:13,900
+The arguments you see in weekly meetings look like disagreement
+
+105
+00:05:14,200 --> 00:05:17,733
+Underneath, everyone may just be carrying a different scoreboard
+
+106
+00:05:18,200 --> 00:05:19,666
+One guards revenue
+
+107
+00:05:19,666 --> 00:05:21,100
+One guards cost
+
+108
+00:05:21,100 --> 00:05:22,600
+One guards schedule
+
+109
+00:05:22,800 --> 00:05:24,900
+They all talk about the company's interest
+
+110
+00:05:25,066 --> 00:05:29,166
+Yet each one's company happens to look like his own scorecard
+
+111
+00:05:29,633 --> 00:05:31,300
+Knowledge creators aren't exempt either
+
+112
+00:05:31,466 --> 00:05:35,466
+Course makers more easily believe the problem needs a course
+
+113
+00:05:35,666 --> 00:05:39,600
+Tool sellers more easily believe the problem needs a tool
+
+114
+00:05:39,833 --> 00:05:44,200
+Book-summary creators more easily sell one book as a master key
+
+115
+00:05:44,366 --> 00:05:45,900
+Including me talking about Munger right now
+
+116
+00:05:45,900 --> 00:05:50,100
+You should also ask what this content hopes to get from you
+
+117
+00:05:50,100 --> 00:05:51,266
+Watch time
+
+118
+00:05:51,266 --> 00:05:52,033
+Saves
+
+119
+00:05:52,033 --> 00:05:53,066
+Or follows
+
+120
+00:05:53,433 --> 00:05:56,333
+Laying this out won't destroy trust
+
+121
+00:05:56,400 --> 00:06:00,300
+Trust that truly lasts was never afraid of seeing the interest
+
+122
+00:06:00,566 --> 00:06:02,400
+Platform recommendations are even more direct
+
+123
+00:06:02,866 --> 00:06:06,100
+You think the home feed helps you find what matters most
+
+124
+00:06:06,200 --> 00:06:10,466
+But what the platform first needs is usually to keep you scrolling
+
+125
+00:06:10,700 --> 00:06:14,266
+Most important and hardest to close are not the same standard
+
+126
+00:06:14,600 --> 00:06:18,400
+Trending lists make something look like everyone cares
+
+127
+00:06:18,633 --> 00:06:22,100
+Yet the algorithm may not be answering what's worth your attention
+
+128
+00:06:22,266 --> 00:06:24,666
+It's just completing its own reward
+
+129
+00:06:24,833 --> 00:06:26,466
+Finally, AI answers
+
+130
+00:06:26,566 --> 00:06:29,733
+AI has no payslip and takes no commission
+
+131
+00:06:29,966 --> 00:06:32,766
+But it's still shaped by goals and feedback
+
+132
+00:06:32,966 --> 00:06:37,200
+The system wants it helpful, human and satisfying
+
+133
+00:06:37,666 --> 00:06:42,900
+So when a question is vague, it may lean toward a complete smooth answer
+
+134
+00:06:43,066 --> 00:06:44,766
+Complete doesn't mean correct
+
+135
+00:06:44,866 --> 00:06:47,566
+Comfortable doesn't mean verifiable
+
+136
+00:06:47,766 --> 00:06:50,400
+If you only reward it for answering fast
+
+137
+00:06:50,600 --> 00:06:54,400
+It rarely stops to ask what you're really trying to solve
+
+138
+00:06:54,633 --> 00:06:57,133
+So don't think of incentives as only money
+
+139
+00:06:57,366 --> 00:07:00,966
+Anything repeatedly rewarded slowly reshapes the answer
+
+140
+00:07:02,066 --> 00:07:03,933
+So what should ordinary people do
+
+141
+00:07:04,200 --> 00:07:08,600
+Doubt everyone who speaks, assuming they have a hidden motive
+
+142
+00:07:08,733 --> 00:07:09,533
+No
+
+143
+00:07:09,900 --> 00:07:13,633
+If you only learn to doubt, you don't gain judgment
+
+144
+00:07:13,633 --> 00:07:14,600
+Just exhaustion
+
+145
+00:07:15,000 --> 00:07:19,733
+The useful thing about Munger's reminder is it doesn't ask you to read minds
+
+146
+00:07:19,833 --> 00:07:21,200
+You only need to read structure
+
+147
+00:07:21,700 --> 00:07:25,933
+Next time someone urges you to buy, invest or back a plan
+
+148
+00:07:26,033 --> 00:07:28,700
+Set aside their point for ten seconds
+
+149
+00:07:28,866 --> 00:07:29,700
+And ask
+
+150
+00:07:30,066 --> 00:07:33,700
+If I believe this, who gains
+
+151
+00:07:33,966 --> 00:07:35,366
+The gain can be money
+
+152
+00:07:35,400 --> 00:07:39,966
+Or performance, status, traffic, blame avoidance and convenience
+
+153
+00:07:40,266 --> 00:07:43,366
+If the answer is they gain directly
+
+154
+00:07:43,566 --> 00:07:45,100
+Don't dismiss them right away
+
+155
+00:07:45,466 --> 00:07:49,400
+Just switch trust from automatic to manual review
+
+156
+00:07:49,666 --> 00:07:52,000
+Ask one more person who has no stake in it
+
+157
+00:07:52,600 --> 00:07:55,166
+Read material that doesn't profit from the deal
+
+158
+00:07:55,466 --> 00:07:58,400
+Find the evidence most unfavorable to this conclusion
+
+159
+00:07:58,500 --> 00:08:02,066
+Then see if they're willing to spell out the risks too
+
+160
+00:08:02,233 --> 00:08:06,133
+A truly reliable professional doesn't pretend to have no interests
+
+161
+00:08:06,366 --> 00:08:09,266
+He tells you upfront how he charges
+
+162
+00:08:09,366 --> 00:08:11,100
+Which cases don't fit
+
+163
+00:08:11,166 --> 00:08:13,033
+What outcomes he can't guarantee
+
+164
+00:08:13,033 --> 00:08:17,266
+Most importantly, whether he shares the same downside as you
+
+165
+00:08:17,633 --> 00:08:20,000
+If the recommendation fails, do only you pay
+
+166
+00:08:20,066 --> 00:08:22,800
+Or does he also lose pay and reputation
+
+167
+00:08:23,166 --> 00:08:26,366
+Aligned interests don't guarantee a correct judgment
+
+168
+00:08:26,500 --> 00:08:30,366
+But misaligned interests are reason enough not to hand over the wheel
+
+169
+00:08:30,633 --> 00:08:32,466
+Here's another practical method
+
+170
+00:08:32,600 --> 00:08:35,733
+After hearing a recommendation, try swapping their reward
+
+171
+00:08:35,866 --> 00:08:39,900
+If the salesperson weren't paid on the deal, would he still recommend the same one
+
+172
+00:08:40,200 --> 00:08:44,766
+If the department weren't measured on this metric, would it still push the same plan
+
+173
+00:08:44,833 --> 00:08:50,366
+If this content had no likes or shares, would it still sound this certain
+
+174
+00:08:50,633 --> 00:08:53,366
+This question may not yield a real answer
+
+175
+00:08:53,500 --> 00:08:56,933
+But it pulls you out of the script and back to the relationship map
+
+176
+00:08:57,366 --> 00:08:58,533
+Opinions are like water
+
+177
+00:08:58,566 --> 00:09:00,133
+Incentives are more like the riverbed
+
+178
+00:09:00,300 --> 00:09:04,133
+Stare only at the surface and every sentence looks free-flowing
+
+179
+00:09:04,266 --> 00:09:08,400
+Map the riverbed and you see why it always runs that way
+
+180
+00:09:08,666 --> 00:09:11,900
+Ordinary people can't fact-check every sentence in life
+
+181
+00:09:12,100 --> 00:09:18,000
+But on big-money, high-stakes, hard-to-undo decisions, a glance at the riverbed pays off
+
+182
+00:09:18,366 --> 00:09:21,266
+You can also turn this question on yourself
+
+183
+00:09:21,633 --> 00:09:24,266
+When you badly want to believe an answer
+
+184
+00:09:24,366 --> 00:09:26,566
+Ask what it gives you
+
+185
+00:09:26,666 --> 00:09:28,833
+The convenience of skipping more research
+
+186
+00:09:28,833 --> 00:09:30,266
+Saving face
+
+187
+00:09:30,300 --> 00:09:33,100
+Or making a past choice look not wrong
+
+188
+00:09:33,433 --> 00:09:36,700
+The incentive hardest to spot usually isn't someone else's
+
+189
+00:09:36,833 --> 00:09:39,966
+It's that bit of comfort in our own hearts we won't admit
+
+190
+00:09:40,200 --> 00:09:42,100
+Back to the phone shop at the start
+
+191
+00:09:42,233 --> 00:09:44,800
+The clerk pushes the new phone toward you
+
+192
+00:09:44,800 --> 00:09:46,133
+You don't need to accuse him
+
+193
+00:09:46,200 --> 00:09:49,333
+Or rush to prove the old phone still has five good years
+
+194
+00:09:49,566 --> 00:09:54,000
+Just clarify the repair price, the upgrade commission and your real needs
+
+195
+00:09:54,266 --> 00:09:56,800
+Then take the decision back into your own hands
+
+196
+00:09:57,000 --> 00:09:59,533
+Listening to what someone says is hearing the answer
+
+197
+00:09:59,966 --> 00:10:04,733
+Watching what they're rewarded for is seeing where the answer grows from
+
+198
+00:10:05,033 --> 00:10:08,066
+If I believe this, who gains
+
+199
+00:10:08,233 --> 00:10:10,300
+This sentence won't decide for you
+
+200
+00:10:10,466 --> 00:10:14,900
+But it can quiet down a lot of overly certain voices
