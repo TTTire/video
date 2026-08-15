@@ -1,0 +1,1851 @@
+1
+00:00:00,000 --> 00:00:03,766
+You just saved a trending AI workflow into your favorites
+
+2
+00:00:04,033 --> 00:00:07,066
+And scheduled tomorrow down to every half hour
+
+3
+00:00:07,400 --> 00:00:11,066
+Before bed you even bought a course that promises to teach you a side hustle
+
+4
+00:00:11,300 --> 00:00:13,966
+It looks like you worked much harder than yesterday
+
+5
+00:00:14,133 --> 00:00:15,066
+But a week later
+
+6
+00:00:15,066 --> 00:00:16,900
+The job is still the same job
+
+7
+00:00:16,900 --> 00:00:18,533
+The money is still the same money
+
+8
+00:00:18,833 --> 00:00:22,700
+And the things you want to do are still lying in a folder called start later
+
+9
+00:00:23,033 --> 00:00:24,733
+Most people aren't not working hard
+
+10
+00:00:24,833 --> 00:00:29,466
+They're doing something at every step yet not one thing changes their position
+
+11
+00:00:29,933 --> 00:00:31,866
+That sounds a bit abstract
+
+12
+00:00:32,066 --> 00:00:34,966
+But you've definitely seen what it looks like in real life
+
+13
+00:00:35,266 --> 00:00:36,433
+Someone wants to start a side hustle
+
+14
+00:00:36,433 --> 00:00:37,633
+So they learn video editing first
+
+15
+00:00:37,633 --> 00:00:39,266
+Then research account names
+
+16
+00:00:39,400 --> 00:00:42,266
+Then spend two days picking an avatar and cover fonts
+
+17
+00:00:42,400 --> 00:00:44,266
+And finally write seven versions of a bio
+
+18
+00:00:44,266 --> 00:00:50,033
+But ask them to post the first piece of content or ask a stranger if they'd pay and they start saying
+
+19
+00:00:50,133 --> 00:00:51,700
+I'm not ready yet
+
+20
+00:00:52,066 --> 00:00:53,266
+Someone wants to change jobs
+
+21
+00:00:53,266 --> 00:00:55,133
+They scroll through tons of career advice
+
+22
+00:00:55,200 --> 00:00:56,866
+Take a few personality tests
+
+23
+00:00:57,033 --> 00:00:58,933
+Save a pile of resume templates
+
+24
+00:00:59,300 --> 00:01:03,233
+But the portfolio that really needs reworking never gets opened
+
+25
+00:01:03,633 --> 00:01:05,366
+Someone else wants to get healthier
+
+26
+00:01:05,433 --> 00:01:07,133
+They buy a pair of running shoes first
+
+27
+00:01:07,466 --> 00:01:09,100
+Download three tracking apps
+
+28
+00:01:09,100 --> 00:01:10,466
+Watch ten workout videos
+
+29
+00:01:10,866 --> 00:01:13,966
+But that running track downstairs they don't visit it once all week
+
+30
+00:01:14,200 --> 00:01:15,700
+These things aren't useless
+
+31
+00:01:15,800 --> 00:01:18,700
+The problem is they make it too easy to fool yourself
+
+32
+00:01:19,000 --> 00:01:22,066
+After finishing them you feel like you're already moving forward
+
+33
+00:01:22,200 --> 00:01:24,966
+But what really decides whether you leave where you are
+
+34
+00:01:25,000 --> 00:01:27,166
+Isn't how many actions you completed today
+
+35
+00:01:27,266 --> 00:01:32,533
+It's whether those actions put you in a position where results come easier
+
+36
+00:01:33,000 --> 00:01:36,433
+This episode won't teach you to build a perfect life plan
+
+37
+00:01:36,466 --> 00:01:40,466
+Or push you to quit your job and go all in or force yourself into a corner
+
+38
+00:01:40,700 --> 00:01:43,100
+We're only talking about one simpler judgment
+
+39
+00:01:43,333 --> 00:01:46,366
+Tactics solve how to take the step right in front of you
+
+40
+00:01:46,633 --> 00:01:49,766
+Strategy decides where you stand after taking it
+
+41
+00:01:50,033 --> 00:01:53,900
+When tools templates and advice are everywhere within arm's reach
+
+42
+00:01:54,100 --> 00:01:56,366
+The scarcest thing is no longer the next move
+
+43
+00:01:56,466 --> 00:01:59,300
+It's knowing which step is worth taking at all
+
+44
+00:02:01,033 --> 00:02:02,300
+It's eleven thirty at night
+
+45
+00:02:02,300 --> 00:02:04,533
+You only meant to look at your phone for five minutes
+
+46
+00:02:04,600 --> 00:02:06,133
+Then you scroll onto a video
+
+47
+00:02:06,600 --> 00:02:10,366
+Titled three AI workflows every ordinary person must learn
+
+48
+00:02:11,033 --> 00:02:12,733
+You watch it and it makes total sense
+
+49
+00:02:12,733 --> 00:02:13,866
+You save it with one tap
+
+50
+00:02:13,866 --> 00:02:16,133
+Then you see someone else talking about side hustles
+
+51
+00:02:16,433 --> 00:02:19,933
+They say if you're making content now you have to build an automation system first
+
+52
+00:02:20,200 --> 00:02:21,333
+You click in again
+
+53
+00:02:21,533 --> 00:02:22,300
+Then further down
+
+54
+00:02:22,300 --> 00:02:24,433
+Someone shows off their Notion template
+
+55
+00:02:24,533 --> 00:02:26,300
+Someone shares a set of prompts
+
+56
+00:02:26,600 --> 00:02:29,500
+Someone says skip this tool and you'll fall behind fast
+
+57
+00:02:29,933 --> 00:02:31,300
+The more you watch the more anxious you get
+
+58
+00:02:31,633 --> 00:02:33,533
+And the more you feel you can't stop
+
+59
+00:02:33,733 --> 00:02:35,300
+So you start collecting
+
+60
+00:02:35,333 --> 00:02:36,466
+Saving links
+
+61
+00:02:36,500 --> 00:02:37,633
+Organizing folders
+
+62
+00:02:37,800 --> 00:02:39,333
+Tagging your materials
+
+63
+00:02:39,400 --> 00:02:41,766
+You even seriously write up a study plan
+
+64
+00:02:42,033 --> 00:02:43,000
+When you turn off the light
+
+65
+00:02:43,000 --> 00:02:44,200
+You feel a little satisfied
+
+66
+00:02:44,200 --> 00:02:45,666
+Today's scrolling wasn't wasted
+
+67
+00:02:45,933 --> 00:02:47,033
+But the next day at work
+
+68
+00:02:47,033 --> 00:02:49,133
+Your boss hands you a real problem
+
+69
+00:02:49,633 --> 00:02:53,033
+A client asks you what exactly can this thing solve for me
+
+70
+00:02:53,066 --> 00:02:54,766
+And suddenly you still can't answer
+
+71
+00:02:55,233 --> 00:02:56,500
+The tools are still there
+
+72
+00:02:56,500 --> 00:02:58,100
+The methods weren't wrong either
+
+73
+00:02:58,233 --> 00:03:00,866
+But they never automatically became your judgment
+
+74
+00:03:01,100 --> 00:03:02,433
+What keeps people spinning in place the most
+
+75
+00:03:02,433 --> 00:03:03,500
+Usually isn't laziness
+
+76
+00:03:03,633 --> 00:03:06,066
+It's the busyness that looks so much like progress
+
+77
+00:03:07,200 --> 00:03:11,033
+Because the actions that actually change your position are usually not that comfortable
+
+78
+00:03:11,233 --> 00:03:12,700
+They expose you
+
+79
+00:03:12,900 --> 00:03:15,233
+You have to put what you made out into the world
+
+80
+00:03:15,233 --> 00:03:16,933
+You have to say the price out loud
+
+81
+00:03:17,133 --> 00:03:19,033
+You have to hear people say no thanks
+
+82
+00:03:19,033 --> 00:03:23,066
+You have to admit the plan you polished for so long might be something nobody wants
+
+83
+00:03:23,266 --> 00:03:24,700
+Compared to these moments
+
+84
+00:03:24,700 --> 00:03:26,966
+Researching a new tool feels so much safer
+
+85
+00:03:27,266 --> 00:03:29,466
+Tweaking your profile page one more time feels so much cozier
+
+86
+00:03:29,500 --> 00:03:32,133
+Watching other people's advice forever feels so much more dignified
+
+87
+00:03:32,233 --> 00:03:38,966
+So many people quietly pour their energy into tasks they can finish instantly but reality never tests
+
+88
+00:03:39,266 --> 00:03:41,033
+Making a beautiful planning spreadsheet
+
+89
+00:03:41,200 --> 00:03:43,233
+Formatting documents until everything is neat
+
+90
+00:03:43,633 --> 00:03:45,433
+Learning ten new keyboard shortcuts
+
+91
+00:03:45,533 --> 00:03:48,566
+These actions give you a tiny sense of control
+
+92
+00:03:48,700 --> 00:03:52,033
+Like hammering a nail into a blank life
+
+93
+00:03:52,133 --> 00:03:55,733
+But sometimes they just organize your anxiety more neatly
+
+94
+00:03:55,866 --> 00:03:57,733
+Without moving the problem forward one inch
+
+95
+00:03:57,800 --> 00:04:00,266
+Think about that person preparing a side hustle
+
+96
+00:04:00,300 --> 00:04:01,500
+They learned editing
+
+97
+00:04:01,500 --> 00:04:02,533
+They can make posters
+
+98
+00:04:02,533 --> 00:04:04,600
+They even registered a really nice-sounding name
+
+99
+00:04:04,600 --> 00:04:07,200
+But if they've never asked a single person
+
+100
+00:04:07,200 --> 00:04:09,233
+Would you actually pay for this
+
+101
+00:04:09,233 --> 00:04:11,566
+Then what they're practicing probably isn't entrepreneurship
+
+102
+00:04:11,666 --> 00:04:14,766
+It's turning entrepreneurship into a very polished hobby room
+
+103
+00:04:15,033 --> 00:04:16,533
+This isn't mocking them
+
+104
+00:04:16,633 --> 00:04:18,233
+A lot of people are like this
+
+105
+00:04:18,333 --> 00:04:20,366
+Because the market's answer is too blunt
+
+106
+00:04:20,533 --> 00:04:22,933
+A friend not liking your post might just mean they didn't see it
+
+107
+00:04:23,033 --> 00:04:26,666
+But a real customer refusing to pay gives you a reason you can't dodge
+
+108
+00:04:26,933 --> 00:04:29,166
+The same thing happens with learning
+
+109
+00:04:29,300 --> 00:04:30,333
+You finish a course
+
+110
+00:04:30,333 --> 00:04:32,466
+And feel the teacher explained it so clearly
+
+111
+00:04:32,600 --> 00:04:35,900
+But when a colleague asks so how do we actually change things tomorrow
+
+112
+00:04:36,066 --> 00:04:38,166
+All you have left are a few pretty words
+
+113
+00:04:38,300 --> 00:04:39,066
+Models
+
+114
+00:04:39,066 --> 00:04:39,800
+Frameworks
+
+115
+00:04:39,800 --> 00:04:40,833
+Long-termism
+
+116
+00:04:40,866 --> 00:04:41,900
+None of them are wrong
+
+117
+00:04:42,233 --> 00:04:44,966
+They just haven't reached the place where you can actually use them
+
+118
+00:04:45,233 --> 00:04:47,833
+Today's AI tools amplify this illusion
+
+119
+00:04:47,933 --> 00:04:49,933
+It hands you a full plan in minutes
+
+120
+00:04:49,933 --> 00:04:51,100
+It makes posters for you
+
+121
+00:04:51,100 --> 00:04:51,866
+Writes copy
+
+122
+00:04:51,866 --> 00:04:52,766
+Lists steps
+
+123
+00:04:52,933 --> 00:04:56,266
+Even generates a roadmap that looks completely finished
+
+124
+00:04:56,600 --> 00:04:59,233
+Starting something really is easier than before
+
+125
+00:04:59,333 --> 00:05:01,733
+But easy to start doesn't mean easy to arrive
+
+126
+00:05:01,866 --> 00:05:04,566
+When everyone can get a first draft quickly
+
+127
+00:05:04,633 --> 00:05:07,466
+What actually separates people becomes something else
+
+128
+00:05:07,900 --> 00:05:10,066
+Do you know who actually has the problem
+
+129
+00:05:10,400 --> 00:05:13,266
+Are you willing to put your work out there for feedback
+
+130
+00:05:13,433 --> 00:05:17,133
+Can you cut the part you cherish most because the feedback says so
+
+131
+00:05:17,400 --> 00:05:19,300
+Tools can speed up your actions
+
+132
+00:05:19,400 --> 00:05:22,233
+But they can't decide which actions deserve speeding up
+
+133
+00:05:22,600 --> 00:05:25,433
+That's why some people spin like tops all day
+
+134
+00:05:25,466 --> 00:05:26,733
+Yet feel emptier at night
+
+135
+00:05:27,233 --> 00:05:28,833
+It's not that they finished nothing
+
+136
+00:05:28,833 --> 00:05:32,533
+It's that nothing they finished made tomorrow hold one more possibility
+
+137
+00:05:32,933 --> 00:05:34,200
+You think you're accumulating
+
+138
+00:05:34,200 --> 00:05:37,233
+But you're really just refilling your to-do list
+
+139
+00:05:37,433 --> 00:05:39,933
+Real progress doesn't necessarily feel good right away
+
+140
+00:05:40,000 --> 00:05:43,066
+It usually shows you an ugly answer first
+
+141
+00:05:43,266 --> 00:05:44,833
+My work isn't good enough yet
+
+142
+00:05:44,833 --> 00:05:47,466
+My customers aren't who I thought they were
+
+143
+00:05:47,666 --> 00:05:51,566
+What I want to do needs fundamentals first not tools
+
+144
+00:05:51,733 --> 00:05:53,500
+None of these answers are easy
+
+145
+00:05:53,700 --> 00:05:55,866
+But they push you to the next square
+
+146
+00:05:55,933 --> 00:06:00,333
+Instead of standing in the same spot polishing the same floor tile brighter
+
+147
+00:06:01,833 --> 00:06:03,166
+Picture a chessboard
+
+148
+00:06:03,200 --> 00:06:07,233
+Early in the game players often make moves that seem meaningless
+
+149
+00:06:07,700 --> 00:06:09,700
+A piece nudged a little toward the center
+
+150
+00:06:09,700 --> 00:06:11,366
+A line given up for now
+
+151
+00:06:11,400 --> 00:06:13,966
+A defense that doesn't score anything immediately
+
+152
+00:06:14,100 --> 00:06:15,333
+Spectators watching will think
+
+153
+00:06:15,333 --> 00:06:16,433
+What's the point of that
+
+154
+00:06:16,466 --> 00:06:18,166
+You didn't capture a single piece
+
+155
+00:06:18,433 --> 00:06:19,400
+But the player knows
+
+156
+00:06:19,400 --> 00:06:21,766
+The squares on the board were never equal
+
+157
+00:06:21,866 --> 00:06:24,566
+Some squares open up more directions for you
+
+158
+00:06:24,600 --> 00:06:27,066
+Some squares block your own paths
+
+159
+00:06:27,466 --> 00:06:29,033
+Some squares look safe
+
+160
+00:06:29,033 --> 00:06:32,233
+But the moment you stand there you can only react to others
+
+161
+00:06:32,333 --> 00:06:34,100
+Life isn't a chess match of course
+
+162
+00:06:34,100 --> 00:06:36,066
+There's no need to treat other people as opponents
+
+163
+00:06:36,266 --> 00:06:39,033
+And you don't have to make anyone worse off just to win
+
+164
+00:06:39,266 --> 00:06:41,666
+But the board offers one useful reminder
+
+165
+00:06:41,733 --> 00:06:45,300
+Where you stand each day decides how many paths you can walk tomorrow
+
+166
+00:06:45,633 --> 00:06:48,366
+Someone held up entirely by next month's paycheck
+
+167
+00:06:48,433 --> 00:06:51,766
+Has very little room to say no to a job they hate
+
+168
+00:06:52,033 --> 00:06:54,066
+Someone with a little buffer in hand
+
+169
+00:06:54,066 --> 00:06:56,033
+Even just one extra month of margin
+
+170
+00:06:56,033 --> 00:06:58,666
+Can search for the next job with a calm head
+
+171
+00:06:58,833 --> 00:07:02,033
+This doesn't mean everyone should immediately save up a huge pile of money
+
+172
+00:07:02,133 --> 00:07:03,466
+It means you need to see
+
+173
+00:07:03,466 --> 00:07:05,633
+That a buffer is itself a position
+
+174
+00:07:05,900 --> 00:07:06,733
+Another example
+
+175
+00:07:06,800 --> 00:07:08,766
+Two designers with similar skills
+
+176
+00:07:08,833 --> 00:07:12,433
+One turns every finished project into a case study
+
+177
+00:07:12,533 --> 00:07:15,333
+And slowly people learn what problems they've solved
+
+178
+00:07:15,866 --> 00:07:17,633
+The other does plenty of work
+
+179
+00:07:17,833 --> 00:07:21,433
+But everything is scattered across chat logs and a desktop
+
+180
+00:07:21,466 --> 00:07:22,266
+A year later
+
+181
+00:07:22,266 --> 00:07:24,166
+You can't really say either one worked harder
+
+182
+00:07:24,200 --> 00:07:26,466
+But the first one earns trust more easily
+
+183
+00:07:26,500 --> 00:07:28,333
+They didn't magically gain more ability
+
+184
+00:07:28,333 --> 00:07:32,566
+They placed the same ability where others could see it and judge it
+
+185
+00:07:32,900 --> 00:07:35,300
+Position is sometimes a cash buffer
+
+186
+00:07:35,533 --> 00:07:38,266
+Sometimes a body of work that can be seen
+
+187
+00:07:38,600 --> 00:07:41,900
+Sometimes three people willing to give you honest feedback
+
+188
+00:07:42,100 --> 00:07:45,566
+Sometimes one sentence you can say clearly inside a messy problem
+
+189
+00:07:45,900 --> 00:07:47,633
+They all share one thing
+
+190
+00:07:47,700 --> 00:07:49,700
+Not making you look impressive
+
+191
+00:07:49,733 --> 00:07:52,633
+But making sure your next time doesn't start from zero
+
+192
+00:07:52,866 --> 00:07:56,100
+You'll notice that truly useful effort always has a bit of compounding
+
+193
+00:07:56,233 --> 00:07:57,066
+Done today
+
+194
+00:07:57,066 --> 00:07:58,333
+Still usable tomorrow
+
+195
+00:07:58,400 --> 00:07:59,766
+Others can find it too
+
+196
+00:07:59,933 --> 00:08:01,966
+New options appear because of it
+
+197
+00:08:02,333 --> 00:08:04,700
+But a lot of draining effort doesn't work that way
+
+198
+00:08:04,733 --> 00:08:07,500
+Today's overtime only fills today's hole
+
+199
+00:08:07,666 --> 00:08:10,933
+Today's anxiety only pushes you to save ten more videos
+
+200
+00:08:11,300 --> 00:08:14,266
+Today's plan only buys you a moment of relief
+
+201
+00:08:14,500 --> 00:08:15,433
+Tomorrow you wake up
+
+202
+00:08:15,433 --> 00:08:18,100
+And have to prove you're not falling behind all over again
+
+203
+00:08:18,500 --> 00:08:21,700
+So strategy isn't a sheet filled with five-year goals
+
+204
+00:08:21,933 --> 00:08:24,500
+It's more like pausing now and then to ask
+
+205
+00:08:24,733 --> 00:08:26,433
+Where exactly am I standing right now
+
+206
+00:08:26,433 --> 00:08:28,033
+What am I most short of
+
+207
+00:08:28,033 --> 00:08:29,833
+What do I already have in hand
+
+208
+00:08:30,000 --> 00:08:33,266
+Will this step in front of me add a path or close one
+
+209
+00:08:33,333 --> 00:08:36,466
+These four questions matter more than finding ten trending methods
+
+210
+00:08:36,633 --> 00:08:38,466
+Because methods expire fast
+
+211
+00:08:38,633 --> 00:08:40,133
+A software updates
+
+212
+00:08:40,133 --> 00:08:41,900
+A platform changes its rules
+
+213
+00:08:41,900 --> 00:08:46,300
+A content format that seems to be working can lose its audience next month
+
+214
+00:08:46,800 --> 00:08:51,333
+But your ability to spot problems make things collaborate and understand feedback
+
+215
+00:08:51,333 --> 00:08:53,533
+Moves with you to the next place
+
+216
+00:08:53,866 --> 00:08:56,766
+This is also what's easiest to overlook right now
+
+217
+00:08:57,266 --> 00:08:58,566
+We're too quick to ask
+
+218
+00:08:58,600 --> 00:09:00,033
+Which tool is the strongest
+
+219
+00:09:00,033 --> 00:09:01,833
+Which set of prompts works best
+
+220
+00:09:01,833 --> 00:09:03,466
+Which niche is still worth entering
+
+221
+00:09:03,533 --> 00:09:05,233
+These questions are fine to ask
+
+222
+00:09:05,233 --> 00:09:07,133
+But they should come later
+
+223
+00:09:07,300 --> 00:09:08,866
+The question before them is
+
+224
+00:09:09,066 --> 00:09:14,066
+Does this tool in my hand bring me closer to a real person and a real problem
+
+225
+00:09:14,633 --> 00:09:15,400
+If it doesn't
+
+226
+00:09:15,400 --> 00:09:19,366
+However new it is it might just be another toy that keeps you from feeling left behind
+
+227
+00:09:19,666 --> 00:09:20,466
+If it does
+
+228
+00:09:20,466 --> 00:09:21,900
+Then it's your lever
+
+229
+00:09:22,333 --> 00:09:24,700
+A lever isn't something that lifts you up high
+
+230
+00:09:25,000 --> 00:09:28,566
+A lever is a fulcrum that lets the same effort move a bigger result
+
+231
+00:09:28,833 --> 00:09:30,900
+Write an article nobody finishes reading
+
+232
+00:09:31,033 --> 00:09:33,100
+And you've maybe just completed one article
+
+233
+00:09:33,233 --> 00:09:36,066
+Write up a question clients keep asking again and again
+
+234
+00:09:36,133 --> 00:09:38,433
+And make it findable by the next client
+
+235
+00:09:38,700 --> 00:09:40,866
+Then it's more than one piece of writing
+
+236
+00:09:41,000 --> 00:09:43,266
+It starts holding a place for you
+
+237
+00:09:43,300 --> 00:09:44,333
+Do one project
+
+238
+00:09:44,333 --> 00:09:45,633
+Finish it and it's over
+
+239
+00:09:45,633 --> 00:09:47,066
+That's one delivery
+
+240
+00:09:47,133 --> 00:09:50,433
+Turn it into a method a case study and a reusable process
+
+241
+00:09:50,466 --> 00:09:53,100
+And next time it no longer starts from zero
+
+242
+00:09:53,400 --> 00:09:56,700
+This isn't telling you to package every little thing as a personal brand
+
+243
+00:09:56,800 --> 00:09:57,866
+It's a reminder
+
+244
+00:09:57,866 --> 00:10:00,933
+Don't pour all your strength into places where it vanishes after one use
+
+245
+00:10:01,100 --> 00:10:03,733
+Some actions only leave you exhausted when they're done
+
+246
+00:10:03,833 --> 00:10:06,933
+Other actions leave you a map when they're done
+
+247
+00:10:07,266 --> 00:10:09,733
+That's the difference between tactics and strategy
+
+248
+00:10:09,866 --> 00:10:12,633
+Tactics is how to get one thing done today
+
+249
+00:10:12,900 --> 00:10:17,100
+Strategy is whether tomorrow walks easier after today's work is done
+
+250
+00:10:18,500 --> 00:10:19,633
+Then Monday morning arrives
+
+251
+00:10:19,633 --> 00:10:21,500
+You open your plan for the new week
+
+252
+00:10:21,600 --> 00:10:22,666
+You want to sleep earlier
+
+253
+00:10:22,700 --> 00:10:23,633
+Want to exercise
+
+254
+00:10:23,633 --> 00:10:24,500
+Want to read
+
+255
+00:10:24,500 --> 00:10:25,366
+Want to learn AI
+
+256
+00:10:25,700 --> 00:10:27,066
+Want to get the side hustle going
+
+257
+00:10:27,066 --> 00:10:28,566
+And also want more time with family
+
+258
+00:10:28,700 --> 00:10:30,266
+Every one of these is right
+
+259
+00:10:30,466 --> 00:10:32,966
+So you give each one a slice of time
+
+260
+00:10:33,466 --> 00:10:35,033
+Twenty minutes of exercise in the morning
+
+261
+00:10:35,033 --> 00:10:36,300
+Audiobooks on the commute
+
+262
+00:10:36,433 --> 00:10:37,733
+Tool tutorials at lunch
+
+263
+00:10:37,733 --> 00:10:39,000
+Writing content at night
+
+264
+00:10:39,000 --> 00:10:40,100
+A review before bed
+
+265
+00:10:40,333 --> 00:10:41,766
+It looks well rounded
+
+266
+00:10:42,033 --> 00:10:44,833
+And it's easy to be gasping for air by Wednesday
+
+267
+00:10:45,133 --> 00:10:47,233
+It's not that you lack time management skills
+
+268
+00:10:47,300 --> 00:10:50,866
+It's that you spread limited energy evenly across too many directions
+
+269
+00:10:51,100 --> 00:10:53,766
+So every direction ends up with nothing but a beginning
+
+270
+00:10:54,000 --> 00:10:58,300
+There's a kind of effort that's like giving one drop of water to ten dying plants
+
+271
+00:10:58,466 --> 00:10:59,633
+You've been busy forever
+
+272
+00:10:59,633 --> 00:11:01,500
+Yet not a single plant actually recovers
+
+273
+00:11:01,733 --> 00:11:04,466
+Real focus isn't cutting everything out
+
+274
+00:11:04,666 --> 00:11:07,233
+It's loosening the one spot that blocks you the most
+
+275
+00:11:07,500 --> 00:11:09,833
+Take a very real scenario first
+
+276
+00:11:09,900 --> 00:11:12,700
+Someone says every day they have no time for a side hustle
+
+277
+00:11:12,800 --> 00:11:15,733
+But after work they're too exhausted to do anything but lie down
+
+278
+00:11:15,933 --> 00:11:19,366
+If what's truly stuck is the gap in income and energy
+
+279
+00:11:19,433 --> 00:11:23,833
+Then they don't need to learn editing marketing sales and writing all at once
+
+280
+00:11:24,066 --> 00:11:26,966
+Nor do they need to cut two more hours of sleep
+
+281
+00:11:27,333 --> 00:11:29,300
+What they might need to do first is
+
+282
+00:11:29,300 --> 00:11:32,366
+Make the most repetitive task at work take less effort
+
+283
+00:11:32,600 --> 00:11:35,433
+Get clear on one expense that's been blurry forever
+
+284
+00:11:35,600 --> 00:11:39,933
+Or first test whether a small service they can reliably deliver is something anyone needs
+
+285
+00:11:40,133 --> 00:11:42,466
+Not because these things sound the coolest
+
+286
+00:11:42,533 --> 00:11:44,300
+But because once they loosen
+
+287
+00:11:44,300 --> 00:11:47,266
+They hand back some time some energy or some certainty
+
+288
+00:11:47,633 --> 00:11:48,700
+With that little bit of margin
+
+289
+00:11:48,700 --> 00:11:51,333
+The choices after it stop depending on pure grit
+
+290
+00:11:51,333 --> 00:11:52,900
+That's what finding the bottleneck means
+
+291
+00:11:53,033 --> 00:11:54,833
+Not asking what do I most want to do
+
+292
+00:11:54,833 --> 00:11:59,533
+But asking which problem drags every other effort back until it moves
+
+293
+00:12:00,066 --> 00:12:02,700
+Someone thinks their bottleneck is not knowing how to use AI
+
+294
+00:12:02,933 --> 00:12:06,300
+Actually their problem is not knowing what's bugging their customers
+
+295
+00:12:06,533 --> 00:12:08,700
+Someone thinks they can't make content
+
+296
+00:12:08,700 --> 00:12:12,233
+Actually their problem is fearing others will think they sound not good enough
+
+297
+00:12:12,500 --> 00:12:14,566
+Someone thinks they lack discipline
+
+298
+00:12:14,733 --> 00:12:18,533
+Actually they stay up late every night because their daytime tasks have no boundaries
+
+299
+00:12:18,600 --> 00:12:19,233
+You see
+
+300
+00:12:19,233 --> 00:12:21,533
+The surface of a problem is usually loud
+
+301
+00:12:21,666 --> 00:12:24,833
+While the real block can hide somewhere very quiet
+
+302
+00:12:25,000 --> 00:12:28,333
+You don't have to diagnose every problem in your life at once
+
+303
+00:12:28,466 --> 00:12:30,866
+Just pick one that keeps coming back
+
+304
+00:12:31,200 --> 00:12:34,466
+The one whose appearance scatters all your other plans every time
+
+305
+00:12:34,600 --> 00:12:35,400
+For example
+
+306
+00:12:35,466 --> 00:12:37,000
+Every time you want to start making content
+
+307
+00:12:37,000 --> 00:12:39,166
+You spend two hours looking for references first
+
+308
+00:12:39,400 --> 00:12:41,666
+Then feel worse and worse about yourself as you scroll
+
+309
+00:12:41,700 --> 00:12:43,466
+And end up writing nothing at all
+
+310
+00:12:43,833 --> 00:12:46,100
+Then what's blocking you may not be an inability to write
+
+311
+00:12:46,266 --> 00:12:49,366
+It's not having an output mechanism that allows a rough start
+
+312
+00:12:49,666 --> 00:12:52,466
+At this point studying ten more excellent accounts
+
+313
+00:12:52,533 --> 00:12:54,100
+Only raises the bar higher
+
+314
+00:12:54,466 --> 00:12:58,633
+The square you need to move to might be setting yourself one tiny rule
+
+315
+00:12:58,933 --> 00:13:02,133
+Before looking at any reference write one hundred words of your own judgment
+
+316
+00:13:02,133 --> 00:13:03,666
+Not to write well
+
+317
+00:13:03,900 --> 00:13:07,333
+But to turn references from replacing your thinking into calibrating it
+
+318
+00:13:07,533 --> 00:13:08,366
+Another example
+
+319
+00:13:08,466 --> 00:13:09,733
+You've been wanting to change jobs
+
+320
+00:13:09,733 --> 00:13:12,233
+But every time you open a job app you get more anxious
+
+321
+00:13:12,400 --> 00:13:15,166
+You think what you need is a hundred more job listings
+
+322
+00:13:15,400 --> 00:13:19,633
+But what you're really missing might be a portfolio that helps people grasp you fast
+
+323
+00:13:19,933 --> 00:13:21,733
+Then the most valuable thing this week
+
+324
+00:13:21,733 --> 00:13:23,300
+Isn't scrolling more postings
+
+325
+00:13:23,333 --> 00:13:26,633
+It's writing up one concrete thing you've done clearly
+
+326
+00:13:26,833 --> 00:13:28,066
+What problem you solved
+
+327
+00:13:28,066 --> 00:13:29,066
+How you did it
+
+328
+00:13:29,066 --> 00:13:30,533
+And what changed in the end
+
+329
+00:13:30,733 --> 00:13:32,266
+Once that page is written
+
+330
+00:13:32,266 --> 00:13:33,666
+Your position has changed
+
+331
+00:13:33,666 --> 00:13:36,466
+You're no longer just someone anxiously waiting for a chance
+
+332
+00:13:36,733 --> 00:13:39,133
+You now have something you can hand to people
+
+333
+00:13:39,400 --> 00:13:40,966
+The bottleneck loosens a little
+
+334
+00:13:41,000 --> 00:13:42,933
+And every other action finally has somewhere to land
+
+335
+00:13:43,333 --> 00:13:44,900
+Many people are afraid of focus
+
+336
+00:13:44,900 --> 00:13:48,766
+Because they understand it as betting their whole life on one thing
+
+337
+00:13:49,000 --> 00:13:49,933
+It isn't
+
+338
+00:13:50,100 --> 00:13:52,633
+Focus is more like for a stretch of time
+
+339
+00:13:52,833 --> 00:13:55,833
+Admitting that the thing most worth saving first isn't everything
+
+340
+00:13:56,066 --> 00:13:58,033
+You're not giving up your other wishes
+
+341
+00:13:58,033 --> 00:14:01,266
+You're just choosing not to spend all of today on every single one
+
+342
+00:14:01,666 --> 00:14:04,533
+Solving one problem that keeps dragging you down each month
+
+343
+00:14:04,833 --> 00:14:07,966
+Might be slower than changing ten habits every day
+
+344
+00:14:08,066 --> 00:14:10,366
+Yet it's far more likely to leave real change behind
+
+345
+00:14:10,400 --> 00:14:13,066
+Don't rush to ask which niche has the best future
+
+346
+00:14:13,066 --> 00:14:13,733
+Ask first
+
+347
+00:14:13,733 --> 00:14:16,566
+Which kind of passivity should I get rid of right now
+
+348
+00:14:16,833 --> 00:14:19,533
+Don't rush to ask which trick will turn my life around
+
+349
+00:14:19,533 --> 00:14:20,300
+Ask first
+
+350
+00:14:20,300 --> 00:14:23,966
+Which small action will make next week's me feel less pushed around
+
+351
+00:14:24,266 --> 00:14:27,166
+Strategy isn't finding a path that's forever right
+
+352
+00:14:27,433 --> 00:14:33,100
+Strategy is not letting every path get blocked on you at the same spot
+
+353
+00:14:34,000 --> 00:14:34,766
+At this point
+
+354
+00:14:34,766 --> 00:14:35,700
+You might ask
+
+355
+00:14:35,900 --> 00:14:37,533
+So what exactly should I do
+
+356
+00:14:37,733 --> 00:14:40,333
+Do I need to write a five-year plan right now
+
+357
+00:14:40,333 --> 00:14:42,333
+Break every quarter into goals
+
+358
+00:14:42,466 --> 00:14:44,566
+And list dozens of key results
+
+359
+00:14:44,733 --> 00:14:46,966
+If you love planning of course you can write one
+
+360
+00:14:47,033 --> 00:14:49,533
+Just don't mistake that sheet for strategy itself
+
+361
+00:14:49,700 --> 00:14:50,900
+However beautiful a sheet is
+
+362
+00:14:50,900 --> 00:14:53,466
+It won't build a relationship with reality for you
+
+363
+00:14:53,633 --> 00:14:56,266
+A genuinely useful start can be much smaller
+
+364
+00:14:56,466 --> 00:14:58,066
+You only need one sheet of paper
+
+365
+00:14:58,100 --> 00:14:59,100
+And three questions written down
+
+366
+00:14:59,666 --> 00:15:00,533
+First question
+
+367
+00:15:00,700 --> 00:15:02,900
+If nothing changes in six months
+
+368
+00:15:03,000 --> 00:15:05,300
+What's the one thing I least want to keep enduring
+
+369
+00:15:05,433 --> 00:15:07,166
+Not some huge wish
+
+370
+00:15:07,200 --> 00:15:09,133
+Not I want to become successful
+
+371
+00:15:09,300 --> 00:15:11,233
+But one specific way you're trapped
+
+372
+00:15:11,233 --> 00:15:12,000
+For example
+
+373
+00:15:12,000 --> 00:15:15,433
+I don't want to feel tense three days before every payday
+
+374
+00:15:15,800 --> 00:15:20,166
+I don't want a shelf of projects but not one case that shows my worth
+
+375
+00:15:20,600 --> 00:15:24,733
+I don't want to panic about being obsolete every time a new tool appears
+
+376
+00:15:25,133 --> 00:15:27,733
+Write the days you don't want to keep living clearly first
+
+377
+00:15:27,833 --> 00:15:29,100
+Not to scare yourself
+
+378
+00:15:29,266 --> 00:15:32,900
+But to know which direction deserves to move first
+
+379
+00:15:33,433 --> 00:15:34,300
+Second question
+
+380
+00:15:34,533 --> 00:15:38,100
+What do I already have in hand that could be rearranged
+
+381
+00:15:38,233 --> 00:15:40,100
+Maybe the projects you've done
+
+382
+00:15:40,100 --> 00:15:42,900
+Maybe two evenings a week you can free up
+
+383
+00:15:43,033 --> 00:15:45,733
+Maybe a friend willing to tell you the truth
+
+384
+00:15:46,033 --> 00:15:49,066
+Maybe a type of problem you already know inside out from work
+
+385
+00:15:49,533 --> 00:15:53,966
+Or maybe just the patience to finish one small thing for a whole month
+
+386
+00:15:54,300 --> 00:15:56,533
+Don't stare at what you don't have yet
+
+387
+00:15:56,733 --> 00:15:58,966
+Strategy isn't pretending you have plenty of resources
+
+388
+00:15:59,033 --> 00:16:02,033
+Strategy is seeing the few cards in your hand clearly first
+
+389
+00:16:02,400 --> 00:16:03,366
+Third question
+
+390
+00:16:03,633 --> 00:16:05,266
+Is there one action this week
+
+391
+00:16:05,266 --> 00:16:08,300
+That once done makes reality give me a new answer
+
+392
+00:16:08,866 --> 00:16:10,300
+The key word is reality
+
+393
+00:16:10,433 --> 00:16:12,333
+Not another feeling you give yourself
+
+394
+00:16:12,600 --> 00:16:14,733
+But an action that gets a reply back
+
+395
+00:16:15,066 --> 00:16:16,300
+You want to build a course
+
+396
+00:16:16,300 --> 00:16:17,533
+Don't record ten lessons first
+
+397
+00:16:17,633 --> 00:16:21,633
+Talk to three people about what they most want solved first
+
+398
+00:16:21,700 --> 00:16:22,833
+You want to do design
+
+399
+00:16:22,833 --> 00:16:24,933
+Don't keep your work hidden on a hard drive
+
+400
+00:16:25,133 --> 00:16:28,966
+Send your most finished piece to one person who might actually use it
+
+401
+00:16:29,200 --> 00:16:30,400
+You want to switch jobs
+
+402
+00:16:30,400 --> 00:16:32,266
+Don't scroll postings until you're numb
+
+403
+00:16:32,300 --> 00:16:34,933
+Write one project's results up as a single page
+
+404
+00:16:35,266 --> 00:16:36,200
+You want to learn AI
+
+405
+00:16:36,200 --> 00:16:38,100
+Don't install every tool first
+
+406
+00:16:38,100 --> 00:16:42,866
+Take one real task you're doing today and see if it can save you half an hour
+
+407
+00:16:43,066 --> 00:16:45,633
+None of these actions guarantee instant success
+
+408
+00:16:45,700 --> 00:16:47,766
+But they get you information
+
+409
+00:16:48,100 --> 00:16:49,133
+What people want
+
+410
+00:16:49,133 --> 00:16:50,300
+What nobody gets
+
+411
+00:16:50,433 --> 00:16:51,533
+What needs filling in
+
+412
+00:16:51,533 --> 00:16:53,266
+What isn't worth continuing at all
+
+413
+00:16:53,633 --> 00:16:54,466
+With information
+
+414
+00:16:54,466 --> 00:16:55,900
+You've earned the right to adjust
+
+415
+00:16:56,000 --> 00:16:58,500
+Many people treat adjusting as giving up
+
+416
+00:16:58,666 --> 00:16:59,933
+The morning routine failed
+
+417
+00:16:59,933 --> 00:17:01,766
+So they decide they have no willpower
+
+418
+00:17:01,900 --> 00:17:02,933
+Content numbers are bad
+
+419
+00:17:02,933 --> 00:17:04,733
+So they decide they're not cut out for it
+
+420
+00:17:04,866 --> 00:17:06,300
+A tool didn't stick
+
+421
+00:17:06,300 --> 00:17:08,133
+So they decide they've fallen behind again
+
+422
+00:17:08,233 --> 00:17:11,933
+But real strategy was never about guarding the first method you thought of
+
+423
+00:17:12,666 --> 00:17:14,033
+The direction can stay steady
+
+424
+00:17:14,033 --> 00:17:15,433
+The methods have to change
+
+425
+00:17:15,600 --> 00:17:17,833
+Wanting a healthier body
+
+426
+00:17:17,833 --> 00:17:20,866
+Doesn't mean you must run at six a m forever
+
+427
+00:17:21,066 --> 00:17:23,033
+Wanting more options in your career
+
+428
+00:17:23,033 --> 00:17:25,500
+Doesn't mean only one side hustle format can work
+
+429
+00:17:25,733 --> 00:17:26,833
+Wanting better efficiency
+
+430
+00:17:26,833 --> 00:17:29,100
+Doesn't mean learning every new tool either
+
+431
+00:17:29,500 --> 00:17:30,833
+Set aside ten minutes a week
+
+432
+00:17:30,833 --> 00:17:32,266
+To review only three things
+
+433
+00:17:32,433 --> 00:17:35,266
+Which actions this week actually brought me closer to reality
+
+434
+00:17:35,333 --> 00:17:38,233
+Which actions only soothed me for not falling behind
+
+435
+00:17:38,500 --> 00:17:41,466
+Which one will I cut next week and which will I keep
+
+436
+00:17:41,700 --> 00:17:43,633
+Reviewing isn't grading yourself
+
+437
+00:17:43,800 --> 00:17:45,833
+Not stamping finished as good guy
+
+438
+00:17:46,066 --> 00:17:47,933
+And unfinished as bad guy
+
+439
+00:17:48,133 --> 00:17:50,433
+A review just helps you switch paths
+
+440
+00:17:50,833 --> 00:17:54,366
+So you stop banging your head against the same wall in the same blocked spot
+
+441
+00:17:54,533 --> 00:17:56,033
+Life isn't a chess match
+
+442
+00:17:56,200 --> 00:17:58,833
+You don't need to trap anyone to move forward
+
+443
+00:17:59,033 --> 00:18:02,266
+And you don't need to burn your own bridges to prove you're brave
+
+444
+00:18:02,533 --> 00:18:03,533
+What really matters
+
+445
+00:18:03,533 --> 00:18:06,900
+Is not staying stuck for long in a position that keeps getting narrower
+
+446
+00:18:07,100 --> 00:18:09,466
+Next time you see a trending method
+
+447
+00:18:09,500 --> 00:18:10,933
+Don't save it right away
+
+448
+00:18:11,200 --> 00:18:13,933
+And don't rush to wonder if you've fallen behind
+
+449
+00:18:14,066 --> 00:18:15,100
+Ask one question first
+
+450
+00:18:15,100 --> 00:18:17,866
+Which real problem in front of me can it help me handle
+
+451
+00:18:18,233 --> 00:18:19,200
+If you can't answer
+
+452
+00:18:19,200 --> 00:18:22,100
+It might just be another thing that calms you down for a moment
+
+453
+00:18:22,433 --> 00:18:23,600
+If you can answer
+
+454
+00:18:23,600 --> 00:18:25,900
+Then stop waiting for a more perfect version
+
+455
+00:18:26,033 --> 00:18:28,766
+Use it to take an action that gets a reply
+
+456
+00:18:29,400 --> 00:18:30,200
+Post it
+
+457
+00:18:30,200 --> 00:18:31,033
+Ask it
+
+458
+00:18:31,033 --> 00:18:31,933
+Hand it over
+
+459
+00:18:32,100 --> 00:18:34,533
+You don't need to see your whole life clearly at once
+
+460
+00:18:34,833 --> 00:18:36,300
+You just need today's step
+
+461
+00:18:36,300 --> 00:18:38,233
+To open one more path than yesterday
+
+462
+00:18:38,466 --> 00:18:40,300
+Tactics can keep you busy
+
+463
+00:18:40,500 --> 00:18:43,966
+Only strategy makes sure you don't stay busy in the same spot forever
