@@ -1,0 +1,715 @@
+1
+00:00:01,333 --> 00:00:03,566
+After work you detour to supermarket pickup
+
+2
+00:00:03,833 --> 00:00:07,400
+Same bag of laundry pods 15 yuan cheaper than home delivery
+
+3
+00:00:07,600 --> 00:00:12,500
+You ride more than 20 minutes line up at the locker then carry the bags upstairs
+
+4
+00:00:12,733 --> 00:00:14,933
+When you get home the soup has gone cold
+
+5
+00:00:15,200 --> 00:00:20,333
+You meant to video call your mom but only replied maybe tomorrow
+
+6
+00:00:20,633 --> 00:00:25,333
+You log the 15 yuan you saved and feel a little proud
+
+7
+00:00:25,533 --> 00:00:28,000
+But this ledger leaves out those 40 minutes
+
+8
+00:00:28,166 --> 00:00:31,533
+Nor the hot meal or the call you never made
+
+9
+00:00:31,966 --> 00:00:34,166
+Most people misunderstand opportunity cost
+
+10
+00:00:34,333 --> 00:00:36,433
+It's not the money you already spent
+
+11
+00:00:36,633 --> 00:00:40,633
+It's the best alternative you quietly gave up to make that choice
+
+12
+00:00:41,133 --> 00:00:44,000
+We easily treat price as the full cost of a thing
+
+13
+00:00:44,000 --> 00:00:45,200
+Tagged at 49 so worth 49
+
+14
+00:00:45,200 --> 00:00:48,233
+Save 15 on a deal and you feel 15 richer
+
+15
+00:00:48,500 --> 00:00:50,033
+Because price is easy to see
+
+16
+00:00:50,366 --> 00:00:55,133
+It's printed on the tag sits on the checkout page and leaves your balance instantly
+
+17
+00:00:55,533 --> 00:00:59,700
+But what we regret most is rarely the money we can see
+
+18
+00:01:00,033 --> 00:01:02,233
+It's what got moved aside for it
+
+19
+00:01:02,533 --> 00:01:06,500
+You add one more thing you don't need just to hit the free shipping threshold
+
+20
+00:01:07,133 --> 00:01:09,333
+You think the extra cost is 20 odd yuan
+
+21
+00:01:09,533 --> 00:01:15,966
+Later the closet holds one more shirt with tags on and your wallet keeps a little less slack
+
+22
+00:01:16,366 --> 00:01:20,533
+You take a weekend gig the pay looks decent
+
+23
+00:01:20,633 --> 00:01:24,500
+But after those two days you're still half asleep on Monday morning
+
+24
+00:01:24,933 --> 00:01:27,500
+You think you just postponed some rest
+
+25
+00:01:27,733 --> 00:01:33,500
+Only later you realize you gave up an afternoon to prep for interviews and a steady week ahead
+
+26
+00:01:33,800 --> 00:01:36,933
+You open a livestream the host says last 10 minutes
+
+27
+00:01:37,166 --> 00:01:44,000
+You meant to stop for 2 minutes but between grabbing coupons and comparing prices over an hour slips away
+
+28
+00:01:44,300 --> 00:01:45,500
+You paid no entry fee
+
+29
+00:01:45,766 --> 00:01:53,366
+But the unread pages the undone laundry the quiet sit you skipped all went with that hour
+
+30
+00:01:53,533 --> 00:01:56,966
+This sounds like putting a price tag on every minute
+
+31
+00:01:57,300 --> 00:01:58,200
+Actually no
+
+32
+00:01:58,700 --> 00:02:02,133
+Opportunity cost isn't asking you to turn life into an abacus
+
+33
+00:02:02,300 --> 00:02:06,333
+It just reminds you that no choice happens alone
+
+34
+00:02:06,600 --> 00:02:10,700
+Every yes you say usually comes with an unspoken no beside it
+
+35
+00:02:10,900 --> 00:02:14,000
+That no is the real weight of many decisions
+
+36
+00:02:14,300 --> 00:02:16,100
+Especially when resources are tight
+
+37
+00:02:16,500 --> 00:02:21,700
+You hold a little money a little free time a little energy work hasn't burned through yet
+
+38
+00:02:22,000 --> 00:02:26,133
+They aren't cart items you can pile up and browse at leisure
+
+39
+00:02:26,400 --> 00:02:31,000
+Once given to one thing they can't go to another at the same time
+
+40
+00:02:31,900 --> 00:02:35,733
+Scarcity tells us you can't take everything you want
+
+41
+00:02:36,133 --> 00:02:38,366
+Opportunity cost goes one step further
+
+42
+00:02:38,566 --> 00:02:41,800
+It asks whether the thing you set down was worth it
+
+43
+00:02:43,133 --> 00:02:46,633
+Economics calls this forgone value opportunity cost
+
+44
+00:02:46,800 --> 00:02:48,333
+The name sounds a bit stiff
+
+45
+00:02:48,500 --> 00:02:54,533
+In plain words it's the other best road you gave up to walk this one
+
+46
+00:02:54,633 --> 00:02:56,766
+Note it's the single best one
+
+47
+00:02:57,366 --> 00:02:59,833
+Not the sum of everything you didn't do
+
+48
+00:03:00,333 --> 00:03:08,533
+Otherwise every meal would mean giving up the gym English side jobs family time and a movie all at once
+
+49
+00:03:08,833 --> 00:03:10,833
+Count that way and no one could live
+
+50
+00:03:11,300 --> 00:03:13,033
+Opportunity cost asks one thing
+
+51
+00:03:13,400 --> 00:03:18,300
+Among the options actually on the table which one hurts most to give up
+
+52
+00:03:18,800 --> 00:03:21,033
+Xiao Lin has three plans Saturday afternoon
+
+53
+00:03:21,233 --> 00:03:25,700
+Her company asks her last minute to cover a half day for 300 yuan in overtime
+
+54
+00:03:26,033 --> 00:03:28,733
+A friend invites her to an exhibition ticket in hand
+
+55
+00:03:28,966 --> 00:03:32,400
+She also promised herself to finish the portfolio two weeks overdue
+
+56
+00:03:32,700 --> 00:03:34,366
+She picks the overtime
+
+57
+00:03:34,733 --> 00:03:37,033
+The 300 yuan is the gain she can see
+
+58
+00:03:37,200 --> 00:03:41,300
+But its opportunity cost isn't the exhibition plus the portfolio combined
+
+59
+00:03:41,900 --> 00:03:46,600
+She can't be in two places or stack two afternoons into one
+
+60
+00:03:46,966 --> 00:03:51,966
+What she really compares is which of the other two matters more to her
+
+61
+00:03:52,400 --> 00:03:57,500
+If she's sending out resumes next week the portfolio may be the best alternative
+
+62
+00:03:57,800 --> 00:04:01,566
+Then what the overtime truly trades away isn't just half a day of rest
+
+63
+00:04:01,833 --> 00:04:05,200
+It's a chance to move closer to her next job
+
+64
+00:04:05,633 --> 00:04:10,233
+If she's been running on fumes for weeks sleep and energy nearly gone
+
+65
+00:04:10,400 --> 00:04:14,500
+Then the best alternative might be neither the exhibition nor pushing harder
+
+66
+00:04:14,733 --> 00:04:16,800
+But one uninterrupted afternoon
+
+67
+00:04:17,100 --> 00:04:19,500
+At that point rest isn't laziness
+
+68
+00:04:19,933 --> 00:04:22,400
+It's the resource most worth holding on to
+
+69
+00:04:22,700 --> 00:04:24,533
+Same 300 yuan overtime pay
+
+70
+00:04:24,633 --> 00:04:27,533
+For someone with rent due it may be worth it
+
+71
+00:04:28,000 --> 00:04:32,333
+For someone with a big interview tomorrow and no prep done it may not be
+
+72
+00:04:32,733 --> 00:04:35,133
+Opportunity cost has no fixed price list
+
+73
+00:04:35,400 --> 00:04:38,033
+It depends on the resources you truly have
+
+74
+00:04:38,300 --> 00:04:40,800
+And on what you most want to protect right now
+
+75
+00:04:41,100 --> 00:04:44,500
+So it isn't telling you to always pick the highest pay
+
+76
+00:04:44,766 --> 00:04:49,966
+Or to convert family time sleep and walks into hourly wages
+
+77
+00:04:50,433 --> 00:04:53,233
+It just says don't stare only at the receipt
+
+78
+00:04:53,600 --> 00:04:57,766
+And to ask which road you turned away from for that receipt
+
+79
+00:04:58,133 --> 00:04:59,966
+Some choices carry a tiny price tag
+
+80
+00:05:00,000 --> 00:05:02,566
+Yet they take up your most complete block of time
+
+81
+00:05:02,766 --> 00:05:04,966
+Some choices seem to earn nothing
+
+82
+00:05:05,033 --> 00:05:08,533
+Yet they save you a mind that can still think straight the next day
+
+83
+00:05:08,833 --> 00:05:10,966
+The real bill isn't only at checkout
+
+84
+00:05:11,133 --> 00:05:13,766
+It's also written in what never happened
+
+85
+00:05:14,600 --> 00:05:19,400
+Opportunity cost is hard to see because the price in front of you is clear
+
+86
+00:05:19,733 --> 00:05:21,433
+That 15 yuan is easy to count
+
+87
+00:05:21,566 --> 00:05:23,633
+So is the 300 yuan overtime
+
+88
+00:05:23,733 --> 00:05:27,500
+Even a membership coupon's savings pop up on screen instantly
+
+89
+00:05:27,800 --> 00:05:31,600
+But the thing you didn't do sends no receipt and no reminder
+
+90
+00:05:31,900 --> 00:05:35,300
+It only slowly takes shape when you look back
+
+91
+00:05:35,566 --> 00:05:38,833
+What trips up our math is rarely the expensive stuff
+
+92
+00:05:39,200 --> 00:05:43,400
+It's the things that look cheap convenient or even free
+
+93
+00:05:43,966 --> 00:05:47,233
+Type one valuing small money over whole hours
+
+94
+00:05:47,566 --> 00:05:50,500
+You travel far to save the difference on two bubble teas
+
+95
+00:05:50,700 --> 00:05:53,133
+And burn half an hour scrolling on the way
+
+96
+00:05:53,600 --> 00:05:55,000
+The money was saved sure
+
+97
+00:05:55,000 --> 00:06:00,433
+But the time that could have gone to tidying cooking or sleeping early got shredded
+
+98
+00:06:00,833 --> 00:06:02,933
+Shredded time is the easiest to dismiss
+
+99
+00:06:03,166 --> 00:06:06,566
+Unlike your bank balance it never warns you it's running low
+
+100
+00:06:06,933 --> 00:06:12,766
+But once an evening breaks into a dozen five minute pieces deep focus is nearly gone
+
+101
+00:06:13,000 --> 00:06:15,766
+What you get isn't just cheaper bubble tea
+
+102
+00:06:16,000 --> 00:06:19,533
+It may be a tired night with nothing finished
+
+103
+00:06:20,000 --> 00:06:23,300
+Type two mistaking any income for a good deal
+
+104
+00:06:23,600 --> 00:06:25,900
+Some people accept every extra task
+
+105
+00:06:25,900 --> 00:06:28,300
+The reason is simple there's money in it
+
+106
+00:06:28,500 --> 00:06:31,566
+But tasks take not just your time but your attention
+
+107
+00:06:31,800 --> 00:06:35,833
+You reply to a dozen messages after work and fix a spreadsheet on the weekend
+
+108
+00:06:36,033 --> 00:06:37,833
+Each one alone looks small
+
+109
+00:06:38,100 --> 00:06:42,900
+Together they squeeze out the energy for learning exercise and new chances
+
+110
+00:06:43,133 --> 00:06:44,500
+You do want to get better
+
+111
+00:06:44,833 --> 00:06:50,233
+Your clearest hours have been bought up by more urgent tasks that may not matter more
+
+112
+00:06:50,566 --> 00:06:53,800
+Sometimes turning down small money isn't missing income
+
+113
+00:06:54,533 --> 00:06:57,400
+It's keeping space free for big choices
+
+114
+00:06:57,833 --> 00:07:00,766
+Type three mistaking free for costless
+
+115
+00:07:01,033 --> 00:07:04,966
+You download a new productivity tool hoping it saves time
+
+116
+00:07:05,300 --> 00:07:10,966
+Then you spend evenings on templates settings note migration and comparing two more tools
+
+117
+00:07:11,200 --> 00:07:15,000
+Three days later you still haven't started the proposal you meant to write
+
+118
+00:07:15,400 --> 00:07:17,166
+The tool itself may be free
+
+119
+00:07:17,333 --> 00:07:19,400
+But it demands your attention up front
+
+120
+00:07:19,800 --> 00:07:22,900
+Once attention is handed over it takes your momentum with it
+
+121
+00:07:23,133 --> 00:07:28,366
+That's why more apps sometimes make it harder to start anything
+
+122
+00:07:28,700 --> 00:07:29,900
+He doesn't lack tools
+
+123
+00:07:30,166 --> 00:07:34,433
+He traded his best hours for the comfort of shopping for tools
+
+124
+00:07:34,800 --> 00:07:38,533
+Type four mistaking today's discount for tomorrow's good decision
+
+125
+00:07:38,733 --> 00:07:43,000
+You see a limited time annual card originally 1200 now just 690
+
+126
+00:07:43,200 --> 00:07:46,133
+Afraid the price bounces back tomorrow you pay at once
+
+127
+00:07:46,633 --> 00:07:48,333
+But you rarely go anyway
+
+128
+00:07:48,433 --> 00:07:57,000
+What those 690 really compete with might be next month's checkup a dinner when your parents visit or the cushion you wanted to keep
+
+129
+00:07:57,400 --> 00:07:59,766
+The discount keeps you staring at the 530 saved
+
+130
+00:08:00,033 --> 00:08:01,833
+It forces one more question
+
+131
+00:08:01,833 --> 00:08:05,500
+Without that original price would I still pay this much for it
+
+132
+00:08:05,766 --> 00:08:07,033
+That question is powerful
+
+133
+00:08:07,366 --> 00:08:11,800
+It pulls you out of the seller's comparison and back into your own
+
+134
+00:08:12,000 --> 00:08:13,766
+Stop comparing to the list price
+
+135
+00:08:13,766 --> 00:08:16,100
+And compare with your own next possibility
+
+136
+00:08:16,366 --> 00:08:20,100
+This isn't about never buying never taking gigs never trying new tools
+
+137
+00:08:20,300 --> 00:08:25,100
+You can still pick up in person take the overtime buy the annual card
+
+138
+00:08:25,300 --> 00:08:28,166
+As long as you know what you're actually trading
+
+139
+00:08:28,333 --> 00:08:31,766
+Seeing the trade and still choosing is a decision
+
+140
+00:08:32,100 --> 00:08:35,366
+Getting pushed into a choice blind is what turns into regret
+
+141
+00:08:36,900 --> 00:08:40,933
+The most useful part of opportunity cost isn't a complicated spreadsheet
+
+142
+00:08:41,133 --> 00:08:43,300
+It hands you a tiny pause
+
+143
+00:08:43,400 --> 00:08:48,800
+Next time you're set to say yes to pay or to detour for a small saving
+
+144
+00:08:48,933 --> 00:08:50,833
+Don't rush to ask is it worth it
+
+145
+00:08:51,033 --> 00:08:51,833
+Ask first
+
+146
+00:08:51,833 --> 00:08:53,933
+What am I setting down for this
+
+147
+00:08:54,166 --> 00:08:55,966
+The answer shouldn't be a long list
+
+148
+00:08:56,300 --> 00:08:59,633
+Just find the realest most worthwhile alternative right now
+
+149
+00:08:59,966 --> 00:09:04,600
+About to spend more money ask what that money could have solved instead
+
+150
+00:09:04,800 --> 00:09:10,966
+About to spend more time ask who or what this hour was really meant for
+
+151
+00:09:11,200 --> 00:09:17,933
+About to take extra work ask can I still keep my sharpest self for tomorrow
+
+152
+00:09:18,166 --> 00:09:24,800
+About to open another free tool ask will it crowd out the very step I need to finish
+
+153
+00:09:25,100 --> 00:09:27,733
+These four questions aren't meant to make you suffer
+
+154
+00:09:28,100 --> 00:09:30,233
+They make you choose more honestly
+
+155
+00:09:30,500 --> 00:09:35,400
+A lot of anxiety comes from having paid but not knowing what we paid for
+
+156
+00:09:35,633 --> 00:09:38,366
+A little less money a little less time
+
+157
+00:09:38,600 --> 00:09:43,433
+We only see the first so life feels hollowed out for no reason
+
+158
+00:09:43,900 --> 00:09:47,700
+Say your opportunity cost out loud and the choice gets clearer
+
+159
+00:09:48,000 --> 00:09:50,766
+You might still pay 64 yuan for home delivery
+
+160
+00:09:51,100 --> 00:09:54,333
+But now you know you're buying more than laundry pods
+
+161
+00:09:54,500 --> 00:09:58,800
+You're buying back 40 minutes and a hot meal you can sit down to
+
+162
+00:09:59,300 --> 00:10:02,166
+You might still turn down that 300 yuan overtime
+
+163
+00:10:02,366 --> 00:10:04,633
+This time not because you lack effort
+
+164
+00:10:04,766 --> 00:10:08,966
+But because you know the portfolio or the sleep is worth more to you now
+
+165
+00:10:09,400 --> 00:10:11,800
+And you might still take the job
+
+166
+00:10:12,100 --> 00:10:17,733
+Once you see it trades away ordinary rest and what you need now is cash
+
+167
+00:10:18,200 --> 00:10:20,500
+It can still be a good decision
+
+168
+00:10:20,600 --> 00:10:23,200
+Opportunity cost never picks your answer
+
+169
+00:10:23,333 --> 00:10:26,500
+It just stops you from treating price as the whole answer
+
+170
+00:10:26,800 --> 00:10:30,500
+Scarcity says your resources can't be spent twice at once
+
+171
+00:10:30,733 --> 00:10:35,600
+Opportunity cost says before you spend look at what it will crowd out
+
+172
+00:10:35,966 --> 00:10:40,366
+You don't need to turn groceries and gatherings into financial reports
+
+173
+00:10:40,600 --> 00:10:46,900
+But before big choices that take money time energy and attention ten seconds of pause is worth it
+
+174
+00:10:47,366 --> 00:10:50,200
+Name that unnamed alternative out loud
+
+175
+00:10:50,433 --> 00:10:54,500
+Then decide if you're willing to trade what you have now for it
+
+176
+00:10:54,800 --> 00:10:57,333
+The costliest things never have a price tag
+
+177
+00:10:57,500 --> 00:11:00,700
+They just quietly vanish the moment you casually say yes
+
+178
+00:11:01,100 --> 00:11:03,200
+Next time we cover marginal analysis
+
+179
+00:11:03,433 --> 00:11:07,600
+Why the extra yuan and the first yuan are rarely the same thing
