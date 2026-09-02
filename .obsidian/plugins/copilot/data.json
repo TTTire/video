@@ -40,7 +40,7 @@
   "autoAddActiveContentToContext": true,
   "defaultOpenArea": "view",
   "defaultSendShortcut": "enter",
-  "customPromptsFolder": "copilot/copilot-custom-prompts",
+  "customPromptsFolder": "工具/copilot/copilot-custom-prompts",
   "indexVaultToVectorStore": "ON MODE SWITCH",
   "qaExclusions": "copilot",
   "qaInclusions": "",
