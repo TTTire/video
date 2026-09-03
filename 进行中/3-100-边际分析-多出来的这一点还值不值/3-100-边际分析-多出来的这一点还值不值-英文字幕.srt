@@ -1,0 +1,775 @@
+1
+00:00:01,133 --> 00:00:03,600
+When you order bubble tea and upgrade from medium to large
+
+2
+00:00:03,633 --> 00:00:05,833
+the page says it's only three yuan more
+
+3
+00:00:06,000 --> 00:00:08,033
+You casually add boba and a cheese foam topping
+
+4
+00:00:08,033 --> 00:00:09,800
+just six yuan extra in total
+
+5
+00:00:10,033 --> 00:00:11,633
+That first sip does feel satisfying
+
+6
+00:00:11,766 --> 00:00:16,133
+but by the end the ice melts the drink turns cloyingly sweet and half the cup is left
+
+7
+00:00:16,233 --> 00:00:17,766
+Six yuan isn't much
+
+8
+00:00:17,800 --> 00:00:22,133
+yet as you toss the cup you still wonder whether those add-ons were worth it
+
+9
+00:00:22,200 --> 00:00:24,633
+Most people don't overspend because they can't do the math
+
+10
+00:00:24,700 --> 00:00:30,000
+The problem is we mistake the total still looks fine for adding a bit more is also a bargain
+
+11
+00:00:30,166 --> 00:00:32,233
+Marginal analysis is about exactly this
+
+12
+00:00:32,400 --> 00:00:35,966
+It doesn't ask how much you've bought how long you've worked or how many times you've invested
+
+13
+00:00:36,100 --> 00:00:37,566
+It only watches the next one
+
+14
+00:00:37,700 --> 00:00:41,433
+This sip of tea this extra half hour at work this ten-yuan cart filler
+
+15
+00:00:41,433 --> 00:00:45,400
+Does the extra benefit they bring still match the extra price you pay
+
+16
+00:00:45,966 --> 00:00:49,733
+The order page's favorite line is just a little more
+
+17
+00:00:49,966 --> 00:00:51,400
+Large is only three yuan more
+
+18
+00:00:51,400 --> 00:00:52,866
+Toppings only two yuan more
+
+19
+00:00:52,966 --> 00:00:55,133
+Add ten yuan more and delivery is free
+
+20
+00:00:55,133 --> 00:00:57,966
+These tiny numbers rarely trigger any alarm
+
+21
+00:00:58,100 --> 00:01:01,433
+because they sit next to a total you've already accepted
+
+22
+00:01:01,733 --> 00:01:04,200
+You were already ready to buy the 38-yuan tea
+
+23
+00:01:04,200 --> 00:01:07,333
+so adding three more doesn't feel like a new decision
+
+24
+00:01:07,433 --> 00:01:10,233
+It feels like just finishing off the original one
+
+25
+00:01:10,433 --> 00:01:11,733
+But think about it
+
+26
+00:01:11,733 --> 00:01:13,000
+The medium cup is one decision
+
+27
+00:01:13,000 --> 00:01:14,833
+Upgrading to large is another
+
+28
+00:01:14,966 --> 00:01:16,933
+Adding boba is yet another
+
+29
+00:01:17,133 --> 00:01:19,766
+Each step trades new money for new things
+
+30
+00:01:20,133 --> 00:01:23,066
+They shouldn't hide behind well I'm buying anyway
+
+31
+00:01:23,300 --> 00:01:28,233
+That vague guilt when you check your bill at month's end often starts right here
+
+32
+00:01:28,333 --> 00:01:30,466
+Not from one terrifyingly big purchase
+
+33
+00:01:30,533 --> 00:01:32,400
+but from every purchase being just a little more
+
+34
+00:01:32,633 --> 00:01:34,933
+Swapping a single meal for a combo
+
+35
+00:01:35,100 --> 00:01:38,066
+Tossing a small item into the cart to hit a discount
+
+36
+00:01:38,433 --> 00:01:40,833
+Upgrading a video membership from monthly to yearly
+
+37
+00:01:41,000 --> 00:01:43,533
+Agreeing to one more revision right before you get off work
+
+38
+00:01:43,733 --> 00:01:46,866
+Each one alone has a perfectly reasonable-sounding excuse
+
+39
+00:01:47,233 --> 00:01:53,266
+Put together you'll notice money time and patience leaking away through a pinhole
+
+40
+00:01:53,400 --> 00:01:58,200
+The tricky part is we use what we've already spent to justify what comes next
+
+41
+00:01:58,433 --> 00:02:01,266
+The tea is ordered anyway so might as well go large
+
+42
+00:02:01,366 --> 00:02:05,666
+The cart is already at eighty so might as well add twenty for free shipping
+
+43
+00:02:05,833 --> 00:02:10,833
+The deck is already done by nine so might as well stay up one more hour to polish it
+
+44
+00:02:11,100 --> 00:02:16,633
+But the tea you ordered the eighty you spent the pages you wrote are all in the past
+
+45
+00:02:17,000 --> 00:02:19,733
+They can't automatically prove the next step is worth it too
+
+46
+00:02:20,000 --> 00:02:23,800
+What you're hesitating over was never whether the whole cup is worth forty yuan
+
+47
+00:02:23,833 --> 00:02:29,233
+You're hesitating over whether the last three yuan can buy that exact bit of satisfaction you want
+
+48
+00:02:29,600 --> 00:02:31,366
+The difference looks tiny
+
+49
+00:02:31,600 --> 00:02:35,533
+but it redraws the boundary on choices that run on autopilot
+
+50
+00:02:35,966 --> 00:02:38,066
+Some things are very useful the first time
+
+51
+00:02:38,233 --> 00:02:39,633
+still decent the second
+
+52
+00:02:39,933 --> 00:02:43,200
+by the third you may just be avoiding stopping
+
+53
+00:02:43,500 --> 00:02:46,866
+With some work one round of edits makes the plan much clearer
+
+54
+00:02:46,966 --> 00:02:52,833
+By round four nudging a button two pixels left may just burn a night meant for sleep
+
+55
+00:02:53,000 --> 00:02:55,200
+You don't need to blame yourself for this
+
+56
+00:02:55,533 --> 00:02:59,033
+Our brains naturally treat a continuous stretch as one single thing
+
+57
+00:02:59,300 --> 00:03:02,266
+But life's bills are rarely settled in one lump sum
+
+58
+00:03:02,400 --> 00:03:04,466
+They add up one small step at a time
+
+59
+00:03:04,633 --> 00:03:06,800
+What to watch out for isn't wanting more
+
+60
+00:03:07,100 --> 00:03:11,266
+It's failing to check whether that extra bit still gives you anything new
+
+61
+00:03:11,766 --> 00:03:14,833
+Marginal sounds like a word from a textbook
+
+62
+00:03:15,033 --> 00:03:17,000
+It really just means the increment
+
+63
+00:03:17,333 --> 00:03:20,666
+You already have some What happens when you add one more
+
+64
+00:03:20,900 --> 00:03:24,066
+In economics marginal analysis splits this into two sides
+
+65
+00:03:24,233 --> 00:03:26,033
+One side is marginal benefit
+
+66
+00:03:26,166 --> 00:03:30,633
+the extra gain from doing this one more time or buying one more unit
+
+67
+00:03:30,966 --> 00:03:32,800
+The other side is marginal cost
+
+68
+00:03:32,833 --> 00:03:39,566
+what you additionally pay for that new unit money time energy even how you feel the next day
+
+69
+00:03:39,833 --> 00:03:43,733
+When deciding you shouldn't compare total benefit against total cost
+
+70
+00:03:43,900 --> 00:03:47,333
+You should compare the next unit's marginal benefit against its marginal cost
+
+71
+00:03:47,600 --> 00:03:51,566
+If those three extra yuan take you from not enough to just right
+
+72
+00:03:51,766 --> 00:03:53,933
+its marginal benefit may be high
+
+73
+00:03:54,400 --> 00:03:59,366
+If you already can't finish a large and it just leaves more melted ice at the bottom
+
+74
+00:03:59,533 --> 00:04:01,933
+then those three yuan don't buy much
+
+75
+00:04:02,200 --> 00:04:05,066
+This doesn't mean everything loses value as you add more
+
+76
+00:04:05,233 --> 00:04:08,733
+Sometimes the second one is worth more than the first
+
+77
+00:04:09,166 --> 00:04:12,566
+Moving house alone the first friend who shows up matters a lot
+
+78
+00:04:12,733 --> 00:04:16,733
+The second friend brings a van and suddenly the hardest stretch is solved
+
+79
+00:04:16,966 --> 00:04:20,233
+Now one more person actually adds more benefit
+
+80
+00:04:20,700 --> 00:04:23,533
+So marginal analysis isn't just stop when it's enough
+
+81
+00:04:23,900 --> 00:04:26,800
+Nor is it telling you to deny yourself every pleasure
+
+82
+00:04:27,000 --> 00:04:32,566
+It only asks that when you add more you don't let the first one vouch for the last one
+
+83
+00:04:32,766 --> 00:04:35,233
+This applies especially to overtime
+
+84
+00:04:35,500 --> 00:04:38,533
+At seven pm you spend another half hour finishing the materials
+
+85
+00:04:38,800 --> 00:04:42,533
+If it makes tomorrow's meeting run smoothly that half hour may be worth a lot
+
+86
+00:04:42,966 --> 00:04:46,866
+At eleven pm you decide to recolor every single slide
+
+87
+00:04:47,133 --> 00:04:48,933
+The slides may look a bit neater
+
+88
+00:04:48,933 --> 00:04:54,300
+But you're trading away sleep tomorrow's brain and inviting careless mistakes
+
+89
+00:04:54,300 --> 00:04:57,566
+In the first half hour marginal benefit beats marginal cost
+
+90
+00:04:57,800 --> 00:05:00,533
+In the later hour the ledger may have already flipped
+
+91
+00:05:00,633 --> 00:05:01,600
+Same overtime
+
+92
+00:05:01,600 --> 00:05:02,866
+Same half hour
+
+93
+00:05:03,100 --> 00:05:05,100
+They are not the same deal
+
+94
+00:05:05,100 --> 00:05:07,400
+This is where marginal analysis shines
+
+95
+00:05:07,433 --> 00:05:09,733
+It doesn't let one big total hold you hostage
+
+96
+00:05:09,800 --> 00:05:14,666
+You don't have to say I've put in three hours so the fourth must follow
+
+97
+00:05:14,800 --> 00:05:19,433
+Nor I've already spent money today so one more item is fine
+
+98
+00:05:19,600 --> 00:05:21,866
+Every addition can be judged anew
+
+99
+00:05:22,000 --> 00:05:23,833
+Like walking up to a buffet
+
+100
+00:05:24,033 --> 00:05:25,733
+The first plate feeds you
+
+101
+00:05:25,833 --> 00:05:27,233
+the second is for pleasure
+
+102
+00:05:27,366 --> 00:05:34,333
+If the third only brings the misery of overeating it isn't justified by how good the first two tasted
+
+103
+00:05:34,600 --> 00:05:37,266
+Much of life's bad value isn't from starting too late
+
+104
+00:05:37,333 --> 00:05:41,000
+but from pushing past the stopping point with the reasons we began with
+
+105
+00:05:41,233 --> 00:05:44,566
+Friday night a familiar urge hits many people
+
+106
+00:05:44,800 --> 00:05:47,033
+It's been a long week just one more episode
+
+107
+00:05:47,366 --> 00:05:49,766
+The first episode may cost only forty minutes
+
+108
+00:05:49,933 --> 00:05:53,600
+It unwinds you from work and gives your brain a new channel
+
+109
+00:05:53,766 --> 00:05:56,600
+With the second bedtime is getting close
+
+110
+00:05:56,833 --> 00:05:59,533
+After the third tomorrow's wake-up gets harder
+
+111
+00:05:59,966 --> 00:06:00,933
+Same episode length
+
+112
+00:06:00,933 --> 00:06:03,200
+but what they crowd out is completely different
+
+113
+00:06:03,566 --> 00:06:06,200
+The later episode's marginal cost isn't just forty minutes
+
+114
+00:06:06,366 --> 00:06:12,000
+It also takes your morning energy and a slow breakfast you could have had on the weekend
+
+115
+00:06:12,233 --> 00:06:14,033
+Most people don't lack self-control
+
+116
+00:06:14,233 --> 00:06:18,033
+They're still judging by the first episode's cost when they hit play on the next
+
+117
+00:06:18,166 --> 00:06:19,266
+Shopping works the same way
+
+118
+00:06:19,400 --> 00:06:23,133
+You meant to buy one box of laundry pods cart at seventy-two yuan
+
+119
+00:06:23,333 --> 00:06:26,566
+The page says add eight yuan more and the six-yuan delivery fee is waived
+
+120
+00:06:26,800 --> 00:06:28,733
+This is when a certain phrase appears
+
+121
+00:06:28,900 --> 00:06:30,200
+It's only eight yuan more
+
+122
+00:06:30,500 --> 00:06:33,266
+But you're not comparing seventy-two with eighty
+
+123
+00:06:33,400 --> 00:06:34,833
+That's a comparison of totals
+
+124
+00:06:35,000 --> 00:06:41,600
+What you should compare is that eight-yuan item versus the six-yuan fee which works out better for you
+
+125
+00:06:41,933 --> 00:06:46,233
+If it's something you'll actually use next week buying it is fine
+
+126
+00:06:46,533 --> 00:06:52,800
+If it will sit in a drawer for a year you're paying two yuan extra to bring home something that takes up space
+
+127
+00:06:53,433 --> 00:06:55,333
+Free shipping isn't always cheaper
+
+128
+00:06:55,566 --> 00:07:00,066
+It just disguises a standalone decision as being one step from a discount
+
+129
+00:07:00,400 --> 00:07:02,566
+Studying falls into this trap too
+
+130
+00:07:02,766 --> 00:07:04,766
+You sit down at night to write a proposal
+
+131
+00:07:04,900 --> 00:07:08,466
+The first twenty minutes of research clarify the problem
+
+132
+00:07:08,633 --> 00:07:11,833
+Another half hour finds you a few better examples
+
+133
+00:07:12,033 --> 00:07:16,133
+But by hour three you're on the seventh article saying the same thing
+
+134
+00:07:16,166 --> 00:07:18,200
+At that point you're not adding understanding
+
+135
+00:07:18,200 --> 00:07:20,566
+You're probably delaying the first sentence
+
+136
+00:07:20,800 --> 00:07:22,566
+More material later start
+
+137
+00:07:22,700 --> 00:07:24,400
+Not because you aren't serious
+
+138
+00:07:24,500 --> 00:07:28,066
+but because new material no longer brings as many new insights
+
+139
+00:07:28,166 --> 00:07:30,033
+Its marginal benefit has shrunk
+
+140
+00:07:30,133 --> 00:07:33,400
+And its marginal cost has become the night you never started writing
+
+141
+00:07:33,400 --> 00:07:35,700
+AI tools amplify this feeling
+
+142
+00:07:35,700 --> 00:07:37,633
+First you ask it for ten directions
+
+143
+00:07:37,733 --> 00:07:41,233
+Picking two out of ten is usually helpful
+
+144
+00:07:41,233 --> 00:07:46,233
+But then you have it rewrite twenty headlines outline fifty plans list a hundred examples
+
+145
+00:07:46,233 --> 00:07:47,866
+Options seem to multiply
+
+146
+00:07:47,933 --> 00:07:50,466
+while the actual step you must take keeps sliding further back
+
+147
+00:07:50,766 --> 00:07:51,933
+The tool isn't the problem
+
+148
+00:07:52,233 --> 00:07:57,433
+The problem is when new answers only make choosing harder they no longer save you effort
+
+149
+00:07:57,566 --> 00:08:00,466
+Marginal analysis doesn't say shut it all down right now
+
+150
+00:08:00,600 --> 00:08:02,733
+It offers a lighter reminder
+
+151
+00:08:03,100 --> 00:08:10,366
+Next time before searching more editing more adding more ask does this new batch bring me closer to done
+
+152
+00:08:10,700 --> 00:08:14,333
+If not it may just be another detour that looks like hard work
+
+153
+00:08:14,533 --> 00:08:17,833
+That's why the last stretch tends to cost the most
+
+154
+00:08:18,200 --> 00:08:19,600
+Its price tag hasn't changed
+
+155
+00:08:19,733 --> 00:08:24,200
+But the time attention and energy you have left already have
+
+156
+00:08:24,433 --> 00:08:29,400
+The scarcer your resources the more the same small addition costs you
+
+157
+00:08:30,000 --> 00:08:34,800
+Marginal analysis at its most practical isn't about carrying a calculator through life
+
+158
+00:08:35,166 --> 00:08:38,400
+It just asks you to pause ten seconds before adding a little more
+
+159
+00:08:38,833 --> 00:08:41,266
+Don't first ask how much I've already spent
+
+160
+00:08:41,533 --> 00:08:43,800
+Ask what the next one gives me
+
+161
+00:08:44,033 --> 00:08:46,000
+About to go large Then ask
+
+162
+00:08:46,100 --> 00:08:48,833
+Will I really finish the extra part of this cup
+
+163
+00:08:49,100 --> 00:08:50,966
+About to pad the cart Then ask
+
+164
+00:08:51,000 --> 00:08:54,366
+Was this new item already on my shopping list
+
+165
+00:08:54,733 --> 00:08:57,266
+About to work another half hour Then ask
+
+166
+00:08:57,366 --> 00:09:02,066
+Will it solve a real problem or just make stopping harder
+
+167
+00:09:02,533 --> 00:09:07,400
+About to read one more article or ask AI for one more version Then ask
+
+168
+00:09:07,533 --> 00:09:11,333
+Does it move me toward delivery or just delay facing the start
+
+169
+00:09:11,533 --> 00:09:13,466
+These questions have no standard answers
+
+170
+00:09:13,566 --> 00:09:15,966
+Sometimes adding more is worth it
+
+171
+00:09:16,300 --> 00:09:18,633
+You're genuinely thirsty the large gets finished
+
+172
+00:09:19,000 --> 00:09:21,233
+The cart filler is needed next week
+
+173
+00:09:21,433 --> 00:09:24,666
+The half hour of overtime heads off tomorrow's big problem
+
+174
+00:09:24,833 --> 00:09:28,766
+In these cases the added benefit still beats the added cost
+
+175
+00:09:29,100 --> 00:09:29,900
+Then add it
+
+176
+00:09:30,300 --> 00:09:33,833
+But if your only answer is well I've come this far
+
+177
+00:09:33,833 --> 00:09:35,766
+that phrase should make you pause
+
+178
+00:09:35,900 --> 00:09:38,266
+Because it isn't about whether the next one is worth it
+
+179
+00:09:38,366 --> 00:09:40,833
+It says the previous one is already spent
+
+180
+00:09:41,133 --> 00:09:42,333
+The past matters of course
+
+181
+00:09:42,333 --> 00:09:43,966
+But it can't be changed
+
+182
+00:09:44,033 --> 00:09:50,000
+What you still hold is the next three yuan the next half hour and a bit of unused attention
+
+183
+00:09:50,300 --> 00:09:53,566
+Saving them for places that still have real gains isn't being a killjoy
+
+184
+00:09:53,833 --> 00:09:57,033
+It's keeping your limited resources from being eaten away by inertia
+
+185
+00:09:57,133 --> 00:10:00,600
+Next time you see only three yuan more on the order page
+
+186
+00:10:00,733 --> 00:10:02,600
+try translating that line
+
+187
+00:10:02,900 --> 00:10:04,133
+Not just three yuan more
+
+188
+00:10:04,166 --> 00:10:08,033
+But do I want to trade three yuan for those last few sips
+
+189
+00:10:08,533 --> 00:10:10,600
+If the answer is yes enjoy the drink
+
+190
+00:10:10,766 --> 00:10:13,666
+If you hesitate going back to medium is no big deal
+
+191
+00:10:13,800 --> 00:10:15,400
+You haven't lost out on anything
+
+192
+00:10:15,433 --> 00:10:18,866
+You just refused to let the first sip's pleasure decide for the last sip
+
+193
+00:10:18,966 --> 00:10:21,366
+Next time we'll talk about the equimarginal principle
+
+194
+00:10:21,733 --> 00:10:28,633
+When money and time both run short how do you split them across choices without feeling shortchanged either way
