@@ -1,0 +1,767 @@
+1
+00:00:00,366 --> 00:00:04,033
+An online store found the best way to make people spend more isn't discounting
+
+2
+00:00:04,266 --> 00:00:06,333
+It's buy a little more and shipping is free
+
+3
+00:00:06,566 --> 00:00:11,966
+It never cut the price of the products yet customers stuffed their carts fuller all on their own
+
+4
+00:00:12,366 --> 00:00:15,033
+This is 100 Economic Principles from Pixel Breath
+
+5
+00:00:15,033 --> 00:00:17,100
+Number 3 Marginal Analysis
+
+6
+00:00:17,433 --> 00:00:20,766
+No jargon just one everyday calculation to make it clear
+
+7
+00:00:20,966 --> 00:00:29,900
+Years ago Harvard Business School researcher Donald Ngwe and colleagues studied order data from Zalora a fashion e-commerce site in the Philippines
+
+8
+00:00:30,066 --> 00:00:32,433
+They weren't looking at a few hundred survey answers
+
+9
+00:00:32,533 --> 00:00:36,666
+But over two million real orders from 2012 to 2016
+
+10
+00:00:36,666 --> 00:00:39,200
+The store had tested different shipping rules
+
+11
+00:00:39,500 --> 00:00:41,233
+Sometimes shipping was simply free
+
+12
+00:00:41,233 --> 00:00:45,233
+Sometimes customers were told orders had to hit a threshold first
+
+13
+00:00:45,600 --> 00:00:48,033
+The study surfaced a fascinating result
+
+14
+00:00:48,033 --> 00:00:53,166
+When free shipping required a minimum customers spent 9.4% more per order on average
+
+15
+00:00:53,433 --> 00:00:56,466
+But their total number of purchases dropped by 6.4%
+
+16
+00:00:56,466 --> 00:00:58,800
+This isn't a story about how promotions are evil
+
+17
+00:00:58,800 --> 00:01:01,466
+Because some of the extra things people bought they truly needed
+
+18
+00:01:01,533 --> 00:01:04,500
+Stocking up early on paper towels and detergent can be a great deal
+
+19
+00:01:04,533 --> 00:01:08,433
+What's really worth watching is how that threshold shifted people's attention
+
+20
+00:01:08,700 --> 00:01:11,466
+At first you face a six-yuan delivery fee
+
+21
+00:01:11,466 --> 00:01:12,400
+A clear question
+
+22
+00:01:12,400 --> 00:01:15,233
+Are you willing to pay six yuan to get something delivered
+
+23
+00:01:15,233 --> 00:01:17,866
+But once the page says buy a little more for free shipping
+
+24
+00:01:17,866 --> 00:01:20,000
+The question in your head quietly changes
+
+25
+00:01:20,000 --> 00:01:22,400
+You stop asking do I need this item
+
+26
+00:01:22,400 --> 00:01:25,300
+You start asking how far am I from free shipping
+
+27
+00:01:25,466 --> 00:01:27,700
+The first question judges the product
+
+28
+00:01:27,700 --> 00:01:30,900
+The second chases a progress bar that's already lit up
+
+29
+00:01:31,100 --> 00:01:33,000
+These two sound alike
+
+30
+00:01:33,233 --> 00:01:35,066
+But they're not the same calculation
+
+31
+00:01:35,066 --> 00:01:36,700
+The store doesn't need to force you to buy
+
+32
+00:01:37,066 --> 00:01:39,666
+It just puts almost there in front of your eyes
+
+33
+00:01:39,666 --> 00:01:42,500
+The rest you complete for your cart yourself
+
+34
+00:01:42,666 --> 00:01:45,800
+That's also why many people feel nothing when the package arrives
+
+35
+00:01:45,800 --> 00:01:50,633
+Only after opening it do they find one item they can't remember why they added
+
+36
+00:01:50,633 --> 00:01:52,700
+It was never an independent choice
+
+37
+00:01:52,700 --> 00:01:55,133
+It just got pulled in by everything before it
+
+38
+00:01:55,133 --> 00:01:57,900
+What marginal analysis unpacks is exactly this kind of add-on
+
+39
+00:01:57,933 --> 00:02:00,900
+It doesn't rush to ask whether the whole cart is worth it
+
+40
+00:02:00,900 --> 00:02:04,000
+It zooms in on the very last item added
+
+41
+00:02:04,000 --> 00:02:06,533
+What new benefit did this one actually bring
+
+42
+00:02:06,533 --> 00:02:08,566
+And what new cost did it take away
+
+43
+00:02:08,633 --> 00:02:10,566
+If you don't recalculate these two sides
+
+44
+00:02:10,600 --> 00:02:13,466
+The smartest promotions don't make things feel cheap
+
+45
+00:02:13,700 --> 00:02:16,666
+They make you forget you're making a second decision
+
+46
+00:02:16,666 --> 00:02:19,200
+Marginal sounds like a textbook word
+
+47
+00:02:19,333 --> 00:02:21,200
+In plain language it just means change
+
+48
+00:02:21,400 --> 00:02:24,433
+You've already bought some done some invested some
+
+49
+00:02:24,600 --> 00:02:27,166
+What happens if you add a little more now
+
+50
+00:02:27,400 --> 00:02:31,666
+Economics doesn't first ask whether the whole eighty-yuan cart is worth it
+
+51
+00:02:31,800 --> 00:02:35,200
+It asks whether the item you just added is worth it
+
+52
+00:02:35,466 --> 00:02:38,966
+Say your cart already holds 72 yuan of necessities
+
+53
+00:02:39,100 --> 00:02:40,466
+Delivery costs six
+
+54
+00:02:40,700 --> 00:02:43,566
+Checking out as planned you pay 78 in total
+
+55
+00:02:43,800 --> 00:02:46,900
+The page says add eight more for free shipping
+
+56
+00:02:47,066 --> 00:02:49,800
+You add a small thing you never planned to buy
+
+57
+00:02:50,033 --> 00:02:51,600
+In the end you pay 80
+
+58
+00:02:51,800 --> 00:02:55,566
+Many would say I spent eight to save six so I'm not losing
+
+59
+00:02:55,733 --> 00:02:58,300
+But that sentence blends two calculations into one
+
+60
+00:02:58,433 --> 00:03:00,166
+The original plan was 78
+
+61
+00:03:00,266 --> 00:03:01,833
+The new plan is 80
+
+62
+00:03:02,000 --> 00:03:05,400
+Your real additional cash outlay is two yuan
+
+63
+00:03:05,666 --> 00:03:07,566
+Then comes the more important question
+
+64
+00:03:08,033 --> 00:03:10,366
+Is that new item worth those two yuan
+
+65
+00:03:10,666 --> 00:03:12,666
+If you were going to buy it next week anyway
+
+66
+00:03:12,900 --> 00:03:16,500
+If it saves you the hassle of placing a separate order later
+
+67
+00:03:16,666 --> 00:03:19,800
+Then its added benefit may be greater than two yuan
+
+68
+00:03:20,300 --> 00:03:21,833
+This add-on is fine
+
+69
+00:03:22,133 --> 00:03:24,600
+But if it sits in a drawer for a year
+
+70
+00:03:24,666 --> 00:03:26,800
+You paid more than just two yuan
+
+71
+00:03:27,033 --> 00:03:32,100
+There's also the space it takes the hassle of tidying later and the illusion that you already owned it
+
+72
+00:03:32,300 --> 00:03:34,166
+That is marginal cost
+
+73
+00:03:34,333 --> 00:03:36,300
+It's not just a price tag
+
+74
+00:03:36,333 --> 00:03:41,466
+It also includes the added time space energy and tomorrow's choices it takes away
+
+75
+00:03:41,733 --> 00:03:44,633
+And marginal benefit isn't just a discount number either
+
+76
+00:03:44,733 --> 00:03:48,233
+It's what this addition actually solves for you
+
+77
+00:03:48,466 --> 00:03:50,600
+The simplest rule in economics is
+
+78
+00:03:50,633 --> 00:03:53,766
+If added benefit exceeds added cost keep going
+
+79
+00:03:54,000 --> 00:03:56,966
+If added benefit is less than added cost pause
+
+80
+00:03:57,100 --> 00:03:59,233
+Note this isn't about less is always better
+
+81
+00:03:59,333 --> 00:04:02,466
+Nor is it about turning all your joy into a spreadsheet
+
+82
+00:04:02,733 --> 00:04:04,766
+Some additions are absolutely worth it
+
+83
+00:04:05,100 --> 00:04:06,666
+Rainy day and no medicine at home
+
+84
+00:04:06,700 --> 00:04:09,333
+You pay a little more delivery for medicine in time
+
+85
+00:04:09,333 --> 00:04:11,033
+That added benefit is huge
+
+86
+00:04:11,266 --> 00:04:14,633
+Tomorrow's presentation is missing one key number
+
+87
+00:04:14,633 --> 00:04:16,700
+You spend twenty extra minutes verifying it
+
+88
+00:04:16,700 --> 00:04:18,400
+Those twenty minutes are worth it too
+
+89
+00:04:18,533 --> 00:04:21,166
+Marginal analysis never tells you not to add
+
+90
+00:04:21,266 --> 00:04:25,600
+It just won't let the first round's reasons automatically vouch for the last one
+
+91
+00:04:25,633 --> 00:04:27,500
+This differs from sunk cost
+
+92
+00:04:27,500 --> 00:04:31,700
+Sunk cost reminds you that money already spent shouldn't chain down your next step
+
+93
+00:04:31,700 --> 00:04:32,266
+Marginal analysis goes one step further
+
+94
+00:04:32,266 --> 00:04:36,200
+It asks whether the next step itself brings you enough new value
+
+95
+00:04:36,700 --> 00:04:39,400
+It's also not quite the same as diminishing marginal utility
+
+96
+00:04:39,433 --> 00:04:43,966
+Diminishing utility asks why the last sips of milk tea satisfy less than the first
+
+97
+00:04:44,100 --> 00:04:46,233
+That's the story for Number 5
+
+98
+00:04:46,266 --> 00:04:47,466
+This one is broader
+
+99
+00:04:47,800 --> 00:04:51,633
+Whether added benefits shrink or added costs grow
+
+100
+00:04:51,700 --> 00:04:54,000
+Once the calculation for this last step flips
+
+101
+00:04:54,000 --> 00:04:56,000
+You have a reason to stop and recalculate
+
+102
+00:04:56,133 --> 00:04:58,633
+The last item in your cart is easy to see
+
+103
+00:04:58,800 --> 00:05:01,700
+The last hour of your time is much easier to miss
+
+104
+00:05:01,733 --> 00:05:04,500
+At seven pm you find the deck is still one page short
+
+105
+00:05:04,500 --> 00:05:06,700
+You spend another half hour fixing the logic
+
+106
+00:05:06,700 --> 00:05:09,000
+The next day's meeting goes far more smoothly
+
+107
+00:05:09,100 --> 00:05:10,300
+That half hour was worth it
+
+108
+00:05:10,300 --> 00:05:12,966
+At eleven pm you open version seven again
+
+109
+00:05:13,133 --> 00:05:14,600
+This time nothing is missing
+
+110
+00:05:14,633 --> 00:05:17,833
+You just want to reword the title on every page
+
+111
+00:05:18,033 --> 00:05:19,866
+The slides might look a bit tidier
+
+112
+00:05:19,900 --> 00:05:22,900
+But what you're trading away is no ordinary half hour
+
+113
+00:05:22,900 --> 00:05:23,900
+It's sleep
+
+114
+00:05:24,533 --> 00:05:26,700
+It's patience for tomorrow's numbers
+
+115
+00:05:27,033 --> 00:05:29,633
+And it's the silly mistakes that show up the next day
+
+116
+00:05:29,700 --> 00:05:30,933
+Same thirty minutes
+
+117
+00:05:30,933 --> 00:05:33,466
+The earlier one closed a critical gap
+
+118
+00:05:33,466 --> 00:05:37,366
+The later one may just be giving your anxiety a reason to keep working
+
+119
+00:05:37,466 --> 00:05:41,633
+Economist John Pencavel studied output and working hours in munitions factories
+
+120
+00:05:41,900 --> 00:05:43,466
+His finding was measured
+
+121
+00:05:43,666 --> 00:05:47,600
+At lower ranges output rose roughly along with hours
+
+122
+00:05:47,633 --> 00:05:52,266
+But past a threshold output could still rise yet slower and slower
+
+123
+00:05:52,433 --> 00:05:55,866
+The sample was factory workers from one specific historical period
+
+124
+00:05:56,000 --> 00:06:00,066
+It can't declare which overtime hour stops paying off for everyone
+
+125
+00:06:00,200 --> 00:06:02,400
+But it makes one thing very clear
+
+126
+00:06:02,633 --> 00:06:05,500
+Time is not a ruler with equal-length markings
+
+127
+00:06:05,500 --> 00:06:08,366
+Once stamina attention and sleep start running out
+
+128
+00:06:08,500 --> 00:06:11,633
+The cost of that final added hour changes
+
+129
+00:06:11,833 --> 00:06:13,400
+It's no longer just one hour
+
+130
+00:06:13,466 --> 00:06:16,166
+It also borrows part of tomorrow's judgment
+
+131
+00:06:16,333 --> 00:06:17,700
+Learning works the same way
+
+132
+00:06:17,833 --> 00:06:21,900
+The first twenty minutes of research may finally show you where the problem is
+
+133
+00:06:22,100 --> 00:06:25,500
+Another half hour might find a case you can actually use
+
+134
+00:06:25,633 --> 00:06:29,833
+But by hour three you're opening the seventh article on the same point
+
+135
+00:06:30,133 --> 00:06:32,633
+The added material doesn't make you better at judging
+
+136
+00:06:32,666 --> 00:06:35,400
+It just lets you keep not writing the first sentence
+
+137
+00:06:35,400 --> 00:06:38,066
+AI tools speed this whole process up
+
+138
+00:06:38,333 --> 00:06:40,000
+First you ask it for ten directions
+
+139
+00:06:40,033 --> 00:06:42,866
+You might see two paths you never thought of
+
+140
+00:06:43,033 --> 00:06:44,966
+Then you have it rewrite the title twenty times
+
+141
+00:06:45,133 --> 00:06:47,066
+The options look more plentiful
+
+142
+00:06:47,133 --> 00:06:49,966
+But the step where you actually decide keeps getting pushed later
+
+143
+00:06:50,300 --> 00:06:51,566
+The tool isn't the problem
+
+144
+00:06:51,866 --> 00:06:56,400
+The problem is whether the next round you add actually moves you toward done
+
+145
+00:06:56,733 --> 00:06:57,766
+If not
+
+146
+00:06:57,833 --> 00:07:01,400
+That round of new answers may already have very low marginal benefit
+
+147
+00:07:01,533 --> 00:07:05,366
+And its marginal cost is the evening you spent delaying the decision
+
+148
+00:07:05,600 --> 00:07:08,300
+So marginal analysis isn't against effort
+
+149
+00:07:08,333 --> 00:07:12,700
+It's against smuggling the first hour's value into the last hour
+
+150
+00:07:13,100 --> 00:07:17,000
+Its most practical use isn't making you carry a calculator around
+
+151
+00:07:17,266 --> 00:07:20,233
+It just asks you to pause ten seconds before adding more
+
+152
+00:07:20,533 --> 00:07:22,966
+Don't first ask how much I've already spent
+
+153
+00:07:23,100 --> 00:07:25,900
+First ask what will the next one actually give me
+
+154
+00:07:26,266 --> 00:07:29,466
+Then ask what else will it take from me beyond the price
+
+155
+00:07:29,633 --> 00:07:34,800
+Finally ask if the earlier ones didn't exist would I still do this step on its own
+
+156
+00:07:35,033 --> 00:07:36,666
+When you're about to pad an order for free shipping
+
+157
+00:07:36,666 --> 00:07:38,233
+Don't stare at how much is still short
+
+158
+00:07:38,233 --> 00:07:41,266
+First ask was this item already on my list
+
+159
+00:07:41,266 --> 00:07:43,233
+When you're about to work one more hour
+
+160
+00:07:43,266 --> 00:07:45,266
+Don't say I've already come this far
+
+161
+00:07:45,400 --> 00:07:49,166
+First ask will this hour solve tomorrow morning's biggest problem
+
+162
+00:07:49,400 --> 00:07:51,100
+When you're about to read one more article
+
+163
+00:07:51,100 --> 00:07:53,433
+Don't say I've already researched this long
+
+164
+00:07:53,733 --> 00:07:58,166
+First ask does it bring me closer to delivering or just make me start later
+
+165
+00:07:58,333 --> 00:08:00,866
+These questions won't turn life into penny-pinching
+
+166
+00:08:00,900 --> 00:08:04,300
+They just take each addition back out of autopilot
+
+167
+00:08:04,500 --> 00:08:06,233
+Back to that e-commerce study
+
+168
+00:08:06,433 --> 00:08:08,466
+Free shipping over a threshold isn't wrong in itself
+
+169
+00:08:08,533 --> 00:08:11,266
+Sometimes it helps the store cover logistics costs
+
+170
+00:08:11,333 --> 00:08:14,366
+And sometimes it lets you buy what you truly need a bit earlier
+
+171
+00:08:14,733 --> 00:08:19,233
+The only issue is the page won't judge that added item's value for you
+
+172
+00:08:19,266 --> 00:08:22,100
+It only reminds you how far you are from the threshold
+
+173
+00:08:22,400 --> 00:08:27,433
+What can truly judge for you is still the money time and attention you have left
+
+174
+00:08:27,800 --> 00:08:31,433
+You also don't need to turn every add-on into a trial of yourself
+
+175
+00:08:31,700 --> 00:08:34,300
+Some things really are easier bought early
+
+176
+00:08:34,333 --> 00:08:37,800
+Some final hours really do save tomorrow's trouble
+
+177
+00:08:37,900 --> 00:08:41,033
+Marginal analysis doesn't demand you always refuse additions
+
+178
+00:08:41,200 --> 00:08:46,666
+It just wants to take the wheel back from the glowing threshold and return it to your real needs
+
+179
+00:08:46,933 --> 00:08:50,700
+Because what people regret most usually isn't spending a large sum
+
+180
+00:08:50,933 --> 00:08:55,833
+It's knowing that addition has no new value yet feeling it's a pity to let it go
+
+181
+00:08:56,100 --> 00:08:59,433
+Next time you see buy a little more for free shipping
+
+182
+00:08:59,500 --> 00:09:01,600
+Try translating it into another sentence
+
+183
+00:09:01,733 --> 00:09:03,433
+Not I'm just short of a deal
+
+184
+00:09:03,433 --> 00:09:05,833
+But I'm about to make a new choice
+
+185
+00:09:06,033 --> 00:09:09,400
+If that added item truly gives more than it takes
+
+186
+00:09:09,466 --> 00:09:10,266
+Buy it
+
+187
+00:09:10,500 --> 00:09:13,500
+If all you can answer is well I've come this far anyway
+
+188
+00:09:13,500 --> 00:09:16,033
+Then stop finding old reasons for the next one
+
+189
+00:09:16,266 --> 00:09:17,933
+You didn't miss out on a little something
+
+190
+00:09:17,933 --> 00:09:21,700
+You just saved what's limited for places that still add value
+
+191
+00:09:21,833 --> 00:09:24,233
+Next time we'll cover the equimarginal principle
+
+192
+00:09:24,466 --> 00:09:31,600
+When money and time are both short how do you split them across choices without feeling you lost on every side
