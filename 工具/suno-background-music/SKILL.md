@@ -1,6 +1,6 @@
 ---
 name: suno-background-music
-description: 为像素呼吸的完整视频脚本生成可直接粘贴到 Suno 的无歌词背景音乐 Prompt。适用于成稿、补发布清单或需要让配乐贴合整体叙事氛围时；不用于逐句配乐、直接生成音频或代替试听。
+description: 为像素呼吸的完整视频脚本生成可直接粘贴到 Suno 的严格纯器乐背景音乐 Prompt。适用于成稿、补发布清单或需要让配乐贴合整体叙事氛围时；不用于任何人声、逐句配乐、直接生成音频或代替试听。
 ---
 
 # Suno 背景音乐
@@ -32,11 +32,11 @@ description: 为像素呼吸的完整视频脚本生成可直接粘贴到 Suno �
 
 默认生成 **一段可直接粘贴到 Suno 的英文 Prompt**。它应自然包含：
 
-1. `Instrumental` 和视频的核心情境或心理张力；
+1. `Instrumental only` 和视频的核心情境或心理张力；
 2. 有辨识度的音乐材质、节奏或乐器，而不是只堆“emotional”“cinematic”等形容词；
 3. 与本期情绪弧线一致的整体编曲走向，而不是逐句或逐章换曲；
 4. 适合旁白的空间：克制的中频、不过分抢戏的旋律、可平滑淡出或循环的尾部；
-5. 与本期不相容的元素，例如 `no vocals, no vocal chops, no intrusive lead melody, no abrupt EDM drop`。对知识讲解视频通常也避免泛企业宣传片式的励志高潮。
+5. **严格纯器乐硬限制**：每一段 Prompt 都必须包含 `strictly instrumental only, no vocals, no vocal chops, no humming, no choir, no spoken word, no whispers, no ad-libs, no vocal samples`；这些限制不可因题材或情绪调整而省略。另加入本期不相容的元素，例如 `no intrusive lead melody, no abrupt EDM drop`。对知识讲解视频通常也避免泛企业宣传片式的励志高潮。
 
 根据内容选择声音，不要把所有主题都写成电子史诗：
 
@@ -60,7 +60,7 @@ description: 为像素呼吸的完整视频脚本生成可直接粘贴到 Suno �
 
 **Suno Prompt（直接粘贴）：**
 
-> [一段英文 Instrumental Prompt]
+> [一段带完整纯器乐硬限制的英文 Instrumental Prompt]
 ```
 
 默认交付只包含音乐定位、情绪弧线和这一段 Prompt，避免把选择负担或逐句配乐表丢回给用户。只有用户明确需要剪辑衔接时，才额外补充音乐何时进入、何处让位给环境声、怎样淡出的简短建议。需要备选时，备选必须代表清晰不同的叙事取向，而不是换几个同义形容词。
@@ -68,9 +68,9 @@ description: 为像素呼吸的完整视频脚本生成可直接粘贴到 Suno �
 ## 交付前检查
 
 - Prompt 是否来自真实主场景、核心反转与结尾，而不只是标题里的关键词？
-- 是否是无歌词、旁白友好、不会在解释段抢走注意力的配乐？
+- Prompt 是否明确写入严格纯器乐限制，包含 `no vocals`、`no vocal chops`、`no humming`、`no choir`、`no spoken word` 等，而非只写“无歌词”？
 - 是否有可感的编曲推进，但没有逐句换风格、突兀落差或广告片式高潮？
 - 是否把可直接复制的一整段英文 Prompt 单独标清？
-- 若 Suno 界面提供 `Instrumental` 开关，是否提醒用户开启？
+- 若 Suno 界面提供 `Instrumental` 开关，是否明确要求开启，并在有歌词输入栏时保持为空？
 
-只交付 Prompt 与剪辑建议，不声称尚未生成或试听的音乐一定合适。用户生成后若要复盘，应拿音频分别对照开头 30 秒、人声最密集的解释段和结尾余味，再针对掩盖人声、情绪跑偏或循环生硬的问题迭代 Prompt。
+只交付 Prompt 与剪辑建议，不声称尚未生成或试听的音乐一定合适。用户生成后若要复盘，应拿音频分别对照开头 30 秒、人声最密集的解释段和结尾余味；只要听到任何人声或人声采样，包括 vocal chops、humming、choir、spoken word、whispers、ad-libs，就不作为成片候选，应保留严格纯器乐限制重新生成。通过这一关后，再针对掩盖人声、情绪跑偏或循环生硬的问题迭代 Prompt。
