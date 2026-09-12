@@ -1,0 +1,823 @@
+1
+00:00:00,600 --> 00:00:02,900
+You're down to your last ad dollar
+
+2
+00:00:03,033 --> 00:00:08,333
+Do you keep feeding the channel that brought the most signups last month or shift it to another one
+
+3
+00:00:08,666 --> 00:00:13,766
+Most people double down but that's exactly the money most likely to go to waste
+
+4
+00:00:14,066 --> 00:00:17,833
+In 2022 a company called BARK ran into this exact problem
+
+5
+00:00:18,200 --> 00:00:21,633
+Every month it mails dog owners a box of toys and treats
+
+6
+00:00:21,933 --> 00:00:25,900
+In the end it didn't let past results decide where the next dollar went
+
+7
+00:00:26,133 --> 00:00:29,000
+This is Pixel Breath's 100 Principles of Economics
+
+8
+00:00:29,000 --> 00:00:31,133
+Number 4 the equal marginal principle
+
+9
+00:00:31,600 --> 00:00:34,500
+Forget the theory just ask who gets the next dollar
+
+10
+00:00:34,566 --> 00:00:39,133
+At the time BARK had to split a limited budget across different ad channels
+
+11
+00:00:39,366 --> 00:00:41,966
+The easy move is to open last month's report
+
+12
+00:00:42,233 --> 00:00:44,533
+find the channel that brought the most signups
+
+13
+00:00:44,800 --> 00:00:47,366
+and keep feeding it the next dollar
+
+14
+00:00:47,666 --> 00:00:48,800
+Sounds safe enough
+
+15
+00:00:49,133 --> 00:00:51,100
+after all it's already proven itself
+
+16
+00:00:51,266 --> 00:00:54,433
+But that report hides something easy to misread
+
+17
+00:00:54,600 --> 00:00:57,500
+It records results that already happened
+
+18
+00:00:57,666 --> 00:01:00,766
+What you're deciding now is where the next dollar goes
+
+19
+00:01:01,133 --> 00:01:02,833
+Those are two different questions
+
+20
+00:01:02,966 --> 00:01:09,200
+A channel that brought in lots of signups before won't necessarily bring in just as many new ones next
+
+21
+00:01:09,266 --> 00:01:12,400
+It may have already reached everyone easy to convince
+
+22
+00:01:12,533 --> 00:01:15,933
+Spending more might just buy more repeat exposure
+
+23
+00:01:16,166 --> 00:01:18,233
+The spend on the report keeps climbing
+
+24
+00:01:18,366 --> 00:01:21,166
+but the actual new signups may keep shrinking
+
+25
+00:01:21,833 --> 00:01:28,033
+Meanwhile another channel with less impressive numbers might still be untapped
+
+26
+00:01:28,200 --> 00:01:31,400
+Move the same dollar there and the new results could be bigger
+
+27
+00:01:31,600 --> 00:01:35,133
+BARK used Robyn Meta's open source marketing mix model
+
+28
+00:01:35,666 --> 00:01:40,200
+This kind of model weighs every channel's spend and results together
+
+29
+00:01:40,533 --> 00:01:43,400
+The goal isn't to crown one channel as forever the best
+
+30
+00:01:43,466 --> 00:01:48,766
+it's to watch how each channel's response curve shifts as spending keeps rising
+
+31
+00:01:48,833 --> 00:01:52,100
+BARK later reported the results on Meta's case study page
+
+32
+00:01:52,600 --> 00:01:56,600
+After optimizing the budget overall signups rose 30 percent
+
+33
+00:01:56,833 --> 00:02:02,200
+Put simply every 100 signups it used to get became about 130
+
+34
+00:02:02,366 --> 00:02:03,900
+That number jumps out
+
+35
+00:02:03,933 --> 00:02:05,733
+but the fine print matters too
+
+36
+00:02:05,733 --> 00:02:08,166
+It's a result the company reported itself
+
+37
+00:02:08,166 --> 00:02:09,733
+not a randomized controlled trial
+
+38
+00:02:09,733 --> 00:02:14,700
+Meta's own page even says it can't guarantee other companies the same result
+
+39
+00:02:14,766 --> 00:02:18,833
+So we can't copy this case into some universal playbook
+
+40
+00:02:19,133 --> 00:02:21,700
+What's actually worth keeping is the question it swapped in
+
+41
+00:02:22,133 --> 00:02:27,000
+Which channel contributed most in the past no longer automatically decides where the next dollar goes
+
+42
+00:02:27,233 --> 00:02:31,766
+How many new signups the next dollar can still bring is the new yardstick
+
+43
+00:02:31,833 --> 00:02:34,400
+Total results are like a bill that's already settled
+
+44
+00:02:34,533 --> 00:02:37,800
+it's the next return that decides where resources flow next
+
+45
+00:02:37,800 --> 00:02:40,200
+This isn't just one company's marketing problem
+
+46
+00:02:40,466 --> 00:02:46,733
+If you've run a project managed a budget or just planned your own evening you've hit the same math
+
+47
+00:02:47,166 --> 00:02:50,566
+The most important thing doesn't always deserve the next hour
+
+48
+00:02:50,666 --> 00:02:54,600
+The tool you use most doesn't always deserve the next upgrade
+
+49
+00:02:54,766 --> 00:02:58,433
+What actually wastes resources usually isn't picking a bad direction
+
+50
+00:02:58,433 --> 00:03:02,233
+it's a decent direction swallowing every resource that comes after
+
+51
+00:03:02,766 --> 00:03:06,966
+A lot of people hear equal marginal for the first time and think it means splitting things evenly
+
+52
+00:03:07,200 --> 00:03:09,533
+Three channels so each gets a third
+
+53
+00:03:09,733 --> 00:03:12,133
+Four projects so each gets one person
+
+54
+00:03:12,566 --> 00:03:15,833
+Work exercise and family each get two hours
+
+55
+00:03:16,166 --> 00:03:19,233
+That looks fair but it's not the equal marginal principle
+
+56
+00:03:19,833 --> 00:03:22,833
+In economics marginal means the extra unit on top
+
+57
+00:03:23,133 --> 00:03:24,366
+One more dollar spent
+
+58
+00:03:24,533 --> 00:03:25,766
+One more half hour given
+
+59
+00:03:25,933 --> 00:03:27,133
+One more person assigned
+
+60
+00:03:27,533 --> 00:03:28,966
+One more round of edits
+
+61
+00:03:29,233 --> 00:03:32,000
+The question isn't how much you've already put in
+
+62
+00:03:32,266 --> 00:03:35,500
+it's what adding one more unit actually gets you
+
+63
+00:03:35,533 --> 00:03:40,966
+The equal marginal principle compares what the same extra unit returns in different places
+
+64
+00:03:41,666 --> 00:03:45,166
+If A's next dollar still buys ten new orders
+
+65
+00:03:45,333 --> 00:03:47,700
+and B's next dollar only buys two
+
+66
+00:03:47,766 --> 00:03:49,366
+then A should get it first
+
+67
+00:03:49,600 --> 00:03:54,000
+As A gets more budget the easiest people to reach start running out
+
+68
+00:03:54,233 --> 00:03:59,300
+The next dollar's orders might drop from ten to eight then down to five
+
+69
+00:03:59,966 --> 00:04:05,000
+Once B's next dollar also brings in five the payoff from shifting more money shrinks
+
+70
+00:04:05,166 --> 00:04:07,333
+That's the equal in equal marginal
+
+71
+00:04:08,200 --> 00:04:10,533
+Not that each side gets the same amount of money
+
+72
+00:04:10,566 --> 00:04:15,533
+but that the last unit of resource returns roughly the same wherever it lands
+
+73
+00:04:15,566 --> 00:04:20,233
+OpenStax's economics textbook makes the same point with 56 dollars
+
+74
+00:04:20,400 --> 00:04:24,566
+A guy named José has to spend it all on t shirts and movies
+
+75
+00:04:24,833 --> 00:04:26,600
+A t shirt costs 14 dollars
+
+76
+00:04:26,766 --> 00:04:28,400
+A movie costs 7 dollars
+
+77
+00:04:28,733 --> 00:04:32,700
+If he spends all 56 dollars on t shirts he can buy four
+
+78
+00:04:33,200 --> 00:04:37,000
+But the fourth shirt brings a lot less satisfaction than the first
+
+79
+00:04:37,000 --> 00:04:39,766
+The textbook uses sample numbers to show that shift
+
+80
+00:04:39,966 --> 00:04:43,800
+Skipping the fourth shirt costs him 18 units of satisfaction
+
+81
+00:04:44,566 --> 00:04:48,233
+The 14 dollars saved buys the first two movies
+
+82
+00:04:48,533 --> 00:04:51,966
+Those two movies together bring 31 units of satisfaction
+
+83
+00:04:52,033 --> 00:04:54,633
+Lose 18 on one side gain 31 on the other
+
+84
+00:04:55,000 --> 00:04:57,766
+Make that swap and total satisfaction actually goes up by 13
+
+85
+00:04:57,833 --> 00:05:00,800
+These units aren't some real world happiness meter
+
+86
+00:05:00,966 --> 00:05:03,900
+they just lay the comparison out where you can see it
+
+87
+00:05:04,066 --> 00:05:06,800
+Don't ask whether t shirts or movies are the nobler choice
+
+88
+00:05:06,833 --> 00:05:11,333
+ask which side gains more from the next dollar you put in
+
+89
+00:05:11,433 --> 00:05:14,566
+The textbook eventually turns this rule into a formula
+
+90
+00:05:14,800 --> 00:05:21,533
+Once every dollar spent returns roughly equal marginal utility across goods the budget stops improving by rearranging
+
+91
+00:05:21,866 --> 00:05:23,366
+You can forget the formula
+
+92
+00:05:23,366 --> 00:05:25,133
+but remember the move behind it
+
+93
+00:05:25,400 --> 00:05:29,166
+Take an equal sized unit of resource and compare its next move across every option
+
+94
+00:05:29,533 --> 00:05:35,566
+If you only look at which line item spent the most when the bill arrives you'll likely cut the wrong one
+
+95
+00:05:35,966 --> 00:05:40,233
+A big total might just mean it's solving problems every single day
+
+96
+00:05:40,800 --> 00:05:45,400
+while another line item costs almost nothing yet adds zero new value
+
+97
+00:05:45,633 --> 00:05:46,966
+The reverse holds too
+
+98
+00:05:47,033 --> 00:05:52,133
+A project that contributed a lot before doesn't mean its next hour today is still the most valuable
+
+99
+00:05:52,200 --> 00:05:55,000
+The equal marginal principle doesn't decide what matters for you
+
+100
+00:05:55,066 --> 00:05:58,600
+it just stops past results from posing as future returns
+
+101
+00:05:59,366 --> 00:06:02,133
+The hard part isn't understanding the rule
+
+102
+00:06:02,166 --> 00:06:06,966
+it's actually moving resources away from the best performer at the meeting table
+
+103
+00:06:07,200 --> 00:06:10,600
+The place already delivering results is usually the loudest one
+
+104
+00:06:10,800 --> 00:06:11,666
+It has the reports
+
+105
+00:06:11,666 --> 00:06:12,700
+it has an owner
+
+106
+00:06:12,833 --> 00:06:15,233
+it has a growth curve you can point to
+
+107
+00:06:15,333 --> 00:06:17,933
+Keep funding it and at least you can explain the decision
+
+108
+00:06:18,000 --> 00:06:21,933
+The new direction that hasn't started yet has no track record to speak for it
+
+109
+00:06:22,066 --> 00:06:26,000
+and if it fails the blame lands squarely on whoever made the call
+
+110
+00:06:26,166 --> 00:06:28,833
+So a lot of allocation plans look careful on paper
+
+111
+00:06:28,966 --> 00:06:31,566
+but really they're just rewarding a visible past
+
+112
+00:06:31,600 --> 00:06:34,533
+You can see the same tension in research funding
+
+113
+00:06:34,633 --> 00:06:40,500
+In 2016 the US National Institute of General Medical Sciences updated an analysis of its grants
+
+114
+00:06:40,666 --> 00:06:48,166
+It looked at the NIH funding a group of researchers received and the papers and impact metrics that followed
+
+115
+00:06:48,433 --> 00:06:54,733
+In this sample the top 5 percent of funded researchers received 25.2 percent of the money
+
+116
+00:06:54,833 --> 00:07:01,600
+In other words for every 20 researchers the single top earner took home about a quarter of the funding
+
+117
+00:07:01,733 --> 00:07:05,800
+The top 20 percent combined took home half the funding
+
+118
+00:07:05,800 --> 00:07:07,933
+Concentration by itself isn't wrong
+
+119
+00:07:07,933 --> 00:07:10,266
+Some experiments need expensive equipment
+
+120
+00:07:10,266 --> 00:07:14,333
+some involve human or animal subjects where costs are just higher
+
+121
+00:07:14,533 --> 00:07:20,166
+What actually matters is whether output keeps pace as the money keeps growing
+
+122
+00:07:20,933 --> 00:07:25,233
+The analysis found total paper counts do rise with funding overall
+
+123
+00:07:25,333 --> 00:07:29,433
+but at higher funding levels the growth doesn't keep up with the funding growth
+
+124
+00:07:29,433 --> 00:07:34,133
+Papers per million dollars actually drops as funding rises
+
+125
+00:07:34,233 --> 00:07:36,766
+More money may still mean more output
+
+126
+00:07:36,766 --> 00:07:41,000
+just that each new dollar buys less extra output than the one before it
+
+127
+00:07:41,233 --> 00:07:45,566
+The researchers also compared citations per paper and relative citation impact
+
+128
+00:07:45,666 --> 00:07:50,200
+Those numbers didn't scale up proportionally with funding either
+
+129
+00:07:50,433 --> 00:07:53,800
+Papers and citations obviously can't capture all the value of research
+
+130
+00:07:54,066 --> 00:07:57,966
+and group level data can't tell you whether one specific lab deserves funding
+
+131
+00:07:58,200 --> 00:08:01,700
+So this research isn't a knife for cutting big projects
+
+132
+00:08:01,766 --> 00:08:07,666
+it's a reminder that the more concentrated resources get the more you need to recheck what the next dollar actually returns
+
+133
+00:08:07,666 --> 00:08:10,766
+The institute floated a possible direction based on this
+
+134
+00:08:10,966 --> 00:08:14,233
+Instead of keeping large sums concentrated on a small group
+
+135
+00:08:14,366 --> 00:08:19,133
+backing more researchers at moderate funding levels might be the better investment
+
+136
+00:08:19,133 --> 00:08:24,233
+This conclusion feels uncomfortable because it runs into a very familiar habit
+
+137
+00:08:24,433 --> 00:08:27,600
+We like giving resources to people who've already proven themselves
+
+138
+00:08:27,833 --> 00:08:30,933
+Companies keep piling headcount onto the star project
+
+139
+00:08:31,000 --> 00:08:34,166
+teams keep saving meeting time for whatever's getting the most attention
+
+140
+00:08:34,566 --> 00:08:39,433
+and you might spend tonight's last hour on the proposal you've already revised three times
+
+141
+00:08:39,600 --> 00:08:42,100
+Not because that's where the hour is needed most
+
+142
+00:08:42,166 --> 00:08:46,200
+but because the file's already open and the edits show up right away
+
+143
+00:08:46,200 --> 00:08:50,200
+If you've had nights like that don't chalk it up to weak self control
+
+144
+00:08:50,400 --> 00:08:53,233
+you just got pulled in by the clearest feedback in the room
+
+145
+00:08:53,533 --> 00:09:00,233
+But going from 85 to 86 and getting a zero started aren't the same kind of change
+
+146
+00:09:00,600 --> 00:09:03,200
+The loudest spot is always first in line for the next unit
+
+147
+00:09:03,200 --> 00:09:06,633
+the quietest gap might be where that unit actually matters
+
+148
+00:09:06,866 --> 00:09:10,633
+This isn't a rule against strong performers or key projects either
+
+149
+00:09:10,866 --> 00:09:17,533
+If the channel that brought the most signups still returns the most on its next dollar it should keep getting funded
+
+150
+00:09:17,833 --> 00:09:20,166
+The equal marginal principle doesn't decide winners in advance
+
+151
+00:09:20,333 --> 00:09:23,466
+it just asks that every time you add more you compare the next unit again
+
+152
+00:09:23,466 --> 00:09:27,366
+In daily life the equal marginal principle doesn't need a complicated formula
+
+153
+00:09:27,533 --> 00:09:30,300
+Just pause for ten seconds before you add more
+
+154
+00:09:30,466 --> 00:09:33,366
+Shrink the resource down to one unit you can actually see
+
+155
+00:09:33,633 --> 00:09:35,433
+Don't write I'll try a little harder
+
+156
+00:09:35,600 --> 00:09:37,700
+Write give this 30 more minutes
+
+157
+00:09:37,833 --> 00:09:39,633
+Don't write I'll put in a bit more money
+
+158
+00:09:39,800 --> 00:09:41,233
+Write put in 100 more dollars
+
+159
+00:09:41,533 --> 00:09:43,566
+Don't write the team needs more support
+
+160
+00:09:43,800 --> 00:09:46,300
+Write give this project half a day of one person's time
+
+161
+00:09:46,400 --> 00:09:48,333
+Then write two lines in your notes
+
+162
+00:09:48,333 --> 00:09:52,033
+What exactly changes if this unit goes to the choice in front of you
+
+163
+00:09:52,033 --> 00:09:55,666
+and what exactly changes if the same unit goes to the other gap instead
+
+164
+00:09:55,666 --> 00:09:58,033
+Say a proposal has already been revised three times
+
+165
+00:09:58,066 --> 00:10:01,833
+Another 30 minutes on it might just make two pages look neater
+
+166
+00:10:02,166 --> 00:10:08,166
+The same 30 minutes spent prepping tomorrow's hardest task could get something unstarted off the ground
+
+167
+00:10:08,166 --> 00:10:11,566
+You don't need to rank which task is more noble here
+
+168
+00:10:11,633 --> 00:10:14,633
+you're just comparing what those 30 minutes change
+
+169
+00:10:15,000 --> 00:10:19,100
+If another half hour on it can genuinely prevent a major mistake tomorrow
+
+170
+00:10:19,233 --> 00:10:21,433
+then give the time to the proposal
+
+171
+00:10:21,600 --> 00:10:25,133
+If it'll only make an already clear page prettier
+
+172
+00:10:25,133 --> 00:10:28,233
+while the other option can cut a real risk
+
+173
+00:10:28,366 --> 00:10:30,533
+then move that half hour over there
+
+174
+00:10:30,666 --> 00:10:32,833
+You can judge spending the same way
+
+175
+00:10:33,000 --> 00:10:39,366
+Before upgrading your everyday software to the top tier write down one feature you'd actually use more
+
+176
+00:10:39,400 --> 00:10:43,333
+then write down what problem that same money could solve somewhere else
+
+177
+00:10:43,400 --> 00:10:47,933
+If the first one can't name a concrete change while the second one changes the outcome right away
+
+178
+00:10:48,000 --> 00:10:49,933
+the answer's usually already clear
+
+179
+00:10:50,066 --> 00:10:51,933
+The same goes for managing a team
+
+180
+00:10:52,000 --> 00:10:56,833
+Don't automatically drop the new hire onto whatever project gets the most attention
+
+181
+00:10:57,033 --> 00:11:02,433
+First check whether it's actually stuck on headcount or on equipment access or decisions
+
+182
+00:11:03,000 --> 00:11:06,900
+If the bottleneck isn't people adding one more just adds another round of coordination
+
+183
+00:11:07,000 --> 00:11:08,733
+This has its limits too
+
+184
+00:11:09,233 --> 00:11:15,233
+Safety compliance and promises you've already made can't be cut just based on short term payoff
+
+185
+00:11:15,366 --> 00:11:19,400
+Long term learning and infrastructure may also show little change in the short run
+
+186
+00:11:19,600 --> 00:11:22,600
+So we're not comparing which feels better in the next minute
+
+187
+00:11:22,633 --> 00:11:27,766
+but what this resource is most likely to change over the right time frame
+
+188
+00:11:27,766 --> 00:11:30,000
+You don't need the perfect answer on the first try
+
+189
+00:11:30,066 --> 00:11:32,600
+real world returns don't all show up on a report anyway
+
+190
+00:11:32,733 --> 00:11:35,166
+When you don't have enough information move a small piece first
+
+191
+00:11:35,266 --> 00:11:36,400
+Try it for a night
+
+192
+00:11:36,466 --> 00:11:37,600
+try it with 100 dollars
+
+193
+00:11:37,666 --> 00:11:39,166
+try one staffing change
+
+194
+00:11:39,233 --> 00:11:41,700
+then see if the outcome actually shifts
+
+195
+00:11:41,800 --> 00:11:43,966
+Good allocation isn't about being right every time
+
+196
+00:11:44,033 --> 00:11:49,533
+it's letting resources flow from where returns have thinned out to where one key unit is still missing
+
+197
+00:11:49,533 --> 00:11:51,800
+Now back to BARK's budget meeting
+
+198
+00:11:51,833 --> 00:11:57,333
+That ad money from the start would you still hand it straight to last month's top channel
+
+199
+00:11:57,666 --> 00:12:01,033
+There's still a channel on screen that brought the most signups in the past
+
+200
+00:12:01,200 --> 00:12:02,900
+Its track record hasn't disappeared
+
+201
+00:12:03,033 --> 00:12:06,966
+it just doesn't automatically claim the next dollar anymore
+
+202
+00:12:07,200 --> 00:12:13,433
+Next time you're about to add a little more money time or people pause for ten seconds first
+
+203
+00:12:13,666 --> 00:12:15,900
+Don't ask which choice was best in the past
+
+204
+00:12:16,000 --> 00:12:19,733
+ask where this next unit would actually make a difference
+
+205
+00:12:19,966 --> 00:12:23,200
+Next time we'll look at economic principle number five
+
+206
+00:12:23,466 --> 00:12:29,333
+Why does the first taste of something you love feel so sweet while the third often just feels like habit
