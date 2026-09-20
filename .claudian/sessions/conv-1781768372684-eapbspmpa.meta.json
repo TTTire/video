@@ -4,22 +4,23 @@
   "title": "这个给我归档下",
   "titleGenerationStatus": "failed",
   "createdAt": 1781768372686,
-  "lastActivityAt": 1789905876186,
+  "lastActivityAt": 1789906003986,
   "sessionId": "019fdfe0-828a-7e92-8228-ce6bb03ad774",
   "selectedModel": "gpt-5.5",
   "providerState": {
     "threadId": "019fdfe0-828a-7e92-8228-ce6bb03ad774",
     "sessionFilePath": "C:\\Users\\14490\\.codex\\sessions\\2026\\08\\08\\rollout-2026-08-08T13-37-45-019fdfe0-828a-7e92-8228-ce6bb03ad774.jsonl",
-    "transcriptRootPath": "C:\\Users\\14490\\.codex\\sessions"
+    "transcriptRootPath": "C:\\Users\\14490\\.codex\\sessions",
+    "nativeConversationContextEstablished": true
   },
   "usage": {
-    "inputTokens": 24413,
+    "inputTokens": 39428,
     "cacheCreationInputTokens": 0,
-    "cacheReadInputTokens": 23424,
+    "cacheReadInputTokens": 38272,
     "contextWindow": 258400,
     "contextWindowIsAuthoritative": true,
-    "contextTokens": 24413,
-    "percentage": 9,
+    "contextTokens": 39428,
+    "percentage": 15,
     "model": "gpt-5.5"
   }
 }
