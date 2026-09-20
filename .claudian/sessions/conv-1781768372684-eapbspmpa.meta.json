@@ -4,9 +4,9 @@
   "title": "这个给我归档下",
   "titleGenerationStatus": "failed",
   "createdAt": 1781768372686,
-  "updatedAt": 1786167502442,
-  "lastResponseAt": 1786167502442,
+  "lastActivityAt": 1789905876186,
   "sessionId": "019fdfe0-828a-7e92-8228-ce6bb03ad774",
+  "selectedModel": "gpt-5.5",
   "providerState": {
     "threadId": "019fdfe0-828a-7e92-8228-ce6bb03ad774",
     "sessionFilePath": "C:\\Users\\14490\\.codex\\sessions\\2026\\08\\08\\rollout-2026-08-08T13-37-45-019fdfe0-828a-7e92-8228-ce6bb03ad774.jsonl",
