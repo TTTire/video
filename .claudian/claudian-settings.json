@@ -33,7 +33,7 @@
         {
           "model": "gpt-6-astra",
           "displayName": "GPT-6-Astra",
-          "description": "Our most capable model for complex, demanding work.",
+          "description": "Frontier intelligence for the most demanding work.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -76,9 +76,95 @@
           "isDefault": true
         },
         {
+          "model": "gpt-6-sol",
+          "displayName": "GPT-6-Sol",
+          "description": "Workhorse model for coding and everyday work.",
+          "supportedReasoningEfforts": [
+            {
+              "value": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "value": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "value": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "value": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "value": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "value": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ],
+          "defaultReasoningEffort": "medium",
+          "serviceTiers": [
+            {
+              "id": "priority",
+              "name": "Fast",
+              "description": "1.5x speed"
+            }
+          ],
+          "defaultServiceTier": "priority",
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "isDefault": false
+        },
+        {
+          "model": "gpt-6-luna",
+          "displayName": "GPT-6-Luna",
+          "description": "Fast and affordable model for easier tasks.",
+          "supportedReasoningEfforts": [
+            {
+              "value": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "value": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "value": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "value": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "value": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            }
+          ],
+          "defaultReasoningEffort": "medium",
+          "serviceTiers": [
+            {
+              "id": "priority",
+              "name": "Fast",
+              "description": "1.5x speed"
+            }
+          ],
+          "defaultServiceTier": "priority",
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "isDefault": false
+        },
+        {
           "model": "gpt-5.6-sol",
           "displayName": "GPT-5.6-Sol",
-          "description": "Latest frontier agentic coding model.",
+          "description": "Older coding model for complex work.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -111,11 +197,6 @@
               "id": "priority",
               "name": "Fast",
               "description": "1.5x speed, increased usage"
-            },
-            {
-              "id": "ultrafast",
-              "name": "Ultrafast",
-              "description": "The fastest available responses for latency-sensitive work."
             }
           ],
           "defaultServiceTier": null,
@@ -128,7 +209,7 @@
         {
           "model": "gpt-5.6-terra",
           "displayName": "GPT-5.6-Terra",
-          "description": "Balanced agentic coding model for everyday work.",
+          "description": "Older balanced model for straightforward work.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -173,7 +254,7 @@
         {
           "model": "gpt-5.6-luna",
           "displayName": "GPT-5.6-Luna",
-          "description": "Fast and affordable agentic coding model.",
+          "description": "Older fast and efficient model.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -214,7 +295,7 @@
         {
           "model": "gpt-5.5",
           "displayName": "GPT-5.5",
-          "description": "Frontier model for complex coding, research, and real-world work.",
+          "description": "Legacy coding model.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -256,8 +337,8 @@
       "reasoningSummary": "detailed",
       "environmentVariables": "CODEX_HOME=C:\\Users\\14490\\.codex",
       "environmentHash": "runtime-input:v1:838b8d27b791a4eefa2715e91244a72630e2177d22509a3a933e18befe64ea4f",
-      "catalogTimestamp": 1790081763434,
-      "catalogFingerprint": "2:bfc904e4f03b9ff0a47c7313a18a6ddd8c447a774705cf299783f930d225d92a",
+      "catalogTimestamp": 1790489819335,
+      "catalogFingerprint": "2:e38893e496171ed38f6db821865644190fbf0cc1e5223e776a427c96d60c18fd",
       "installationMethodsByHost": {
         "device:adfec557-6caf-4da1-b748-3f12f74cc649": "native-windows",
         "device:f88d9e42-0179-4481-95a9-3decb1ac53cb": "native-windows",
