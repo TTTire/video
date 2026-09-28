@@ -1,0 +1,300 @@
+1
+00:00:00,366 --> 00:00:03,433
+At 7 pm, a dozen people are lined up outside the bubble tea shop.
+
+2
+00:00:03,600 --> 00:00:06,300
+The owner grits his teeth and calls in another worker.
+
+3
+00:00:06,566 --> 00:00:09,633
+Standing in line, you think: now it should go faster.
+
+4
+00:00:09,766 --> 00:00:15,633
+Ten minutes later the line hasn't moved.
+Four workers are jammed behind the counter, and none of them are idle.
+
+5
+00:00:15,766 --> 00:00:20,100
+Even the owner is puzzled — one more person, but barely any faster.
+
+6
+00:00:20,266 --> 00:00:24,766
+Honestly, my first instinct used to be: the new hire just isn't skilled yet.
+
+7
+00:00:24,866 --> 00:00:30,733
+But once I did the math, I found the problem wasn't the person — it was the machine behind them.
+
+8
+00:00:31,066 --> 00:00:33,766
+This is Pixel Breath's 100 Principles of Economics.
+
+9
+00:00:33,766 --> 00:00:36,733
+Principle #6: the Law of Diminishing Marginal Returns.
+
+10
+00:00:36,800 --> 00:00:40,133
+No definitions to memorize — just a real-life tally to make it click.
+
+11
+00:00:41,366 --> 00:00:44,333
+Let's set some numbers for this shop to make the math easy.
+
+12
+00:00:44,600 --> 00:00:46,233
+One cup of bubble tea costs 15 yuan.
+
+13
+00:00:46,300 --> 00:00:53,233
+With just one worker behind the counter, they handle orders, ingredients, shaking, sealing, and packing — all alone.
+
+14
+00:00:53,433 --> 00:00:55,933
+In an hour, they turn out about 30 cups.
+
+15
+00:00:56,266 --> 00:01:02,266
+A second worker joins. They split the work: one takes orders and mixes, the other seals and packs.
+
+16
+00:01:02,566 --> 00:01:08,033
+The steps one person used to run back and forth for are now split in two. Output hits 60 cups an hour.
+
+17
+00:01:08,266 --> 00:01:12,833
+Exactly double. More hands, more output — no problem here.
+
+18
+00:01:12,966 --> 00:01:17,466
+A third worker joins, dedicated to restocking ice and cups, prepping ingredients ahead of time.
+
+19
+00:01:17,700 --> 00:01:19,433
+Output climbs to 80 cups an hour.
+
+20
+00:01:19,633 --> 00:01:25,000
+The owner sees each new hire adds 20 cups — so surely one more gets them to 100?
+
+21
+00:01:25,000 --> 00:01:26,466
+A fourth worker joins.
+
+22
+00:01:26,466 --> 00:01:28,066
+85 cups an hour.
+
+23
+00:01:28,200 --> 00:01:29,133
+Just 5 more.
+
+24
+00:01:29,366 --> 00:01:35,500
+Add a fifth, and it might reach 87 — or the counter gets so crowded it does worse than with four.
+
+25
+00:01:36,366 --> 00:01:39,300
+You might ask: is the fourth worker slacking?
+
+26
+00:01:39,566 --> 00:01:42,900
+No. They're constantly moving, always have something in hand.
+
+27
+00:01:43,100 --> 00:01:46,233
+The problem is at the far end of the counter.
+
+28
+00:01:46,433 --> 00:01:54,833
+There's only one sealing machine. Sealing, labeling, and packing all happen there —
+about 40 seconds per cup.
+
+29
+00:01:55,100 --> 00:01:57,100
+That caps out at 90 cups an hour, tops.
+
+30
+00:01:57,400 --> 00:02:02,300
+No matter how fast the prep runs, every cup still has to wait in line for that machine.
+
+31
+00:02:02,566 --> 00:02:08,933
+The cup the fourth worker just finished doesn't reach the customer — it lands in a queue in front of the machine.
+
+32
+00:02:09,200 --> 00:02:12,766
+So the busyness you see from outside the line is real busyness.
+
+33
+00:02:12,966 --> 00:02:14,733
+But busy doesn't mean cups coming out.
+
+34
+00:02:14,966 --> 00:02:16,333
+So here's the question.
+
+35
+00:02:16,433 --> 00:02:22,566
+Same act of adding one person — why is the second worker worth 30 cups, and the fourth only worth 5?
+
+36
+00:02:25,600 --> 00:02:30,300
+Economics has a name for that extra sliver: marginal return.
+
+37
+00:02:30,833 --> 00:02:34,933
+In plain terms: how many extra cups did adding this one person produce?
+
+38
+00:02:35,100 --> 00:02:39,333
+Notice — it's the extra amount, not the shop's total output.
+
+39
+00:02:39,566 --> 00:02:47,866
+That sequence of numbers — 30, 30, 20, 5 — each new hire's added value keeps dropping.
+
+40
+00:02:47,900 --> 00:02:50,100
+That's diminishing marginal returns.
+
+41
+00:02:50,366 --> 00:02:55,300
+It comes with a condition: the counter is still the same counter, the sealing machine still the same machine.
+
+42
+00:02:55,566 --> 00:02:58,166
+Only people are being added — nothing else.
+
+43
+00:02:58,433 --> 00:03:00,100
+This isn't unique to bubble tea shops.
+
+44
+00:03:00,366 --> 00:03:04,700
+OpenStax's economics textbook has a classic example: logging.
+
+45
+00:03:05,100 --> 00:03:09,566
+The tool is a two-person saw, and workers get added one at a time.
+
+46
+00:03:09,566 --> 00:03:11,266
+One worker cuts 4 trees.
+
+47
+00:03:11,400 --> 00:03:16,666
+Two workers: 10 trees, up by 6 — because the saw needs two people pulling anyway.
+
+48
+00:03:16,966 --> 00:03:19,533
+Three workers: 12 trees, up by 2.
+
+49
+00:03:19,766 --> 00:03:22,033
+Four workers: 13 trees, up by 1.
+
+50
+00:03:22,266 --> 00:03:25,366
+A fifth worker joins — still 13 trees, up by 0.
+
+51
+00:03:25,766 --> 00:03:29,266
+The first time I saw this table, I stared at the fifth worker's column for a while.
+
+52
+00:03:29,466 --> 00:03:37,700
+Then it clicked: there's only one saw. The fifth worker gets to the woods and, aside from hauling a few branches, mostly just stands there watching.
+
+53
+00:03:38,400 --> 00:03:44,766
+Look — total output kept rising, from 4 trees to 13. It never dropped.
+
+54
+00:03:44,966 --> 00:03:47,866
+What dropped is the slice each new worker adds.
+
+55
+00:03:48,100 --> 00:03:49,966
+This is where a lot of people get confused.
+
+56
+00:03:50,633 --> 00:03:55,433
+Diminishing doesn't mean the total shrinks — it means each later person is worth less.
+
+57
+00:03:55,766 --> 00:04:00,233
+Back to the bubble tea shop — that fourth worker's 5 cups are real. They didn't work for nothing.
+
+58
+00:04:00,566 --> 00:04:04,766
+It's just that most of their effort gets absorbed by that constantly running sealing machine.
+
+59
+00:04:05,066 --> 00:04:06,500
+So what should the owner do?
+
+60
+00:04:07,466 --> 00:04:08,833
+One condition first.
+
+61
+00:04:09,000 --> 00:04:14,166
+This math only holds because the owner only added people — the shop and the machine stayed the same.
+
+62
+00:04:14,466 --> 00:04:20,100
+If he'd also swapped in a sealing machine twice as fast, that's a different calculation — not today's topic.
+
+63
+00:04:20,100 --> 00:04:25,700
+With everything else unchanged, before hiring again, I'd suggest the owner do one thing first.
+
+64
+00:04:26,033 --> 00:04:31,300
+Follow the new hire who's about to join the counter, and see exactly where they stop and wait.
+
+65
+00:04:31,666 --> 00:04:40,733
+If they're waiting on a person — say the order counter sits empty while customers stand there ignored —
+then adding an order-taker really does add a few cups an hour.
+
+66
+00:04:41,066 --> 00:04:50,166
+If they're waiting on a machine — say five or six cups are always queued at the sealer —
+adding more people just moves the line from the door to behind the counter.
+
+67
+00:04:50,433 --> 00:04:53,900
+It's the same line. It just moved.
+
+68
+00:04:53,966 --> 00:04:56,566
+Here's what this shop's owner actually did.
+
+69
+00:04:56,633 --> 00:05:02,633
+The next day, instead of hiring, he spent over 2,000 yuan on a used sealing machine and put it at the other end of the counter.
+
+70
+00:05:02,900 --> 00:05:07,500
+Same four workers — output jumped from 85 to over 120 cups an hour.
+
+71
+00:05:07,766 --> 00:05:11,166
+For the first time, the line outside cleared before 7:30.
+
+72
+00:05:11,466 --> 00:05:17,633
+So next time you see a chaotic line, you might ask a little less: "how many more people do we need?"
+
+73
+00:05:18,433 --> 00:05:21,100
+And take one more look: "which machine keeps running nonstop?"
+
+74
+00:05:21,566 --> 00:05:29,733
+But if tomorrow what changes isn't the staffing but the price on the cup — 15 yuan becomes 18 —
+would you still be standing in this line?
