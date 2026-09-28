@@ -102,10 +102,12 @@ cover_title = checklist[/^封面标题：[ \t]*\r?\n(?:\r?\n)*[ \t]*`?([^`\r\n]+
 errors << 'cover title not found for title-length validation' unless cover_title
 validate_title_length(errors, 'cover title', cover_title) if cover_title
 
-cover_fields = ['封面标题：', '备选标题：', '一句视觉方案：', 'Image2 一段式 Prompt：', 'COVER_DNA v1']
+cover_fields = ['封面标题：', '备选标题：', '一句视觉方案：']
 cover_fields.each do |field|
   errors << "cover prompt missing #{field}" unless checklist.include?(field)
 end
+errors << 'cover prompt missing Image2 一段式 Prompt：' unless checklist.match?(/Image2(?: \/ Image2\.5)? 一段式 Prompt：/)
+errors << 'cover prompt missing COVER_DNA (v1 or v2)' unless checklist.match?(/COVER_DNA v[12]/)
 
 suno_limits = [
   'strictly instrumental only',
@@ -147,8 +149,9 @@ puts "jianying_blocks=#{blocks.length}"
 puts "jianying_exact_match=#{clip == expected_clip}"
 puts "template_phrase_counts=#{template_counts}"
 
-not_density = han_count.zero? ? 0 : template_counts['不是'] * 1000.0 / han_count
-warn format('WARN: 不是 density %.2f per 1000 Han; review for repetitive reversal syntax', not_density) if not_density > 6
+# “不是”是正常口语词，只在“不是……而是……”成串出现时才提醒
+not_but = script.scan(/不是[^。\n]{0,20}而是/).length
+warn format('WARN: 「不是…而是」出现 %d 次; 检查是否重复使用同一反转句式', not_but) if not_but > 3
 
 if errors.empty?
   puts 'VALIDATION=PASS'
