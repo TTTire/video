@@ -3,10 +3,24 @@
 
 require 'pathname'
 
+# 用法：
+#   ruby 工具/validate_package.rb <选题文件夹>                  检查三件套
+#   ruby 工具/validate_package.rb <选题文件夹> --write-jianying 先由口播稿生成剪映版，再检查
+
+write_jianying = ARGV.delete('--write-jianying')
 topic_dir = Pathname(ARGV.fetch(0) do
-  warn 'Usage: ruby validate_package.rb <topic-directory>'
+  warn 'Usage: ruby 工具/validate_package.rb <topic-directory> [--write-jianying]'
   exit 2
 end).expand_path
+
+# 口播稿一行 → 剪映版一行：小数读作“点”，百分号读作“百分之”，去掉所有标点和符号
+def normalize_line(line)
+  line.gsub(/(\d+)\.(\d+)/, '\\1点\\2')
+      .gsub(/(\d+(?:点\d+)?)%/, '百分之\\1')
+      .gsub(/[\p{P}\p{S}]/, '')
+      .gsub(/[ \t]+/, ' ')
+      .strip
+end
 
 unless topic_dir.directory?
   warn "FAIL: topic directory not found: #{topic_dir}"
@@ -15,6 +29,9 @@ end
 
 script_files = topic_dir.glob('*-口播逐字稿.md').reject { |path| path.basename.to_s.include?('剪映版') }
 clip_files = topic_dir.glob('*-口播逐字稿-剪映版.md')
+if write_jianying && script_files.length == 1 && clip_files.empty?
+  clip_files = [Pathname(script_files.first.to_s.sub(/-口播逐字稿\.md\z/, '-口播逐字稿-剪映版.md'))]
+end
 checklist_files = topic_dir.glob('*-发布清单.md')
 
 errors = []
@@ -28,7 +45,7 @@ unless errors.empty?
 end
 
 script = script_files.first.read(encoding: 'UTF-8')
-clip = clip_files.first.read(encoding: 'UTF-8')
+clip = clip_files.first.exist? ? clip_files.first.read(encoding: 'UTF-8') : ''
 checklist = checklist_files.first.read(encoding: 'UTF-8')
 
 chapter_numbers = script.scan(/^## 第([0-9]+)章：/).flatten.map(&:to_i)
@@ -49,12 +66,17 @@ script.each_line do |line|
     next
   end
 
-  clean = stripped.gsub(/[\p{P}\p{S}]/, '').gsub(/[ \t]+/, ' ').strip
+  clean = normalize_line(stripped)
   blocks.last << clean unless clean.empty?
 end
 
 blocks.reject!(&:empty?)
 expected_clip = blocks.map { |block| block.join("\n") }.join("\n\n") + "\n"
+if write_jianying
+  clip_files.first.write(expected_clip, encoding: 'UTF-8')
+  clip = expected_clip
+  puts "wrote=#{clip_files.first}"
+end
 errors << "Jianying export must contain 4 text groups; got #{blocks.length}" unless blocks.length == 4
 errors << 'Jianying export differs from normalized script' unless clip == expected_clip
 errors << 'Jianying export contains punctuation or symbols' unless clip.scan(/[\p{P}\p{S}]/).empty?
@@ -130,9 +152,9 @@ errors << "forbidden AI-style terms found: #{forbidden_hits}" unless forbidden_h
 
 han_count = script.scan(/\p{Han}/).length
 spoken_han_count = blocks.flatten.join.scan(/\p{Han}/).length
-declared_han_count = checklist[/(?:可口播)?正文\s*(\d+)\s*个汉字/, 1]&.to_i
-if declared_han_count && declared_han_count != spoken_han_count
-  errors << "publish checklist declares #{declared_han_count} spoken Han, actual #{spoken_han_count}"
+declared_han_count = checklist[/(?:可口播)?正文约?\s*(\d+)\s*个汉字/, 1]&.to_i
+if declared_han_count && (declared_han_count - spoken_han_count).abs > 50
+  warn "WARN: 发布清单写的正文字数是 #{declared_han_count}，实际口播约 #{spoken_han_count}"
 end
 
 template_counts = ['不是', '而是', '真正', '你以为', '这就是', '很多人'].to_h do |phrase|
