@@ -337,7 +337,7 @@
       "reasoningSummary": "detailed",
       "environmentVariables": "CODEX_HOME=C:\\Users\\14490\\.codex",
       "environmentHash": "runtime-input:v1:838b8d27b791a4eefa2715e91244a72630e2177d22509a3a933e18befe64ea4f",
-      "catalogTimestamp": 1790600839906,
+      "catalogTimestamp": 1790684694747,
       "catalogFingerprint": "2:e38893e496171ed38f6db821865644190fbf0cc1e5223e776a427c96d60c18fd",
       "installationMethodsByHost": {
         "device:adfec557-6caf-4da1-b748-3f12f74cc649": "native-windows",
