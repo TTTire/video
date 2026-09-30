@@ -2,3 +2,12 @@
 进行中/沉没成本/视频素材/14519236_3840_2160_60fps.mp4
 进行中/沉没成本/视频素材/10475100-uhd_4096_2160_25fps.mp4
 进行中/沉没成本/视频素材/9588375-uhd_4096_2160_25fps.mp4
+
+# 渲染出来的样片和剪辑片段体积大（单个可能超过 GitHub 100MB 上限），不进仓库
+*.mp4
+*.mov
+.DS_Store
+# 渲染工程的依赖和产物
+工具/video-render/node_modules/
+工具/video-render/out/
+工具/video-render/public/
