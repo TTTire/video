@@ -62,9 +62,9 @@ def shop_front(night=True, queue=True, boss_pose='wave'):
     # 队伍
     if queue:
         kinds = ['backpack', 'phone', 'hat', 'bag']
-        for i in range(11):
-            x = 900 - i * 92
-            s = 0.95 - i * 0.012
+        for i in range(9):
+            x = 880 - i * 108
+            s = 0.82 - i * 0.012
             b += place(C.silhouette(kinds[i % 4]), x, 940 - 380 * s, s, flip=(i % 3 == 0))
     return b
 
@@ -92,7 +92,7 @@ def counter_inside(crowded=True, two_sealers=False):
     b += f'<rect x="0" y="690" width="{W}" height="40" fill="{C.TAN}" {C.st(8)}/>'
     # 人与机器
     if crowded:
-        xs = [1020, 1180, 1340, 1500]
+        xs = [1040, 1150, 1270, 1385]
         for i, (n, shirt, apron, hair, hc, skin) in enumerate(C.STAFF[:4]):
             b += place(C.staff_busy(shirt, apron, hair, hc, skin, 'flat' if n != 4 else 'hmm'), xs[i], 390, 0.85, flip=(i % 2 == 1))
         b += place(C.sealer(True), 1620, 440, 0.65)
@@ -100,12 +100,11 @@ def counter_inside(crowded=True, two_sealers=False):
         for (x, y) in [(1000, 450), (1250, 420), (1600, 430)]:
             b += f'<path d="M{x} {y} q10 -16 20 0 M{x+30} {y-10} q10 -16 20 0" {C.st(6)}/>'
     else:
-        b += place(C.sealer(True), 920, 440, 0.65)
-        b += place(C.sealer(True), 1620, 440, 0.65)
+        b += place(C.sealer(True), 840, 440, 0.65)
+        b += place(C.sealer(True), 1700, 440, 0.65)
         for i, (n, shirt, apron, hair, hc, skin) in enumerate(C.STAFF[:4]):
-            x = [1160, 1300, 1460, 1800][i] if i < 3 else 1480
-            x = [1180, 1320, 1470, 1850][i]
-            b += place(C.staff_busy(shirt, apron, hair, hc, skin), x, 390, 0.85, flip=(i >= 2))
+            x = [1080, 1230, 1400, 1550][i]
+            b += place(C.staff_busy(shirt, apron, hair, hc, skin), x, 390, 0.85, flip=(i < 2))
     return b
 
 
@@ -145,13 +144,14 @@ def steps_cover():
     """S04 栏目卡：递减台阶 + 奶茶杯"""
     b = ''
     hs = [30, 30, 20, 5, 2]
-    x = 160; base = 760; unit = 14
+    x = 160; base = 900; unit = 16
     tops = []
     for i, h in enumerate(hs):
-        cum = sum(hs[:i+1]) * unit
-        b += f'<rect x="{x + i*180}" y="{base - cum}" width="180" height="{cum}" fill="{C.NAVY if i<3 else C.ORANGE}" {C.st(8)}/>'
-        tops.append(base - cum)
-    b += place(C.cup('straw'), x + 4*180 + 10, tops[-1] - 240, 0.6)
+        hh = h * unit
+        b += f'<rect x="{x + i*190}" y="{base - hh}" width="190" height="{hh}" fill="{C.NAVY if i<3 else C.ORANGE}" {C.st(8)}/>'
+        tops.append(base - hh)
+    b += f'<path d="M0 {base} L{W} {base}" {C.st(8)}/>'
+    b += place(C.cup('straw'), x + 4*190 + 20, tops[-1] - 230, 0.6)
     return b
 
 
