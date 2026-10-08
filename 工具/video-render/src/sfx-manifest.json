@@ -1,0 +1,147 @@
+{
+ "impact": [
+  {
+   "file": "impact_1.wav",
+   "dur": 1.6,
+   "from": "1-impact.mp3"
+  },
+  {
+   "file": "impact_2.wav",
+   "dur": 1.6,
+   "from": "重击- impact.mp3"
+  }
+ ],
+ "ambience": [
+  {
+   "file": "ambience_1.wav",
+   "dur": 60.0,
+   "from": "ambience.mp3"
+  }
+ ],
+ "boom": [
+  {
+   "file": "boom_1.wav",
+   "dur": 2.5,
+   "from": "boom.mp3"
+  }
+ ],
+ "cash": [
+  {
+   "file": "cash_1.wav",
+   "dur": 0.93,
+   "from": "cash.mp3"
+  }
+ ],
+ "ding": [
+  {
+   "file": "ding_1.wav",
+   "dur": 1.08,
+   "from": "ding-1.mp3"
+  },
+  {
+   "file": "ding_2.wav",
+   "dur": 1.72,
+   "from": "ding-2.mp3"
+  }
+ ],
+ "error": [
+  {
+   "file": "error_1.wav",
+   "dur": 0.47,
+   "from": "error.mp3"
+  }
+ ],
+ "flip": [
+  {
+   "file": "flip_1.wav",
+   "dur": 0.51,
+   "from": "flip.mp3"
+  }
+ ],
+ "notify": [
+  {
+   "file": "notify_1.wav",
+   "dur": 0.64,
+   "from": "notify.mp3"
+  }
+ ],
+ "pop": [
+  {
+   "file": "pop_1.wav",
+   "dur": 0.69,
+   "from": "pop-1.mp3"
+  },
+  {
+   "file": "pop_2.wav",
+   "dur": 0.3,
+   "from": "pop-2.mp3"
+  },
+  {
+   "file": "pop_3.wav",
+   "dur": 0.27,
+   "from": "pop-3.mp3"
+  }
+ ],
+ "riser": [
+  {
+   "file": "riser_1.wav",
+   "dur": 3.0,
+   "from": "riser-1.mp3"
+  },
+  {
+   "file": "riser_2.wav",
+   "dur": 3.0,
+   "from": "riser-2.mp3"
+  }
+ ],
+ "shutter": [
+  {
+   "file": "shutter_1.wav",
+   "dur": 0.8,
+   "from": "shutter.mp3"
+  }
+ ],
+ "swipe": [
+  {
+   "file": "swipe_1.wav",
+   "dur": 0.59,
+   "from": "swipe-1.mp3"
+  },
+  {
+   "file": "swipe_2.wav",
+   "dur": 0.21,
+   "from": "swipe-2.mp3"
+  }
+ ],
+ "tick": [
+  {
+   "file": "tick_1.wav",
+   "dur": 3.0,
+   "from": "tick.mp3"
+  }
+ ],
+ "typing": [
+  {
+   "file": "typing_1.wav",
+   "dur": 3.0,
+   "from": "typing.mp3"
+  }
+ ],
+ "whoosh": [
+  {
+   "file": "whoosh_1.wav",
+   "dur": 0.98,
+   "from": "更轻-whoosh.mp3"
+  },
+  {
+   "file": "whoosh_2.wav",
+   "dur": 0.3,
+   "from": "轻-whoosh.mp3"
+  },
+  {
+   "file": "whoosh_3.wav",
+   "dur": 1.2,
+   "from": "重-whoosh.mp3"
+  }
+ ]
+}
