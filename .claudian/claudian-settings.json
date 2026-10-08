@@ -31,9 +31,9 @@
       "customModels": "",
       "discoveredModels": [
         {
-          "model": "gpt-6-astra",
-          "displayName": "GPT-6-Astra",
-          "description": "Frontier intelligence for the most demanding work.",
+          "model": "gpt-6.1-sol",
+          "displayName": "GPT-6.1-Sol",
+          "description": "Latest workhorse model for coding and everyday work.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -76,9 +76,54 @@
           "isDefault": true
         },
         {
+          "model": "gpt-6-astra",
+          "displayName": "GPT-6-Astra",
+          "description": "Frontier intelligence for the most demanding work.",
+          "supportedReasoningEfforts": [
+            {
+              "value": "low",
+              "description": "Fast responses with lighter reasoning"
+            },
+            {
+              "value": "medium",
+              "description": "Balances speed and reasoning depth for everyday tasks"
+            },
+            {
+              "value": "high",
+              "description": "Greater reasoning depth for complex problems"
+            },
+            {
+              "value": "xhigh",
+              "description": "Extra high reasoning depth for complex problems"
+            },
+            {
+              "value": "max",
+              "description": "Maximum reasoning depth for the hardest problems"
+            },
+            {
+              "value": "ultra",
+              "description": "Maximum reasoning with automatic task delegation"
+            }
+          ],
+          "defaultReasoningEffort": "low",
+          "serviceTiers": [
+            {
+              "id": "priority",
+              "name": "Fast",
+              "description": "2x speed, increased usage"
+            }
+          ],
+          "defaultServiceTier": null,
+          "inputModalities": [
+            "text",
+            "image"
+          ],
+          "isDefault": false
+        },
+        {
           "model": "gpt-6-sol",
           "displayName": "GPT-6-Sol",
-          "description": "Workhorse model for coding and everyday work.",
+          "description": "Previous generation workhorse model.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -164,7 +209,7 @@
         {
           "model": "gpt-5.6-sol",
           "displayName": "GPT-5.6-Sol",
-          "description": "Older coding model for complex work.",
+          "description": "Older generation workhorse model.",
           "supportedReasoningEfforts": [
             {
               "value": "low",
@@ -337,8 +382,8 @@
       "reasoningSummary": "detailed",
       "environmentVariables": "CODEX_HOME=C:\\Users\\14490\\.codex",
       "environmentHash": "runtime-input:v1:838b8d27b791a4eefa2715e91244a72630e2177d22509a3a933e18befe64ea4f",
-      "catalogTimestamp": 1790684694747,
-      "catalogFingerprint": "2:e38893e496171ed38f6db821865644190fbf0cc1e5223e776a427c96d60c18fd",
+      "catalogTimestamp": 1791464843177,
+      "catalogFingerprint": "2:1fc556f027c70590e3c2e068b6f2165b75a4ea671efa0d79ea78317754116a75",
       "installationMethodsByHost": {
         "device:adfec557-6caf-4da1-b748-3f12f74cc649": "native-windows",
         "device:f88d9e42-0179-4481-95a9-3decb1ac53cb": "native-windows",
