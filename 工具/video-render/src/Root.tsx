@@ -8,6 +8,7 @@ import ep6 from './ep6/timeline.json';
 import {SCENES6, THEME6} from './ep6/scenes';
 import {ENTER7, MANUAL7, OPENING7, SHAKE7} from './ep7/opening';
 import {ENTER6, FX6, MANUAL6, SHAKE6} from './ep6/fx6';
+import {ENTER6P, MANUAL6P, SCENES6P, THEME6P, useSmiley} from './ep6/photo';
 
 // subtitles 默认关闭：字幕在剪映里自己加
 const eps: {id: string; props: EpisodeProps}[] = [
@@ -43,6 +44,14 @@ comps.push({
   id: 'Ep6FxCheck', total: (ep6 as any).total,
   C: () => <Episode timeline={ep6 as any} scenes={{...SCENES6, ...FX6}} theme={THEME6} audio="ep6-narration.wav" badge="06" fx={{enter: ENTER6, shake: SHAKE6, manual: MANUAL6}} narration={false} subtitles />,
 });
+
+// 第 6 期写实版（AI 照片铺底 + 得意黑）：Ep6Photo 只有音效（剪辑用）；Ep6PhotoCheck 烧录字幕核对同步
+const Ep6Photo: React.FC<{subtitles?: boolean}> = ({subtitles}) => {
+  useSmiley();
+  return <Episode timeline={ep6 as any} scenes={SCENES6P} theme={THEME6P} audio="ep6-narration.wav" badge="06" fx={{enter: ENTER6P, manual: MANUAL6P}} narration={false} plain subtitles={subtitles} />;
+};
+comps.push({id: 'Ep6Photo', total: (ep6 as any).total, C: () => <Ep6Photo />});
+comps.push({id: 'Ep6PhotoCheck', total: (ep6 as any).total, C: () => <Ep6Photo subtitles />});
 
 export const Root: React.FC = () => (
   <>

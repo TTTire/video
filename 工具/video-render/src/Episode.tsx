@@ -9,6 +9,7 @@ export type EpisodeProps = {
   timeline: Timeline; scenes: Record<string, React.FC<any>>; theme: Theme;
   audio: string; badge: string; subtitles?: boolean;
   narration?: boolean; // false = 只留音效，不要合成配音（给剪辑用）
+  plain?: boolean; // true = 纯色底、不画光斑背景（照片铺底的版本用）
   // 动效增强：背景、每个场景的入场方式、镜头震动
   // manual：这些场景自己放了音效，不再自动加转场声和 pop
   fx?: {enter: Record<string, Enter>; shake?: (sc: any) => number[]; manual?: string[]};
@@ -34,10 +35,10 @@ const SceneWrap: React.FC<{sc: any; scenes: Record<string, React.FC<any>>; fx?: 
   return <AbsoluteFill style={{opacity: o}}><Comp {...sc} step={step} /></AbsoluteFill>;
 };
 
-export const Episode: React.FC<EpisodeProps> = ({timeline, scenes, theme: C, audio, badge, subtitles = false, fx, narration = true}) => (
+export const Episode: React.FC<EpisodeProps> = ({timeline, scenes, theme: C, audio, badge, subtitles = false, fx, narration = true, plain = false}) => (
   <ThemeCtx.Provider value={C}>
-    <AbsoluteFill style={{background: `radial-gradient(ellipse at 50% 35%, ${C.bg2} 0%, ${C.bg} 70%)`}}>
-      {fx && <FxBackground />}
+    <AbsoluteFill style={{background: plain ? C.bg : `radial-gradient(ellipse at 50% 35%, ${C.bg2} 0%, ${C.bg} 70%)`}}>
+      {fx && !plain && <FxBackground />}
       {narration && <Html5Audio src={staticFile(audio)} />}
       {timeline.scenes.map((sc, i) => (
         <Sequence key={i} from={sc.from} durationInFrames={sc.dur} premountFor={30}><SceneWrap sc={sc} scenes={scenes} fx={fx} /></Sequence>
@@ -49,7 +50,7 @@ export const Episode: React.FC<EpisodeProps> = ({timeline, scenes, theme: C, aud
           </AbsoluteFill>
         </Sequence>
       ))}
-      <div style={{position: 'absolute', left: 50, top: 36, fontFamily: C.font, fontSize: 28, color: C.dim, letterSpacing: 2}}>像素呼吸 · 100个经济学原理 <span style={{color: C.gold}}>{badge}</span></div>
+      <div style={{position: 'absolute', left: 50, top: 36, fontFamily: C.font, fontSize: 28, color: C.dim, letterSpacing: 2, textShadow: plain ? '0 2px 12px #000C' : undefined}}>像素呼吸 · 100个经济学原理 <span style={{color: C.gold}}>{badge}</span></div>
     </AbsoluteFill>
   </ThemeCtx.Provider>
 );

@@ -1,13 +1,32 @@
-# 第 6 期素材库（米白底 / 扁平插画 / 得意黑）
+# 第 6 期素材库
 
-全部由 `_work/gen.py`（元素）和 `_work/scenes.py`（场景）生成，改调色或线宽重跑即可，风格天然一致。
+## photos/ —— 正式用的（写实电影感 AI 出图）
+16 张 2560×1440 JPG，由即梦出图，统一设定：夜晚奶茶店「茶香居」、店员棕围裙 + 棕贝雷帽 + 口罩、暖黄灯光、浅景深。
+原图（2752×1536）在 `E:\抖音素材\100边际报酬递减\第一梯队\`，这里是裁成 16:9 的版本。
 
-- `fonts/`     得意黑 Smiley Sans v2.0.1（OFL 开源，可商用）
-- `elements/`  47 个透明底 SVG 元素（E01–E14 全部齐）
-- `scenes/`    17 张 1920×1080 场景 SVG（清单里的 S01–S22 全部，S13 可选项未做）
-- `_work/`     生成脚本 + preview 截图
+| 文件 | 画面 | 用在场景 |
+|---|---|---|
+| S01 | 夜景外景，门口排队，老板招手 | shop |
+| S02 | 吧台内景，4 人挤着忙 | tenmin / bars（后半）/ define（虚化）/ fork（前半） |
+| S03 | 年轻店员 + 身后封口机 + 封好的杯子 | tease |
+| S04 | 5 级递减台阶道具 + 奶茶 | series / assume / marginal |
+| S08 | 一个店员端杯等封口 | bars（前半）/ lazy |
+| S09 | 封口机特写 + 一排杯子 | machine / premise |
+| S10 | 顾客视角透过玻璃：里面忙、出杯口 1 杯 | busy |
+| S14 | 林间空地，双人锯架在原木上 | saw |
+| S15 | 4 个工人拉锯搬木，第 5 个抱树枝旁观 | fifth |
+| S16 | 码好的原木堆 | totalvs |
+| S17 | 封口机前排长队的杯子，店员在旁 | machine（后半）/ back |
+| S20A | 点单口空着，2 个顾客张望 | fork 左半 |
+| S20B | 封口机前排杯，2 个店员端杯等 | fork 右半 |
+| S21A | 吧台两头各一台封口机 | fix |
+| S21B | 外景同机位，没人排队，老板靠门 | fix（后半） |
+| S22 | 远处队伍剪影 + 橱窗里封口机亮灯 | chapter（虚化底）/ takeaway |
 
-预览：`py _work/gen.py && py _work/scenes.py`，然后用 Chrome 打开 `_work/preview.html` / `_work/preview-scenes.html`。
+渲染代码：`src/ep6/photo.tsx`，合成 `Ep6Photo`（只有音效，剪辑用）/ `Ep6PhotoCheck`（烧字幕核对同步）。
 
-## 用法
-场景 SVG 可直接作为 Remotion 背景（`<Img>` 或内联），元素 SVG 由代码摆位做动效。需要 PNG 时用 Chrome 无头截图或 resvg 转。
+## fonts/
+得意黑 Smiley Sans v2.0.1（OFL 开源，可商用），标题字体。
+
+## elements/ · scenes/ · _work/ —— 已弃用
+最早用脚本画的扁平矢量 SVG（47 个元素 + 17 张场景），风格偏图标感，被上面的照片替代。保留以备不时之需，`_work/gen.py` / `scenes.py` 可重新生成。
