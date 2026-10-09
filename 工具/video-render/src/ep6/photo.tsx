@@ -301,7 +301,7 @@ const Bars: React.FC<P> = (p) => {
             <div key={i} style={{display: 'flex', flexDirection: 'column', alignItems: 'center', width: 150, position: 'relative', height: '100%', justifyContent: 'flex-end'}}>
               {ghost && (
                 <div style={{position: 'absolute', bottom: 0, width: 110, height: 100 * H0 * gg, border: `4px dashed ${C.dim}`, borderBottom: 'none', borderRadius: '14px 14px 0 0', opacity: p.step >= 9 ? 0.35 : 0.8}}>
-                  <div style={{position: 'absolute', top: -58, left: 0, right: 0, textAlign: 'center', fontFamily: C.font, fontWeight: 900, fontSize: 44, color: C.dim, textDecoration: p.step >= 9 ? 'line-through' : 'none'}}>100?</div>
+                  <div style={{position: 'absolute', top: -58, left: 0, right: 0, textAlign: 'center', fontFamily: C.font, fontWeight: 900, fontSize: 44, color: C.dim, opacity: p.step >= 9 ? 0 : 1}}>100?</div>
                 </div>
               )}
               <div style={{opacity: g, fontFamily: C.font, fontWeight: 900, fontSize: 54, color: C.white, textShadow: SHADOW}}>{last ? '87?' : on ? <CountUp to={v} at={s + 4} dur={20} /> : v}</div>
