@@ -3,145 +3,168 @@
   {
    "file": "impact_1.wav",
    "dur": 1.6,
-   "from": "1-impact.mp3"
+   "from": "1-impact.mp3",
+   "variant": "1"
   },
   {
    "file": "impact_2.wav",
    "dur": 1.6,
-   "from": "重击- impact.mp3"
+   "from": "重击- impact.mp3",
+   "variant": "重击"
   }
  ],
  "ambience": [
   {
    "file": "ambience_1.wav",
    "dur": 60.0,
-   "from": "ambience.mp3"
+   "from": "ambience.mp3",
+   "variant": null
   }
  ],
  "boom": [
   {
    "file": "boom_1.wav",
    "dur": 2.5,
-   "from": "boom.mp3"
+   "from": "boom.mp3",
+   "variant": null
   }
  ],
  "cash": [
   {
    "file": "cash_1.wav",
    "dur": 0.93,
-   "from": "cash.mp3"
+   "from": "cash.mp3",
+   "variant": null
   }
  ],
  "ding": [
   {
    "file": "ding_1.wav",
    "dur": 1.08,
-   "from": "ding-1.mp3"
+   "from": "ding-1.mp3",
+   "variant": "1"
   },
   {
    "file": "ding_2.wav",
    "dur": 1.72,
-   "from": "ding-2.mp3"
+   "from": "ding-2.mp3",
+   "variant": "2"
   }
  ],
  "error": [
   {
    "file": "error_1.wav",
    "dur": 0.47,
-   "from": "error.mp3"
+   "from": "error.mp3",
+   "variant": null
   }
  ],
  "flip": [
   {
    "file": "flip_1.wav",
    "dur": 0.51,
-   "from": "flip.mp3"
+   "from": "flip.mp3",
+   "variant": null
   }
  ],
  "notify": [
   {
    "file": "notify_1.wav",
    "dur": 0.64,
-   "from": "notify.mp3"
+   "from": "notify.mp3",
+   "variant": null
   }
  ],
  "pop": [
   {
    "file": "pop_1.wav",
    "dur": 0.69,
-   "from": "pop-1.mp3"
+   "from": "pop-1.mp3",
+   "variant": "1"
   },
   {
    "file": "pop_2.wav",
    "dur": 0.3,
-   "from": "pop-2.mp3"
+   "from": "pop-2.mp3",
+   "variant": "2"
   },
   {
    "file": "pop_3.wav",
    "dur": 0.27,
-   "from": "pop-3.mp3"
+   "from": "pop-3.mp3",
+   "variant": "3"
   }
  ],
  "riser": [
   {
    "file": "riser_1.wav",
    "dur": 3.0,
-   "from": "riser-1.mp3"
+   "from": "riser-1.mp3",
+   "variant": "1"
   },
   {
    "file": "riser_2.wav",
    "dur": 3.0,
-   "from": "riser-2.mp3"
+   "from": "riser-2.mp3",
+   "variant": "2"
   }
  ],
  "shutter": [
   {
    "file": "shutter_1.wav",
    "dur": 0.8,
-   "from": "shutter.mp3"
+   "from": "shutter.mp3",
+   "variant": null
   }
  ],
  "swipe": [
   {
    "file": "swipe_1.wav",
    "dur": 0.59,
-   "from": "swipe-1.mp3"
+   "from": "swipe-1.mp3",
+   "variant": "1"
   },
   {
    "file": "swipe_2.wav",
    "dur": 0.21,
-   "from": "swipe-2.mp3"
+   "from": "swipe-2.mp3",
+   "variant": "2"
   }
  ],
  "tick": [
   {
    "file": "tick_1.wav",
    "dur": 3.0,
-   "from": "tick.mp3"
+   "from": "tick.mp3",
+   "variant": null
   }
  ],
  "typing": [
   {
    "file": "typing_1.wav",
    "dur": 3.0,
-   "from": "typing.mp3"
+   "from": "typing.mp3",
+   "variant": null
   }
  ],
  "whoosh": [
   {
    "file": "whoosh_1.wav",
    "dur": 0.98,
-   "from": "更轻-whoosh.mp3"
+   "from": "更轻-whoosh.mp3",
+   "variant": "更轻"
   },
   {
    "file": "whoosh_2.wav",
    "dur": 0.3,
-   "from": "轻-whoosh.mp3"
+   "from": "轻-whoosh.mp3",
+   "variant": "轻"
   },
   {
    "file": "whoosh_3.wav",
    "dur": 1.2,
-   "from": "重-whoosh.mp3"
+   "from": "重-whoosh.mp3",
+   "variant": "重"
   }
  ]
 }

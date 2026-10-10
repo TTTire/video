@@ -58,7 +58,7 @@ def main():
         scenes.append(sc)
     subs = [{"from": round(it["start"] * FPS), "dur": round(it["dur"] * FPS), "text": it["text"].rstrip("。，？！")} for it in items if it["type"] == "line"]
     os.makedirs(f"{ROOT}/src/{ep}", exist_ok=True)
-    json.dump({"fps": FPS, "total": round(total * FPS), "scenes": scenes, "subs": subs}, open(f"{ROOT}/src/{ep}/timeline.json", "w"), ensure_ascii=False)
+    json.dump({"fps": FPS, "total": round(total * FPS), "scenes": scenes, "subs": subs}, open(f"{ROOT}/src/{ep}/timeline.json", "w", encoding="utf-8"), ensure_ascii=False)
     print(f"{ep}: {n} 句, {len(scenes)} 个场景, {total:.1f} 秒")
 
 main()

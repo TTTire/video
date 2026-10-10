@@ -1,0 +1,233 @@
+{
+  "ep": "ep6",
+  "badge": "06",
+  "series": "100 个经济学原理",
+  "photos": "ep6/photos",
+  "chapterPhoto": "S22",
+  "scenes": [
+    {
+      "id": "shop", "name": "奶茶店排队-再叫一个人",
+      "photo": "S01", "move": "in", "origin": "68% 62%", "grad": "top", "ambience": "奶茶店", "enterSfx": null,
+      "items": [
+        {"type": "clock", "h": 19, "m": 0, "delay": 6},
+        {"type": "h", "text": "门口排了**十几个人**", "size": 74, "delay": 18},
+        {"type": "tag", "text": "老板：再叫一个人！ +1", "at": 1, "dir": "up", "box": "right", "sfx": "impact"},
+        {"type": "h", "text": "这下总该快了吧？", "at": 2, "size": 60, "color": "dim", "box": "low"}
+      ],
+      "boxes": {"right": {"x": 1080, "y": 300}, "low": {"x": 90, "y": 330}}
+    },
+    {
+      "id": "tenmin", "name": "十分钟后队伍还是那么长",
+      "photo": "S02", "move": "out", "origin": "40% 40%", "grad": "bottom", "enterSfx": "tick",
+      "box": {"x": 90, "y": 620, "w": 1700},
+      "items": [
+        {"type": "clock", "h": 19, "m": 0, "to": 10, "dur": 30, "delay": 2, "box": "top"},
+        {"type": "h", "text": "队伍还是那么长，吧台里**四个人挤来挤去**", "size": 66, "delay": 40, "dir": "up"},
+        {"type": "h", "text": "人多了一个，怎么没快多少？", "at": 1, "size": 84, "color": "gold", "dir": "up", "sfx": "impact"}
+      ],
+      "boxes": {"top": {"x": 90, "y": 110}}
+    },
+    {
+      "id": "tease", "name": "不是新人-是那台机器",
+      "photo": "S03", "move": "in", "origin": "70% 32%", "grad": "left",
+      "box": {"x": 90, "y": 150, "w": 820},
+      "items": [
+        {"type": "h", "text": "第一反应：新人不熟练？", "size": 64, "color": "dim", "delay": 4, "strikeAt": 1},
+        {"type": "spot", "x": 1400, "y": 330, "r": 300, "at": 1, "delay": 26, "strength": 0.6},
+        {"type": "h", "text": "问题不在人身上\\n在他身后**那台机器**", "at": 1, "delay": 30, "size": 88, "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "series", "name": "栏目卡-06边际报酬递减", "type": "series",
+      "photo": "S04", "move": "out", "origin": "62% 55%", "grad": "left", "enterSfx": null,
+      "num": 6, "title": "边际报酬递减", "tagline": "不背概念，只算**一笔账**", "box": {"x": 90, "y": 140, "w": 900}
+    },
+    {
+      "id": "assume", "name": "假设-一杯15块",
+      "photo": "S04", "zoom": [1.25, 1.35], "origin": "50% 45%", "grad": "left", "enterSfx": null,
+      "box": {"x": 90, "y": 200, "w": 900},
+      "items": [
+        {"type": "h", "text": "给这家店假设几个数", "size": 60, "color": "dim"},
+        {"type": "h", "text": "一杯奶茶 **¥15**", "at": 1, "size": 120, "dir": "up", "sfx": "cash"}
+      ]
+    },
+    {
+      "id": "bars", "name": "吧台人数-出杯柱状图",
+      "photo": "S08", "zoom": [1.05, 1.15], "origin": "30% 50%", "grad": "right", "enterSfx": null,
+      "swap": {"at": 2, "photo": "S02", "move": "in", "origin": "30% 45%", "grad": "right"},
+      "items": [{"type": "custom", "name": "bars"}]
+    },
+    {
+      "id": "lazy", "name": "第四个人在偷懒吗",
+      "photo": "S08", "move": "in", "origin": "30% 45%", "grad": "right",
+      "box": {"x": 960, "y": 200, "w": 880},
+      "items": [
+        {"type": "h", "text": "第四个人\\n在**偷懒**吗？", "size": 84, "delay": 4},
+        {"type": "stamp", "text": "没有", "at": 1, "size": 76, "rotate": -8, "color": "teal"},
+        {"type": "h", "text": "他一直在动，手上一直有活", "at": 1, "delay": 10, "size": 56, "color": "dim", "dir": "up", "sfx": null}
+      ]
+    },
+    {
+      "id": "machine", "name": "封口机是瓶颈",
+      "photo": "S09", "move": "in", "origin": "25% 45%", "grad": "right",
+      "swap": {"at": 4, "photo": "S17", "zoom": [1.05, 1.15], "origin": "75% 60%", "grad": "left"},
+      "box": {"x": 1000, "y": 150, "w": 840},
+      "items": [
+        {"type": "spot", "x": 430, "y": 520, "r": 340, "delay": 12, "strength": 0.5, "until": 4},
+        {"type": "h", "text": "问题出在吧台**最里面那个位子**", "size": 62, "color": "dim", "delay": 6, "until": 4},
+        {"type": "tag", "text": "封口机 ×1", "at": 1, "size": 46, "until": 4},
+        {"type": "count", "to": 40, "at": 1, "delay": 8, "dur": 120, "suffix": " 秒 / 杯", "until": 4, "sfx": "tick"},
+        {"type": "h", "text": "一小时顶天 **90 杯**", "at": 2, "size": 76, "dir": "up", "until": 4, "sfx": "ding"},
+        {"type": "h", "text": "前面做得再快，杯子都得在它前面排队", "at": 3, "size": 52, "color": "dim", "dir": "up", "until": 4, "sfx": null},
+        {"type": "h", "text": "第四个人做好的那杯奶茶", "at": 4, "delay": 6, "size": 64, "color": "dim", "box": "left", "sfx": null},
+        {"type": "h", "text": "没交到顾客手里\\n排在了**机器前面**", "at": 4, "delay": 26, "size": 84, "box": "left", "sfx": "impact"}
+      ],
+      "boxes": {"left": {"x": 90, "y": 170, "w": 900}}
+    },
+    {
+      "id": "busy", "name": "忙不等于出杯",
+      "photo": "S10", "move": "in", "origin": "50% 70%", "grad": "top", "center": true, "enterSfx": null,
+      "items": [
+        {"type": "h", "text": "队伍外面看到的忙，是真的忙", "size": 60, "color": "dim", "delay": 4, "dir": "down", "until": 2},
+        {"type": "h", "text": "忙 **≠** 出杯", "at": 1, "size": 140, "until": 2, "sfx": "impact"},
+        {"type": "h", "text": "那问题就来了", "at": 2, "size": 56, "color": "dim", "dir": "down"},
+        {"type": "compare", "left": "第二个人\\n[[值 30 杯]]", "right": "第四个人\\n((只值 5 杯))", "at": 3}
+      ]
+    },
+    {
+      "id": "define", "name": "边际报酬定义",
+      "photo": "S02", "zoom": [1.05, 1.12], "blur": 10, "dim": 0.55, "center": true,
+      "box": {"x": 90, "y": 300, "w": 1740, "align": "center"},
+      "items": [
+        {"type": "t", "text": "MARGINAL RETURN", "size": 34},
+        {"type": "h", "text": "边际**报酬**", "size": 150, "sfx": null},
+        {"type": "h", "text": "= 新加这个人，**多做出了**多少杯", "at": 1, "size": 64, "sfx": "ding"},
+        {"type": "h", "text": "[[多做出多少]]  不是  ~~店里一共做了多少~~", "at": 2, "size": 50, "color": "dim"}
+      ]
+    },
+    {
+      "id": "marginal", "name": "增量一路往下掉",
+      "photo": "S04", "move": "in", "origin": "55% 60%", "grad": "top",
+      "box": {"x": 90, "y": 130, "w": 1740},
+      "items": [
+        {"type": "nums", "delay": 10, "items": [
+          {"label": "第 1 人", "value": "+30", "color": "teal"}, {"label": "第 2 人", "value": "+30", "color": "teal"}, {"label": "第 3 人", "value": "+20", "color": "teal"},
+          {"label": "第 4 人", "value": "+5", "color": "coral"}, {"label": "第 5 人", "value": "+2", "color": "coral"}]},
+        {"type": "stamp", "text": "边际报酬递减", "at": 1, "size": 64, "rotate": -4},
+        {"type": "panel", "label": "前提", "lines": ["吧台还是那张吧台，封口机还是那一台"], "at": 2},
+        {"type": "h", "text": "人在加，其他东西都没跟着加", "at": 3, "size": 50, "color": "dim", "dir": "up", "sfx": null}
+      ]
+    },
+    {
+      "id": "saw", "name": "伐木表-双人锯",
+      "photo": "S14", "move": "in", "origin": "30% 60%", "grad": "right",
+      "box": {"x": 90, "y": 110, "w": 800},
+      "items": [
+        {"type": "h", "text": "这不是奶茶店的专利", "size": 60, "color": "dim", "delay": 4, "until": 2},
+        {"type": "tag", "text": "OpenStax《经济学原理》· 伐木的例子", "at": 1, "size": 38, "dark": true, "until": 3},
+        {"type": "h", "text": "一把**双人锯**\\n一个一个往里加工人", "at": 2, "size": 66},
+        {"type": "custom", "name": "sawTable"}
+      ]
+    },
+    {
+      "id": "fifth", "name": "第五个人站着看",
+      "photo": "S15", "move": "in", "origin": "88% 50%", "grad": "top",
+      "box": {"x": 90, "y": 110, "w": 1300},
+      "items": [
+        {"type": "h", "text": "我第一次看这张表，盯了半天**第五个人那一栏**", "size": 60, "color": "dim", "delay": 4},
+        {"type": "spot", "x": 1700, "y": 560, "r": 220, "at": 1, "strength": 0.6},
+        {"type": "h", "text": "锯子只有一把\\n第五个人除了搬搬树枝，**基本就是站着看**", "at": 1, "size": 72},
+        {"type": "tag", "text": "+0", "at": 1, "delay": 40, "size": 56, "color": "coral", "dir": "down", "box": "zero", "sfx": "error"}
+      ],
+      "boxes": {"zero": {"x": 1560, "y": 250}}
+    },
+    {
+      "id": "totalvs", "name": "总量vs新增",
+      "photo": "S16", "move": "in", "origin": "70% 50%", "grad": "left",
+      "box": {"x": 90, "y": 100, "w": 1000},
+      "items": [
+        {"type": "custom", "name": "totalVsChart"},
+        {"type": "h", "text": "总产量[[一直在涨]]：4 → 13 棵，没有掉", "size": 58},
+        {"type": "h", "text": "掉下来的，是每个新人带来的((那一截))", "at": 1, "size": 58, "sfx": null},
+        {"type": "tag", "text": "这一点很多人会搞混", "at": 2, "size": 38, "dark": true, "box": "right"},
+        {"type": "panel", "lines": ["递减 ((≠)) 总量少了", "而是后面的人**越来越不值**"], "at": 3, "size": 56, "box": "right", "dir": "up", "sfx": "impact"}
+      ],
+      "boxes": {"right": {"x": 1150, "y": 330, "w": 720}}
+    },
+    {
+      "id": "back", "name": "回到奶茶店",
+      "photo": "S17", "move": "in", "origin": "78% 45%", "grad": "left",
+      "box": {"x": 90, "y": 160, "w": 900},
+      "items": [
+        {"type": "rings", "x": 1560, "y": 470, "at": 1, "delay": 10},
+        {"type": "h", "text": "第四个人那 [[5 杯]] 是真的\\n他没白干", "size": 66, "delay": 4},
+        {"type": "h", "text": "只是大部分被那台\\n一直响的封口机**吃掉了**", "at": 1, "size": 72, "sfx": "impact"},
+        {"type": "tag", "text": "那老板该怎么办？", "at": 2, "size": 44, "dark": true, "dir": "up"}
+      ]
+    },
+    {
+      "id": "premise", "name": "前提-只加了人",
+      "photo": "S09", "move": "out", "origin": "30% 50%", "grad": "right", "dim": 0.2, "enterSfx": null,
+      "box": {"x": 960, "y": 150, "w": 880},
+      "items": [
+        {"type": "tag", "text": "先说一句前提", "size": 36},
+        {"type": "h", "text": "这笔账成立，是因为老板**只加了人**\\n店面和机器都没动", "at": 1, "delay": 6, "size": 66, "sfx": null},
+        {"type": "panel", "lines": ["如果同时换了一台快一倍的封口机", "那是另一笔账，**今天不算**"], "at": 2, "size": 46, "dir": "up"}
+      ]
+    },
+    {
+      "id": "fork", "name": "等的是人还是机器",
+      "photo": "S02", "move": "in", "grad": "top", "dim": 0.25, "center": true, "enterSfx": null,
+      "split": {"at": [2, 3], "photos": ["S20A", "S20B"]},
+      "items": [
+        {"type": "h", "text": "在什么都没变的情况下，下次想加人，先做一件事", "size": 56, "color": "dim", "delay": 4, "dir": "down", "until": 2},
+        {"type": "h", "text": "跟着新人走一遍\\n看他在**哪一步停下来等**", "at": 1, "size": 80, "until": 2},
+        {"type": "tag", "text": "等的是人", "at": 2, "size": 40, "color": "teal", "box": "L", "sfx": null},
+        {"type": "h", "text": "点单口一直空着，顾客没人理", "at": 2, "size": 48, "box": "L", "sfx": null},
+        {"type": "h", "text": "→ 加个人接单，[[确实能多出几杯]]", "at": 2, "size": 56, "box": "L", "sfx": null},
+        {"type": "tag", "text": "等的是机器", "at": 3, "size": 40, "color": "coral", "box": "R", "sfx": null},
+        {"type": "h", "text": "封口机前一直排着五六个杯子", "at": 3, "size": 48, "box": "R", "sfx": null},
+        {"type": "h", "text": "→ 再加人，只是把队伍((挪进了吧台))", "at": 3, "size": 56, "box": "R", "sfx": null},
+        {"type": "panel", "lines": ["队伍还是那条队伍，只是**换了个地方排**"], "at": 4, "size": 64, "box": "bottom", "dir": "up", "sfx": "impact"}
+      ],
+      "boxes": {"bottom": {"x": 0, "w": 1920, "bottom": 200, "align": "center"}}
+    },
+    {
+      "id": "fix", "name": "二手封口机-85到120",
+      "photo": "S21A", "move": "in", "origin": "80% 50%", "grad": "top", "enterSfx": null,
+      "swap": {"at": 3, "photo": "S21B", "zoom": [1.06, 1.14], "origin": "50% 60%", "grad": "top"},
+      "box": {"x": 90, "y": 110, "w": 1500},
+      "items": [
+        {"type": "rings", "x": 1690, "y": 430, "at": 1, "delay": 10, "n": 2, "max": 260, "until": 3},
+        {"type": "h", "text": "这家店的老板后来是这么干的", "size": 56, "color": "dim", "delay": 4, "until": 3},
+        {"type": "h", "text": "没再叫人，花两千多买了台**二手封口机**，放在吧台另一头", "at": 1, "size": 66, "until": 3, "sfx": "cash"},
+        {"type": "count", "label": "还是那四个人，一小时出杯", "before": "85", "from": 85, "to": 120, "suffix": "+", "at": 2, "dir": "up", "until": 3},
+        {"type": "clock", "h": 19, "m": 30, "at": 3, "delay": 10, "box": "late"},
+        {"type": "h", "text": "门口的队伍，第一次\\n在七点半之前[[散了]]", "at": 3, "delay": 26, "size": 80, "box": "late", "sfx": "notify"}
+      ],
+      "boxes": {"late": {"x": 90, "y": 120, "w": 900}}
+    },
+    {
+      "id": "takeaway", "name": "金句-哪台机器一直在响",
+      "photo": "S22", "move": "in", "origin": "85% 50%", "ambience": "街道夜晚", "enterSfx": null,
+      "box": {"x": 90, "y": 200, "w": 1100},
+      "items": [
+        {"type": "rings", "x": 1655, "y": 500, "at": 1, "delay": 10, "max": 420},
+        {"type": "t", "text": "以后再看到一支忙乱的队伍", "delay": 6, "sfx": null},
+        {"type": "h", "text": "先少问一句：~~还差几个人？~~", "size": 76, "color": "dim", "delay": 6, "sfx": null},
+        {"type": "h", "text": "多看一眼\\n**哪台机器一直在响**", "at": 1, "size": 96, "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "next", "name": "下期-价格涨到18",
+      "photo": "S01", "move": "out", "origin": "30% 60%", "blur": 6, "dim": 0.5, "center": true, "enterSfx": null,
+      "box": {"x": 90, "y": 260, "w": 1740, "align": "center"},
+      "items": [
+        {"type": "tag", "text": "下期", "size": 38, "dir": "down"},
+        {"type": "h", "text": "如果变的不是人手，而是价格", "size": 76, "color": "dim", "delay": 10},
+        {"type": "h", "text": "~~¥15~~  →  **¥18**", "size": 150, "delay": 40, "sfx": "cash"},
+        {"type": "h", "text": "你还会站在这个队里吗？", "size": 70, "delay": 100}
+      ]
+    }
+  ]
+}

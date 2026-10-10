@@ -9,6 +9,13 @@ import {SCENES6, THEME6} from './ep6/scenes';
 import {ENTER7, MANUAL7, OPENING7, SHAKE7} from './ep7/opening';
 import {ENTER6, FX6, MANUAL6, SHAKE6} from './ep6/fx6';
 import {ENTER6P, MANUAL6P, SCENES6P, THEME6P, useSmiley} from './ep6/photo';
+import {photoComps} from './photo/register';
+import {EpisodeSpec} from './photo/engine';
+// ---- 通用照片引擎的期数（由 scripts/new_episode.py 追加，别删这几行标记） ----
+import ep6photo from './ep6/photo.json';
+import ep6names from './ep6/scene-names.json';
+import {CUSTOM6} from './ep6/custom';
+// ---- /imports ----
 
 // subtitles 默认关闭：字幕在剪映里自己加
 const eps: {id: string; props: EpisodeProps}[] = [
@@ -17,7 +24,7 @@ const eps: {id: string; props: EpisodeProps}[] = [
   {id: 'Ep7', props: {timeline: ep7 as any, scenes: SCENES7, theme: C, audio: 'ep7-narration.wav', badge: '07'}},
 ];
 
-const comps = eps.map((e) => ({id: e.id, total: e.props.timeline.total, C: () => <Episode {...e.props} />}));
+const comps: {id: string; total: number; C: React.FC; width?: number; height?: number}[] = eps.map((e) => ({id: e.id, total: e.props.timeline.total, C: () => <Episode {...e.props} />}));
 
 // 动效升级版：第 7 期开头（到第 1 章标题之前）
 const ep7OpeningEnd = (ep7 as any).scenes.find((s: any) => s.scene === 'chapter').from;
@@ -53,10 +60,19 @@ const Ep6Photo: React.FC<{subtitles?: boolean}> = ({subtitles}) => {
 comps.push({id: 'Ep6Photo', total: (ep6 as any).total, C: () => <Ep6Photo />});
 comps.push({id: 'Ep6PhotoCheck', total: (ep6 as any).total, C: () => <Ep6Photo subtitles />});
 
+// 通用照片引擎：每期 src/epN/photo.json → EpNPhoto / EpNPhotoCheck / EpNSheet
+// 第 6 期的 JSON 版（Ep6J*）和手写版（Ep6Photo*）并存，JSON 版是之后每期的模板
+const photoEps: {id: string; tl: any; spec: EpisodeSpec; custom?: any; names?: any}[] = [
+  // ---- episodes ----
+  {id: 'Ep6J', tl: ep6, spec: ep6photo as EpisodeSpec, custom: CUSTOM6, names: ep6names},
+  // ---- /episodes ----
+];
+photoEps.forEach((e) => comps.push(...photoComps(e.id, e.tl as any, e.spec, e.custom, e.names)));
+
 export const Root: React.FC = () => (
   <>
     {comps.map((e) => (
-      <Composition key={e.id} id={e.id} component={e.C} durationInFrames={e.total} fps={30} width={1920} height={1080} />
+      <Composition key={e.id} id={e.id} component={e.C} durationInFrames={e.total} fps={30} width={e.width ?? 1920} height={e.height ?? 1080} />
     ))}
   </>
 );
