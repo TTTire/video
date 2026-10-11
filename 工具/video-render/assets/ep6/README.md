@@ -23,7 +23,7 @@
 | S21B | 外景同机位，没人排队，老板靠门 | fix（后半） |
 | S22 | 远处队伍剪影 + 橱窗里封口机亮灯 | chapter（虚化底）/ takeaway |
 
-渲染代码两版：手写版 `src/ep6/photo.tsx`（合成 `Ep6Photo` / `Ep6PhotoCheck`），JSON 版 `src/ep6/photo.json` + `custom.tsx`（合成 `Ep6JPhoto` / `Ep6JPhotoCheck` / `Ep6JSheet`，走通用引擎，是之后每期的模板）。JSON 版的照片在 `public/ep6/photos/`。
+渲染代码两版：手写版 `src/ep6/photo.tsx`（合成 `Ep6Photo` / `Ep6PhotoCheck`），JSON 版 `src/ep6/photo.json` + `custom.tsx`（合成 `Ep6JPhoto` / `Ep6JPhotoCheck` / `Ep6JSheet`，走通用引擎，是之后每期的模板）。JSON 版的照片在 `public/ep6/photos/`（public/ 不进 git，换机器后用 `python scripts/import_photos.py assets/ep6/photos ep6` 重新生成）。
 
 ## 字体
 得意黑已挪到公共目录 `assets/fonts/`（OFL 开源，可商用），所有照片铺底的期数共用。
