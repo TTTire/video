@@ -95,7 +95,7 @@ export const Panel: React.FC<{children: React.ReactNode; style?: React.CSSProper
   const C = useC();
   return <div style={{background: '#0B0907D0', border: `1.5px solid ${C.white}2E`, borderRadius: 26, padding: '34px 44px', boxShadow: '0 30px 80px #000A', backdropFilter: 'blur(10px)', ...style}}>{children}</div>;
 };
-export const Box: React.FC<{x?: number; y?: number; w?: number; right?: number; children: React.ReactNode; style?: React.CSSProperties}> = ({x, y = 0, w, right, children, style}) => (
+export const Box: React.FC<{x?: number; y?: number; w?: number; right?: number; children: React.ReactNode; style?: React.CSSProperties}> = ({x, y, w, right, children, style}) => (
   <div style={{position: 'absolute', left: x, right, top: y, width: w, display: 'flex', flexDirection: 'column', gap: 22, alignItems: 'flex-start', ...style}}>{children}</div>
 );
 // 得意黑金句里的强调字

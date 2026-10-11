@@ -111,7 +111,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
         <div style={{display: 'flex', alignItems: 'baseline', gap: 28, justifyContent: align === 'center' ? 'center' : undefined}}>
           {it.label && <T size={40}>{it.label}</T>}
           {it.before && <><H size={(it.size ?? 150) * 0.7} color={C.dim} style={{lineHeight: 1}}>{it.before}</H><H size={(it.size ?? 150) * 0.5} color={C.dim}>→</H></>}
-          <H size={it.size ?? 150} color={col(it.color, C.gold)} style={{lineHeight: 1, fontVariantNumeric: 'tabular-nums'}}>{it.prefix}<CountUp from={it.from ?? 0} to={it.to} at={a + 6} dur={dur} />{it.suffix}</H>
+          <H size={it.size ?? 150} color={col(it.color, C.gold)} style={{lineHeight: 1, fontVariantNumeric: 'tabular-nums'}}>{it.prefix}<CountUp from={it.from ?? 0} to={it.to} at={a + 6} dur={dur} format={(n) => String(n)} />{it.suffix}</H>
         </div>);
     }
     case 'nums': return (
@@ -235,7 +235,7 @@ const SeriesCard: React.FC<{p: P; spec: SceneSpec; ep: EpisodeSpec}> = ({p, spec
   const C = useC();
   const f = useCurrentFrame();
   const n = spec.num ?? parseInt(ep.badge, 10);
-  const s1 = at(p, 1), s2 = at(p, 2);
+  const s1 = at(p, 1), s2 = p.steps.length > 2 ? at(p, 2) : s1 + 45;  // 只有两句时 tagline 晚 1.5 秒出
   const num = Math.min(n, Math.max(1, Math.floor(interpolate(f, [s1, s1 + 18], [1, n + 0.99], clamp))));
   const b = {...DEFAULT_BOX, ...spec.box};
   return (

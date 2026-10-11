@@ -89,8 +89,12 @@ def main():
     out = f"{ROOT}/src/{ep}"
     os.makedirs(out, exist_ok=True)
     json.dump({str(k): scenemap[k] for k in sorted(scenemap)}, open(f"{out}/scenemap.json", "w", encoding="utf-8"), ensure_ascii=False)
-    json.dump(names, open(f"{out}/scene-names.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     pj = f"{out}/photo.json"
+    # photo.json 里已经手工写了更好的场景名时，scene-names 以它为准
+    if os.path.exists(pj) and not force:
+        for sc in json.load(open(pj, encoding="utf-8")).get("scenes", []):
+            if sc.get("id") in names and sc.get("name"): names[sc["id"]] = sc["name"]
+    json.dump(names, open(f"{out}/scene-names.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     badge = re.sub(r"\D", "", ep).zfill(2)
     if force or not os.path.exists(pj):
         spec = {"ep": ep, "badge": badge, "series": "100 个经济学原理", "photos": f"{ep}/photos", "chapterPhoto": photos[-1] if photos else "S01", "scenes": scenes}

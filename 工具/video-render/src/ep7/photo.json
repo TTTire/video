@@ -1,0 +1,286 @@
+{
+  "ep": "ep7",
+  "badge": "07",
+  "series": "100 个经济学原理",
+  "photos": "ep7/photos",
+  "chapterPhoto": "S08",
+  "scenes": [
+    {
+      "id": "hot", "name": "热搜-LV涨价-门店排队",
+      "photo": "S01", "move": "in", "origin": "60% 60%", "grad": "top", "ambience": "商场", "enterSfx": null,
+      "box": {"x": 90, "y": 110, "w": 1200},
+      "items": [
+        {"type": "tag", "text": "2023 年 2 月", "dark": true, "delay": 6},
+        {"type": "h", "text": "LV 要涨价了，最多涨 **20%**", "size": 76, "delay": 20},
+        {"type": "h", "text": "消息还没官宣，门店门口就排起了**长队**", "at": 1, "size": 56, "color": "dim"},
+        {"type": "tag", "text": "排队一小时 · 热门款断货", "at": 2, "color": "coral", "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "odd", "name": "有钱人真奇怪-需求定律不管用",
+      "photo": "S02", "move": "in", "origin": "70% 45%", "grad": "left",
+      "box": {"x": 90, "y": 150, "w": 860},
+      "items": [
+        {"type": "h", "text": "第一反应：", "size": 48, "color": "dim", "delay": 4},
+        {"type": "h", "text": "有钱人真奇怪\\n**越贵越抢**？", "size": 84, "delay": 14, "sfx": null},
+        {"type": "panel", "label": "再往下想一步", "lines": ["需求定律 = 贵了少买", "→ 对奢侈品**不管用**？"], "at": 1, "size": 48}
+      ]
+    },
+    {
+      "id": "flip", "name": "正好反过来-需求定律最标准的样子",
+      "photo": "S02", "move": "out", "origin": "70% 45%", "grad": "left",
+      "swap": {"at": 2, "photo": "S01", "move": "in", "origin": "50% 55%", "grad": "top"},
+      "box": {"x": 90, "y": 150, "w": 900},
+      "items": [
+        {"type": "h", "text": "我一开始也是这么想的", "size": 56, "color": "dim", "delay": 4, "until": 2},
+        {"type": "h", "text": "需求定律对奢侈品不管用", "at": 1, "size": 64, "color": "dim", "strikeAt": 1, "until": 2, "sfx": null},
+        {"type": "h", "text": "这支越涨越长的队伍\\n恰恰是需求定律**最标准的样子**", "at": 2, "delay": 10, "size": 80, "box": "wide", "sfx": "impact"}
+      ],
+      "boxes": {"wide": {"x": 90, "y": 120, "w": 1700}}
+    },
+    {
+      "id": "series", "name": "栏目卡-07需求定律", "type": "series",
+      "photo": "S03", "move": "out", "origin": "65% 50%", "grad": "left", "enterSfx": null,
+      "num": 7, "title": "需求定律", "tagline": "贵了少买，这条规矩奢侈品也**逃不掉**", "box": {"x": 90, "y": 140, "w": 900}
+    },
+    {
+      "id": "bridge", "name": "上期奶茶-这期换一支贵得多的队伍",
+      "photo": "S05", "move": "in", "origin": "30% 60%", "grad": "top", "dim": 0.2, "enterSfx": null,
+      "swap": {"at": 1, "photo": "S01", "move": "in", "origin": "50% 55%", "grad": "top"},
+      "box": {"x": 90, "y": 120, "w": 1200},
+      "items": [
+        {"type": "t", "text": "上期结尾", "delay": 4, "sfx": null},
+        {"type": "h", "text": "~~¥15~~ → **¥18**，你还排不排队？", "size": 72, "delay": 14, "until": 1},
+        {"type": "h", "text": "这期，换一支**贵得多**的队伍", "at": 1, "delay": 20, "size": 80, "sfx": "whoosh"},
+        {"type": "h", "text": "看看它守的是不是同一条规矩", "at": 1, "delay": 50, "size": 52, "color": "dim", "sfx": null}
+      ]
+    },
+    {
+      "id": "law", "name": "需求定律定义-前提同一样东西",
+      "photo": "S03", "zoom": [1.05, 1.12], "blur": 10, "dim": 0.55, "center": true,
+      "box": {"x": 90, "y": 240, "w": 1740, "align": "center"},
+      "items": [
+        {"type": "t", "text": "LAW OF DEMAND", "size": 34},
+        {"type": "h", "text": "需求**定律**", "size": 150, "sfx": null},
+        {"type": "h", "text": "其他条件不变：价格越高，买的越少；价格越低，买得越多", "at": 1, "size": 54, "sfx": "ding"},
+        {"type": "panel", "label": "前提", "lines": ["比的是**同一样东西**"], "at": 2, "size": 60},
+        {"type": "h", "text": "那 2 月初排队的人，手里比的是什么？", "at": 3, "size": 52, "color": "dim"}
+      ]
+    },
+    {
+      "id": "price", "name": "2万到2万4-八三折",
+      "photo": "S04", "move": "in", "origin": "28% 50%", "grad": "right",
+      "box": {"x": 960, "y": 130, "w": 880},
+      "items": [
+        {"type": "t", "text": "假设", "delay": 4, "sfx": null},
+        {"type": "h", "text": "今天 **¥20,000**", "size": 80, "delay": 12},
+        {"type": "h", "text": "18 号起 ((¥24,000))", "at": 1, "size": 80},
+        {"type": "h", "text": "今天买，比下周买便宜 **4000**", "at": 2, "size": 56, "color": "dim"},
+        {"type": "stamp", "text": "八三折", "at": 3, "size": 72, "rotate": -8, "color": "teal"},
+        {"type": "h", "text": "价格低了，买的人就多了", "at": 4, "size": 60, "sfx": "ding"}
+      ]
+    },
+    {
+      "id": "notviolate", "name": "没违反-比的是今天和下周",
+      "photo": "S02", "move": "in", "origin": "70% 45%", "grad": "left",
+      "box": {"x": 90, "y": 170, "w": 900},
+      "items": [
+        {"type": "h", "text": "这根本**没有违反**需求定律", "size": 72, "delay": 4},
+        {"type": "compare", "left": "今天的价格", "right": "下周的价格", "mid": "vs", "at": 1, "size": 60},
+        {"type": "h", "text": "大家拿来比的，是这两个", "at": 1, "delay": 20, "size": 48, "color": "dim", "sfx": null}
+      ]
+    },
+    {
+      "id": "rice", "name": "超市明天涨价-多拿两袋米",
+      "photo": "S06", "move": "in", "origin": "50% 70%", "grad": "top",
+      "box": {"x": 90, "y": 110, "w": 1700},
+      "items": [
+        {"type": "h", "text": "这事其实你我都干过", "size": 56, "color": "dim", "delay": 4},
+        {"type": "tag", "text": "明天起涨价", "at": 1, "color": "coral"},
+        {"type": "h", "text": "你会不会顺手**多拿两袋米**？", "at": 1, "delay": 16, "size": 72, "sfx": null},
+        {"type": "h", "text": "同一个动作：一袋米 → **一只包**", "at": 2, "size": 64, "sfx": "swipe"}
+      ]
+    },
+    {
+      "id": "asset", "name": "想得更远-涨了3万多比股票稳",
+      "photo": "S07", "move": "in", "origin": "70% 50%", "grad": "left",
+      "box": {"x": 90, "y": 150, "w": 900},
+      "items": [
+        {"type": "h", "text": "还有一种人，比这想得**更远**", "size": 60, "color": "dim", "delay": 4},
+        {"type": "h", "text": "几年前买的那只包\\n专柜已经涨了 **3 万多**", "at": 1, "size": 72, "sfx": "cash"},
+        {"type": "tag", "text": "“这比买股票基金稳多了”", "at": 1, "delay": 40, "dark": true, "size": 40}
+      ]
+    },
+    {
+      "id": "realprice", "name": "真实价格等于买价减卖价",
+      "photo": "S07", "zoom": [1.05, 1.12], "blur": 10, "dim": 0.55, "center": true,
+      "box": {"x": 90, "y": 220, "w": 1740, "align": "center"},
+      "items": [
+        {"type": "h", "text": "她心里那只包的价格，已经不是专柜上那个数", "size": 52, "color": "dim", "delay": 4},
+        {"type": "panel", "lines": ["真实价格 = 买进来的钱 − 以后能卖出去的钱"], "at": 1, "size": 60},
+        {"type": "h", "text": "相信明年还能卖更高 → 真实价格 **≈ 0**，甚至还能赚", "at": 2, "size": 56, "sfx": "ding"},
+        {"type": "h", "text": "真实价格这么低，抢的人多，太正常了", "at": 3, "size": 52, "color": "dim"}
+      ]
+    },
+    {
+      "id": "twokinds", "name": "两种人-都觉得买到了更便宜的",
+      "photo": "S01", "move": "in", "grad": "top", "dim": 0.25, "center": true, "enterSfx": null,
+      "split": {"at": [0, 0], "photos": ["S02", "S07"], "pos": ["right center", "left center"]},
+      "items": [
+        {"type": "tag", "text": "第一种人", "size": 38, "color": "teal", "box": "L", "delay": 20, "sfx": null},
+        {"type": "h", "text": "在抢涨价之前的**旧价格**", "size": 56, "box": "L", "delay": 26, "sfx": null},
+        {"type": "tag", "text": "第二种人", "size": 38, "color": "gold", "box": "R", "delay": 40, "sfx": null},
+        {"type": "h", "text": "在抢一件以为会**升值**的东西", "size": 56, "box": "R", "delay": 46, "sfx": null},
+        {"type": "h", "text": "都不是因为“更贵了”才去买的", "at": 1, "size": 56, "color": "dim", "box": "bottom"},
+        {"type": "panel", "lines": ["恰恰相反，都觉得自己买到了**更便宜的那一个**"], "at": 2, "size": 60, "box": "bottom", "dir": "up", "sfx": "impact"}
+      ],
+      "boxes": {"bottom": {"x": 0, "w": 1920, "bottom": 180, "align": "center"}}
+    },
+    {
+      "id": "climb", "name": "CF五年翻倍-一年两次10%",
+      "photo": "S08", "move": "in", "origin": "30% 50%", "grad": "right",
+      "box": {"x": 90, "y": 130, "w": 860},
+      "items": [
+        {"type": "h", "text": "那问题就来了", "size": 56, "color": "dim", "delay": 4},
+        {"type": "h", "text": "一年一年涨下去\\n需求定律**什么时候出手**？", "at": 1, "size": 72},
+        {"type": "tag", "text": "香奈儿 CF 手袋", "at": 2, "dark": true, "size": 40},
+        {"type": "custom", "name": "priceLadder"},
+        {"type": "h", "text": "有好几年，看起来怎么涨都有人买", "at": 4, "size": 50, "color": "dim"}
+      ]
+    },
+    {
+      "id": "bill", "name": "2024账单来了-5000万顾客离开",
+      "photo": "S08", "zoom": [1.1, 1.18], "blur": 10, "dim": 0.6, "center": true,
+      "box": {"x": 90, "y": 170, "w": 1740, "align": "center"},
+      "items": [
+        {"type": "h", "text": "2024 年，**账单来了**", "size": 90, "delay": 6, "sfx": "impact"},
+        {"type": "t", "text": "贝恩咨询 × Altagamma · 2024 年 11 月", "at": 1, "size": 32},
+        {"type": "count", "to": 5000, "from": 4000, "suffix": " 万", "label": "过去两年，全球约", "at": 1, "delay": 14, "dur": 40, "size": 150},
+        {"type": "h", "text": "奢侈品顾客，不买了 / 被挤出了市场", "at": 1, "delay": 50, "size": 54, "color": "dim", "sfx": null},
+        {"type": "h", "text": "这两年，差不多就是从门口排长队的那个二月算起", "at": 2, "size": 48, "color": "dim", "until": 3},
+        {"type": "h", "text": "经济不确定 · 品牌一直涨价 · 年轻人不买账", "at": 3, "size": 52, "sfx": "swipe"}
+      ]
+    },
+    {
+      "id": "spain", "name": "5000万约等于西班牙-187亿减4.3",
+      "photo": "S09", "move": "out", "origin": "50% 40%", "grad": "top",
+      "box": {"x": 90, "y": 110, "w": 1740, "align": "center"},
+      "items": [
+        {"type": "h", "text": "**5000 万人** ≈ 一个西班牙的人口", "size": 80, "delay": 6, "sfx": "impact"},
+        {"type": "h", "text": "从奢侈品店里走掉了", "size": 52, "color": "dim", "delay": 30, "sfx": null},
+        {"type": "h", "text": "香奈儿 2024 年销售额 187 亿美元，((−4.3%))", "at": 1, "size": 64, "sfx": "error"},
+        {"type": "h", "text": "说实话，看到这组数我愣了一下", "at": 2, "size": 50, "color": "dim"}
+      ]
+    },
+    {
+      "id": "still", "name": "门口还是有人在等-问题在这",
+      "photo": "S01", "move": "in", "origin": "40% 60%", "grad": "top", "ambience": "商场", "enterSfx": null,
+      "box": {"x": 90, "y": 120, "w": 1300},
+      "items": [
+        {"type": "h", "text": "2024 年你去 SKP，香奈儿门口可能**还是有人在等**", "size": 60, "delay": 6},
+        {"type": "stamp", "text": "问题就出在这儿", "at": 1, "size": 60, "rotate": -4}
+      ]
+    },
+    {
+      "id": "tail", "name": "走掉的是队尾-大客户占比还在涨",
+      "photo": "S10", "move": "in", "origin": "50% 80%", "grad": "top",
+      "box": {"x": 90, "y": 110, "w": 1700},
+      "items": [
+        {"type": "h", "text": "走掉的那 5000 万，**不是**排在最前面的人", "size": 64, "delay": 6},
+        {"type": "tag", "text": "贝恩：最顶级的大客户，花的钱占比还在往上涨 ↑", "at": 1, "dark": true, "size": 40},
+        {"type": "h", "text": "走的是**队尾**：咬咬牙攒几个月钱买入门款的人，年轻人尤其多", "at": 2, "size": 56, "sfx": "swipe"}
+      ]
+    },
+    {
+      "id": "swap", "name": "换了买法-香水口红奥莱二手",
+      "photo": "S11", "move": "in", "origin": "30% 50%", "grad": "right",
+      "box": {"x": 960, "y": 200, "w": 880},
+      "items": [
+        {"type": "h", "text": "没有彻底消失，只是**换了买法**", "size": 60, "delay": 4},
+        {"type": "tag", "text": "一瓶香水", "delay": 30, "size": 44},
+        {"type": "tag", "text": "一支口红", "delay": 42, "size": 44},
+        {"type": "tag", "text": "奥特莱斯", "delay": 54, "size": 44},
+        {"type": "tag", "text": "二手", "delay": 66, "size": 44}
+      ]
+    },
+    {
+      "id": "rule", "name": "先走的永远是队尾",
+      "photo": "S10", "move": "out", "origin": "50% 80%", "grad": "top", "dim": 0.2,
+      "box": {"x": 90, "y": 110, "w": 1700},
+      "items": [
+        {"type": "h", "text": "这就是需求定律落到**一群人**身上的样子", "size": 60, "color": "dim", "delay": 6},
+        {"type": "h", "text": "价格往上抬一格\\n先离开的，永远是队尾那个“**可买可不买**”的人", "at": 1, "size": 68, "sfx": "impact"},
+        {"type": "h", "text": "队看起来没短，是因为最前面的人本来就不太在乎价格", "at": 2, "size": 48, "color": "dim"}
+      ]
+    },
+    {
+      "id": "veblen", "name": "身份这一层-其他条件变了",
+      "photo": "S12", "move": "in", "origin": "70% 50%", "grad": "left",
+      "box": {"x": 90, "y": 150, "w": 900},
+      "items": [
+        {"type": "h", "text": "奢侈品还有一层：越贵越能**显身份**", "size": 60, "delay": 6},
+        {"type": "tag", "text": "那是另一个效应，后面单独讲", "at": 1, "dark": true, "size": 40},
+        {"type": "panel", "lines": ["需求定律没有被推翻", "只是“**其他条件**”变了"], "at": 2, "size": 52}
+      ]
+    },
+    {
+      "id": "q1", "name": "问题1-涨价前还是涨价后的价格",
+      "photo": "S13", "move": "in", "origin": "50% 40%", "grad": "bottom",
+      "box": {"x": 90, "y": 430, "w": 1740},
+      "items": [
+        {"type": "h", "text": "下次再看到“越涨越抢”，先问自己两个问题", "size": 52, "color": "dim", "delay": 6},
+        {"type": "tag", "text": "问题 1", "at": 1, "size": 44},
+        {"type": "h", "text": "抢的是涨价**之后**的价格，还是涨价**之前**的？", "at": 1, "delay": 14, "size": 66, "sfx": null},
+        {"type": "h", "text": "大部分“越涨越抢”，抢的都是那个((时间差))", "at": 2, "size": 56, "sfx": "ding"}
+      ]
+    },
+    {
+      "id": "q2", "name": "问题2-还是不是同一样东西",
+      "photo": "S04", "move": "out", "origin": "28% 50%", "grad": "right",
+      "box": {"x": 960, "y": 130, "w": 880},
+      "items": [
+        {"type": "tag", "text": "问题 2", "size": 44, "delay": 4},
+        {"type": "h", "text": "买的，还是不是**同一样东西**？", "size": 66, "delay": 16, "sfx": null},
+        {"type": "h", "text": "大家都相信它会升值 → [[一件资产]]", "at": 1, "size": 54},
+        {"type": "h", "text": "信念一松 → ((变回一只包))，真实价格一下子就贵了", "at": 1, "delay": 40, "size": 54, "sfx": "error"}
+      ]
+    },
+    {
+      "id": "self", "name": "放到自己身上-今天就是涨价后的价格还买吗",
+      "photo": "S13", "move": "out", "origin": "50% 40%", "grad": "bottom",
+      "box": {"x": 90, "y": 430, "w": 1740},
+      "items": [
+        {"type": "h", "text": "这两个问题，放到你自己身上也好用", "size": 52, "color": "dim", "delay": 6, "until": 2},
+        {"type": "tag", "text": "最后一天原价", "at": 1, "color": "coral", "size": 40, "until": 2},
+        {"type": "tag", "text": "明天起涨价", "at": 1, "delay": 10, "color": "coral", "size": 40, "until": 2},
+        {"type": "h", "text": "先别急着下单", "at": 1, "delay": 24, "size": 60, "until": 2, "sfx": null},
+        {"type": "h", "text": "如果今天它就是**涨价后的价格**，我还会买吗？", "at": 2, "size": 66, "sfx": "impact"},
+        {"type": "h", "text": "[[会]] → 那就买", "at": 3, "size": 56},
+        {"type": "h", "text": "((不会)) → 你想抢的不是这件东西，只是那一点差价", "at": 4, "size": 56}
+      ]
+    },
+    {
+      "id": "back", "name": "回到那条队-需求定律只在队尾数人",
+      "photo": "S14", "move": "in", "origin": "70% 50%", "grad": "left", "ambience": "街道夜晚", "enterSfx": null,
+      "box": {"x": 90, "y": 170, "w": 1100},
+      "items": [
+        {"type": "t", "text": "回到 2023 年 2 月那条排了一个小时的队", "delay": 6, "sfx": null},
+        {"type": "h", "text": "它确实很长", "at": 1, "size": 64, "color": "dim"},
+        {"type": "h", "text": "可需求定律从来不在门口看队伍多长", "at": 2, "size": 56, "color": "dim"},
+        {"type": "h", "text": "它只在队尾\\n**一个一个数，谁没有再回来**", "at": 2, "delay": 40, "size": 84, "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "next", "name": "下期-价格弹性",
+      "photo": "S14", "move": "out", "origin": "70% 50%", "blur": 6, "dim": 0.5, "center": true, "enterSfx": null,
+      "box": {"x": 90, "y": 220, "w": 1740, "align": "center"},
+      "items": [
+        {"type": "h", "text": "那 5000 万人里，走得最多的是年轻人和买入门款的人", "size": 50, "color": "dim", "delay": 6},
+        {"type": "compare", "left": "一涨就走", "right": "涨多少都留", "mid": "vs", "at": 1, "size": 80},
+        {"type": "h", "text": "同样一次涨价，为什么？", "at": 1, "delay": 30, "size": 52, "color": "dim", "sfx": null},
+        {"type": "tag", "text": "下期", "at": 2, "size": 38},
+        {"type": "h", "text": "**价格弹性**", "at": 2, "delay": 12, "size": 120, "sfx": "cash"}
+      ]
+    }
+  ]
+}

@@ -75,12 +75,19 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 
 画面描述要能直接当提示词主体：机位（外景 / 内景平视 / 俯视 / 特写 / 顾客视角）、谁在干什么、关键道具位置、情绪。镜像构图的一对图（分屏用）标 `S20A / S20B`，并写明主体各靠哪一侧。
 
-写完跑一次校验（起始句、id、列出要出的图）：
+写完跑一次校验（起始句、id、列出要出的图），并且**顺手把渲染工程搭起来、先用占位图渲一张拼图**——版式问题在用户出图之前就能发现：
 
 ```bash
 cd E:/视频脚本/工具/video-render
-python scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" epN
+python scripts/new_episode.py epN
+python scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" epN     # → scenemap / scene-names / photo.json 骨架
+python scripts/estimate_timeline.py "<口播稿.md>" epN src/epN/scenemap.json   # 按字数估算的预览时间轴（录完音会被 srt 版覆盖）
+python scripts/placeholder_photos.py epN                                     # 没到的图先用占位图
+# 把 photo.json 从骨架填成正式版（见渲染阶段第 2 步），然后：
+python scripts/render.py epN sheet
 ```
+
+这一步做完，渲染阶段只剩"换真图 + 换真时间轴 + 微调"。
 
 ---
 
@@ -96,10 +103,10 @@ python scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" epN
 
 ```bash
 cd E:/视频脚本/工具/video-render
-python scripts/new_episode.py ep7                                            # 建 src/ep7/、public/ep7/photos/，注册 Ep7Photo / Ep7PhotoCheck / Ep7Sheet
-python scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" ep7       # → scenemap.json、scene-names.json、photo.json 骨架
-python scripts/import_photos.py "<用户的图片文件夹>" ep7 --need "<发布清单.md>"  # 裁 16:9、统一命名 → public/ep7/photos/，报缺图
-python scripts/timeline_from_srt.py "<口播稿.md>" "<口播.srt>" ep7 src/ep7/scenemap.json   # → timeline.json
+python scripts/new_episode.py ep7                                            # 写稿阶段没建的话：建 src/ep7/、public/ep7/photos/，注册 Ep7Photo / Ep7PhotoCheck / Ep7Sheet
+python scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" ep7       # → scenemap.json、scene-names.json、photo.json 骨架（已有 photo.json 不覆盖）
+python scripts/import_photos.py "<用户的图片文件夹>" ep7 --need "<发布清单.md>"  # 裁 16:9、统一命名 → public/ep7/photos/，报缺图；会覆盖同名占位图
+python scripts/timeline_from_srt.py "<口播稿.md>" "<口播.srt>" ep7 src/ep7/scenemap.json   # → timeline.json（覆盖估算版）
 ```
 
 缺图时先告诉用户缺哪几张；能用别的图顶就在 photo.json 里改 `photo`，别等。
