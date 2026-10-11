@@ -3,9 +3,10 @@
 // 字段说明见 工具/video-broll-maker/references/photo-json.md
 import React from 'react';
 import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remotion';
-import {useC} from '../ui';
+import {Theme, useC} from '../ui';
+import {Enter} from '../fx';
 import {CountUp, FlyIn, Sfx, SfxName, Stamp, StrikeLine, useSpringAt} from '../fx';
-import {at, Box, Clock, Em, Grad, H, P, Panel, Photo, PHOTO_THEME, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, clamp, ease} from './kit';
+import {at, Box, Clock, Em, Grad, H, P, Panel, Photo, PHOTO_THEME, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease} from './kit';
 
 // ---------- 类型 ----------
 type Dir = 'left' | 'right' | 'up' | 'down';
@@ -39,15 +40,24 @@ export type SceneSpec = PhotoLayer & {
   // type: 'series'
   num?: number; title?: string; tagline?: string; label?: string;
 };
+// 每期的视觉方案：在不动栏目固定件（角标、章节卡结构、音效语言、字幕位）的前提下换"长相"
+export type Style = {
+  layout?: 'topleft' | 'bottom' | 'right' | 'center';   // 默认文字母版：左上大字 / 底部字幕带式居中 / 右侧右对齐 / 居中
+  titleFont?: keyof typeof TITLE_FONTS | string;        // 标题字体：smiley | serif | hei | kai 或任意 CSS font-family
+  theme?: Partial<Theme>;                               // 覆盖配色：gold（强调）、teal（正面）、coral（负面）、bg（压暗色）、white、dim
+  tint?: string; tintOpacity?: number;                  // 给所有照片统一罩一层色（mixBlendMode color），比如冷蓝 #1B2A44
+  letterbox?: boolean;                                  // 上下黑边（2.35:1 电影感）
+  enter?: Enter;                                        // 场景入场：blur（默认）| cut 硬切 | slideL | zoom | slideUp
+  grain?: boolean;                                      // 胶片颗粒
+};
 export type EpisodeSpec = {
   ep: string; badge: string; photos: string; chapterPhoto: string;
-  series?: string; scenes: SceneSpec[];
+  series?: string; style?: Style; scenes: SceneSpec[];
 };
 export type CustomMap = Record<string, React.FC<P & {spec: SceneSpec}>>;
 
 // ---------- 文本标记：**金** [[青]] ((红)) ~~划掉~~ \n 换行 ----------
-export const rich = (s: string): React.ReactNode => {
-  const C = PHOTO_THEME;
+export const rich = (s: string, C: Theme = PHOTO_THEME): React.ReactNode => {
   const parts = s.split(/(\*\*.+?\*\*|\[\[.+?\]\]|\(\(.+?\)\)|~~.+?~~|\\n|\n)/g);
   return parts.map((x, i) => {
     if (x === '\\n' || x === '\n') return <br key={i} />;
@@ -58,14 +68,22 @@ export const rich = (s: string): React.ReactNode => {
     return x;
   });
 };
-const col = (c: string | undefined, dflt: string) => {
-  const C = PHOTO_THEME as any;
+const col = (c: string | undefined, dflt: string, C: Theme = PHOTO_THEME) => {
   if (!c) return dflt;
-  return C[c] ?? c;
+  return (C as any)[c] ?? c;
 };
 const zoomOf = (l: PhotoLayer): [number, number] => l.zoom ?? (l.move === 'out' ? [1.1, 1.0] : l.move === 'still' ? [1.04, 1.06] : [1.0, 1.12]);
 const DEFAULT_BOX: BoxSpec = {x: 90, y: 120, w: 900};
 const CENTER_BOX: BoxSpec = {x: 90, y: 110, w: 1740, align: 'center'};
+// 文字母版：每期在 style.layout 里选一个，场景里不写 box / grad 时按它来
+const LAYOUTS: Record<NonNullable<Style['layout']>, {box: BoxSpec; grad: Grad}> = {
+  topleft: {box: DEFAULT_BOX, grad: 'left'},
+  bottom: {box: {x: 160, w: 1600, bottom: 150, align: 'center'}, grad: 'bottom'},
+  right: {box: {x: 960, y: 120, w: 870, align: 'right'}, grad: 'right'},
+  center: {box: {x: 90, y: 300, w: 1740, align: 'center'}, grad: 'all'},
+};
+const GRAIN_SVG = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>\")";
+const Grain: React.FC = () => <AbsoluteFill style={{opacity: 0.12, mixBlendMode: 'overlay', backgroundImage: GRAIN_SVG, backgroundSize: '300px 300px'}} />;
 const DEFAULT_SFX: Partial<Record<Item['type'], SfxName>> = {h: 'pop', t: 'pop', tag: 'pop', stamp: 'stamp', big: 'ding', count: 'ding', panel: 'page', compare: 'swipe', nums: 'drop', clock: 'click'};
 const DEFAULT_DIR = (b: BoxSpec): Dir => (b.align === 'center' ? 'up' : b.right !== undefined || (b.x ?? 0) > 960 ? 'right' : 'left');
 
@@ -98,20 +116,20 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
   switch (it.type) {
     case 'h': return fly(
       <div style={{position: 'relative', display: 'inline-block'}}>
-        <H size={it.size ?? 66} color={col(it.color, C.white)} align={align}>{rich(it.text)}</H>
+        <H size={it.size ?? 66} color={col(it.color, C.white, C)} align={align}>{rich(it.text, C)}</H>
         {it.strikeAt !== undefined && p.step >= it.strikeAt && <><Sfx at={at(p, it.strikeAt)} name="swipe" vol={0.45} /><StrikeLine at={at(p, it.strikeAt)} /></>}
       </div>);
-    case 't': return fly(<T size={it.size ?? 38} color={col(it.color, C.dim)} style={{textAlign: align, letterSpacing: 3}}>{rich(it.text)}</T>, 100);
-    case 'tag': return fly(<Tag size={it.size ?? 42} dark={it.dark} color={col(it.color, C.gold)}>{rich(it.text)}</Tag>, 140);
-    case 'stamp': return <>{snd}<Stamp at={a} size={it.size ?? 60} rotate={it.rotate ?? -5} color={col(it.color, C.coral)}>{it.text}</Stamp></>;
-    case 'big': return fly(<H size={it.size ?? 150} color={col(it.color, C.gold)} align={align} style={{lineHeight: 1}}>{rich(it.text)}</H>, 160);
+    case 't': return fly(<T size={it.size ?? 38} color={col(it.color, C.dim, C)} style={{textAlign: align, letterSpacing: 3}}>{rich(it.text, C)}</T>, 100);
+    case 'tag': return fly(<Tag size={it.size ?? 42} dark={it.dark} color={col(it.color, C.gold, C)}>{rich(it.text, C)}</Tag>, 140);
+    case 'stamp': return <>{snd}<Stamp at={a} size={it.size ?? 60} rotate={it.rotate ?? -5} color={col(it.color, C.coral, C)}>{it.text}</Stamp></>;
+    case 'big': return fly(<H size={it.size ?? 150} color={col(it.color, C.gold, C)} align={align} style={{lineHeight: 1}}>{rich(it.text, C)}</H>, 160);
     case 'count': {
       const dur = it.dur ?? 36;
       return fly(
         <div style={{display: 'flex', alignItems: 'baseline', gap: 28, justifyContent: align === 'center' ? 'center' : undefined}}>
           {it.label && <T size={40}>{it.label}</T>}
           {it.before && <><H size={(it.size ?? 150) * 0.7} color={C.dim} style={{lineHeight: 1}}>{it.before}</H><H size={(it.size ?? 150) * 0.5} color={C.dim}>→</H></>}
-          <H size={it.size ?? 150} color={col(it.color, C.gold)} style={{lineHeight: 1, fontVariantNumeric: 'tabular-nums'}}>{it.prefix}<CountUp from={it.from ?? 0} to={it.to} at={a + 6} dur={dur} format={(n) => String(n)} />{it.suffix}</H>
+          <H size={it.size ?? 150} color={col(it.color, C.gold, C)} style={{lineHeight: 1, fontVariantNumeric: 'tabular-nums'}}>{it.prefix}<CountUp from={it.from ?? 0} to={it.to} at={a + 6} dur={dur} format={(n) => String(n)} />{it.suffix}</H>
         </div>);
     }
     case 'nums': return (
@@ -119,7 +137,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
         {it.items.map((n, i) => (
           <React.Fragment key={i}>
             {sfxName && <Sfx at={a + i * 14} name={sfxName} vol={0.25} />}
-            <NumCell at={a + i * 14} label={n.label} value={n.value} size={(it.size ?? 120) - i * 8} color={col(n.color, C.white)} />
+            <NumCell at={a + i * 14} label={n.label} value={n.value} size={(it.size ?? 120) - i * 8} color={col(n.color, C.white, C)} />
             {i < it.items.length - 1 && <H size={60} color={C.dim} style={{paddingBottom: 14}}>{it.arrow ?? '→'}</H>}
           </React.Fragment>
         ))}
@@ -127,17 +145,17 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
     case 'panel': return fly(
       <Panel style={{padding: '24px 36px'}}>
         {it.label && <T size={34} color={C.gold} style={{letterSpacing: 4}}>{it.label}</T>}
-        {it.lines.map((l, i) => <H key={i} size={it.size ?? 50} color={i ? C.dim : C.white} align={align}>{rich(l)}</H>)}
+        {it.lines.map((l, i) => <H key={i} size={it.size ?? 50} color={i ? C.dim : C.white} align={align}>{rich(l, C)}</H>)}
       </Panel>);
     case 'compare': return fly(
       <div style={{display: 'flex', gap: 80, alignItems: 'center', justifyContent: 'center'}}>
-        <H size={it.size ?? 72} align="center">{rich(it.left)}</H>
+        <H size={it.size ?? 72} align="center">{rich(it.left, C)}</H>
         <H size={(it.size ?? 72) * 1.5} color={C.dim}>{it.mid ?? 'vs'}</H>
-        <H size={it.size ?? 72} align="center">{rich(it.right)}</H>
+        <H size={it.size ?? 72} align="center">{rich(it.right, C)}</H>
       </div>, 140);
     case 'clock': return <Clock at={a} h={it.h} m0={it.m} m1={it.to} dur={it.dur} />;
     case 'spot': return <Spot x={it.x} y={it.y} r={it.r} at={a} strength={it.strength} />;
-    case 'rings': return <Rings x={it.x} y={it.y} at={a} n={it.n} max={it.max} color={it.color ? col(it.color, C.gold) : undefined} />;
+    case 'rings': return <Rings x={it.x} y={it.y} at={a} n={it.n} max={it.max} color={it.color ? col(it.color, C.gold, C) : undefined} />;
     case 'sfx': return <Sfx at={a} name={it.name} variant={it.variant} vol={it.vol} dur={it.dur} endAt={it.endAt} fade={it.fade} />;
     case 'custom': {
       const Comp = custom[it.name];
@@ -153,6 +171,14 @@ const OVERLAY = new Set(['spot', 'rings', 'sfx', 'custom', 'stamp-abs']);
 // ---------- 场景 ----------
 const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.FC<P> => {
   const src = (code: string) => staticFile(`${ep.photos}/${code}.jpg`);
+  const st = ep.style ?? {};
+  const L = LAYOUTS[st.layout ?? 'topleft'];
+  const look = (
+    <>
+      {st.grain && <Grain />}
+      {st.letterbox && <><div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 130, background: '#000'}} /><div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 130, background: '#000'}} /></>}
+    </>
+  );
   const SceneView: React.FC<P> = (p) => {
     const C = useC();
     const f = useCurrentFrame();
@@ -162,19 +188,21 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
       return (
         <AbsoluteFill>
           <Sfx at={0} name="flip" vol={0.4} />
-          <Photo src={src(spec.photo || ep.chapterPhoto)} dur={p.dur} zoom={[1.05, 1.1]} blur={14} dim={0.55} />
+          <Photo src={src(spec.photo || ep.chapterPhoto)} dur={p.dur} zoom={[1.05, 1.1]} blur={14} dim={0.55} tint={st.tint} tintOpacity={st.tintOpacity} />
           <AbsoluteFill style={{alignItems: 'center', justifyContent: 'center', gap: 30}}>
             <FlyIn at={0} dir="down" dist={80}><Tag size={40}>第 {p.chapter} 章</Tag></FlyIn>
             <FlyIn at={6} dir="up" dist={120}><H size={110} align="center">{p.title}</H></FlyIn>
             <div style={{width: interpolate(f, [10, 40], [0, 420], clamp), height: 6, background: C.gold, borderRadius: 3}} />
           </AbsoluteFill>
+          {look}
         </AbsoluteFill>
       );
     }
 
     const enterSfx = spec.enterSfx === null ? null : spec.enterSfx ?? 'pop';
     const swap = spec.swap ? interpolate(f, [at(p, spec.swap.at) + (spec.swap.delay ?? 0), at(p, spec.swap.at) + (spec.swap.delay ?? 0) + 24], [0, 1], clamp) : 0;
-    const boxes: Record<string, BoxSpec> = {main: spec.center ? CENTER_BOX : {...DEFAULT_BOX, ...spec.box}, ...(spec.boxes ?? {})};
+    const boxes: Record<string, BoxSpec> = {main: spec.center ? CENTER_BOX : spec.box ? {...DEFAULT_BOX, ...spec.box} : L.box, ...(spec.boxes ?? {})};
+    const grad: Grad = spec.grad ?? (spec.center ? 'none' : L.grad);
     let splitL = 0, splitR = 0;
     if (spec.split) {
       const [sl, sr] = spec.split.at;
@@ -203,11 +231,11 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
       <AbsoluteFill>
         {enterSfx && <Sfx at={0} name={enterSfx} vol={0.3} />}
         {spec.ambience && <Sfx at={0} name="ambience" variant={typeof spec.ambience === 'string' ? spec.ambience : undefined} dur={p.dur / 30} fade={0.8} vol={0.2} />}
-        <Photo src={src(spec.photo)} dur={p.dur} zoom={zoomOf(spec)} origin={spec.origin ?? '50% 50%'} grad={spec.grad ?? 'none'} dim={spec.dim} blur={spec.blur} pos={spec.pos} opacity={1 - swap} />
+        <Photo src={src(spec.photo)} dur={p.dur} zoom={zoomOf(spec)} origin={spec.origin ?? '50% 50%'} grad={grad} dim={spec.dim} blur={spec.blur} pos={spec.pos} opacity={1 - swap} tint={st.tint} tintOpacity={st.tintOpacity} />
         {spec.swap && p.step >= spec.swap.at && (
           <>
             <Sfx at={at(p, spec.swap.at) + (spec.swap.delay ?? 0)} name="whoosh" vol={0.3} />
-            <Photo src={src(spec.swap.photo)} dur={p.dur} zoom={zoomOf(spec.swap)} origin={spec.swap.origin ?? '50% 50%'} grad={spec.swap.grad ?? spec.grad ?? 'none'} dim={spec.swap.dim} blur={spec.swap.blur} pos={spec.swap.pos} opacity={swap} />
+            <Photo src={src(spec.swap.photo)} dur={p.dur} zoom={zoomOf(spec.swap)} origin={spec.swap.origin ?? '50% 50%'} grad={spec.swap.grad ?? grad} dim={spec.swap.dim} blur={spec.swap.blur} pos={spec.swap.pos} opacity={swap} tint={st.tint} tintOpacity={st.tintOpacity} />
           </>
         )}
         {spec.split && p.step >= spec.split.at[0] && <><Sfx at={at(p, spec.split.at[0])} name="whoosh" vol={0.35} /><Half code={spec.split.photos[0]} side="left" k={splitL} pos={spec.split.pos?.[0] ?? 'left center'} start={at(p, spec.split.at[0])} /></>}
@@ -224,6 +252,7 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
             </Box>
           );
         })}
+        {look}
       </AbsoluteFill>
     );
   };
@@ -253,7 +282,7 @@ const SeriesCard: React.FC<{p: P; spec: SceneSpec; ep: EpisodeSpec}> = ({p, spec
             </div>
           </FlyIn>
         )}
-        {p.step >= 2 && spec.tagline && <FlyIn at={s2} dir="up" dist={100}><H size={56} color={C.dim}>{rich(spec.tagline)}</H></FlyIn>}
+        {p.step >= 2 && spec.tagline && <FlyIn at={s2} dir="up" dist={100}><H size={56} color={C.dim}>{rich(spec.tagline, C)}</H></FlyIn>}
       </Box>
     </>
   );
@@ -264,8 +293,11 @@ export const buildPhotoEpisode = (ep: EpisodeSpec, custom: CustomMap = {}) => {
   const scenes: Record<string, React.FC<any>> = {};
   ep.scenes.forEach((s) => { scenes[s.id] = makeScene(s, ep, custom); });
   if (!scenes.chapter) scenes.chapter = makeScene({id: 'chapter', type: 'chapter', photo: ep.chapterPhoto}, ep, custom);
-  const enter = Object.fromEntries(Object.keys(scenes).map((k) => [k, k === 'chapter' ? 'flip' : 'blur'])) as Record<string, 'blur' | 'flip'>;
-  return {scenes, theme: PHOTO_THEME, fx: {enter, manual: Object.keys(scenes)}};
+  const st = ep.style ?? {};
+  const enter = Object.fromEntries(Object.keys(scenes).map((k) => [k, k === 'chapter' ? 'flip' : st.enter ?? 'blur'])) as Record<string, Enter>;
+  const tf = st.titleFont ? TITLE_FONTS[st.titleFont] ?? st.titleFont : undefined;
+  const theme: Theme = {...PHOTO_THEME, ...(st.theme ?? {}), ...(tf ? {title: tf} : {})};
+  return {scenes, theme, fx: {enter, manual: Object.keys(scenes)}};
 };
 
 export {TITLE_FONT, SHADOW};

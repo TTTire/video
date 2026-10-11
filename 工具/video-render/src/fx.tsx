@@ -41,19 +41,19 @@ export const FxBackground: React.FC = () => {
 };
 
 // ---------- 场景入场/出场 + 镜头缓推 ----------
-export type Enter = 'zoom' | 'slideL' | 'slideUp' | 'blur' | 'flip';
+export type Enter = 'zoom' | 'slideL' | 'slideUp' | 'blur' | 'flip' | 'cut';
 export const SceneMotion: React.FC<{dur: number; enter: Enter; children: React.ReactNode; shake?: number[]}> = ({dur, enter, children, shake = []}) => {
   const f = useCurrentFrame();
   const {fps} = useVideoConfig();
-  const p = spring({frame: f, fps, config: {damping: 18, stiffness: 110}});
-  const out = interpolate(f, [dur - 10, dur], [0, 1], clamp);
+  const p = enter === 'cut' ? 1 : spring({frame: f, fps, config: {damping: 18, stiffness: 110}});
+  const out = enter === 'cut' ? 0 : interpolate(f, [dur - 10, dur], [0, 1], clamp);
   const push = interpolate(f, [0, dur], [1, 1.045]);
   let tf = '', filter = '';
   if (enter === 'zoom') tf = `scale(${1.18 - 0.18 * p})`;
   if (enter === 'slideL') tf = `translateX(${(1 - p) * 260}px)`;
   if (enter === 'slideUp') tf = `translateY(${(1 - p) * 180}px)`;
   if (enter === 'flip') tf = `perspective(1400px) rotateX(${(1 - p) * -70}deg)`;
-  if (enter !== 'flip') filter = `blur(${(1 - p) * 14 + out * 10}px)`;
+  if (enter !== 'flip' && enter !== 'cut') filter = `blur(${(1 - p) * 14 + out * 10}px)`;
   // 镜头震动：在 shake 里的帧附近抖 8 帧
   let sx = 0, sy = 0;
   shake.forEach((s) => { const d = f - s; if (d >= 0 && d < 8) { const k = (8 - d) / 8; sx += Math.sin(d * 3.1) * 14 * k; sy += Math.cos(d * 2.7) * 10 * k; } });

@@ -89,6 +89,19 @@ def main():
     out = f"{ROOT}/src/{ep}"
     os.makedirs(out, exist_ok=True)
     json.dump({str(k): scenemap[k] for k in sorted(scenemap)}, open(f"{out}/scenemap.json", "w", encoding="utf-8"), ensure_ascii=False)
+    # 全局风格里的 <!-- STYLE_DNA ... --> → photo.json 的 style（每期视觉方案，见 video-broll-maker SKILL）
+    style = None
+    m = re.search(r"<!--\s*STYLE_DNA\s+(.*?)-->", txt, re.S)
+    if m:
+        kv = dict(re.findall(r"(\w+)=(\S+)", m.group(1)))
+        style, theme = {}, {}
+        for k, v in kv.items():
+            if k in ("gold", "coral", "teal", "bg", "white", "dim"): theme[k] = v
+            elif k == "font": style["titleFont"] = v
+            elif k in ("letterbox", "grain"): style[k] = v.lower() in ("1", "true", "yes")
+            elif k == "tintOpacity": style[k] = float(v)
+            elif k in ("layout", "tint", "enter"): style[k] = v
+        if theme: style["theme"] = theme
     pj = f"{out}/photo.json"
     # photo.json 里已经手工写了更好的场景名时，scene-names 以它为准
     if os.path.exists(pj) and not force:
@@ -98,10 +111,19 @@ def main():
     badge = re.sub(r"\D", "", ep).zfill(2)
     if force or not os.path.exists(pj):
         spec = {"ep": ep, "badge": badge, "series": "100 个经济学原理", "photos": f"{ep}/photos", "chapterPhoto": photos[-1] if photos else "S01", "scenes": scenes}
+        if style: spec["style"] = style
         json.dump(spec, open(pj, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
         print(f"写入 {pj}（骨架，接下来手工调）")
     else:
-        print(f"{pj} 已存在，未覆盖（--force 重写）")
+        if style:
+            spec = json.load(open(pj, encoding="utf-8"))
+            if spec.get("style") != style:
+                spec["style"] = style
+                json.dump(spec, open(pj, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+                print(f"{pj} 已存在，只更新了 style（来自 STYLE_DNA）")
+            else: print(f"{pj} 已存在，未覆盖（--force 重写）")
+        else: print(f"{pj} 已存在，未覆盖（--force 重写）")
+    if style: print("本期视觉方案 style:", json.dumps(style, ensure_ascii=False))
     print(f"scenemap: {len(scenemap)} 个场景 → {out}/scenemap.json")
     print(f"需要的图 {len(photos)} 张：{' '.join(photos)}")
     # 顺手列出每个场景的句子，方便核对

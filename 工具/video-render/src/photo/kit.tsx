@@ -12,8 +12,14 @@ export const PHOTO_THEME: Theme = {
   bg: '#0B0907', bg2: '#1A1410', gold: '#E07B45', white: '#F4EFE6', dim: '#CFC4B6',
   coral: '#E85D3A', teal: '#8FBFB0', font: '"Microsoft YaHei","PingFang SC","Hiragino Sans GB",sans-serif',
 };
-// 标题字体：得意黑（assets/fonts/，OFL 开源可商用）
+// 标题字体：默认得意黑（assets/fonts/，OFL 开源可商用）。每期可在 photo.json 的 style.titleFont 里换，可选值见 TITLE_FONTS
 export const TITLE_FONT = '"Smiley","Microsoft YaHei","PingFang SC",sans-serif';
+export const TITLE_FONTS: Record<string, string> = {
+  smiley: TITLE_FONT,                                                  // 得意黑：斜体无衬线，轻快、有速度感（第 6/7 期）
+  serif: '"Noto Serif SC","Source Han Serif SC","SimSun",serif',       // 思源宋体：奢侈品、历史、文化、金融类，端庄
+  hei: '"Microsoft YaHei","PingFang SC",sans-serif',                   // 微软雅黑粗体：数据、科技、职场类，中性
+  kai: '"STKaiti","KaiTi","Noto Serif SC",serif',                      // 楷体：人物、故事、传统题材（Windows 自带字体，商用需留意授权）
+};
 
 // 加载得意黑（在合成根部调用一次）
 export const useTitleFont = () => {
@@ -33,22 +39,25 @@ export const SHADOW = '0 4px 28px #000D, 0 1px 4px #000A';
 // ---------- 照片底：缓慢推拉 + 文字侧压暗 ----------
 export type Grad = 'left' | 'right' | 'top' | 'bottom' | 'none' | 'all';
 export const Photo: React.FC<{
-  src: string; dur: number; zoom?: [number, number]; origin?: string; grad?: Grad; dim?: number; blur?: number; opacity?: number; pos?: string;
-}> = ({src, dur, zoom = [1.02, 1.1], origin = '50% 50%', grad = 'none', dim = 0, blur = 0, opacity = 1, pos = 'center'}) => {
+  src: string; dur: number; zoom?: [number, number]; origin?: string; grad?: Grad; dim?: number; blur?: number; opacity?: number; pos?: string; tint?: string; tintOpacity?: number;
+}> = ({src, dur, zoom = [1.02, 1.1], origin = '50% 50%', grad = 'none', dim = 0, blur = 0, opacity = 1, pos = 'center', tint, tintOpacity = 0.35}) => {
+  const C = useC();
   const f = useCurrentFrame();
   const z = interpolate(f, [0, dur], zoom, clamp);
+  const B = C.bg; // 压暗色跟主题走
   const g: Record<Grad, string> = {
     none: 'none',
-    left: 'linear-gradient(90deg, #0B0907E6 0%, #0B0907B3 38%, #0B090700 62%)',
-    right: 'linear-gradient(270deg, #0B0907E6 0%, #0B0907B3 38%, #0B090700 62%)',
-    top: 'linear-gradient(180deg, #0B0907E0 0%, #0B090799 32%, #0B090700 58%)',
-    bottom: 'linear-gradient(0deg, #0B0907E0 0%, #0B090799 32%, #0B090700 58%)',
-    all: '#0B0907B8',
+    left: `linear-gradient(90deg, ${B}E6 0%, ${B}B3 38%, ${B}00 62%)`,
+    right: `linear-gradient(270deg, ${B}E6 0%, ${B}B3 38%, ${B}00 62%)`,
+    top: `linear-gradient(180deg, ${B}E0 0%, ${B}99 32%, ${B}00 58%)`,
+    bottom: `linear-gradient(0deg, ${B}E0 0%, ${B}99 32%, ${B}00 58%)`,
+    all: `${B}B8`,
   };
   return (
     <AbsoluteFill style={{overflow: 'hidden', opacity}}>
       <Img src={src} style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: pos, transform: `scale(${z})`, transformOrigin: origin, filter: blur ? `blur(${blur}px)` : undefined}} />
-      {dim > 0 && <AbsoluteFill style={{background: '#0B0907', opacity: dim}} />}
+      {tint && <AbsoluteFill style={{background: tint, opacity: tintOpacity, mixBlendMode: 'color'}} />}
+      {dim > 0 && <AbsoluteFill style={{background: B, opacity: dim}} />}
       {grad !== 'none' && <AbsoluteFill style={{background: g[grad]}} />}
       <AbsoluteFill style={{background: 'radial-gradient(ellipse at 50% 50%, transparent 60%, #00000099 100%)'}} />
     </AbsoluteFill>
@@ -81,7 +90,7 @@ export const Rings: React.FC<{x: number; y: number; at: number; color?: string; 
 // ---------- 文字元件 ----------
 export const H: React.FC<{children: React.ReactNode; size?: number; color?: string; style?: React.CSSProperties; align?: 'left' | 'center' | 'right'}> = ({children, size = 92, color, style, align = 'left'}) => {
   const C = useC();
-  return <div style={{fontFamily: TITLE_FONT, fontSize: size, color: color ?? C.white, lineHeight: 1.18, textAlign: align, textShadow: SHADOW, letterSpacing: 1, ...style}}>{children}</div>;
+  return <div style={{fontFamily: C.title ?? TITLE_FONT, fontWeight: 800, fontSize: size, color: color ?? C.white, lineHeight: 1.18, textAlign: align, textShadow: SHADOW, letterSpacing: 1, ...style}}>{children}</div>;
 };
 export const T: React.FC<{children: React.ReactNode; size?: number; color?: string; style?: React.CSSProperties; weight?: number}> = ({children, size = 40, color, style, weight = 700}) => {
   const C = useC();
@@ -89,11 +98,11 @@ export const T: React.FC<{children: React.ReactNode; size?: number; color?: stri
 };
 export const Tag: React.FC<{children: React.ReactNode; color?: string; size?: number; dark?: boolean; style?: React.CSSProperties}> = ({children, color, size = 38, dark, style}) => {
   const C = useC();
-  return <div style={{display: 'inline-block', fontFamily: C.font, fontWeight: 800, fontSize: size, color: dark ? C.white : C.bg, background: dark ? '#0B0907CC' : (color ?? C.gold), border: dark ? `2px solid ${C.white}44` : 'none', borderRadius: 14, padding: '10px 28px', boxShadow: '0 10px 30px #0008', ...style}}>{children}</div>;
+  return <div style={{display: 'inline-block', fontFamily: C.font, fontWeight: 800, fontSize: size, color: dark ? C.white : C.bg, background: dark ? `${C.bg}CC` : (color ?? C.gold), border: dark ? `2px solid ${C.white}44` : 'none', borderRadius: 14, padding: '10px 28px', boxShadow: '0 10px 30px #0008', ...style}}>{children}</div>;
 };
 export const Panel: React.FC<{children: React.ReactNode; style?: React.CSSProperties}> = ({children, style}) => {
   const C = useC();
-  return <div style={{background: '#0B0907D0', border: `1.5px solid ${C.white}2E`, borderRadius: 26, padding: '34px 44px', boxShadow: '0 30px 80px #000A', backdropFilter: 'blur(10px)', ...style}}>{children}</div>;
+  return <div style={{background: `${C.bg}D0`, border: `1.5px solid ${C.white}2E`, borderRadius: 26, padding: '34px 44px', boxShadow: '0 30px 80px #000A', backdropFilter: 'blur(10px)', ...style}}>{children}</div>;
 };
 export const Box: React.FC<{x?: number; y?: number; w?: number; right?: number; children: React.ReactNode; style?: React.CSSProperties}> = ({x, y, w, right, children, style}) => (
   <div style={{position: 'absolute', left: x, right, top: y, width: w, display: 'flex', flexDirection: 'column', gap: 22, alignItems: 'flex-start', ...style}}>{children}</div>

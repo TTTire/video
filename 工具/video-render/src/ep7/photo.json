@@ -1179,5 +1179,19 @@
         }
       ]
     }
-  ]
+  ],
+  "style": {
+    "layout": "topleft",
+    "titleFont": "smiley",
+    "enter": "blur",
+    "letterbox": false,
+    "grain": false,
+    "theme": {
+      "gold": "#E07B45",
+      "coral": "#E85D3A",
+      "teal": "#8FBFB0",
+      "bg": "#0B0907",
+      "dim": "#CFC4B6"
+    }
+  }
 }
