@@ -82,17 +82,14 @@ errors << 'Jianying export differs from normalized script' unless clip == expect
 errors << 'Jianying export contains punctuation or symbols' unless clip.scan(/[\p{P}\p{S}]/).empty?
 
 required_sections = [
-  '## 发布前检查',
-  '## 发布设置',
-  '### 推荐标题',
-  '### 封面图片 Prompt',
-  '### 标签',
-  '### 发布文案',
-  '### 发布时间',
-  '### 画面方向',
-  '### 背景音乐（Suno）',
-  '## 发布后',
-  '## 下一条视频'
+  '## 推荐标题',
+  '## 封面图片 Prompt',
+  '## 标签',
+  '## 发布文案',
+  '## 发布时间',
+  '## 背景音乐（Suno）',
+  '## 画面与素材清单',
+  '## 事实核对'
 ]
 required_sections.each do |heading|
   errors << "publish checklist missing #{heading}" unless checklist.include?(heading)

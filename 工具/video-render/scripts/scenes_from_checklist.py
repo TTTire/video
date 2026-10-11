@@ -46,6 +46,12 @@ def main():
     force = "--force" in sys.argv
     txt = open(md, encoding="utf-8").read()
     sec = section(txt, "画面与素材清单")
+    # 只读「### 分场景」这一张表（后面还有出图清单表）
+    i = sec.find("### 分场景")
+    if i >= 0:
+        sec = sec[i + 6:]
+        j = re.search("\n### ", sec)
+        sec = sec[:j.start()] if j else sec
     rows = table_rows(sec)
     if not rows: sys.exit("没找到分场景表格")
     items = parse_md_lines(script)

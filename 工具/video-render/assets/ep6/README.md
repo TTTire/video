@@ -23,10 +23,10 @@
 | S21B | 外景同机位，没人排队，老板靠门 | fix（后半） |
 | S22 | 远处队伍剪影 + 橱窗里封口机亮灯 | chapter（虚化底）/ takeaway |
 
-渲染代码：`src/ep6/photo.tsx`，合成 `Ep6Photo`（只有音效，剪辑用）/ `Ep6PhotoCheck`（烧字幕核对同步）。
+渲染代码两版：手写版 `src/ep6/photo.tsx`（合成 `Ep6Photo` / `Ep6PhotoCheck`），JSON 版 `src/ep6/photo.json` + `custom.tsx`（合成 `Ep6JPhoto` / `Ep6JPhotoCheck` / `Ep6JSheet`，走通用引擎，是之后每期的模板）。JSON 版的照片在 `public/ep6/photos/`。
 
-## fonts/
-得意黑 Smiley Sans v2.0.1（OFL 开源，可商用），标题字体。
+## 字体
+得意黑已挪到公共目录 `assets/fonts/`（OFL 开源，可商用），所有照片铺底的期数共用。
 
 ## elements/ · scenes/ · _work/ —— 已弃用
 最早用脚本画的扁平矢量 SVG（47 个元素 + 17 张场景），风格偏图标感，被上面的照片替代。保留以备不时之需，`_work/gen.py` / `scenes.py` 可重新生成。

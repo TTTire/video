@@ -5,7 +5,7 @@ description: 为像素呼吸写或改认知类视频的口播稿、剪映版和�
 
 # 像素呼吸写稿指南
 
-工作区：`/Users/tttire/Documents/工程队/视频选题`（本 Skill 源文件在 `工具/video-script-creator/`，`~/.agents/skills/video-script-creator` 是指向它的软链接）
+工作区：`E:\视频脚本`（本 Skill 源文件在 `工具/video-script-creator/`，`~/.agents/skills/video-script-creator` 是指向它的链接）。交付格式、发布清单板块等硬性要求见工作区根目录 `AGENTS.md`。
 
 好稿子只让观众带走一句话：我原来把什么看错了，为什么会看错，下次该多问哪一句。
 
@@ -16,7 +16,11 @@ description: 为像素呼吸写或改认知类视频的口播稿、剪映版和�
 3. **选例**：先给用户看“核心反转 + 3 个候选例子 + 推荐及理由”，每个候选一两句话说清画面、冲突在哪、来源。用户确认后再写；用户说“直接写”时跳过这一步。
 4. **写正文**：按下面的结构和写法一次写完，不先填卡。
 5. **删稿**：通常删掉 15%—25%，再朗读检查。
-6. **收尾**：写发布清单（事实核对放在里面），用脚本生成剪映版，按各自的 Skill 写封面和配乐，最后跑校验。
+6. **收尾**：写发布清单：推荐标题、标签、发布文案、发布时间、事实核对自己写；封面和配乐按各自 Skill 写；**画面与素材清单按 `工具/video-broll-maker/SKILL.md` 的「写稿阶段」一节写**（这是用户出图的依据，也是之后渲染动画轨的场景表，必须写完整）。然后用脚本生成剪映版、跑校验：
+   ```bash
+   ruby 工具/validate_package.rb "进行中/选题文件夹" --write-jianying
+   python 工具/video-render/scripts/scenes_from_checklist.py <发布清单.md> <口播稿.md> epN   # 校验起始句、列出要出的图
+   ```
 
 ## 什么样的例子好
 
