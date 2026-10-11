@@ -14,11 +14,11 @@ const PriceLadder: React.FC<P> = (p) => {
   const f = useCurrentFrame();
   const s2 = at(p, 2), s3 = at(p, 3);
   if (p.step < 2) return null;
-  const base = 820, unit = 230;
+  const base = 840, unit = 170;
   return (
     <>
-      <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(90deg, #0B090700 35%, #0B0907B3 60%, #0B0907E6 100%)'}} />
-      <div style={{position: 'absolute', left: 1000, width: 840, top: base - 2.2 * unit, height: 2.2 * unit, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', borderBottom: `3px solid ${C.white}55`}}>
+      <div style={{position: 'absolute', inset: 0, background: 'linear-gradient(90deg, #0B0907E6 0%, #0B0907B3 40%, #0B090700 65%)'}} />
+      <div style={{position: 'absolute', left: 90, width: 820, top: base - 2.2 * unit, height: 2.2 * unit, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', borderBottom: `3px solid ${C.white}55`}}>
         {YEARS.map((y, i) => {
           const a = s2 + i * 10;
           const g = interpolate(f, [a, a + 18], [0, 1], {...clamp, easing: ease});
@@ -34,10 +34,10 @@ const PriceLadder: React.FC<P> = (p) => {
         })}
       </div>
       {p.step >= 3 && (
-        <Box x={1000} y={120} w={840}>
+        <Box x={1000} y={110} w={840} style={{alignItems: 'flex-end'}}>
           <Sfx at={s3} name="pop" vol={0.3} />
           <FlyIn at={s3} dir="right" dist={120}><T size={36} color={C.white} style={{letterSpacing: 3}}>一年调两次 · 每次 10% 左右</T></FlyIn>
-          <FlyIn at={s3 + 6} dir="right" dist={120}><H size={54} color={C.dim}>2019 → 2024，差不多<span style={{color: C.gold}}>翻了一倍</span></H></FlyIn>
+          <FlyIn at={s3 + 6} dir="right" dist={120}><H size={54} color={C.dim} align="right">2019 → 2024，差不多<span style={{color: C.gold}}>翻了一倍</span></H></FlyIn>
         </Box>
       )}
     </>

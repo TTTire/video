@@ -11,7 +11,11 @@ import difflib, json, os, re, sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FPS, CHAPTER_DUR, SIM = 30, 2.2, 0.8
-norm = lambda s: re.sub(r"[\s，。？！、“”‘’：；《》,.?!\"'·—…（）()\-]", "", s)
+def norm(s):
+    # 剪映版的读法和稿子等价：4.3% ↔ 百分之4点3
+    s = re.sub(r"(\d+(?:\.\d+)?)\s*%", lambda m: "百分之" + m.group(1), s)
+    s = re.sub(r"(\d)\.(\d)", lambda m: m.group(1) + "点" + m.group(2), s)
+    return re.sub(r"[\s，。？！、“”‘’：；《》,.?!\"'·—…（）()\-]", "", s)
 
 
 def parse_md(path):
