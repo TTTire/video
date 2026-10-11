@@ -12,7 +12,7 @@
   "chapterPhoto": "S22",           // 章节卡的虚化底图
   "style": {                       // 本期视觉方案（由发布清单的 STYLE_DNA 注释生成，也可手改）
     "layout": "topleft",           //   文字母版：topleft | right | center | bottom（场景不写 box/grad 时按它）
-    "titleFont": "serif",          //   标题字体：smiley | serif | hei | kai，或任意 CSS font-family
+    "titleFont": "smiley",         //   标题字体：固定得意黑（smiley），不要换；其他值只在用户明确要求时用
     "theme": {"gold": "#D9C49C", "coral": "#C9545A", "teal": "#9DB9CF", "bg": "#070B14", "dim": "#B9C0CC"},
     "tint": "#1B2A44", "tintOpacity": 0.3,   // 所有照片统一罩色
     "letterbox": true, "grain": false,       // 2.35:1 黑边 / 胶片颗粒

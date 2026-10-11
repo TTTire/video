@@ -27,12 +27,11 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 
 ### 1. 全局风格
 
-**先定本期视觉方案，再写提示词。** 栏目固定不变的只有：左上角标、章节卡结构、音效语言、底部字幕位、"写实照片铺底 + 大字 + 代码图表"这个大框架。其余六项每期从本期内容出发重新选，**和上一期相比至少换 3 项**（上一期的方案在它发布清单的 `STYLE_DNA` 注释里，先去读）：
+**先定本期视觉方案，再写提示词。** 栏目固定不变的是：左上角标、章节卡结构、音效语言、底部字幕位、**标题字体得意黑**、"写实照片铺底 + 大字 + 代码图表"这个大框架。其余五项每期从本期内容出发重新选，**和上一期相比至少换 3 项**（上一期的方案在它发布清单的 `STYLE_DNA` 注释里，先去读）：
 
 | 维度 | 可选 | 怎么选 |
 |---|---|---|
 | 文字母版 `layout` | `topleft` 左上大字 / `right` 右侧右对齐 / `center` 居中 / `bottom` 底部字幕带式（**字幕得放顶部**，先问用户） | 看图的留白习惯：主体多在右 → topleft；主体多在左 → right；氛围图多 → center |
-| 标题字体 `font` | `smiley` 得意黑（轻快、速度感）/ `serif` 思源宋体（奢侈、历史、金融、文化）/ `hei` 雅黑粗体（数据、科技、职场）/ `kai` 楷体（人物、故事） | 跟题材气质走 |
 | 强调色 `gold` + 正/负色 `teal` `coral` + 压暗色 `bg` | 从本期照片里取：夜景冷调 → 香槟金 `#D9C49C` + 冷蓝底 `#070B14`；暖光门店 → 陶土橙 `#E07B45` + 暖黑 `#0B0907`；白天/自然 → 墨绿、赭石… | 照片入库后看一眼主色，强调色要和照片里的光源色呼应 |
 | 照片处理 `tint` / `letterbox` / `grain` | 统一罩色（冷蓝、暖褐、青灰）、2.35:1 黑边、胶片颗粒，任意组合或都不用 | 电影感 / 纪录感 / 干净杂志感，三选一 |
 | 入场 `enter` | `blur` 柔切（默认）/ `cut` 硬切 / `slideL` 横推 / `zoom` 缩放 | 节奏快、短句多 → cut；舒缓 → blur |
@@ -41,11 +40,11 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 写进发布清单时，一句话说清这期"看起来像什么"，再附一行机器可读的注释（脚本会把它写进 photo.json 的 `style`）：
 
 ```markdown
-- 本期视觉方案：冬夜橱窗的冷调，字像奢侈品广告——宋体、香槟金、2.35:1 黑边、硬切。和第 6 期（暖黑 + 得意黑 + 左上大字 + 柔切）换了字体、配色、照片处理、入场 4 项。
-<!-- STYLE_DNA layout=topleft font=serif gold=#D9C49C coral=#C9545A teal=#9DB9CF bg=#070B14 dim=#B9C0CC tint=#1B2A44 tintOpacity=0.3 enter=cut letterbox=1 grain=0 -->
+- 本期视觉方案：冬夜橱窗的冷调，字像奢侈品广告——香槟金、冷蓝罩色、2.35:1 黑边、硬切。和第 6 期（暖黑 + 陶土橙 + 左上大字 + 柔切）换了配色、照片处理、入场 3 项。
+<!-- STYLE_DNA layout=topleft gold=#D9C49C coral=#C9545A teal=#9DB9CF bg=#070B14 dim=#B9C0CC tint=#1B2A44 tintOpacity=0.3 enter=cut letterbox=1 grain=0 -->
 ```
 
-效果对比参考：`references/style-compare-ep7.jpg`（上：第 7 期实际版，下：同一内容换一套方案）。
+效果对比参考：`references/style-compare-ep7.jpg`（上：第 7 期实际版，下：同一内容换一套方案；下半用了宋体只是演示，正式流程标题字体固定得意黑）。
 
 然后是提示词和规格，固定写法（除非用户要换风格）：
 
@@ -173,7 +172,7 @@ python scripts/split_scenes.py out/ep7-photo.mp4 ep7 "<选题文件夹>/剪辑�
 - **照片切换太频繁**：一个场景一张底图 + 最多一次 `swap`；连续三个场景用同一张图时换推拉方向（in / out）和 origin，别一模一样。
 - **用户出的图有文字**：让重出无文字版，或者在 photo.json 里把 `origin` 推到避开文字的区域、用 `grad` 压掉。
 - **图不够**：同一张图可以用 `blur` + `dim` 做虚化底（定义卡、章节卡、结尾都这么干），不用每段都要新图。
-- **字体**：标题默认得意黑（`assets/fonts/`），每期在 `style.titleFont` 里换（smiley / serif / hei / kai，见 `src/photo/kit.tsx` 的 `TITLE_FONTS`）；正文微软雅黑不变。
+- **字体**：标题固定得意黑（`assets/fonts/`），正文微软雅黑，**不随期换**。`style.titleFont` 这个开关留着，只在用户明确要求时用。
 - **两期长得太像**：检查发布清单有没有写 STYLE_DNA、photo.json 的 `style` 有没有生效、场景是不是都手写了 `box` 把母版盖掉了。
 - **音效单调 / 缺环境声**：让用户按 `工具/音效库/补充音效清单.md` 补，补完 `python scripts/import_sfx.py`。
 - **Windows**：命令用 `python` 不是 `python3`；工程用本机 Chrome 渲染（见 `remotion.config.ts`）。
