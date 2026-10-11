@@ -1,0 +1,299 @@
+1
+00:00:00,466 --> 00:00:06,566
+In February 2023, a message went viral: LV was raising prices by up to 20%.
+
+2
+00:00:06,933 --> 00:00:12,266
+Before it was even official, long lines had already formed outside stores in Beijing, Shanghai, and Hangzhou.
+
+3
+00:00:12,433 --> 00:00:16,700
+Some people said they waited an hour just to get in, and the hot items sold out.
+
+4
+00:00:16,833 --> 00:00:22,166
+Your first reaction to this story is probably: rich people are so strange, the pricier it gets, the more they want it.
+
+5
+00:00:22,466 --> 00:00:29,900
+Think it through one more step and you land on a theory: the law of demand just doesn't apply to luxury goods.
+
+6
+00:00:30,133 --> 00:00:31,933
+That's what I thought at first too.
+
+7
+00:00:31,966 --> 00:00:37,466
+But once I looked closely at what that line was actually fighting for, it turned out to be the exact opposite.
+
+8
+00:00:37,633 --> 00:00:42,166
+This line that keeps growing as the price rises is actually the law of demand working exactly as it should.
+
+9
+00:00:42,333 --> 00:00:45,066
+This is Pixel Breath's 100 Principles of Economics.
+
+10
+00:00:45,066 --> 00:00:47,100
+Episode 7: the law of demand.
+
+11
+00:00:47,366 --> 00:00:51,700
+Last time I ended by asking: once bubble tea gets more expensive, do you still line up for it?
+
+12
+00:00:51,933 --> 00:00:57,466
+This time we're swapping in a much pricier line to see if it follows the same rule.
+
+13
+00:00:57,933 --> 00:01:00,133
+First, let's get the law of demand straight.
+
+14
+00:01:00,366 --> 00:01:08,266
+All else being equal, the higher the price of something, the less people want to buy, and the lower the price, the more they buy.
+
+15
+00:01:08,566 --> 00:01:12,133
+Notice the catch in that sentence: it's comparing the same thing.
+
+16
+00:01:12,533 --> 00:01:16,933
+So let's look at what the people lining up in early February were actually comparing.
+
+17
+00:01:17,633 --> 00:01:20,000
+Say a bag is priced at 20,000 yuan today.
+
+18
+00:01:20,000 --> 00:01:23,333
+After the price hike on the 18th, the same bag becomes 24,000 yuan.
+
+19
+00:01:23,566 --> 00:01:31,066
+The people at the door aren't thinking about whether the bag is expensive — they're thinking buying today is 4,000 yuan cheaper than buying next week.
+
+20
+00:01:31,266 --> 00:01:35,333
+To them, today's bag is basically a bag at a 17% discount.
+
+21
+00:01:35,566 --> 00:01:38,000
+Lower price, more buyers.
+
+22
+00:01:38,133 --> 00:01:40,933
+See, this doesn't violate the law of demand at all.
+
+23
+00:01:41,133 --> 00:01:45,300
+It's just that what people are comparing is today's price versus next week's price.
+
+24
+00:01:46,233 --> 00:01:48,000
+Actually, you and I have both done this.
+
+25
+00:01:48,366 --> 00:01:53,533
+A sign at the supermarket says prices go up tomorrow — don't you grab an extra bag or two of rice?
+
+26
+00:01:54,000 --> 00:02:01,400
+The people lining up that day and you grabbing extra rice at the supermarket are the same move, just rice swapped for a handbag.
+
+27
+00:02:01,800 --> 00:02:04,300
+There's another type of person who thinks even further ahead.
+
+28
+00:02:04,533 --> 00:02:15,166
+A consumer in Beijing told a reporter that a Chanel bag she bought a few years ago has gone up more than 30,000 yuan at the counter since — to her, that's more stable than buying stocks or funds.
+
+29
+00:02:15,333 --> 00:02:19,733
+Notice: in her mind, the price of that bag is no longer the number on the counter.
+
+30
+00:02:19,800 --> 00:02:24,533
+It's what she paid, minus what she could resell it for.
+
+31
+00:02:25,033 --> 00:02:32,666
+If she believes the bag will sell for even more next year, owning it is basically free for her — maybe even profitable.
+
+32
+00:02:32,866 --> 00:02:36,700
+When the real price is that low, of course a lot of people want in.
+
+33
+00:02:36,800 --> 00:02:45,900
+So that line outside the door has two kinds of people: ones racing to lock in the old price before the hike, and ones racing to grab something they think will appreciate.
+
+34
+00:02:46,266 --> 00:02:49,166
+Neither group is buying because it got more expensive.
+
+35
+00:02:49,400 --> 00:02:53,766
+Quite the opposite — both of them believe they're getting the cheaper deal.
+
+36
+00:02:55,166 --> 00:02:56,433
+So here's the question.
+
+37
+00:02:56,433 --> 00:03:01,466
+If the law of demand is real and prices just keep climbing year after year, when does it finally kick in?
+
+38
+00:03:01,866 --> 00:03:08,400
+Chanel's most classic bag, the CF, roughly doubled in price between 2019 and 2024.
+
+39
+00:03:08,733 --> 00:03:14,200
+Store staff told reporters Chanel raises prices twice a year, about 10% each time.
+
+40
+00:03:14,333 --> 00:03:17,200
+For several years, it seemed like no matter how much it went up, people kept buying.
+
+41
+00:03:17,400 --> 00:03:19,900
+But in 2024, the bill came due.
+
+42
+00:03:20,200 --> 00:03:33,500
+Bain & Company and the Italian luxury goods association published a report that November with one striking number: over the past two years, about 50 million luxury customers worldwide had either stopped buying or been priced out of the market.
+
+43
+00:03:33,833 --> 00:03:37,933
+Those two years line up almost exactly with that February when the lines started forming.
+
+44
+00:03:38,066 --> 00:03:44,766
+The report gave three reasons: economic uncertainty, brands that kept raising prices, and young people increasingly unwilling to pay up.
+
+45
+00:03:45,066 --> 00:03:50,366
+50 million people is roughly the population of Spain, walking out of luxury stores.
+
+46
+00:03:50,566 --> 00:03:56,966
+That year, Chanel's official sales came in at 18.7 billion dollars, down 4.3% from the year before.
+
+47
+00:03:57,200 --> 00:04:00,333
+Honestly, when I saw those numbers, I had to pause for a second.
+
+48
+00:04:00,733 --> 00:04:05,400
+Because in 2024, if you walked by Chanel at SKP, there were probably still people waiting outside.
+
+49
+00:04:05,600 --> 00:04:06,966
+And that's exactly where the problem is.
+
+50
+00:04:07,033 --> 00:04:10,133
+The 50 million who left weren't the ones at the front of the line.
+
+51
+00:04:10,400 --> 00:04:16,400
+Bain's report is clear: spending from the very top tier of big spenders actually kept climbing.
+
+52
+00:04:16,566 --> 00:04:23,166
+The ones who left were more often people who scraped together savings for months to buy an entry-level piece, young people especially.
+
+53
+00:04:23,400 --> 00:04:32,533
+These people didn't vanish entirely either — many just changed how they bought: a bottle of perfume, a lipstick, an outlet store, or just secondhand.
+
+54
+00:04:32,766 --> 00:04:36,000
+This is what the law of demand looks like when it plays out across a crowd.
+
+55
+00:04:36,366 --> 00:04:41,366
+Every time the price ticks up a notch, the first to leave is always the person at the back of the line who could take it or leave it.
+
+56
+00:04:41,633 --> 00:04:47,966
+The line at the door doesn't look any shorter, because the people at the very front never cared much about price to begin with.
+
+57
+00:04:49,866 --> 00:04:57,700
+Of course, luxury goods carry something else too: the pricier it is, the more status it signals — some people are buying exactly the fact that others can't afford it.
+
+58
+00:04:57,866 --> 00:05:00,800
+That's a different effect, and we'll cover it on its own later.
+
+59
+00:05:01,000 --> 00:05:08,733
+For today, just one point: even once you factor in status, the law of demand still isn't broken — it's just that other conditions have changed.
+
+60
+00:05:09,000 --> 00:05:13,266
+So next time you see something getting pricier and more sought-after, ask yourself two questions.
+
+61
+00:05:13,666 --> 00:05:18,666
+First: are they chasing the price after the hike, or the price before it?
+
+62
+00:05:18,933 --> 00:05:22,066
+Most "pricier yet more sought-after" cases are really just chasing that time gap.
+
+63
+00:05:22,333 --> 00:05:25,400
+Second: are they still buying the same thing?
+
+64
+00:05:25,866 --> 00:05:34,966
+When everyone believes it'll appreciate, it's an asset; the moment that belief cracks, it turns back into just a bag, and the real price suddenly feels expensive.
+
+65
+00:05:35,166 --> 00:05:37,966
+These two questions work on you too.
+
+66
+00:05:38,166 --> 00:05:42,900
+Next time you see "last day at the original price, going up tomorrow," don't rush to buy.
+
+67
+00:05:42,933 --> 00:05:47,866
+Ask yourself: if this were already the post-hike price, would I still buy it?
+
+68
+00:05:48,133 --> 00:05:49,266
+If yes, go ahead and buy it.
+
+69
+00:05:49,366 --> 00:05:54,100
+If no, then what you actually wanted wasn't the thing itself, just that little gap in price.
+
+70
+00:05:54,200 --> 00:05:57,700
+Back to that hour-long line from February 2023.
+
+71
+00:05:57,866 --> 00:05:59,100
+It really was long.
+
+72
+00:05:59,233 --> 00:06:06,500
+But the law of demand never watches how long the line is at the front — it only counts, one by one, who never comes back at the end.
+
+73
+00:06:06,666 --> 00:06:13,300
+Of the 50 million who left, most were young people and entry-level buyers; the ones who stayed were the wealthiest.
+
+74
+00:06:13,766 --> 00:06:19,100
+Same price hike — why do some people leave the moment it happens, while others stay no matter how much it rises?
+
+75
+00:06:19,400 --> 00:06:21,900
+Next time, we'll talk about price elasticity.
