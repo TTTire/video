@@ -1,0 +1,235 @@
+1
+00:00:00,766 --> 00:00:07,500
+On September 1st this year, the Huawei Mate 80 Pro jumped 1000 yuan overnight, from 5999 to 6999
+
+2
+00:00:07,966 --> 00:00:10,466
+The same day, Xiaomi and Honor raised prices too
+
+3
+00:00:10,766 --> 00:00:20,400
+If you're building a PC these days it's even more confusing, a 32G RAM kit that cost just over 700 yuan last year now runs over 4000, by overseas average prices
+
+4
+00:00:20,666 --> 00:00:25,200
+The product hasn't gotten faster or bigger, but the price is now more than five times what it was
+
+5
+00:00:25,433 --> 00:00:31,333
+Your first reaction is probably it's just hype again, another cash grab, it'll drop back down once the fuss dies
+
+6
+00:00:31,400 --> 00:00:33,166
+That's what I thought at first too
+
+7
+00:00:33,233 --> 00:00:42,266
+But tracing this RAM stick upstream, I found the real reason it's pricier is that a buyer you simply can't outbid is competing with you for the same production space
+
+8
+00:00:42,466 --> 00:00:46,766
+This is Pixel Breath, today let's talk about why RAM suddenly got so expensive
+
+9
+00:00:49,433 --> 00:00:53,100
+To be fair, feeling ripped off is completely understandable
+
+10
+00:00:53,166 --> 00:00:59,400
+Most of the world's memory chip supply sits in the hands of just three companies, Samsung, SK Hynix, and Micron
+
+11
+00:00:59,666 --> 00:01:04,400
+When three companies control the market and prices skyrocket, of course people start to suspect something
+
+12
+00:01:04,600 --> 00:01:14,333
+In fact, this June, 17 plaintiffs in California sued all three companies, claiming they colluded to cut output and drive prices up about 700% over four years
+
+13
+00:01:14,366 --> 00:01:21,666
+But to be clear, this is just an allegation, the court hasn't ruled, and all three say their decisions were made independently
+
+14
+00:01:22,000 --> 00:01:26,733
+But even setting the lawsuit aside, the hype theory still doesn't quite add up
+
+15
+00:01:27,133 --> 00:01:32,366
+If makers were hoarding stock to drive up prices, the pricier it gets the more they should want to sell to you
+
+16
+00:01:32,566 --> 00:01:36,533
+But reality is the opposite, one maker is actively choosing not to sell to you at all
+
+17
+00:01:36,833 --> 00:01:42,000
+So the real question isn't who's hyping it up, it's who's actually taking this RAM away from you
+
+18
+00:01:42,766 --> 00:01:48,000
+Last December, Micron announced it was shutting down its consumer brand Crucial
+
+19
+00:01:48,466 --> 00:01:53,966
+Anyone who's built a PC has probably seen this brand, it made RAM and SSDs for 29 years
+
+20
+00:01:54,233 --> 00:01:58,733
+The announcement gave just one reason, to better supply larger strategic customers
+
+21
+00:01:58,866 --> 00:02:00,666
+In plain terms, that means AI companies
+
+22
+00:02:00,866 --> 00:02:03,566
+Why would a brand that was selling just fine suddenly shut down
+
+23
+00:02:03,733 --> 00:02:06,333
+You need to know how RAM actually gets made first
+
+24
+00:02:06,333 --> 00:02:16,166
+It's etched onto round silicon wafers, and there are only so many factories in the world that can do this, building a new one takes years at best
+
+25
+00:02:16,400 --> 00:02:24,466
+The same wafer can become the regular RAM in your computer, or the high bandwidth memory called HBM that sits next to AI chips
+
+26
+00:02:24,466 --> 00:02:27,200
+Both of these are competing for the same production line
+
+27
+00:02:27,366 --> 00:02:34,733
+And HBM takes up a lot of room, Micron itself has said that for the same capacity, it uses nearly 3 times the wafer area
+
+28
+00:02:34,966 --> 00:02:37,100
+So why are makers still racing to produce it
+
+29
+00:02:37,266 --> 00:02:39,666
+Because selling to AI companies is just too profitable
+
+30
+00:02:39,866 --> 00:02:45,666
+Micron's gross margin last quarter was 86.8%, a year ago it was only 44.7%
+
+31
+00:02:45,933 --> 00:02:49,766
+That means for every 100 yuan of goods sold, the cost is just over 13 yuan
+
+32
+00:02:50,133 --> 00:02:56,366
+Honestly, when I first saw that number I was stunned, that's a better margin than a lot of software companies
+
+33
+00:02:56,533 --> 00:02:59,900
+This is where an economics concept comes in, opportunity cost
+
+34
+00:03:00,366 --> 00:03:09,533
+The real cost of making you a stick of RAM isn't the silicon or the electricity, it's the money that wafer could've made selling to AI companies instead
+
+35
+00:03:09,666 --> 00:03:13,333
+As AI companies keep paying more, selling to you becomes more of a loss
+
+36
+00:03:13,666 --> 00:03:19,666
+That's how Crucial ended up shutting down, it wasn't that it couldn't sell, it's that selling to you stopped being worth it
+
+37
+00:03:19,800 --> 00:03:23,500
+And big customers don't just pay more, they also get priority over you
+
+38
+00:03:23,766 --> 00:03:36,733
+About 80% of Samsung's memory capacity for next year is already locked into long term contracts, companies like Nvidia, Google, and Microsoft sign for five years or more, and these deals usually require a deposit of over 20% upfront
+
+39
+00:03:37,000 --> 00:03:43,266
+That leaves just 20% for everyone without a contract to fight over, phone makers, PC makers, and you
+
+40
+00:03:43,533 --> 00:03:49,333
+It's like a cake, eight slices are already taken, and dozens of people are left bidding over the remaining two
+
+41
+00:03:49,533 --> 00:03:51,866
+Those two slices are exactly where prices are climbing the fastest
+
+42
+00:03:52,133 --> 00:03:57,166
+That's why regular RAM contract prices jumped over 90% in just the first quarter this year
+
+43
+00:03:57,433 --> 00:04:04,333
+Even phone makers are struggling, Richard Yu has said memory price hikes alone added over 200 dollars to a phone's hardware cost
+
+44
+00:04:04,333 --> 00:04:07,500
+His exact words were, a company has to survive first
+
+45
+00:04:08,333 --> 00:04:10,400
+So will prices just keep climbing forever
+
+46
+00:04:10,400 --> 00:04:11,200
+No, not really
+
+47
+00:04:11,400 --> 00:04:16,500
+The memory industry has always cycled up for a few years then down, this cycle will turn too eventually
+
+48
+00:04:16,633 --> 00:04:26,200
+But the signal for that turn isn't on your end, it's on the makers' side, waiting for new factories to open or for AI orders to shrink so they're willing to allocate output to regular RAM again
+
+49
+00:04:26,333 --> 00:04:30,066
+Until then, waiting for prices to drop once the hype dies down is basically a waste of time
+
+50
+00:04:30,333 --> 00:04:38,533
+So next time something mysteriously gets more expensive, don't rush to blame hype, ask instead who's competing with you for the same supply
+
+51
+00:04:38,766 --> 00:04:43,766
+If the answer is a new buyer with way more money than you, then the price is no longer yours to decide
+
+52
+00:04:43,933 --> 00:04:49,100
+If you can wait to upgrade, wait, and if you can't, don't expect prices to drop in a couple months
+
+53
+00:04:49,466 --> 00:04:51,333
+Back to that phone from September 1st
+
+54
+00:04:51,333 --> 00:04:54,233
+That extra 1000 yuan wasn't secretly taken from you by anyone
+
+55
+00:04:54,233 --> 00:04:59,333
+You were essentially bidding alongside buyers like Nvidia for the memory chips inside it
+
+56
+00:04:59,633 --> 00:05:00,766
+One last question to leave you with
+
+57
+00:05:01,133 --> 00:05:05,600
+AI has been getting cheaper all year, some models dropped in price by three quarters overnight
+
+58
+00:05:05,666 --> 00:05:10,100
+So why are you and your company spending more and more on AI instead of less
+
+59
+00:05:10,666 --> 00:05:11,533
+More on that next time
