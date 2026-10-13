@@ -386,7 +386,6 @@
       "catalogFingerprint": "2:1fc556f027c70590e3c2e068b6f2165b75a4ea671efa0d79ea78317754116a75",
       "installationMethodsByHost": {
         "device:adfec557-6caf-4da1-b748-3f12f74cc649": "native-windows",
-        "device:f88d9e42-0179-4481-95a9-3decb1ac53cb": "native-windows",
         "device-6c08ea5796bf42e1da4a4d80d5e96fce4d1f5254f080cb0b6e45f1e942ff4563": "native-windows"
       },
       "wslDistroOverridesByHost": {}
