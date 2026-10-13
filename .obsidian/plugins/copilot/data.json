@@ -386,9 +386,94 @@
       "folder": "copilot/skills"
     }
   },
-  "providers": {},
-  "configuredModels": [],
-  "backends": {},
+  "providers": {
+    "f843b442-c314-4ccc-9a53-e48794162d8c": {
+      "providerType": "anthropic",
+      "displayName": "Claude",
+      "origin": {
+        "kind": "agent",
+        "agentType": "claude"
+      },
+      "requiresApiKey": false,
+      "providerId": "f843b442-c314-4ccc-9a53-e48794162d8c",
+      "addedAt": 1791885426687,
+      "apiKeyKeychainId": null
+    }
+  },
+  "configuredModels": [
+    {
+      "providerId": "f843b442-c314-4ccc-9a53-e48794162d8c",
+      "info": {
+        "id": "default",
+        "displayName": "Default (recommended)",
+        "description": "Use the default model (currently Fable 5) · $10/$50 per Mtok"
+      },
+      "configuredModelId": "6fc4dd00-4467-4d5c-994f-1f890e2b6046",
+      "configuredAt": 1791885427618
+    },
+    {
+      "providerId": "f843b442-c314-4ccc-9a53-e48794162d8c",
+      "info": {
+        "id": "opus",
+        "displayName": "claude-fable-5-cc",
+        "description": "Custom Opus model (1M context)"
+      },
+      "configuredModelId": "b6b19dc5-da6f-4286-9be0-62b789366c1c",
+      "configuredAt": 1791885427619
+    },
+    {
+      "providerId": "f843b442-c314-4ccc-9a53-e48794162d8c",
+      "info": {
+        "id": "fable",
+        "displayName": "glm-5.3-highspeed",
+        "description": "Custom Fable model"
+      },
+      "configuredModelId": "a3018e67-c87f-4a99-b9ad-433e6f6e8848",
+      "configuredAt": 1791885427619
+    },
+    {
+      "providerId": "f843b442-c314-4ccc-9a53-e48794162d8c",
+      "info": {
+        "id": "sonnet",
+        "displayName": "claude-opus-5-5",
+        "description": "Custom Sonnet model (1M context)"
+      },
+      "configuredModelId": "b7b15dd5-ffc1-41f1-bd6e-cbccdf0fede7",
+      "configuredAt": 1791885427619
+    },
+    {
+      "providerId": "f843b442-c314-4ccc-9a53-e48794162d8c",
+      "info": {
+        "id": "haiku",
+        "displayName": "claude-fable-5-1",
+        "description": "Custom Haiku model"
+      },
+      "configuredModelId": "9ce21249-75a5-4473-8ef1-a40db73cf71d",
+      "configuredAt": 1791885427619
+    },
+    {
+      "providerId": "f843b442-c314-4ccc-9a53-e48794162d8c",
+      "info": {
+        "id": "glm-5.3-highspeed[1M]",
+        "displayName": "glm-5.3-highspeed[1M]",
+        "description": "Custom model"
+      },
+      "configuredModelId": "0fc9bec4-ae9f-47fc-979e-a5074921c872",
+      "configuredAt": 1791885427619
+    }
+  ],
+  "backends": {
+    "claude": {
+      "enabledModels": [
+        "6fc4dd00-4467-4d5c-994f-1f890e2b6046",
+        "b6b19dc5-da6f-4286-9be0-62b789366c1c",
+        "a3018e67-c87f-4a99-b9ad-433e6f6e8848",
+        "b7b15dd5-ffc1-41f1-bd6e-cbccdf0fede7",
+        "9ce21249-75a5-4473-8ef1-a40db73cf71d",
+        "0fc9bec4-ae9f-47fc-979e-a5074921c872"
+      ]
+    }
+  },
   "copilotPlusCatalog": {
     "models": [
       {
