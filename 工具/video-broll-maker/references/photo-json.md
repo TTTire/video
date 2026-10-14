@@ -12,7 +12,7 @@
   "chapterPhoto": "S22",           // 章节卡的虚化底图
   "style": {                       // 本期视觉方案（由发布清单的 STYLE_DNA 注释生成，也可手改）
     "layout": "topleft",           //   文字母版：topleft | right | center | bottom（场景不写 box/grad 时按它）
-    "titleFont": "smiley",         //   标题字体：固定得意黑（smiley），不要换；其他值只在用户明确要求时用
+    "titleFont": "smiley",         //   标题字体：固定得意黑（smiley），不要换；字体怎么分工见下面「字体」一节
     "theme": {"gold": "#D9C49C", "coral": "#C9545A", "teal": "#9DB9CF", "bg": "#070B14", "dim": "#B9C0CC"},
     "tint": "#1B2A44", "tintOpacity": 0.3,   // 所有照片统一罩色
     "letterbox": true, "grain": false,       // 2.35:1 黑边 / 胶片颗粒
@@ -32,7 +32,7 @@
 
   "photo": "S01",                  // 底图编号
   "move": "in",                    // 推拉：in 缓推（默认）| out 缓拉 | still 几乎不动；或者直接给 "zoom": [1.0, 1.12]
-  "origin": "68% 62%",             // 推拉中心（照片里主体的位置），默认居中
+  "origin": "MR",                  // 推拉中心（照片里主体的位置）：区域名或百分比 "68% 62%"，默认居中
   "grad": "top",                   // 压暗哪一侧放字：left | right | top | bottom | all | none
   "dim": 0.3, "blur": 10,          // 整体压暗 0–1、虚化 px（做底纹时用）
   "pos": "left center",            // objectPosition，照片比例不对时决定保留哪边
@@ -40,8 +40,8 @@
   "swap": {"at": 2, "photo": "S02", "grad": "left", "move": "in", "delay": 0},   // 第 2 句时淡入切换到另一张图
   "split": {"at": [2, 3], "photos": ["S20A", "S20B"]},                            // 第 2 句左半推入 S20A，第 3 句右半推入 S20B；配合 box "L" / "R"
 
-  "box": {"x": 90, "y": 120, "w": 900},   // 默认文字框（默认左上）
-  "boxes": {"right": {"x": 1080, "y": 300}, "bottom": {"x": 0, "w": 1920, "bottom": 200, "align": "center"}},  // 命名文字框，元素用 "box": "right" 指定
+  "box": "TL",                     // 文字框：区域名（见下面「画面区域」）或像素框 {"x": 90, "y": 120, "w": 900}；不写走 style.layout 母版
+  "boxes": {"right": "MR", "bottom": "BW"},  // 命名文字框，元素用 "box": "right" 指定；也可以写像素框
   "center": true,                  // 文字整体居中（定义卡、金句、结尾）；等价于 box 设全宽 + align center
 
   "ambience": "奶茶店",             // 铺环境声（按音效库的词；true = 随机一个）
@@ -61,6 +61,8 @@
 | `until` | 到第几句时消失（做"前半段 / 后半段"换内容） |
 | `dir` | 飞入方向 left / right / up / down，默认按文字框位置自动 |
 | `box` | 放进哪个命名文字框，默认 main |
+| `font` | 单个元素换字体：`song` 锦书宋（定义卡大词）/ `kai` 文楷 / `num` 数黑体 / `sans` 思源黑 / `title` 得意黑 |
+| `quote` | `true` = 对白：文楷 + 金色引号（h / t / tag 都支持；原文自带的引号会自动去掉） |
 | `sfx` | 出现时的音效名；`null` 不响；默认按类型（h/t/tag→pop，stamp→stamp/impact，big/count→ding，panel→page/flip，compare→swipe，nums→drop/impact，clock→click/tick） |
 | `vol` | 音量 0–1 |
 
@@ -78,12 +80,38 @@
 | `panel` | `lines: [..]` `label` `size`(50) | 黑色毛玻璃面板，第一行白、其余 dim；`label` 面板顶部小标题 |
 | `compare` | `left` `right` `mid`(vs) `size`(72) | 左右对比两组文字 |
 | `clock` | `h` `m` `to` `dur` | 时钟牌 19:00，`to` 分钟数滚到 |
-| `spot` | `x` `y` `r`(260) `strength`(0.72) | 聚光：以外压暗，指向照片里的某处 |
-| `rings` | `x` `y` `n`(3) `max`(360) `color` | 响声圈，从某处一圈圈扩散 |
+| `spot` | `region` 或 `x` `y`，`r`(260) `strength`(0.72) | 聚光：以外压暗，指向照片里的某处。`"region": "MR"` 指向区域中心 |
+| `rings` | `region` 或 `x` `y`，`n`(3) `max`(360) `color` | 响声圈，从某处一圈圈扩散 |
 | `sfx` | `name` `variant` `dur` `endAt` `fade` | 任意音效。`riser` 用 `endAt` 对齐揭晓点 |
 | `custom` | `name` | 调 `src/epN/custom.tsx` 里注册的组件，全屏覆盖 |
 
 颜色：`white` `dim` `gold`(陶土橙) `teal`(正常/增长) `coral`(问题/瓶颈) 或 `#hex`。
+
+## 画面区域（锚点）
+
+画面分 3 列 × 3 行，底部 y > 820 是字幕区不放字。`box` / `boxes` / `origin` / `spot.region` / `rings.region` 都可以直接写区域名，不用算像素；拼图（sheet）上叠着这套网格和字幕禁区线，审查时按区域名提意见（"场景 07 的标题从 TL 挪到 TR"）。
+
+```
+TL  TC  TR     TW（整行宽、居中）
+ML  MC  MR     MW
+BL  BC  BR     BW
+```
+
+- 列：L 左 x=90 / C 中 / R 右（右对齐）/ W 整行 1740 宽居中；行：T 顶 y=120 / M 中 y=400 / B 底（距字幕区上方）。
+- 出图清单的「文字放哪侧」直接写区域名，`scenes_from_checklist.py` 会按每张图的区域自动填场景的 `box` 和 `grad`；只有照片主体和它冲突时再手改。
+- 像素框仍然可用（`{"x":…,"y":…,"w":…}`），但新写的优先用区域名，换母版才生效。
+
+## 字体
+
+五款字体各管一个岗位，一期之内不要再加（都打包在 `assets/fonts/`，免费商用）：
+
+| 岗位 | 字体 | 怎么用 |
+|---|---|---|
+| 场景标题 `h`、章节卡、栏目名 | 得意黑 | 默认，不随期换 |
+| 所有数字：`big`（纯数字）/ `count` / `nums`、角标期号 | 阿里妈妈数黑体 | 自动 |
+| 定义卡大词 | 寒蝉锦书宋 Heavy | `big` 或 `h` 加 `"font": "song"`，一期只出现一两次 |
+| 对白、人说的话、角标「像素呼吸」 | 霞鹜文楷 Medium | `"quote": true` |
+| 小字 `t` / `tag` / `panel` / 字幕 | 思源黑体 | 自动 |
 
 ## 文本标记
 

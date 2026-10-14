@@ -24,6 +24,14 @@ python scripts/render.py ep7 sheet | check 40 | full | fullcheck        # 拼图
 
 需要把字幕烧进画面时，在 `src/Root.tsx` 给该期加 `subtitles: true`。
 
+## 字体
+
+五款字体打包在 `assets/fonts/`（woff2，已裁成常用字集，都是免费商用）：得意黑（标题、栏目名）、阿里妈妈数黑体（所有数字）、寒蝉锦书宋 Heavy（定义卡大词 `font: "song"`）、霞鹜文楷 Medium（对白 `quote: true`、角标）、思源黑体（小字、字幕）。`src/photo/kit.tsx` 的 `FONTS` / `useFonts` 统一加载。分工见 `工具/video-broll-maker/SKILL.md`。
+
+## 画面区域
+
+photo.json 里 `box` / `origin` / `spot.region` / `rings.region` 可以写区域名（`TL TC TR / ML MC MR / BL BC BR`，整行 `TW MW BW`），拼图上叠着同一套网格和 y=820 字幕禁区线。见 `references/photo-json.md`。
+
 ## 音效
 
 - 音效原文件放在 `工具/音效库/`，文件名里包含类型词即可：whoosh、pop、impact、swipe、tick、ding、riser、flip、cash、error、typing、notify、boom、shutter、ambience。

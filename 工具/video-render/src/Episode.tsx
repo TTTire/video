@@ -3,11 +3,14 @@ import {AbsoluteFill, Html5Audio, Sequence, interpolate, staticFile, useCurrentF
 import {Theme, ThemeCtx, useStep} from './ui';
 import {Enter, FxBackground, SceneMotion} from './fx';
 import {AutoSfxCtx, Sfx, SfxName} from './sfx';
+import {FONTS, GridOverlay} from './photo/kit';
 
 export type Timeline = {fps: number; total: number; scenes: any[]; subs: {from: number; dur: number; text: string}[]};
 export type EpisodeProps = {
   timeline: Timeline; scenes: Record<string, React.FC<any>>; theme: Theme;
   audio: string; badge: string; subtitles?: boolean;
+  series?: string; // 角标里的栏目名，默认「100 个经济学原理」
+  grid?: boolean;  // 叠审查网格（拼图用）
   narration?: boolean; // false = 只留音效，不要合成配音（给剪辑用）
   plain?: boolean; // true = 纯色底、不画光斑背景（照片铺底的版本用）
   // 动效增强：背景、每个场景的入场方式、镜头震动
@@ -35,7 +38,7 @@ const SceneWrap: React.FC<{sc: any; scenes: Record<string, React.FC<any>>; fx?: 
   return <AbsoluteFill style={{opacity: o}}><Comp {...sc} step={step} /></AbsoluteFill>;
 };
 
-export const Episode: React.FC<EpisodeProps> = ({timeline, scenes, theme: C, audio, badge, subtitles = false, fx, narration = true, plain = false}) => (
+export const Episode: React.FC<EpisodeProps> = ({timeline, scenes, theme: C, audio, badge, subtitles = false, fx, narration = true, plain = false, series = '100 个经济学原理', grid = false}) => (
   <ThemeCtx.Provider value={C}>
     <AbsoluteFill style={{background: plain ? C.bg : `radial-gradient(ellipse at 50% 35%, ${C.bg2} 0%, ${C.bg} 70%)`}}>
       {fx && !plain && <FxBackground />}
@@ -50,7 +53,13 @@ export const Episode: React.FC<EpisodeProps> = ({timeline, scenes, theme: C, aud
           </AbsoluteFill>
         </Sequence>
       ))}
-      <div style={{position: 'absolute', left: 50, top: 36, fontFamily: C.font, fontSize: 28, color: C.dim, letterSpacing: 2, textShadow: plain ? '0 2px 12px #000C' : undefined}}>像素呼吸 · 100个经济学原理 <span style={{color: C.gold}}>{badge}</span></div>
+      {/* 角标（跨期不变）：期号 数黑体金 / 像素呼吸 文楷白 32 / 栏目名 得意黑灰 24 */}
+      <div style={{position: 'absolute', left: 60, top: 34, display: 'flex', alignItems: 'baseline', gap: 12, opacity: 0.8, textShadow: plain ? '0 2px 12px #000C' : undefined, whiteSpace: 'nowrap'}}>
+        <span style={{fontFamily: FONTS.num, fontSize: 30, color: C.gold, letterSpacing: 4}}>{badge}</span>
+        <span style={{fontFamily: FONTS.kai, fontSize: 32, color: C.white, letterSpacing: 2}}>像素呼吸</span>
+        <span style={{fontFamily: FONTS.title, fontSize: 24, color: C.dim, letterSpacing: 2, opacity: 0.85}}>· {series}</span>
+      </div>
+      {grid && <GridOverlay />}
     </AbsoluteFill>
   </ThemeCtx.Provider>
 );

@@ -9,14 +9,15 @@ export type Comp = {id: string; total: number; C: React.FC; width?: number; heig
 
 export const photoComps = (id: string, timeline: Timeline, spec: EpisodeSpec, custom: CustomMap = {}, names: Record<string, string> = {}): Comp[] => {
   const built = buildPhotoEpisode(spec, custom);
-  const Ep: React.FC<{subtitles?: boolean}> = ({subtitles}) => {
+  const Ep: React.FC<{subtitles?: boolean; grid?: boolean}> = ({subtitles, grid}) => {
     useTitleFont();
-    return <Episode timeline={timeline} scenes={built.scenes} theme={built.theme} audio="" badge={spec.badge} fx={built.fx} narration={false} plain subtitles={subtitles} />;
+    return <Episode timeline={timeline} scenes={built.scenes} theme={built.theme} audio="" badge={spec.badge} series={spec.series} fx={built.fx} narration={false} plain subtitles={subtitles} grid={grid} />;
   };
   const thumbs = pickThumbs(timeline, names);
   return [
     {id: `${id}Photo`, total: timeline.total, C: () => <Ep />},
     {id: `${id}PhotoCheck`, total: timeline.total, C: () => <Ep subtitles />},
-    {id: `${id}Sheet`, total: 1, width: 1920, height: sheetHeight(thumbs.length), C: () => <Sheet thumbs={thumbs} total={timeline.total}><Ep subtitles /></Sheet>},
+    // 拼图叠审查网格（区域名 + 字幕禁区线），审查时按区域名提修改意见
+    {id: `${id}Sheet`, total: 1, width: 1920, height: sheetHeight(thumbs.length), C: () => <Sheet thumbs={thumbs} total={timeline.total}><Ep subtitles grid /></Sheet>},
   ];
 };

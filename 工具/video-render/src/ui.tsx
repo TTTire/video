@@ -4,7 +4,7 @@ import {AutoSfxCtx, Sfx} from './sfx';
 
 export const C = {
   bg: '#0B1020', bg2: '#141B33', gold: '#E8C27A', white: '#F5F3EE', dim: '#8A93B2',
-  coral: '#FF6B6B', teal: '#5ED3C5', font: '"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif',
+  coral: '#FF6B6B', teal: '#5ED3C5', font: '"NotoSansSC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif',
 };
 export type Theme = typeof C & {title?: string}; // title：标题字体（照片铺底版每期可换）
 // 每期可以换一套配色：gold 是主强调色

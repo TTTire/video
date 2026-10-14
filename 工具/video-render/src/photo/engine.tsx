@@ -6,12 +6,13 @@ import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remot
 import {Theme, useC} from '../ui';
 import {Enter} from '../fx';
 import {CountUp, FlyIn, Sfx, SfxName, Stamp, StrikeLine, useSpringAt} from '../fx';
-import {at, Box, Clock, Em, Grad, H, P, Panel, Photo, PHOTO_THEME, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease} from './kit';
+import {at, Box, BoxSpec, Clock, Em, FONTS, FontKey, Grad, H, P, Panel, Photo, PHOTO_THEME, Quote, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease, regionBox, regionOrigin, regionXY} from './kit';
+export type {BoxSpec} from './kit';
 
 // ---------- 类型 ----------
 type Dir = 'left' | 'right' | 'up' | 'down';
-export type BoxSpec = {x?: number; y?: number; w?: number; right?: number; bottom?: number; align?: 'left' | 'center' | 'right'};
-type Base = {at?: number; delay?: number; until?: number; dir?: Dir; box?: string; sfx?: SfxName | null; vol?: number};
+// font：单个元素换字体（title 得意黑 / song 锦书宋 / kai 文楷 / num 数黑体 / sans 思源黑）；quote：对白，走文楷 + 金色引号
+type Base = {at?: number; delay?: number; until?: number; dir?: Dir; box?: string; sfx?: SfxName | null; vol?: number; font?: FontKey; quote?: boolean};
 export type Item = Base & (
   | {type: 'h'; text: string; size?: number; color?: string; strikeAt?: number}
   | {type: 't'; text: string; size?: number; color?: string}
@@ -23,18 +24,20 @@ export type Item = Base & (
   | {type: 'panel'; lines: string[]; label?: string; size?: number}
   | {type: 'compare'; left: string; right: string; mid?: string; size?: number}
   | {type: 'clock'; h: number; m: number; to?: number; dur?: number}
-  | {type: 'spot'; x: number; y: number; r?: number; strength?: number}
-  | {type: 'rings'; x: number; y: number; n?: number; max?: number; color?: string}
+  | {type: 'spot'; x?: number; y?: number; r?: number; strength?: number; region?: string}
+  | {type: 'rings'; x?: number; y?: number; n?: number; max?: number; color?: string; region?: string}
   | {type: 'sfx'; name: SfxName; variant?: string; dur?: number; endAt?: number; fade?: number}
   | {type: 'custom'; name: string}
 );
+// origin 可以写区域名（"MR"）或百分比（"68% 62%"）
 export type PhotoLayer = {photo: string; zoom?: [number, number]; move?: 'in' | 'out' | 'still'; origin?: string; grad?: Grad; dim?: number; blur?: number; pos?: string};
 export type SceneSpec = PhotoLayer & {
   id: string; name?: string;
   type?: 'photo' | 'chapter' | 'series';
   swap?: PhotoLayer & {at: number; delay?: number};
   split?: {at: [number, number]; photos: [string, string]; pos?: [string, string]};
-  box?: BoxSpec; boxes?: Record<string, BoxSpec>;
+  // box 可以写区域名（"TL" "MR" "BW"…）或像素框
+  box?: BoxSpec | string; boxes?: Record<string, BoxSpec | string>;
   center?: boolean; ambience?: boolean | string; enterSfx?: SfxName | null;
   items?: Item[];
   // type: 'series'
@@ -93,7 +96,7 @@ const NumCell: React.FC<{at: number; label?: string; value: string; size: number
   return (
     <div style={{opacity: sp, transform: `translateY(${(1 - sp) * -120}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       {label && <T size={30}>{label}</T>}
-      <H size={size} color={color} style={{lineHeight: 1}}>{value}</H>
+      <H size={size} color={color} style={{lineHeight: 1, fontFamily: FONTS.num, fontVariantNumeric: 'tabular-nums', letterSpacing: 0}}>{value}</H>
     </div>
   );
 };
@@ -112,24 +115,37 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
   // 场景第一帧出现的元素不响（场景切换已经有声音）
   const snd = sfxName && a > 2 ? <Sfx at={a} name={sfxName} vol={it.vol ?? (sfxName === 'impact' ? 0.45 : 0.3)} /> : null;
   const fly = (node: React.ReactNode, dist = 120) => <>{snd}<FlyIn at={a} dir={dir} dist={dist}>{node}</FlyIn></>;
+  // 元素级换字体：font: "song" / "kai" / "num" / "sans" / "title"
+  const ff = it.font ? {fontFamily: FONTS[it.font]} : {};
+  // 对白：稿子里已经带了引号就先去掉，Quote 自己加金色引号
+  const unq = (t: string) => t.replace(/^[“"「『']+|[”"」』']+$/g, '');
+  const NUM = {fontFamily: FONTS.num, fontVariantNumeric: 'tabular-nums' as const, letterSpacing: 0};
 
   switch (it.type) {
-    case 'h': return fly(
+    case 'h':
+      if (it.quote) return fly(<Quote size={it.size ?? 52} color={col(it.color, C.white, C)} align={align}>{rich(unq(it.text), C)}</Quote>);
+      return fly(
       <div style={{position: 'relative', display: 'inline-block'}}>
-        <H size={it.size ?? 66} color={col(it.color, C.white, C)} align={align}>{rich(it.text, C)}</H>
+        <H size={it.size ?? 66} color={col(it.color, C.white, C)} align={align} style={ff}>{rich(it.text, C)}</H>
         {it.strikeAt !== undefined && p.step >= it.strikeAt && <><Sfx at={at(p, it.strikeAt)} name="swipe" vol={0.45} /><StrikeLine at={at(p, it.strikeAt)} /></>}
       </div>);
-    case 't': return fly(<T size={it.size ?? 38} color={col(it.color, C.dim, C)} style={{textAlign: align, letterSpacing: 3}}>{rich(it.text, C)}</T>, 100);
-    case 'tag': return fly(<Tag size={it.size ?? 42} dark={it.dark} color={col(it.color, C.gold, C)}>{rich(it.text, C)}</Tag>, 140);
+    case 't':
+      if (it.quote) return fly(<Quote size={it.size ?? 44} color={col(it.color, C.dim, C)} align={align}>{rich(unq(it.text), C)}</Quote>, 100);
+      return fly(<T size={it.size ?? 38} color={col(it.color, C.dim, C)} style={{textAlign: align, letterSpacing: 3, ...ff}}>{rich(it.text, C)}</T>, 100);
+    case 'tag': return fly(<Tag size={it.size ?? 42} dark={it.dark} color={col(it.color, C.gold, C)} style={it.quote ? {fontFamily: FONTS.kai, fontWeight: 500} : ff}>{it.quote ? <>“{rich(unq(it.text), C)}”</> : rich(it.text, C)}</Tag>, 140);
     case 'stamp': return <>{snd}<Stamp at={a} size={it.size ?? 60} rotate={it.rotate ?? -5} color={col(it.color, C.coral, C)}>{it.text}</Stamp></>;
-    case 'big': return fly(<H size={it.size ?? 150} color={col(it.color, C.gold, C)} align={align} style={{lineHeight: 1}}>{rich(it.text, C)}</H>, 160);
+    // 大字：纯数字走数黑体，汉字走得意黑；定义卡大词用 font: "song"
+    case 'big': {
+      const numeric = !it.font && /^[\d\s.,%+\-≈×÷→¥$€亿万千百倍]+$/.test(it.text.replace(/\*\*|\[\[|\]\]|\(\(|\)\)|~~/g, ''));
+      return fly(<H size={it.size ?? 150} color={col(it.color, C.gold, C)} align={align} style={{lineHeight: 1, ...(numeric ? NUM : ff)}}>{rich(it.text, C)}</H>, 160);
+    }
     case 'count': {
       const dur = it.dur ?? 36;
       return fly(
         <div style={{display: 'flex', alignItems: 'baseline', gap: 28, justifyContent: align === 'center' ? 'center' : undefined}}>
           {it.label && <T size={40}>{it.label}</T>}
-          {it.before && <><H size={(it.size ?? 150) * 0.7} color={C.dim} style={{lineHeight: 1}}>{it.before}</H><H size={(it.size ?? 150) * 0.5} color={C.dim}>→</H></>}
-          <H size={it.size ?? 150} color={col(it.color, C.gold, C)} style={{lineHeight: 1, fontVariantNumeric: 'tabular-nums'}}>{it.prefix}<CountUp from={it.from ?? 0} to={it.to} at={a + 6} dur={dur} format={(n) => String(n)} />{it.suffix}</H>
+          {it.before && <><H size={(it.size ?? 150) * 0.7} color={C.dim} style={{lineHeight: 1, ...NUM}}>{it.before}</H><H size={(it.size ?? 150) * 0.5} color={C.dim}>→</H></>}
+          <H size={it.size ?? 150} color={col(it.color, C.gold, C)} style={{lineHeight: 1, ...NUM}}>{it.prefix}<CountUp from={it.from ?? 0} to={it.to} at={a + 6} dur={dur} format={(n) => String(n)} />{it.suffix}</H>
         </div>);
     }
     case 'nums': return (
@@ -154,8 +170,8 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
         <H size={it.size ?? 72} align="center">{rich(it.right, C)}</H>
       </div>, 140);
     case 'clock': return <Clock at={a} h={it.h} m0={it.m} m1={it.to} dur={it.dur} />;
-    case 'spot': return <Spot x={it.x} y={it.y} r={it.r} at={a} strength={it.strength} />;
-    case 'rings': return <Rings x={it.x} y={it.y} at={a} n={it.n} max={it.max} color={it.color ? col(it.color, C.gold, C) : undefined} />;
+    case 'spot': { const [x, y] = regionXY({x: it.x, y: it.y, at: it.region}); return <Spot x={x} y={y} r={it.r} at={a} strength={it.strength} />; }
+    case 'rings': { const [x, y] = regionXY({x: it.x, y: it.y, at: it.region}); return <Rings x={x} y={y} at={a} n={it.n} max={it.max} color={it.color ? col(it.color, C.gold, C) : undefined} />; }
     case 'sfx': return <Sfx at={a} name={it.name} variant={it.variant} vol={it.vol} dur={it.dur} endAt={it.endAt} fade={it.fade} />;
     case 'custom': {
       const Comp = custom[it.name];
@@ -201,7 +217,8 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
 
     const enterSfx = spec.enterSfx === null ? null : spec.enterSfx ?? 'pop';
     const swap = spec.swap ? interpolate(f, [at(p, spec.swap.at) + (spec.swap.delay ?? 0), at(p, spec.swap.at) + (spec.swap.delay ?? 0) + 24], [0, 1], clamp) : 0;
-    const boxes: Record<string, BoxSpec> = {main: spec.center ? CENTER_BOX : spec.box ? {...DEFAULT_BOX, ...spec.box} : L.box, ...(spec.boxes ?? {})};
+    const boxes: Record<string, BoxSpec> = {main: spec.center ? CENTER_BOX : regionBox(spec.box, L.box)};
+    Object.entries(spec.boxes ?? {}).forEach(([k, v]) => { boxes[k] = regionBox(v, DEFAULT_BOX); });
     const grad: Grad = spec.grad ?? (spec.center ? 'none' : L.grad);
     let splitL = 0, splitR = 0;
     if (spec.split) {
@@ -231,11 +248,11 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
       <AbsoluteFill>
         {enterSfx && <Sfx at={0} name={enterSfx} vol={0.3} />}
         {spec.ambience && <Sfx at={0} name="ambience" variant={typeof spec.ambience === 'string' ? spec.ambience : undefined} dur={p.dur / 30} fade={0.8} vol={0.2} />}
-        <Photo src={src(spec.photo)} dur={p.dur} zoom={zoomOf(spec)} origin={spec.origin ?? '50% 50%'} grad={grad} dim={spec.dim} blur={spec.blur} pos={spec.pos} opacity={1 - swap} tint={st.tint} tintOpacity={st.tintOpacity} />
+        <Photo src={src(spec.photo)} dur={p.dur} zoom={zoomOf(spec)} origin={regionOrigin(spec.origin)} grad={grad} dim={spec.dim} blur={spec.blur} pos={spec.pos} opacity={1 - swap} tint={st.tint} tintOpacity={st.tintOpacity} />
         {spec.swap && p.step >= spec.swap.at && (
           <>
             <Sfx at={at(p, spec.swap.at) + (spec.swap.delay ?? 0)} name="whoosh" vol={0.3} />
-            <Photo src={src(spec.swap.photo)} dur={p.dur} zoom={zoomOf(spec.swap)} origin={spec.swap.origin ?? '50% 50%'} grad={spec.swap.grad ?? grad} dim={spec.swap.dim} blur={spec.swap.blur} pos={spec.swap.pos} opacity={swap} tint={st.tint} tintOpacity={st.tintOpacity} />
+            <Photo src={src(spec.swap.photo)} dur={p.dur} zoom={zoomOf(spec.swap)} origin={regionOrigin(spec.swap.origin)} grad={spec.swap.grad ?? grad} dim={spec.swap.dim} blur={spec.swap.blur} pos={spec.swap.pos} opacity={swap} tint={st.tint} tintOpacity={st.tintOpacity} />
           </>
         )}
         {spec.split && p.step >= spec.split.at[0] && <><Sfx at={at(p, spec.split.at[0])} name="whoosh" vol={0.35} /><Half code={spec.split.photos[0]} side="left" k={splitL} pos={spec.split.pos?.[0] ?? 'left center'} start={at(p, spec.split.at[0])} /></>}
@@ -266,18 +283,25 @@ const SeriesCard: React.FC<{p: P; spec: SceneSpec; ep: EpisodeSpec}> = ({p, spec
   const n = spec.num ?? parseInt(ep.badge, 10);
   const s1 = at(p, 1), s2 = p.steps.length > 2 ? at(p, 2) : s1 + 45;  // 只有两句时 tagline 晚 1.5 秒出
   const num = Math.min(n, Math.max(1, Math.floor(interpolate(f, [s1, s1 + 18], [1, n + 0.99], clamp))));
-  const b = {...DEFAULT_BOX, ...spec.box};
+  const b = regionBox(spec.box, DEFAULT_BOX);
   return (
     <>
       <Sfx at={0} name="flip" vol={0.4} />
       {p.step >= 1 && <><Sfx at={s1} name="tick" dur={0.65} vol={0.4} /><Sfx at={s1 + 20} name="ding" vol={0.3} /></>}
       {p.step >= 2 && spec.tagline && <Sfx at={s2} name="cash" vol={0.3} />}
       <Box x={b.x} y={b.y} w={b.w}>
-        <FlyIn at={0} dir="left" dist={120}><T size={40} style={{letterSpacing: 6}}>{spec.label ?? `像素呼吸 ·《${ep.series ?? '100 个经济学原理'}》`}</T></FlyIn>
+        <FlyIn at={0} dir="left" dist={120}>
+          {spec.label
+            ? <T size={40} style={{letterSpacing: 6}}>{spec.label}</T>
+            : <div style={{display: 'flex', alignItems: 'baseline', gap: 18}}>
+                <span style={{fontFamily: FONTS.kai, fontSize: 46, color: C.white, letterSpacing: 3, textShadow: SHADOW}}>像素呼吸</span>
+                <span style={{fontFamily: FONTS.title, fontSize: 40, color: C.dim, letterSpacing: 4, textShadow: SHADOW}}>· {ep.series ?? '100 个经济学原理'}</span>
+              </div>}
+        </FlyIn>
         {p.step >= 1 && (
           <FlyIn at={s1} dir="up" dist={160}>
             <div style={{display: 'flex', alignItems: 'baseline', gap: 28}}>
-              <H size={230} color={C.gold} style={{lineHeight: 1}}>{String(num).padStart(2, '0')}</H>
+              <H size={230} color={C.gold} style={{lineHeight: 1, fontFamily: FONTS.num, letterSpacing: 0}}>{String(num).padStart(2, '0')}</H>
               <H size={110}>{spec.title}</H>
             </div>
           </FlyIn>

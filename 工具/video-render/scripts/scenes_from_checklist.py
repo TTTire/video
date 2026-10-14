@@ -35,9 +35,39 @@ def table_rows(sec):
     for l in sec.splitlines():
         if not l.strip().startswith("|"): continue
         cells = [c.strip() for c in l.strip().strip("|").split("|")]
-        if not cells or cells[0] in ("#", "") or set(cells[0]) <= set("-: "): continue
+        if not cells or cells[0] in ("#", "", "编号") or set(cells[0]) <= set("-: "): continue
         rows.append(cells)
     return rows
+
+
+# 出图清单的「文字放哪侧」→ 画面区域名（见 photo-json.md「画面区域」）。
+# 推荐直接写区域名 TL/TC/TR/ML/MC/MR/BL/BC/BR/TW/MW/BW；老写法（"左侧" "上 1/3" "右 40%"）也能认。
+REGION_RE = re.compile(r"\b([TMB][LCRW])\b", re.I)
+def region_of(txt):
+    m = REGION_RE.search(txt or "")
+    if m: return m.group(1).upper()
+    t = (txt or "").replace(" ", "")
+    if not t or t in ("—", "-"): return None
+    if "中" in t and ("居" in t or "中间" in t): return "MC"
+    col = "L" if "左" in t else "R" if "右" in t else "W"
+    row = "T" if ("上" in t or "顶" in t) else "B" if ("下" in t or "底" in t) else "T" if col != "W" else "T"
+    return row + col
+REGION_GRAD = {"L": "left", "R": "right", "C": "all", "W": "top"}
+
+
+def photo_regions(sec):
+    """读「### 出图清单」表（编号 | 画面 | 文字放哪侧 | 用在）→ {S01: 'TL', ...}"""
+    i = sec.find("### 出图清单")
+    if i < 0: return {}
+    out = {}
+    for r in table_rows(sec[i:]):
+        if len(r) < 3: continue
+        m = re.match(r"S(\d{1,2})([A-Za-z]?)", r[0].strip("`* "))
+        if not m: continue
+        code = f"S{int(m.group(1)):02d}{m.group(2).upper()}"
+        reg = region_of(r[2])
+        if reg: out[code] = reg
+    return out
 
 
 def main():
@@ -46,6 +76,7 @@ def main():
     force = "--force" in sys.argv
     txt = open(md, encoding="utf-8").read()
     sec = section(txt, "画面与素材清单")
+    regions = photo_regions(sec)   # 每张图的文字区域
     # 只读「### 分场景」这一张表（后面还有出图清单表）
     i = sec.find("### 分场景")
     if i >= 0:
@@ -79,8 +110,18 @@ def main():
         codes = [f"S{int(re.sub(r'\D', '', c)):02d}{c[-1].upper() if c[-1].isalpha() else ''}" for c in codes]
         photos += [c for c in codes if c not in photos]
         texts = re.findall(r"「([^」]+)」", overlay) or ([overlay] if overlay and overlay not in ("—", "-", "无") else [])
-        sc = {"id": sid, "name": names[sid], "photo": codes[0] if codes else "S00", "move": "in", "grad": "left",
+        sc = {"id": sid, "name": names[sid], "photo": codes[0] if codes else "S00", "move": "in",
               "items": [{"type": "h", "text": t, "at": i} for i, t in enumerate(texts)]}
+        # 文字框：按出图清单里这张图的「文字放哪侧」写区域名；没写就不给，走本期 style.layout 的母版
+        reg = regions.get(sc["photo"])
+        if reg:
+            sc["box"] = reg
+            sc["grad"] = REGION_GRAD[reg[1]]
+        else:
+            sc["grad"] = "left"
+        # 对白：叠字自带引号或冒号前有人名的，标成 quote
+        for it in sc["items"]:
+            if re.match(r'^[“"「].+[”"」]$', it["text"]) or re.match(r"^[^：:]{1,4}[：:]", it["text"]): it["quote"] = True
         if len(codes) > 1: sc["swap"] = {"at": 1, "photo": codes[1]}
         if amb and amb not in ("—", "-", "无"): sc["ambience"] = amb
         scenes.append(sc)
@@ -126,6 +167,9 @@ def main():
     if style: print("本期视觉方案 style:", json.dumps(style, ensure_ascii=False))
     print(f"scenemap: {len(scenemap)} 个场景 → {out}/scenemap.json")
     print(f"需要的图 {len(photos)} 张：{' '.join(photos)}")
+    if regions: print("文字区域（来自出图清单）：" + " ".join(f"{k}={v}" for k, v in regions.items()))
+    miss = [c for c in photos if c not in regions]
+    if miss: print("⚠ 出图清单里没写文字区域的图：" + " ".join(miss) + "（这些场景走母版）")
     # 顺手列出每个场景的句子，方便核对
     keys = sorted(scenemap)
     for n, k in enumerate(keys):
