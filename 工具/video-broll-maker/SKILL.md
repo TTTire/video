@@ -10,6 +10,17 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 
 成片是什么：1920×1080 / 30fps、和用户口播等长、**只有音效没有配音**的动画轨。用户在剪映里把它和 A-roll 从 0 秒对齐叠放，想露脸的地方把动画轨切掉即可。字幕和 BGM 用户在剪映加，所以画面文字压在上 2/3，底部留字幕位。
 
+## 两个栏目，分开做
+
+| | 《100 个经济学原理》 | 《AI经济学》（AI 时事 × 经济学） |
+|---|---|---|
+| 期号目录 | `ep7` `ep8`… | `ai01` `ai02`… |
+| 角标 | `08 像素呼吸 · 100 个经济学原理` | `像素呼吸 · AI经济学`（**不显示期号**） |
+| 栏目卡 `type: series` | 有，开场钩子之后 | **没有**，开场用普通 `title` 场景 |
+| 口播稿标题 | `# 8/100｜标题` | `# 标题` |
+
+脚本按期号前缀自动分（`new_episode.py ai01` 就全对）；发布清单里写 `<!-- SERIES xxx -->` 可以覆盖栏目名。两个栏目的照片风格、字体、音效都一样，只有这几处身份标识不同。
+
 ## 分工
 
 | 阶段 | 我做 | 用户做 |
@@ -103,7 +114,7 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 
 ```bash
 cd E:/视频脚本/工具/video-render
-python scripts/new_episode.py epN
+python scripts/new_episode.py epN        # AI经济学期用 ai01、ai02
 python scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" epN     # → scenemap / scene-names / photo.json 骨架
 python scripts/estimate_timeline.py "<口播稿.md>" epN src/epN/scenemap.json   # 按字数估算的预览时间轴（录完音会被 srt 版覆盖）
 python scripts/placeholder_photos.py epN                                     # 没到的图先用占位图

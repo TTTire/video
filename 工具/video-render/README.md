@@ -4,8 +4,10 @@
 
 **A. B-roll 动画轨（现在的主流程）**：写实照片铺底 + 得意黑大字 + 代码图表，按真人口播的字幕对时，只有音效。每期一份 `src/epN/photo.json`，由 `src/photo/engine.tsx` 渲染。完整流程见 `工具/video-broll-maker/SKILL.md`，字段说明见该 Skill 的 `references/photo-json.md`，样例 `src/ep6/photo.json`。
 
+两个栏目：《100 个经济学原理》期号 `ep7`（角标显示期号、有栏目卡）；《AI经济学》期号 `ai01`（角标不显示期号、无栏目卡）。脚本按前缀自动分。
+
 ```bash
-python scripts/new_episode.py ep7                                      # 建期、注册合成
+python scripts/new_episode.py ep7                                      # 建期、注册合成（AI经济学：ai01）
 python scripts/scenes_from_checklist.py <发布清单.md> <口播稿.md> ep7      # 发布清单的分场景表 → scenemap / scene-names / photo.json 骨架
 python scripts/import_photos.py <图片文件夹> ep7 --need <发布清单.md>      # 图入库（裁 16:9、统一命名、报缺图）
 python scripts/timeline_from_srt.py <口播稿.md> <口播.srt> ep7 src/ep7/scenemap.json

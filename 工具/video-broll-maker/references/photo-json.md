@@ -6,8 +6,8 @@
 
 ```json
 {
-  "ep": "ep7", "badge": "07",
-  "series": "100 个经济学原理",     // 左上角栏目名、栏目卡用
+  "ep": "ep7", "badge": "07",      // AI经济学期：ep "ai01"，badge ""（角标不显示期号）
+  "series": "100 个经济学原理",     // 左上角栏目名、栏目卡用；AI经济学期是 "AI经济学"
   "photos": "ep7/photos",          // public/ 下的照片目录
   "chapterPhoto": "S22",           // 章节卡的虚化底图
   "style": {                       // 本期视觉方案（由发布清单的 STYLE_DNA 注释生成，也可手改）

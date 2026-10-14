@@ -149,9 +149,13 @@ def main():
         for sc in json.load(open(pj, encoding="utf-8")).get("scenes", []):
             if sc.get("id") in names and sc.get("name"): names[sc["id"]] = sc["name"]
     json.dump(names, open(f"{out}/scene-names.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)
-    badge = re.sub(r"\D", "", ep).zfill(2)
+    # 栏目：ai01 → AI经济学（不显示期号）；ep7 → 100 个经济学原理（显示期号）；发布清单里 <!-- SERIES xxx --> 可覆盖栏目名
+    is_ai = ep.startswith("ai")
+    badge = "" if is_ai else re.sub(r"\D", "", ep).zfill(2)
+    ms = re.search(r"<!--\s*SERIES\s+(.+?)\s*-->", txt)
+    series_name = ms.group(1).strip() if ms else ("AI经济学" if is_ai else "100 个经济学原理")
     if force or not os.path.exists(pj):
-        spec = {"ep": ep, "badge": badge, "series": "100 个经济学原理", "photos": f"{ep}/photos", "chapterPhoto": photos[-1] if photos else "S01", "scenes": scenes}
+        spec = {"ep": ep, "badge": badge, "series": series_name, "photos": f"{ep}/photos", "chapterPhoto": photos[-1] if photos else "S01", "scenes": scenes}
         if style: spec["style"] = style
         json.dump(spec, open(pj, "w", encoding="utf-8"), ensure_ascii=False, indent=2)
         print(f"写入 {pj}（骨架，接下来手工调）")
@@ -165,6 +169,8 @@ def main():
             else: print(f"{pj} 已存在，未覆盖（--force 重写）")
         else: print(f"{pj} 已存在，未覆盖（--force 重写）")
     if style: print("本期视觉方案 style:", json.dumps(style, ensure_ascii=False))
+    print(f"栏目：{series_name}" + ("（角标不显示期号）" if not badge else f"　期号 {badge}"))
+    if is_ai and any(sc.get("id") == "series" for sc in scenes): print("⚠ AI经济学期不放栏目卡（type: series），开场用普通 title 场景")
     print(f"scenemap: {len(scenemap)} 个场景 → {out}/scenemap.json")
     print(f"需要的图 {len(photos)} 张：{' '.join(photos)}")
     if regions: print("文字区域（来自出图清单）：" + " ".join(f"{k}={v}" for k, v in regions.items()))
