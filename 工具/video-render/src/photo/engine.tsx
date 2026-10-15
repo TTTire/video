@@ -149,7 +149,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
         </div>);
     }
     case 'nums': return (
-      <div style={{display: 'flex', gap: 40, alignItems: 'flex-end', justifyContent: align === 'center' ? 'center' : undefined}}>
+      <div style={{display: 'flex', gap: 40, alignItems: 'flex-end', justifyContent: align === 'center' ? 'center' : undefined, opacity: f >= a ? 1 : 0}}>
         {it.items.map((n, i) => (
           <React.Fragment key={i}>
             {sfxName && <Sfx at={a + i * 14} name={sfxName} vol={0.25} />}

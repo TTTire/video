@@ -1,0 +1,358 @@
+{
+  "ep": "ai01",
+  "badge": "",
+  "series": "AI经济学",
+  "photos": "ai01/photos",
+  "chapterPhoto": "S08",
+  "style": {
+    "layout": "topleft",
+    "titleFont": "smiley",
+    "tint": "#14212B",
+    "tintOpacity": 0.3,
+    "enter": "slideL",
+    "letterbox": false,
+    "grain": false,
+    "theme": {
+      "gold": "#F0B44C",
+      "coral": "#E0614F",
+      "teal": "#6FC3D6",
+      "bg": "#070D12",
+      "dim": "#BCC6CE"
+    }
+  },
+  "scenes": [
+    {
+      "id": "hike",
+      "name": "9月1日-Mate80Pro一夜涨1000",
+      "photo": "S01",
+      "move": "in",
+      "origin": "MC",
+      "box": {"x": 90, "y": 110, "w": 1300},
+      "grad": "top",
+      "ambience": "商场",
+      "enterSfx": null,
+      "items": [
+        {"type": "tag", "text": "2026 年 9 月 1 日", "dark": true, "delay": 6},
+        {"type": "h", "text": "华为 Mate 80 Pro，一夜之间 **+¥1000**", "size": 72, "delay": 40},
+        {"type": "nums", "items": [{"label": "原价", "value": "¥5999", "color": "dim"}, {"label": "涨后", "value": "¥6999", "color": "gold"}], "size": 96, "delay": 90, "sfx": "drop"},
+        {"type": "h", "text": "同一天，小米 · 荣耀 跟着涨", "at": 1, "size": 54, "color": "dim"}
+      ]
+    },
+    {
+      "id": "ram",
+      "name": "32G内存条-728到4067-五倍多",
+      "photo": "S02",
+      "move": "in",
+      "origin": "MR",
+      "box": {"x": 90, "y": 120, "w": 1000},
+      "grad": "left",
+      "items": [
+        {"type": "t", "text": "想装台电脑？会更懵", "delay": 6},
+        {"type": "h", "text": "一套 32G 内存条（海外均价换算）", "size": 56, "delay": 50},
+        {"type": "nums", "items": [{"label": "去年", "value": "¥728", "color": "dim"}, {"label": "今年", "value": "¥4067", "color": "gold"}], "size": 110, "delay": 150},
+        {"type": "h", "text": "没变快，也没变大", "at": 1, "size": 48, "color": "dim"},
+        {"type": "big", "text": "×5.3", "at": 1, "delay": 60, "size": 150, "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "guess",
+      "name": "第一反应炒作割韭菜-有个打不过的买家",
+      "photo": "S03",
+      "move": "in",
+      "origin": "MR",
+      "box": {"x": 90, "y": 130, "w": 980},
+      "grad": "left",
+      "swap": {"at": 2, "photo": "S04", "move": "out", "origin": "MR", "grad": "left"},
+      "items": [
+        {"type": "t", "text": "第一反应", "delay": 4},
+        {"type": "h", "text": "又在炒作？又在割韭菜？", "size": 64, "delay": 20, "until": 2},
+        {"type": "h", "text": "等风头过了，就跌回来", "size": 64, "color": "dim", "delay": 90, "strikeAt": 2, "until": 2},
+        {"type": "h", "text": "我一开始也是这么想的", "at": 1, "size": 48, "color": "dim", "until": 2},
+        {"type": "t", "text": "顺着这根内存条往上游找", "at": 2, "delay": 10},
+        {"type": "h", "text": "有一个你根本**打不过**的买家\n在跟你抢同一块地方", "at": 2, "delay": 100, "size": 72, "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "title",
+      "name": "片头-内存条为什么突然变贵",
+      "photo": "S04",
+      "move": "in",
+      "origin": "MR",
+      "box": {"x": 90, "y": 300, "w": 1100},
+      "grad": "left",
+      "enterSfx": null,
+      "items": [
+        {"type": "t", "text": "像素呼吸 · AI经济学 · 01", "delay": 6, "sfx": null},
+        {"type": "h", "text": "内存条\n为什么突然变贵", "size": 108, "delay": 24, "sfx": "whoosh"}
+      ]
+    },
+    {
+      "id": "three",
+      "name": "三家公司攥着大头-合计88%",
+      "photo": "S05",
+      "move": "in",
+      "origin": "MC",
+      "box": {"x": 90, "y": 110, "w": 1300},
+      "grad": "top",
+      "dim": 0.15,
+      "items": [
+        {"type": "h", "text": "先说句公道话：觉得被割韭菜，一点都不奇怪", "size": 50, "color": "dim", "delay": 6, "until": 1},
+        {"type": "h", "text": "全球内存芯片，大头就攥在**三家**手里", "at": 1, "size": 60},
+        {"type": "custom", "name": "shareBars"}
+      ]
+    },
+    {
+      "id": "lawsuit",
+      "name": "17名原告起诉三家串通-尚未认定",
+      "photo": "S06",
+      "move": "in",
+      "origin": "ML",
+      "box": "TR",
+      "grad": "right",
+      "items": [
+        {"type": "tag", "text": "2026 年 6 月 · 美国加州", "dark": true, "delay": 6},
+        {"type": "h", "text": "**17** 名原告，把三家告上法庭", "size": 62, "delay": 40},
+        {"type": "h", "text": "串通好了故意少产，四年里涨了大约 **700%**", "quote": true, "size": 48, "delay": 130},
+        {"type": "tag", "text": "只是指控 · 法院未认定 · 三家均称独立决策", "at": 1, "color": "coral", "sfx": "tick"}
+      ]
+    },
+    {
+      "id": "hole",
+      "name": "炒作说解释不通-主动不卖给你了",
+      "photo": "S03",
+      "move": "out",
+      "origin": "MR",
+      "box": {"x": 90, "y": 130, "w": 1000},
+      "grad": "left",
+      "items": [
+        {"type": "t", "text": "先不管官司，炒作说有一个地方解释不通", "delay": 6},
+        {"type": "h", "text": "囤货炒价 → 货越贵，越该**多卖**给你才对", "at": 1, "size": 56, "color": "dim", "strikeAt": 2},
+        {"type": "h", "text": "可现实正好相反：\n有一家厂商，主动**不卖给你**了", "at": 2, "delay": 20, "size": 66, "sfx": "impact"},
+        {"type": "h", "text": "~~谁在炒~~ → 这根内存条，到底被谁**抢走**了？", "at": 3, "size": 54, "sfx": "whoosh"}
+      ]
+    },
+    {
+      "id": "crucial",
+      "name": "美光关掉英睿达-为了更大的战略客户",
+      "photo": "S07",
+      "move": "in",
+      "origin": "MC",
+      "box": {"x": 90, "y": 120, "w": 1000},
+      "grad": "left",
+      "items": [
+        {"type": "tag", "text": "2025 年 12 月 · 美光公告", "dark": true, "delay": 6},
+        {"type": "h", "text": "关掉自己的消费品牌 **英睿达**", "size": 64, "delay": 50},
+        {"type": "h", "text": "内存条 · 固态硬盘，做了 **29** 年", "at": 1, "size": 50, "color": "dim"},
+        {"type": "h", "text": "为了更好地供应更大的战略客户", "at": 2, "quote": true, "size": 50},
+        {"type": "stamp", "text": "= AI 公司", "at": 3, "size": 72, "rotate": -4, "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "wafer",
+      "name": "内存条刻在硅晶圆上-工厂就那么多",
+      "photo": "S08",
+      "move": "in",
+      "origin": "MR",
+      "box": {"x": 90, "y": 130, "w": 980},
+      "grad": "left",
+      "items": [
+        {"type": "h", "text": "卖得好好的牌子，为什么说关就关？", "size": 54, "color": "dim", "delay": 6, "until": 2},
+        {"type": "t", "text": "先看内存条是怎么来的", "at": 1, "until": 2},
+        {"type": "h", "text": "刻在一片片圆形的**硅晶圆**上", "at": 2, "size": 64, "delay": 10},
+        {"type": "h", "text": "全世界能做的工厂，就那么多", "at": 2, "delay": 110, "size": 50},
+        {"type": "h", "text": "建一座新的：**好几年**", "at": 2, "delay": 190, "size": 50, "sfx": "tick"}
+      ]
+    },
+    {
+      "id": "hbm",
+      "name": "同一片晶圆-普通内存或HBM-吃3倍面积",
+      "photo": "S09",
+      "move": "in",
+      "origin": "ML",
+      "box": {"x": 90, "y": 130, "w": 900},
+      "grad": "left",
+      "items": [
+        {"type": "t", "text": "同一片晶圆", "delay": 6},
+        {"type": "h", "text": "可以做你电脑里的**普通内存**", "size": 54, "delay": 30},
+        {"type": "h", "text": "也可以做 AI 芯片旁边的 **HBM**", "size": 54, "delay": 110},
+        {"type": "h", "text": "抢的是**同一条生产线**", "at": 1, "size": 64, "sfx": "impact"},
+        {"type": "h", "text": "HBM 特别占地方：同样容量\n要吃掉差不多 **3 倍**的晶圆", "at": 2, "size": 48, "color": "dim"},
+        {"type": "custom", "name": "hbmBars"}
+      ]
+    },
+    {
+      "id": "margin",
+      "name": "卖给AI太赚-毛利率44.7到86.8",
+      "photo": "S10",
+      "move": "in",
+      "origin": "MC",
+      "box": {"x": 90, "y": 130, "w": 940},
+      "grad": "left",
+      "items": [
+        {"type": "h", "text": "那厂商为什么还抢着做它？", "size": 52, "color": "dim", "delay": 6, "until": 1},
+        {"type": "h", "text": "因为卖给 AI，实在**太赚了**", "at": 1, "size": 66},
+        {"type": "t", "text": "美光最新一个季度的毛利率", "at": 2, "delay": 10},
+        {"type": "h", "text": "卖 **100** 块钱的货\n成本只有 **13** 块出头", "at": 3, "size": 60, "sfx": "ding"},
+        {"type": "h", "text": "比很多卖软件的公司还赚", "at": 4, "size": 46, "color": "dim"},
+        {"type": "custom", "name": "marginBars"}
+      ]
+    },
+    {
+      "id": "oppcost",
+      "name": "定义卡-机会成本-英睿达就是这么被关掉的",
+      "photo": "S07",
+      "zoom": [1.05, 1.12],
+      "blur": 10,
+      "dim": 0.55,
+      "center": true,
+      "box": {"x": 90, "y": 200, "w": 1740, "align": "center"},
+      "items": [
+        {"type": "t", "text": "OPPORTUNITY COST", "size": 34, "delay": 4},
+        {"type": "h", "text": "机会**成本**", "size": 150, "font": "song", "delay": 14, "sfx": "ding"},
+        {"type": "h", "text": "给你做一根内存条，真正的成本不是那点硅和电\n是这块晶圆本来可以拿去卖给 **AI** 的钱", "at": 1, "size": 50},
+        {"type": "h", "text": "AI 那边越给越多，卖给你就**越来越亏**", "at": 2, "size": 50, "color": "dim"},
+        {"type": "panel", "label": "英睿达", "lines": ["不是卖不出去", "是卖给你，**太不划算**了"], "at": 3, "size": 52, "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "lta",
+      "name": "大客户排在前面-三星80%产能签长协",
+      "photo": "S11",
+      "move": "in",
+      "origin": "MR",
+      "box": {"x": 90, "y": 130, "w": 1000},
+      "grad": "left",
+      "items": [
+        {"type": "h", "text": "大客户不光出价高\n还**排在你前面**", "size": 64, "delay": 6},
+        {"type": "h", "text": "三星明年内存产能 **≈ 80%** 已签长期合同", "at": 1, "size": 54},
+        {"type": "tag", "text": "英伟达 · 谷歌 · 微软", "at": 1, "delay": 90},
+        {"type": "t", "text": "一签 5 年以上 · 预付两成多", "at": 1, "delay": 170}
+      ]
+    },
+    {
+      "id": "cake",
+      "name": "蛋糕八块先切走-剩下两块几十人抢",
+      "photo": "S11",
+      "move": "out",
+      "origin": "ML",
+      "blur": 8,
+      "dim": 0.45,
+      "box": {"x": 90, "y": 130, "w": 900},
+      "grad": "left",
+      "items": [
+        {"type": "h", "text": "剩下那**两成**\n才轮到没签合同的人去抢", "size": 60, "delay": 6},
+        {"type": "tag", "text": "手机厂 · 电脑厂 · 还有你", "dark": true, "delay": 110},
+        {"type": "h", "text": "八块先被切走\n剩下两块，几十个人围着比价", "at": 1, "size": 48, "color": "dim"},
+        {"type": "stamp", "text": "涨得最凶的，就是这两块", "at": 2, "size": 56, "rotate": -3},
+        {"type": "custom", "name": "cakePie"}
+      ]
+    },
+    {
+      "id": "spike",
+      "name": "一季度普通内存合同价单季涨九成多",
+      "photo": "S12",
+      "move": "in",
+      "origin": "MC",
+      "box": {"x": 90, "y": 110, "w": 1300},
+      "grad": "top",
+      "items": [
+        {"type": "t", "text": "2026 年一季度 · 普通内存合同价", "delay": 6},
+        {"type": "h", "text": "一个季度，涨了**九成多**", "size": 60, "delay": 40},
+        {"type": "count", "to": 98, "from": 0, "prefix": "+", "suffix": "%", "size": 150, "delay": 90, "dur": 40}
+      ]
+    },
+    {
+      "id": "phone",
+      "name": "余承东-单台硬件成本多200美元-先活下去",
+      "photo": "S13",
+      "move": "in",
+      "origin": "MC",
+      "box": {"x": 90, "y": 110, "w": 1300},
+      "grad": "top",
+      "items": [
+        {"type": "t", "text": "手机厂也扛不住 · 余承东", "delay": 6},
+        {"type": "h", "text": "光是内存涨价，一台手机的硬件成本\n就多了 **200 多美元**", "size": 58, "delay": 50},
+        {"type": "h", "text": "企业首先要活下去", "at": 1, "quote": true, "size": 60, "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "cycle",
+      "name": "涨几年跌几年-转向信号在厂商那边",
+      "photo": "S14",
+      "move": "in",
+      "origin": "MC",
+      "box": {"x": 90, "y": 130, "w": 880},
+      "grad": "left",
+      "items": [
+        {"type": "h", "text": "会一直这么涨下去吗？", "size": 56, "color": "dim", "delay": 6},
+        {"type": "h", "text": "也不会", "at": 1, "size": 72},
+        {"type": "h", "text": "内存这一行，历来就是\n**涨几年 · 跌几年**", "at": 2, "size": 52},
+        {"type": "panel", "label": "转向的信号，不在你这边", "lines": ["新工厂建好了", "或者，AI 的单子少了"], "at": 3, "size": 46},
+        {"type": "custom", "name": "cycleLine"}
+      ]
+    },
+    {
+      "id": "ask",
+      "name": "等风头基本白等-谁在跟我抢同一份产能",
+      "photo": "S15",
+      "move": "in",
+      "origin": "MR",
+      "box": {"x": 90, "y": 130, "w": 1000},
+      "grad": "left",
+      "items": [
+        {"type": "h", "text": "等风头过去就跌", "quote": true, "size": 52, "color": "dim", "delay": 6, "until": 1},
+        {"type": "tag", "text": "基本是白等", "color": "coral", "delay": 70, "until": 1, "sfx": "error"},
+        {"type": "t", "text": "下次再看到东西莫名其妙涨价，先别急着骂炒作，多问一句", "at": 1, "size": 34},
+        {"type": "h", "text": "谁在跟我抢\n**同一份产能**？", "at": 1, "delay": 120, "size": 84, "sfx": "impact"},
+        {"type": "h", "text": "答案是一个比你有钱得多的新买家\n→ 价格就**不由你决定**了", "at": 2, "size": 48, "color": "dim"}
+      ]
+    },
+    {
+      "id": "advice",
+      "name": "能晚换就晚换-必须换别指望捡便宜",
+      "photo": "S15",
+      "move": "out",
+      "origin": "MR",
+      "box": {"x": 90, "y": 130, "w": 1000},
+      "grad": "left",
+      "items": [
+        {"type": "t", "text": "所以", "delay": 4},
+        {"type": "h", "text": "能晚点换的 → [[晚点换]]", "size": 62, "delay": 20},
+        {"type": "h", "text": "必须现在换的 → ((别指望过两个月能捡便宜))", "size": 62, "delay": 110}
+      ]
+    },
+    {
+      "id": "back",
+      "name": "回到那台手机-你在和AI买家一起出价",
+      "photo": "S01",
+      "move": "out",
+      "origin": "MC",
+      "box": {"x": 90, "y": 110, "w": 1300},
+      "grad": "top",
+      "ambience": "商场",
+      "items": [
+        {"type": "t", "text": "回到 9 月 1 日那台手机", "delay": 6},
+        {"type": "h", "text": "多出来的 **¥1000**", "at": 1, "size": 72},
+        {"type": "h", "text": "~~被谁偷偷割走~~", "at": 1, "delay": 70, "size": 50, "color": "dim"},
+        {"type": "h", "text": "你是在替里面那几块内存\n跟英伟达这样的买家，一起出了一次价", "at": 2, "size": 56, "sfx": "impact"}
+      ]
+    },
+    {
+      "id": "next",
+      "name": "下期-AI降价75%为什么花得更多",
+      "photo": "S16",
+      "move": "in",
+      "origin": "ML",
+      "blur": 6,
+      "dim": 0.5,
+      "center": true,
+      "box": {"x": 90, "y": 280, "w": 1740, "align": "center"},
+      "items": [
+        {"type": "tag", "text": "最后留个问题", "dark": true, "delay": 6},
+        {"type": "h", "text": "AI 这一年一直在降价\n有的模型便宜了 **75%**", "at": 1, "size": 60},
+        {"type": "h", "text": "可为什么你和你的公司\n花在 AI 上的钱，反而**越来越多**？", "at": 2, "size": 60, "sfx": "impact"},
+        {"type": "tag", "text": "下期聊", "at": 3}
+      ]
+    }
+  ]
+}
