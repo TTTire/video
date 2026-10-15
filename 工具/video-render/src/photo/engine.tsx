@@ -6,7 +6,7 @@ import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remot
 import {Theme, useC} from '../ui';
 import {Enter} from '../fx';
 import {CountUp, FlyIn, Sfx, SfxName, Stamp, StrikeLine, useSpringAt} from '../fx';
-import {at, Box, BoxSpec, Clock, Em, FONTS, FontKey, Grad, H, P, Panel, Photo, PHOTO_THEME, Quote, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease, regionBox, regionOrigin, regionXY} from './kit';
+import {at, Box, BoxSpec, Clock, Em, FONTS, FontKey, Grad, H, P, Panel, Photo, PHOTO_THEME, Quote, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease, regionBox, regionOrigin, regionXY, SAFE_RIGHT_X} from './kit';
 export type {BoxSpec} from './kit';
 
 // ---------- 类型 ----------
@@ -82,7 +82,7 @@ const CENTER_BOX: BoxSpec = {x: 90, y: 110, w: 1740, align: 'center'};
 const LAYOUTS: Record<NonNullable<Style['layout']>, {box: BoxSpec; grad: Grad}> = {
   topleft: {box: DEFAULT_BOX, grad: 'left'},
   bottom: {box: {x: 160, w: 1600, bottom: 150, align: 'center'}, grad: 'bottom'},
-  right: {box: {x: 960, y: 120, w: 870, align: 'right'}, grad: 'right'},
+  right: {box: {x: SAFE_RIGHT_X - 860, y: 120, w: 860, align: 'right'}, grad: 'right'},
   center: {box: {x: 90, y: 300, w: 1740, align: 'center'}, grad: 'all'},
 };
 const GRAIN_SVG = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>\")";

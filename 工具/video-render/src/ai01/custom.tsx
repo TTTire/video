@@ -4,7 +4,7 @@ import React from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
 import {useC} from '../ui';
 import {FlyIn, Sfx} from '../fx';
-import {Box, FONTS, H, P, T, at, clamp, ease, SHADOW} from '../photo/kit';
+import {Box, FONTS, H, P, T, at, clamp, ease, SHADOW, SAFE_RIGHT_X} from '../photo/kit';
 import {CustomMap} from '../photo/engine';
 
 const NUM = {fontFamily: FONTS.num, fontVariantNumeric: 'tabular-nums' as const, letterSpacing: 0};
@@ -69,7 +69,7 @@ const HbmBars: React.FC<P> = (p) => {
   return (
     <>
       <div style={{position: 'absolute', inset: 0, background: `linear-gradient(270deg, ${C.bg}D9 0%, ${C.bg}99 40%, ${C.bg}00 65%)`}} />
-      <div style={{position: 'absolute', left: 1080, width: 720, top: base - 3.4 * unit, height: 3.4 * unit, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-around', borderBottom: `3px solid ${C.white}55`}}>
+      <div style={{position: 'absolute', left: SAFE_RIGHT_X - 720, width: 720, top: base - 3.4 * unit, height: 3.4 * unit, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-around', borderBottom: `3px solid ${C.white}55`}}>
         {bars.map(([name, v, color], i) => {
           const a = s2 + 10 + i * 30;
           const g = grow(f, a, 26);
@@ -83,7 +83,7 @@ const HbmBars: React.FC<P> = (p) => {
           );
         })}
       </div>
-      <Box x={1080} y={200} w={720}>
+      <Box x={SAFE_RIGHT_X - 720} y={200} w={720}>
         <FlyIn at={s2} dir="right" dist={100}><T size={32} style={{letterSpacing: 3, textAlign: 'right'}}>同样容量 · 吃掉的晶圆面积（美光口径）</T></FlyIn>
       </Box>
     </>
@@ -101,10 +101,10 @@ const MarginBars: React.FC<P> = (p) => {
   return (
     <>
       <div style={{position: 'absolute', inset: 0, background: `linear-gradient(270deg, ${C.bg}D9 0%, ${C.bg}99 40%, ${C.bg}00 65%)`}} />
-      <Box x={1080} y={150} w={720}>
+      <Box x={SAFE_RIGHT_X - 720} y={150} w={720}>
         <FlyIn at={s2} dir="right" dist={100}><T size={32} style={{letterSpacing: 3, textAlign: 'right'}}>美光 · 毛利率</T></FlyIn>
       </Box>
-      <div style={{position: 'absolute', left: 1080, width: 720, top: base - 100 * unit, height: 100 * unit, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-around', borderBottom: `3px solid ${C.white}55`}}>
+      <div style={{position: 'absolute', left: SAFE_RIGHT_X - 720, width: 720, top: base - 100 * unit, height: 100 * unit, display: 'flex', alignItems: 'flex-end', justifyContent: 'space-around', borderBottom: `3px solid ${C.white}55`}}>
         {bars.map(([name, v, color], i) => {
           const a = s2 + 10 + i * 36;
           const g = grow(f, a, 28);
@@ -133,7 +133,7 @@ const CakePie: React.FC<P> = (p) => {
   const C = useC();
   const f = useCurrentFrame();
   const s0 = at(p, 0), s2 = at(p, 2);
-  const cx = 1300, cy = 470, r = 240;
+  const cx = 1200, cy = 470, r = 220;
   const sweep = interpolate(f, [s0 + 6, s0 + 50], [0, 360], {...clamp, easing: ease});
   const a80 = Math.min(sweep, 288);
   const a20 = Math.max(0, sweep - 288);
@@ -156,11 +156,11 @@ const CakePie: React.FC<P> = (p) => {
         {/* 8 块的切线 */}
         {Array.from({length: 8}, (_, i) => i * 36).filter((d) => d <= a80).map((d) => { const [x, y] = polar(cx, cy, r, d); return <line key={d} x1={cx} y1={cy} x2={x} y2={y} stroke={C.bg} strokeWidth={3} opacity={0.8} />; })}
       </svg>
-      <div style={{position: 'absolute', left: cx + r + 30, top: cy + 20, width: 300, opacity: grow(f, s0 + 30, 16)}}>
+      <div style={{position: 'absolute', left: cx + r + 30, top: cy + 20, width: SAFE_RIGHT_X - (cx + r + 30), opacity: grow(f, s0 + 30, 16)}}>
         <div style={{fontSize: 84, fontWeight: 900, color: C.white, textShadow: SHADOW, lineHeight: 1, ...NUM}}>80%</div>
-        <div style={{fontFamily: C.font, fontSize: 30, color: C.dim, fontWeight: 700}}>已签长协 · 先切走</div>
+        <div style={{fontFamily: C.font, fontSize: 28, color: C.dim, fontWeight: 700}}>已签长协<br />先切走</div>
       </div>
-      <div style={{position: 'absolute', left: cx - r - 300, top: cy - 290, width: 280, textAlign: 'right', opacity: grow(f, s0 + 50, 16)}}>
+      <div style={{position: 'absolute', left: cx - r - 260, top: cy - 250, width: 240, textAlign: 'right', opacity: grow(f, s0 + 50, 16)}}>
         <div style={{fontSize: 84, fontWeight: 900, color: hot ? C.coral : C.teal, textShadow: SHADOW, lineHeight: 1, ...NUM}}>20%</div>
         <div style={{fontFamily: C.font, fontSize: 30, color: C.dim, fontWeight: 700}}>没签合同的人抢</div>
       </div>
@@ -174,7 +174,7 @@ const CycleLine: React.FC<P> = (p) => {
   const f = useCurrentFrame();
   if (p.step < 2) return null;
   const s2 = at(p, 2), s3 = at(p, 3);
-  const x0 = 1000, x1 = 1820, yMid = 520, amp = 150;
+  const x0 = 940, x1 = SAFE_RIGHT_X - 20, yMid = 520, amp = 150;
   const N = 120;
   const pts: [number, number][] = Array.from({length: N + 1}, (_, i) => {
     const t = i / N;
@@ -208,7 +208,7 @@ const CycleLine: React.FC<P> = (p) => {
         )}
       </svg>
       {drawn >= 1 && (
-        <Box x={1000} y={yMid + amp + 80} w={820}>
+        <Box x={940} y={yMid + amp + 80} w={SAFE_RIGHT_X - 940}>
           <FlyIn at={s2 + 70} dir="up" dist={40}><T size={30} style={{letterSpacing: 3}}>内存行业 · 周期示意（非实际数据）</T></FlyIn>
         </Box>
       )}

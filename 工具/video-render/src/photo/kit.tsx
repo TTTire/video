@@ -152,7 +152,11 @@ export const Quote: React.FC<{children: React.ReactNode; size?: number; color?: 
 //   ML  MC  MR     MW
 //   BL  BC  BR     BW
 export type BoxSpec = {x?: number; y?: number; w?: number; right?: number; bottom?: number; align?: 'left' | 'center' | 'right'};
-const COLS: Record<string, Pick<BoxSpec, 'x' | 'w' | 'align'>> = {L: {x: 90, w: 900}, C: {x: 510, w: 900, align: 'center'}, R: {x: 930, w: 900, align: 'right'}, W: {x: 90, w: 1740, align: 'center'}};
+// 抖音右侧图标列（头像 / 点赞 / 评论 / 分享）会盖住横屏视频右边约 15% 的宽度：右边 300px 不放字、不放图表的关键部分。
+// 右对齐的 R 列和 layout=right 母版都以 SAFE_RIGHT_X 为右边界；自定义图表里也用它。
+export const SAFE_RIGHT = 300;
+export const SAFE_RIGHT_X = 1920 - SAFE_RIGHT;   // 1620
+const COLS: Record<string, Pick<BoxSpec, 'x' | 'w' | 'align'>> = {L: {x: 90, w: 900}, C: {x: 510, w: 900, align: 'center'}, R: {x: SAFE_RIGHT_X - 860, w: 860, align: 'right'}, W: {x: 90, w: 1740, align: 'center'}};
 const ROWS: Record<string, Pick<BoxSpec, 'y' | 'bottom'>> = {T: {y: 120}, M: {y: 400}, B: {bottom: 270}};
 export const REGIONS: Record<string, BoxSpec> = {};
 Object.keys(ROWS).forEach((r) => Object.keys(COLS).forEach((c) => { REGIONS[r + c] = {...COLS[c], ...ROWS[r]}; }));
@@ -183,6 +187,8 @@ export const GridOverlay: React.FC = () => (
     {[120, 400, 680].map((y) => <div key={'h' + y} style={{position: 'absolute', top: y, left: 0, right: 0, height: 1, background: '#8FBFB033'}} />)}
     <div style={{position: 'absolute', top: SUBTITLE_Y, left: 0, right: 0, height: 2, background: '#E85D3A99', borderTop: '2px dashed #E85D3A'}} />
     <div style={{position: 'absolute', top: SUBTITLE_Y + 6, right: 30, fontFamily: FONTS.sans, fontSize: 22, color: '#E85D3A', fontWeight: 700}}>字幕区 y&gt;{SUBTITLE_Y}</div>
+    <div style={{position: 'absolute', left: SAFE_RIGHT_X, top: 0, bottom: 0, width: SAFE_RIGHT, background: '#E85D3A14', borderLeft: '2px dashed #E85D3A'}} />
+    <div style={{position: 'absolute', left: SAFE_RIGHT_X + 8, top: 40, fontFamily: FONTS.sans, fontSize: 22, color: '#E85D3A', fontWeight: 700}}>抖音图标区 x&gt;{SAFE_RIGHT_X}</div>
     {Object.entries(REGION_CENTER).filter(([k]) => !k.endsWith('W')).map(([k, [x, y]]) => (
       <div key={k} style={{position: 'absolute', left: x - 30, top: y - 18, width: 60, textAlign: 'center', fontFamily: FONTS.num, fontSize: 30, color: '#8FBFB0', opacity: 0.55, textShadow: '0 0 6px #000'}}>{k}</div>
     ))}
