@@ -226,14 +226,14 @@
       "items": [
         {
           "type": "t",
-          "text": "像素呼吸 · AI经济学 · 01",
+          "text": "像素呼吸 · AI经济学",
           "delay": 6,
           "sfx": null
         },
         {
           "type": "h",
           "text": "内存条\n为什么突然变贵",
-          "size": 90,
+          "size": 80,
           "delay": 24,
           "sfx": "whoosh"
         }
@@ -664,7 +664,7 @@
       "box": {
         "x": 90,
         "y": 130,
-        "w": 760
+        "w": 840
       },
       "grad": "left",
       "items": [
@@ -691,7 +691,7 @@
           "type": "stamp",
           "text": "涨得最凶的，就是这两块",
           "at": 2,
-          "size": 56,
+          "size": 50,
           "rotate": -3
         },
         {
