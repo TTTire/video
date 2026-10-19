@@ -180,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 236.23046875
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,7 +196,7 @@
       "copilot:Open Copilot Agent Chat": false
     }
   },
-  "active": "f3dc7516771e2a54",
+  "active": "5ecaf56758f0b4e5",
   "lastOpenFiles": [
     "工具/video-render/public/ai02/photos/S20.jpg",
     "工具/video-render/public/ai02/photos/S19.jpg",
