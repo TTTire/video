@@ -81,6 +81,17 @@ errors << "Jianying export must contain 4 text groups; got #{blocks.length}" unl
 errors << 'Jianying export differs from normalized script' unless clip == expected_clip
 errors << 'Jianying export contains punctuation or symbols' unless clip.scan(/[\p{P}\p{S}]/).empty?
 
+# 剪映导入字幕后一行一条：太长会自动换行。汉字算 1，数字 / 字母 / 空格算 0.5
+MAX_SUBTITLE_WIDTH = (ENV['MAX_SUBTITLE_WIDTH'] || 16).to_f
+def subtitle_width(text)
+  text.each_char.sum { |c| c.match?(/[\p{Han}\u3000-\u303F\uFF00-\uFFEF]/) ? 1.0 : 0.5 }
+end
+too_long = blocks.flatten.select { |line| subtitle_width(line) > MAX_SUBTITLE_WIDTH }
+unless too_long.empty?
+  too_long.each { |line| warn format('  过长(%.1f)：%s', subtitle_width(line), line) }
+  errors << "#{too_long.length} Jianying lines exceed #{MAX_SUBTITLE_WIDTH.to_i} width; split them in the script at a natural pause"
+end
+
 required_sections = [
   '## 推荐标题',
   '## 封面图片 Prompt',
@@ -166,6 +177,7 @@ puts "chapters=#{chapter_numbers.join(',')}"
 puts "opening_lines=#{intro_body.length}"
 puts "jianying_blocks=#{blocks.length}"
 puts "jianying_exact_match=#{clip == expected_clip}"
+puts "max_subtitle_width=#{blocks.flatten.map { |l| subtitle_width(l) }.max}"
 puts "template_phrase_counts=#{template_counts}"
 
 # “不是”是正常口语词，只在“不是……而是……”成串出现时才提醒

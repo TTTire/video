@@ -332,7 +332,7 @@
   "inlineEditCommands": [],
   "projectList": [],
   "lastDismissedVersion": null,
-  "lastShownStartupVersion": "4.0.14",
+  "lastShownStartupVersion": "4.0.15",
   "passMarkdownImages": true,
   "enableAutonomousAgent": true,
   "enableCustomPromptTemplating": true,
@@ -415,7 +415,7 @@
       "providerId": "f843b442-c314-4ccc-9a53-e48794162d8c",
       "info": {
         "id": "opus",
-        "displayName": "claude-fable-5-cc",
+        "displayName": "claude-fable-5",
         "description": "Custom Opus model (1M context)"
       },
       "configuredModelId": "b6b19dc5-da6f-4286-9be0-62b789366c1c",
