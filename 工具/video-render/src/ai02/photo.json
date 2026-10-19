@@ -1,0 +1,588 @@
+{
+  "ep": "ai02",
+  "badge": "",
+  "series": "AI经济学",
+  "photos": "ai02/photos",
+  "chapterPhoto": "S18",
+  "scenes": [
+    {
+      "id": "haiku",
+      "name": "10-月-7-日-Haiku-5.5",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "10 月 7 日 · Claude Haiku 5.5",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "平均便宜约 75%",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "账单该变薄了？",
+          "at": 2
+        }
+      ],
+      "box": "MW",
+      "grad": "top",
+      "ambience": "办公室"
+    },
+    {
+      "id": "swarm",
+      "name": "同一周上线一句话拉起-1000-个-",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "同一周：一句话拉起 1000 个 AI",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "官方提醒：“会消耗大量 token”",
+          "at": 1,
+          "quote": true
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "china",
+      "name": "镜头拉远：国内日均-token-从-",
+      "photo": "S03",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "2024 年初：1000 亿 / 天",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "2026 年 3 月：140 万亿 / 天",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "两年 ×1000+",
+          "at": 2
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "paradox",
+      "name": "单价掉-用量涨-钱也涨；越便宜花得越",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "单价 ↓　用量 ↑　花费 ↑",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "越便宜，花得越多？",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "160 年前，有人写过",
+          "at": 2
+        }
+      ],
+      "box": "MW",
+      "grad": "top"
+    },
+    {
+      "id": "title",
+      "name": "开场：今天聊-AI-越便宜你为什么花",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "AI越便宜，你花得越多",
+          "at": 0
+        }
+      ],
+      "box": "MW",
+      "grad": "top"
+    },
+    {
+      "id": "grocery",
+      "name": "降价能省钱一点不傻；菜便宜少花-油价",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "菜便宜了 → 花得少",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "油价降了 → 少掏几十块",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "大多数时候，都对",
+          "at": 2
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "premise",
+      "name": "没说出口的前提：量不变；因为本来就只",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "没说出口的前提：量不变",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "本来就只需要那么多",
+          "at": 1
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "aiuse",
+      "name": "AI-不一样：贵时只问一个问题；便宜",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "贵的时候：问一个问题",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "便宜了：读整个文件夹 · 改 20 遍 · 开好几个窗口",
+          "at": 1,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "用法早就变了",
+          "at": 2
+        }
+      ],
+      "box": "MR",
+      "grad": "right",
+      "swap": {
+        "at": 1,
+        "photo": "S07"
+      }
+    },
+    {
+      "id": "formula",
+      "name": "账单是乘法：单价-×-用量；单价厂商",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "账单 = 单价 × 用量",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "单价：厂商定",
+          "at": 1,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "用量：你自己定",
+          "at": 2,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "便宜了以后，用量涨多少？",
+          "at": 3
+        }
+      ],
+      "box": "ML",
+      "grad": "left"
+    },
+    {
+      "id": "jevons",
+      "name": "1865-杰文斯《煤炭问题》；担心煤",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "1865 · 杰文斯《煤炭问题》",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "担心：煤迟早烧光",
+          "at": 1,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "“蒸汽机越来越省煤，不用慌”",
+          "at": 2,
+          "quote": true
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "watt",
+      "name": "瓦特蒸汽机省煤三分之二以上；杰文斯：",
+      "photo": "S09",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "瓦特蒸汽机：省煤 ⅔ 以上",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "杰文斯：“节省燃料 ≠ 少烧燃料，事实恰恰相反”",
+          "at": 1,
+          "quote": true
+        }
+      ],
+      "box": "MR",
+      "grad": "right"
+    },
+    {
+      "id": "spread",
+      "name": "省煤了就划算；矿井到纺织厂-铁厂-火",
+      "photo": "S10",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "矿井 → 纺织厂 → 铁厂 → 火车 → 轮船",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "每一台省了，台数涨得更快",
+          "at": 1
+        }
+      ],
+      "box": "MW",
+      "grad": "top"
+    },
+    {
+      "id": "coal",
+      "name": "英国煤产量-1750-约-500-万",
+      "photo": "S11",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "1750：约 520 万吨",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "1850：约 6250 万吨",
+          "at": 1,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "一百年 ×12",
+          "at": 2
+        },
+        {
+          "type": "h",
+          "text": "杰文斯悖论",
+          "at": 3
+        },
+        {
+          "type": "h",
+          "text": "效率越高，总消耗越多",
+          "at": 4
+        }
+      ],
+      "box": "ML",
+      "grad": "left"
+    },
+    {
+      "id": "elastic",
+      "name": "看用量涨多猛；价格降到-1/4-用量",
+      "photo": "S11",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "价格 ×¼",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "用量 ×2 → 花费 ×0.5（省钱）",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "用量 ×10 → 花费 ×2.5（多花）",
+          "at": 2
+        }
+      ],
+      "box": "ML",
+      "grad": "left"
+    },
+    {
+      "id": "google",
+      "name": "AI-是哪种：谷歌月处理-token",
+      "photo": "S12",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "谷歌每月 token：9.7 万亿 → 3200 万亿+",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "两年 ×330",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "Anthropic 2025 年收入 ×12",
+          "at": 2
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "pertask",
+      "name": "一件事本身也越用越多：DeepSee",
+      "photo": "S13",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "新版更准，每道题成本 +250%",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "想得越久，token 越多",
+          "at": 1
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "nadella",
+      "name": "2025.1-DeepSeek-引发",
+      "photo": "S14",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "2025.1 担心：算力要不了那么多了？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "纳德拉：“杰文斯悖论又来了”",
+          "at": 1,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "他是卖算力的——可数据站在他那边",
+          "at": 2
+        }
+      ],
+      "box": "ML",
+      "grad": "left"
+    },
+    {
+      "id": "maxplan",
+      "name": "普通人身上：200-美元包月有人跑掉",
+      "photo": "S15",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "$200 包月 → 有人跑掉几万美元",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "加了每周限额",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "一划算，用法就变了",
+          "at": 2
+        }
+      ],
+      "box": "MR",
+      "grad": "right"
+    },
+    {
+      "id": "salt",
+      "name": "不是所有降价都越花越多；盐降价不会多",
+      "photo": "S16",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "盐降价一半，你不会多吃一倍",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "便宜一点 → 冒出新用法",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "煤 · 电 · AI",
+          "at": 2
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "ask",
+      "name": "多问一句：便宜了我会不会用得更多；会",
+      "photo": "S17",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "便宜了以后，我会不会用得更多？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "别只盯单价，定一个总账",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "一个月最多花多少，到了就停",
+          "at": 2
+        }
+      ],
+      "box": "ML",
+      "grad": "left"
+    },
+    {
+      "id": "worth",
+      "name": "多花不一定坏；煤换回工业革命；看多花",
+      "photo": "S10",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "多花的钱，换回了什么？",
+          "at": 0
+        }
+      ],
+      "box": "MW",
+      "grad": "top"
+    },
+    {
+      "id": "back",
+      "name": "回到那-75%：没让账单变薄；AI-",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "那 75%",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "没让账单变薄",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "偶尔问一句 → 一开就是一千个",
+          "at": 2
+        }
+      ],
+      "box": "MW",
+      "grad": "top",
+      "ambience": "办公室"
+    },
+    {
+      "id": "next",
+      "name": "下期钩子：AI-干不了又必须有人干的",
+      "photo": "S18",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "AI 干不了、又必须有人干的",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "会不会越来越值钱？",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "下期",
+          "at": 2
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    }
+  ],
+  "style": {
+    "layout": "center",
+    "titleFont": "smiley",
+    "tint": "#24170E",
+    "tintOpacity": 0.25,
+    "enter": "zoom",
+    "letterbox": false,
+    "grain": true,
+    "theme": {
+      "gold": "#E8833A",
+      "coral": "#D9534F",
+      "teal": "#7FB89A",
+      "bg": "#0A0806",
+      "dim": "#CFC6BA"
+    }
+  }
+}
