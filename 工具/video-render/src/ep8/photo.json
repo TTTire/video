@@ -3,7 +3,7 @@
   "badge": "08",
   "series": "100 个经济学原理",
   "photos": "ep8/photos",
-  "chapterPhoto": "S05",
+  "chapterPhoto": "S18",
   "scenes": [
     {
       "id": "menu",
@@ -32,6 +32,8 @@
           "at": 3
         }
       ],
+      "box": "TR",
+      "grad": "right",
       "ambience": "厨房"
     },
     {
@@ -43,7 +45,8 @@
         {
           "type": "h",
           "text": "整体涨幅：6%",
-          "at": 0
+          "at": 0,
+          "quote": true
         },
         {
           "type": "h",
@@ -53,14 +56,17 @@
         {
           "type": "h",
           "text": "“管理层的错误决策”",
-          "at": 2
+          "at": 2,
+          "quote": true
         },
         {
           "type": "h",
           "text": "价格恢复到停业前",
           "at": 3
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "contrast",
@@ -78,7 +84,9 @@
           "text": "火锅 +6% → 道歉",
           "at": 1
         }
-      ]
+      ],
+      "box": "TW",
+      "grad": "top"
     },
     {
       "id": "wrong",
@@ -102,8 +110,8 @@
           "at": 2
         }
       ],
-      "blur": 10,
-      "dim": 0.5
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "door",
@@ -122,6 +130,8 @@
           "at": 1
         }
       ],
+      "box": "TR",
+      "grad": "right",
       "ambience": "街道夜晚"
     },
     {
@@ -129,11 +139,25 @@
       "name": "栏目卡：第-8-个-需求价格弹性",
       "photo": "S05",
       "move": "in",
-      "items": [],
-      "type": "series",
-      "num": 8,
-      "title": "需求价格弹性",
-      "tagline": "涨价之后，少买多少"
+      "items": [
+        {
+          "type": "h",
+          "text": "08 需求价格弹性",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "PRICE ELASTICITY OF DEMAND",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "涨价之后，少买多少",
+          "at": 2
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "bridge",
@@ -152,8 +176,8 @@
           "at": 1
         }
       ],
-      "blur": 10,
-      "dim": 0.5
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "define",
@@ -177,8 +201,8 @@
           "at": 2
         }
       ],
-      "blur": 10,
-      "dim": 0.55
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "direction",
@@ -189,16 +213,18 @@
         {
           "type": "h",
           "text": "需求定律：方向 · 贵了少买",
-          "at": 0
+          "at": 0,
+          "quote": true
         },
         {
           "type": "h",
           "text": "弹性：幅度 · 少买多少",
-          "at": 1
+          "at": 1,
+          "quote": true
         }
       ],
-      "blur": 10,
-      "dim": 0.5
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "attribute",
@@ -231,25 +257,27 @@
           "text": "火锅本来就涨不得？",
           "at": 4
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "comments",
       "name": "评论区两种声音：“再也不去了”-/-",
-      "photo": "S01",
+      "photo": "S07A",
       "move": "in",
       "items": [
         {
           "type": "h",
           "text": "“再也不去了”",
           "at": 0,
-          "box": "L"
+          "quote": true
         },
         {
           "type": "h",
           "text": "“又不是天天吃，无所谓”",
           "at": 1,
-          "box": "R"
+          "quote": true
         },
         {
           "type": "h",
@@ -262,21 +290,11 @@
           "at": 3
         }
       ],
+      "box": "TR",
+      "grad": "right",
       "swap": {
         "at": 1,
         "photo": "S07B"
-      },
-      "blur": 8,
-      "dim": 0.45,
-      "split": {
-        "at": [
-          0,
-          1
-        ],
-        "photos": [
-          "S07A",
-          "S07B"
-        ]
       }
     },
     {
@@ -296,6 +314,8 @@
           "at": 1
         }
       ],
+      "box": "TR",
+      "grad": "right",
       "ambience": "街道夜晚"
     },
     {
@@ -314,7 +334,9 @@
           "text": "人均 ¥200+：月薪 5000 vs 月薪 50000",
           "at": 1
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "time",
@@ -337,7 +359,9 @@
           "text": "下月再聚 → 慢慢挑",
           "at": 2
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "notonmenu",
@@ -356,8 +380,8 @@
           "at": 1
         }
       ],
-      "blur": 10,
-      "dim": 0.5
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "tobacco",
@@ -390,12 +414,14 @@
           "text": "涨多少，大部分人都留下",
           "at": 4
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "split",
       "name": "拆开看不是一个数：年轻人反应是成年人",
-      "photo": "S10",
+      "photo": "S11A",
       "move": "in",
       "items": [
         {
@@ -406,12 +432,14 @@
         {
           "type": "h",
           "text": "年轻人：成年人的 2–3 倍",
-          "at": 1
+          "at": 1,
+          "quote": true
         },
         {
           "type": "h",
           "text": "低收入：比高收入敏感得多",
-          "at": 2
+          "at": 2,
+          "quote": true
         },
         {
           "type": "h",
@@ -419,21 +447,11 @@
           "at": 3
         }
       ],
+      "box": "TR",
+      "grad": "right",
       "swap": {
         "at": 1,
         "photo": "S11B"
-      },
-      "blur": 8,
-      "dim": 0.45,
-      "split": {
-        "at": [
-          1,
-          1
-        ],
-        "photos": [
-          "S11A",
-          "S11B"
-        ]
       }
     },
     {
@@ -463,10 +481,11 @@
           "at": 3
         }
       ],
+      "box": "TL",
+      "grad": "left",
       "swap": {
         "at": 1,
-        "photo": "S11A",
-        "move": "in"
+        "photo": "S11A"
       }
     },
     {
@@ -478,7 +497,8 @@
         {
           "type": "h",
           "text": "上期：5000 万人里，年轻人先走",
-          "at": 0
+          "at": 0,
+          "quote": true
         },
         {
           "type": "h",
@@ -490,7 +510,9 @@
           "text": "香水 · 二手包",
           "at": 2
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "netflix2011",
@@ -518,7 +540,9 @@
           "text": "股价 −70%+",
           "at": 3
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "netflix2025",
@@ -546,7 +570,9 @@
           "text": "同一家公司，结果反过来",
           "at": 3
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "substitute",
@@ -562,12 +588,14 @@
         {
           "type": "h",
           "text": "2011：出租店 · 有线电视",
-          "at": 1
+          "at": 1,
+          "quote": true
         },
         {
           "type": "h",
           "text": "现在：每天 2 小时 · 只有它有",
-          "at": 2
+          "at": 2,
+          "quote": true
         },
         {
           "type": "h",
@@ -575,10 +603,11 @@
           "at": 3
         }
       ],
+      "box": "TR",
+      "grad": "right",
       "swap": {
-        "at": 2,
-        "photo": "S14",
-        "move": "in"
+        "at": 1,
+        "photo": "S14"
       }
     },
     {
@@ -607,7 +636,9 @@
           "text": "留下的人多付的钱，够不够补走掉的人",
           "at": 3
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "guess",
@@ -630,7 +661,9 @@
           "text": "是那张菜单传播的速度",
           "at": 2
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "self",
@@ -658,7 +691,9 @@
           "text": "没有 → 铁丝，挑中的就是你",
           "at": 3
         }
-      ]
+      ],
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "prepare",
@@ -677,8 +712,8 @@
           "at": 1
         }
       ],
-      "blur": 10,
-      "dim": 0.5
+      "box": "TR",
+      "grad": "right"
     },
     {
       "id": "potato",
@@ -694,7 +729,8 @@
         {
           "type": "h",
           "text": "菜市场：几块钱一斤",
-          "at": 1
+          "at": 1,
+          "quote": true
         },
         {
           "type": "h",
@@ -707,10 +743,11 @@
           "at": 3
         }
       ],
+      "box": "TR",
+      "grad": "right",
       "swap": {
-        "at": 3,
-        "photo": "S01",
-        "move": "out"
+        "at": 1,
+        "photo": "S01"
       },
       "ambience": "厨房"
     },
@@ -733,13 +770,13 @@
         {
           "type": "h",
           "text": "下期：供给定律",
-          "at": 2
+          "at": 2,
+          "quote": true
         }
       ],
-      "ambience": "街道夜晚",
-      "blur": 6,
-      "dim": 0.5,
-      "center": true
+      "box": "TR",
+      "grad": "right",
+      "ambience": "街道夜晚"
     }
   ],
   "style": {

@@ -52,9 +52,9 @@ Use the uploaded portrait as the sole identity reference for the same adult host
 
 ## 发布时间
 
-- 首选：10 月 21 日（周三）12:00—13:00（W2 第一条，离 Haiku 降价、千人代理这两条新闻还不到两周，越早越好）
-- 次选：本周工作日 19:30—21:00
-- 保底：10 月 25 日（周六）10:00
+- 首选：10 月 22 日（周四）12:00—13:00（10-21 中午先发 8/100，隔一天再发这条；离 Haiku 降价、千人代理这两条新闻还在两周内）
+- 次选：10 月 22 日（周四）19:30—21:00
+- 保底：10 月 24 日（周六）10:00
 
 ## 背景音乐（Suno）
 
@@ -147,7 +147,7 @@ Use the uploaded portrait as the sole identity reference for the same adult host
 ## 事实核对
 
 - **Claude Haiku 5.5 便宜约 75%**：Anthropic 2026-10-07 发布，官方称平均运行成本比 Haiku 4.5 低约 75%（10 万 token 以内档便宜 90%、以上档便宜 50%，按 Haiku 4.5 九成请求落在 10 万以内档加权）；官方定位之一是跑"AI 子代理"这类高并发任务。来源：[Anthropic 官方页](https://www.anthropic.com/claude-haiku-5-5)、[Quartz 2026-10-08](https://qz.com/anthropic-claude-haiku-55-price-cut-100826)。用在开头第 1 句、结尾"那 75%"。北京时间是 10 月 8 日凌晨发布，所以正文写"10 月 8 号早上刷到"；"一边冲咖啡一边刷 AI 新闻"是本人的日常习惯（随记 2026-09-07："早上到公司……准备咖啡、发公众号、看文章"），当天 AI 日报 2026-10-08【1】也报了这条。
-- **同一周一句话拉起 1000 个 AI**：Anthropic 2026-10-10 为 Claude Managed Agents 推出动态工作流，一个主代理最多并行编排 1000 个子代理；官方提醒会比普通会话消耗多得多的 token，建议从小任务开始。来源：AI 日报 2026-10-12【5】、[AI Agents Directory 2026-10-11](https://aiagentsdirectory.com/news/topic/artificial-intelligence)；"消耗大量 token"的提醒同见 [InfoQ 对 Claude Code 动态工作流的报道](https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code)。⚠️ 发布前最好再找到 Anthropic 官方博客原文链接补上。
+- **同一周一句话拉起 1000 个 AI**：Anthropic 官方开发者账号 2026-10-09（美西时间，北京时间 10-10）宣布 Claude Managed Agents 动态工作流公测：主代理写计划、分阶段派给多个代理并行；官方文档写明一次运行最多启动 1,000 个代理，token 按各模型价格计入会话预算。来源：[ClaudeDevs on X](https://x.com/ClaudeDevs/status/2108591328732856655)、[官方文档 Workflow runs](https://platform.claude.com/docs/en/managed-agents/workflow-runs)。"会消耗大量 token、建议从小任务开始"的提醒见 AI 日报 2026-10-12【5】和 [InfoQ 对同类功能的报道](https://www.infoq.com/news/2026/06/dynamic-workflows-claude-code)。
 - **国内日均 token 1000 亿 → 140 万亿**：国家数据局局长刘烈宏 2026-03-24 国新办发布会：2024 年初日均 1000 亿，2025 年底 100 万亿，2026 年 3 月超过 140 万亿，"增长了 1000 多倍"。来源：[新华网 2026-03-24](https://app.xinhuanet.com/news/article.html?articleId=b36ea80c08d12e7385fb3c534f3699c8)；2025 年 6 月底 30 万亿的中间数见[人民网 2025-08-14](http://finance.people.com.cn/n1/2025/0814/c1004-40542475.html)。口径是"调用量 / 消耗量"，官方口径，未独立核实。
 - **杰文斯《煤炭问题》与原话**：W. S. Jevons, *The Coal Question*（1865）第 7 章："It is wholly a confusion of ideas to suppose that the economical use of fuel is equivalent to a diminished consumption. The very contrary is the truth." 正文为中文意译。来源：[Yale Energy History](https://energyhistory.yale.edu/w-stanley-jevons-the-coal-question-1865)、[Wikipedia: The Coal Question](https://en.wikipedia.org/wiki/The_Coal_Question)。"当时英国人担心煤迟早烧光"即该书副题"我们煤矿可能枯竭"的问题。
 - **瓦特蒸汽机省煤三分之二以上**：伦敦科学博物馆称装了分离式冷凝器的蒸汽机少烧约三分之二的煤，并因此能用到矿井以外的工厂、磨坊等地方；Wikipedia 称完全成熟的 Watt 机比同类 Newcomen 机省约 75% 燃料。两个口径取保守的"三分之二以上"。来源：[Science Museum Blog](https://blog.sciencemuseum.org.uk/james-watt-and-the-separate-condenser)、[Wikipedia: Watt steam engine](https://en.wikipedia.org/wiki/Watt_steam_engine)。"纺织厂、铁厂、火车、轮船都装上了"是工业革命通史常识，依据同上。
@@ -160,7 +160,7 @@ Use the uploaded portrait as the sole identity reference for the same adult host
 - **200 美元包月有人跑掉几万美元**：Anthropic 2025-07-28 官方账号："one user consumed tens of thousands in model usage on a $200 plan"，并宣布 8 月下旬起对 Pro 和 Max 加每周限额。来源：[Anthropic on X](https://x.com/AnthropicAI/status/1949898502688903593)、[TechCrunch 经 Yahoo Finance](https://finance.yahoo.com/news/anthropic-unveils-rate-limits-curb-192115244.html)。原话没说时间段，正文只说"在这个套餐上"。
 - **token ≈ 互联网时代的流量**：国家数据局局长刘烈宏 2025-08-14 国新办发布会："Token……作为处理文本的最小数据单元，如同互联网时代大家所说的'流量'"。来源：[人民网 2025-08-14](http://finance.people.com.cn/n1/2025/0814/c1004-40542475.html)。"AI 读写多少字就按它算钱"是简化说法（API 按输入输出 token 计费）。
 - **2014 年徐先生省流量**：新华社 2019-05-31 报道里的受访者：2014 年 4G 刚商用时在微博关掉"图片自动打开"、微信关掉短视频自动开启、APP 只在 WiFi 下更新，到餐厅、咖啡馆等地第一件事是要 WiFi 密码。同篇引工信部副部长陈肇雄："与 2014 年相比，我国固定网络和手机上网流量资费水平降幅均超过了 90%。" 来源：[新华网 2019-05-31](http://www.news.cn/zgjx/2019-05/31/c_138104909.htm)。
-- **每人每月 205 MB → 18 GB**：2014 年月户均移动互联网接入流量 205M，来源：[工信部 2014 年通信运营业统计公报（网信办转载）](http://www.cac.gov.cn/2015-01/29/c_1114173169.htm)；2024 年月户均流量（DOU）18.18 GB，来源：工信部 2024 年通信业统计公报（[新浪财经转载 2025-02-06](https://finance.sina.com.cn/roll/2025-02-06/doc-ineippfi1082850.shtml)）。18.18 × 1024 ÷ 205 ≈ 91，正文说"差不多涨了 90 倍"。⚠️ 发布前去工信部原文核一下 18.18 GB 这个数（目前是检索摘要给出的）。
+- **每人每月 205 MB → 18 GB**：2014 年月户均移动互联网接入流量 205M，来源：[工信部 2014 年通信运营业统计公报（网信办转载）](http://www.cac.gov.cn/2015-01/29/c_1114173169.htm)；2024 年月户均流量（DOU）18.18 GB，来源：工信部 2024 年通信业统计公报（[新浪财经转载 2025-02-06](https://finance.sina.com.cn/roll/2025-02-06/doc-ineippfi1082850.shtml)）。18.18 × 1024 ÷ 205 ≈ 91，正文说"差不多涨了 90 倍"。已核对公报原文："全年移动互联网月户均流量（DOU）达 18.18GB/户·月，比上年增长 7.4%"（[新浪转载全文](https://finance.sina.cn/tech/2025-01-26/detail-inehhvhc2235351.d.html?vt=4)、[经济观察网解读](http://www.eeo.com.cn/2025/0126/708607.shtml)）。
 - **"人均话费没降多少"**：中国信通院《中国宽带发展白皮书（2019 年）》："由于移动数据流量消费大幅增长，移动通信用户月均支出（ARPU）同比降幅不大"。来源：[信通院 PDF](http://www.caict.ac.cn/kxyj/qwfb/bps/201910/P020191031512605025697.pdf)。口径是 2019 年上半年同比，ARPU 里还含语音等；正文"大多数人没省下话费，因为开始刷短视频了"是据此的口语化**推断**，没有把资费降幅和流量涨幅直接相乘（两组数时间段不同、口径不同），第 2 章的乘法示意也没有拿流量举例。
 - **刘勇老师那句话**：本人随记 2026-09-24（听北大创投课、刘勇《AI 创业投资的第一性选择框架》）："AI 的成本不能只看 Token 的单价，而是要看完成一个可验收任务的总成本，如果一次任务在 AI 尝试后只完成了 80%，然后人工介入了，那人工费也要算成本。" 出处是课堂，没有公开文字稿；"八成 / 两成"是老师举的例子。
 - **"我英语一般，把小米的英文论文丢给 AI 写精读笔记"**：本人随记 2026-09-23："本人英语水平确实没有很强……让 pi 帮我整理下，他写了一篇精读笔记"（MiMo-V2.6 论文）。"贵的时候没几个人舍得"是观点。
