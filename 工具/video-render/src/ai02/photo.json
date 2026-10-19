@@ -3,27 +3,27 @@
   "badge": "",
   "series": "AI经济学",
   "photos": "ai02/photos",
-  "chapterPhoto": "S18",
+  "chapterPhoto": "S20",
   "scenes": [
     {
       "id": "haiku",
-      "name": "10-月-7-日-Haiku-5.5",
+      "name": "10-月-8-日早上冲咖啡刷新闻：H",
       "photo": "S01",
       "move": "in",
       "items": [
         {
           "type": "h",
-          "text": "10 月 7 日 · Claude Haiku 5.5",
+          "text": "10 月 8 日 · 早上",
           "at": 0
         },
         {
           "type": "h",
-          "text": "平均便宜约 75%",
+          "text": "Claude Haiku 5.5 · 平均便宜约 75%",
           "at": 1
         },
         {
           "type": "h",
-          "text": "账单该变薄了？",
+          "text": "账单要变薄了？",
           "at": 2
         }
       ],
@@ -54,8 +54,33 @@
       "grad": "top"
     },
     {
+      "id": "token",
+      "name": "token-是什么：国家数据局说就像",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "token",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "≈ 互联网时代的“流量”",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "AI 读写多少字，就按它算钱",
+          "at": 2
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
       "id": "china",
-      "name": "镜头拉远：国内日均-token-从-",
+      "name": "国内日均-token-从-1000-",
       "photo": "S03",
       "move": "in",
       "items": [
@@ -136,7 +161,7 @@
         },
         {
           "type": "h",
-          "text": "大多数时候，都对",
+          "text": "没说出口的前提：量不变",
           "at": 2
         }
       ],
@@ -144,55 +169,59 @@
       "grad": "top"
     },
     {
-      "id": "premise",
-      "name": "没说出口的前提：量不变；因为本来就只",
-      "photo": "S05",
-      "move": "in",
-      "items": [
-        {
-          "type": "h",
-          "text": "没说出口的前提：量不变",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "本来就只需要那么多",
-          "at": 1
-        }
-      ],
-      "box": "TW",
-      "grad": "top"
-    },
-    {
-      "id": "aiuse",
-      "name": "AI-不一样：贵时只问一个问题；便宜",
+      "id": "wifi",
+      "name": "有些东西一便宜量就变：手机流量；20",
       "photo": "S06",
       "move": "in",
       "items": [
         {
           "type": "h",
-          "text": "贵的时候：问一个问题",
+          "text": "2014 · 4G 刚商用",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "关掉自动加载图片 · 关掉视频自动播放",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "“WiFi 密码多少？”",
+          "at": 2,
+          "quote": true
+        }
+      ],
+      "box": "TW",
+      "grad": "top",
+      "ambience": "咖啡馆"
+    },
+    {
+      "id": "traffic",
+      "name": "资费降九成多；省下话费了吗？没有-开",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "资费：2019 比 2014 降了 90%+",
           "at": 0,
           "quote": true
         },
         {
           "type": "h",
-          "text": "便宜了：读整个文件夹 · 改 20 遍 · 开好几个窗口",
+          "text": "每人每月：205 MB → 18 GB（×90）",
           "at": 1,
           "quote": true
         },
         {
           "type": "h",
-          "text": "用法早就变了",
-          "at": 2
+          "text": "人均话费：没降多少",
+          "at": 2,
+          "quote": true
         }
       ],
-      "box": "MR",
-      "grad": "right",
-      "swap": {
-        "at": 1,
-        "photo": "S07"
-      }
+      "box": "TW",
+      "grad": "top"
     },
     {
       "id": "formula",
@@ -219,8 +248,59 @@
         },
         {
           "type": "h",
-          "text": "便宜了以后，用量涨多少？",
+          "text": "降价新闻，只说了前一半",
           "at": 3
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "liuyong",
+      "name": "北大创投课刘勇：别只看-token-",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "刘勇：“别只看 token 单价”",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "看做完一件能验收的事，一共花多少",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "AI 做 80% + 人工补 20%",
+          "at": 2
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "paper",
+      "name": "AI-就是当年的流量；我英语一般-把",
+      "photo": "S09",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "AI = 当年的流量",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "英文论文 → 丢给 AI 写精读笔记",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "便宜了以后，用量涨多少？",
+          "at": 2
         }
       ],
       "box": "ML",
@@ -229,7 +309,7 @@
     {
       "id": "jevons",
       "name": "1865-杰文斯《煤炭问题》；担心煤",
-      "photo": "S08",
+      "photo": "S10",
       "move": "in",
       "items": [
         {
@@ -256,7 +336,7 @@
     {
       "id": "watt",
       "name": "瓦特蒸汽机省煤三分之二以上；杰文斯：",
-      "photo": "S09",
+      "photo": "S11",
       "move": "in",
       "items": [
         {
@@ -276,18 +356,18 @@
     },
     {
       "id": "spread",
-      "name": "省煤了就划算；矿井到纺织厂-铁厂-火",
-      "photo": "S10",
+      "name": "说白了：省煤了就划算；矿井到纺织厂-",
+      "photo": "S12",
       "move": "in",
       "items": [
         {
           "type": "h",
-          "text": "矿井 → 纺织厂 → 铁厂 → 火车 → 轮船",
+          "text": "省煤 → 划算 → 都装上",
           "at": 0
         },
         {
           "type": "h",
-          "text": "每一台省了，台数涨得更快",
+          "text": "矿井 → 纺织厂 → 铁厂 → 火车 → 轮船",
           "at": 1
         }
       ],
@@ -297,7 +377,7 @@
     {
       "id": "coal",
       "name": "英国煤产量-1750-约-500-万",
-      "photo": "S11",
+      "photo": "S13",
       "move": "in",
       "items": [
         {
@@ -314,7 +394,7 @@
         },
         {
           "type": "h",
-          "text": "一百年 ×12",
+          "text": "每一台省了，台数涨得更快",
           "at": 2
         },
         {
@@ -333,8 +413,8 @@
     },
     {
       "id": "elastic",
-      "name": "看用量涨多猛；价格降到-1/4-用量",
-      "photo": "S11",
+      "name": "看用量涨多猛；价格降到-1/4：用量",
+      "photo": "S13",
       "move": "in",
       "items": [
         {
@@ -349,8 +429,13 @@
         },
         {
           "type": "h",
-          "text": "用量 ×10 → 花费 ×2.5（多花）",
+          "text": "用量 ×4 → 打平",
           "at": 2
+        },
+        {
+          "type": "h",
+          "text": "用量 ×10 → 花费 ×2.5（多花）",
+          "at": 3
         }
       ],
       "box": "ML",
@@ -359,7 +444,7 @@
     {
       "id": "google",
       "name": "AI-是哪种：谷歌月处理-token",
-      "photo": "S12",
+      "photo": "S14",
       "move": "in",
       "items": [
         {
@@ -384,7 +469,7 @@
     {
       "id": "pertask",
       "name": "一件事本身也越用越多：DeepSee",
-      "photo": "S13",
+      "photo": "S15",
       "move": "in",
       "items": [
         {
@@ -404,12 +489,12 @@
     {
       "id": "nadella",
       "name": "2025.1-DeepSeek-引发",
-      "photo": "S14",
+      "photo": "S16",
       "move": "in",
       "items": [
         {
           "type": "h",
-          "text": "2025.1 担心：算力要不了那么多了？",
+          "text": "2025.1 担心：算力用不了那么多？",
           "at": 0
         },
         {
@@ -429,8 +514,8 @@
     },
     {
       "id": "maxplan",
-      "name": "普通人身上：200-美元包月有人跑掉",
-      "photo": "S15",
+      "name": "200-美元包月有人跑掉几万美元-加",
+      "photo": "S17",
       "move": "in",
       "items": [
         {
@@ -445,8 +530,9 @@
         },
         {
           "type": "h",
-          "text": "一划算，用法就变了",
-          "at": 2
+          "text": "“由俭入奢易，由奢入俭难”",
+          "at": 2,
+          "quote": true
         }
       ],
       "box": "MR",
@@ -455,7 +541,7 @@
     {
       "id": "salt",
       "name": "不是所有降价都越花越多；盐降价不会多",
-      "photo": "S16",
+      "photo": "S18",
       "move": "in",
       "items": [
         {
@@ -470,7 +556,7 @@
         },
         {
           "type": "h",
-          "text": "煤 · 电 · AI",
+          "text": "煤 · 流量 · AI",
           "at": 2
         }
       ],
@@ -480,7 +566,7 @@
     {
       "id": "ask",
       "name": "多问一句：便宜了我会不会用得更多；会",
-      "photo": "S17",
+      "photo": "S19",
       "move": "in",
       "items": [
         {
@@ -490,12 +576,12 @@
         },
         {
           "type": "h",
-          "text": "别只盯单价，定一个总账",
+          "text": "别盯单价，算总账",
           "at": 1
         },
         {
           "type": "h",
-          "text": "一个月最多花多少，到了就停",
+          "text": "一个月最多花多少 · 一件事一共花多少",
           "at": 2
         }
       ],
@@ -505,7 +591,7 @@
     {
       "id": "worth",
       "name": "多花不一定坏；煤换回工业革命；看多花",
-      "photo": "S10",
+      "photo": "S12",
       "move": "in",
       "items": [
         {
@@ -519,18 +605,19 @@
     },
     {
       "id": "back",
-      "name": "回到那-75%：没让账单变薄；AI-",
+      "name": "我这周把-AI-账单按一件事重算；回",
       "photo": "S01",
       "move": "in",
       "items": [
         {
           "type": "h",
-          "text": "那 75%",
-          "at": 0
+          "text": "这周：AI 账单按“一件事”重算一遍",
+          "at": 0,
+          "quote": true
         },
         {
           "type": "h",
-          "text": "没让账单变薄",
+          "text": "那 75%，没让账单变薄",
           "at": 1
         },
         {
@@ -546,7 +633,7 @@
     {
       "id": "next",
       "name": "下期钩子：AI-干不了又必须有人干的",
-      "photo": "S18",
+      "photo": "S20",
       "move": "in",
       "items": [
         {
