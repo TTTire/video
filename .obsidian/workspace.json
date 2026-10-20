@@ -213,6 +213,8 @@
   },
   "active": "1f656375525e55dd",
   "lastOpenFiles": [
+    "工具/video-render/out/ai02-photo.mp4",
+    "工具/video-render/out/ai02-photo.mp4.e3334a65-52a8-43a5-940f-22db38245fb2.remotion-in-progress",
     "进行中/AI时事02-AI越便宜你花得越多/AI越便宜你花得越多-剪辑说明.md",
     "工具/video-render/out/ai02-full.log",
     "工具/video-render/out/_check/ai02-chk.jpg",
@@ -233,7 +235,6 @@
     "进行中/AI时事02-AI越便宜你花得越多/_work/srt_cues.json",
     "进行中/AI时事02-AI越便宜你花得越多/_work",
     "工具/video-render/public/ai02/photos",
-    "工具/video-render/public/ai02",
     "进行中/AI时事02-AI越便宜你花得越多/AI越便宜你花得越多-口播逐字稿.md",
     "conflict-files-obsidian-git.md",
     "进行中/AI时事02-AI越便宜你花得越多/AI越便宜你花得越多-口播逐字稿-剪映版.md",
@@ -257,7 +258,6 @@
     "copilot/skills/openartifacts-publish/themes/research-memo.md",
     "copilot/skills/copilot-fetch-x/SKILL.md",
     "copilot/skills/copilot-youtube-transcript/SKILL.md",
-    "copilot/skills/copilot-read-pdf/SKILL.md",
-    "copilot/skills/copilot-web-fetch/SKILL.md"
+    "copilot/skills/copilot-read-pdf/SKILL.md"
   ]
 }
