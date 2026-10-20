@@ -142,7 +142,7 @@ Use the uploaded portrait as the sole identity reference for the same adult host
 | S19 | 和 S01 同一个人、同一张办公桌，傍晚台灯暖光，他把笔记本合上一半，拿笔在一张空白便签上写东西（字迹不可见），神情平静笃定；主体靠右                  | ML    | 26     |
 | S20 | 深夜书桌上，台灯照着一只人手正在一叠打印稿上用红笔圈画（纸上文字全部虚化不可读），旁边笔记本屏幕暗着；主体在下半部                            | TW    | 29     |
 
-渲染工程：`工具/video-render/src/ai02/`（写稿阶段已建期：场景表、按字数估算的时间轴、占位图都已就位，骨架拼图 `out/ai02-sheet.jpg` 已渲过；photo.json 还是骨架，阶梯 / 公式卡 / 表格三种图表等出图后再写进 `src/ai02/custom.tsx`）。
+渲染工程：`工具/video-render/src/ai02/`（已完成：20 张图入库、时间轴按 `AI便宜.srt` 对齐 190 句、photo.json 正式版、阶梯 / 公式卡 / 表格图表在 `src/ai02/custom.tsx`；成片和剪辑说明见选题文件夹）。
 
 ## 事实核对
 

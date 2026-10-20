@@ -23,6 +23,7 @@ type StepCfg = {
   hideAt?: number;                            // 到哪一句整体淡出
   note?: string;                              // 右下角注释（示意 / 口径）
   extra?: {text: string; at: number};         // 台阶下面再补一行（Anthropic 收入 ×12）
+  backdrop?: number;                          // 图表在时把整张照片压暗多少（人脸多的图用）
 };
 const StepChart: React.FC<P & StepCfg> = (p) => {
   const C = useC();
@@ -37,9 +38,11 @@ const StepChart: React.FC<P & StepCfg> = (p) => {
   const stairsW = hasFinal ? p.w * 0.6 : p.w;
   const stepW = stairsW / n;
   const blockW = Math.min(300, stepW - 40);
-  const hMin = 130, hMax = 430;
+  const hMin = 130, hMax = Math.min(430, base - 280);   // 最高一级的数值标签不碰到顶部标题
+  const bd = p.backdrop ? grow(f, t0, 20) * hide : 0;
   return (
     <div style={{opacity: hide}}>
+      {bd > 0 && <div style={{position: 'absolute', inset: 0, background: C.bg, opacity: (p.backdrop ?? 0) * bd}} />}
       <Box x={p.x} y={130} w={p.w}>
         <FlyIn at={t0} dir="up" dist={60}><T size={34} style={{letterSpacing: 4}}>{p.title}</T></FlyIn>
       </Box>
@@ -90,7 +93,7 @@ const StepChart: React.FC<P & StepCfg> = (p) => {
           </FlyIn>
         </Box>
       )}
-      {p.note && <div style={{position: 'absolute', left: p.x, top: base + 56, fontFamily: C.font, fontSize: 24, color: `${C.dim}99`, opacity: grow(f, t0 + 20, 20)}}>{p.note}</div>}
+      {p.note && <div style={{position: 'absolute', left: p.x, width: p.w, top: base + 56, textAlign: 'right', fontFamily: C.font, fontSize: 24, color: `${C.dim}99`, opacity: grow(f, t0 + 20, 20)}}>{p.note}</div>}
     </div>
   );
 };
@@ -104,7 +107,7 @@ const ChinaSteps: React.FC<P> = (p) => (
 
 // 每人每月用掉的流量：205 MB → 18 GB，×90（S07 地铁，第 9 句淡出让位给信通院那句）
 const TrafficSteps: React.FC<P> = (p) => (
-  <StepChart {...p} title="每人每月用掉的手机流量" titleAt={6} x={260} w={1260} base={660} hideAt={9}
+  <StepChart {...p} title="每人每月用掉的手机流量" titleAt={6} x={260} w={1260} base={660} hideAt={9} backdrop={0.5}
     rows={[{label: '2014 年', value: '205 MB', at: 6}, {label: '2024 年', value: '18 GB', at: 7}]}
     final={{text: '×90', sub: '十年', at: 8}} note="来源：工信部通信业统计公报" />
 );
@@ -116,13 +119,12 @@ const CoalSteps: React.FC<P> = (p) => {
   const dimIn = p.step >= 6 ? grow(f, at(p, 6), 20) : 0;
   return (
     <>
-      <StepChart {...p} title="英国一年挖出的煤" titleAt={0} x={900} w={SAFE_RIGHT_X - 900} base={600} hideAt={6}
+      <StepChart {...p} title="英国一年挖出的煤" titleAt={0} x={90} w={780} base={600} hideAt={6}
         rows={[{label: '1750 年', value: '≈520 万吨', at: 1}, {label: '1850 年', value: '≈6250 万吨', at: 2}]}
         final={{text: '×12', sub: '一百年', at: 3}} note="来源：Lancaster University · 历史估算" />
       {p.step >= 4 && p.step < 6 && (
-        <Box x={900} y={700} w={SAFE_RIGHT_X - 900}>
-          <FlyIn at={at(p, 4)} dir="up" dist={60}><H size={44} color={C.dim}>每一台是省了</H></FlyIn>
-          {p.step >= 5 && <FlyIn at={at(p, 5)} dir="up" dist={60}><H size={52} color={C.white}>可台数涨得<span style={{color: C.gold}}>更快</span></H></FlyIn>}
+        <Box x={90} y={690} w={780}>
+          <FlyIn at={at(p, 4)} dir="up" dist={60}><H size={46} color={C.white}><span style={{color: C.dim}}>每一台是省了</span>{p.step >= 5 && <>，可台数涨得<span style={{color: C.gold}}>更快</span></>}</H></FlyIn>
         </Box>
       )}
       {dimIn > 0 && <div style={{position: 'absolute', inset: 0, background: C.bg, opacity: 0.62 * dimIn}} />}

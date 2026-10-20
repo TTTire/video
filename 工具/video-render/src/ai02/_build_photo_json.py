@@ -78,7 +78,7 @@ S.append({"id": "formula", "name": "公式卡-账单=单价×用量", "photo": "
 S.append({"id": "liuyong", "name": "北大创投课刘勇-看做完一件事的总成本", "photo": "S08", "move": "in", "origin": "ML", "box": "TR", "grad": "right", "items": [
     t("上个月 · 北大创投课 · 刘勇老师", 0),
     h("AI 的成本不能只看 token 的单价", 2, quote=True, size=48),
-    h("要看做完一件能验收的事，一共花了多少", 3, quote=True, size=48),
+    h("要看做完一件能验收的事，\n一共花了多少", 3, quote=True, size=48),
     h("AI 做了 **80%**，剩下 20% 要人来补", 5, size=52),
     t("那人工也得算进去", 6),
 ]})
@@ -103,17 +103,16 @@ S.append({"id": "watt", "name": "瓦特省煤三分之二-杰文斯说正好相�
     h("瓦特改良过的蒸汽机，干同样的活", 1, size=48, color="dim", until=3),
     h("省下了 **三分之二以上** 的煤", 2, size=60, until=3),
     h("可杰文斯说：正好相反", 3, size=62, sfx="impact"),
-    t("他的原话翻译过来，大意是：", 4),
-    h("以为节省燃料就等于少烧燃料，是彻底搞混了", 5, quote=True, size=46),
+    h("以为节省燃料就等于少烧燃料，\n是彻底搞混了", 5, quote=True, size=46),
     {"type": "stamp", "text": "事实恰恰相反", "at": 6, "size": 60, "rotate": -4},
 ]})
 S.append({"id": "spread", "name": "省煤就划算-矿井到纺织厂火车轮船", "photo": "S12", "move": "in", "origin": "MC", "items": [
-    h("蒸汽机省煤了 → 用它就 **划算** 了", 0, size=60),
+    h("蒸汽机省煤了 → 用它就划算了", 0, size=60),
     t("以前只有矿井舍得装；后来 ——", 2),
-    {"type": "nums", "at": 3, "size": 64, "items": [{"value": "矿井", "color": "dim"}, {"value": "纺织厂"}, {"value": "铁厂"}, {"value": "火车"}, {"value": "轮船"}]},
-    h("全都装上了", 4, size=56, sfx="impact"),
+    h("矿井 → 纺织厂 → 铁厂 → 火车 → 轮船", 3, size=54),
+    h("**全都装上了**", 4, size=72, sfx="impact"),
 ]})
-S.append({"id": "coal", "name": "阶梯-英国煤产量百年12倍-定义杰文斯悖论", "photo": "S13", "move": "in", "origin": "ML", "box": "MW", "grad": "right", "items": [
+S.append({"id": "coal", "name": "阶梯-英国煤产量百年12倍-定义杰文斯悖论", "photo": "S13", "move": "in", "origin": "MR", "box": "MW", "grad": "left", "items": [
     {"type": "custom", "name": "coalSteps"},
     {"type": "big", "text": "杰文斯悖论", "at": 6, "size": 130, "font": "song", "sfx": "impact"},
     h("效率越高，总消耗反而越多", 7, size=60),
@@ -162,7 +161,7 @@ S.append({"id": "salt", "name": "盐降价不会多吃-只发生在能冒出新�
     h("便宜一点，就能冒出 **新用法**", 5, size=66, sfx="impact"),
     {"type": "nums", "at": 6, "size": 72, "items": [{"value": "煤", "color": "dim"}, {"value": "流量", "color": "dim"}, {"value": "AI", "color": "gold"}]},
 ]})
-S.append({"id": "ask", "name": "多问一句-别盯单价算总账", "photo": "S19", "move": "in", "origin": "MR", "box": "TL", "grad": "left", "items": [
+S.append({"id": "ask", "name": "多问一句-别盯单价算总账", "photo": "S19", "move": "in", "origin": "MR", "box": {"x": 340, "y": 130, "w": 820}, "grad": "left", "items": [
     t("所以下次再看到降价", 0, until=3),
     h("~~先算能省多少~~", 1, size=50, color="dim", until=3),
     t("多问一句：", 2, until=3),

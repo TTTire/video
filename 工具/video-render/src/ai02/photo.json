@@ -469,7 +469,7 @@
     },
     {
      "type": "h",
-     "text": "要看做完一件能验收的事，一共花了多少",
+     "text": "要看做完一件能验收的事，\n一共花了多少",
      "at": 3,
      "quote": true,
      "size": 48
@@ -623,13 +623,8 @@
      "sfx": "impact"
     },
     {
-     "type": "t",
-     "text": "他的原话翻译过来，大意是：",
-     "at": 4
-    },
-    {
      "type": "h",
-     "text": "以为节省燃料就等于少烧燃料，是彻底搞混了",
+     "text": "以为节省燃料就等于少烧燃料，\n是彻底搞混了",
      "at": 5,
      "quote": true,
      "size": 46
@@ -652,7 +647,7 @@
    "items": [
     {
      "type": "h",
-     "text": "蒸汽机省煤了 → 用它就 **划算** 了",
+     "text": "蒸汽机省煤了 → 用它就划算了",
      "at": 0,
      "size": 60
     },
@@ -662,33 +657,16 @@
      "at": 2
     },
     {
-     "type": "nums",
+     "type": "h",
+     "text": "矿井 → 纺织厂 → 铁厂 → 火车 → 轮船",
      "at": 3,
-     "size": 64,
-     "items": [
-      {
-       "value": "矿井",
-       "color": "dim"
-      },
-      {
-       "value": "纺织厂"
-      },
-      {
-       "value": "铁厂"
-      },
-      {
-       "value": "火车"
-      },
-      {
-       "value": "轮船"
-      }
-     ]
+     "size": 54
     },
     {
      "type": "h",
-     "text": "全都装上了",
+     "text": "**全都装上了**",
      "at": 4,
-     "size": 56,
+     "size": 72,
      "sfx": "impact"
     }
    ]
@@ -698,9 +676,9 @@
    "name": "阶梯-英国煤产量百年12倍-定义杰文斯悖论",
    "photo": "S13",
    "move": "in",
-   "origin": "ML",
+   "origin": "MR",
    "box": "MW",
-   "grad": "right",
+   "grad": "left",
    "items": [
     {
      "type": "custom",
@@ -1013,7 +991,11 @@
    "photo": "S19",
    "move": "in",
    "origin": "MR",
-   "box": "TL",
+   "box": {
+    "x": 340,
+    "y": 130,
+    "w": 820
+   },
    "grad": "left",
    "items": [
     {
