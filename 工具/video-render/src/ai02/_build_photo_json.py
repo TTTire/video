@@ -117,7 +117,7 @@ S.append({"id": "coal", "name": "阶梯-英国煤产量百年12倍-定义杰文�
     {"type": "big", "text": "杰文斯悖论", "at": 6, "size": 130, "font": "song", "sfx": "impact"},
     h("效率越高，总消耗反而越多", 7, size=60),
 ]})
-S.append({"id": "elastic", "name": "表格-价格降到1/4-用量×2×4×10", "photo": "S13", "move": "out", "blur": 8, "dim": 0.5, "center": True, "enterSfx": None, "items": [
+S.append({"id": "elastic", "name": "表格-价格降到四分之一-用量×2×4×10", "photo": "S13", "move": "out", "blur": 8, "dim": 0.5, "center": True, "enterSfx": None, "items": [
     t("它会不会发生，就看一件事：", 0, until=2),
     h("便宜了以后，用量涨得有多猛", 1, size=64, until=2),
     {"type": "custom", "name": "elasticTable"},
