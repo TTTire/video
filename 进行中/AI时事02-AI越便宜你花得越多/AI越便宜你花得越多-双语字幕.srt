@@ -1,0 +1,949 @@
+1
+00:00:00,533 --> 00:00:01,633
+10 月 8 号早上
+Morning of October 8
+
+2
+00:00:01,633 --> 00:00:04,566
+我照常一边冲咖啡一边刷 AI 新闻
+Making coffee, scrolling AI news as always
+
+3
+00:00:04,666 --> 00:00:07,800
+刷到一条Anthropic 发了新模型
+when I saw Anthropic had released a new model
+
+4
+00:00:08,166 --> 00:00:09,666
+Claude Haiku 5点5
+Claude Haiku 5.5
+
+5
+00:00:09,933 --> 00:00:11,766
+官方说平均跑下来
+They said on average
+
+6
+00:00:11,766 --> 00:00:14,133
+比上一代便宜了大约 百分之75
+it's about 75% cheaper than the last one
+
+7
+00:00:14,366 --> 00:00:16,533
+我第一反应是好事啊
+My first thought was great news
+
+8
+00:00:16,533 --> 00:00:18,000
+账单要变薄了
+my bill's getting thinner
+
+9
+00:00:18,066 --> 00:00:19,800
+结果就在同一个星期
+Then that same week
+
+10
+00:00:19,833 --> 00:00:22,200
+同一家公司又上了一个新功能
+the same company rolled out a new feature
+
+11
+00:00:22,333 --> 00:00:24,566
+一句话就能拉起 1000 个 AI
+where one line could spin up 1,000 AI agents
+
+12
+00:00:24,666 --> 00:00:26,133
+同时帮你干活
+all working for you at once
+
+13
+00:00:26,200 --> 00:00:28,000
+他们自己在说明里提醒
+Even their own docs warn you
+
+14
+00:00:28,000 --> 00:00:30,266
+这个功能会消耗大量的 token
+this feature burns through a ton of tokens
+
+15
+00:00:30,433 --> 00:00:31,600
+token 是什么
+So what's a token
+
+16
+00:00:31,666 --> 00:00:34,100
+国家数据局有个说法挺形象
+China's National Data Administration put it well
+
+17
+00:00:34,166 --> 00:00:36,333
+它就像互联网时代的流量
+it's like data traffic in the internet era
+
+18
+00:00:36,533 --> 00:00:38,800
+AI 读一段字写一段字
+AI reads some text, writes some text
+
+19
+00:00:38,800 --> 00:00:40,100
+都按它算钱
+all billed by the token
+
+20
+00:00:40,366 --> 00:00:41,566
+2024 年初
+Early 2024
+
+21
+00:00:41,600 --> 00:00:43,600
+咱们国家一天用掉的 token
+the tokens we used nationwide each day
+
+22
+00:00:43,600 --> 00:00:44,700
+是 1000 亿
+were 100 billion
+
+23
+00:00:44,933 --> 00:00:47,600
+到今年 3 月是 140 万亿
+By this March, it hit 140 trillion
+
+24
+00:00:47,800 --> 00:00:49,566
+两年一千多倍
+More than 1,000 times in two years
+
+25
+00:00:49,566 --> 00:00:52,200
+单价一直在掉用量一直在涨
+Unit price kept falling, usage kept climbing
+
+26
+00:00:52,366 --> 00:00:54,166
+掏出去的钱也跟着涨
+and so did the money spent
+
+27
+00:00:54,400 --> 00:00:56,600
+东西越便宜反而花得越多
+The cheaper it got, the more we spent
+
+28
+00:00:56,633 --> 00:00:58,300
+这事听着别扭
+Sounds off, I know
+
+29
+00:00:58,366 --> 00:00:59,966
+可早在一百六十年前
+But 160 years ago
+
+30
+00:00:59,966 --> 00:01:01,966
+就有人把它写进了书里
+someone had already put it in a book
+
+31
+00:01:02,200 --> 00:01:03,733
+这里是像素呼吸
+This is Pixel Breath
+
+32
+00:01:03,866 --> 00:01:05,300
+今天聊聊
+Today, let's talk about
+
+33
+00:01:05,333 --> 00:01:08,133
+AI 越便宜你为什么花得越多
+why the cheaper AI gets, the more you spend
+
+34
+00:01:09,266 --> 00:01:10,566
+先说句公道话
+To be fair
+
+35
+00:01:10,600 --> 00:01:13,366
+觉得降价就能省钱一点都不傻
+thinking a price cut saves money isn't dumb at all
+
+36
+00:01:13,733 --> 00:01:16,100
+菜便宜了买菜就花得少
+Veggies get cheaper, you spend less
+
+37
+00:01:16,333 --> 00:01:19,300
+油价降了加满一箱就少掏几十块
+Gas gets cheaper, a full tank costs a bit less
+
+38
+00:01:19,466 --> 00:01:20,633
+但这笔账里
+But that math
+
+39
+00:01:20,633 --> 00:01:22,733
+藏着一个没说出口的前提
+hides an unspoken assumption
+
+40
+00:01:23,133 --> 00:01:24,466
+你买的量不变
+that you buy the same amount
+
+41
+00:01:24,866 --> 00:01:27,566
+菜还是那几样油还是一箱
+Same veggies, same tank of gas
+
+42
+00:01:27,666 --> 00:01:29,866
+因为你本来就只需要那么多
+because that's all you ever needed
+
+43
+00:01:30,000 --> 00:01:32,733
+可有些东西一便宜量就变了
+But for some things, cheaper means more
+
+44
+00:01:32,800 --> 00:01:35,133
+这事我们其实都经历过一回
+We've actually all been through this
+
+45
+00:01:35,233 --> 00:01:36,600
+就是手机流量
+with mobile data
+
+46
+00:01:36,966 --> 00:01:39,300
+2014 年 4G 刚出来那会儿
+Back in 2014, when 4G just arrived
+
+47
+00:01:39,366 --> 00:01:41,666
+新华社采访过一位徐先生
+Xinhua interviewed a man named Xu
+
+48
+00:01:41,833 --> 00:01:44,933
+为了省流量微博关掉自动加载图片
+to save data he turned off photo autoload on Weibo
+
+49
+00:01:45,133 --> 00:01:47,266
+微信关掉视频自动播放
+turned off video autoplay on WeChat
+
+50
+00:01:47,400 --> 00:01:49,900
+到哪儿第一件事都是要 WiFi 密码
+and always asked for the WiFi password
+
+51
+00:01:50,033 --> 00:01:51,600
+我估计你也干过
+I bet you've done that too
+
+52
+00:01:51,800 --> 00:01:54,433
+后来提速降费到 2019 年
+Then came speed-ups and price cuts, and by 2019
+
+53
+00:01:54,433 --> 00:01:55,633
+手机流量的资费
+mobile data rates
+
+54
+00:01:55,633 --> 00:01:57,900
+比 2014 年降了九成多
+had dropped over 90% from 2014
+
+55
+00:01:58,133 --> 00:01:59,800
+那你省下话费了吗
+So did you save on your bill
+
+56
+00:02:00,000 --> 00:02:01,200
+大多数人没有
+Most people didn't
+
+57
+00:02:01,266 --> 00:02:03,333
+因为你开始刷短视频了
+because you started scrolling short videos
+
+58
+00:02:03,533 --> 00:02:07,466
+2014 年每人每月平均用 205 兆流量
+In 2014 the average person used 205 MB a month
+
+59
+00:02:07,566 --> 00:02:09,733
+到 2024 年是 18 个 G
+by 2024 it was 18 GB
+
+60
+00:02:09,800 --> 00:02:11,333
+差不多涨了 90 倍
+roughly 90 times as much
+
+61
+00:02:11,566 --> 00:02:13,766
+中国信通院 2019 年的报告
+A 2019 CAICT report
+
+62
+00:02:13,766 --> 00:02:14,866
+写得很直白
+put it bluntly
+
+63
+00:02:15,133 --> 00:02:18,333
+流量用得太猛人均话费没降多少
+usage grew so fast your bill barely dropped
+
+64
+00:02:18,533 --> 00:02:21,200
+所以账单其实是一道乘法
+So your bill is really just multiplication
+
+65
+00:02:21,366 --> 00:02:22,800
+单价乘以用量
+unit price times usage
+
+66
+00:02:22,933 --> 00:02:24,633
+单价是厂商定的
+The unit price is set by the company
+
+67
+00:02:24,633 --> 00:02:26,466
+用量是你自己定的
+The usage is set by you
+
+68
+00:02:26,633 --> 00:02:29,000
+降价新闻只告诉了你前一半
+A price-cut headline tells half the story
+
+69
+00:02:29,233 --> 00:02:31,466
+上个月我去听北大的创投课
+Last month I took a VC class at Peking University
+
+70
+00:02:31,466 --> 00:02:33,100
+刘勇老师说得更透
+Liu Yong put it more plainly
+
+71
+00:02:33,233 --> 00:02:35,866
+AI 的成本不能只看 token 的单价
+you can't judge AI's cost just by the token price
+
+72
+00:02:35,966 --> 00:02:38,200
+要看做完一件能验收的事
+but by what a finished, approved task
+
+73
+00:02:38,200 --> 00:02:39,500
+一共花了多少
+costs you in total
+
+74
+00:02:39,733 --> 00:02:42,866
+AI 做了八成剩下两成要人来补
+AI does 80%, a person covers the other 20%
+
+75
+00:02:42,866 --> 00:02:44,666
+那人工也得算进去
+So that labor has to count too
+
+76
+00:02:44,800 --> 00:02:46,933
+AI 现在就是当年的流量
+AI right now is just like data back then
+
+77
+00:02:46,966 --> 00:02:49,000
+说实话我自己就是这样
+Honestly, I'm exactly like that
+
+78
+00:02:49,033 --> 00:02:50,066
+我英语一般
+my English is so-so
+
+79
+00:02:50,066 --> 00:02:52,500
+上个月小米发了一篇英文论文
+Last month Xiaomi put out a paper in English
+
+80
+00:02:52,566 --> 00:02:53,933
+我直接丢给 AI
+so I just handed it to AI
+
+81
+00:02:53,966 --> 00:02:56,100
+让它写了一份精读笔记
+and had it write up detailed notes
+
+82
+00:02:56,333 --> 00:02:58,533
+这种用法放在 AI 贵的时候
+This kind of use, back when AI was pricey
+
+83
+00:02:58,633 --> 00:02:59,966
+没几个人舍得
+hardly anyone bothered with it
+
+84
+00:03:00,233 --> 00:03:02,000
+所以真正要问的是
+So the real question is
+
+85
+00:03:02,066 --> 00:03:04,733
+便宜了以后用量会涨多少
+once it's cheaper, how much will usage grow
+
+86
+00:03:05,766 --> 00:03:08,200
+1865 年英国经济学家杰文斯
+In 1865 the British economist Jevons
+
+87
+00:03:08,200 --> 00:03:10,366
+写了一本书叫煤炭问题
+wrote a book called The Coal Question
+
+88
+00:03:10,866 --> 00:03:13,600
+那会儿英国人担心煤迟早烧光
+Back then Britons worried coal would run out
+
+89
+00:03:13,733 --> 00:03:15,200
+很多人觉得不用慌
+but many weren't worried
+
+90
+00:03:15,566 --> 00:03:18,966
+蒸汽机越来越省煤问题自己就解决了
+since steam engines would get more efficient and fix it
+
+91
+00:03:19,066 --> 00:03:20,500
+这话有依据
+There was evidence for that
+
+92
+00:03:20,800 --> 00:03:23,766
+瓦特改良过的蒸汽机干同样的活
+Watt's improved engine did the same work
+
+93
+00:03:23,966 --> 00:03:26,733
+比老式的省下了三分之二以上的煤
+and cut coal use by more than two-thirds
+
+94
+00:03:26,833 --> 00:03:29,266
+可杰文斯说正好相反
+But Jevons said it was just the opposite
+
+95
+00:03:29,466 --> 00:03:31,766
+他的原话翻译过来大意是
+Translated, his own words were roughly this
+
+96
+00:03:31,866 --> 00:03:34,566
+以为节省燃料就等于少烧燃料
+to think saving fuel means burning less
+
+97
+00:03:34,566 --> 00:03:37,366
+是彻底搞混了事实恰恰相反
+is a total confusion, and the truth is the opposite
+
+98
+00:03:37,533 --> 00:03:39,933
+说白了蒸汽机省煤了
+Basically, once steam engines saved coal
+
+99
+00:03:39,933 --> 00:03:41,500
+用它就划算了
+they became worth using
+
+100
+00:03:41,533 --> 00:03:43,400
+以前只有矿井舍得装
+At first only mines put them in
+
+101
+00:03:43,433 --> 00:03:46,366
+后来纺织厂铁厂火车轮船
+then textile mills, ironworks, trains, and ships
+
+102
+00:03:46,433 --> 00:03:47,566
+全都装上了
+all got one too
+
+103
+00:03:47,566 --> 00:03:49,166
+英国一年挖的煤
+The coal Britain mined each year
+
+104
+00:03:49,200 --> 00:03:51,533
+1750 年大约 500 万吨
+was about 5 million tons in 1750
+
+105
+00:03:51,733 --> 00:03:54,133
+到 1850 年是 6000 多万吨
+and over 60 million tons by 1850
+
+106
+00:03:54,466 --> 00:03:56,066
+一百年涨了十多倍
+more than tenfold in a century
+
+107
+00:03:56,233 --> 00:03:57,766
+每一台是省了
+Sure, each engine saved coal
+
+108
+00:03:57,800 --> 00:03:59,366
+可台数涨得更快
+but their numbers grew faster
+
+109
+00:03:59,633 --> 00:04:02,533
+后来人们就把这叫作杰文斯悖论
+Later, people called this the Jevons paradox
+
+110
+00:04:02,833 --> 00:04:05,200
+效率越高总消耗反而越多
+The more efficient, the more use climbs instead
+
+111
+00:04:05,566 --> 00:04:08,133
+它会不会发生就看一件事
+Whether that happens comes down to one thing
+
+112
+00:04:08,366 --> 00:04:10,900
+便宜了以后用量涨得有多猛
+once it's cheaper, how much usage jumps
+
+113
+00:04:11,200 --> 00:04:12,100
+打个比方
+Let's say
+
+114
+00:04:12,133 --> 00:04:14,266
+价格降到原来的四分之一
+the price drops to a quarter
+
+115
+00:04:14,266 --> 00:04:17,366
+用量只翻一倍总花费砍掉一半
+If usage only doubles, spending is halved
+
+116
+00:04:17,366 --> 00:04:18,966
+这才是真省钱
+Now that's real savings
+
+117
+00:04:19,266 --> 00:04:21,700
+用量涨四倍正好打平
+If usage quadruples, you break even exactly
+
+118
+00:04:21,866 --> 00:04:23,266
+用量涨到十倍
+If usage goes up tenfold
+
+119
+00:04:23,266 --> 00:04:25,533
+总花费就变成了原来的两倍半
+spending ends up at 2.5 times what it was
+
+120
+00:04:25,833 --> 00:04:27,366
+那 AI 是哪一种
+So which one is AI
+
+121
+00:04:27,833 --> 00:04:29,600
+谷歌每个月处理的 token
+Google's monthly token count
+
+122
+00:04:29,600 --> 00:04:31,566
+两年前是 9点7 万亿
+was 9.7 trillion two years ago
+
+123
+00:04:31,833 --> 00:04:34,566
+今年 5 月超过了 3200 万亿
+and by this May it topped 3,200 trillion
+
+124
+00:04:34,800 --> 00:04:36,466
+两年涨了三百多倍
+up more than 300 times in two years
+
+125
+00:04:36,566 --> 00:04:37,766
+钱也跟着涨
+The money went up too
+
+126
+00:04:37,933 --> 00:04:39,533
+光是 Anthropic 一家
+Just Anthropic alone
+
+127
+00:04:39,533 --> 00:04:41,466
+去年的收入就涨了 12 倍
+saw its revenue jump 12 times last year
+
+128
+00:04:41,633 --> 00:04:43,666
+而且不光是事情变多了
+And it's not just more things happening
+
+129
+00:04:43,666 --> 00:04:45,933
+一件事本身也越用越多
+each task itself is using more too
+
+130
+00:04:46,166 --> 00:04:47,933
+DeepSeek 的一个便宜模型
+DeepSeek has a cheap model
+
+131
+00:04:47,933 --> 00:04:49,766
+新版本答题更准了
+the new version got more accurate
+
+132
+00:04:49,933 --> 00:04:52,466
+可每道题的成本反而涨了两倍半
+but the cost per question actually rose 2.5 times
+
+133
+00:04:52,633 --> 00:04:55,300
+因为现在的 AI 会多想一会儿
+Because today's AI thinks a little longer
+
+134
+00:04:55,400 --> 00:04:57,800
+想得越久用掉的 token 就越多
+the longer it thinks, the more tokens it burns
+
+135
+00:04:58,066 --> 00:04:59,066
+去年 1 月
+Last January
+
+136
+00:04:59,066 --> 00:05:01,066
+DeepSeek 的便宜模型一出来
+when DeepSeek's cheap model came out
+
+137
+00:05:01,066 --> 00:05:03,966
+大家担心以后用不了那么多算力
+people worried we'd need way less computing power
+
+138
+00:05:04,166 --> 00:05:05,600
+微软的 CEO 纳德拉
+Microsoft CEO Satya Nadella
+
+139
+00:05:05,600 --> 00:05:07,533
+那天凌晨发了一条推文
+posted a tweet in the wee hours that day
+
+140
+00:05:07,800 --> 00:05:09,600
+杰文斯悖论又来了
+Jevons paradox strikes again
+
+141
+00:05:09,666 --> 00:05:12,566
+他说AI 越高效越容易用
+He said as AI gets more efficient and accessible
+
+142
+00:05:12,633 --> 00:05:14,066
+用量就会暴涨
+we'll see its use skyrocket
+
+143
+00:05:14,200 --> 00:05:16,800
+变成一样我们怎么都用不够的东西
+turning it into a commodity we just can't get enough of
+
+144
+00:05:17,233 --> 00:05:19,933
+他是卖算力的当然希望这样
+He sells compute, so of course he'd want that
+
+145
+00:05:20,066 --> 00:05:22,700
+但这两年的数确实站在他那边
+But the numbers these past two years back him up
+
+146
+00:05:22,866 --> 00:05:24,033
+Anthropic 有个
+Anthropic has a
+
+147
+00:05:24,033 --> 00:05:25,666
+200 美元的包月套餐
+$200 monthly plan
+
+148
+00:05:25,833 --> 00:05:27,166
+去年有个用户
+Last year one user
+
+149
+00:05:27,166 --> 00:05:30,166
+在这个套餐上跑掉了几万美元的用量
+burned through tens of thousands of dollars in usage
+
+150
+00:05:30,333 --> 00:05:32,466
+逼得他们加了每周限额
+forcing them to add weekly limits
+
+151
+00:05:32,866 --> 00:05:34,100
+司马光说过
+Sima Guang once said
+
+152
+00:05:34,133 --> 00:05:36,800
+由俭入奢易由奢入俭难
+thrift to luxury is easy, luxury to thrift is hard
+
+153
+00:05:37,000 --> 00:05:38,566
+用法一旦被撑大
+Once your usage stretches wider
+
+154
+00:05:38,566 --> 00:05:40,400
+就很难再缩回去了
+it's hard to shrink it back down
+
+155
+00:05:41,466 --> 00:05:43,366
+那是不是所有东西降价
+So does that mean every price cut
+
+156
+00:05:43,366 --> 00:05:44,966
+最后都会越花越多
+always ends up costing you more
+
+157
+00:05:45,200 --> 00:05:46,000
+也不是
+Not always
+
+158
+00:05:46,266 --> 00:05:48,700
+盐降价一半你不会多吃一倍
+Salt at half price, you won't eat twice as much
+
+159
+00:05:48,866 --> 00:05:51,400
+杰文斯悖论只发生在一种东西上
+The Jevons paradox only hits one kind of thing
+
+160
+00:05:51,566 --> 00:05:54,100
+便宜一点就能冒出新用法
+where a little cheaper sparks new uses
+
+161
+00:05:54,433 --> 00:05:56,666
+煤是这样流量是这样
+Coal was like that, so was data
+
+162
+00:05:56,666 --> 00:05:58,366
+现在的 AI 也是这样
+and now AI is too
+
+163
+00:05:58,566 --> 00:06:00,433
+所以下次再看到降价
+So next time you see a price cut
+
+164
+00:06:00,433 --> 00:06:02,166
+先别急着算能省多少
+don't rush to count the savings
+
+165
+00:06:02,266 --> 00:06:03,300
+多问一句
+ask one more thing
+
+166
+00:06:03,466 --> 00:06:05,866
+便宜了以后我会不会用得更多
+once it's cheaper, will I use more
+
+167
+00:06:06,166 --> 00:06:07,266
+如果答案是会
+If the answer is yes
+
+168
+00:06:07,266 --> 00:06:09,600
+那就别盯着单价算总账
+then skip the unit price, add up the total
+
+169
+00:06:09,733 --> 00:06:12,366
+一个月最多花多少到了就停
+Set a monthly cap, stop once you hit it
+
+170
+00:06:12,566 --> 00:06:15,600
+一件事做完一共花了多少值不值
+For each task, add up the cost, worth it or not
+
+171
+00:06:15,800 --> 00:06:18,766
+当然多花的钱也不一定是坏事
+Of course, spending more isn't always a bad thing
+
+172
+00:06:18,866 --> 00:06:21,333
+当年英国人买煤越买越多
+Back then, the British bought more and more coal
+
+173
+00:06:21,333 --> 00:06:23,766
+换回来的是一整场工业革命
+and got back a whole Industrial Revolution
+
+174
+00:06:23,833 --> 00:06:26,433
+真正要看的是多花的这部分
+What really matters is whether that extra spending
+
+175
+00:06:26,433 --> 00:06:28,200
+有没有换回更多的东西
+bought you something more
+
+176
+00:06:28,633 --> 00:06:29,966
+我自己打算这周
+I'm planning this week
+
+177
+00:06:29,966 --> 00:06:31,766
+就把 AI 的账单拉出来
+to pull up my AI bill
+
+178
+00:06:31,766 --> 00:06:32,733
+不看单价
+skip the unit price
+
+179
+00:06:32,833 --> 00:06:35,500
+按一件事一件事重新算一遍
+and redo the math task by task
+
+180
+00:06:35,766 --> 00:06:38,100
+回到 10 月 8 号早上那条新闻
+Back to that news from the morning of October 8
+
+181
+00:06:38,133 --> 00:06:39,300
+那 百分之75
+That 75%
+
+182
+00:06:39,633 --> 00:06:41,466
+没有让谁的账单变薄
+didn't make anyone's bill thinner
+
+183
+00:06:41,666 --> 00:06:43,700
+它让 AI 从偶尔问一句
+It turned AI from an occasional question
+
+184
+00:06:43,766 --> 00:06:45,800
+变成了一开就是一千个
+into 1,000 AI agents launching at once
+
+185
+00:06:46,066 --> 00:06:47,400
+最后留个问题
+Here's one last question
+
+186
+00:06:47,666 --> 00:06:49,700
+这也是我自己还在想的
+one I'm still turning over myself
+
+187
+00:06:49,933 --> 00:06:52,600
+如果 AI 越来越便宜谁都能用
+If AI keeps getting cheaper and anyone can use it
+
+188
+00:06:52,633 --> 00:06:55,466
+那它干不了又必须有人干的那部分
+then the part it can't do but still needs a person
+
+189
+00:06:55,466 --> 00:06:57,533
+会不会反而越来越值钱
+won't it actually get more valuable
+
+190
+00:06:58,200 --> 00:06:59,100
+下期聊
+See you next time

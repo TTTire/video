@@ -1,0 +1,932 @@
+{
+ "lines": [
+  {
+   "i": 1,
+   "en": "Morning of October 8"
+  },
+  {
+   "i": 2,
+   "en": "Making coffee, scrolling AI news as always"
+  },
+  {
+   "i": 3,
+   "en": "when I saw Anthropic had released a new model"
+  },
+  {
+   "i": 4,
+   "en": "Claude Haiku 5.5"
+  },
+  {
+   "i": 5,
+   "en": "They said on average"
+  },
+  {
+   "i": 6,
+   "en": "it's about 75% cheaper than the last one"
+  },
+  {
+   "i": 7,
+   "en": "My first thought was great news"
+  },
+  {
+   "i": 8,
+   "en": "my bill's getting thinner"
+  },
+  {
+   "i": 9,
+   "en": "Then that same week"
+  },
+  {
+   "i": 10,
+   "en": "the same company rolled out a new feature"
+  },
+  {
+   "i": 11,
+   "en": "where one line could spin up 1,000 AI agents"
+  },
+  {
+   "i": 12,
+   "en": "all working for you at once"
+  },
+  {
+   "i": 13,
+   "en": "Even their own docs warn you"
+  },
+  {
+   "i": 14,
+   "en": "this feature burns through a ton of tokens"
+  },
+  {
+   "i": 15,
+   "en": "So what's a token"
+  },
+  {
+   "i": 16,
+   "en": "China's National Data Administration put it well"
+  },
+  {
+   "i": 17,
+   "en": "it's like data traffic in the internet era"
+  },
+  {
+   "i": 18,
+   "en": "AI reads some text, writes some text"
+  },
+  {
+   "i": 19,
+   "en": "all billed by the token"
+  },
+  {
+   "i": 20,
+   "en": "Early 2024"
+  },
+  {
+   "i": 21,
+   "en": "the tokens we used nationwide each day"
+  },
+  {
+   "i": 22,
+   "en": "were 100 billion"
+  },
+  {
+   "i": 23,
+   "en": "By this March, it hit 140 trillion"
+  },
+  {
+   "i": 24,
+   "en": "More than 1,000 times in two years"
+  },
+  {
+   "i": 25,
+   "en": "Unit price kept falling, usage kept climbing"
+  },
+  {
+   "i": 26,
+   "en": "and so did the money spent"
+  },
+  {
+   "i": 27,
+   "en": "The cheaper it got, the more we spent"
+  },
+  {
+   "i": 28,
+   "en": "Sounds off, I know"
+  },
+  {
+   "i": 29,
+   "en": "But 160 years ago"
+  },
+  {
+   "i": 30,
+   "en": "someone had already put it in a book"
+  },
+  {
+   "i": 31,
+   "en": "This is Pixel Breath"
+  },
+  {
+   "i": 32,
+   "en": "Today, let's talk about"
+  },
+  {
+   "i": 33,
+   "en": "why the cheaper AI gets, the more you spend"
+  },
+  {
+   "i": 34,
+   "en": "To be fair"
+  },
+  {
+   "i": 35,
+   "en": "thinking a price cut saves money isn't dumb at all"
+  },
+  {
+   "i": 36,
+   "en": "Veggies get cheaper, you spend less"
+  },
+  {
+   "i": 37,
+   "en": "Gas gets cheaper, a full tank costs tens less"
+  },
+  {
+   "i": 38,
+   "en": "But that math"
+  },
+  {
+   "i": 39,
+   "en": "hides an unspoken assumption"
+  },
+  {
+   "i": 40,
+   "en": "that you buy the same amount"
+  },
+  {
+   "i": 41,
+   "en": "Same veggies, same tank of gas"
+  },
+  {
+   "i": 42,
+   "en": "because that's all you ever needed"
+  },
+  {
+   "i": 43,
+   "en": "But for some things, cheaper means more"
+  },
+  {
+   "i": 44,
+   "en": "We've actually all been through this"
+  },
+  {
+   "i": 45,
+   "en": "with mobile data"
+  },
+  {
+   "i": 46,
+   "en": "Back in 2014, when 4G just arrived"
+  },
+  {
+   "i": 47,
+   "en": "Xinhua interviewed a man named Xu"
+  },
+  {
+   "i": 48,
+   "en": "to save data he turned off photo autoload on Weibo"
+  },
+  {
+   "i": 49,
+   "en": "turned off video autoplay on WeChat"
+  },
+  {
+   "i": 50,
+   "en": "and always asked for the WiFi password"
+  },
+  {
+   "i": 51,
+   "en": "I bet you've done that too"
+  },
+  {
+   "i": 52,
+   "en": "Then came speed-ups and price cuts, and by 2019"
+  },
+  {
+   "i": 53,
+   "en": "mobile data rates"
+  },
+  {
+   "i": 54,
+   "en": "had dropped over 90% from 2014"
+  },
+  {
+   "i": 55,
+   "en": "So did you save on your bill"
+  },
+  {
+   "i": 56,
+   "en": "Most people didn't"
+  },
+  {
+   "i": 57,
+   "en": "because you started scrolling short videos"
+  },
+  {
+   "i": 58,
+   "en": "In 2014 the average person used 205 MB a month"
+  },
+  {
+   "i": 59,
+   "en": "by 2024 it was 18 GB"
+  },
+  {
+   "i": 60,
+   "en": "roughly 90 times as much"
+  },
+  {
+   "i": 61,
+   "en": "A 2019 CAICT report"
+  },
+  {
+   "i": 62,
+   "en": "put it bluntly"
+  },
+  {
+   "i": 63,
+   "en": "usage grew so fast your bill barely dropped"
+  },
+  {
+   "i": 64,
+   "en": "So your bill is really just multiplication"
+  },
+  {
+   "i": 65,
+   "en": "unit price times usage"
+  },
+  {
+   "i": 66,
+   "en": "The unit price is set by the company"
+  },
+  {
+   "i": 67,
+   "en": "The usage is set by you"
+  },
+  {
+   "i": 68,
+   "en": "A price-cut headline tells half the story"
+  },
+  {
+   "i": 69,
+   "en": "Last month I took a VC class at Peking University"
+  },
+  {
+   "i": 70,
+   "en": "Liu Yong put it more plainly"
+  },
+  {
+   "i": 71,
+   "en": "you can't judge AI's cost just by the token price"
+  },
+  {
+   "i": 72,
+   "en": "but look at a done task you can sign off on"
+  },
+  {
+   "i": 73,
+   "en": "and how much it all costs"
+  },
+  {
+   "i": 74,
+   "en": "AI does 80%, a person covers the other 20%"
+  },
+  {
+   "i": 75,
+   "en": "So that labor has to count too"
+  },
+  {
+   "i": 76,
+   "en": "AI right now is just like data back then"
+  },
+  {
+   "i": 77,
+   "en": "Honestly, I'm exactly like that"
+  },
+  {
+   "i": 78,
+   "en": "my English is so-so"
+  },
+  {
+   "i": 79,
+   "en": "Last month Xiaomi put out a paper in English"
+  },
+  {
+   "i": 80,
+   "en": "so I just handed it to AI"
+  },
+  {
+   "i": 81,
+   "en": "and had it write up detailed notes"
+  },
+  {
+   "i": 82,
+   "en": "This kind of use, back when AI was pricey"
+  },
+  {
+   "i": 83,
+   "en": "hardly anyone bothered with it"
+  },
+  {
+   "i": 84,
+   "en": "So the real question is"
+  },
+  {
+   "i": 85,
+   "en": "once it's cheaper, how much will usage grow"
+  },
+  {
+   "i": 86,
+   "en": "In 1865 the British economist Jevons"
+  },
+  {
+   "i": 87,
+   "en": "wrote a book called The Coal Question"
+  },
+  {
+   "i": 88,
+   "en": "Back then Britons worried coal would run out"
+  },
+  {
+   "i": 89,
+   "en": "but many weren't worried"
+  },
+  {
+   "i": 90,
+   "en": "since steam engines would get more efficient and fix it"
+  },
+  {
+   "i": 91,
+   "en": "There was evidence for that"
+  },
+  {
+   "i": 92,
+   "en": "Watt's improved engine did the same work"
+  },
+  {
+   "i": 93,
+   "en": "and cut coal use by more than two-thirds"
+  },
+  {
+   "i": 94,
+   "en": "But Jevons said it was just the opposite"
+  },
+  {
+   "i": 95,
+   "en": "Translated, his own words were roughly this"
+  },
+  {
+   "i": 96,
+   "en": "to think saving fuel means burning less"
+  },
+  {
+   "i": 97,
+   "en": "is a total confusion, and the truth is the opposite"
+  },
+  {
+   "i": 98,
+   "en": "Basically, once steam engines saved coal"
+  },
+  {
+   "i": 99,
+   "en": "they became worth using"
+  },
+  {
+   "i": 100,
+   "en": "At first only mines put them in"
+  },
+  {
+   "i": 101,
+   "en": "then textile mills, ironworks, trains, and ships"
+  },
+  {
+   "i": 102,
+   "en": "all got one too"
+  },
+  {
+   "i": 103,
+   "en": "The coal Britain mined each year"
+  },
+  {
+   "i": 104,
+   "en": "was about 5 million tons in 1750"
+  },
+  {
+   "i": 105,
+   "en": "and over 60 million tons by 1850"
+  },
+  {
+   "i": 106,
+   "en": "more than tenfold in a century"
+  },
+  {
+   "i": 107,
+   "en": "Sure, each engine saved coal"
+  },
+  {
+   "i": 108,
+   "en": "but their numbers grew faster"
+  },
+  {
+   "i": 109,
+   "en": "Later, people called this the Jevons paradox"
+  },
+  {
+   "i": 110,
+   "en": "The more efficient, the more use climbs instead"
+  },
+  {
+   "i": 111,
+   "en": "Whether that happens comes down to one thing"
+  },
+  {
+   "i": 112,
+   "en": "once it's cheaper, how much usage jumps"
+  },
+  {
+   "i": 113,
+   "en": "Let's say"
+  },
+  {
+   "i": 114,
+   "en": "the price drops to a quarter"
+  },
+  {
+   "i": 115,
+   "en": "If usage only doubles, spending is halved"
+  },
+  {
+   "i": 116,
+   "en": "Now that's real savings"
+  },
+  {
+   "i": 117,
+   "en": "If usage quadruples, you break even exactly"
+  },
+  {
+   "i": 118,
+   "en": "If usage goes up tenfold"
+  },
+  {
+   "i": 119,
+   "en": "spending ends up at 2.5 times what it was"
+  },
+  {
+   "i": 120,
+   "en": "So which one is AI"
+  },
+  {
+   "i": 121,
+   "en": "Google's monthly token count"
+  },
+  {
+   "i": 122,
+   "en": "was 9.7 trillion two years ago"
+  },
+  {
+   "i": 123,
+   "en": "and by this May it topped 3,200 trillion"
+  },
+  {
+   "i": 124,
+   "en": "up more than 300 times in two years"
+  },
+  {
+   "i": 125,
+   "en": "The money went up too"
+  },
+  {
+   "i": 126,
+   "en": "Just Anthropic alone"
+  },
+  {
+   "i": 127,
+   "en": "saw its revenue jump 12 times last year"
+  },
+  {
+   "i": 128,
+   "en": "And it's not just more things happening"
+  },
+  {
+   "i": 129,
+   "en": "each task itself is using more too"
+  },
+  {
+   "i": 130,
+   "en": "DeepSeek has a cheap model"
+  },
+  {
+   "i": 131,
+   "en": "the new version got more accurate"
+  },
+  {
+   "i": 132,
+   "en": "but the cost per question actually rose 2.5 times"
+  },
+  {
+   "i": 133,
+   "en": "Because today's AI thinks a little longer"
+  },
+  {
+   "i": 134,
+   "en": "the longer it thinks, the more tokens it burns"
+  },
+  {
+   "i": 135,
+   "en": "Last January"
+  },
+  {
+   "i": 136,
+   "en": "when DeepSeek's cheap model came out"
+  },
+  {
+   "i": 137,
+   "en": "people worried we'd need way less computing power"
+  },
+  {
+   "i": 138,
+   "en": "Microsoft CEO Satya Nadella"
+  },
+  {
+   "i": 139,
+   "en": "posted a tweet in the wee hours that day"
+  },
+  {
+   "i": 140,
+   "en": "Jevons paradox strikes again"
+  },
+  {
+   "i": 141,
+   "en": "He said as AI gets more efficient and accessible"
+  },
+  {
+   "i": 142,
+   "en": "we'll see its use skyrocket"
+  },
+  {
+   "i": 143,
+   "en": "turning it into a commodity we just can't get enough of"
+  },
+  {
+   "i": 144,
+   "en": "He sells compute, so of course he'd want that"
+  },
+  {
+   "i": 145,
+   "en": "But the numbers these past two years back him up"
+  },
+  {
+   "i": 146,
+   "en": "Anthropic has a"
+  },
+  {
+   "i": 147,
+   "en": "$200 monthly plan"
+  },
+  {
+   "i": 148,
+   "en": "Last year one user"
+  },
+  {
+   "i": 149,
+   "en": "burned through tens of thousands of dollars in usage"
+  },
+  {
+   "i": 150,
+   "en": "forcing them to add weekly limits"
+  },
+  {
+   "i": 151,
+   "en": "Sima Guang once said"
+  },
+  {
+   "i": 152,
+   "en": "thrift to luxury is easy, luxury to thrift is hard"
+  },
+  {
+   "i": 153,
+   "en": "Once your usage stretches wider"
+  },
+  {
+   "i": 154,
+   "en": "it's hard to shrink it back down"
+  },
+  {
+   "i": 155,
+   "en": "So does that mean every price cut"
+  },
+  {
+   "i": 156,
+   "en": "always ends up costing you more"
+  },
+  {
+   "i": 157,
+   "en": "Not always"
+  },
+  {
+   "i": 158,
+   "en": "Salt at half price, you won't eat twice as much"
+  },
+  {
+   "i": 159,
+   "en": "The Jevons paradox only hits one kind of thing"
+  },
+  {
+   "i": 160,
+   "en": "where a little cheaper sparks new uses"
+  },
+  {
+   "i": 161,
+   "en": "Coal was like that, so was data"
+  },
+  {
+   "i": 162,
+   "en": "and now AI is too"
+  },
+  {
+   "i": 163,
+   "en": "So next time you see a price cut"
+  },
+  {
+   "i": 164,
+   "en": "don't rush to count the savings"
+  },
+  {
+   "i": 165,
+   "en": "ask one more thing"
+  },
+  {
+   "i": 166,
+   "en": "once it's cheaper, will I use more"
+  },
+  {
+   "i": 167,
+   "en": "If the answer is yes"
+  },
+  {
+   "i": 168,
+   "en": "then skip the unit price, add up the total"
+  },
+  {
+   "i": 169,
+   "en": "Set a monthly cap, stop once you hit it"
+  },
+  {
+   "i": 170,
+   "en": "For each task, add up the cost, worth it or not"
+  },
+  {
+   "i": 171,
+   "en": "Of course, spending more isn't always a bad thing"
+  },
+  {
+   "i": 172,
+   "en": "Back then, the British bought more and more coal"
+  },
+  {
+   "i": 173,
+   "en": "and got back a whole Industrial Revolution"
+  },
+  {
+   "i": 174,
+   "en": "What really matters is whether that extra spending"
+  },
+  {
+   "i": 175,
+   "en": "bought you something more"
+  },
+  {
+   "i": 176,
+   "en": "I'm planning this week"
+  },
+  {
+   "i": 177,
+   "en": "to pull up my AI bill"
+  },
+  {
+   "i": 178,
+   "en": "skip the unit price"
+  },
+  {
+   "i": 179,
+   "en": "and redo the math task by task"
+  },
+  {
+   "i": 180,
+   "en": "Back to that news from the morning of October 8"
+  },
+  {
+   "i": 181,
+   "en": "That 75%"
+  },
+  {
+   "i": 182,
+   "en": "didn't make anyone's bill thinner"
+  },
+  {
+   "i": 183,
+   "en": "It turned AI from an occasional question"
+  },
+  {
+   "i": 184,
+   "en": "into 1,000 AI agents launching at once"
+  },
+  {
+   "i": 185,
+   "en": "Here's one last question"
+  },
+  {
+   "i": 186,
+   "en": "one I'm still turning over myself"
+  },
+  {
+   "i": 187,
+   "en": "If AI keeps getting cheaper and anyone can use it"
+  },
+  {
+   "i": 188,
+   "en": "then the part it can't do but still needs a person"
+  },
+  {
+   "i": 189,
+   "en": "won't it actually get more valuable"
+  },
+  {
+   "i": 190,
+   "en": "See you next time"
+  }
+ ],
+ "perChunk": [
+  {
+   "chunk": "A",
+   "candidates": [
+    "A",
+    "B",
+    "C"
+   ],
+   "issues": 6,
+   "high": 0,
+   "rejected": [],
+   "judgeNotes": "Hardest calls:\n1) Cues 1-8 (one long run-on sentence): built as \"The morning of October 8, I was making coffee, scrolling AI news like always, when I saw Anthropic had released a new model, Claude Haiku 5.5. They said on average it's about 75% cheaper than the last one. My first thought was, great, my bill's getting thinner.\" Cue1 is a refrain with cue180 (not in this chunk) — kept the plain clause form \"The morning of October 8\" (21.8 cps on a 1.1s cue, under the 25 hard cap but above the 20 aim; the short duration makes any phrasing of this length run slightly hot).\n2) Cue7/8: merged into an interjection pattern (\"My first thought was, great\" / \"my bill's getting thinner\") so \"great\" reads as the exclamation itself rather than describing the thought — this is a soft comma splice but matches natural spoken delivery. Chose \"bill\"/\"thinner\" wording deliberately since this is the 账单变薄 refrain (also at cue182, outside this chunk) — future cue182 should reuse exactly \"bill\" + \"thinner\".\n3) Cue13/14: picked \"Even their own docs warn you\" + \"this feature burns through a ton of tokens\", dropping the relative pronoun \"that\" (common, natural in spoken English: \"docs warn you this feature burns through tokens\").\n4) Cues 16-19 form one explanatory run-on (China's National Data Administration analogy → AI reads/writes → billing). Picked candidate C's shorter \"AI reads some text, writes some text\" over A's longer version purely to keep the cps comfortable across this dense four-cue stretch, and trimmed cue19 to \"all billed by the token\" (vs. the \"and you're billed by the token\" candidate) to stay under the 20cps aim on the short 1.73s/1.3s-class cues.\n5) Cue23: none of the three candidates were capitalized for what is actually a new sentence (not a continuation of cue22's \"were 100 billion\"), so I merged B/C's wording with a capital: \"By this March, it hit 140 trillion\".\n6) Verified every number against the mandatory table (75%, 1,000 AI agents, 100 billion, 140 trillion, 1,000 times, 160 years) and confirmed no line ends in punctuation and all lines stay under the 55-char hard cap and 25 cps hard cap (full per-line length/cps check run programmatically)."
+  },
+  {
+   "chunk": "B",
+   "candidates": [
+    "A",
+    "B",
+    "C"
+   ],
+   "issues": 12,
+   "high": 0,
+   "rejected": [
+    {
+     "i": 40,
+     "reason": "Keeping 'that' preserves the clear grammatical link back to 'an unspoken assumption' in cue 39 (now shortened), so the two cues read as one clean sentence. Dropping it would leave a dangling reduced-relative clause that reads awkwardly. Current cps (21.8) is within the hard 25 cps ceiling, so the trim isn't necessary."
+    },
+    {
+     "i": 57,
+     "reason": "The suggested 'because now you watch short videos' drops the 开始 (started) nuance and the 刷 (scrolling/casual-swiping) flavor that the original 'because you started scrolling short videos' captures, weakening the before/after narrative. Current cps (20.3) only marginally exceeds the aim band and is well under the 25 cps hard limit, so preserving meaning takes priority over the small trim."
+    }
+   ],
+   "judgeNotes": "Hardest calls: (1) 34-35 merged into one flowing sentence (\"To be fair\" / lowercase \"thinking a price cut saves money isn't dumb at all\") rather than treating 35 as its own capitalized sentence, to read more naturally; kept \"at all\" despite the extra length for fidelity to 一点都不傻. (2) 47-50 restructured as one continuous sentence describing Mr Xu's data-saving habits, using parallel \"turned off photo autoload on Weibo\" / \"turned off video autoplay on WeChat\" for rhythm. (3) 52-54 kept as one sentence across three cues (\"Then came speed-ups and price cuts, and by 2019 / mobile data rates / had dropped over 90% from 2014\"); used \"over 90%\" per the explicit 九成多 mapping rather than candidates' \"more than 90%\". (4) 63: replaced the literal \"per-person\" with \"your bill\" to shorten (53→43 chars) while preserving the 人均 (per-capita) sense through direct address, and to echo \"your bill\" in cue 64. (5) 69: chose \"took\" over \"audited\" for a more natural spoken register even though Peking University pushes reading speed to ~22 cps (still under the 25 hard cap, and shorter than the \"audited\" alternative). (6) 74-75: rejected candidate C's conditional \"If AI does 80%... so labor has to count\" (awkward if/so pairing) in favor of two independent sentences. (7) 85: fixed the 便宜了以后 refrain to \"once it's cheaper\" for consistency with its other occurrences at cues 112 and 166 outside this chunk."
+  },
+  {
+   "chunk": "C",
+   "candidates": [
+    "A",
+    "B",
+    "C"
+   ],
+   "issues": 11,
+   "high": 1,
+   "rejected": [],
+   "judgeNotes": "Hardest calls:\n- 96-97 (Jevons quote): none of the three candidate sets matched the original wording closely enough, so I wrote a merge (\"to think saving fuel means burning less\" / \"is a total confusion, the truth is the opposite\") that splits the subject clause (96, matches Chinese 96) from the predicate (97, matches Chinese 97) and stays close to \"confusion of ideas... the very contrary is the truth.\"\n- 92-93: merged across candidates — kept \"Watt's improved engine did the same work\" (92) but used C's shorter \"and cut coal use by more than two-thirds\" for 93 instead of A's 55-char version, since it reads as one continuous sentence and is far less cramped.\n- 100-102: picked wording using singular \"one\"/\"them\" to stay consistent with 102's \"all got one too\" rather than mixing singular/plural across the three cues.\n- 107-108: merged B+C (\"Sure, each engine saved coal\" / \"but their numbers grew even faster\") for the most natural spoken concessive contrast.\n- 115/117: rewrote shorter than all three candidates (\"If usage only doubles, spending is halved\"; \"If usage quadruples, you break even exactly\") to pull them back near the 42-char aim and keep the three usage-multiplier examples (double/quadruple/tenfold) parallel in structure.\n- 88: swapped \"the British\" for \"Britons\" (not in any candidate) purely to cut length under the 42-char aim without changing meaning.\n- 112: rewrote to front-load \"once it gets cheaper\" so the 便宜了以后 refrain (shared with cues 85/166 outside this chunk, confirmed via srt_cues.json) uses a reusable, consistent phrase rather than burying it mid-clause as all three candidates did.\n- Capitalization: fixed two cues (110, 116) where the chosen candidate text started lowercase but is actually a new sentence, not a continuation, per the style rule."
+  },
+  {
+   "chunk": "D",
+   "candidates": [
+    "A",
+    "B",
+    "C"
+   ],
+   "issues": 6,
+   "high": 1,
+   "rejected": [
+    {
+     "i": 127,
+     "reason": "Rejected the '12x' suggestion: the numbers rule explicitly maps 12 倍 to '12 times' with no 'or 12x' alternative (unlike 90 倍 which explicitly allows 90x). Line is already under the hard 55-char max and well under 25 cps (20.21), so no change needed; kept '12 times' to satisfy the numeral style rule."
+    }
+   ],
+   "judgeNotes": "Hardest calls:\n- 121-124 (Google token stats): picked A/C \"Google's monthly token count\" over B's \"Every month, the tokens Google processes\" because B's present-tense framing clashes with \"was/were...two years ago\" that follows; chose C's \"and by this May it topped\" (123) and \"up more than 300 times\" (124) so the three cues read as one flowing sentence with correct tense/pronoun agreement (\"it topped...up more than 300 times\").\n- 126-127: merged A's \"Just Anthropic alone\" with C's \"saw its revenue jump\" (rather than A's verb alone) so the pronoun \"its\" ties \"revenue\" back to \"Anthropic alone\" — none of the three full candidates paired the best subject with the best verb on their own.\n- 130-132: reassigned sentence boundaries — treated 130 \"DeepSeek has a cheap model\" as a complete sentence and capitalized 131 \"The new version got more accurate\" as a new sentence (not a continuation of 130), then let 132 \"but the cost...actually rose 2.5 times\" (closest to 反而) continue it.\n- 133-134: kept the literal \"thinks a little longer\" / \"the longer it thinks, the more tokens it burns\" pairing despite surface repetition — it mirrors the Chinese's cause-then-general-rule structure and reads as a natural spoken rhetorical device, not a translation error.\n- 140-143 (Nadella tweet): used the real published tweet's wording where it diverges from the literal Chinese — chose B's \"commodity\" (143) over \"something,\" since the task instructs staying close to known English originals even though 东西 literally means \"thing.\"\n- 146-150 (Anthropic statement): swapped in A's \"burned through tens of thousands of dollars in usage\" for 149 instead of my first instinct (C), because \"in usage\" mirrors the real Anthropic phrasing \"model usage\" better while B/C options drop that nuance; capitalized 148 \"Last year one user\" as a fresh sentence rather than using the given \"and last year\" since the plan description in 146-147 is a complete clause.\n- 152 (Sima Guang): chose the shorter A/B wording \"thrift to luxury is easy, luxury to thrift is hard\" (50 chars) over C's \"going from...going back\" (55 chars, at the hard cap) for safer reading speed, lowercased to continue \"Sima Guang once said.\""
+  },
+  {
+   "chunk": "E",
+   "candidates": [
+    "A",
+    "B",
+    "C"
+   ],
+   "issues": 8,
+   "high": 0,
+   "rejected": [
+    {
+     "i": 180,
+     "reason": "Rejected the suggested 'Back to that October 8 morning news' — it reorders the refrain phrase 10月8号早上 into an 'October 8 morning' noun-compound, which breaks consistency with cue 1's standalone rendering of the same Chinese phrase (likely 'the morning of October 8'). The original is only marginally over the soft 20cps aim (20.2 cps) and well under the 25cps hard max, so it's not worth risking the refrain match for a 0.2cps trim. Kept unchanged."
+    }
+   ],
+   "judgeNotes": "Hardest calls: (1) 159-160: merged/trimmed to \"The Jevons paradox only hits one kind of thing\" + \"where a little cheaper sparks new uses\" so the two read as one relative clause and reading speed drops from ~20.6 to ~18.6 cps. (2) 166: kept Chinese clause order (\"once it's cheaper, will I use more\") rather than inverting, on the assumption this matches how the 便宜了以后 refrain was likely rendered at cues 85/112 elsewhere in the episode — could not verify those cues' actual text since they're outside this chunk. (3) 183-184: chose \"It turned AI from an occasional question\" / \"into firing up 1,000 AI agents at once\" to explicitly echo cue 11's \"1,000 AI agents\" wording (per the numbers rule and the stated 184↔11 refrain), accepting a slightly loose noun/gerund parallelism (\"question\" vs \"firing up...\") since the Chinese original has the same looseness. (4) 180: kept \"the morning of October 8\" (not \"October 8 morning\") to preserve the 10月8号早上 refrain in natural English, even though it pushes reading speed to ~20.2 cps (still under the 25 hard cap). (5) 161: rendered 流量 as \"mobile data\" rather than bare \"data,\" based on chapter 2 context (cues 17/45/53 in the full script all frame 流量 as mobile data usage). (6) 174-175: reordered into \"What really matters is whether that extra spending\" / \"bought you something more\" so the two cues form one clean conditional clause rather than the clunkier \"...the extra you spent and whether it bought...\" options. (7) 164: switched to \"don't rush to count the savings\" over \"calculate\" for a better reading-speed margin with no meaning loss. All 36 lines stay within the hard 55-char / 25-cps caps; several (158,159,161,170,171,172,174,180,187,188) exceed the 42-char soft aim but were kept because shortening further would cut required content (refrains, numbers, proper nouns) or break the cross-cue sentence flow."
+  }
+ ],
+ "consistencyFixes": [
+  {
+   "i": 25,
+   "from": "Prices kept falling, usage kept climbing",
+   "to": "Unit price kept falling, usage kept climbing",
+   "reason": "单价 should render as \"unit price\" to match cues 65/66/168/178, not generic \"Prices\""
+  },
+  {
+   "i": 60,
+   "from": "about a 90x jump",
+   "to": "roughly 90 times as much",
+   "reason": "Lone use of \"x\" notation (90x); every other multiplier in the track (24, 119, 124, 127, 132) uses \"times\" — unify notation"
+  },
+  {
+   "i": 65,
+   "from": "price times usage",
+   "to": "unit price times usage",
+   "reason": "单价 should render as \"unit price\" consistently, matching the fixed cues 25/66 and existing 168/178"
+  },
+  {
+   "i": 66,
+   "from": "The price is set by the company",
+   "to": "The unit price is set by the company",
+   "reason": "单价 should render as \"unit price\" consistently, matching the fixed cues 25/65 and existing 168/178"
+  },
+  {
+   "i": 112,
+   "from": "once it gets cheaper, how much usage jumps",
+   "to": "once it's cheaper, how much usage jumps",
+   "reason": "Refrain 便宜了以后 opens with \"once it's cheaper\" at cues 85 and 166 but cue 112 said \"once it gets cheaper\" — unify opening"
+  },
+  {
+   "i": 155,
+   "from": "So does that mean every price drop",
+   "to": "So does that mean every price cut",
+   "reason": "降价 is rendered \"price cut\" at cues 35/68 but drifted to \"price drop\" here — unify term"
+  },
+  {
+   "i": 163,
+   "from": "So next time you see a price drop",
+   "to": "So next time you see a price cut",
+   "reason": "降价 is rendered \"price cut\" at cues 35/68 but drifted to \"price drop\" here — unify term"
+  }
+ ],
+ "finalIssues": [
+  {
+   "i": 124,
+   "lens": "native-read",
+   "severity": "low",
+   "problem": "Chinese 三百多倍 should map to \"more than 300 times\" per the style guide (and matches the established pattern used elsewhere for similar multiples: cue 24 \"More than 1,000 times\", cue 106 \"more than tenfold\"). The current line uses \"over 300 times\" instead, breaking that consistency."
+  },
+  {
+   "i": 7,
+   "lens": "native-read",
+   "severity": "low",
+   "problem": "\"My first thought was great\" reads ambiguously on first pass — it can parse as \"the thought itself was a great one\" rather than \"my reaction was: great.\" A small reword removes the hiccup while keeping the meaning and the lowercase continuation into cue 8 (\"my bill's getting thinner\") intact."
+  },
+  {
+   "i": 146,
+   "lens": "native-read",
+   "severity": "low",
+   "problem": "The cue break leaves \"Anthropic has a\" dangling on the bare article \"a,\" which reads awkwardly as a standalone on-screen line even though it's grammatical once cue 147 follows. Rephrasing avoids ending the line on an unsupported article."
+  }
+ ],
+ "finalApplied": [
+  {
+   "i": 7,
+   "from": "My first thought was great",
+   "to": "My first thought was great news"
+  },
+  {
+   "i": 124,
+   "from": "up over 300 times in two years",
+   "to": "up more than 300 times in two years"
+  }
+ ],
+ "finalRejected": [
+  {
+   "i": 146,
+   "reason": "Suggested fix 'Anthropic offers' breaks continuity with cue 147 ('$200 monthly plan'): concatenated they read 'Anthropic offers $200 monthly plan', missing the article 'a' that the original 'Anthropic has a' / '$200 monthly plan' supplied. Fixing the awkward bare-article ending would require also editing cue 147, which is out of scope here, so the original is kept to preserve grammatical continuity across the two cues."
+  }
+ ],
+ "writer": {
+  "coverageOk": true,
+  "echoMismatch": 0,
+  "notes": "written, 9590 bytes, UTF-8 no BOM, verified parses with 190 entries i=1..190"
+ }
+}
