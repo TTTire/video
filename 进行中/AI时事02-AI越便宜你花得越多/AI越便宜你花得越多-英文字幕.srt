@@ -1,0 +1,759 @@
+1
+00:00:00,533 --> 00:00:01,633
+Morning of October 8
+
+2
+00:00:01,633 --> 00:00:04,566
+Making coffee, scrolling AI news as always
+
+3
+00:00:04,666 --> 00:00:07,800
+when I saw Anthropic had released a new model
+
+4
+00:00:08,166 --> 00:00:09,666
+Claude Haiku 5.5
+
+5
+00:00:09,933 --> 00:00:11,766
+They said on average
+
+6
+00:00:11,766 --> 00:00:14,133
+it's about 75% cheaper than the last one
+
+7
+00:00:14,366 --> 00:00:16,533
+My first thought was great news
+
+8
+00:00:16,533 --> 00:00:18,000
+my bill's getting thinner
+
+9
+00:00:18,066 --> 00:00:19,800
+Then that same week
+
+10
+00:00:19,833 --> 00:00:22,200
+the same company rolled out a new feature
+
+11
+00:00:22,333 --> 00:00:24,566
+where one line could spin up 1,000 AI agents
+
+12
+00:00:24,666 --> 00:00:26,133
+all working for you at once
+
+13
+00:00:26,200 --> 00:00:28,000
+Even their own docs warn you
+
+14
+00:00:28,000 --> 00:00:30,266
+this feature burns through a ton of tokens
+
+15
+00:00:30,433 --> 00:00:31,600
+So what's a token
+
+16
+00:00:31,666 --> 00:00:34,100
+China's National Data Administration put it well
+
+17
+00:00:34,166 --> 00:00:36,333
+it's like data traffic in the internet era
+
+18
+00:00:36,533 --> 00:00:38,800
+AI reads some text, writes some text
+
+19
+00:00:38,800 --> 00:00:40,100
+all billed by the token
+
+20
+00:00:40,366 --> 00:00:41,566
+Early 2024
+
+21
+00:00:41,600 --> 00:00:43,600
+the tokens we used nationwide each day
+
+22
+00:00:43,600 --> 00:00:44,700
+were 100 billion
+
+23
+00:00:44,933 --> 00:00:47,600
+By this March, it hit 140 trillion
+
+24
+00:00:47,800 --> 00:00:49,566
+More than 1,000 times in two years
+
+25
+00:00:49,566 --> 00:00:52,200
+Unit price kept falling, usage kept climbing
+
+26
+00:00:52,366 --> 00:00:54,166
+and so did the money spent
+
+27
+00:00:54,400 --> 00:00:56,600
+The cheaper it got, the more we spent
+
+28
+00:00:56,633 --> 00:00:58,300
+Sounds off, I know
+
+29
+00:00:58,366 --> 00:00:59,966
+But 160 years ago
+
+30
+00:00:59,966 --> 00:01:01,966
+someone had already put it in a book
+
+31
+00:01:02,200 --> 00:01:03,733
+This is Pixel Breath
+
+32
+00:01:03,866 --> 00:01:05,300
+Today, let's talk about
+
+33
+00:01:05,333 --> 00:01:08,133
+why the cheaper AI gets, the more you spend
+
+34
+00:01:09,266 --> 00:01:10,566
+To be fair
+
+35
+00:01:10,600 --> 00:01:13,366
+thinking a price cut saves money isn't dumb at all
+
+36
+00:01:13,733 --> 00:01:16,100
+Veggies get cheaper, you spend less
+
+37
+00:01:16,333 --> 00:01:19,300
+Gas gets cheaper, a full tank costs a bit less
+
+38
+00:01:19,466 --> 00:01:20,633
+But that math
+
+39
+00:01:20,633 --> 00:01:22,733
+hides an unspoken assumption
+
+40
+00:01:23,133 --> 00:01:24,466
+that you buy the same amount
+
+41
+00:01:24,866 --> 00:01:27,566
+Same veggies, same tank of gas
+
+42
+00:01:27,666 --> 00:01:29,866
+because that's all you ever needed
+
+43
+00:01:30,000 --> 00:01:32,733
+But for some things, cheaper means more
+
+44
+00:01:32,800 --> 00:01:35,133
+We've actually all been through this
+
+45
+00:01:35,233 --> 00:01:36,600
+with mobile data
+
+46
+00:01:36,966 --> 00:01:39,300
+Back in 2014, when 4G just arrived
+
+47
+00:01:39,366 --> 00:01:41,666
+Xinhua interviewed a man named Xu
+
+48
+00:01:41,833 --> 00:01:44,933
+to save data he turned off photo autoload on Weibo
+
+49
+00:01:45,133 --> 00:01:47,266
+turned off video autoplay on WeChat
+
+50
+00:01:47,400 --> 00:01:49,900
+and always asked for the WiFi password
+
+51
+00:01:50,033 --> 00:01:51,600
+I bet you've done that too
+
+52
+00:01:51,800 --> 00:01:54,433
+Then came speed-ups and price cuts, and by 2019
+
+53
+00:01:54,433 --> 00:01:55,633
+mobile data rates
+
+54
+00:01:55,633 --> 00:01:57,900
+had dropped over 90% from 2014
+
+55
+00:01:58,133 --> 00:01:59,800
+So did you save on your bill
+
+56
+00:02:00,000 --> 00:02:01,200
+Most people didn't
+
+57
+00:02:01,266 --> 00:02:03,333
+because you started scrolling short videos
+
+58
+00:02:03,533 --> 00:02:07,466
+In 2014 the average person used 205 MB a month
+
+59
+00:02:07,566 --> 00:02:09,733
+by 2024 it was 18 GB
+
+60
+00:02:09,800 --> 00:02:11,333
+roughly 90 times as much
+
+61
+00:02:11,566 --> 00:02:13,766
+A 2019 CAICT report
+
+62
+00:02:13,766 --> 00:02:14,866
+put it bluntly
+
+63
+00:02:15,133 --> 00:02:18,333
+usage grew so fast your bill barely dropped
+
+64
+00:02:18,533 --> 00:02:21,200
+So your bill is really just multiplication
+
+65
+00:02:21,366 --> 00:02:22,800
+unit price times usage
+
+66
+00:02:22,933 --> 00:02:24,633
+The unit price is set by the company
+
+67
+00:02:24,633 --> 00:02:26,466
+The usage is set by you
+
+68
+00:02:26,633 --> 00:02:29,000
+A price-cut headline tells half the story
+
+69
+00:02:29,233 --> 00:02:31,466
+Last month I took a VC class at Peking University
+
+70
+00:02:31,466 --> 00:02:33,100
+Liu Yong put it more plainly
+
+71
+00:02:33,233 --> 00:02:35,866
+you can't judge AI's cost just by the token price
+
+72
+00:02:35,966 --> 00:02:38,200
+but by what a finished, approved task
+
+73
+00:02:38,200 --> 00:02:39,500
+costs you in total
+
+74
+00:02:39,733 --> 00:02:42,866
+AI does 80%, a person covers the other 20%
+
+75
+00:02:42,866 --> 00:02:44,666
+So that labor has to count too
+
+76
+00:02:44,800 --> 00:02:46,933
+AI right now is just like data back then
+
+77
+00:02:46,966 --> 00:02:49,000
+Honestly, I'm exactly like that
+
+78
+00:02:49,033 --> 00:02:50,066
+my English is so-so
+
+79
+00:02:50,066 --> 00:02:52,500
+Last month Xiaomi put out a paper in English
+
+80
+00:02:52,566 --> 00:02:53,933
+so I just handed it to AI
+
+81
+00:02:53,966 --> 00:02:56,100
+and had it write up detailed notes
+
+82
+00:02:56,333 --> 00:02:58,533
+This kind of use, back when AI was pricey
+
+83
+00:02:58,633 --> 00:02:59,966
+hardly anyone bothered with it
+
+84
+00:03:00,233 --> 00:03:02,000
+So the real question is
+
+85
+00:03:02,066 --> 00:03:04,733
+once it's cheaper, how much will usage grow
+
+86
+00:03:05,766 --> 00:03:08,200
+In 1865 the British economist Jevons
+
+87
+00:03:08,200 --> 00:03:10,366
+wrote a book called The Coal Question
+
+88
+00:03:10,866 --> 00:03:13,600
+Back then Britons worried coal would run out
+
+89
+00:03:13,733 --> 00:03:15,200
+but many weren't worried
+
+90
+00:03:15,566 --> 00:03:18,966
+since steam engines would get more efficient and fix it
+
+91
+00:03:19,066 --> 00:03:20,500
+There was evidence for that
+
+92
+00:03:20,800 --> 00:03:23,766
+Watt's improved engine did the same work
+
+93
+00:03:23,966 --> 00:03:26,733
+and cut coal use by more than two-thirds
+
+94
+00:03:26,833 --> 00:03:29,266
+But Jevons said it was just the opposite
+
+95
+00:03:29,466 --> 00:03:31,766
+Translated, his own words were roughly this
+
+96
+00:03:31,866 --> 00:03:34,566
+to think saving fuel means burning less
+
+97
+00:03:34,566 --> 00:03:37,366
+is a total confusion, and the truth is the opposite
+
+98
+00:03:37,533 --> 00:03:39,933
+Basically, once steam engines saved coal
+
+99
+00:03:39,933 --> 00:03:41,500
+they became worth using
+
+100
+00:03:41,533 --> 00:03:43,400
+At first only mines put them in
+
+101
+00:03:43,433 --> 00:03:46,366
+then textile mills, ironworks, trains, and ships
+
+102
+00:03:46,433 --> 00:03:47,566
+all got one too
+
+103
+00:03:47,566 --> 00:03:49,166
+The coal Britain mined each year
+
+104
+00:03:49,200 --> 00:03:51,533
+was about 5 million tons in 1750
+
+105
+00:03:51,733 --> 00:03:54,133
+and over 60 million tons by 1850
+
+106
+00:03:54,466 --> 00:03:56,066
+more than tenfold in a century
+
+107
+00:03:56,233 --> 00:03:57,766
+Sure, each engine saved coal
+
+108
+00:03:57,800 --> 00:03:59,366
+but their numbers grew faster
+
+109
+00:03:59,633 --> 00:04:02,533
+Later, people called this the Jevons paradox
+
+110
+00:04:02,833 --> 00:04:05,200
+The more efficient, the more use climbs instead
+
+111
+00:04:05,566 --> 00:04:08,133
+Whether that happens comes down to one thing
+
+112
+00:04:08,366 --> 00:04:10,900
+once it's cheaper, how much usage jumps
+
+113
+00:04:11,200 --> 00:04:12,100
+Let's say
+
+114
+00:04:12,133 --> 00:04:14,266
+the price drops to a quarter
+
+115
+00:04:14,266 --> 00:04:17,366
+If usage only doubles, spending is halved
+
+116
+00:04:17,366 --> 00:04:18,966
+Now that's real savings
+
+117
+00:04:19,266 --> 00:04:21,700
+If usage quadruples, you break even exactly
+
+118
+00:04:21,866 --> 00:04:23,266
+If usage goes up tenfold
+
+119
+00:04:23,266 --> 00:04:25,533
+spending ends up at 2.5 times what it was
+
+120
+00:04:25,833 --> 00:04:27,366
+So which one is AI
+
+121
+00:04:27,833 --> 00:04:29,600
+Google's monthly token count
+
+122
+00:04:29,600 --> 00:04:31,566
+was 9.7 trillion two years ago
+
+123
+00:04:31,833 --> 00:04:34,566
+and by this May it topped 3,200 trillion
+
+124
+00:04:34,800 --> 00:04:36,466
+up more than 300 times in two years
+
+125
+00:04:36,566 --> 00:04:37,766
+The money went up too
+
+126
+00:04:37,933 --> 00:04:39,533
+Just Anthropic alone
+
+127
+00:04:39,533 --> 00:04:41,466
+saw its revenue jump 12 times last year
+
+128
+00:04:41,633 --> 00:04:43,666
+And it's not just more things happening
+
+129
+00:04:43,666 --> 00:04:45,933
+each task itself is using more too
+
+130
+00:04:46,166 --> 00:04:47,933
+DeepSeek has a cheap model
+
+131
+00:04:47,933 --> 00:04:49,766
+the new version got more accurate
+
+132
+00:04:49,933 --> 00:04:52,466
+but the cost per question actually rose 2.5 times
+
+133
+00:04:52,633 --> 00:04:55,300
+Because today's AI thinks a little longer
+
+134
+00:04:55,400 --> 00:04:57,800
+the longer it thinks, the more tokens it burns
+
+135
+00:04:58,066 --> 00:04:59,066
+Last January
+
+136
+00:04:59,066 --> 00:05:01,066
+when DeepSeek's cheap model came out
+
+137
+00:05:01,066 --> 00:05:03,966
+people worried we'd need way less computing power
+
+138
+00:05:04,166 --> 00:05:05,600
+Microsoft CEO Satya Nadella
+
+139
+00:05:05,600 --> 00:05:07,533
+posted a tweet in the wee hours that day
+
+140
+00:05:07,800 --> 00:05:09,600
+Jevons paradox strikes again
+
+141
+00:05:09,666 --> 00:05:12,566
+He said as AI gets more efficient and accessible
+
+142
+00:05:12,633 --> 00:05:14,066
+we'll see its use skyrocket
+
+143
+00:05:14,200 --> 00:05:16,800
+turning it into a commodity we just can't get enough of
+
+144
+00:05:17,233 --> 00:05:19,933
+He sells compute, so of course he'd want that
+
+145
+00:05:20,066 --> 00:05:22,700
+But the numbers these past two years back him up
+
+146
+00:05:22,866 --> 00:05:24,033
+Anthropic has a
+
+147
+00:05:24,033 --> 00:05:25,666
+$200 monthly plan
+
+148
+00:05:25,833 --> 00:05:27,166
+Last year one user
+
+149
+00:05:27,166 --> 00:05:30,166
+burned through tens of thousands of dollars in usage
+
+150
+00:05:30,333 --> 00:05:32,466
+forcing them to add weekly limits
+
+151
+00:05:32,866 --> 00:05:34,100
+Sima Guang once said
+
+152
+00:05:34,133 --> 00:05:36,800
+thrift to luxury is easy, luxury to thrift is hard
+
+153
+00:05:37,000 --> 00:05:38,566
+Once your usage stretches wider
+
+154
+00:05:38,566 --> 00:05:40,400
+it's hard to shrink it back down
+
+155
+00:05:41,466 --> 00:05:43,366
+So does that mean every price cut
+
+156
+00:05:43,366 --> 00:05:44,966
+always ends up costing you more
+
+157
+00:05:45,200 --> 00:05:46,000
+Not always
+
+158
+00:05:46,266 --> 00:05:48,700
+Salt at half price, you won't eat twice as much
+
+159
+00:05:48,866 --> 00:05:51,400
+The Jevons paradox only hits one kind of thing
+
+160
+00:05:51,566 --> 00:05:54,100
+where a little cheaper sparks new uses
+
+161
+00:05:54,433 --> 00:05:56,666
+Coal was like that, so was data
+
+162
+00:05:56,666 --> 00:05:58,366
+and now AI is too
+
+163
+00:05:58,566 --> 00:06:00,433
+So next time you see a price cut
+
+164
+00:06:00,433 --> 00:06:02,166
+don't rush to count the savings
+
+165
+00:06:02,266 --> 00:06:03,300
+ask one more thing
+
+166
+00:06:03,466 --> 00:06:05,866
+once it's cheaper, will I use more
+
+167
+00:06:06,166 --> 00:06:07,266
+If the answer is yes
+
+168
+00:06:07,266 --> 00:06:09,600
+then skip the unit price, add up the total
+
+169
+00:06:09,733 --> 00:06:12,366
+Set a monthly cap, stop once you hit it
+
+170
+00:06:12,566 --> 00:06:15,600
+For each task, add up the cost, worth it or not
+
+171
+00:06:15,800 --> 00:06:18,766
+Of course, spending more isn't always a bad thing
+
+172
+00:06:18,866 --> 00:06:21,333
+Back then, the British bought more and more coal
+
+173
+00:06:21,333 --> 00:06:23,766
+and got back a whole Industrial Revolution
+
+174
+00:06:23,833 --> 00:06:26,433
+What really matters is whether that extra spending
+
+175
+00:06:26,433 --> 00:06:28,200
+bought you something more
+
+176
+00:06:28,633 --> 00:06:29,966
+I'm planning this week
+
+177
+00:06:29,966 --> 00:06:31,766
+to pull up my AI bill
+
+178
+00:06:31,766 --> 00:06:32,733
+skip the unit price
+
+179
+00:06:32,833 --> 00:06:35,500
+and redo the math task by task
+
+180
+00:06:35,766 --> 00:06:38,100
+Back to that news from the morning of October 8
+
+181
+00:06:38,133 --> 00:06:39,300
+That 75%
+
+182
+00:06:39,633 --> 00:06:41,466
+didn't make anyone's bill thinner
+
+183
+00:06:41,666 --> 00:06:43,700
+It turned AI from an occasional question
+
+184
+00:06:43,766 --> 00:06:45,800
+into 1,000 AI agents launching at once
+
+185
+00:06:46,066 --> 00:06:47,400
+Here's one last question
+
+186
+00:06:47,666 --> 00:06:49,700
+one I'm still turning over myself
+
+187
+00:06:49,933 --> 00:06:52,600
+If AI keeps getting cheaper and anyone can use it
+
+188
+00:06:52,633 --> 00:06:55,466
+then the part it can't do but still needs a person
+
+189
+00:06:55,466 --> 00:06:57,533
+won't it actually get more valuable
+
+190
+00:06:58,200 --> 00:06:59,100
+See you next time
