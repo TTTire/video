@@ -207,8 +207,7 @@
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
       "bases:新建数据库": false,
-      "obsidian-git:Open Git source control": false,
-      "copilot:Open Copilot Agent Chat": false
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "7d164403cd3e9ca6",
