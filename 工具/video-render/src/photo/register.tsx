@@ -11,7 +11,7 @@ export const photoComps = (id: string, timeline: Timeline, spec: EpisodeSpec, cu
   const built = buildPhotoEpisode(spec, custom);
   const Ep: React.FC<{subtitles?: boolean; grid?: boolean}> = ({subtitles, grid}) => {
     useTitleFont();
-    return <Episode timeline={timeline} scenes={built.scenes} theme={built.theme} audio="" badge={spec.badge} series={spec.series} fx={built.fx} narration={false} plain subtitles={subtitles} grid={grid} />;
+    return <Episode timeline={timeline} scenes={built.scenes} theme={built.theme} audio="" badge={spec.badge} series={spec.series} cornerBadge={spec.style?.badge !== false} fx={built.fx} narration={false} plain subtitles={subtitles} grid={grid} />;
   };
   const thumbs = pickThumbs(timeline, names);
   return [

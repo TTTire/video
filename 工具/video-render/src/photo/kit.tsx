@@ -114,14 +114,37 @@ export const Rings: React.FC<{x: number; y: number; at: number; color?: string; 
   );
 };
 
+// ---------- 卡片 ----------
+// 卡片是 box 的一层壳：box 里写了 card，字自动套上这张卡，不用每个场景自己摆像素。
+// 宽度走栅格：主卡 900（对齐 L 列），数字卡 780，四张卡左边缘都在 box.x 上，右边缘因此也是齐的。
+export type CardKind = 'solid' | 'paper' | 'notch' | 'tab';
+export const CardCtx = React.createContext<{kind?: CardKind}>({});
+
+export const INK = '#1A0E06';          // 浅底卡上的主字色
+export const INK_EM = '#7A2C0C';       // 浅底卡上的强调色（比金底深，压得住）
+// 卡内卡外两套字色，元素默认色都从这里取，别再硬写 C.white
+export const useInk = () => {
+  const C = useC();
+  const kind = React.useContext(CardCtx).kind;
+  const light = kind === 'solid' || kind === 'paper';
+  return {light, main: light ? INK : C.white, sub: light ? INK_EM : C.dim, em: light ? INK_EM : C.gold, shadow: light ? 'none' : SHADOW};
+};
+const CARD_GRID = {card: 900, num: 780};
+export const cardWidth = (kind: CardKind | undefined, w?: number) => w ?? ((kind === 'tab' || kind === 'notch') ? CARD_GRID.card : CARD_GRID.card);
+
 // ---------- 文字元件 ----------
+// 卡里卡外两套字色：CardCtx 有值就是浅底卡（黑字、无投影），没值就是照片上（白字 + 投影）。
 export const H: React.FC<{children: React.ReactNode; size?: number; color?: string; style?: React.CSSProperties; align?: 'left' | 'center' | 'right'}> = ({children, size = 92, color, style, align = 'left'}) => {
   const C = useC();
-  return <div style={{fontFamily: C.title ?? TITLE_FONT, fontWeight: 800, fontSize: size, color: color ?? C.white, lineHeight: 1.18, textAlign: align, textShadow: SHADOW, letterSpacing: 1, ...style}}>{children}</div>;
+  const inCard = React.useContext(CardCtx).kind;
+  const light = inCard === 'solid' || inCard === 'paper';
+  return <div style={{fontFamily: C.title ?? TITLE_FONT, fontWeight: 800, fontSize: size, color: color ?? (light ? INK : C.white), lineHeight: 1.18, textAlign: align, textShadow: light ? 'none' : SHADOW, letterSpacing: 1, ...style}}>{children}</div>;
 };
 export const T: React.FC<{children: React.ReactNode; size?: number; color?: string; style?: React.CSSProperties; weight?: number}> = ({children, size = 40, color, style, weight = 700}) => {
   const C = useC();
-  return <div style={{fontFamily: C.font, fontWeight: weight, fontSize: size, color: color ?? C.dim, lineHeight: 1.4, textShadow: SHADOW, ...style}}>{children}</div>;
+  const inCard = React.useContext(CardCtx).kind;
+  const light = inCard === 'solid' || inCard === 'paper';
+  return <div style={{fontFamily: C.font, fontWeight: weight, fontSize: size, color: color ?? (light ? INK_EM : C.dim), lineHeight: 1.4, textShadow: light ? 'none' : SHADOW, ...style}}>{children}</div>;
 };
 export const Tag: React.FC<{children: React.ReactNode; color?: string; size?: number; dark?: boolean; style?: React.CSSProperties}> = ({children, color, size = 38, dark, style}) => {
   const C = useC();
@@ -131,11 +154,62 @@ export const Panel: React.FC<{children: React.ReactNode; style?: React.CSSProper
   const C = useC();
   return <div style={{background: `${C.bg}D0`, border: `1.5px solid ${C.white}2E`, borderRadius: 26, padding: '34px 44px', boxShadow: '0 30px 80px #000A', backdropFilter: 'blur(10px)', ...style}}>{children}</div>;
 };
+
+// ---------- 四种卡片 ----------
+// 语义固定，别乱用：solid 结论/揭晓 · paper 原文/书/新闻 · notch 前提/定义/边界 · tab 一条数据/一个例子
+export const SolidCard: React.FC<{label?: string; w?: number; children: React.ReactNode}> = ({label, w = CARD_GRID.card, children}) => {
+  const C = useC();
+  return (
+    <div style={{width: w, boxSizing: 'border-box', background: C.gold, color: INK, borderRadius: 26, padding: '40px 56px 46px', boxShadow: '0 18px 0 #00000066, 0 40px 90px #000000AA'}}>
+      {label && <div style={{fontFamily: C.font, fontWeight: 900, fontSize: 30, letterSpacing: 6, color: INK_EM, opacity: 0.75, marginBottom: 10}}>{label}</div>}
+      {children}
+    </div>
+  );
+};
+export const PaperCard: React.FC<{w?: number; children: React.ReactNode}> = ({w = CARD_GRID.card, children}) => (
+  <div style={{width: w, boxSizing: 'border-box', background: '#F2E8D8', color: '#1F1710', borderRadius: 6, padding: '46px 60px 50px', transform: 'rotate(-1.6deg)', boxShadow: '0 34px 80px #000000B0', backgroundImage: 'linear-gradient(180deg, #00000000 0%, #0000000A 100%)'}}>{children}</div>
+);
+export const NotchCard: React.FC<{label?: string; w?: number; children: React.ReactNode}> = ({label, w = CARD_GRID.card, children}) => {
+  const C = useC();
+  return (
+    <div style={{position: 'relative', width: w, boxSizing: 'border-box', background: `${C.bg}E6`, borderRadius: 20, padding: '36px 56px 40px 78px', boxShadow: '0 30px 80px #000000AA', backdropFilter: 'blur(14px)', border: `1px solid ${C.white}14`, color: C.white}}>
+      <div style={{position: 'absolute', left: 28, top: 36, bottom: 40, width: 10, borderRadius: 5, background: C.gold, boxShadow: `0 0 24px ${C.gold}AA`}} />
+      {label && <div style={{fontFamily: C.font, fontWeight: 800, fontSize: 32, color: C.gold, letterSpacing: 5, marginBottom: 12}}>{label}</div>}
+      {children}
+    </div>
+  );
+};
+// tab：上面挂分类签。签色只有两种 —— 中性信息（时间/地域/数据来源）用 dim 黑底白字，判断/结论用 gold；teal/coral 只留给正负对比。
+export const TabCard: React.FC<{label: string; color?: string; w?: number; children: React.ReactNode}> = ({label, color, w = CARD_GRID.card, children}) => {
+  const C = useC();
+  // 签色允许写语义名（dim / gold / teal / coral），这里解析成真颜色
+  const bg = color ? ((C as any)[color] ?? color) : C.dim;
+  const fg = (color && (C as any)[color]) ? C.bg : C.bg;
+  return (
+    <div style={{width: w, boxSizing: 'border-box'}}>
+      <div style={{display: 'inline-block', background: bg, color: fg, fontFamily: C.font, fontWeight: 900, fontSize: 32, letterSpacing: 4, padding: '10px 30px 14px', borderRadius: '16px 16px 0 0', position: 'relative', top: 4, boxShadow: '0 10px 30px #0008'}}>{label}</div>
+      <div style={{background: `${C.bg}F0`, borderRadius: '0 20px 20px 20px', padding: '36px 52px 40px', boxShadow: '0 30px 80px #000000AA', backdropFilter: 'blur(14px)', border: `1px solid ${C.white}14`, color: C.white}}>{children}</div>
+    </div>
+  );
+};
+// 卡片壳：box / item 写了 card 时用它把内容包起来，并让里面的 H/T 自动切到卡内字色
+export const CardShell: React.FC<{kind?: CardKind; label?: string; color?: string; w?: number; children: React.ReactNode}> = ({kind, label, color, w, children}) => {
+  if (!kind) return <>{children}</>;
+  const inner = (
+    <CardCtx.Provider value={{kind: kind}}>
+      {children}
+    </CardCtx.Provider>
+  );
+  if (kind === 'solid') return <SolidCard label={label} w={w}>{inner}</SolidCard>;
+  if (kind === 'paper') return <PaperCard w={w}>{inner}</PaperCard>;
+  if (kind === 'notch') return <NotchCard label={label} w={w}>{inner}</NotchCard>;
+  return <TabCard label={label ?? ''} color={color} w={w}>{inner}</TabCard>;
+};
 export const Box: React.FC<{x?: number; y?: number; w?: number; right?: number; children: React.ReactNode; style?: React.CSSProperties}> = ({x, y, w, right, children, style}) => (
   <div style={{position: 'absolute', left: x, right, top: y, width: w, display: 'flex', flexDirection: 'column', gap: 22, alignItems: 'flex-start', ...style}}>{children}</div>
 );
 // 得意黑金句里的强调字
-export const Em: React.FC<{children: React.ReactNode; color?: string}> = ({children, color}) => { const C = useC(); return <span style={{color: color ?? C.gold}}>{children}</span>; };
+export const Em: React.FC<{children: React.ReactNode; color?: string}> = ({children, color}) => { const C = useC(); const light = React.useContext(CardCtx).kind; const inLight = light === 'solid' || light === 'paper'; return <span style={{color: color ?? (inLight ? INK_EM : C.gold)}}>{children}</span>; };
 // 对白：文楷 + 金色引号。h / t / tag 加 quote: true 就走这个
 export const Quote: React.FC<{children: React.ReactNode; size?: number; color?: string; align?: 'left' | 'center' | 'right'; style?: React.CSSProperties}> = ({children, size = 52, color, align = 'left', style}) => {
   const C = useC();
@@ -151,7 +225,9 @@ export const Quote: React.FC<{children: React.ReactNode; size?: number; color?: 
 //   TL  TC  TR     TW
 //   ML  MC  MR     MW
 //   BL  BC  BR     BW
-export type BoxSpec = {x?: number; y?: number; w?: number; right?: number; bottom?: number; align?: 'left' | 'center' | 'right'};
+export type BoxSpec = {x?: number; y?: number; w?: number; right?: number; bottom?: number; align?: 'left' | 'center' | 'right';
+  // 卡片：这一组字装进哪种卡，标签和签色
+  card?: CardKind; label?: string; tabColor?: string; cardW?: number;};
 // 抖音右侧图标列（头像 / 点赞 / 评论 / 分享）会盖住横屏视频右边约 15% 的宽度：右边 300px 不放字、不放图表的关键部分。
 // 右对齐的 R 列和 layout=right 母版都以 SAFE_RIGHT_X 为右边界；自定义图表里也用它。
 export const SAFE_RIGHT = 300;

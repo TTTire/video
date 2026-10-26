@@ -141,7 +141,7 @@ def main():
             elif k == "font": style["titleFont"] = v
             elif k in ("letterbox", "grain"): style[k] = v.lower() in ("1", "true", "yes")
             elif k == "tintOpacity": style[k] = float(v)
-            elif k in ("layout", "tint", "enter"): style[k] = v
+            elif k in ("layout", "tint", "enter", "scale"): style[k] = v
         if theme: style["theme"] = theme
     pj = f"{out}/photo.json"
     # photo.json 里已经手工写了更好的场景名时，scene-names 以它为准

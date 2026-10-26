@@ -11,6 +11,8 @@ import {ENTER7, MANUAL7, OPENING7, SHAKE7} from './ep7/opening';
 import {ENTER6, FX6, MANUAL6, SHAKE6} from './ep6/fx6';
 import {ENTER6P, MANUAL6P, SCENES6P, THEME6P, useSmiley} from './ep6/photo';
 import {photoComps} from './photo/register';
+import {Lab} from './stylelab/Lab';
+import {EngineLab} from './stylelab/EngineLab';
 import {EpisodeSpec} from './photo/engine';
 import ep8 from './ep8/timeline.json';
 import ai01 from './ai01/timeline.json';
@@ -88,6 +90,10 @@ const photoEps: {id: string; tl: any; spec: EpisodeSpec; custom?: any; names?: a
   // ---- /episodes ----
 ];
 photoEps.forEach((e) => comps.push(...photoComps(e.id, e.tl as any, e.spec, e.custom, e.names)));
+
+// 样式实验室（只用来看预览图，不接进任何一期）：python scripts/lab.py <帧号>
+comps.push({id: 'StyleLab', total: 10, C: () => <Lab />});
+comps.push({id: 'EngineLab', total: 5, C: () => <EngineLab />});
 
 export const Root: React.FC = () => (
   <>

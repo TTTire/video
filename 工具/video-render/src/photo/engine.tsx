@@ -6,15 +6,15 @@ import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remot
 import {Theme, useC} from '../ui';
 import {Enter} from '../fx';
 import {CountUp, FlyIn, Sfx, SfxName, Stamp, StrikeLine, useSpringAt} from '../fx';
-import {at, Box, BoxSpec, Clock, Em, FONTS, FontKey, Grad, H, P, Panel, Photo, PHOTO_THEME, Quote, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease, regionBox, regionOrigin, regionXY, SAFE_RIGHT_X} from './kit';
-export type {BoxSpec} from './kit';
+import {at, Box, BoxSpec, CardKind, CardShell, useInk, Clock, Em, FONTS, FontKey, Grad, H, P, Panel, Photo, PHOTO_THEME, Quote, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease, regionBox, regionOrigin, regionXY, SAFE_RIGHT_X} from './kit';
+export type {BoxSpec, CardKind} from './kit';
 
 // ---------- 类型 ----------
 type Dir = 'left' | 'right' | 'up' | 'down';
 // font：单个元素换字体（title 得意黑 / song 锦书宋 / kai 文楷 / num 数黑体 / sans 思源黑）；quote：对白，走文楷 + 金色引号
-type Base = {at?: number; delay?: number; until?: number; dir?: Dir; box?: string; sfx?: SfxName | null; vol?: number; font?: FontKey; quote?: boolean};
+type Base = {at?: number; delay?: number; until?: number; dir?: Dir; box?: string; sfx?: SfxName | null; vol?: number; font?: FontKey; quote?: boolean; size?: number; card?: CardKind; label?: string; tabColor?: string; stagger?: number; textfx?: 'outline' | 'gradient' | 'reveal'};
 export type Item = Base & (
-  | {type: 'h'; text: string; size?: number; color?: string; strikeAt?: number}
+  | {type: 'h'; text: string; size?: number; color?: string; strikeAt?: number; em?: [number, number]}
   | {type: 't'; text: string; size?: number; color?: string}
   | {type: 'tag'; text: string; size?: number; color?: string; dark?: boolean}
   | {type: 'stamp'; text: string; size?: number; color?: string; rotate?: number}
@@ -22,6 +22,8 @@ export type Item = Base & (
   | {type: 'count'; from?: number; to: number; prefix?: string; suffix?: string; size?: number; color?: string; dur?: number; label?: string; before?: string}
   | {type: 'nums'; items: {label?: string; value: string; color?: string}[]; size?: number; arrow?: string}
   | {type: 'panel'; lines: string[]; label?: string; size?: number}
+  | {type: 'stack'; items: {big: string; small?: string; color?: string}[]; w?: number}
+  | {type: 'stagger'; text: string; em?: [number, number]; dur?: number}
   | {type: 'compare'; left: string; right: string; mid?: string; size?: number}
   | {type: 'clock'; h: number; m: number; to?: number; dur?: number}
   | {type: 'spot'; x?: number; y?: number; r?: number; strength?: number; region?: string}
@@ -36,8 +38,10 @@ export type SceneSpec = PhotoLayer & {
   type?: 'photo' | 'chapter' | 'series';
   swap?: PhotoLayer & {at: number; delay?: number};
   split?: {at: [number, number]; photos: [string, string]; pos?: [string, string]};
-  // box 可以写区域名（"TL" "MR" "BW"…）或像素框
+  // box 可以写区域名（"TL" "MR" "BW"…）或像素框；写了 card 就整组套一张卡
   box?: BoxSpec | string; boxes?: Record<string, BoxSpec | string>;
+  // 场景级卡片：这一场所有默认 box 的元素都装进同一张卡（box 名要同）
+  card?: CardKind; cardLabel?: string; cardColor?: string; cardW?: number;
   center?: boolean; ambience?: boolean | string; enterSfx?: SfxName | null;
   items?: Item[];
   // type: 'series'
@@ -52,6 +56,10 @@ export type Style = {
   letterbox?: boolean;                                  // 上下黑边（2.35:1 电影感）
   enter?: Enter;                                        // 场景入场：blur（默认）| cut 硬切 | slideL | zoom | slideUp
   grain?: boolean;                                      // 胶片颗粒
+  // 字号档位：v2 = h 88 / t 44 / big 180（新期默认）；不写就是旧档位 h 66 / t 38 / big 150（老期保等）
+  scale?: 'v1' | 'v2';
+  // 左上角标（像素呼吸 · 栏目名）显示与否。false = 不显示；不写 = 显示（已发布各期照旧）
+  badge?: boolean;
 };
 export type EpisodeSpec = {
   ep: string; badge: string; photos: string; chapterPhoto: string;
@@ -76,6 +84,14 @@ const col = (c: string | undefined, dflt: string, C: Theme = PHOTO_THEME) => {
   return (C as any)[c] ?? c;
 };
 const zoomOf = (l: PhotoLayer): [number, number] => l.zoom ?? (l.move === 'out' ? [1.1, 1.0] : l.move === 'still' ? [1.04, 1.06] : [1.0, 1.12]);
+// 字号档位。v2 是新期默认：h 88 / t 44 / big 180（字号刻度图验证过）。
+// v1 是 2026-10 及之前各期的实际档位，老期不写 style.scale 就还走 v1，不会被改版带跑。
+type Scale = {h: number; t: number; big: number; quote: number};
+const SCALES: Record<'v1' | 'v2', Scale> = {
+  v1: {h: 66, t: 38, big: 150, quote: 44},
+  v2: {h: 88, t: 44, big: 180, quote: 48},
+};
+const ScaleCtx = React.createContext<Scale>(SCALES.v1);
 const DEFAULT_BOX: BoxSpec = {x: 90, y: 120, w: 900};
 const CENTER_BOX: BoxSpec = {x: 90, y: 110, w: 1740, align: 'center'};
 // 文字母版：每期在 style.layout 里选一个，场景里不写 box / grad 时按它来
@@ -90,7 +106,22 @@ const Grain: React.FC = () => <AbsoluteFill style={{opacity: 0.12, mixBlendMode:
 const DEFAULT_SFX: Partial<Record<Item['type'], SfxName>> = {h: 'pop', t: 'pop', tag: 'pop', stamp: 'stamp', big: 'ding', count: 'ding', panel: 'page', compare: 'swipe', nums: 'drop', clock: 'click'};
 const DEFAULT_DIR = (b: BoxSpec): Dir => (b.align === 'center' ? 'up' : b.right !== undefined || (b.x ?? 0) > 960 ? 'right' : 'left');
 
-// 从上方落下的一个数字
+// 叠卡的一行：自己带弹簧入场，不能用 FlyIn 包 —— wrapper 的 transform 会重置 absolute 定位的基准。
+const StackRow: React.FC<{row: {big: string; small?: string; color?: string}; i: number; w: number; atFrame: number; color: string | undefined; last: boolean}> = ({row, i, w, atFrame, color, last}) => {
+  const C = useC();
+  const p = useSpringAt(atFrame + i * 12, {damping: 15, stiffness: 130});
+  return (
+    <div style={{
+      position: 'absolute', left: i * 44, top: i * 122, width: w, boxSizing: 'border-box', borderRadius: 18, padding: '22px 40px',
+      background: last ? C.gold : `${C.bg}EE`, color: last ? '#1A0E06' : C.white, overflow: 'hidden',
+      opacity: p, transform: `translateY(${(1 - p) * 70}px)`,
+      boxShadow: '0 22px 56px #000000AA', border: last ? 'none' : `1px solid ${C.white}18`, display: 'flex', alignItems: 'baseline', gap: 26,
+    }}>
+      <span style={{fontFamily: FONTS.num, fontWeight: 900, fontSize: 64, lineHeight: 1, color: last ? '#1A0E06' : (color ?? C.teal), fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap'}}>{row.big}</span>
+      {row.small && <span style={{fontFamily: FONTS.sans, fontWeight: 800, fontSize: 36, flex: 1, minWidth: 0, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis'}}>{row.small}</span>}
+    </div>
+  );
+};
 const NumCell: React.FC<{at: number; label?: string; value: string; size: number; color: string}> = ({at: a, label, value, size, color}) => {
   const sp = useSpringAt(a, {damping: 12, stiffness: 140});
   return (
@@ -104,6 +135,8 @@ const NumCell: React.FC<{at: number; label?: string; value: string; size: number
 // ---------- 单个元素 ----------
 const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec: SceneSpec}> = ({it, p, box, custom, spec}) => {
   const C = useC();
+  const SCALE = React.useContext(ScaleCtx);
+  const ink = useInk();   // 卡内黑字 / 卡外白字
   const f = useCurrentFrame();
   const step = it.at ?? 0;
   if (p.step < step) return null;
@@ -122,22 +155,46 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
   const NUM = {fontFamily: FONTS.num, fontVariantNumeric: 'tabular-nums' as const, letterSpacing: 0};
 
   switch (it.type) {
-    case 'h':
-      if (it.quote) return fly(<Quote size={it.size ?? 52} color={col(it.color, C.white, C)} align={align}>{rich(unq(it.text), C)}</Quote>);
+    case 'h': {
+      if (it.quote) return fly(<Quote size={it.size ?? 52} color={col(it.color, ink.main, C)} align={align}>{rich(unq(it.text), C)}</Quote>);
+      const sz = it.size ?? SCALE.h;
+      // 三个字效：outline 空心（金句搭配一行实心字用）、gradient 渐变（一期只给一处，留给定义词）、reveal 从左擦出（揭晓）
+      const fxStyle: React.CSSProperties = it.textfx === 'outline'
+        ? {color: 'transparent', WebkitTextStroke: `4px ${col(it.color, C.gold, C)}`, textShadow: 'none'}
+        : it.textfx === 'gradient'
+          ? {backgroundImage: `linear-gradient(96deg, ${col(it.color, C.gold, C)} 0%, #FFD9A0 45%, ${C.coral} 100%)`, WebkitBackgroundClip: 'text', backgroundClip: 'text', color: 'transparent', textShadow: 'none'}
+          : {};
+      const revealK = it.textfx === 'reveal' ? interpolate(f, [a, a + 18], [0, 1], clamp) : 1;
+      const revealStyle: React.CSSProperties = it.textfx === 'reveal' ? {clipPath: `inset(-20px ${(1 - revealK) * 100}% -20px -20px)`} : {};
+      // stagger 逐字：每个字错开 3 帧上浮，上浮幅度 0.25*size（0.5 太跳）
+      if (it.stagger) {
+        return (
+          <div style={{...fxStyle, ...revealStyle}}>
+            <div style={{fontFamily: C.title ?? TITLE_FONT, fontWeight: 800, fontSize: sz, lineHeight: 1.16, letterSpacing: 2, textAlign: align}}>
+              {it.text.split('').map((ch, i) => {
+                const k = 1 - Math.pow(1 - Math.min(1, Math.max(0, (f - a - i * (it.stagger ?? 3)) / 10)), 3);
+                const hot = it.em && i >= it.em[0] && i < it.em[1];
+                return <span key={i} style={{display: 'inline-block', opacity: it.textfx === 'gradient' ? 1 : k, transform: `translateY(${(1 - k) * 0.25 * sz}px)`, color: hot ? ink.em : undefined}}>{ch}</span>;
+              })}
+            </div>
+          </div>
+        );
+      }
       return fly(
-      <div style={{position: 'relative', display: 'inline-block'}}>
-        <H size={it.size ?? 66} color={col(it.color, C.white, C)} align={align} style={ff}>{rich(it.text, C)}</H>
+      <div style={{position: 'relative', display: 'inline-block', ...revealStyle}}>
+        <H size={sz} color={col(it.color, ink.main, C)} align={align} style={{...ff, ...fxStyle}}>{rich(it.text, C)}</H>
         {it.strikeAt !== undefined && p.step >= it.strikeAt && <><Sfx at={at(p, it.strikeAt)} name="swipe" vol={0.45} /><StrikeLine at={at(p, it.strikeAt)} /></>}
       </div>);
+    }
     case 't':
-      if (it.quote) return fly(<Quote size={it.size ?? 44} color={col(it.color, C.dim, C)} align={align}>{rich(unq(it.text), C)}</Quote>, 100);
-      return fly(<T size={it.size ?? 38} color={col(it.color, C.dim, C)} style={{textAlign: align, letterSpacing: 3, ...ff}}>{rich(it.text, C)}</T>, 100);
+      if (it.quote) return fly(<Quote size={it.size ?? SCALE.quote} color={col(it.color, ink.sub, C)} align={align}>{rich(unq(it.text), C)}</Quote>, 100);
+      return fly(<T size={it.size ?? SCALE.t} color={col(it.color, ink.sub, C)} style={{textAlign: align, letterSpacing: 3, ...ff}}>{rich(it.text, C)}</T>, 100);
     case 'tag': return fly(<Tag size={it.size ?? 42} dark={it.dark} color={col(it.color, C.gold, C)} style={it.quote ? {fontFamily: FONTS.kai, fontWeight: 500} : ff}>{it.quote ? <>“{rich(unq(it.text), C)}”</> : rich(it.text, C)}</Tag>, 140);
     case 'stamp': return <>{snd}<Stamp at={a} size={it.size ?? 60} rotate={it.rotate ?? -5} color={col(it.color, C.coral, C)}>{it.text}</Stamp></>;
     // 大字：纯数字走数黑体，汉字走得意黑；定义卡大词用 font: "song"
     case 'big': {
       const numeric = !it.font && /^[\d\s.,%+\-≈×÷→¥$€亿万千百倍]+$/.test(it.text.replace(/\*\*|\[\[|\]\]|\(\(|\)\)|~~/g, ''));
-      return fly(<H size={it.size ?? 150} color={col(it.color, C.gold, C)} align={align} style={{lineHeight: 1, ...(numeric ? NUM : ff)}}>{rich(it.text, C)}</H>, 160);
+      return fly(<H size={it.size ?? SCALE.big} color={col(it.color, ink.em, C)} align={align} style={{lineHeight: 1, ...(numeric ? NUM : ff)}}>{rich(it.text, C)}</H>, 160);
     }
     case 'count': {
       const dur = it.dur ?? 36;
@@ -163,12 +220,34 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
         {it.label && <T size={34} color={C.gold} style={{letterSpacing: 4}}>{it.label}</T>}
         {it.lines.map((l, i) => <H key={i} size={it.size ?? 50} color={i ? C.dim : C.white} align={align}>{rich(l, C)}</H>)}
       </Panel>);
+    case 'stack': {
+      const w = it.w ?? 820;
+      return (
+        <div style={{position: 'relative', width: w + (it.items.length - 1) * 44, height: it.items.length * 122}}>
+          {it.items.map((row, i) => (
+            <StackRow key={i} row={row} i={i} w={w} atFrame={a} color={col(row.color, C.teal, C)} last={i === it.items.length - 1} />
+          ))}
+        </div>
+      );
+    }
     case 'compare': return fly(
       <div style={{display: 'flex', gap: 80, alignItems: 'center', justifyContent: 'center'}}>
         <H size={it.size ?? 72} align="center">{rich(it.left, C)}</H>
         <H size={(it.size ?? 72) * 1.5} color={C.dim}>{it.mid ?? 'vs'}</H>
         <H size={it.size ?? 72} align="center">{rich(it.right, C)}</H>
       </div>, 140);
+    case 'stagger': {
+      const sz = it.size ?? SCALE.h;
+      return (
+        <div style={{fontFamily: C.title ?? TITLE_FONT, fontWeight: 800, fontSize: sz, lineHeight: 1.16, letterSpacing: 2, textAlign: align}}>
+          {it.text.split('').map((ch, i) => {
+            const k = 1 - Math.pow(1 - Math.min(1, Math.max(0, (f - a - i * (it.stagger ?? 3)) / 10)), 3);
+            const hot = it.em && i >= it.em[0] && i < it.em[1];
+            return <span key={i} style={{display: 'inline-block', opacity: k, transform: `translateY(${(1 - k) * 0.25 * sz}px)`, color: hot ? ink.em : ink.main}}>{ch}</span>;
+          })}
+        </div>
+      );
+    }
     case 'clock': return <Clock at={a} h={it.h} m0={it.m} m1={it.to} dur={it.dur} />;
     case 'spot': { const [x, y] = regionXY({x: it.x, y: it.y, at: it.region}); return <Spot x={x} y={y} r={it.r} at={a} strength={it.strength} />; }
     case 'rings': { const [x, y] = regionXY({x: it.x, y: it.y, at: it.region}); return <Rings x={x} y={y} at={a} n={it.n} max={it.max} color={it.color ? col(it.color, C.gold, C) : undefined} />; }
@@ -195,7 +274,8 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
       {st.letterbox && <><div style={{position: 'absolute', left: 0, right: 0, top: 0, height: 130, background: '#000'}} /><div style={{position: 'absolute', left: 0, right: 0, bottom: 0, height: 130, background: '#000'}} /></>}
     </>
   );
-  const SceneView: React.FC<P> = (p) => {
+  const scale = SCALES[st.scale ?? 'v1'];
+  const SceneViewInner: React.FC<P> = (p) => {
     const C = useC();
     const f = useCurrentFrame();
     const items = spec.items ?? [];
@@ -262,10 +342,17 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
         {Object.entries(grouped).map(([k, list]) => {
           const b = boxes[k] ?? boxes.main;
           const center = b.align === 'center';
+          // 卡片：box 自己写了 card，或者场景级写了 card（只套第一组）
+          const kind: CardKind | undefined = b.card ?? (k === 'main' ? spec.card : undefined);
+          const label = b.label ?? (k === 'main' ? spec.cardLabel : undefined);
+          const tabColor = b.tabColor ?? (k === 'main' ? spec.cardColor : undefined);
+          const cardW = kind ? (b.cardW ?? spec.cardW) : undefined;
           return (
             <Box key={k} x={b.x} y={b.bottom === undefined ? b.y : undefined} w={b.w} right={b.right}
               style={{bottom: b.bottom, alignItems: center ? 'center' : b.align === 'right' ? 'flex-end' : 'flex-start', opacity: boxOpacity(k)}}>
-              {list.map((it, i) => <ItemView key={i} it={it} p={p} box={b} custom={custom} spec={spec} />)}
+              <CardShell kind={kind} label={label} color={tabColor} w={cardW}>
+                {list.map((it, i) => <ItemView key={i} it={it} p={p} box={b} custom={custom} spec={spec} />)}
+              </CardShell>
             </Box>
           );
         })}
@@ -273,6 +360,11 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
       </AbsoluteFill>
     );
   };
+  const SceneView: React.FC<P> = (p) => (
+    <ScaleCtx.Provider value={scale}>
+      <SceneViewInner {...p} />
+    </ScaleCtx.Provider>
+  );
   return SceneView;
 };
 

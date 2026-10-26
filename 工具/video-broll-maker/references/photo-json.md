@@ -12,6 +12,7 @@
   "chapterPhoto": "S22",           // 章节卡的虚化底图
   "style": {                       // 本期视觉方案（由发布清单的 STYLE_DNA 注释生成，也可手改）
     "layout": "topleft",           //   文字母版：topleft | right | center | bottom（场景不写 box/grad 时按它）
+    "scale": "v2",                 //   字号档位：v2 = h88 / t44 / big180（新期写上）；不写 = 旧档 h66/t38/big150
     "titleFont": "smiley",         //   标题字体：固定得意黑（smiley），不要换；字体怎么分工见下面「字体」一节
     "theme": {"gold": "#D9C49C", "coral": "#C9545A", "teal": "#9DB9CF", "bg": "#070B14", "dim": "#B9C0CC"},
     "tint": "#1B2A44", "tintOpacity": 0.3,   // 所有照片统一罩色
@@ -52,6 +53,17 @@
 
 栏目卡（`type: "series"`）：`"num": 7, "title": "需求定律", "tagline": "一句话"`，第 0 句出栏目名，第 1 句数字滚到本期并出标题，第 2 句出 tagline。
 
+## style（每期视觉方案）
+
+| 字段 | 值 | 说明 |
+|---|---|---|
+| `layout` | `topleft` / `right` / `center` / `bottom` | 文字母版，场景不写 box 时按它 |
+| `scale` | `v2` / 不写 | 字号档位。`v2` = h88 / t44 / big180（2026-10 起新期默认写上）；不写 = 旧档 h66 / t38 / big150，已发布各期都走这个 |
+| `enter` | `cut` / `blur` / `slideL` / `zoom` / `slideUp` / `flip` | 场景入场 |
+| `letterbox` `grain` | true / false | 2.35:1 黑边 / 胶片颗粒 |
+| `tint` `tintOpacity` | `#hex` / 0–1 | 统一罩色 |
+| `theme` | `{gold, coral, teal, bg, white, dim}` | 本期配色 |
+
 ## 元素公共字段
 
 | 字段 | 含义 |
@@ -61,6 +73,8 @@
 | `until` | 到第几句时消失（做"前半段 / 后半段"换内容） |
 | `dir` | 飞入方向 left / right / up / down，默认按文字框位置自动 |
 | `box` | 放进哪个命名文字框，默认 main |
+| `card` | 卡片：`solid` 结论 / `paper` 原文 / `notch` 前提定义 / `tab` 一条数据。写在 `box` 上（`{"card": "tab", "label": "数据"}`）或场景顶上（`"card": "solid"`） |
+| `label` `tabColor` | 卡片上的分类签文字 / 签底色（不写走 dim；只允许 `dim` `gold`，teal/coral 留给正负对比） |
 | `font` | 单个元素换字体：`song` 锦书宋（定义卡大词）/ `kai` 文楷 / `num` 数黑体 / `sans` 思源黑 / `title` 得意黑 |
 | `quote` | `true` = 对白：文楷 + 金色引号（h / t / tag 都支持；原文自带的引号会自动去掉） |
 | `sfx` | 出现时的音效名；`null` 不响；默认按类型（h/t/tag→pop，stamp→stamp/impact，big/count→ding，panel→page/flip，compare→swipe，nums→drop/impact，clock→click/tick） |
@@ -70,14 +84,15 @@
 
 | type | 字段 | 用途 |
 |---|---|---|
-| `h` | `text` `size`(66) `color`(white) `strikeAt` | 得意黑标题。`strikeAt: n` 第 n 句被划掉 |
-| `t` | `text` `size`(38) `color`(dim) | 小字说明、英文副题 |
+| `h` | `text` `size`(88 v2 / 66 v1) `color`(white) `strikeAt` `stagger` `textfx` `em` | 得意黑标题。`strikeAt: n` 第 n 句被划掉；`stagger: 3` 逐字入场；`textfx: outline / gradient / reveal`；`em: [起, 止]` 给逐字的某几个字上强调色 |
+| `t` | `text` `size`(44 v2 / 38 v1) `color`(dim) | 小字说明、英文副题 |
 | `tag` | `text` `size`(42) `color`(gold) `dark` | 标签块：金底黑字；`dark: true` 黑底白字 |
 | `stamp` | `text` `size`(60) `color`(coral) `rotate`(-5) | 从天上砸下来的印章 |
-| `big` | `text` `size`(150) `color`(gold) | 大数字 / 大词 |
+| `big` | `text` `size`(180 v2 / 150 v1) `color`(gold) | 大数字 / 大词 |
 | `count` | `to` `from` `prefix` `suffix` `before` `label` `dur` `size` | 数字滚动。`before: "85"` 显示 85 → 滚动值；`label` 前面的小字 |
 | `nums` | `items: [{label, value, color}]` `arrow`(→) `size` | 一排依次落下的数字（30 → 30 → 20 → 5） |
-| `panel` | `lines: [..]` `label` `size`(50) | 黑色毛玻璃面板，第一行白、其余 dim；`label` 面板顶部小标题 |
+| `panel` | `lines: [..]` `label` `size`(50) | 黑色毛玻璃面板，第一行白、其余 dim；`label` 面板顶部小标题。**旧件，新期用 notch 卡** |
+| `stack` | `items: [{big, small, color}]` `w`(820) | 叠卡因果链：依次推入，最后一张金底高亮。副标题超宽走省略号 |
 | `compare` | `left` `right` `mid`(vs) `size`(72) | 左右对比两组文字 |
 | `clock` | `h` `m` `to` `dur` | 时钟牌 19:00，`to` 分钟数滚到 |
 | `spot` | `region` 或 `x` `y`，`r`(260) `strength`(0.72) | 聚光：以外压暗，指向照片里的某处。`"region": "MR"` 指向区域中心 |
