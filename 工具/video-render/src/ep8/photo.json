@@ -793,6 +793,7 @@
       "teal": "#7FB3A3",
       "bg": "#0A0C10",
       "dim": "#C9CBD1"
-    }
+    },
+    "badge": false
   }
 }
