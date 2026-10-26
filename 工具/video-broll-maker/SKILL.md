@@ -5,7 +5,14 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 
 # 像素呼吸 B-roll 动画轨
 
-工作区 `E:\视频脚本`，渲染工程 `工具/video-render/`（Remotion，命令都在这个目录下运行）。第 6 期是完整样例：
+渲染工程在 `工具/video-render/`（Remotion，命令都在这个目录下运行）。工作区根目录：
+
+| 系统 | 工作区根目录 | Python 命令 |
+|---|---|---|
+| macOS | `/Users/tttire/Documents/工程队/视频选题` | `python3` |
+| Windows | `E:\视频脚本` | `python` |
+
+下文命令一律用相对路径（`cd 工具/video-render`），两套系统都能直接跑；只有 Python 命令按上表区分。第 6 期是完整样例：
 发布清单 `已完成/6-100-边际报酬递减-人多了为什么没快多少/…-发布清单.md`，场景表 `工具/video-render/src/ep6/photo.json`，图表 `src/ep6/custom.tsx`。
 
 成片是什么：1920×1080 / 30fps、和用户口播等长、**只有音效没有配音**的动画轨。用户在剪映里把它和 A-roll 从 0 秒对齐叠放，想露脸的地方把动画轨切掉即可。字幕和 BGM 用户在剪映加，所以画面文字压在上 2/3，底部留字幕位。
@@ -163,13 +170,14 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 写完跑一次校验（起始句、id、列出要出的图），并且**顺手把渲染工程搭起来、先用占位图渲一张拼图**——版式问题在用户出图之前就能发现：
 
 ```bash
-cd E:/视频脚本/工具/video-render
-python scripts/new_episode.py epN        # AI经济学期用 ai01、ai02
-python scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" epN     # → scenemap / scene-names / photo.json 骨架
-python scripts/estimate_timeline.py "<口播稿.md>" epN src/epN/scenemap.json   # 按字数估算的预览时间轴（录完音会被 srt 版覆盖）
-python scripts/placeholder_photos.py epN                                     # 没到的图先用占位图
+# 从工作区根目录进来；Windows 把所有 python3 换成 python
+cd 工具/video-render
+python3 scripts/new_episode.py epN        # AI经济学期用 ai01、ai02
+python3 scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" epN     # → scenemap / scene-names / photo.json 骨架
+python3 scripts/estimate_timeline.py "<口播稿.md>" epN src/epN/scenemap.json   # 按字数估算的预览时间轴（录完音会被 srt 版覆盖）
+python3 scripts/placeholder_photos.py epN                                     # 没到的图先用占位图
 # 把 photo.json 从骨架填成正式版（见渲染阶段第 2 步），然后：
-python scripts/render.py epN sheet
+python3 scripts/render.py epN sheet
 ```
 
 这一步做完，渲染阶段只剩"换真图 + 换真时间轴 + 微调"。
@@ -187,11 +195,11 @@ python scripts/render.py epN sheet
 ### 1. 建期 + 入库 + 时间轴
 
 ```bash
-cd E:/视频脚本/工具/video-render
-python scripts/new_episode.py ep7                                            # 写稿阶段没建的话：建 src/ep7/、public/ep7/photos/，注册 Ep7Photo / Ep7PhotoCheck / Ep7Sheet
-python scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" ep7       # → scenemap.json、scene-names.json、photo.json 骨架（已有 photo.json 不覆盖）
-python scripts/import_photos.py "<用户的图片文件夹>" ep7 --need "<发布清单.md>"  # 裁 16:9、统一命名 → public/ep7/photos/，报缺图；会覆盖同名占位图
-python scripts/timeline_from_srt.py "<口播稿.md>" "<口播.srt>" ep7 src/ep7/scenemap.json   # → timeline.json（覆盖估算版）
+cd 工具/video-render
+python3 scripts/new_episode.py ep7                                            # 写稿阶段没建的话：建 src/ep7/、public/ep7/photos/，注册 Ep7Photo / Ep7PhotoCheck / Ep7Sheet
+python3 scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" ep7       # → scenemap.json、scene-names.json、photo.json 骨架（已有 photo.json 不覆盖）
+python3 scripts/import_photos.py "<用户的图片文件夹>" ep7 --need "<发布清单.md>"  # 裁 16:9、统一命名 → public/ep7/photos/，报缺图；会覆盖同名占位图
+python3 scripts/timeline_from_srt.py "<口播稿.md>" "<口播.srt>" ep7 src/ep7/scenemap.json   # → timeline.json（覆盖估算版）
 ```
 
 缺图时先告诉用户缺哪几张；能用别的图顶就在 photo.json 里改 `photo`，别等。
@@ -210,10 +218,10 @@ python scripts/timeline_from_srt.py "<口播稿.md>" "<口播.srt>" ep7 src/ep7/
 ### 3. 看图 → 小样 → 全片
 
 ```bash
-python scripts/render.py ep7 sheet        # 关键帧拼图，10 秒出一张 out/ep7-sheet.jpg，每个场景 1–4 格
-python scripts/render.py ep7 check 40     # 前 40 秒带字幕的核对版 out/ep7-check.mp4
-python scripts/render.py ep7 full         # 正式版（只有音效）out/ep7-photo.mp4，约 1 小时 / 5 分钟片
-python scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选）
+python3 scripts/render.py ep7 sheet        # 关键帧拼图，10 秒出一张 out/ep7-sheet.jpg，每个场景 1–4 格
+python3 scripts/render.py ep7 check 40     # 前 40 秒带字幕的核对版 out/ep7-check.mp4
+python3 scripts/render.py ep7 full         # 正式版（只有音效）out/ep7-photo.mp4，约 1 小时 / 5 分钟片
+python3 scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选）
 ```
 
 顺序不要跳：拼图自己先按下面的检查单过一遍，改完再给用户看拼图；用户认可后出 40 秒小样；再全片。改字之后只重渲拼图，不要动不动渲全片。
@@ -234,7 +242,7 @@ python scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选）
 把 `out/ep7-photo.mp4` 复制到选题文件夹，命名 `<选题名>-动画轨-对齐口播-仅音效.mp4`；需要分场景片段时：
 
 ```bash
-python scripts/split_scenes.py out/ep7-photo.mp4 ep7 "<选题文件夹>/剪辑素材-分场景-仅音效" src/ep7/scene-names.json
+python3 scripts/split_scenes.py out/ep7-photo.mp4 ep7 "<选题文件夹>/剪辑素材-分场景-仅音效" src/ep7/scene-names.json
 ```
 
 写 `<选题名>-剪辑说明.md`（格式照第 6 期的）：文件用法、推荐剪法、分场景起点表（场景号 / 名 / 口播起点 / 时长 / 第一句）、重新生成命令。
@@ -268,4 +276,4 @@ python scripts/split_scenes.py out/ep7-photo.mp4 ep7 "<选题文件夹>/剪辑�
 - **字体**：五款都打包在 `assets/fonts/`（得意黑 / 数黑体 / 锦书宋 / 文楷 / 思源黑），分工见「全局风格」一节，**不随期换**。`style.titleFont` 这个开关留着，只在用户明确要求时用。渲出来数字是方块 → woff2 没加载，看 `kit.tsx` 的 `useFonts`。
 - **两期长得太像**：检查发布清单有没有写 STYLE_DNA、photo.json 的 `style` 有没有生效、场景是不是都手写了 `box` 把母版盖掉了。
 - **音效单调 / 缺环境声**：让用户按 `工具/音效库/补充音效清单.md` 补，补完 `python scripts/import_sfx.py`。
-- **Windows / Mac**：Windows 命令用 `python` 不是 `python3`；两边都用本机 Chrome 渲染（`remotion.config.ts` 自动找）。Mac 上没有真图时先 `placeholder_photos.py` 出占位图再渲拼图。
+- **Windows / Mac**：路径和 Python 命令的区别见开头那张表——Mac 用 `python3`，Windows 用 `python`；两边都用本机 Chrome 渲染（`remotion.config.ts` 自动找）。Mac 上没有真图时先 `placeholder_photos.py` 出占位图再渲拼图。

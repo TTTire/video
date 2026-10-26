@@ -5,7 +5,14 @@ description: 为像素呼吸写或改认知类视频的口播稿、剪映版和�
 
 # 像素呼吸写稿指南
 
-工作区：`E:\视频脚本`（本 Skill 源文件在 `工具/video-script-creator/`，`~/.agents/skills/video-script-creator` 是指向它的链接）。交付格式、发布清单板块等硬性要求见工作区根目录 `AGENTS.md`。
+工作区（本 Skill 源文件都在 `工具/video-script-creator/`，`~/.agents/skills/video-script-creator` 是指向它的链接）：
+
+| 系统 | 工作区根目录 | Python 命令 |
+|---|---|---|
+| macOS | `/Users/tttire/Documents/工程队/视频选题` | `python3` |
+| Windows | `E:\视频脚本` | `python` |
+
+交付格式、发布清单板块等硬性要求见工作区根目录 `AGENTS.md`。下面命令一律写相对工作区根目录的路径，在哪个系统都一样跑。
 
 好稿子只让观众带走一句话：我原来把什么看错了，为什么会看错，下次该多问哪一句。
 
@@ -19,7 +26,7 @@ description: 为像素呼吸写或改认知类视频的口播稿、剪映版和�
 6. **收尾**：写发布清单：推荐标题、标签、发布文案、发布时间、事实核对自己写；封面和配乐按各自 Skill 写；**画面与素材清单按 `工具/video-broll-maker/SKILL.md` 的「写稿阶段」一节写**（这是用户出图的依据，也是之后渲染动画轨的场景表，必须写完整）。然后用脚本生成剪映版、跑校验：
    ```bash
    ruby 工具/validate_package.rb "进行中/选题文件夹" --write-jianying
-   python 工具/video-render/scripts/scenes_from_checklist.py <发布清单.md> <口播稿.md> epN   # 校验起始句、列出要出的图
+   python3 工具/video-render/scripts/scenes_from_checklist.py <发布清单.md> <口播稿.md> epN   # 校验起始句、列出要出的图   （Windows 把 python3 换成 python）
    ```
 
 ## 什么样的例子好
