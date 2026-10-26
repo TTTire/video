@@ -13,6 +13,7 @@
   "style": {                       // 本期视觉方案（由发布清单的 STYLE_DNA 注释生成，也可手改）
     "layout": "topleft",           //   文字母版：topleft | right | center | bottom（场景不写 box/grad 时按它）
     "scale": "v2",                 //   字号档位：v2 = h88 / t44 / big180（新期写上）；不写 = 旧档 h66/t38/big150
+    "badge": false,                //   左上角标（像素呼吸 · 栏目名）关掉。2026-10 起新期默认 false；不写 = 显示（老期照旧）
     "titleFont": "smiley",         //   标题字体：固定得意黑（smiley），不要换；字体怎么分工见下面「字体」一节
     "theme": {"gold": "#D9C49C", "coral": "#C9545A", "teal": "#9DB9CF", "bg": "#070B14", "dim": "#B9C0CC"},
     "tint": "#1B2A44", "tintOpacity": 0.3,   // 所有照片统一罩色

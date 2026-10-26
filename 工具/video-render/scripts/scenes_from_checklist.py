@@ -139,10 +139,13 @@ def main():
         for k, v in kv.items():
             if k in ("gold", "coral", "teal", "bg", "white", "dim"): theme[k] = v
             elif k == "font": style["titleFont"] = v
-            elif k in ("letterbox", "grain"): style[k] = v.lower() in ("1", "true", "yes")
+            elif k in ("letterbox", "grain", "badge"): style[k] = v.lower() in ("1", "true", "yes")
             elif k == "tintOpacity": style[k] = float(v)
             elif k in ("layout", "tint", "enter", "scale"): style[k] = v
         if theme: style["theme"] = theme
+        # 2026-10 起新期默认：不打左上角标、字号走 v2 档（老期不写这两条，重渲不变样）
+        style.setdefault("badge", False)
+        style.setdefault("scale", "v2")
     pj = f"{out}/photo.json"
     # photo.json 里已经手工写了更好的场景名时，scene-names 以它为准
     if os.path.exists(pj) and not force:

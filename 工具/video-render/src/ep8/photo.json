@@ -7,776 +7,710 @@
   "scenes": [
     {
       "id": "menu",
-      "name": "2020-年-4-月恢复堂食-北京顾",
+      "name": "2020 年 4 月：一张海底捞菜单",
       "photo": "S01",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
+      "ambience": "厨房",
       "items": [
         {
           "type": "h",
-          "text": "2020 年 4 月",
-          "at": 0
+          "text": "2020 年 4 月"
         },
         {
           "type": "h",
-          "text": "血旺半份 ¥16 → ¥23 · 八小片",
-          "at": 1
+          "text": "血旺半份 ¥16 → ¥23"
         },
         {
           "type": "h",
-          "text": "一片土豆 ¥1.5",
-          "at": 2
+          "text": "八小片"
         },
         {
           "type": "h",
-          "text": "米饭 ¥7 / 碗",
-          "at": 3
+          "text": "一片土豆 ¥1.5"
+        },
+        {
+          "type": "h",
+          "text": "米饭 ¥7 / 碗"
         }
-      ],
-      "box": "TR",
-      "grad": "right",
-      "ambience": "厨房"
+      ]
     },
     {
       "id": "sorry",
-      "name": "海底捞回应涨幅-6%；4-月-10-",
+      "name": "4 月 10 日致歉信：管理层的错误决策",
       "photo": "S02",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "整体涨幅：6%",
-          "at": 0,
-          "quote": true
-        },
-        {
-          "type": "h",
-          "text": "4 月 10 日 致歉信",
-          "at": 1
+          "text": "4 月 10 日 致歉信"
         },
         {
           "type": "h",
           "text": "“管理层的错误决策”",
-          "at": 2,
           "quote": true
         },
         {
           "type": "h",
-          "text": "价格恢复到停业前",
-          "at": 3
+          "text": "价格恢复到停业前"
         }
-      ],
+      ]
+    },
+    {
+      "id": "wrongself",
+      "name": "我第一次刷到也骂涨得离谱；后来才发现记错了",
+      "photo": "S02",
+      "move": "in",
       "box": "TR",
-      "grad": "right"
+      "grad": "right",
+      "dim": 0.25,
+      "blur": 6,
+      "items": [
+        {
+          "type": "h",
+          "text": "我第一次刷到：涨得离谱"
+        },
+        {
+          "type": "h",
+          "text": "~~我一开始就记错了~~"
+        },
+        {
+          "type": "h",
+          "text": "整体涨幅：只有 6%",
+          "font": "num"
+        }
+      ]
     },
     {
       "id": "contrast",
-      "name": "上期奢侈品一年两次-10%-照样排队",
+      "name": "奢侈品 +10% 排队 vs 火锅 +6% 道歉",
       "photo": "S03",
       "move": "in",
-      "items": [
-        {
-          "type": "h",
-          "text": "奢侈品 +10% ×2 / 年 → 排队",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "火锅 +6% → 道歉",
-          "at": 1
-        }
-      ],
       "box": "TW",
-      "grad": "top"
-    },
-    {
-      "id": "wrong",
-      "name": "第一反应：火锅不够高级-/-不够硬气",
-      "photo": "S02",
-      "move": "in",
+      "grad": "top",
       "items": [
         {
           "type": "h",
-          "text": "火锅不够高级？",
-          "at": 0
+          "text": "奢侈品 +10% ×2 / 年 → 排队"
         },
         {
           "type": "h",
-          "text": "海底捞不够硬气？",
-          "at": 1
-        },
-        {
-          "type": "h",
-          "text": "~~东西值不值~~",
-          "at": 2
+          "text": "火锅 +6% → 道歉"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
-      "id": "door",
-      "name": "决定走不走的不是那道菜-是推门出去还",
-      "photo": "S04",
+      "id": "direction0",
+      "name": "不是贵不贵的故事",
+      "photo": "S03",
       "move": "in",
+      "box": "TW",
+      "grad": "top",
+      "dim": 0.3,
+      "blur": 8,
       "items": [
         {
           "type": "h",
-          "text": "决定你走不走的，不是桌上那道菜",
-          "at": 0
+          "text": "~~东西值不值~~"
         },
         {
           "type": "h",
-          "text": "是推门出去，还有没有别的地方可去",
-          "at": 1
+          "text": "不是贵不贵的问题"
         }
-      ],
-      "box": "TR",
-      "grad": "right",
-      "ambience": "街道夜晚"
+      ]
     },
     {
       "id": "series",
-      "name": "栏目卡：第-8-个-需求价格弹性",
+      "type": "series",
+      "num": 8,
+      "title": "需求价格弹性",
+      "tagline": "涨价之后，少买多少",
       "photo": "S05",
       "move": "in",
-      "items": [
-        {
-          "type": "h",
-          "text": "08 需求价格弹性",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "PRICE ELASTICITY OF DEMAND",
-          "at": 1
-        },
-        {
-          "type": "h",
-          "text": "涨价之后，少买多少",
-          "at": 2
-        }
-      ],
-      "box": "TR",
-      "grad": "right"
+      "items": []
     },
     {
-      "id": "bridge",
-      "name": "上期结尾的问题：有人一涨就走-有人涨",
+      "id": "twothings",
+      "name": "涨多少是一件事，留下多少是另一件",
       "photo": "S05",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "一涨就走 vs 涨多少都留下",
-          "at": 0
+          "text": "涨了多少 · 一件事"
         },
         {
           "type": "h",
-          "text": "这期回答这个问题",
-          "at": 1
+          "text": "留下多少 · 另一件事"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "define",
-      "name": "翻译成人话：价格动一下-数量跟着动多",
+      "name": "弹性是幅度：+10% 少买多少",
       "photo": "S05",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "价格动一下，你买的数量跟着动多少",
-          "at": 0
+          "text": "价格动一下，你买的数量跟着动多少"
         },
         {
           "type": "h",
-          "text": "+10% → −20% 橡皮筋",
-          "at": 1
+          "text": "+10% → −20%"
         },
         {
           "type": "h",
-          "text": "+10% → −2% 铁丝",
-          "at": 2
+          "text": "橡皮筋，一拉就长"
+        },
+        {
+          "type": "h",
+          "text": "+10% → −2%"
+        },
+        {
+          "type": "h",
+          "text": "铁丝，怎么拉都不动"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
-    },
-    {
-      "id": "direction",
-      "name": "需求定律说方向-弹性说幅度",
-      "photo": "S05",
-      "move": "in",
-      "items": [
-        {
-          "type": "h",
-          "text": "需求定律：方向 · 贵了少买",
-          "at": 0,
-          "quote": true
-        },
-        {
-          "type": "h",
-          "text": "弹性：幅度 · 少买多少",
-          "at": 1,
-          "quote": true
-        }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "attribute",
-      "name": "大家把弹性当东西的属性：盐铁丝-火锅",
+      "name": "把弹性当成东西的属性：盐铁丝、火锅橡皮筋",
       "photo": "S06",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "盐 = 铁丝",
-          "at": 0
+          "text": "~~盐 = 铁丝~~"
         },
         {
           "type": "h",
-          "text": "火锅 = 橡皮筋",
-          "at": 1
+          "text": "~~火锅 = 橡皮筋~~"
         },
         {
           "type": "h",
-          "text": "奢侈品 = 铁丝",
-          "at": 2
+          "text": "~~奢侈品 = 铁丝~~"
         },
         {
           "type": "h",
-          "text": "奶茶 = 橡皮筋",
-          "at": 3
+          "text": "~~奶茶 = 橡皮筋~~"
         },
         {
           "type": "h",
-          "text": "火锅本来就涨不得？",
-          "at": 4
+          "text": "火锅本来就涨不得？"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "comments",
-      "name": "评论区两种声音：“再也不去了”-/-",
+      "name": "同一张菜单：一半橡皮筋，一半铁丝",
       "photo": "S07A",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
+      "split": {
+        "at": [
+          1,
+          2
+        ],
+        "photos": [
+          "S07A",
+          "S07B"
+        ]
+      },
       "items": [
         {
           "type": "h",
           "text": "“再也不去了”",
-          "at": 0,
           "quote": true
         },
         {
           "type": "h",
           "text": "“又不是天天吃，无所谓”",
-          "at": 1,
           "quote": true
         },
         {
           "type": "h",
-          "text": "同一张菜单：一半橡皮筋，一半铁丝",
-          "at": 2
+          "text": "同一张菜单，两种人"
         },
         {
           "type": "h",
-          "text": "弹性不长在火锅身上，长在人身上",
-          "at": 3
+          "text": "弹性长在人身上"
         }
-      ],
+      ]
+    },
+    {
+      "id": "door",
+      "name": "决定你走不走的是推门出去还有没有别处可去",
+      "photo": "S04",
+      "move": "in",
       "box": "TR",
       "grad": "right",
-      "swap": {
-        "at": 1,
-        "photo": "S07B"
-      }
+      "ambience": "街道夜晚",
+      "items": [
+        {
+          "type": "h",
+          "text": "不是桌上那道菜"
+        },
+        {
+          "type": "h",
+          "text": "是推门出去，还有没有别的地方可去"
+        }
+      ]
     },
     {
       "id": "three",
-      "name": "什么决定橡皮筋还是铁丝：三件事；第一",
+      "name": "第一：有没有别的地方可去",
       "photo": "S08",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "① 有没有别的地方可去",
-          "at": 0
+          "text": "① 有没有别的地方可去"
         },
         {
           "type": "h",
-          "text": "楼下十家火锅店 vs 只有专柜",
-          "at": 1
+          "text": "楼下十家火锅店"
+        },
+        {
+          "type": "h",
+          "text": "vs 只有专柜"
         }
-      ],
-      "box": "TR",
-      "grad": "right",
-      "ambience": "街道夜晚"
+      ]
     },
     {
       "id": "budget",
-      "name": "第二这笔钱占口袋多大；人均两百多对月",
+      "name": "第二：这笔钱占你口袋多大一块",
       "photo": "S09",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "② 这笔钱占你口袋多大一块",
-          "at": 0
+          "text": "② 这笔钱占你口袋多大一块"
         },
         {
           "type": "h",
-          "text": "人均 ¥200+：月薪 5000 vs 月薪 50000",
-          "at": 1
+          "text": "人均 ¥200+"
+        },
+        {
+          "type": "h",
+          "text": "月薪 5000 vs 月薪 50000"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "time",
-      "name": "第三有没有时间换；今晚请客只能认-下",
+      "name": "第三：有没有时间换",
       "photo": "S01",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "③ 有没有时间换",
-          "at": 0
+          "text": "③ 有没有时间换"
         },
         {
           "type": "h",
-          "text": "今晚请客 → 只能认",
-          "at": 1
+          "text": "今晚请客 → 只能认"
         },
         {
           "type": "h",
-          "text": "下月再聚 → 慢慢挑",
-          "at": 2
+          "text": "下月再聚 → 慢慢挑"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "notonmenu",
-      "name": "替代品-预算-时间-没有一样写在菜单",
+      "name": "替代品、预算、时间，没有一样写在菜单上",
       "photo": "S08",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
+      "dim": 0.3,
+      "blur": 8,
       "items": [
         {
           "type": "h",
-          "text": "替代品 · 预算 · 时间",
-          "at": 0
+          "text": "替代品 · 预算 · 时间"
         },
         {
           "type": "h",
-          "text": "没有一样写在菜单上",
-          "at": 1
+          "text": "没有一样写在菜单上"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "tobacco",
-      "name": "三件事怎么同时起作用；最清楚的例子是",
+      "name": "香烟：烟价 +10%，消费只降 4%–5%",
       "photo": "S10",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "最清楚的例子：香烟",
-          "at": 0
+          "text": "最清楚的例子：香烟"
         },
         {
           "type": "h",
-          "text": "烟价 +10%",
-          "at": 1
+          "text": "烟价 +10%"
         },
         {
           "type": "h",
           "text": "消费量 −4% ~ −5%",
-          "at": 2
+          "font": "num"
         },
         {
           "type": "h",
-          "text": "一根很硬的铁丝",
-          "at": 3
+          "text": "一根很硬的铁丝"
         },
         {
           "type": "h",
-          "text": "涨多少，大部分人都留下",
-          "at": 4
+          "text": "涨多少，大部分人都留下"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "split",
-      "name": "拆开看不是一个数：年轻人反应是成年人",
+      "name": "拆开看不是一个数：年轻人和低收入更敏感",
       "photo": "S11A",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
+      "split": {
+        "at": [
+          1,
+          2
+        ],
+        "photos": [
+          "S11A",
+          "S11B"
+        ]
+      },
       "items": [
         {
           "type": "h",
-          "text": "拆开看",
-          "at": 0
+          "text": "拆开看"
         },
         {
           "type": "h",
-          "text": "年轻人：成年人的 2–3 倍",
-          "at": 1,
-          "quote": true
+          "text": "年轻人：成年人的 2–3 倍"
         },
         {
           "type": "h",
-          "text": "低收入：比高收入敏感得多",
-          "at": 2,
-          "quote": true
-        },
-        {
-          "type": "h",
-          "text": "上期那个问题的答案",
-          "at": 3
+          "text": "低收入：比高收入敏感得多"
         }
-      ],
-      "box": "TR",
-      "grad": "right",
-      "swap": {
-        "at": 1,
-        "photo": "S11B"
-      }
+      ]
     },
     {
       "id": "two",
-      "name": "老烟民铁丝：烟瘾-二十年-无替代无时",
+      "name": "老烟民是铁丝，年轻人是橡皮筋",
       "photo": "S11B",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
+      "swap": {
+        "at": 2,
+        "photo": "S11A",
+        "grad": "right",
+        "move": "in",
+        "delay": 0
+      },
       "items": [
         {
           "type": "h",
-          "text": "老烟民 = 铁丝",
-          "at": 0
+          "text": "老烟民 = 铁丝"
         },
         {
           "type": "h",
-          "text": "年轻人 = 橡皮筋",
-          "at": 1
+          "text": "年轻人 = 橡皮筋"
         },
         {
           "type": "h",
-          "text": "一次加税，同时打中两种人",
-          "at": 2
+          "text": "一次加税，同时打中两种人"
         },
         {
           "type": "h",
-          "text": "留下的多交税 · 没上瘾的不开始",
-          "at": 3
+          "text": "留下的多交税 · 没上瘾的不开始"
         }
-      ],
-      "box": "TL",
-      "grad": "left",
-      "swap": {
-        "at": 1,
-        "photo": "S11A"
-      }
+      ]
     },
     {
       "id": "bain",
-      "name": "明白了上期-5000-万人里年轻人先",
+      "name": "上期 5000 万人里，年轻人先走",
       "photo": "S12",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "上期：5000 万人里，年轻人先走",
-          "at": 0,
-          "quote": true
+          "text": "上期：5000 万人里，年轻人先走"
         },
         {
           "type": "h",
-          "text": "占预算太大 + 替代品太多",
-          "at": 1
+          "text": "占预算太大 + 替代品太多"
         },
         {
           "type": "h",
-          "text": "香水 · 二手包",
-          "at": 2
+          "text": "香水 · 二手包"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "netflix2011",
-      "name": "弹性不是固定数；Netflix-20",
+      "name": "Netflix 2011：涨 60%，一个季度走 80 万",
       "photo": "S13",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "弹性不是一个固定的数",
-          "at": 0
+          "text": "弹性不是一个固定的数"
         },
         {
           "type": "h",
-          "text": "2011 · Netflix 涨价 60%",
-          "at": 1
+          "text": "2011 · 涨价 60%"
         },
         {
           "type": "h",
-          "text": "一个季度 −80 万用户",
-          "at": 2
+          "text": "一个季度 −80 万用户"
         },
         {
           "type": "h",
-          "text": "股价 −70%+",
-          "at": 3
+          "text": "股价 −70%+"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "netflix2025",
-      "name": "2023-底到-2025-初又连涨几",
+      "name": "2023–2025 又涨价：2024 净增 4100 万",
       "photo": "S14",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "2023–2025 · 又涨了几次价",
-          "at": 0
+          "text": "2023–2025 · 又涨了几次价"
         },
         {
           "type": "h",
-          "text": "2024 净增 +4100 万",
-          "at": 1
+          "text": "2024 净增 +4100 万"
         },
         {
           "type": "h",
-          "text": "总数 3 亿+",
-          "at": 2
+          "text": "总数 3 亿+"
         },
         {
           "type": "h",
-          "text": "同一家公司，结果反过来",
-          "at": 3
+          "text": "同一家公司，结果反过来"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "substitute",
-      "name": "变的是替代品：2011-能退回出租店",
+      "name": "变的是替代品：橡皮筋 → 铁丝",
       "photo": "S13",
       "move": "in",
-      "items": [
-        {
-          "type": "h",
-          "text": "变的不是钱包，是替代品",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "2011：出租店 · 有线电视",
-          "at": 1,
-          "quote": true
-        },
-        {
-          "type": "h",
-          "text": "现在：每天 2 小时 · 只有它有",
-          "at": 2,
-          "quote": true
-        },
-        {
-          "type": "h",
-          "text": "替代品一消失，橡皮筋 → 铁丝",
-          "at": 3
-        }
-      ],
       "box": "TR",
       "grad": "right",
       "swap": {
-        "at": 1,
-        "photo": "S14"
-      }
+        "at": 2,
+        "photo": "S14",
+        "grad": "right",
+        "move": "in",
+        "delay": 0
+      },
+      "items": [
+        {
+          "type": "h",
+          "text": "变的不是钱包，是替代品"
+        },
+        {
+          "type": "h",
+          "text": "2011：出租店 · 有线电视"
+        },
+        {
+          "type": "h",
+          "text": "现在：每天 2 小时 · 只有它有"
+        },
+        {
+          "type": "h",
+          "text": "替代品一消失，橡皮筋 → 铁丝"
+        }
+      ]
     },
     {
       "id": "revenue",
-      "name": "弹性讲数量-商家在意钱；+10%-走",
+      "name": "弹性讲数量，商家算的是钱",
       "photo": "S15",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "弹性讲数量，商家算的是钱",
-          "at": 0
+          "text": "弹性讲数量，商家算的是钱"
         },
         {
           "type": "h",
-          "text": "+10% · 走 4% → 收入 ↑",
-          "at": 1
+          "text": "+10% · 走 4% → 收入 ↑"
         },
         {
           "type": "h",
-          "text": "+10% · 走 20% → 亏",
-          "at": 2
+          "text": "+10% · 走 20% → 亏"
         },
         {
           "type": "h",
-          "text": "留下的人多付的钱，够不够补走掉的人",
-          "at": 3
+          "text": "留下的人多付的，够不够补走掉的"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "guess",
-      "name": "海底捞涨-6%-只要走的不到-6%-",
+      "name": "涨 6% 走掉不到 6% 就不亏；怕的是传播速度",
       "photo": "S02",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "涨 6%，走掉的不到 6% 就不亏",
-          "at": 0
+          "text": "涨 6%，走掉的不到 6% 就不亏"
         },
         {
           "type": "h",
-          "text": "它怕的不是走掉几个点",
-          "at": 1
+          "text": "它怕的不是走掉几个点"
         },
         {
           "type": "h",
-          "text": "是那张菜单传播的速度",
-          "at": 2
+          "text": "是那张菜单传播的速度"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "self",
-      "name": "放到自己身上：涨价通知（会员-房租-",
+      "name": "涨价通知先问：我有没有第二个选择",
       "photo": "S16",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
       "items": [
         {
           "type": "h",
-          "text": "视频会员 · 房租 · 理发店",
-          "at": 0
+          "text": "视频会员 · 房租 · 理发店"
         },
         {
           "type": "h",
-          "text": "我有没有第二个选择？",
-          "at": 1
+          "text": "我有没有第二个选择？"
         },
         {
           "type": "h",
-          "text": "有 → 橡皮筋",
-          "at": 2
+          "text": "有 → 橡皮筋"
         },
         {
           "type": "h",
-          "text": "没有 → 铁丝，挑中的就是你",
-          "at": 3
+          "text": "没有 → 铁丝，挑中的就是你"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "prepare",
-      "name": "商家先挑铁丝；不想被挑中：涨价之前先",
+      "name": "我要做的一件小事：把自动扣款列一遍",
       "photo": "S16",
       "move": "in",
+      "box": "TR",
+      "grad": "right",
+      "dim": 0.3,
+      "blur": 8,
       "items": [
         {
           "type": "h",
-          "text": "商家要涨价，先挑的一定是铁丝",
-          "at": 0
+          "text": "把每月自动扣款列一遍"
         },
         {
           "type": "h",
-          "text": "在它涨价之前，先给自己准备好第二个选择",
-          "at": 1
+          "text": "最舍不得退的 = 找不到第二个的"
+        },
+        {
+          "type": "h",
+          "text": "是真值这个钱，还是我懒得找了"
         }
-      ],
-      "box": "TR",
-      "grad": "right"
+      ]
     },
     {
       "id": "potato",
-      "name": "回到那张菜单：一片土豆-1-块-5；",
+      "name": "一片土豆 ¥1.5，替代品就在眼前",
       "photo": "S17",
       "move": "in",
-      "items": [
-        {
-          "type": "h",
-          "text": "一片土豆 ¥1.5",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "菜市场：几块钱一斤",
-          "at": 1,
-          "quote": true
-        },
-        {
-          "type": "h",
-          "text": "替代品就在眼前",
-          "at": 2
-        },
-        {
-          "type": "h",
-          "text": "这一次，顾客是橡皮筋",
-          "at": 3
-        }
-      ],
       "box": "TR",
       "grad": "right",
       "swap": {
-        "at": 1,
-        "photo": "S01"
+        "at": 2,
+        "photo": "S01",
+        "grad": "right",
+        "move": "in",
+        "delay": 0
       },
-      "ambience": "厨房"
-    },
-    {
-      "id": "next",
-      "name": "价格涨了买的人变少；那卖的人呢；下期",
-      "photo": "S18",
-      "move": "in",
+      "ambience": "厨房",
       "items": [
         {
           "type": "h",
-          "text": "买的人少了",
-          "at": 0
+          "text": "一片土豆 ¥1.5"
         },
         {
           "type": "h",
-          "text": "那卖的人呢？",
-          "at": 1
+          "text": "菜市场：几块钱一斤"
+        },
+        {
+          "type": "h",
+          "text": "替代品就在眼前"
+        },
+        {
+          "type": "h",
+          "text": "这一次，顾客是橡皮筋"
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "name": "下期：供给定律",
+      "photo": "S18",
+      "move": "in",
+      "box": "TR",
+      "grad": "right",
+      "ambience": "街道夜晚",
+      "items": [
+        {
+          "type": "h",
+          "text": "买的人少了"
+        },
+        {
+          "type": "h",
+          "text": "那卖的人呢？"
         },
         {
           "type": "h",
           "text": "下期：供给定律",
-          "at": 2,
           "quote": true
         }
-      ],
-      "box": "TR",
-      "grad": "right",
-      "ambience": "街道夜晚"
+      ]
     }
   ],
   "style": {
@@ -794,6 +728,7 @@
       "bg": "#0A0C10",
       "dim": "#C9CBD1"
     },
-    "badge": false
+    "badge": false,
+    "scale": "v2"
   }
 }
