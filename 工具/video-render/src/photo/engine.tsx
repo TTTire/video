@@ -5,7 +5,7 @@ import React from 'react';
 import {AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame} from 'remotion';
 import {Theme, useC} from '../ui';
 import {Enter} from '../fx';
-import {CountUp, FlyIn, Sfx, SfxName, Stamp, StrikeLine, useSpringAt} from '../fx';
+import {CountUp, FlyIn, Sfx, SfxName, Stamp, StrikeLine, useSpringAt, TextEnter, TextEnterCtx, FADE_FRAMES} from '../fx';
 import {at, Box, BoxSpec, CardKind, CardShell, useInk, Clock, Em, FONTS, FontKey, Grad, H, P, Panel, Photo, PHOTO_THEME, Quote, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease, regionBox, regionOrigin, regionXY, SAFE_RIGHT_X} from './kit';
 export type {BoxSpec, CardKind} from './kit';
 
@@ -19,7 +19,7 @@ export type Item = Base & (
   | {type: 'tag'; text: string; size?: number; color?: string; dark?: boolean}
   | {type: 'stamp'; text: string; size?: number; color?: string; rotate?: number}
   | {type: 'big'; text: string; size?: number; color?: string}
-  | {type: 'count'; from?: number; to: number; prefix?: string; suffix?: string; size?: number; color?: string; dur?: number; label?: string; before?: string}
+  | {type: 'count'; from?: number; to: number; prefix?: string; suffix?: string; size?: number; color?: string; dur?: number; label?: string; before?: string; decimals?: number}
   | {type: 'nums'; items: {label?: string; value: string; color?: string}[]; size?: number; arrow?: string}
   | {type: 'panel'; lines: string[]; label?: string; size?: number}
   | {type: 'stack'; items: {big: string; small?: string; color?: string}[]; w?: number}
@@ -58,6 +58,8 @@ export type Style = {
   grain?: boolean;                                      // 胶片颗粒
   // 字号档位：v2 = h 88 / t 44 / big 180（新期默认）；不写就是旧档位 h 66 / t 38 / big 150（老期保等）
   scale?: 'v1' | 'v2';
+  // 文字入场：fade = 纯渐显（2026-10 起新期默认写这个）；不写 = 旧的弹簧飞入。只管字，照片推拉和场景切换不受影响
+  textEnter?: TextEnter;
   // 左上角标（像素呼吸 · 栏目名）显示与否。false = 不显示；不写 = 显示（已发布各期照旧）
   badge?: boolean;
 };
@@ -109,12 +111,15 @@ const DEFAULT_DIR = (b: BoxSpec): Dir => (b.align === 'center' ? 'up' : b.right 
 // 叠卡的一行：自己带弹簧入场，不能用 FlyIn 包 —— wrapper 的 transform 会重置 absolute 定位的基准。
 const StackRow: React.FC<{row: {big: string; small?: string; color?: string}; i: number; w: number; atFrame: number; color: string | undefined; last: boolean}> = ({row, i, w, atFrame, color, last}) => {
   const C = useC();
-  const p = useSpringAt(atFrame + i * 12, {damping: 15, stiffness: 130});
+  const mode = React.useContext(TextEnterCtx);
+  const f = useCurrentFrame();
+  const sp = useSpringAt(atFrame + i * 12, {damping: 15, stiffness: 130});
+  const p = mode === 'fade' ? interpolate(f, [atFrame + i * 12, atFrame + i * 12 + FADE_FRAMES], [0, 1], clamp) : sp;
   return (
     <div style={{
       position: 'absolute', left: i * 44, top: i * 122, width: w, boxSizing: 'border-box', borderRadius: 18, padding: '22px 40px',
       background: last ? C.gold : `${C.bg}EE`, color: last ? '#1A0E06' : C.white, overflow: 'hidden',
-      opacity: p, transform: `translateY(${(1 - p) * 70}px)`,
+      opacity: p, transform: mode === 'fade' ? 'none' : `translateY(${(1 - p) * 70}px)`,
       boxShadow: '0 22px 56px #000000AA', border: last ? 'none' : `1px solid ${C.white}18`, display: 'flex', alignItems: 'baseline', gap: 26,
     }}>
       <span style={{fontFamily: FONTS.num, fontWeight: 900, fontSize: 64, lineHeight: 1, color: last ? '#1A0E06' : (color ?? C.teal), fontVariantNumeric: 'tabular-nums', whiteSpace: 'nowrap'}}>{row.big}</span>
@@ -123,9 +128,12 @@ const StackRow: React.FC<{row: {big: string; small?: string; color?: string}; i:
   );
 };
 const NumCell: React.FC<{at: number; label?: string; value: string; size: number; color: string}> = ({at: a, label, value, size, color}) => {
-  const sp = useSpringAt(a, {damping: 12, stiffness: 140});
+  const mode = React.useContext(TextEnterCtx);
+  const f = useCurrentFrame();
+  const spr = useSpringAt(a, {damping: 12, stiffness: 140});
+  const sp = mode === 'fade' ? interpolate(f, [a, a + FADE_FRAMES], [0, 1], clamp) : spr;
   return (
-    <div style={{opacity: sp, transform: `translateY(${(1 - sp) * -120}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
+    <div style={{opacity: sp, transform: mode === 'fade' ? 'none' : `translateY(${(1 - sp) * -120}px)`, display: 'flex', flexDirection: 'column', alignItems: 'center'}}>
       {label && <T size={30}>{label}</T>}
       <H size={size} color={color} style={{lineHeight: 1, fontFamily: FONTS.num, fontVariantNumeric: 'tabular-nums', letterSpacing: 0}}>{value}</H>
     </div>
@@ -202,7 +210,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
         <div style={{display: 'flex', alignItems: 'baseline', gap: 28, justifyContent: align === 'center' ? 'center' : undefined}}>
           {it.label && <T size={40}>{it.label}</T>}
           {it.before && <><H size={(it.size ?? 150) * 0.7} color={C.dim} style={{lineHeight: 1, ...NUM}}>{it.before}</H><H size={(it.size ?? 150) * 0.5} color={C.dim}>→</H></>}
-          <H size={it.size ?? 150} color={col(it.color, C.gold, C)} style={{lineHeight: 1, ...NUM}}>{it.prefix}<CountUp from={it.from ?? 0} to={it.to} at={a + 6} dur={dur} format={(n) => String(n)} />{it.suffix}</H>
+          <H size={it.size ?? 150} color={col(it.color, C.gold, C)} style={{lineHeight: 1, ...NUM}}>{it.prefix}<CountUp from={it.from ?? 0} to={it.to} at={a + 6} dur={dur} decimals={it.decimals ?? (Number.isInteger(it.to) ? 0 : 1)} />{it.suffix}</H>
         </div>);
     }
     case 'nums': return (
@@ -347,9 +355,14 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
           const label = b.label ?? (k === 'main' ? spec.cardLabel : undefined);
           const tabColor = b.tabColor ?? (k === 'main' ? spec.cardColor : undefined);
           const cardW = kind ? (b.cardW ?? spec.cardW) : undefined;
+          // 卡壳跟着组里第一条字一起出现：没到那一句之前不画空壳（2026-10 修，之前空壳会先摆在那儿）
+          const firstStep = Math.min(...list.map((it) => it.at ?? 0));
+          const firstAt = at(p, firstStep) + Math.min(...list.filter((it) => (it.at ?? 0) === firstStep).map((it) => it.delay ?? 0));
+          const shellK = kind ? interpolate(f, [firstAt, firstAt + FADE_FRAMES], [0, 1], clamp) : 1;
+          if (kind && p.step < firstStep) return null;
           return (
             <Box key={k} x={b.x} y={b.bottom === undefined ? b.y : undefined} w={b.w} right={b.right}
-              style={{bottom: b.bottom, alignItems: center ? 'center' : b.align === 'right' ? 'flex-end' : 'flex-start', opacity: boxOpacity(k)}}>
+              style={{bottom: b.bottom, alignItems: center ? 'center' : b.align === 'right' ? 'flex-end' : 'flex-start', opacity: boxOpacity(k) * shellK}}>
               <CardShell kind={kind} label={label} color={tabColor} w={cardW}>
                 {list.map((it, i) => <ItemView key={i} it={it} p={p} box={b} custom={custom} spec={spec} />)}
               </CardShell>
@@ -362,7 +375,9 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
   };
   const SceneView: React.FC<P> = (p) => (
     <ScaleCtx.Provider value={scale}>
-      <SceneViewInner {...p} />
+      <TextEnterCtx.Provider value={st.textEnter ?? 'fly'}>
+        <SceneViewInner {...p} />
+      </TextEnterCtx.Provider>
     </ScaleCtx.Provider>
   );
   return SceneView;

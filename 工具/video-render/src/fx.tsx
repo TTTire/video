@@ -106,9 +106,11 @@ export const StrikeLine: React.FC<{at: number; color?: string}> = ({at, color}) 
 };
 
 // 数字滚动
-export const CountUp: React.FC<{from?: number; to: number; at: number; dur?: number; format?: (n: number) => string}> = ({from = 0, to, at, dur = 30, format}) => {
+// decimals：保留几位小数（18.5% 这类数写 1；不写按整数滚）
+export const CountUp: React.FC<{from?: number; to: number; at: number; dur?: number; format?: (n: number) => string; decimals?: number}> = ({from = 0, to, at, dur = 30, format, decimals = 0}) => {
   const f = useCurrentFrame();
   const v = interpolate(f, [at, at + dur], [from, to], {...clamp, easing: (t) => 1 - Math.pow(1 - t, 3)});
+  if (decimals > 0) return <>{v.toFixed(decimals)}</>;
   const n = Math.round(v);
   return <>{format ? format(n) : n.toLocaleString('en-US')}</>;
 };
@@ -127,8 +129,19 @@ export const GlassCard: React.FC<{children: React.ReactNode; style?: React.CSSPr
 };
 
 // 弹射入场：dir 从哪边飞进来
+// 文字入场方式：fly = 弹簧飞入（位移 + 缩放 + 渐显，旧期默认）；fade = 纯渐显 10 帧，不动位置
+export type TextEnter = 'fly' | 'fade';
+export const TextEnterCtx = React.createContext<TextEnter>('fly');
+export const FADE_FRAMES = 10;
+
 export const FlyIn: React.FC<{at: number; dir?: 'left' | 'right' | 'up' | 'down'; dist?: number; children: React.ReactNode; style?: React.CSSProperties}> = ({at, dir = 'up', dist = 300, children, style}) => {
+  const mode = React.useContext(TextEnterCtx);
+  const f = useCurrentFrame();
   const p = useSpringAt(at);
+  if (mode === 'fade') {
+    const o = interpolate(f, [at, at + FADE_FRAMES], [0, 1], clamp);
+    return <div style={{opacity: o, ...style}}>{children}</div>;
+  }
   const d = (1 - p) * dist;
   const t = dir === 'left' ? `translateX(${-d}px)` : dir === 'right' ? `translateX(${d}px)` : dir === 'up' ? `translateY(${d}px)` : `translateY(${-d}px)`;
   return <div style={{opacity: Math.min(1, p * 1.5), transform: `${t} scale(${0.85 + 0.15 * p})`, ...style}}>{children}</div>;
