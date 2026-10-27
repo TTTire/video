@@ -283,6 +283,8 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
     </>
   );
   const scale = SCALES[st.scale ?? 'v1'];
+  // 开了 2.35:1 黑边时顶上 130px 是黑的：T 行（y=120）整体下移 40，不然第一行字的头被黑边吃掉
+  const lb = (b: BoxSpec): BoxSpec => (st.letterbox && b.y !== undefined && b.y < 170 ? {...b, y: b.y + 40} : b);
   const SceneViewInner: React.FC<P> = (p) => {
     const C = useC();
     const f = useCurrentFrame();
@@ -305,16 +307,16 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
 
     const enterSfx = spec.enterSfx === null ? null : spec.enterSfx ?? 'pop';
     const swap = spec.swap ? interpolate(f, [at(p, spec.swap.at) + (spec.swap.delay ?? 0), at(p, spec.swap.at) + (spec.swap.delay ?? 0) + 24], [0, 1], clamp) : 0;
-    const boxes: Record<string, BoxSpec> = {main: spec.center ? CENTER_BOX : regionBox(spec.box, L.box)};
-    Object.entries(spec.boxes ?? {}).forEach(([k, v]) => { boxes[k] = regionBox(v, DEFAULT_BOX); });
+    const boxes: Record<string, BoxSpec> = {main: lb(spec.center ? CENTER_BOX : regionBox(spec.box, L.box))};
+    Object.entries(spec.boxes ?? {}).forEach(([k, v]) => { boxes[k] = lb(regionBox(v, DEFAULT_BOX)); });
     const grad: Grad = spec.grad ?? (spec.center ? 'none' : L.grad);
     let splitL = 0, splitR = 0;
     if (spec.split) {
       const [sl, sr] = spec.split.at;
       splitL = p.step >= sl ? interpolate(f, [at(p, sl), at(p, sl) + 26], [0, 1], {...clamp, easing: ease}) : 0;
       splitR = p.step >= sr ? interpolate(f, [at(p, sr), at(p, sr) + 26], [0, 1], {...clamp, easing: ease}) : 0;
-      boxes.L = boxes.L ?? {x: 70, y: 100, w: 820};
-      boxes.R = boxes.R ?? {x: 1030, y: 100, w: 820};
+      boxes.L = boxes.L ?? lb({x: 70, y: 100, w: 820});
+      boxes.R = boxes.R ?? lb({x: 1030, y: 100, w: 820});
     }
     const boxOpacity = (k: string) => (k === 'L' ? splitL : k === 'R' ? splitR : 1);
 
@@ -346,7 +348,7 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
         {spec.split && p.step >= spec.split.at[0] && <><Sfx at={at(p, spec.split.at[0])} name="whoosh" vol={0.35} /><Half code={spec.split.photos[0]} side="left" k={splitL} pos={spec.split.pos?.[0] ?? 'left center'} start={at(p, spec.split.at[0])} /></>}
         {spec.split && p.step >= spec.split.at[1] && <><Sfx at={at(p, spec.split.at[1])} name="whoosh" vol={0.35} /><Half code={spec.split.photos[1]} side="right" k={splitR} pos={spec.split.pos?.[1] ?? 'right center'} start={at(p, spec.split.at[1])} /></>}
         {overlays.map((it, i) => <ItemView key={'o' + i} it={it} p={p} box={boxes.main} custom={custom} spec={spec} />)}
-        {spec.type === 'series' && <SeriesCard p={p} spec={spec} ep={ep} />}
+        {spec.type === 'series' && <SeriesCard p={p} spec={spec} ep={ep} box={lb(regionBox(spec.box, DEFAULT_BOX))} />}
         {Object.entries(grouped).map(([k, list]) => {
           const b = boxes[k] ?? boxes.main;
           const center = b.align === 'center';
@@ -360,6 +362,8 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
           const firstAt = at(p, firstStep) + Math.min(...list.filter((it) => (it.at ?? 0) === firstStep).map((it) => it.delay ?? 0));
           const shellK = kind ? interpolate(f, [firstAt, firstAt + FADE_FRAMES], [0, 1], clamp) : 1;
           if (kind && p.step < firstStep) return null;
+          // 组里的字全都 until 过期了，卡壳也别留着（不然屏上挂一张空卡）
+          if (kind && !list.some((it) => it.until === undefined || p.step < it.until)) return null;
           return (
             <Box key={k} x={b.x} y={b.bottom === undefined ? b.y : undefined} w={b.w} right={b.right}
               style={{bottom: b.bottom, alignItems: center ? 'center' : b.align === 'right' ? 'flex-end' : 'flex-start', opacity: boxOpacity(k) * shellK}}>
@@ -384,19 +388,19 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
 };
 
 // 栏目卡：栏目名 → 序号滚到本期 + 标题 → 一句话
-const SeriesCard: React.FC<{p: P; spec: SceneSpec; ep: EpisodeSpec}> = ({p, spec, ep}) => {
+const SeriesCard: React.FC<{p: P; spec: SceneSpec; ep: EpisodeSpec; box?: BoxSpec}> = ({p, spec, ep, box}) => {
   const C = useC();
   const f = useCurrentFrame();
   const n = spec.num ?? parseInt(ep.badge, 10);
   const s1 = at(p, 1), s2 = p.steps.length > 2 ? at(p, 2) : s1 + 45;  // 只有两句时 tagline 晚 1.5 秒出
   const num = Math.min(n, Math.max(1, Math.floor(interpolate(f, [s1, s1 + 18], [1, n + 0.99], clamp))));
-  const b = regionBox(spec.box, DEFAULT_BOX);
+  const b = box ?? regionBox(spec.box, DEFAULT_BOX);
   return (
     <>
       <Sfx at={0} name="flip" vol={0.4} />
       {p.step >= 1 && <><Sfx at={s1} name="tick" dur={0.65} vol={0.4} /><Sfx at={s1 + 20} name="ding" vol={0.3} /></>}
       {p.step >= 2 && spec.tagline && <Sfx at={s2} name="cash" vol={0.3} />}
-      <Box x={b.x} y={b.y} w={b.w}>
+      <Box x={b.x} y={b.y} w={b.w} style={{alignItems: b.align === 'right' ? 'flex-end' : b.align === 'center' ? 'center' : 'flex-start'}}>
         <FlyIn at={0} dir="left" dist={120}>
           {spec.label
             ? <T size={40} style={{letterSpacing: 6}}>{spec.label}</T>
