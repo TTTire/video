@@ -14,6 +14,8 @@ python scripts/timeline_from_srt.py <口播稿.md> <口播.srt> ep7 src/ep7/scen
 python scripts/render.py ep7 sheet | check 40 | full | fullcheck        # 拼图 / 40 秒小样 / 全片 / 全片带字幕
 ```
 
+全片（`full` / `fullcheck`）走分段渲染 `scripts/render_seq.py`：并行出图片序列 → 查花屏兜底 → 编码 → 合音频，可断点续渲（改过代码加 `--fresh`）。浏览器用 Remotion 自带的 chrome-headless-shell，不要用本机 Chrome（会随机出花屏帧）。测试记录见 `docs/渲染方式测试-2026-10-28.md`；`python scripts/glitch_check.py <成片.mp4>` 可单独查花屏。
+
 **B. 合成配音样片（旧流程）**：系统合成配音（Tingting）+ 手写场景组件，步骤如下。
 
 ## 做一期

@@ -3,7 +3,10 @@
   python scripts/render.py <epN> sheet              关键帧拼图（一张 jpg，10 秒出图）→ out/<epN>-sheet.jpg
   python scripts/render.py <epN> check [秒数]       带字幕的核对版，默认只渲前 40 秒 → out/<epN>-check.mp4
   python scripts/render.py <epN> full               正式版（只有音效，剪辑用）→ out/<epN>-photo.mp4
-  python scripts/render.py <epN> fullcheck          全片带字幕核对版 → out/<epN>-check-full.mp4
+                                                    走交付版流程 scripts/render_seq.py：并行出图片序列 → 自动修花屏帧 → 编码 → 合音频
+                                                    中途崩了直接重跑同一条命令会接着渲；改过 photo.json / 代码后加 --fresh
+  python scripts/render.py <epN> fullcheck          全片带字幕核对版 → out/<epN>-check-full.mp4（同样走交付版流程）
+  python scripts/render.py <epN> full-legacy        旧的单进程整段渲染（会随机出花屏帧，仅留作对照）
   python scripts/render.py <epN> still <帧号>        单帧 → out/_check/<epN>-<帧号>.jpg
 合成 id 由期号推出：ep7 → Ep7Photo / Ep7PhotoCheck / Ep7Sheet；ai01 → Ai01Photo…（第 6 期 JSON 版是 Ep6J*，传 ep6j）。
 """
@@ -23,9 +26,11 @@ elif mode == "check":
     sec = int(arg or 40)
     cmd = base + ["render", "src/index.ts", f"{comp}PhotoCheck", f"out/{ep}-check.mp4", "--codec=h264", "--crf=22", f"--frames=0-{sec * 30 - 1}"]
 elif mode == "full":
-    cmd = base + ["render", "src/index.ts", f"{comp}Photo", f"out/{ep}-photo.mp4", "--codec=h264", "--crf=18"]
+    cmd = [sys.executable, "scripts/render_seq.py", ep, "--comp", f"{comp}Photo", "--out", f"out/{ep}-photo.mp4", *sys.argv[3:]]
 elif mode == "fullcheck":
-    cmd = base + ["render", "src/index.ts", f"{comp}PhotoCheck", f"out/{ep}-check-full.mp4", "--codec=h264", "--crf=22"]
+    cmd = [sys.executable, "scripts/render_seq.py", ep, "--comp", f"{comp}PhotoCheck", "--out", f"out/{ep}-check-full.mp4", *sys.argv[3:]]
+elif mode == "full-legacy":
+    cmd = base + ["render", "src/index.ts", f"{comp}Photo", f"out/{ep}-photo.mp4", "--codec=h264", "--crf=18"]
 else:
     sys.exit(__doc__)
 print(" ".join(cmd))

@@ -220,9 +220,17 @@ python3 scripts/timeline_from_srt.py "<口播稿.md>" "<口播.srt>" ep7 src/ep7
 ```bash
 python3 scripts/render.py ep7 sheet        # 关键帧拼图，10 秒出一张 out/ep7-sheet.jpg，每个场景 1–4 格
 python3 scripts/render.py ep7 check 40     # 前 40 秒带字幕的核对版 out/ep7-check.mp4
-python3 scripts/render.py ep7 full         # 正式版（只有音效）out/ep7-photo.mp4，约 1 小时 / 5 分钟片
+python3 scripts/render.py ep7 full         # 正式版（只有音效）out/ep7-photo.mp4，7 分钟片约 8 分钟
 python3 scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选）
 ```
+
+`full` / `fullcheck` 走分段渲染（`scripts/render_seq.py`）：2 个进程并行出图片序列 → 查花屏帧兜底 → 编码 → 合音频。
+- 中途崩了、卡死了：**直接重跑同一条命令**，已出好的帧不重出；单段卡死会自动超时重试
+- 改过 photo.json 或代码之后重出全片：加 `--fresh`（`python3 scripts/render.py ep7 full --fresh`），否则会沿用旧帧
+- 只是画面要重出、音效没动：加 `--audio-from <旧成片.mp4>` 直接拷旧音轨，省掉单独渲音频的约 4 分钟
+- 图片序列整期约 5 GB，渲完自动删；硬盘剩余不足会直接停
+- 必须用 Remotion 自带的 chrome-headless-shell（`remotion.config.ts` 默认就是）。本机 Chrome 会随机出花屏帧（整帧缩成 3×3 平铺、叠字丢失），2026-10 的 ep8 第一版就带了 69 帧，见 `工具/video-render/docs/渲染方式测试-2026-10-28.md`
+- 交付前可以再查一遍：`python3 scripts/glitch_check.py out/ep7-photo.mp4`，应为「坏帧 0」
 
 顺序不要跳：拼图自己先按下面的检查单过一遍，改完再给用户看拼图；用户认可后出 40 秒小样；再全片。改字之后只重渲拼图，不要动不动渲全片。
 
@@ -276,4 +284,4 @@ python3 scripts/split_scenes.py out/ep7-photo.mp4 ep7 "<选题文件夹>/剪辑�
 - **字体**：五款都打包在 `assets/fonts/`（得意黑 / 数黑体 / 锦书宋 / 文楷 / 思源黑），分工见「全局风格」一节，**不随期换**。`style.titleFont` 这个开关留着，只在用户明确要求时用。渲出来数字是方块 → woff2 没加载，看 `kit.tsx` 的 `useFonts`。
 - **两期长得太像**：检查发布清单有没有写 STYLE_DNA、photo.json 的 `style` 有没有生效、场景是不是都手写了 `box` 把母版盖掉了。
 - **音效单调 / 缺环境声**：让用户按 `工具/音效库/补充音效清单.md` 补，补完 `python scripts/import_sfx.py`。
-- **Windows / Mac**：路径和 Python 命令的区别见开头那张表——Mac 用 `python3`，Windows 用 `python`；两边都用本机 Chrome 渲染（`remotion.config.ts` 自动找）。Mac 上没有真图时先 `placeholder_photos.py` 出占位图再渲拼图。
+- **Windows / Mac**：路径和 Python 命令的区别见开头那张表——Mac 用 `python3`，Windows 用 `python`；两边都用 Remotion 自带的 chrome-headless-shell 渲染（新机器先跑一次 `npx remotion browser ensure` 下载；实在下载不了才设 `USE_SYSTEM_CHROME=1` 退回本机 Chrome，那样会有花屏，交付前必须跑 `glitch_check.py`）。Mac 上没有真图时先 `placeholder_photos.py` 出占位图再渲拼图。
