@@ -178,7 +178,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
       if (it.stagger) {
         return (
           <div style={{...fxStyle, ...revealStyle}}>
-            <div style={{fontFamily: C.title ?? TITLE_FONT, fontWeight: 800, fontSize: sz, lineHeight: 1.16, letterSpacing: 2, textAlign: align}}>
+            <div style={{fontFamily: C.title ?? TITLE_FONT, fontWeight: 800, fontSize: sz, lineHeight: 1.16, letterSpacing: 2, textAlign: align, color: col(it.color, ink.main, C), textShadow: it.textfx ? 'none' : ink.shadow}}>
               {it.text.split('').map((ch, i) => {
                 const k = 1 - Math.pow(1 - Math.min(1, Math.max(0, (f - a - i * (it.stagger ?? 3)) / 10)), 3);
                 const hot = it.em && i >= it.em[0] && i < it.em[1];
