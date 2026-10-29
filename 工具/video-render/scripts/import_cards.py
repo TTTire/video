@@ -10,7 +10,7 @@ import os, re, sys
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CODE = re.compile(r"(?<![A-Za-z0-9])C(\d{1,2})(?![0-9])", re.I)
+CODE = re.compile(r"(?<![A-Za-z0-9#])C(\d{1,2})(?![0-9A-Fa-f])", re.I)   # 排除 #C8A16B 这类颜色值
 
 
 def code_of(name):
@@ -24,7 +24,7 @@ def needed_codes(md):
     sec = txt[i:] if i >= 0 else txt
     j = sec.find("\n## ", 5)
     sec = sec[:j] if j > 0 else sec
-    return sorted({code_of(x) for x in re.findall(r"(?<![A-Za-z0-9])C\d{1,2}(?![0-9])", sec) if code_of(x)})
+    return sorted({code_of(x) for x in re.findall(r"(?<![A-Za-z0-9#])C\d{1,2}(?![0-9A-Fa-f])", sec) if code_of(x)})
 
 
 def main():
