@@ -50,7 +50,7 @@ export const buildArollSegs = (spec: ArollSpec, lineFrames: number[], total: num
 };
 
 const TRANS = 24;      // 切换帧数
-const HALF = {x: 60, y: 60, w: 900, h: 960};   // half 态左侧大卡
+const HALF = {x: 60, y: 90, w: 640, h: 720};   // half 态左侧卡：右边界 700，不碰 layout=right 的字列（x≥760）；底边 810 不进字幕区
 // 每种模式的几何：圆心、半径（full 的半径足够盖住全屏对角）、半屏宽
 type Geo = {cx: number; cy: number; r: number; halfW: number; op: number};
 const geoOf = (mode: ArollMode, b: Required<NonNullable<ArollSpec['bubble']>>): Geo => {

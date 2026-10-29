@@ -77,16 +77,16 @@
      "delay": 4
     },
     {
-     "type": "tag",
-     "text": "又能少写代码了",
-     "at": 2,
-     "color": "teal"
+     "type": "h",
+     "text": "[[又能少写代码了]]",
+     "size": 56,
+     "at": 2
     },
     {
-     "type": "tag",
-     "text": "轮到自己了",
-     "at": 3,
-     "color": "coral"
+     "type": "h",
+     "text": "((轮到自己了))",
+     "size": 56,
+     "at": 3
     }
    ]
   },
