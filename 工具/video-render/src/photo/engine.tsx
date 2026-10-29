@@ -9,6 +9,7 @@ import {CountUp, FlyIn, Sfx, SfxName, Stamp, StrikeLine, useSpringAt, TextEnter,
 import {at, Box, BoxSpec, CardKind, CardShell, useInk, Clock, Em, FONTS, FontKey, Grad, H, P, Panel, Photo, PHOTO_THEME, Quote, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease, regionBox, regionOrigin, regionXY, SAFE_RIGHT_X} from './kit';
 import {CardEnter, Graph, GraphEdge, GraphNode, TactileCardShell, TPhoto} from './tactile';
 import {Fill, Flap, Odometer, Rank, RankRow, RowSweep, Slam, StackUnits} from './numfx';
+import type {ArollSpec} from './aroll';
 export type {BoxSpec, CardKind} from './kit';
 
 // ---------- 类型 ----------
@@ -63,6 +64,8 @@ export type SceneSpec = PhotoLayer & {
   box?: BoxSpec | string; boxes?: Record<string, BoxSpec | string>;
   // 场景级卡片：这一场所有默认 box 的元素都装进同一张卡（box 名要同）
   card?: CardKind; cardLabel?: string; cardColor?: string; cardW?: number; cardSub?: string;
+  // 出镜小圆在这个场景放哪边（这场的字在左就写 "right"）；不写按 style.layout 反向
+  arollSide?: 'left' | 'right';
   center?: boolean; ambience?: boolean | string; enterSfx?: SfxName | null;
   items?: Item[];
   // type: 'series'
@@ -91,6 +94,7 @@ export type Style = {
 export type EpisodeSpec = {
   ep: string; badge: string; photos: string; chapterPhoto: string;
   series?: string; style?: Style; scenes: SceneSpec[];
+  aroll?: ArollSpec;   // 出镜层，见 aroll.tsx
 };
 export type CustomMap = Record<string, React.FC<P & {spec: SceneSpec}>>;
 

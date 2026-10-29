@@ -154,6 +154,37 @@ BL  BC  BR     BW
 | `~~还差几个人？~~` | 红色划掉 |
 | `\n` | 换行 |
 
+## 出镜层 `aroll`（2026-10-29 起）
+
+用户的 A-roll（出镜视频）叠在 B-roll 上，**独立一层、独立时间轴，不碰场景排版**。写在 photo.json 顶层：
+
+```json
+"aroll": {
+  "src": "ai03/aroll.mp4",          // public/ 下。必须是和 srt 同一条时间线的粗剪成片，从 0 秒对齐，1080p 30fps。一律静音（人声用户在剪映放原音轨）
+  "idle": "bubble",                 // cue 之外的状态：bubble 小圆 | hide 不出现
+  "face": [0.5, 0.42],              // 脸在 A-roll 画面里的位置（比例）。bubble / half 态以它为中心裁
+  "cues": [                         // at 是口播稿行号 [起, 止)，和场景表同口径
+    {"at": [0, 7],     "mode": "full"},
+    {"at": [47, 49],   "mode": "half"},
+    {"at": [241, 257], "mode": "full"}
+  ]
+}
+```
+
+| mode | 长相 | 用在 |
+|---|---|---|
+| `full` | 全屏 | 开场第一句（观众先见人）、第一人称判断（"我猜"、"我自己的感受"）、结尾 |
+| `half` | 左侧 900×960 圆角大卡，B-roll 的字在右 | 讲自己经历、带情绪的段落，又不想丢掉 B-roll 的字 |
+| `bubble` | 直径 300 小圆，带金边 | 数据、历史、图表段——B-roll 是主角，你在角落 |
+| `hide` | 不出现 | 章节卡、栏目卡（`hideOn` 默认就是这两个场景，不用写行号） |
+
+- **小圆放哪边自动躲字**：`style.layout=right`（字在右）→ 小圆左下；否则右下。某个场景字在另一边，场景里写 `"arollSide": "right"` 单独指定；两个场景小圆换边时平滑滑过去，不响
+- **切换动效**（24 帧，慢进慢出，每次 whoosh）：bubble ⇄ full 是圆形 iris——圆从小圆位置长大到盖满屏 / 缩回，边缘一圈金光跟着扩；→ half 是卡从左 wipe 开、前沿一道亮线，小圆缩进卡里脸的位置；half → full 是圆从卡里的脸长出来
+- 节奏经验：每段 bubble 别超过 40–60 秒，中间切回 full 露 6–10 秒，不然像配音 PPT
+- 查表：`python3 scripts/aroll_cues.py <epN>` 打印每段的模式 / 行号 / 时间 / 第一句，粘进剪辑说明
+- 合成：有 `aroll` 时多出 `EpNFull`（交付）/ `EpNFullCheck`（带字幕）/ `EpNFullSheet`（拼图）；`render.py <epN> aroll | arollcheck | arollsheet | arollclip <起> <止>`
+- 性能：叠 A-roll 比纯 B-roll 慢约 18%（@remotion/media 的 `<Video>`）
+
 ## 卡内小图（C 编号）
 
 `photocard` / `photorow` / `graph` 用的小图和场景底图分开：

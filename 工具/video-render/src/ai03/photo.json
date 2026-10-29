@@ -701,7 +701,8 @@
      "label": "成组驱动",
      "sub": "GROUP DRIVE"
     }
-   }
+   },
+   "arollSide": "right"
   },
   {
    "id": "waste",
@@ -1217,7 +1218,8 @@
      "align": "center"
     }
    },
-   "dim": 0.35
+   "dim": 0.35,
+   "arollSide": "right"
   },
   {
    "id": "boundary",
@@ -1428,5 +1430,60 @@
     }
    ]
   }
- ]
+ ],
+ "aroll": {
+  "src": "ai03/aroll.mp4",
+  "idle": "bubble",
+  "cues": [
+   {
+    "at": [
+     0,
+     7
+    ],
+    "mode": "full"
+   },
+   {
+    "at": [
+     11,
+     18
+    ],
+    "mode": "full"
+   },
+   {
+    "at": [
+     47,
+     49
+    ],
+    "mode": "half"
+   },
+   {
+    "at": [
+     172,
+     180
+    ],
+    "mode": "half"
+   },
+   {
+    "at": [
+     197,
+     199
+    ],
+    "mode": "full"
+   },
+   {
+    "at": [
+     228,
+     241
+    ],
+    "mode": "half"
+   },
+   {
+    "at": [
+     241,
+     257
+    ],
+    "mode": "full"
+   }
+  ]
+ }
 }

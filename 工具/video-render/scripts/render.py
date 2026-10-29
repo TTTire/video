@@ -8,6 +8,11 @@
   python scripts/render.py <epN> fullcheck          全片带字幕核对版 → out/<epN>-check-full.mp4（同样走交付版流程）
   python scripts/render.py <epN> full-legacy        旧的单进程整段渲染（会随机出花屏帧，仅留作对照）
   python scripts/render.py <epN> still <帧号>        单帧 → out/_check/<epN>-<帧号>.jpg
+  --- 有 A-roll（photo.json 顶层写了 aroll）时多三个：---
+  python scripts/render.py <epN> aroll              B-roll + 出镜层成片（只有音效，A-roll 静音）→ out/<epN>-full.mp4
+  python scripts/render.py <epN> arollcheck [秒数]   同上带字幕，默认前 40 秒 → out/<epN>-full-check.mp4
+  python scripts/render.py <epN> arollsheet         出镜层拼图 → out/<epN>-full-sheet.jpg
+  python scripts/render.py <epN> arollclip <起帧> <止帧>   切换片段核对 → out/_check/<epN>-aroll-<起>-<止>.mp4
 合成 id 由期号推出：ep7 → Ep7Photo / Ep7PhotoCheck / Ep7Sheet；ai01 → Ai01Photo…（第 6 期 JSON 版是 Ep6J*，传 ep6j）。
 """
 import os, re, subprocess, sys
@@ -29,6 +34,16 @@ elif mode == "full":
     cmd = [sys.executable, "scripts/render_seq.py", ep, "--comp", f"{comp}Photo", "--out", f"out/{ep}-photo.mp4", *sys.argv[3:]]
 elif mode == "fullcheck":
     cmd = [sys.executable, "scripts/render_seq.py", ep, "--comp", f"{comp}PhotoCheck", "--out", f"out/{ep}-check-full.mp4", *sys.argv[3:]]
+elif mode == "aroll":
+    cmd = [sys.executable, "scripts/render_seq.py", ep, "--comp", f"{comp}Full", "--out", f"out/{ep}-full.mp4", *sys.argv[3:]]
+elif mode == "arollcheck":
+    sec = int(arg or 40)
+    cmd = base + ["render", "src/index.ts", f"{comp}FullCheck", f"out/{ep}-full-check.mp4", "--codec=h264", "--crf=22", f"--frames=0-{sec * 30 - 1}"]
+elif mode == "arollsheet":
+    cmd = base + ["still", "src/index.ts", f"{comp}FullSheet", f"out/{ep}-full-sheet.jpg", "--frame=0", "--jpeg-quality=85"]
+elif mode == "arollclip":
+    a, b = sys.argv[3], sys.argv[4]
+    cmd = base + ["render", "src/index.ts", f"{comp}FullCheck", f"out/_check/{ep}-aroll-{a}-{b}.mp4", "--codec=h264", "--crf=22", f"--frames={a}-{b}"]
 elif mode == "full-legacy":
     cmd = base + ["render", "src/index.ts", f"{comp}Photo", f"out/{ep}-photo.mp4", "--codec=h264", "--crf=18"]
 else:

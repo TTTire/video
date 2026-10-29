@@ -15,7 +15,11 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 下文命令一律用相对路径（`cd 工具/video-render`），两套系统都能直接跑；只有 Python 命令按上表区分。第 6 期是完整样例：
 发布清单 `已完成/6-100-边际报酬递减-人多了为什么没快多少/…-发布清单.md`，场景表 `工具/video-render/src/ep6/photo.json`，图表 `src/ep6/custom.tsx`。
 
-成片是什么：1920×1080 / 30fps、和用户口播等长、**只有音效没有配音**的动画轨。用户在剪映里把它和 A-roll 从 0 秒对齐叠放，想露脸的地方把动画轨切掉即可。字幕和 BGM 用户在剪映加，所以画面文字压在上 2/3，底部留字幕位。
+成片是什么：1920×1080 / 30fps、和用户口播等长、**只有音效没有配音**的动画轨。字幕和 BGM 用户在剪映加，所以画面文字压在上 2/3，底部留字幕位。
+
+出镜怎么合：两条路，用户选——
+1. **用户自己叠**：拿 B-roll 动画轨和 A-roll 在剪映里从 0 秒对齐，想露脸的地方切掉动画轨（第 8 期及以前都这么干）
+2. **引擎合**（2026-10-29 起）：用户给对齐 srt 的粗剪 A-roll，photo.json 写 `aroll.cues`（行号 → full / half / bubble），引擎渲出 B-roll + 出镜层的成片，小圆 ⇄ 全屏之间是圆形 iris 切换。A-roll **静音**，人声和字幕仍由用户在剪映加。字段见 `references/photo-json.md`「出镜层」
 
 ## 两个栏目，分开做
 
@@ -254,6 +258,21 @@ python3 scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选�
 6. 同图同动：连续三个场景用同一张图、同一个推拉方向 → 换 `move` 或 `origin`
 7. 对比度：字压在照片亮部看不清 → `grad` 设到字那一侧，或加 `dim`
 8. 字体用对没：数字是不是数黑体（乱码或方块说明字体没加载）、定义卡大词是不是 `song`、对白有没有 `quote`
+
+### 3b. 出镜层（可选）
+
+用户给了 A-roll（必须是和 srt 同一时间线的粗剪，1080p 30fps）：
+
+```bash
+cp "<A-roll.mp4>" public/epN/aroll.mp4
+# photo.json 顶层写 aroll（src / idle / face / cues），cues 的 at 是口播稿行号
+python3 scripts/aroll_cues.py epN            # 看每段模式 / 时间，核对节奏
+python3 scripts/render.py epN arollsheet     # 拼图：小圆有没有压到字
+python3 scripts/render.py epN arollclip 3070 3250   # 单看一处切换
+python3 scripts/render.py epN aroll          # 成片 out/epN-full.mp4
+```
+
+cue 怎么写：开场第一句 `full`；"我猜 / 我的感受 / 我打算"这类第一人称判断 `full` 或 `half`；数据、历史、图表段留 `bubble`（默认）；章节卡自动 `hide`。每段 bubble 超过 60 秒就插一段 full。
 
 ### 4. 交付
 

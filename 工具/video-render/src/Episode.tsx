@@ -17,6 +17,7 @@ export type EpisodeProps = {
   // 动效增强：背景、每个场景的入场方式、镜头震动
   // manual：这些场景自己放了音效，不再自动加转场声和 pop
   fx?: {enter: Record<string, Enter>; shake?: (sc: any) => number[]; manual?: string[]};
+  overlay?: React.ReactNode; // 叠在所有场景之上、字幕之下的一层（A-roll 出镜层用）
 };
 
 const SceneWrap: React.FC<{sc: any; scenes: Record<string, React.FC<any>>; fx?: EpisodeProps['fx']}> = ({sc, scenes, fx}) => {
@@ -39,7 +40,7 @@ const SceneWrap: React.FC<{sc: any; scenes: Record<string, React.FC<any>>; fx?: 
   return <AbsoluteFill style={{opacity: o}}><Comp {...sc} step={step} /></AbsoluteFill>;
 };
 
-export const Episode: React.FC<EpisodeProps> = ({timeline, scenes, theme: C, audio, badge, subtitles = false, fx, narration = true, plain = false, series = '100 个经济学原理', grid = false, cornerBadge = true}) => (
+export const Episode: React.FC<EpisodeProps> = ({timeline, scenes, theme: C, audio, badge, subtitles = false, fx, narration = true, plain = false, series = '100 个经济学原理', grid = false, cornerBadge = true, overlay}) => (
   <ThemeCtx.Provider value={C}>
     <AbsoluteFill style={{background: plain ? C.bg : `radial-gradient(ellipse at 50% 35%, ${C.bg2} 0%, ${C.bg} 70%)`}}>
       {fx && !plain && <FxBackground />}
@@ -47,6 +48,7 @@ export const Episode: React.FC<EpisodeProps> = ({timeline, scenes, theme: C, aud
       {timeline.scenes.map((sc, i) => (
         <Sequence key={i} from={sc.from} durationInFrames={sc.dur} premountFor={30}><SceneWrap sc={sc} scenes={scenes} fx={fx} /></Sequence>
       ))}
+      {overlay}
       {subtitles && timeline.subs.map((s, i) => (
         <Sequence key={'s' + i} from={s.from} durationInFrames={s.dur + 8} layout="none">
           <AbsoluteFill style={{justifyContent: 'flex-end', alignItems: 'center', paddingBottom: 70}}>
