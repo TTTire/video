@@ -20,7 +20,7 @@ for c in sorted(ar["cues"], key=lambda c: c["at"][0]):
     for i in range(F(c["at"][0]), min(total, F(c["at"][1]))): frames[i] = c["mode"]
 for sc in tl["scenes"]:
     if sc["scene"] in hide_on:
-        for i in range(sc["from"], min(total, sc["from"] + min(sc["dur"], 90))): frames[i] = "hide"
+        for i in range(sc["from"], min(total, sc["from"] + sc["dur"])): frames[i] = "hide"  # 和 aroll.tsx 一致：章节卡 / 栏目卡整段 hide
 segs = []
 for i, m in enumerate(frames):
     if segs and segs[-1][2] == m: segs[-1][1] = i + 1

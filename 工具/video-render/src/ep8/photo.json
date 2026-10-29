@@ -545,7 +545,8 @@
           "type": "custom",
           "name": "threeTable1"
         }
-      ]
+      ],
+      "arollSide": "right"
     },
     {
       "id": "budget",
@@ -558,7 +559,8 @@
           "type": "custom",
           "name": "threeTable2"
         }
-      ]
+      ],
+      "arollSide": "right"
     },
     {
       "id": "time",
@@ -572,7 +574,8 @@
           "type": "custom",
           "name": "threeTable3"
         }
-      ]
+      ],
+      "arollSide": "right"
     },
     {
       "id": "notonmenu",
@@ -1356,7 +1359,8 @@
           "at": 7,
           "size": 40
         }
-      ]
+      ],
+      "arollSide": "right"
     },
     {
       "id": "next",
@@ -1400,5 +1404,127 @@
         }
       ]
     }
-  ]
+  ],
+  "aroll": {
+    "src": "ep8/aroll.mp4",
+    "idle": "bubble",
+    "face": [
+      0.5,
+      0.42
+    ],
+    "cues": [
+      {
+        "at": [
+          0,
+          3
+        ],
+        "mode": "full"
+      },
+      {
+        "at": [
+          11,
+          16
+        ],
+        "mode": "full"
+      },
+      {
+        "at": [
+          23,
+          26
+        ],
+        "mode": "full"
+      },
+      {
+        "at": [
+          32,
+          35
+        ],
+        "mode": "half"
+      },
+      {
+        "at": [
+          46,
+          49
+        ],
+        "mode": "half"
+      },
+      {
+        "at": [
+          53,
+          55
+        ],
+        "mode": "full"
+      },
+      {
+        "at": [
+          60,
+          62
+        ],
+        "mode": "half"
+      },
+      {
+        "at": [
+          63,
+          69
+        ],
+        "mode": "half"
+      },
+      {
+        "at": [
+          82,
+          85
+        ],
+        "mode": "full"
+      },
+      {
+        "at": [
+          109,
+          112
+        ],
+        "mode": "full"
+      },
+      {
+        "at": [
+          137,
+          138
+        ],
+        "mode": "half"
+      },
+      {
+        "at": [
+          148,
+          151
+        ],
+        "mode": "full"
+      },
+      {
+        "at": [
+          155,
+          157
+        ],
+        "mode": "full"
+      },
+      {
+        "at": [
+          161,
+          162
+        ],
+        "mode": "half"
+      },
+      {
+        "at": [
+          162,
+          170
+        ],
+        "mode": "full"
+      },
+      {
+        "at": [
+          179,
+          182
+        ],
+        "mode": "full"
+      }
+    ]
+  }
 }
