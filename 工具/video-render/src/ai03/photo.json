@@ -1,1075 +1,1432 @@
 {
-  "ep": "ai03",
-  "badge": "",
-  "series": "AI经济学",
-  "photos": "ai03/photos",
-  "chapterPhoto": "S01",
-  "style": {
-    "layout": "right",
-    "tint": "#1A2432",
-    "tintOpacity": 0.28,
-    "enter": "cut",
-    "letterbox": false,
-    "grain": true,
-    "badge": false,
-    "scale": "v2",
-    "theme": {
-      "gold": "#C8A16B",
-      "coral": "#B5544A",
-      "teal": "#7796A8",
-      "bg": "#0A0D12",
-      "dim": "#B9C2CC"
-    },
-    "textEnter": "fade",
-    "cardSkin": "tactile",
-    "cards": "ai03/cards"
+ "ep": "ai03",
+ "badge": "",
+ "series": "AI经济学",
+ "photos": "ai03/photos",
+ "chapterPhoto": "S01",
+ "style": {
+  "layout": "right",
+  "tint": "#1A2432",
+  "tintOpacity": 0.28,
+  "enter": "cut",
+  "letterbox": false,
+  "grain": true,
+  "badge": false,
+  "scale": "v2",
+  "theme": {
+   "gold": "#C8A16B",
+   "coral": "#B5544A",
+   "teal": "#7796A8",
+   "bg": "#0A0D12",
+   "dim": "#B9C2CC"
   },
-  "scenes": [
+  "textEnter": "fade",
+  "cardSkin": "tactile",
+  "cards": "ai03/cards"
+ },
+ "scenes": [
+  {
+   "id": "news",
+   "name": "群里那句话",
+   "photo": "S01",
+   "move": "in",
+   "origin": "50% 55%",
+   "grad": "right",
+   "items": [
     {
-      "id": "news",
-      "name": "群里那句话",
-      "photo": "S01",
-      "move": "in",
-      "origin": "50% 55%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "tag",
-          "text": "前两天，群里",
-          "dark": true,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "“还要数学系**干什么**”",
-          "size": 88,
-          "at": 0,
-          "delay": 16
-        },
-        {
-          "type": "h",
-          "text": "OpenAI 一次放出近 400 项数学成果",
-          "size": 44,
-          "color": "dim",
-          "at": 2
-        },
-        {
-          "type": "h",
-          "text": "有数学家说，够他消化好几年",
-          "size": 44,
-          "color": "dim",
-          "at": 3
-        }
-      ]
+     "type": "tag",
+     "text": "前两天，群里",
+     "dark": true,
+     "delay": 4
     },
     {
-      "id": "doubt",
-      "name": "群里两种反应",
-      "photo": "S01",
-      "move": "still",
-      "origin": "50% 55%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "一半欢呼，一半**担心**",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "tag",
-          "text": "又能少写代码了",
-          "at": 2,
-          "color": "teal"
-        },
-        {
-          "type": "tag",
-          "text": "轮到自己了",
-          "at": 3,
-          "color": "coral"
-        }
-      ]
+     "type": "h",
+     "text": "“还要数学系**干什么**”",
+     "size": 88,
+     "at": 0,
+     "delay": 16
     },
     {
-      "id": "hook",
-      "name": "有个环节挤了起来",
-      "photo": "S02",
-      "move": "in",
-      "origin": "60% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "这个问法，离得挺远",
-          "size": 46,
-          "color": "dim",
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "发生的事很具体：",
-          "size": 88,
-          "at": 2
-        },
-        {
-          "type": "h",
-          "text": "有个环节**突然挤了起来**",
-          "size": 88,
-          "at": 3,
-          "sfx": "impact",
-          "box": "card"
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 760,
-          "y": 400,
-          "w": 860,
-          "align": "right",
-          "card": "notch",
-          "label": "本篇要走的方向"
-        }
-      }
+     "type": "h",
+     "text": "OpenAI 一次放出近 400 项数学成果",
+     "size": 44,
+     "color": "dim",
+     "at": 2
     },
     {
-      "id": "same",
-      "name": "默认推理-一起贬值",
-      "photo": "S03",
-      "move": "in",
-      "origin": "55% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "默认推理：一起**不值钱**",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "一样东西变便宜，和它有关的一切都会跟着贬值",
-          "size": 44,
-          "color": "dim",
-          "at": 2
-        },
-        {
-          "type": "tag",
-          "text": "这个推理通常是对的",
-          "at": 4,
-          "color": "teal"
-        }
-      ]
-    },
-    {
-      "id": "rule",
-      "name": "前提-得是同一件事",
-      "photo": "S05",
-      "move": "in",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "但它有个前提",
-          "size": 46,
-          "color": "dim",
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "得是**同一件事**",
-          "size": 88,
-          "at": 1,
-          "sfx": "impact",
-          "box": "card"
-        },
-        {
-          "type": "h",
-          "text": "干的是两件事，只是搭在一起用，结论就反过来",
-          "size": 44,
-          "color": "dim",
-          "at": 3
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 760,
-          "y": 400,
-          "w": 860,
-          "align": "right",
-          "card": "notch",
-          "label": "前提"
-        }
-      }
-    },
-    {
-      "id": "complement",
-      "name": "搭在一起用",
-      "photo": "S05",
-      "move": "still",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "一个变便宜",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "另一个反而**变贵**",
-          "size": 88,
-          "at": 1
-        },
-        {
-          "type": "tag",
-          "text": "搭在一起用的东西",
-          "at": 3,
-          "color": "gold"
-        }
-      ]
-    },
-    {
-      "id": "hometown",
-      "name": "高铁-县城酒店先涨",
-      "photo": "S06",
-      "move": "in",
-      "origin": "55% 60%",
-      "grad": "right",
-      "ambience": "街道夜晚",
-      "items": [
-        {
-          "type": "tag",
-          "text": "高铁通了以后",
-          "dark": true,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "路便宜了，**房**贵了",
-          "size": 88,
-          "at": 0,
-          "delay": 18
-        },
-        {
-          "type": "h",
-          "text": "从省城回去四十分钟，周末的房得提前两天订",
-          "size": 44,
-          "color": "dim",
-          "at": 3
-        },
-        {
-          "type": "count",
-          "from": 0,
-          "to": 18.5,
-          "suffix": "%",
-          "label": "旅游人数 +",
-          "at": 5,
-          "delay": 10,
-          "dur": 30,
-          "size": 150,
-          "box": "card"
-        },
-        {
-          "type": "t",
-          "text": "旅游收入 +25%　　178 城另一组 +12%",
-          "size": 38,
-          "at": 7,
-          "box": "card"
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 760,
-          "y": 400,
-          "w": 860,
-          "align": "right",
-          "card": "tab",
-          "label": "研究数据"
-        }
-      }
-    },
-    {
-      "id": "solar",
-      "name": "光伏跌七成-变压器翻倍",
-      "photo": "S07",
-      "move": "in",
-      "origin": "50% 55%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "板子便宜了",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "**送出去**变贵了",
-          "size": 88,
-          "at": 1
-        },
-        {
-          "type": "compare",
-          "left": "光伏组件\n**−70%**",
-          "right": "变压器\n**×2**",
-          "mid": "↔",
-          "at": 3,
-          "size": 64,
-          "box": "MR"
-        },
-        {
-          "type": "h",
-          "text": "2.1 元/瓦 → 0.62 元/瓦（2022-11 → 2025-03）",
-          "size": 38,
-          "color": "dim",
-          "at": 5
-        },
-        {
-          "type": "h",
-          "text": "交期：几个月 → 两三年",
-          "size": 56,
-          "at": 7,
-          "sfx": "impact",
-          "box": "card"
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 760,
-          "y": 400,
-          "w": 860,
-          "align": "right",
-          "card": "tab",
-          "label": "国际能源署"
-        }
-      }
-    },
-    {
-      "id": "edison",
-      "name": "1882 电进厂",
-      "photo": "S08",
-      "move": "in",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "tag",
-          "text": "1879 · 1882",
-          "dark": true,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "爱迪生点亮电灯",
-          "size": 88,
-          "at": 0,
-          "delay": 16
-        },
-        {
-          "type": "h",
-          "text": "1882 年，电进了工厂",
-          "size": 88,
-          "at": 2
-        },
-        {
-          "type": "h",
-          "text": "那会儿的工程师就明白，电会改掉工厂",
-          "size": 44,
-          "color": "dim",
-          "at": 4
-        }
-      ]
-    },
-    {
-      "id": "flat",
-      "name": "三十年 生产率没动",
-      "photo": "S09",
-      "move": "out",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "count",
-          "from": 1882,
-          "to": 1912,
-          "prefix": "",
-          "suffix": "",
-          "label": "接下来",
-          "at": 0,
-          "delay": 8,
-          "dur": 26,
-          "size": 150,
-          "box": "card"
-        },
-        {
-          "type": "h",
-          "text": "工厂生产率**几乎没动**",
-          "size": 88,
-          "at": 3,
-          "delay": 6
-        },
-        {
-          "type": "h",
-          "text": "电明明便宜了，机器明明换了",
-          "size": 44,
-          "color": "dim",
-          "at": 5
-        },
-        {
-          "type": "h",
-          "text": "活为什么没快？",
-          "size": 88,
-          "at": 7,
-          "sfx": "impact"
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 760,
-          "y": 400,
-          "w": 860,
-          "align": "right",
-          "card": "tab",
-          "label": "年"
-        }
-      }
-    },
-    {
-      "id": "lineframe",
-      "name": "一根轴带着全厂转",
-      "photo": "S02",
-      "move": "in",
-      "origin": "60% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "tag",
-          "text": "十九世纪的工厂",
-          "dark": true,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "靠的是**一根总轴**",
-          "size": 88,
-          "at": 0,
-          "delay": 18
-        },
-        {
-          "type": "stack",
-          "at": 3,
-          "w": 820,
-          "items": [
-            {
-              "big": "水轮 / 蒸汽机",
-              "small": "在外面转"
-            },
-            {
-              "big": "带动厂房顶上的长轴",
-              "small": "一圈一圈挂皮带"
-            },
-            {
-              "big": "皮带垂下来带机器",
-              "small": "一台一台"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "groupdrive",
-      "name": "换电不换车间",
-      "photo": "S11",
-      "move": "in",
-      "origin": "45% 50%",
-      "grad": "left",
-      "items": [
-        {
-          "type": "h",
-          "text": "电来了，工厂干了什么",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "把蒸汽机换成**大电动机**",
-          "size": 88,
-          "at": 2
-        },
-        {
-          "type": "tag",
-          "text": "总轴还在 · 皮带还在",
-          "at": 4,
-          "color": "coral"
-        },
-        {
-          "type": "h",
-          "text": "这叫成组驱动",
-          "size": 88,
-          "at": 6,
-          "sfx": "impact",
-          "box": "card"
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 90,
-          "y": 400,
-          "w": 900,
-          "card": "notch",
-          "label": "成组驱动"
-        }
-      }
-    },
-    {
-      "id": "waste",
-      "name": "开一台全厂转",
-      "photo": "S12",
-      "move": "in",
-      "origin": "55% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "电只是替了个班",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "车间的命**没变**",
-          "size": 88,
-          "at": 1
-        },
-        {
-          "type": "h",
-          "text": "总轴一开，全厂都得转，哪怕你只想开一台",
-          "size": 44,
-          "color": "dim",
-          "at": 3
-        },
-        {
-          "type": "h",
-          "text": "摩擦耗掉的力气，比干活的还多",
-          "size": 44,
-          "color": "dim",
-          "at": 5
-        },
-        {
-          "type": "tag",
-          "text": "物料搬过去，还得搬回来",
-          "at": 7,
-          "color": "coral"
-        }
-      ]
-    },
-    {
-      "id": "unitdrive",
-      "name": "拆掉总轴",
-      "photo": "S13",
-      "move": "in",
-      "origin": "55% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "要吃到电的好处",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "得把**整根轴拆掉**",
-          "size": 88,
-          "at": 1,
-          "sfx": "impact"
-        },
-        {
-          "type": "stack",
-          "at": 3,
-          "w": 820,
-          "items": [
-            {
-              "big": "每台配一个小电机",
-              "small": "想开哪台开哪台"
-            },
-            {
-              "big": "压成一层",
-              "small": "不再围着轴转"
-            },
-            {
-              "big": "按工序顺序摆",
-              "small": "一头进，一头出"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "forty",
-      "name": "迟到了四十年",
-      "photo": "S14",
-      "move": "out",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "count",
-          "from": 0,
-          "to": 40,
-          "suffix": " 年",
-          "label": "从电厂供电到真正做开",
-          "at": 0,
-          "delay": 8,
-          "dur": 40,
-          "size": 180,
-          "box": "card"
-        },
-        {
-          "type": "h",
-          "text": "1882 年供电，到 1920 年代才做开",
-          "size": 44,
-          "color": "dim",
-          "at": 3
-        },
-        {
-          "type": "h",
-          "text": "那四十年，**不是没电**",
-          "size": 88,
-          "at": 5
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 760,
-          "y": 400,
-          "w": 860,
-          "align": "right",
-          "card": "solid",
-          "label": "时间差"
-        }
-      }
-    },
-    {
-      "id": "invest",
-      "name": "不是没电 是不敢拆",
-      "photo": "S15",
-      "move": "in",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "厂房是钱",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "总轴是钱",
-          "size": 88,
-          "at": 1
-        },
-        {
-          "type": "h",
-          "text": "停产重排**更是钱**",
-          "size": 88,
-          "at": 2
-        },
-        {
-          "type": "tag",
-          "text": "一直到 1920 年代才有人整片盖新厂",
-          "at": 5,
-          "color": "gold"
-        }
-      ]
-    },
-    {
-      "id": "numbers",
-      "name": "1919-1929 份额",
-      "photo": "S16",
-      "move": "out",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "tag",
-          "text": "电作为工厂动力的份额",
-          "dark": true,
-          "delay": 4
-        },
-        {
-          "type": "nums",
-          "at": 1,
-          "items": [
-            {
-              "label": "1919 年",
-              "value": "50%+"
-            },
-            {
-              "label": "1929 年",
-              "value": "近 80%"
-            }
-          ]
-        },
-        {
-          "type": "h",
-          "text": "制造业生产率增速，1920 年代远超之前二十年",
-          "size": 44,
-          "color": "dim",
-          "at": 3
-        },
-        {
-          "type": "h",
-          "text": "其中**至少一半**归到拆总轴",
-          "size": 76,
-          "at": 5,
-          "sfx": "impact",
-          "box": "card"
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 760,
-          "y": 400,
-          "w": 860,
-          "align": "right",
-          "card": "solid",
-          "label": "研究者估算"
-        }
-      }
-    },
-    {
-      "id": "rearrange",
-      "name": "让工厂变快的是重排",
-      "photo": "S17",
-      "move": "in",
-      "origin": "55% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "翻译一下",
-          "size": 46,
-          "color": "dim",
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "让工厂变快的",
-          "size": 96,
-          "at": 1
-        },
-        {
-          "type": "h",
-          "text": "是**重排**",
-          "size": 112,
-          "at": 2,
-          "textfx": "gradient",
-          "sfx": "impact"
-        },
-        {
-          "type": "h",
-          "text": "电只是让重排变得划算",
-          "size": 44,
-          "color": "dim",
-          "at": 4
-        }
-      ]
-    },
-    {
-      "id": "invoice",
-      "name": "重排没有发票",
-      "photo": "S18",
-      "move": "in",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "电便宜以后，变贵的不是电",
-          "size": 76,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "是知道怎么重排的那批人，和愿意停产的那点时间",
-          "size": 44,
-          "color": "dim",
-          "at": 2
-        },
-        {
-          "type": "h",
-          "text": "重排**不在采购清单上**",
-          "size": 88,
-          "at": 4,
-          "box": "card"
-        },
-        {
-          "type": "h",
-          "text": "没有报价，没有供应商，没人能给你开一张发票",
-          "size": 44,
-          "color": "dim",
-          "at": 6
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 760,
-          "y": 400,
-          "w": 860,
-          "align": "right",
-          "card": "notch",
-          "label": "难在这儿"
-        }
-      }
-    },
-    {
-      "id": "todaysmap",
-      "name": "做便宜 看变贵",
-      "photo": "S19",
-      "move": "in",
-      "origin": "55% 55%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "回到 AI",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "AI 变便宜的，是“做”那一步",
-          "size": 44,
-          "color": "dim",
-          "at": 2
-        },
-        {
-          "type": "compare",
-          "left": "做\n**变便宜**",
-          "right": "看\n**变贵**",
-          "mid": "挤向",
-          "at": 4,
-          "size": 64,
-          "box": "MR"
-        }
-      ]
-    },
-    {
-      "id": "review",
-      "name": "逐条检验",
-      "photo": "S20",
-      "move": "in",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "写得越像",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "越得**逐条检验**",
-          "size": 88,
-          "at": 1
-        },
-        {
-          "type": "stack",
-          "at": 3,
-          "w": 820,
-          "items": [
-            {
-              "big": "检验数据",
-              "small": "有没有编"
-            },
-            {
-              "big": "检验反例",
-              "small": "漏了哪条"
-            },
-            {
-              "big": "检验结论",
-              "small": "落不落得到账上"
-            }
-          ]
-        },
-        {
-          "type": "h",
-          "text": "以前不用这么较真，现在虚的地方是别人替你留的",
-          "size": 40,
-          "color": "dim",
-          "at": 6
-        }
-      ]
-    },
-    {
-      "id": "boundary",
-      "name": "边界-纯省钱",
-      "photo": "S19",
-      "move": "still",
-      "origin": "55% 55%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "边界在这儿",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "旁边没有紧张的环节",
-          "size": 76,
-          "at": 2
-        },
-        {
-          "type": "h",
-          "text": "那就只是单纯变便宜。盐降价了，没人因此去学做菜",
-          "size": 44,
-          "color": "dim",
-          "at": 4
-        }
-      ]
-    },
-    {
-      "id": "mine",
-      "name": "现在紧张的是相信",
-      "photo": "S01",
-      "move": "in",
-      "origin": "50% 55%",
-      "grad": "right",
-      "ambience": "办公室",
-      "items": [
-        {
-          "type": "h",
-          "text": "我自己的感受",
-          "size": 46,
-          "color": "dim",
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "现在紧张的是**相信**",
-          "size": 88,
-          "at": 1
-        },
-        {
-          "type": "h",
-          "text": "以前敢直接发出去，现在得看一眼",
-          "size": 44,
-          "color": "dim",
-          "at": 3
-        },
-        {
-          "type": "h",
-          "text": "这一眼，就是最贵的",
-          "size": 88,
-          "at": 5,
-          "sfx": "impact",
-          "box": "card"
-        }
-      ],
-      "boxes": {
-        "card": {
-          "x": 760,
-          "y": 400,
-          "w": 860,
-          "align": "right",
-          "card": "solid",
-          "label": "眼下最贵的地方"
-        }
-      }
-    },
-    {
-      "id": "todo",
-      "name": "挑三件活标一标",
-      "photo": "S21",
-      "move": "in",
-      "origin": "50% 50%",
-      "grad": "right",
-      "items": [
-        {
-          "type": "h",
-          "text": "这周做件小事",
-          "size": 88,
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "把用 AI 干过的活挑三件",
-          "size": 44,
-          "color": "dim",
-          "at": 2
-        },
-        {
-          "type": "stack",
-          "at": 4,
-          "w": 820,
-          "items": [
-            {
-              "big": "哪句检验过",
-              "small": "有出处"
-            },
-            {
-              "big": "哪句直接相信",
-              "small": "没核过"
-            },
-            {
-              "big": "我卖的到底是哪一样",
-              "small": "标完就知道了"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "close",
-      "name": "能判断的人最不够用",
-      "photo": "S01",
-      "move": "out",
-      "origin": "50% 55%",
-      "grad": "right",
-      "ambience": "街道夜晚",
-      "items": [
-        {
-          "type": "h",
-          "text": "回到开头那个问题",
-          "size": 46,
-          "color": "dim",
-          "delay": 4
-        },
-        {
-          "type": "h",
-          "text": "最先不够用的",
-          "size": 88,
-          "at": 1
-        },
-        {
-          "type": "h",
-          "text": "是能**判断**的人",
-          "size": 112,
-          "at": 3,
-          "textfx": "gradient",
-          "sfx": "impact"
-        },
-        {
-          "type": "h",
-          "text": "用得越多，越需要一个能说“这条不对”的人",
-          "size": 44,
-          "color": "dim",
-          "at": 6
-        },
-        {
-          "type": "tag",
-          "text": "那个人现在还挺贵的",
-          "at": 8,
-          "color": "gold"
-        }
-      ]
+     "type": "h",
+     "text": "有数学家说，够他消化好几年",
+     "size": 44,
+     "color": "dim",
+     "at": 3
     }
-  ]
+   ]
+  },
+  {
+   "id": "doubt",
+   "name": "群里两种反应",
+   "photo": "S01",
+   "move": "still",
+   "origin": "50% 55%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "一半欢呼，一半**担心**",
+     "size": 88,
+     "delay": 4
+    },
+    {
+     "type": "tag",
+     "text": "又能少写代码了",
+     "at": 2,
+     "color": "teal"
+    },
+    {
+     "type": "tag",
+     "text": "轮到自己了",
+     "at": 3,
+     "color": "coral"
+    }
+   ]
+  },
+  {
+   "id": "hook",
+   "name": "有个环节挤了起来",
+   "photo": "S02",
+   "move": "in",
+   "origin": "60% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "这个问法，离得挺远",
+     "size": 46,
+     "color": "dim",
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "发生的事很具体：",
+     "size": 88,
+     "at": 2
+    },
+    {
+     "type": "h",
+     "text": "有个环节**突然挤了起来**",
+     "size": 88,
+     "at": 3,
+     "sfx": "impact",
+     "box": "card"
+    }
+   ],
+   "boxes": {
+    "card": {
+     "x": 760,
+     "y": 400,
+     "w": 860,
+     "align": "right",
+     "card": "notch",
+     "label": "本篇要走的方向"
+    }
+   }
+  },
+  {
+   "id": "same",
+   "name": "默认推理-一起贬值",
+   "photo": "S03",
+   "move": "in",
+   "origin": "55% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "默认推理：一起**不值钱**",
+     "size": 88,
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "一样东西变便宜，和它有关的一切都会跟着贬值",
+     "size": 44,
+     "color": "dim",
+     "at": 2
+    },
+    {
+     "type": "tag",
+     "text": "这个推理通常是对的",
+     "at": 4,
+     "color": "teal"
+    }
+   ]
+  },
+  {
+   "id": "rule",
+   "name": "前提-得是同一件事",
+   "photo": "S05",
+   "move": "in",
+   "origin": "50% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "但它有个前提",
+     "size": 46,
+     "color": "dim",
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "得是**同一件事**",
+     "size": 88,
+     "at": 1,
+     "sfx": "impact",
+     "box": "card"
+    },
+    {
+     "type": "h",
+     "text": "干的是两件事，只是搭在一起用，结论就反过来",
+     "size": 44,
+     "color": "dim",
+     "at": 3
+    }
+   ],
+   "boxes": {
+    "card": {
+     "x": 760,
+     "y": 400,
+     "w": 860,
+     "align": "right",
+     "card": "notch",
+     "label": "前提"
+    }
+   }
+  },
+  {
+   "id": "complement",
+   "name": "搭在一起用",
+   "photo": "S05",
+   "move": "still",
+   "origin": "50% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "搭在一起用的东西",
+     "size": 64,
+     "color": "dim",
+     "delay": 4,
+     "until": 2
+    },
+    {
+     "type": "photorow",
+     "at": 1,
+     "w": 360,
+     "gap": 120,
+     "box": "row",
+     "cards": [
+      {
+       "img": "C01",
+       "title": "高铁",
+       "sub": "HIGH-SPEED RAIL"
+      },
+      {
+       "img": "C02",
+       "title": "县城酒店",
+       "sub": "HOTEL",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "一个变便宜",
+     "size": 72,
+     "at": 2,
+     "box": "below"
+    },
+    {
+     "type": "h",
+     "text": "另一个反而**变贵**",
+     "size": 72,
+     "at": 3,
+     "box": "below"
+    }
+   ],
+   "boxes": {
+    "row": {
+     "x": 760,
+     "y": 130,
+     "w": 860,
+     "align": "center"
+    },
+    "below": {
+     "x": 760,
+     "y": 590,
+     "w": 860,
+     "align": "right"
+    }
+   }
+  },
+  {
+   "id": "hometown",
+   "name": "高铁-县城酒店先涨",
+   "photo": "S06",
+   "move": "in",
+   "origin": "55% 60%",
+   "grad": "right",
+   "ambience": "街道夜晚",
+   "items": [
+    {
+     "type": "tag",
+     "text": "高铁通了以后",
+     "dark": true,
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "路便宜了，**房**贵了",
+     "size": 88,
+     "at": 0,
+     "delay": 18
+    },
+    {
+     "type": "h",
+     "text": "周末的房，得提前两天订",
+     "size": 44,
+     "color": "dim",
+     "at": 3,
+     "until": 5
+    },
+    {
+     "type": "count",
+     "from": 0,
+     "to": 18.5,
+     "suffix": "%",
+     "label": "旅游人数 +",
+     "at": 5,
+     "delay": 10,
+     "dur": 30,
+     "size": 120,
+     "box": "card"
+    },
+    {
+     "type": "h",
+     "text": "旅游收入 **+25%**",
+     "size": 48,
+     "at": 6,
+     "box": "card"
+    },
+    {
+     "type": "t",
+     "text": "另一组 178 城：旅游收入 +12%",
+     "size": 34,
+     "at": 7,
+     "box": "card"
+    }
+   ],
+   "boxes": {
+    "card": {
+     "x": 760,
+     "y": 400,
+     "w": 860,
+     "align": "right",
+     "card": "tab",
+     "label": "研究数据"
+    }
+   }
+  },
+  {
+   "id": "solar",
+   "name": "光伏跌七成-变压器翻倍",
+   "photo": "S07",
+   "move": "in",
+   "origin": "50% 55%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "光伏板跌得离谱",
+     "size": 64,
+     "at": 1,
+     "delay": 4,
+     "until": 11,
+     "box": "title"
+    },
+    {
+     "type": "photocard",
+     "at": 2,
+     "img": "C03",
+     "title": "光伏组件",
+     "sub": "PV MODULE",
+     "w": 360,
+     "box": "cardL",
+     "until": 11
+    },
+    {
+     "type": "t",
+     "text": "每瓦价格",
+     "size": 36,
+     "at": 3,
+     "box": "num",
+     "until": 11
+    },
+    {
+     "type": "odometer",
+     "at": 3,
+     "from": "¥2.10",
+     "to": "¥0.62",
+     "size": 110,
+     "box": "num",
+     "until": 11
+    },
+    {
+     "type": "t",
+     "text": "2022-11 → 2025-03",
+     "size": 30,
+     "at": 5,
+     "box": "num",
+     "until": 11
+    },
+    {
+     "type": "slam",
+     "at": 6,
+     "text": "−70%",
+     "size": 200,
+     "label": "三年",
+     "box": "slam",
+     "until": 11
+    },
+    {
+     "type": "photocard",
+     "at": 11,
+     "img": "C04",
+     "title": "变压器",
+     "sub": "TRANSFORMER",
+     "w": 360,
+     "box": "cardL"
+    },
+    {
+     "type": "tag",
+     "text": "国际能源署 · 近五年",
+     "dark": true,
+     "at": 12,
+     "box": "num",
+     "size": 34
+    },
+    {
+     "type": "h",
+     "text": "电缆和变压器价格",
+     "size": 48,
+     "at": 13,
+     "box": "num"
+    },
+    {
+     "type": "flap",
+     "at": 14,
+     "from": "几乎没变",
+     "to": "翻了一倍",
+     "size": 72,
+     "box": "num"
+    },
+    {
+     "type": "t",
+     "text": "交期",
+     "size": 36,
+     "at": 16,
+     "box": "num"
+    },
+    {
+     "type": "flap",
+     "at": 16,
+     "from": "几个月",
+     "to": "两三年",
+     "size": 64,
+     "box": "num"
+    },
+    {
+     "type": "h",
+     "text": "板子便宜了，**送出去**变贵了",
+     "size": 64,
+     "at": 18,
+     "box": "bottom"
+    }
+   ],
+   "boxes": {
+    "title": {
+     "x": 760,
+     "y": 120,
+     "w": 860,
+     "align": "right"
+    },
+    "cardL": {
+     "x": 760,
+     "y": 230,
+     "w": 360,
+     "align": "left"
+    },
+    "num": {
+     "x": 1160,
+     "y": 240,
+     "w": 460,
+     "align": "left"
+    },
+    "slam": {
+     "x": 760,
+     "y": 600,
+     "w": 860,
+     "align": "right"
+    },
+    "bottom": {
+     "x": 760,
+     "y": 700,
+     "w": 860,
+     "align": "right"
+    }
+   }
+  },
+  {
+   "id": "edison",
+   "name": "1882 电进厂",
+   "photo": "S08",
+   "move": "in",
+   "origin": "50% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "t",
+     "text": "这段历史特别能说明问题",
+     "size": 40,
+     "delay": 4,
+     "until": 1
+    },
+    {
+     "type": "odometer",
+     "at": 1,
+     "from": "1879",
+     "to": "1882",
+     "size": 160,
+     "dur": 40
+    },
+    {
+     "type": "h",
+     "text": "爱迪生点亮电灯",
+     "size": 56,
+     "color": "dim",
+     "at": 1,
+     "delay": 6,
+     "until": 2
+    },
+    {
+     "type": "h",
+     "text": "纽约珍珠街电厂，**电进了工厂**",
+     "size": 64,
+     "at": 2
+    },
+    {
+     "type": "h",
+     "text": "那会儿的工程师就明白，电会改掉工厂",
+     "size": 40,
+     "color": "dim",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "flat",
+   "name": "三十年 生产率没动",
+   "photo": "S09",
+   "move": "out",
+   "origin": "50% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "count",
+     "from": 1882,
+     "to": 1912,
+     "prefix": "",
+     "suffix": "",
+     "label": "接下来",
+     "at": 0,
+     "delay": 8,
+     "dur": 26,
+     "size": 150,
+     "box": "card"
+    },
+    {
+     "type": "h",
+     "text": "工厂生产率**几乎没动**",
+     "size": 88,
+     "at": 3,
+     "delay": 6
+    },
+    {
+     "type": "h",
+     "text": "电明明便宜了，机器明明换了",
+     "size": 44,
+     "color": "dim",
+     "at": 5
+    },
+    {
+     "type": "h",
+     "text": "活为什么没快？",
+     "size": 88,
+     "at": 7,
+     "sfx": "impact"
+    }
+   ],
+   "boxes": {
+    "card": {
+     "x": 760,
+     "y": 400,
+     "w": 860,
+     "align": "right",
+     "card": "tab",
+     "label": "年"
+    }
+   }
+  },
+  {
+   "id": "lineframe",
+   "name": "一根轴带着全厂转",
+   "photo": "S02",
+   "move": "in",
+   "origin": "60% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "tag",
+     "text": "十九世纪的工厂",
+     "dark": true,
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "靠的是**一根总轴**",
+     "size": 88,
+     "at": 0,
+     "delay": 18
+    },
+    {
+     "type": "stack",
+     "at": 3,
+     "w": 820,
+     "items": [
+      {
+       "big": "水轮 / 蒸汽机",
+       "small": "在外面转"
+      },
+      {
+       "big": "带动厂房顶上的长轴",
+       "small": "一圈一圈挂皮带"
+      },
+      {
+       "big": "皮带垂下来带机器",
+       "small": "一台一台"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "groupdrive",
+   "name": "换电不换车间",
+   "photo": "S11",
+   "move": "in",
+   "origin": "45% 50%",
+   "grad": "left",
+   "items": [
+    {
+     "type": "h",
+     "text": "电来了，工厂干了什么",
+     "size": 72,
+     "delay": 4,
+     "until": 2
+    },
+    {
+     "type": "photorow",
+     "at": 2,
+     "w": 340,
+     "gap": 110,
+     "box": "row",
+     "cards": [
+      {
+       "img": "C05",
+       "title": "蒸汽机",
+       "sub": "STEAM"
+      },
+      {
+       "img": "C06",
+       "title": "大电动机",
+       "sub": "MOTOR",
+       "at": 1
+      }
+     ]
+    },
+    {
+     "type": "tag",
+     "text": "总轴还在 · 皮带还在",
+     "at": 4,
+     "color": "coral",
+     "box": "below"
+    },
+    {
+     "type": "h",
+     "text": "这叫**成组驱动**",
+     "size": 72,
+     "at": 7,
+     "sfx": "impact",
+     "box": "below"
+    },
+    {
+     "type": "t",
+     "text": "电只是替了个班，车间的命没变",
+     "size": 36,
+     "at": 8,
+     "box": "below"
+    }
+   ],
+   "boxes": {
+    "row": {
+     "x": 90,
+     "y": 130,
+     "w": 820,
+     "align": "center"
+    },
+    "below": {
+     "x": 90,
+     "y": 600,
+     "w": 900,
+     "card": "notch",
+     "label": "成组驱动",
+     "sub": "GROUP DRIVE"
+    }
+   }
+  },
+  {
+   "id": "waste",
+   "name": "开一台全厂转",
+   "photo": "S12",
+   "move": "in",
+   "origin": "55% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "电只是替了个班",
+     "size": 88,
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "车间的命**没变**",
+     "size": 88,
+     "at": 1
+    },
+    {
+     "type": "h",
+     "text": "总轴一开，全厂都得转，哪怕你只想开一台",
+     "size": 44,
+     "color": "dim",
+     "at": 3
+    },
+    {
+     "type": "h",
+     "text": "摩擦耗掉的力气，比干活的还多",
+     "size": 44,
+     "color": "dim",
+     "at": 5
+    },
+    {
+     "type": "tag",
+     "text": "物料搬过去，还得搬回来",
+     "at": 7,
+     "color": "coral"
+    }
+   ]
+  },
+  {
+   "id": "unitdrive",
+   "name": "拆掉总轴",
+   "photo": "S13",
+   "move": "in",
+   "origin": "55% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "要吃到电的好处",
+     "size": 88,
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "得把**整根轴拆掉**",
+     "size": 88,
+     "at": 1,
+     "sfx": "impact"
+    },
+    {
+     "type": "stack",
+     "at": 3,
+     "w": 820,
+     "items": [
+      {
+       "big": "每台配一个小电机",
+       "small": "想开哪台开哪台"
+      },
+      {
+       "big": "压成一层",
+       "small": "不再围着轴转"
+      },
+      {
+       "big": "按工序顺序摆",
+       "small": "一头进，一头出"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "forty",
+   "name": "迟到了四十年",
+   "photo": "S14",
+   "move": "out",
+   "origin": "50% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "t",
+     "text": "这件事花了多久",
+     "size": 40,
+     "delay": 4,
+     "until": 3
+    },
+    {
+     "type": "t",
+     "text": "1882 年供电 → 1920 年代做开",
+     "size": 36,
+     "at": 1,
+     "until": 3
+    },
+    {
+     "type": "slam",
+     "at": 3,
+     "text": "40 年",
+     "size": 260,
+     "label": "将近"
+    }
+   ],
+   "boxes": {
+    "card": {
+     "x": 760,
+     "y": 400,
+     "w": 860,
+     "align": "right",
+     "card": "solid",
+     "label": "时间差"
+    }
+   }
+  },
+  {
+   "id": "invest",
+   "name": "不是没电 是不敢拆",
+   "photo": "S15",
+   "move": "in",
+   "origin": "50% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "厂房是钱",
+     "size": 88,
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "总轴是钱",
+     "size": 88,
+     "at": 1
+    },
+    {
+     "type": "h",
+     "text": "停产重排**更是钱**",
+     "size": 88,
+     "at": 2
+    },
+    {
+     "type": "tag",
+     "text": "一直到 1920 年代才有人整片盖新厂",
+     "at": 5,
+     "color": "gold"
+    }
+   ]
+  },
+  {
+   "id": "numbers",
+   "name": "1919-1929 份额",
+   "photo": "S16",
+   "move": "out",
+   "origin": "50% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "tag",
+     "text": "电作为工厂动力的份额",
+     "dark": true,
+     "delay": 4
+    },
+    {
+     "type": "fill",
+     "at": 2,
+     "pct": 52,
+     "w": 120,
+     "h": 260,
+     "label": "1919",
+     "box": "fillA"
+    },
+    {
+     "type": "fill",
+     "at": 3,
+     "pct": 78,
+     "w": 120,
+     "h": 260,
+     "label": "1929",
+     "box": "fillB"
+    },
+    {
+     "type": "h",
+     "text": "制造业生产率增速，1920 年代远超之前二十年",
+     "size": 40,
+     "color": "dim",
+     "at": 4,
+     "box": "low"
+    },
+    {
+     "type": "h",
+     "text": "其中**至少一半**归到拆总轴",
+     "size": 64,
+     "at": 7,
+     "sfx": "impact",
+     "box": "card"
+    }
+   ],
+   "boxes": {
+    "fillA": {
+     "x": 1040,
+     "y": 200,
+     "w": 200,
+     "align": "center"
+    },
+    "fillB": {
+     "x": 1320,
+     "y": 200,
+     "w": 200,
+     "align": "center"
+    },
+    "low": {
+     "x": 760,
+     "y": 600,
+     "w": 860,
+     "align": "right"
+    },
+    "card": {
+     "x": 760,
+     "y": 660,
+     "w": 860,
+     "align": "right",
+     "card": "solid",
+     "label": "研究者估算"
+    }
+   }
+  },
+  {
+   "id": "rearrange",
+   "name": "让工厂变快的是重排",
+   "photo": "S17",
+   "move": "in",
+   "origin": "55% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "翻译一下",
+     "size": 46,
+     "color": "dim",
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "让工厂变快的",
+     "size": 96,
+     "at": 1
+    },
+    {
+     "type": "h",
+     "text": "是**重排**",
+     "size": 112,
+     "at": 2,
+     "textfx": "gradient",
+     "sfx": "impact"
+    },
+    {
+     "type": "h",
+     "text": "电只是让重排变得划算",
+     "size": 44,
+     "color": "dim",
+     "at": 4
+    }
+   ]
+  },
+  {
+   "id": "invoice",
+   "name": "重排没有发票",
+   "photo": "S18",
+   "move": "in",
+   "origin": "50% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "难在这儿",
+     "size": 72,
+     "delay": 4,
+     "until": 3
+    },
+    {
+     "type": "h",
+     "text": "技术早就到位了",
+     "size": 48,
+     "color": "dim",
+     "at": 2,
+     "until": 3
+    },
+    {
+     "type": "h",
+     "text": "~~换一种排法~~",
+     "size": 72,
+     "at": 3,
+     "box": "paper"
+    },
+    {
+     "type": "t",
+     "text": "没有报价 · 没有供应商 · 没有发票",
+     "size": 36,
+     "at": 4,
+     "box": "paper"
+    },
+    {
+     "type": "h",
+     "text": "四十年，卡的就是这个",
+     "size": 56,
+     "at": 7,
+     "box": "bottom"
+    }
+   ],
+   "boxes": {
+    "paper": {
+     "x": 760,
+     "y": 180,
+     "w": 860,
+     "card": "paper"
+    },
+    "bottom": {
+     "x": 760,
+     "y": 620,
+     "w": 860,
+     "align": "right"
+    }
+   }
+  },
+  {
+   "id": "todaysmap",
+   "name": "做便宜 看变贵",
+   "photo": "S19",
+   "move": "in",
+   "origin": "55% 55%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "回到 AI，用同一套看法看一遍",
+     "size": 56,
+     "delay": 4,
+     "until": 2
+    },
+    {
+     "type": "t",
+     "text": "AI 变便宜的，是",
+     "size": 40,
+     "at": 2,
+     "box": "flap"
+    },
+    {
+     "type": "big",
+     "text": "做",
+     "size": 160,
+     "at": 2,
+     "until": 7,
+     "box": "flap"
+    },
+    {
+     "type": "t",
+     "text": "写一段，画一张",
+     "size": 36,
+     "at": 4,
+     "until": 7,
+     "box": "flap"
+    },
+    {
+     "type": "t",
+     "text": "需求挤到了",
+     "size": 40,
+     "at": 7,
+     "box": "flap"
+    },
+    {
+     "type": "flap",
+     "at": 7,
+     "from": "做",
+     "to": "看",
+     "size": 160,
+     "box": "flap"
+    },
+    {
+     "type": "h",
+     "text": "做变便宜，**看**变贵",
+     "size": 72,
+     "at": 8,
+     "delay": 20,
+     "box": "bottom"
+    }
+   ],
+   "boxes": {
+    "flap": {
+     "x": 760,
+     "y": 160,
+     "w": 860,
+     "align": "right"
+    },
+    "bottom": {
+     "x": 760,
+     "y": 640,
+     "w": 860,
+     "align": "right"
+    }
+   }
+  },
+  {
+   "id": "review",
+   "name": "逐条检验",
+   "photo": "S20",
+   "move": "in",
+   "origin": "50% 50%",
+   "grad": "all",
+   "items": [
+    {
+     "type": "h",
+     "text": "写得越像，越得**逐条检验**",
+     "size": 56,
+     "delay": 4,
+     "until": 2,
+     "box": "top"
+    },
+    {
+     "type": "graph",
+     "at": 1,
+     "w": 1500,
+     "h": 560,
+     "box": "g",
+     "nodes": [
+      {
+       "id": "c",
+       "x": 570,
+       "y": 380,
+       "w": 360,
+       "text": "看",
+       "sub": "REVIEW",
+       "at": 0
+      },
+      {
+       "id": "a",
+       "x": 40,
+       "y": 40,
+       "w": 420,
+       "text": "有没有**编数据**",
+       "sub": "DATA",
+       "at": 1
+      },
+      {
+       "id": "b",
+       "x": 540,
+       "y": 0,
+       "w": 420,
+       "text": "有没有**漏反例**",
+       "sub": "COUNTEREXAMPLE",
+       "at": 2
+      },
+      {
+       "id": "d",
+       "x": 1040,
+       "y": 40,
+       "w": 420,
+       "text": "能不能**落到账上**",
+       "sub": "LEDGER",
+       "at": 3
+      }
+     ],
+     "edges": [
+      {
+       "from": "a",
+       "to": "c"
+      },
+      {
+       "from": "b",
+       "to": "c"
+      },
+      {
+       "from": "d",
+       "to": "c"
+      }
+     ]
+    },
+    {
+     "type": "h",
+     "text": "稀缺的是能一眼看出**哪儿不对**的那个人",
+     "size": 48,
+     "at": 12,
+     "box": "bottom"
+    }
+   ],
+   "boxes": {
+    "top": {
+     "x": 760,
+     "y": 130,
+     "w": 860,
+     "align": "right"
+    },
+    "g": {
+     "x": 160,
+     "y": 180,
+     "w": 1500
+    },
+    "bottom": {
+     "x": 90,
+     "y": 740,
+     "w": 1740,
+     "align": "center"
+    }
+   },
+   "dim": 0.35
+  },
+  {
+   "id": "boundary",
+   "name": "边界-纯省钱",
+   "photo": "S19",
+   "move": "still",
+   "origin": "55% 55%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "这个结论有**边界**",
+     "size": 72,
+     "delay": 4,
+     "box": "card"
+    },
+    {
+     "type": "t",
+     "text": "旁边没有配套的稀缺环节\n就只是单纯变便宜",
+     "size": 36,
+     "at": 2,
+     "box": "card"
+    },
+    {
+     "type": "photocard",
+     "at": 4,
+     "img": "C07",
+     "title": "盐",
+     "sub": "SALT",
+     "w": 280,
+     "box": "salt"
+    },
+    {
+     "type": "t",
+     "text": "盐降价了\n没人因此去学做菜",
+     "size": 40,
+     "at": 5,
+     "box": "saltT"
+    },
+    {
+     "type": "h",
+     "text": "身边没有东西跟着紧张，你就是**纯粹省了钱**",
+     "size": 48,
+     "at": 8,
+     "box": "bottom"
+    }
+   ],
+   "boxes": {
+    "card": {
+     "x": 760,
+     "y": 130,
+     "w": 860,
+     "card": "notch",
+     "label": "边界",
+     "sub": "BOUNDARY"
+    },
+    "salt": {
+     "x": 760,
+     "y": 430,
+     "w": 300
+    },
+    "saltT": {
+     "x": 1100,
+     "y": 520,
+     "w": 520
+    },
+    "bottom": {
+     "x": 760,
+     "y": 740,
+     "w": 860,
+     "align": "right"
+    }
+   }
+  },
+  {
+   "id": "mine",
+   "name": "现在紧张的是相信",
+   "photo": "S01",
+   "move": "in",
+   "origin": "50% 55%",
+   "grad": "right",
+   "ambience": "办公室",
+   "items": [
+    {
+     "type": "h",
+     "text": "我自己的感受",
+     "size": 46,
+     "color": "dim",
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "现在紧张的是**相信**",
+     "size": 88,
+     "at": 1
+    },
+    {
+     "type": "h",
+     "text": "以前敢直接发出去，现在得看一眼",
+     "size": 44,
+     "color": "dim",
+     "at": 3
+    },
+    {
+     "type": "h",
+     "text": "这一眼，就是最贵的",
+     "size": 88,
+     "at": 5,
+     "sfx": "impact",
+     "box": "card"
+    }
+   ],
+   "boxes": {
+    "card": {
+     "x": 760,
+     "y": 400,
+     "w": 860,
+     "align": "right",
+     "card": "solid",
+     "label": "眼下最贵的地方"
+    }
+   }
+  },
+  {
+   "id": "todo",
+   "name": "挑三件活标一标",
+   "photo": "S21",
+   "move": "in",
+   "origin": "50% 50%",
+   "grad": "right",
+   "items": [
+    {
+     "type": "h",
+     "text": "这周做件小事",
+     "size": 88,
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "把用 AI 干过的活挑三件",
+     "size": 44,
+     "color": "dim",
+     "at": 2
+    },
+    {
+     "type": "stack",
+     "at": 4,
+     "w": 820,
+     "items": [
+      {
+       "big": "哪句检验过",
+       "small": "有出处"
+      },
+      {
+       "big": "哪句直接相信",
+       "small": "没核过"
+      },
+      {
+       "big": "我卖的到底是哪一样",
+       "small": "标完就知道了"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "close",
+   "name": "能判断的人最不够用",
+   "photo": "S01",
+   "move": "out",
+   "origin": "50% 55%",
+   "grad": "right",
+   "ambience": "街道夜晚",
+   "items": [
+    {
+     "type": "h",
+     "text": "回到开头那个问题",
+     "size": 46,
+     "color": "dim",
+     "delay": 4
+    },
+    {
+     "type": "h",
+     "text": "最先不够用的",
+     "size": 88,
+     "at": 1
+    },
+    {
+     "type": "h",
+     "text": "是能**判断**的人",
+     "size": 112,
+     "at": 3,
+     "textfx": "gradient",
+     "sfx": "impact"
+    },
+    {
+     "type": "h",
+     "text": "用得越多，越需要一个能说“这条不对”的人",
+     "size": 44,
+     "color": "dim",
+     "at": 6
+    },
+    {
+     "type": "tag",
+     "text": "那个人现在还挺贵的",
+     "at": 8,
+     "color": "gold"
+    }
+   ]
+  }
+ ]
 }
