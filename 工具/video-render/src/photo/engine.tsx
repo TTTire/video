@@ -7,6 +7,8 @@ import {Theme, useC} from '../ui';
 import {Enter} from '../fx';
 import {CountUp, FlyIn, Sfx, SfxName, Stamp, StrikeLine, useSpringAt, TextEnter, TextEnterCtx, FADE_FRAMES} from '../fx';
 import {at, Box, BoxSpec, CardKind, CardShell, useInk, Clock, Em, FONTS, FontKey, Grad, H, P, Panel, Photo, PHOTO_THEME, Quote, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease, regionBox, regionOrigin, regionXY, SAFE_RIGHT_X} from './kit';
+import {CardEnter, Graph, GraphEdge, GraphNode, TactileCardShell, TPhoto} from './tactile';
+import {Fill, Flap, Odometer, Rank, RankRow, RowSweep, Slam, StackUnits} from './numfx';
 export type {BoxSpec, CardKind} from './kit';
 
 // ---------- 类型 ----------
@@ -30,6 +32,25 @@ export type Item = Base & (
   | {type: 'rings'; x?: number; y?: number; n?: number; max?: number; color?: string; region?: string}
   | {type: 'sfx'; name: SfxName; variant?: string; dur?: number; endAt?: number; fade?: number}
   | {type: 'custom'; name: string}
+  // ---- 2026-10-29 新增：实物卡 + 数值动效 ----
+  // photo 卡：一个实体一张。img 是 public/<ep>/cards/<img>.jpg（C01…）；title 中文大词；sub 英文小字；w 卡宽（默认 420）
+  | {type: 'photocard'; img: string; title?: string; sub?: string; w?: number; imgH?: number}
+  // 一排 photo 卡（2–4 张并排），each 里每张可以自己写 at（相对本元素的 at 偏移句数）
+  | {type: 'photorow'; cards: {img: string; title?: string; sub?: string; at?: number}[]; w?: number; gap?: number}
+  // 里程表：from/to 字符串（"¥16" → "¥23"、"2011" → "2024"）
+  | {type: 'odometer'; from: string; to: string; size?: number; color?: string; dur?: number; label?: string}
+  // 翻牌：旧值翻走新值翻来
+  | {type: 'flap'; from: string; to: string; size?: number; color?: string; toColor?: string; label?: string}
+  // 砸入的大数：本期核心数字，一期 1–2 次
+  | {type: 'slam'; text: string; size?: number; color?: string; label?: string}
+  // 排名：rows 固定；orders[i] 是第 i 次换序后的 id 顺序；每到 orderAt[i] 那一句换一次
+  | {type: 'rank'; rows: RankRow[]; orders: string[][]; orderAt?: number[]; w?: number; rowH?: number; size?: number; hi?: string}
+  // 实物堆叠：n 个 unit（emoji 或字符），cols 列
+  | {type: 'units'; n: number; unit: string; cols?: number; size?: number; max?: number; label?: string; color?: string}
+  // 液面：pct 0–100
+  | {type: 'fill'; pct: number; w?: number; h?: number; color?: string; label?: string; horizontal?: boolean}
+  // 关系图：nodes 每个是一张卡（photocard 或纯字），edges 连线；坐标相对 box 左上角
+  | {type: 'graph'; w?: number; h?: number; nodes: {id: string; x: number; y: number; w?: number; at?: number; img?: string; title?: string; sub?: string; text?: string}[]; edges: {from: string; to: string; at?: number; label?: string; color?: string}[]}
 );
 // origin 可以写区域名（"MR"）或百分比（"68% 62%"）
 export type PhotoLayer = {photo: string; zoom?: [number, number]; move?: 'in' | 'out' | 'still'; origin?: string; grad?: Grad; dim?: number; blur?: number; pos?: string};
@@ -41,7 +62,7 @@ export type SceneSpec = PhotoLayer & {
   // box 可以写区域名（"TL" "MR" "BW"…）或像素框；写了 card 就整组套一张卡
   box?: BoxSpec | string; boxes?: Record<string, BoxSpec | string>;
   // 场景级卡片：这一场所有默认 box 的元素都装进同一张卡（box 名要同）
-  card?: CardKind; cardLabel?: string; cardColor?: string; cardW?: number;
+  card?: CardKind; cardLabel?: string; cardColor?: string; cardW?: number; cardSub?: string;
   center?: boolean; ambience?: boolean | string; enterSfx?: SfxName | null;
   items?: Item[];
   // type: 'series'
@@ -62,6 +83,10 @@ export type Style = {
   textEnter?: TextEnter;
   // 左上角标（像素呼吸 · 栏目名）显示与否。false = 不显示；不写 = 显示（已发布各期照旧）
   badge?: boolean;
+  // 卡片质感：tactile = 实物感（厚边、金边、角花、漂动、侧飞入；2026-10-29 起新期默认写这个）；不写 = 旧的扁平半透明
+  cardSkin?: 'flat' | 'tactile';
+  // 卡内小图目录（public/ 下），photocard / graph 的 img 从这里取；默认 <ep>/cards
+  cards?: string;
 };
 export type EpisodeSpec = {
   ep: string; badge: string; photos: string; chapterPhoto: string;
@@ -94,6 +119,7 @@ const SCALES: Record<'v1' | 'v2', Scale> = {
   v2: {h: 88, t: 44, big: 180, quote: 48},
 };
 const ScaleCtx = React.createContext<Scale>(SCALES.v1);
+const SkinCtx = React.createContext<{skin: 'flat' | 'tactile'; cards: string}>({skin: 'flat', cards: ''});
 const DEFAULT_BOX: BoxSpec = {x: 90, y: 120, w: 900};
 const CENTER_BOX: BoxSpec = {x: 90, y: 110, w: 1740, align: 'center'};
 // 文字母版：每期在 style.layout 里选一个，场景里不写 box / grad 时按它来
@@ -105,7 +131,7 @@ const LAYOUTS: Record<NonNullable<Style['layout']>, {box: BoxSpec; grad: Grad}> 
 };
 const GRAIN_SVG = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>\")";
 const Grain: React.FC = () => <AbsoluteFill style={{opacity: 0.12, mixBlendMode: 'overlay', backgroundImage: GRAIN_SVG, backgroundSize: '300px 300px'}} />;
-const DEFAULT_SFX: Partial<Record<Item['type'], SfxName>> = {h: 'pop', t: 'pop', tag: 'pop', stamp: 'stamp', big: 'ding', count: 'ding', panel: 'page', compare: 'swipe', nums: 'drop', clock: 'click'};
+const DEFAULT_SFX: Partial<Record<Item['type'], SfxName>> = {h: 'pop', t: 'pop', tag: 'pop', stamp: 'stamp', big: 'ding', count: 'ding', panel: 'page', compare: 'swipe', nums: 'drop', clock: 'click', photocard: 'pop'};
 const DEFAULT_DIR = (b: BoxSpec): Dir => (b.align === 'center' ? 'up' : b.right !== undefined || (b.x ?? 0) > 960 ? 'right' : 'left');
 
 // 叠卡的一行：自己带弹簧入场，不能用 FlyIn 包 —— wrapper 的 transform 会重置 absolute 定位的基准。
@@ -260,6 +286,59 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
     case 'spot': { const [x, y] = regionXY({x: it.x, y: it.y, at: it.region}); return <Spot x={x} y={y} r={it.r} at={a} strength={it.strength} />; }
     case 'rings': { const [x, y] = regionXY({x: it.x, y: it.y, at: it.region}); return <Rings x={x} y={y} at={a} n={it.n} max={it.max} color={it.color ? col(it.color, C.gold, C) : undefined} />; }
     case 'sfx': return <Sfx at={a} name={it.name} variant={it.variant} vol={it.vol} dur={it.dur} endAt={it.endAt} fade={it.fade} />;
+    // ---- 实物卡 + 数值动效 ----
+    case 'photocard': {
+      const {cards} = React.useContext(SkinCtx);
+      return <>{snd}<CardEnter at={a} dir={dir} dist={140}><TPhoto src={staticFile(`${cards}/${it.img}.jpg`)} title={it.title ? rich(it.title, C) : undefined} sub={it.sub} w={it.w} imgH={it.imgH} seed={a % 7} /></CardEnter></>;
+    }
+    case 'photorow': {
+      const {cards} = React.useContext(SkinCtx);
+      const w = it.w ?? 380;
+      return (
+        <div style={{display: 'flex', gap: it.gap ?? 28, alignItems: 'flex-start', justifyContent: align === 'center' ? 'center' : align === 'right' ? 'flex-end' : undefined}}>
+          {it.cards.map((c, i) => {
+            const st = step + (c.at ?? 0);
+            if (p.step < st) return <div key={i} style={{width: w}} />;
+            const aa = at(p, st) + (c.at ? 0 : i * 6);
+            return <React.Fragment key={i}>{aa > 2 && <Sfx at={aa} name="pop" vol={0.25} />}<CardEnter at={aa} dir={i < it.cards.length / 2 ? 'left' : 'right'} dist={120}><TPhoto src={staticFile(`${cards}/${c.img}.jpg`)} title={c.title ? rich(c.title, C) : undefined} sub={c.sub} w={w} seed={i} /></CardEnter></React.Fragment>;
+          })}
+        </div>
+      );
+    }
+    case 'odometer': return (
+      <div style={{display: 'flex', alignItems: 'baseline', gap: 24, justifyContent: align === 'center' ? 'center' : undefined, opacity: f >= a ? 1 : 0}}>
+        {it.label && <T size={36}>{it.label}</T>}
+        <Odometer from={it.from} to={it.to} at={a + 4} dur={it.dur} size={it.size ?? SCALE.big * 0.7} color={it.color ? col(it.color, C.gold, C) : undefined} />
+      </div>);
+    case 'flap': return (
+      <div style={{display: 'flex', alignItems: 'center', gap: 24, justifyContent: align === 'center' ? 'center' : undefined, opacity: f >= a ? 1 : 0}}>
+        {it.label && <T size={36}>{it.label}</T>}
+        <Flap from={rich(it.from, C)} to={rich(it.to, C)} fromText={it.from} toText={it.to} at={a + 4} size={it.size ?? 88} color={it.color ? col(it.color, C.dim, C) : undefined} toColor={it.toColor ? col(it.toColor, C.gold, C) : undefined} />
+      </div>);
+    case 'slam': return (
+      <div style={{display: 'flex', flexDirection: 'column', alignItems: align === 'center' ? 'center' : align === 'right' ? 'flex-end' : 'flex-start', gap: 8}}>
+        {it.label && f >= a + 10 && <T size={36}>{it.label}</T>}
+        <Slam at={a} size={it.size ?? SCALE.big} color={it.color ? col(it.color, C.gold, C) : undefined}>{rich(it.text, C)}</Slam>
+      </div>);
+    case 'rank': {
+      // 第几次换序：orderAt 给了就按句号查，没给就 每句换一次
+      const orderAt = it.orderAt ?? it.orders.map((_, i) => step + i);
+      let idx = 0; orderAt.forEach((s, i) => { if (p.step >= s) idx = i; });
+      return <div style={{opacity: f >= a ? 1 : 0}}><Rank rows={it.rows} orders={it.orders.slice(0, idx + 1)} stepAt={(i) => at(p, orderAt[i] ?? step)} step={idx} w={it.w ?? (box.w ?? 860)} rowH={it.rowH} size={it.size} hi={it.hi} /></div>;
+    }
+    case 'units': return <StackUnits n={it.n} at={a} unit={it.unit} cols={it.cols} size={it.size} max={it.max} label={it.label} color={it.color ? col(it.color, C.gold, C) : undefined} />;
+    case 'fill': return <div style={{opacity: f >= a ? 1 : 0}}><Fill pct={it.pct} at={a} w={it.w} h={it.h} color={it.color ? col(it.color, C.gold, C) : undefined} label={it.label} horizontal={it.horizontal} /></div>;
+    case 'graph': {
+      const {cards} = React.useContext(SkinCtx);
+      const nodes: GraphNode[] = it.nodes.map((n) => ({
+        id: n.id, x: n.x, y: n.y, w: n.w ?? 360, h: n.img ? Math.round((n.w ?? 360) * 0.72) + 130 : 150, at: step + (n.at ?? 0),
+        node: n.img
+          ? <TPhoto src={staticFile(`${cards}/${n.img}.jpg`)} title={n.title ? rich(n.title, C) : undefined} sub={n.sub} w={n.w ?? 360} seed={n.x % 5} />
+          : <TactileCardShell kind="notch" w={n.w ?? 360} seed={n.y % 5}><H size={44}>{rich(n.text ?? n.title ?? '', C)}</H>{n.sub && <T size={22}>{n.sub}</T>}</TactileCardShell>,
+      }));
+      const edges: GraphEdge[] = it.edges.map((e) => ({...e, at: e.at !== undefined ? step + e.at : undefined}));
+      return <Graph w={it.w ?? (box.w ?? 1200)} h={it.h ?? 600} nodes={nodes} edges={edges} stepAt={(i) => at(p, i)} step={p.step} />;
+    }
     case 'custom': {
       const Comp = custom[it.name];
       if (!Comp) return <div style={{position: 'absolute', left: 100, top: 500, color: 'red', fontSize: 40}}>custom "{it.name}" 不存在</div>;
@@ -367,9 +446,13 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
           return (
             <Box key={k} x={b.x} y={b.bottom === undefined ? b.y : undefined} w={b.w} right={b.right}
               style={{bottom: b.bottom, alignItems: center ? 'center' : b.align === 'right' ? 'flex-end' : 'flex-start', opacity: boxOpacity(k) * shellK}}>
-              <CardShell kind={kind} label={label} color={tabColor} w={cardW}>
-                {list.map((it, i) => <ItemView key={i} it={it} p={p} box={b} custom={custom} spec={spec} />)}
-              </CardShell>
+              {st.cardSkin === 'tactile'
+                ? <CardEnter at={firstAt} dir={DEFAULT_DIR(b)} dist={kind ? 140 : 0}><TactileCardShell kind={kind} label={label} sub={b.sub ?? (k === 'main' ? spec.cardSub : undefined)} color={tabColor} w={cardW} seed={k.length + (b.y ?? 0) % 5}>
+                    {list.map((it, i) => <ItemView key={i} it={it} p={p} box={b} custom={custom} spec={spec} />)}
+                  </TactileCardShell></CardEnter>
+                : <CardShell kind={kind} label={label} color={tabColor} w={cardW}>
+                    {list.map((it, i) => <ItemView key={i} it={it} p={p} box={b} custom={custom} spec={spec} />)}
+                  </CardShell>}
             </Box>
           );
         })}
@@ -377,11 +460,14 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
       </AbsoluteFill>
     );
   };
+  const skin = {skin: st.cardSkin ?? 'flat', cards: st.cards ?? `${ep.ep}/cards`} as const;
   const SceneView: React.FC<P> = (p) => (
     <ScaleCtx.Provider value={scale}>
+      <SkinCtx.Provider value={skin}>
       <TextEnterCtx.Provider value={st.textEnter ?? 'fly'}>
         <SceneViewInner {...p} />
       </TextEnterCtx.Provider>
+      </SkinCtx.Provider>
     </ScaleCtx.Provider>
   );
   return SceneView;

@@ -23,6 +23,7 @@ comp = ("Ai" if is_ai else "Ep") + n   # 合成名 Ai01Photo / Ep7Photo
 d = f"{ROOT}/src/{ep}"
 os.makedirs(d, exist_ok=True)
 os.makedirs(f"{ROOT}/public/{ep}/photos", exist_ok=True)
+os.makedirs(f"{ROOT}/public/{ep}/cards", exist_ok=True)
 
 def write_if_absent(path, content):
     if os.path.exists(path): print(f"  已有 {os.path.relpath(path, ROOT)}"); return
@@ -31,7 +32,7 @@ def write_if_absent(path, content):
 write_if_absent(f"{d}/timeline.json", json.dumps({"fps": 30, "total": 60, "scenes": [{"scene": "chapter", "from": 0, "dur": 60, "steps": [0], "chapter": 1, "title": "占位"}], "subs": []}))
 write_if_absent(f"{d}/scenemap.json", "{}")
 write_if_absent(f"{d}/scene-names.json", "{}")
-write_if_absent(f"{d}/photo.json", json.dumps({"ep": ep, "badge": badge, "series": series, "photos": f"{ep}/photos", "chapterPhoto": "S01", "style": {"badge": False, "scale": "v2"}, "scenes": []}, ensure_ascii=False, indent=2))
+write_if_absent(f"{d}/photo.json", json.dumps({"ep": ep, "badge": badge, "series": series, "photos": f"{ep}/photos", "chapterPhoto": "S01", "style": {"badge": False, "scale": "v2", "textEnter": "fade", "cardSkin": "tactile"}, "scenes": []}, ensure_ascii=False, indent=2))
 write_if_absent(f"{d}/custom.tsx", f'''// 第 {n} 期的特殊图表（柱状图、表格、对比图等）。photo.json 里用 {{"type":"custom","name":"xxx"}} 引用。
 // 组件拿到 P（steps/step/dur）：p.step 是当前到了场景内第几句，at(p, i) 是第 i 句开始的帧。参考 src/ep6/custom.tsx。
 import React from 'react';

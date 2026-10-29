@@ -13,6 +13,7 @@ import {ENTER6P, MANUAL6P, SCENES6P, THEME6P, useSmiley} from './ep6/photo';
 import {photoComps} from './photo/register';
 import {Lab} from './stylelab/Lab';
 import {EngineLab} from './stylelab/EngineLab';
+import {TactileLab, TACTILE_CASES} from './stylelab/TactileLab';
 import {EpisodeSpec} from './photo/engine';
 import ep8 from './ep8/timeline.json';
 import ai01 from './ai01/timeline.json';
@@ -99,6 +100,7 @@ photoEps.forEach((e) => comps.push(...photoComps(e.id, e.tl as any, e.spec, e.cu
 // 样式实验室（只用来看预览图，不接进任何一期）：python scripts/lab.py <帧号>
 comps.push({id: 'StyleLab', total: 10, C: () => <Lab />});
 comps.push({id: 'EngineLab', total: 5, C: () => <EngineLab />});
+comps.push({id: 'TactileLab', total: TACTILE_CASES, C: () => <TactileLab />});
 
 export const Root: React.FC = () => (
   <>

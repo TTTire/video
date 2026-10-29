@@ -227,7 +227,9 @@ export const Quote: React.FC<{children: React.ReactNode; size?: number; color?: 
 //   BL  BC  BR     BW
 export type BoxSpec = {x?: number; y?: number; w?: number; right?: number; bottom?: number; align?: 'left' | 'center' | 'right';
   // 卡片：这一组字装进哪种卡，标签和签色
-  card?: CardKind; label?: string; tabColor?: string; cardW?: number;};
+  card?: CardKind; label?: string; tabColor?: string; cardW?: number;
+  // sub：notch 卡标签旁的英文小字（实物卡皮肤用）
+  sub?: string;};
 // 抖音右侧图标列（头像 / 点赞 / 评论 / 分享）会盖住横屏视频右边约 15% 的宽度：右边 300px 不放字、不放图表的关键部分。
 // 右对齐的 R 列和 layout=right 母版都以 SAFE_RIGHT_X 为右边界；自定义图表里也用它。
 export const SAFE_RIGHT = 300;

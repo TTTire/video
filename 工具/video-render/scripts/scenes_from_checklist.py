@@ -141,7 +141,7 @@ def main():
             elif k == "font": style["titleFont"] = v
             elif k in ("letterbox", "grain", "badge"): style[k] = v.lower() in ("1", "true", "yes")
             elif k == "tintOpacity": style[k] = float(v)
-            elif k in ("layout", "tint", "enter", "scale"): style[k] = v
+            elif k in ("layout", "tint", "enter", "scale", "cardSkin", "textEnter"): style[k] = v
         if theme: style["theme"] = theme
         # 2026-10 起新期默认：不打左上角标、字号走 v2 档（老期不写这两条，重渲不变样）
         style.setdefault("badge", False)

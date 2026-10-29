@@ -62,6 +62,8 @@
 | `scale` | `v2` / 不写 | 字号档位。`v2` = h88 / t44 / big180（2026-10 起新期默认写上）；不写 = 旧档 h66 / t38 / big150，已发布各期都走这个 |
 | `enter` | `cut` / `blur` / `slideL` / `zoom` / `slideUp` / `flip` | 场景入场 |
 | `letterbox` `grain` | true / false | 2.35:1 黑边 / 胶片颗粒 |
+| `cardSkin` | `tactile` / 不写 | 卡片质感。`tactile` = 实物感：厚底边、细金边、四角角花、±6px 漂动、从侧面飞入带轻回弹（**2026-10-29 起新期默认**）；不写 = 旧的扁平半透明，已发布各期不变 |
+| `cards` | 路径 | 卡内小图目录（`public/` 下），`photocard` / `photorow` / `graph` 的 `img` 从这里取；默认 `<ep>/cards` |
 | `tint` `tintOpacity` | `#hex` / 0–1 | 统一罩色 |
 | `theme` | `{gold, coral, teal, bg, white, dim}` | 本期配色 |
 
@@ -100,6 +102,17 @@
 | `rings` | `region` 或 `x` `y`，`n`(3) `max`(360) `color` | 响声圈，从某处一圈圈扩散 |
 | `sfx` | `name` `variant` `dur` `endAt` `fade` | 任意音效。`riser` 用 `endAt` 对齐揭晓点 |
 | `custom` | `name` | 调 `src/epN/custom.tsx` 里注册的组件，全屏覆盖 |
+| **`photocard`** | `img`(C01) `title` `sub` `w`(420) `imgH` | **一个实体一张**：上半小图、下半中文大词 + 英文小字。公司 / 国家 / 人 / 商品 |
+| **`photorow`** | `cards: [{img, title, sub, at?}]` `w`(380) `gap`(28) | 2–4 张 photo 卡并排；每张可以自己写 `at`（相对本元素 at 的句数偏移），不写则同句依次 6 帧错开 |
+| **`odometer`** | `from` `to`（字符串）`size` `color` `dur`(28) `label` | 里程表：每位数字独立上/下滚，右位先动左位晚 3 帧。`"¥16" → "¥23"`、`"2011" → "2024"`、`"$2.15" → "$0.11"`。非数字字符原位不动 |
+| **`flap`** | `from` `to` `size`(88) `color` `toColor` `label` | 机场翻牌：牌从中线分两半，旧值翻下去新值翻上来。**一个判断被另一个替换**（"涨得离谱" → "只涨了 6%"），和 `strikeAt` 同语义、另一种长相 |
+| **`slam`** | `text` `size`(big) `color` `label` | 大数从 2.8× 砸到 1×，到位震 6 帧 + impact。**本期核心数字，一期 1–2 次** |
+| **`rank`** | `rows: [{id, label, value, color}]` `orders: [[id…], …]` `orderAt: [句…]` `hi` `w` `rowH`(92) | 排名：rows 固定，到 `orderAt[i]` 那句换成 `orders[i]` 的顺序，行平滑换位（往下的右移、往上的左移，中途不叠）。`hi` 高亮某行 |
+| **`units`** | `n` `unit`(`person` / `bill` / 任意字符) `cols`(10) `size`(48) `max`(50) `label` `color` | 实物堆叠：n 个一个一个落下（整堆约 40 帧落完），从下往上填。超过 `max` 的写 `+N` |
+| **`fill`** | `pct` `w`(160) `h`(320) `color` `label` `horizontal` | 容器液面升到 pct%，数字跟着滚，液面有轻微波动 |
+| **`graph`** | `nodes: [{id, x, y, w, at, img?, title?, sub?, text?}]` `edges: [{from, to, at?, label?, color?}]` `w` `h` | 关系图：节点是 photo 卡（有 `img`）或字卡（`text`），坐标相对 box 左上角；边在两端都出现后从 from 向 to 生长、带光晕；`label` 写在线中间 |
+
+新元素都自带音效（odometer tick、flap flip、slam impact、units drop、fill riser），不用再写 `sfx`。
 
 颜色：`white` `dim` `gold`(陶土橙) `teal`(正常/增长) `coral`(问题/瓶颈) 或 `#hex`。
 
@@ -141,13 +154,26 @@ BL  BC  BR     BW
 | `~~还差几个人？~~` | 红色划掉 |
 | `\n` | 换行 |
 
+## 卡内小图（C 编号）
+
+`photocard` / `photorow` / `graph` 用的小图和场景底图分开：
+- 编号 `C01`、`C02`…，写在出图清单最后一段「卡内小图」里；**方形**（或 4:3），主体居中，纯色或虚化背景，不要文字
+- 用户出好后 `python3 scripts/import_cards.py <文件夹> <epN> --need <发布清单.md>` → `public/<epN>/cards/C01.jpg`（1:1 中心裁切、长边 900）
+- 国旗、品牌 logo 不用真图（版权），用文字卡（`graph` 节点不写 `img`）
+
 ## 套路
 
 - **开场**：时钟 + 一句大字 + 第 2 句 tag（对白）+ 第 3 句 dim 的疑问。`ambience` 铺环境声，`enterSfx: null`。
 - **否定旧判断**：第 0 句 `h`(dim) 写旧判断并 `strikeAt: 1`；第 1 句 `spot` 指向照片里的真凶 + `h` 大字揭晓，`sfx: "impact"`。
 - **数字一路变化**：`custom` 柱状图；或 `nums` 一排。
 - **定义卡**：`blur: 10, dim: 0.55, center: true`，`t` 英文 + `h` 150 大词 + 等号句。
-- **前提 / 边界**：`panel` 带 `label: "前提"`。
+- **前提 / 边界**：`notch` 卡带 `label: "前提"`、`sub: "PREMISE"`（实物皮肤下标签旁出英文小字）。
+- **一个实体登场**（公司 / 国家 / 商品）：`photocard`；两三个并列比较：`photorow`。
+- **价格 / 年份变了**：`odometer`；**旧判断被新判断替掉**：`flap`；**本期那一个数**：`slam`。
+- **几个群体谁先走 / 谁更敏感**：`rank`，`hi` 指向本期主角那行。
+- **人数 / 钱数**：`units`（`person` / `bill`），一个单位 = 多少写在 `label` 里。
+- **占比**：`fill`。
+- **三件事 / 因果 / 关系**：`graph`，中心一张字卡，周围 photo 卡，边上写一句关系。
 - **分屏对比**：`split` + `box: "L"` / `box: "R"` 各放 tag + 两句；收尾 `panel` 放 `bottom` 框。
 - **结果揭晓**：`count` 带 `before`（85 → 120+），`sfx` 用 `riser` 的 `endAt` 卡在数字出现。
 - **金句**：`center` 或左侧 1100 宽，第 0 句 `t` + `h`(dim, 划掉旧问题)，第 1 句 `h` 96 大字，`rings` 指向照片里的"机器"。
