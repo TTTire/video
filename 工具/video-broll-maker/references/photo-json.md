@@ -160,7 +160,7 @@ BL  BC  BR     BW
 
 ```json
 "aroll": {
-  "src": "ai03/aroll.mp4",          // public/ 下。必须是和 srt 同一条时间线的粗剪成片，从 0 秒对齐，1080p 30fps。一律静音（人声用户在剪映放原音轨）
+  "src": "ai03/aroll.mp4",          // public/ 下。必须是和 srt 同一条时间线的粗剪成片，从 0 秒对齐，30fps；放进来的是 ffmpeg 转好的 1080p 静音代理（用户原片可以是 4K，见 SKILL.md 3b）。一律静音（人声用户在剪映放原音轨）
   "idle": "bubble",                 // cue 之外的状态：bubble 小圆 | hide 不出现
   "face": [0.5, 0.42],              // 脸在 A-roll 画面里的位置（比例）。bubble / half 态以它为中心裁
   "cues": [                         // at 是口播稿行号 [起, 止)，和场景表同口径

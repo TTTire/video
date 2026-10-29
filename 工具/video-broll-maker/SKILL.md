@@ -261,10 +261,13 @@ python3 scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选�
 
 ### 3b. 出镜层（可选）
 
-用户给了 A-roll（必须是和 srt 同一时间线的粗剪，1080p 30fps）：
+用户给了 A-roll（必须是和 srt 同一时间线的粗剪、从 0 秒对齐、30fps；分辨率 16:9 即可，4K 也行）：
 
 ```bash
-cp "<A-roll.mp4>" public/epN/aroll.mp4
+# 一律转成 1080p 静音代理再放进工程（4K 解码拖慢渲染；成片 1080p，出镜层最大不超过原尺寸，代理不损画质）
+# 用户原片不动，剪映里照用原片的声音
+ffmpeg -i "<A-roll.mp4>" -vf scale=1920:1080 -r 30 -an -c:v libx264 -crf 18 -preset fast public/epN/aroll.mp4
+# 核对：代理时长和 srt 最后一条结束时间差不超过 1 秒，否则先问用户是不是换过剪辑
 # photo.json 顶层写 aroll（src / idle / face / cues），cues 的 at 是口播稿行号
 python3 scripts/aroll_cues.py epN            # 看每段模式 / 时间，核对节奏
 python3 scripts/render.py epN arollsheet     # 拼图：小圆有没有压到字
