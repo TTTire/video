@@ -44,12 +44,19 @@ def log(msg):
 
 def run(cmd, timeout=None):
     """跑命令；超时就杀掉整个进程组（含 Chrome），返回 (成功, 输出尾部)。"""
-    p = subprocess.Popen(cmd, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True, start_new_session=True)
+    win = os.name == "nt"
+    cmd = [shutil.which(cmd[0]) or cmd[0], *cmd[1:]]  # Windows 上 npx 实为 npx.cmd
+    kw = {"creationflags": subprocess.CREATE_NEW_PROCESS_GROUP} if win else {"start_new_session": True}
+    p = subprocess.Popen(cmd, cwd=ROOT, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True,
+                         encoding="utf-8", errors="replace", **kw)
     try:
         out, _ = p.communicate(timeout=timeout)
         return p.returncode == 0, (out or "")[-1500:]
     except subprocess.TimeoutExpired:
-        os.killpg(p.pid, 9)
+        if win:
+            subprocess.run(["taskkill", "/F", "/T", "/PID", str(p.pid)], capture_output=True)
+        else:
+            os.killpg(p.pid, 9)
         p.communicate()
         return False, "超时，已杀掉"
 
