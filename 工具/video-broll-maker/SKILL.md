@@ -275,6 +275,10 @@ python3 scripts/render.py epN arollclip 3070 3250   # 单看一处切换
 python3 scripts/render.py epN aroll          # 成片 out/epN-full.mp4
 ```
 
+**交付按章切 4 段**（用户要求，2026-10-29）：切点 = 每张章节卡的起始帧（那一刻出镜层是 hide，切点两边没有进行中的转场），4 段帧区间首尾相接、不重叠：
+`[0, 第1章卡)`、`[第1章卡, 第2章卡)`、`[第2章卡, 第3章卡)`、`[第3章卡, total)`。每段 `render_seq.py epN --comp EpNFull --frames a-b --out "<选题文件夹>/<选题名>-动画轨+出镜-仅音效-0开头.mp4"`（-1第1章 / -2第2章 / -3第3章）。
+用户在剪映里 4 段从 0 秒依次首尾相接排好；哪章有问题只改那章的 cue / 场景、只重渲那一段、原位替换（段长不变）。cue 不跨章，改一章不影响别的章；改全局 style / aroll.face 才要 4 段全重渲。
+
 cue 怎么写：开场第一句 `full`；"我猜 / 我的感受 / 我打算"这类第一人称判断 `full` 或 `half`；数据、历史、图表段留 `bubble`（默认）；章节卡自动 `hide`。每段 bubble 超过 60 秒就插一段 full。
 
 ### 4. 交付
