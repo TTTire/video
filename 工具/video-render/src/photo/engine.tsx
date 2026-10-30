@@ -66,6 +66,7 @@ export type SceneSpec = PhotoLayer & {
   card?: CardKind; cardLabel?: string; cardColor?: string; cardW?: number; cardSub?: string;
   // 出镜小圆在这个场景放哪边（这场的字在左就写 "right"）；不写按 style.layout 反向
   arollSide?: 'left' | 'right';
+  arollPos?: [number, number];   // 小圆圆心，两边都有字时用
   center?: boolean; ambience?: boolean | string; enterSfx?: SfxName | null;
   items?: Item[];
   // type: 'series'

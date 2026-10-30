@@ -336,6 +336,10 @@
           "type": "custom",
           "name": "elasticBars"
         }
+      ],
+      "arollPos": [
+        1720,
+        800
       ]
     },
     {
@@ -410,7 +414,8 @@
           "at": 7,
           "size": 72
         }
-      ]
+      ],
+      "arollSide": "right"
     },
     {
       "id": "comments",
@@ -502,7 +507,8 @@
           "box": "concl",
           "sfx": "impact"
         }
-      ]
+      ],
+      "arollSide": "right"
     },
     {
       "id": "door",
@@ -1457,13 +1463,6 @@
       },
       {
         "at": [
-          60,
-          62
-        ],
-        "mode": "half"
-      },
-      {
-        "at": [
           63,
           69
         ],
@@ -1507,13 +1506,6 @@
       {
         "at": [
           161,
-          162
-        ],
-        "mode": "half"
-      },
-      {
-        "at": [
-          162,
           170
         ],
         "mode": "full"

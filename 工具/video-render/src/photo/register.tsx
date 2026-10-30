@@ -17,7 +17,7 @@ export type Comp = {id: string; total: number; C: React.FC; width?: number; heig
 
 export const photoComps = (id: string, timeline: Timeline, spec: EpisodeSpec, custom: CustomMap = {}, names: Record<string, string> = {}): Comp[] => {
   const built = buildPhotoEpisode(spec, custom);
-  const segs = spec.aroll ? buildArollSegs(spec.aroll, lineFrames(timeline), timeline.total, timeline.scenes.map((sc: any) => ({...sc, side: spec.scenes.find((x) => x.id === sc.scene)?.arollSide}))) : [];
+  const segs = spec.aroll ? buildArollSegs(spec.aroll, lineFrames(timeline), timeline.total, timeline.scenes.map((sc: any) => ({...sc, side: spec.scenes.find((x) => x.id === sc.scene)?.arollSide, pos: spec.scenes.find((x) => x.id === sc.scene)?.arollPos}))) : [];
   const Ep: React.FC<{subtitles?: boolean; grid?: boolean; aroll?: boolean}> = ({subtitles, grid, aroll}) => {
     useTitleFont();
     const overlay = aroll && spec.aroll ? <ArollLayer spec={{...spec.aroll, layout: spec.aroll.layout ?? spec.style?.layout}} segs={segs} /> : undefined;

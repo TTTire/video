@@ -3,7 +3,7 @@
 //   "aroll": {
 //     "src": "ai03/aroll.mp4",         // public/ 下，和 srt 同一条时间线、从 0 秒对齐、1080p 30fps
 //     "idle": "bubble",                // cue 之外的状态：bubble 右下小圆 | hide 不出现
-//     "bubble": {"d": 300, "x": 1620, "y": 740},   // 小圆直径和圆心（默认右下角，落在抖音图标区 × 字幕区交界，B-roll 从不放字）
+//     "bubble": {"d": 260},            // 小圆直径和圆心（默认 260；圆心左下 220,650 / 右下 1700,650，按 layout 和场景 arollSide / arollPos 定）
 //     "cues": [{"at": [0, 7], "mode": "full"}, {"at": [146, 150], "mode": "half"}, ...]
 //   }
 // cue 的 at 是口播稿行号 [起, 止)，和场景表同口径；mode: full 全屏 | half 左半屏 | bubble 小圆 | hide
@@ -27,9 +27,9 @@ export type ArollCue = {at: [number, number]; mode: ArollMode};
 export type ArollSpec = {src: string; idle?: ArollMode; bubble?: {d?: number; x?: number; y?: number}; cues: ArollCue[]; dur?: number; pos?: string; ring?: boolean; face?: [number, number]; layout?: 'right' | 'topleft' | 'center' | 'bottom'; hideOn?: string[]; halfView?: number; bubbleView?: number; bubbleFaceAt?: number};
 
 // 把行号 cue 换成帧区间：lineFrames[i] = 第 i 行开始的帧
-export type ArollSeg = {from: number; to: number; mode: ArollMode; side?: 'left' | 'right'};
-// scenes 里每项可带 side：这个场景的 B-roll 字在哪边，bubble 就躲到另一边（photo.json 场景写 "arollSide": "right" 表示小圆放右边）
-export const buildArollSegs = (spec: ArollSpec, lineFrames: number[], total: number, scenes: {scene: string; from: number; dur: number; side?: 'left' | 'right'}[] = []): ArollSeg[] => {
+export type ArollSeg = {from: number; to: number; mode: ArollMode; side?: 'left' | 'right'; pos?: [number, number]};
+// scenes 里每项可带 side / pos：photo.json 场景写 "arollSide": "right" 表示小圆放右下；两边都有字时写 "arollPos": [x, y] 直接给圆心
+export const buildArollSegs = (spec: ArollSpec, lineFrames: number[], total: number, scenes: {scene: string; from: number; dur: number; side?: 'left' | 'right'; pos?: [number, number]}[] = []): ArollSeg[] => {
   const idle = spec.idle ?? 'bubble';
   // 行号 0 从第 0 帧算（口播稿第一句前有几帧静音，别让 idle 闪一下）
   const f = (i: number) => (i <= 0 ? 0 : i >= lineFrames.length ? total : lineFrames[i]);
@@ -40,13 +40,17 @@ export const buildArollSegs = (spec: ArollSpec, lineFrames: number[], total: num
   // 章节卡只在卡本身显示的那 ~3 秒 hide；有的期把章节后几句也归到 chapter 场景，那部分照 idle
   // 章节卡 / 栏目卡整段 hide
   scenes.filter((s) => hideOn.has(s.scene)).forEach((s) => { for (let i = s.from; i < Math.min(total, s.from + s.dur); i++) frames[i] = 'hide'; });
-  const sides: (('left' | 'right') | undefined)[] = new Array(total).fill(undefined);
-  scenes.forEach((s) => { if (s.side) for (let i = s.from; i < Math.min(total, s.from + s.dur); i++) sides[i] = s.side; });
-  const segs: ArollSeg[] = [];
-  for (let i = 0; i < total; i++) { const l = segs[segs.length - 1]; if (l && l.mode === frames[i] && l.side === sides[i]) l.to = i + 1; else segs.push({from: i, to: i + 1, mode: frames[i], side: sides[i]}); }
-  // 合并相邻同模式
+  // 位置只对 bubble 有意义：full / half / hide 不带位置，免得同模式因为换场景被切开、多响一次 whoosh
+  // （旧版这里把相邻同模式一律合并，结果一段 bubble 里后面场景的 arollSide 全部失效——2026-10-30 修）
+  const spots: {side?: 'left' | 'right'; pos?: [number, number]}[] = new Array(total).fill(null).map(() => ({}));
+  scenes.forEach((s) => { if (s.side || s.pos) for (let i = s.from; i < Math.min(total, s.from + s.dur); i++) spots[i] = {side: s.side, pos: s.pos}; });
+  const key = (i: number) => (frames[i] === 'bubble' ? `${spots[i].side ?? ''}|${spots[i].pos?.join(',') ?? ''}` : '');
   const out: ArollSeg[] = [];
-  segs.forEach((s) => { const l = out[out.length - 1]; if (l && l.mode === s.mode) l.to = s.to; else out.push({...s}); });
+  for (let i = 0; i < total; i++) {
+    const l = out[out.length - 1];
+    if (l && l.mode === frames[i] && key(l.from) === key(i)) l.to = i + 1;
+    else out.push({from: i, to: i + 1, mode: frames[i], ...(frames[i] === 'bubble' ? spots[i] : {})});
+  }
   return out;
 };
 
@@ -69,14 +73,17 @@ export const ArollLayer: React.FC<{spec: ArollSpec; segs: ArollSeg[]}> = ({spec,
   const f = useCurrentFrame();
   // bubble 默认落在"B-roll 不放字"的那一角：字在右（layout=right）→ 左下；其他 → 右下。都在字幕线（820）之上一点
   const defSide: 'left' | 'right' = spec.layout === 'right' ? 'left' : 'right';
-  const bubbleFor = (side?: 'left' | 'right') => ({d: 300, x: (side ?? defSide) === 'left' ? 240 : 1680, y: 640, ...(spec.bubble ?? {})});
+  const bubbleFor = (side?: 'left' | 'right', pos?: [number, number]) => {
+    const b = {d: 260, x: (side ?? defSide) === 'left' ? 220 : 1700, y: 650, ...(spec.bubble ?? {})};
+    return pos ? {...b, x: pos[0], y: pos[1]} : b;
+  };
   const [fx, fy] = spec.face ?? [0.5, 0.42];
   let idx = segs.findIndex((s) => f >= s.from && f < s.to);
   if (idx < 0) idx = segs.length - 1;
   const cur = segs[idx], prev = segs[idx - 1];
   const k = prev ? interpolate(f, [cur.from, cur.from + TRANS], [0, 1], {...clamp, easing: easeInOut}) : 1;
   const m0 = prev?.mode ?? cur.mode, m1 = cur.mode;
-  const b0 = bubbleFor(prev?.side ?? cur.side), b = bubbleFor(cur.side);
+  const b0 = prev?.mode === 'bubble' ? bubbleFor(prev.side, prev.pos) : bubbleFor(cur.side, cur.pos), b = cur.mode === 'bubble' ? bubbleFor(cur.side, cur.pos) : prev?.mode === 'bubble' ? bubbleFor(prev.side, prev.pos) : bubbleFor(cur.side, cur.pos);
   const changing = !!prev && k < 1;
   const video = <Video src={staticFile(spec.src)} muted style={{width: '100%', height: '100%', objectFit: 'cover', objectPosition: `${fx * 100}% ${fy * 100}%`}} />;
 
