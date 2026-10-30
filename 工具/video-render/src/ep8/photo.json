@@ -337,10 +337,7 @@
           "name": "elasticBars"
         }
       ],
-      "arollPos": [
-        1720,
-        800
-      ]
+      "arollSide": "right"
     },
     {
       "id": "attribute",

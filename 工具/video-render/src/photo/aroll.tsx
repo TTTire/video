@@ -3,7 +3,7 @@
 //   "aroll": {
 //     "src": "ai03/aroll.mp4",         // public/ 下，和 srt 同一条时间线、从 0 秒对齐、1080p 30fps
 //     "idle": "bubble",                // cue 之外的状态：bubble 右下小圆 | hide 不出现
-//     "bubble": {"d": 260},            // 小圆直径和圆心（默认 260；圆心左下 220,650 / 右下 1700,650，按 layout 和场景 arollSide / arollPos 定）
+//     "bubble": {"d": 260},            // 小圆直径和圆心（默认 260；圆心左下 220,650 / 右上 1770,290，按 layout 和场景 arollSide / arollPos 定；右下不能放，抖音按钮会盖住）
 //     "cues": [{"at": [0, 7], "mode": "full"}, {"at": [146, 150], "mode": "half"}, ...]
 //   }
 // cue 的 at 是口播稿行号 [起, 止)，和场景表同口径；mode: full 全屏 | half 左半屏 | bubble 小圆 | hide
@@ -71,10 +71,15 @@ const lerp = (a: number, b: number, k: number) => a + (b - a) * k;
 export const ArollLayer: React.FC<{spec: ArollSpec; segs: ArollSeg[]}> = ({spec, segs}) => {
   const C = useC();
   const f = useCurrentFrame();
-  // bubble 默认落在"B-roll 不放字"的那一角：字在右（layout=right）→ 左下；其他 → 右下。都在字幕线（820）之上一点
+  // 小圆两个默认落点（依据见 工具/video-broll-maker/references/douyin-safe-zone.md）：
+  //   左 → 左下 (220, 650)：抖音信息流里 16:9 画面的左下角没有遮挡，字幕线（820）之上
+  //   右 → 右上 (1770, 290)：整个圆（含描边）都在 x≥1626 的"抖音图标列"里，永远不碰 B-roll 的字（右列右边界 SAFE_RIGHT_X=1620）；
+  //        放上面不放下面，是因为抖音右侧的头像 / 点赞 / 评论列从画面中部往下盖，右下还有"全屏观看"按钮——右下角不能放（2026-10-30 用户实测）
+  // 默认侧：字在右（layout=right）→ 左；其他 → 右。场景 arollSide 换边，arollPos 直接给圆心。
+  const BUBBLE_AT = {left: {x: 220, y: 650}, right: {x: 1770, y: 290}} as const;
   const defSide: 'left' | 'right' = spec.layout === 'right' ? 'left' : 'right';
   const bubbleFor = (side?: 'left' | 'right', pos?: [number, number]) => {
-    const b = {d: 260, x: (side ?? defSide) === 'left' ? 220 : 1700, y: 650, ...(spec.bubble ?? {})};
+    const b = {d: 260, ...BUBBLE_AT[side ?? defSide], ...(spec.bubble ?? {})};
     return pos ? {...b, x: pos[0], y: pos[1]} : b;
   };
   const [fx, fy] = spec.face ?? [0.5, 0.42];

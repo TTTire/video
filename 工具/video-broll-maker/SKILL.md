@@ -279,6 +279,8 @@ python3 scripts/render.py epN aroll          # 成片 out/epN-full.mp4
 `[0, 第1章卡)`、`[第1章卡, 第2章卡)`、`[第2章卡, 第3章卡)`、`[第3章卡, total)`。每段 `render_seq.py epN --comp EpNFull --frames a-b --out "<选题文件夹>/<选题名>-动画轨+出镜-仅音效-0开头.mp4"`（-1第1章 / -2第2章 / -3第3章）。
 用户在剪映里 4 段从 0 秒依次首尾相接排好；哪章有问题只改那章的 cue / 场景、只重渲那一段、原位替换（段长不变）。cue 不跨章，改一章不影响别的章；改全局 style / aroll.face 才要 4 段全重渲。
 
+**换机器重渲**（`public/` 和 `*.mp4` 都不进仓库）：pull 之后 `public/epN/` 是空的，先 `import_photos.py`（图在选题文件夹 `图片素材/`，已入库）、有卡再 `import_cards.py`、`import_sfx.py`，再按上面 ffmpeg 一行转 A-roll 代理；然后按 4 段渲。`render_seq.py` 第一次跑要 `npx remotion browser ensure`。
+
 cue 怎么写：开场第一句 `full`；"我猜 / 我的感受 / 我打算"这类第一人称判断 `full` 或 `half`；数据、历史、图表段留 `bubble`（默认）；章节卡自动 `hide`。每段 bubble 超过 60 秒就插一段 full。
 
 ### 4. 交付
@@ -313,6 +315,7 @@ python3 scripts/split_scenes.py out/ep7-photo.mp4 ep7 "<选题文件夹>/剪辑�
 - 禁止 `slam` 一期超过 2 次；禁止同一场景里 `odometer` / `flap` / `slam` 同时出现两种以上（数值动效一场一种）
 - 禁止 `photocard` 用真 logo / 国旗（版权），用字卡
 - 禁止一期内混用 `cardSkin`：要么全实物、要么全扁平
+- 禁止出镜小圆放右下角（`arollPos` 的 y > 600 且 x > 1500）：抖音右侧图标列和「全屏观看」按钮压在那里；右侧只能右上（默认），依据见 `references/douyin-safe-zone.md`
 
 ## 常见问题
 
