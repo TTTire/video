@@ -22,8 +22,9 @@ const easeOut = (t: number) => 1 - Math.pow(1 - t, 3);
 export type ArollMode = 'full' | 'half' | 'bubble' | 'hide';
 export type ArollCue = {at: [number, number]; mode: ArollMode};
 // face: 脸在 A-roll 画面里的位置（0–1 比例，默认 [0.5, 0.42]），bubble 态放大时以它为中心、把它对到圆心
+// bubbleView: 小圆直径装下 A-roll 画面高度的多少（默认 0.62 = 半身；0.31 = 只有脸，旧版效果）；bubbleFaceAt: 脸在圆里从上往下的位置（默认 0.32）
 // hideOn: 这些场景 id 自动 hide（默认 ["chapter", "series"]：章节卡和栏目卡不露脸），不用手写行号
-export type ArollSpec = {src: string; idle?: ArollMode; bubble?: {d?: number; x?: number; y?: number}; cues: ArollCue[]; dur?: number; pos?: string; ring?: boolean; face?: [number, number]; layout?: 'right' | 'topleft' | 'center' | 'bottom'; hideOn?: string[]};
+export type ArollSpec = {src: string; idle?: ArollMode; bubble?: {d?: number; x?: number; y?: number}; cues: ArollCue[]; dur?: number; pos?: string; ring?: boolean; face?: [number, number]; layout?: 'right' | 'topleft' | 'center' | 'bottom'; hideOn?: string[]; bubbleView?: number; bubbleFaceAt?: number};
 
 // 把行号 cue 换成帧区间：lineFrames[i] = 第 i 行开始的帧
 export type ArollSeg = {from: number; to: number; mode: ArollMode; side?: 'left' | 'right'};
@@ -98,7 +99,16 @@ export const ArollLayer: React.FC<{spec: ArollSpec; segs: ArollSeg[]}> = ({spec,
   const faceX = fx * 1920, faceY = fy * 1080;
   const tfOf = (mode: ArollMode, bb: typeof b) => {
     if (mode === 'half') { const sc = HALF.h / 1080; return {sc, tx: halfFace.cx - faceX * sc, ty: halfFace.cy - faceY * sc}; }
-    if (mode === 'bubble' || mode === 'hide') { const sc = (bb.d / 1080) * 2.6 * 1.25; return {sc, tx: bb.x - faceX * sc, ty: bb.y - faceY * sc}; }
+    if (mode === 'bubble' || mode === 'hide') {
+      // 小圆取景：圆的直径装下 A-roll 画面高度的 view（默认 0.62 ≈ 头到胸口的半身），脸放在圆里从上往下 faceAt 处（默认 0.32）
+      // 再夹一下，保证视频始终盖满整个圆，不露黑边
+      const view = spec.bubbleView ?? 0.62, faceAt = spec.bubbleFaceAt ?? 0.32;
+      const sc = bb.d / (view * 1080);
+      const vw = 1920 * sc, vh = 1080 * sc, l = bb.x - bb.d / 2, t = bb.y - bb.d / 2;
+      const tx = Math.min(l, Math.max(l + bb.d - vw, bb.x - faceX * sc));
+      const ty = Math.min(t, Math.max(t + bb.d - vh, t + faceAt * bb.d - faceY * sc));
+      return {sc, tx, ty};
+    }
     return {sc: 1, tx: 0, ty: 0};
   };
   const t0 = tfOf(m0, b0), t1 = tfOf(m1, b);
