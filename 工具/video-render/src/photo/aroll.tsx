@@ -24,7 +24,7 @@ export type ArollCue = {at: [number, number]; mode: ArollMode};
 // face: 脸在 A-roll 画面里的位置（0–1 比例，默认 [0.5, 0.42]），bubble 态放大时以它为中心、把它对到圆心
 // bubbleView: 小圆直径装下 A-roll 画面高度的多少（默认 0.62 = 半身；0.31 = 只有脸，旧版效果）；bubbleFaceAt: 脸在圆里从上往下的位置（默认 0.32）
 // hideOn: 这些场景 id 自动 hide（默认 ["chapter", "series"]：章节卡和栏目卡不露脸），不用手写行号
-export type ArollSpec = {src: string; idle?: ArollMode; bubble?: {d?: number; x?: number; y?: number}; cues: ArollCue[]; dur?: number; pos?: string; ring?: boolean; face?: [number, number]; layout?: 'right' | 'topleft' | 'center' | 'bottom'; hideOn?: string[]; bubbleView?: number; bubbleFaceAt?: number};
+export type ArollSpec = {src: string; idle?: ArollMode; bubble?: {d?: number; x?: number; y?: number}; cues: ArollCue[]; dur?: number; pos?: string; ring?: boolean; face?: [number, number]; layout?: 'right' | 'topleft' | 'center' | 'bottom'; hideOn?: string[]; halfView?: number; bubbleView?: number; bubbleFaceAt?: number};
 
 // 把行号 cue 换成帧区间：lineFrames[i] = 第 i 行开始的帧
 export type ArollSeg = {from: number; to: number; mode: ArollMode; side?: 'left' | 'right'};
@@ -91,14 +91,16 @@ export const ArollLayer: React.FC<{spec: ArollSpec; segs: ArollSeg[]}> = ({spec,
 
   // ---- 两种容器：圆（full / bubble / hide 之间）和卡（half）。半屏卡和其他态之间不做形变，用 wipe + 淡 ----
   // half 的"圆"定义在卡里脸的位置、半径 0：从 half 切到 full/bubble 时，圆从脸那里长出来；反向则缩进脸里
-  const halfFace = {cx: HALF.x + HALF.w / 2, cy: HALF.y + fy * HALF.h, r: 0, halfW: 0, op: 1};
+  // halfView：半屏卡只显示 A-roll 画面从顶上往下的这一截（默认 1 = 整个高度；A-roll 底部有烧进去的字幕时设 0.8 把它裁掉）
+  const halfSc = HALF.h / ((spec.halfView ?? 1) * 1080);
+  const halfFace = {cx: HALF.x + HALF.w / 2, cy: HALF.y + fy * 1080 * halfSc, r: 0, halfW: 0, op: 1};
   const circleGeo = (mode: ArollMode, bb: typeof b): Geo => (mode === 'half' ? halfFace : geoOf(mode, bb));
   const g0 = circleGeo(m0, b0), g1 = circleGeo(m1, b);
   const g: Geo = {cx: lerp(g0.cx, g1.cx, kc), cy: lerp(g0.cy, g1.cy, kc), r: lerp(g0.r, g1.r, kc), halfW: 0, op: lerp(g0.op, g1.op, kc)};
   // 圆里的视频变换：full 原样；bubble 以脸为中心放大、脸对圆心
   const faceX = fx * 1920, faceY = fy * 1080;
   const tfOf = (mode: ArollMode, bb: typeof b) => {
-    if (mode === 'half') { const sc = HALF.h / 1080; return {sc, tx: halfFace.cx - faceX * sc, ty: halfFace.cy - faceY * sc}; }
+    if (mode === 'half') { const sc = halfSc; return {sc, tx: halfFace.cx - faceX * sc, ty: halfFace.cy - faceY * sc}; }
     if (mode === 'bubble' || mode === 'hide') {
       // 小圆取景：圆的直径装下 A-roll 画面高度的 view（默认 0.62 ≈ 头到胸口的半身），脸放在圆里从上往下 faceAt 处（默认 0.32）
       // 再夹一下，保证视频始终盖满整个圆，不露黑边
@@ -132,8 +134,8 @@ export const ArollLayer: React.FC<{spec: ArollSpec; segs: ArollSeg[]}> = ({spec,
       {showHalf && (
         <>
           <div style={{position: 'absolute', left: HALF.x, top: HALF.y, width: hw, height: HALF.h, overflow: 'hidden', borderRadius: 28, boxShadow: '0 30px 80px #000B', opacity: halfOp}}>
-            {/* 卡里的视频：按卡高等比缩放（1080 → HALF.h），再水平平移让脸在卡中线上 */}
-            {(() => { const sc = HALF.h / 1080; const vw = 1920 * sc; const left = Math.max(HALF.w - vw, Math.min(0, HALF.w / 2 - fx * vw)); return <div style={{position: 'absolute', left, top: 0, width: vw, height: HALF.h}}>{video}</div>; })()}
+            {/* 卡里的视频：按 halfSc 等比缩放（顶对齐，超出卡底的部分裁掉），再水平平移让脸在卡中线上 */}
+            {(() => { const sc = halfSc; const vw = 1920 * sc; const left = Math.max(HALF.w - vw, Math.min(0, HALF.w / 2 - fx * vw)); return <div style={{position: 'absolute', left, top: 0, width: vw, height: 1080 * sc}}>{video}</div>; })()}
           </div>
           <div style={{position: 'absolute', left: HALF.x, top: HALF.y, width: hw, height: HALF.h, borderRadius: 28, boxSizing: 'border-box', border: `2px solid ${C.gold}88`, opacity: halfOp}} />
           {/* wipe 前沿一道亮线 */}
