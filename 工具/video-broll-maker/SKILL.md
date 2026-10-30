@@ -275,11 +275,21 @@ python3 scripts/render.py epN arollclip 3070 3250   # 单看一处切换
 python3 scripts/render.py epN aroll          # 成片 out/epN-full.mp4
 ```
 
-**交付按章切 4 段**（用户要求，2026-10-29）：切点 = 每张章节卡的起始帧（那一刻出镜层是 hide，切点两边没有进行中的转场），4 段帧区间首尾相接、不重叠：
-`[0, 第1章卡)`、`[第1章卡, 第2章卡)`、`[第2章卡, 第3章卡)`、`[第3章卡, total)`。每段 `render_seq.py epN --comp EpNFull --frames a-b --out "<选题文件夹>/<选题名>-动画轨+出镜-仅音效-0开头.mp4"`（-1第1章 / -2第2章 / -3第3章）。
-用户在剪映里 4 段从 0 秒依次首尾相接排好；哪章有问题只改那章的 cue / 场景、只重渲那一段、原位替换（段长不变）。cue 不跨章，改一章不影响别的章；改全局 style / aroll.face 才要 4 段全重渲。
+**交付：整条成片为主，按章 4 段为辅**（2026-10-30 起）。整片只渲一次，加 `--keep` 留下图片序列和 wav，4 段用 `split_chapters.py` 从同一套帧 + 同一条 wav 切出来：
 
-**换机器重渲**（`public/` 和 `*.mp4` 都不进仓库）：pull 之后 `public/epN/` 是空的，先 `import_photos.py`（图在选题文件夹 `图片素材/`，已入库）、有卡再 `import_cards.py`、`import_sfx.py`，再按上面 ffmpeg 一行转 A-roll 代理；然后按 4 段渲。`render_seq.py` 第一次跑要 `npx remotion browser ensure`。
+```bash
+python3 scripts/render_seq.py epN --comp EpNFull --frames 0-<total-1> --out out/epN-full.mp4 --workers 3 --concurrency 3 --fresh --keep --no-check
+python3 scripts/glitch_check.py out/epN-full.mp4                                   # 坏帧 0
+cp out/epN-full.mp4 "<选题文件夹>/<选题名>-动画轨+出镜-仅音效-全片.mp4"
+python3 scripts/split_chapters.py epN out/epN-full.mp4 "<选题文件夹>/<选题名>-动画轨+出镜-仅音效" --verify   # → -0开头 / -1第1章 / -2第2章 / -3第3章
+rm -rf out/epN-seq
+```
+
+切点 = 每张章节卡的起始帧（那一刻出镜层是 hide，两边没有进行中的转场），脚本从 timeline.json 自己取。`--verify` 把 4 段 concat 回去和整片比：接缝 ±3 帧 SSIM 应 ≥ 0.98，各段音频首尾和整片 wav 的偏差应 < 10%。
+
+为什么不再各渲各段（ep8 实测）：每段单独渲、单独编 AAC，音轨比画面多 12–19 ms 末尾补零 + 21 ms 编码延迟，剪辑软件按音频长度首尾相接时每个接缝约 40 ms 声画错位或一声咔；画面本身逐帧一致，没问题。用户主用整条；哪章要改，可以只渲那一章的帧区间原位替换，但那段就是独立音轨，替换完要听接缝，稳妥是整片重渲。
+
+**换机器重渲**（`public/` 和 `*.mp4` 都不进仓库）：pull 之后 `public/epN/` 是空的，先 `import_photos.py`（图在选题文件夹 `图片素材/`，已入库）、有卡再 `import_cards.py`、`import_sfx.py`，再按上面 ffmpeg 一行转 A-roll 代理；然后按上面整片渲 + 切段。`render_seq.py` 第一次跑要 `npx remotion browser ensure`。
 
 cue 怎么写：开场第一句 `full`；"我猜 / 我的感受 / 我打算"这类第一人称判断 `full` 或 `half`；数据、历史、图表段留 `bubble`（默认）；章节卡自动 `hide`。每段 bubble 超过 60 秒就插一段 full。
 
