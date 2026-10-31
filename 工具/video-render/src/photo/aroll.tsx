@@ -137,10 +137,11 @@ export const ArollLayer: React.FC<{spec: ArollSpec; segs: ArollSeg[]}> = ({spec,
         <>
           <AbsoluteFill style={{clipPath: `circle(${g.r}px at ${g.cx}px ${g.cy}px)`, opacity: g.op}}>
             <AbsoluteFill style={{transform: `translate(${tx}px, ${ty}px) scale(${sc})`, transformOrigin: '0 0'}}>{video}</AbsoluteFill>
-            {g.r < 1100 && <AbsoluteFill style={{background: `radial-gradient(circle at ${g.cx}px ${g.cy}px, transparent ${g.r * 0.72}px, #00000066 ${g.r}px)`}} />}
           </AbsoluteFill>
-          {ring && <div style={{position: 'absolute', left: g.cx - g.r, top: g.cy - g.r, width: g.r * 2, height: g.r * 2, borderRadius: '50%', boxSizing: 'border-box', border: `3px solid ${C.gold}`, boxShadow: `0 0 0 10px ${C.bg}CC, 0 24px 60px #000A`, opacity: g.op * interpolate(g.r, [900, 1100], [1, 0], clamp)}} />}
-          {changing && <div style={{position: 'absolute', left: g.cx - g.r - 14, top: g.cy - g.r - 14, width: (g.r + 14) * 2, height: (g.r + 14) * 2, borderRadius: '50%', border: `6px solid ${C.gold}`, opacity: (1 - k) * 0.6 * g.op, filter: 'blur(6px)'}} />}
+          {/* 边缘照小Lin说的做法（2026-10-31 量过她 10 月两期成片）：3px 暖白细边压住视频边缘 + 两层软投影把圆托起来；不压内暗角、不加实心深色圈。
+              旧版是金边 + 外圈 10px 实心深色带（box-shadow 只扩不糊）+ 内暗角，圆像贴上去的徽章，边缘发硬 */}
+          {ring && <div style={{position: 'absolute', left: g.cx - g.r, top: g.cy - g.r, width: g.r * 2, height: g.r * 2, borderRadius: '50%', boxSizing: 'border-box', border: `3px solid ${C.white}D9`, boxShadow: '0 4px 10px #0000004D, 0 16px 44px #00000073', opacity: g.op * interpolate(g.r, [900, 1100], [1, 0], clamp)}} />}
+          {changing && <div style={{position: 'absolute', left: g.cx - g.r - 14, top: g.cy - g.r - 14, width: (g.r + 14) * 2, height: (g.r + 14) * 2, borderRadius: '50%', border: `6px solid ${C.white}`, opacity: (1 - k) * 0.45 * g.op, filter: 'blur(6px)'}} />}
         </>
       )}
       {showHalf && (
