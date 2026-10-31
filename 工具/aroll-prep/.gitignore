@@ -1,0 +1,6 @@
+.venv/
+out/
+tests/_tmp/
+__pycache__/
+*.mp4
+*.wav
