@@ -1,0 +1,807 @@
+1
+00:00:00,233 --> 00:00:00,733
+Hi everyone
+
+2
+00:00:01,000 --> 00:00:04,066
+A couple of days ago, someone in a group chat threw out a question
+
+3
+00:00:04,433 --> 00:00:05,933
+AI can already solve math problems
+
+4
+00:00:06,233 --> 00:00:08,000
+so what's the point of a math department
+
+5
+00:00:08,766 --> 00:00:11,833
+It started when OpenAI released nearly 400
+
+6
+00:00:11,833 --> 00:00:14,833
+math results at once, and one mathematician said
+
+7
+00:00:15,066 --> 00:00:17,800
+there was enough there for him to digest for years
+
+8
+00:00:17,833 --> 00:00:20,033
+The group was pretty divided
+
+9
+00:00:20,033 --> 00:00:21,466
+Half of them were cheering
+
+10
+00:00:21,600 --> 00:00:23,900
+wow, even less code to write
+
+11
+00:00:24,433 --> 00:00:25,833
+The other half were worried
+
+12
+00:00:25,933 --> 00:00:27,666
+now it's my turn to be replaced
+
+13
+00:00:27,700 --> 00:00:29,733
+I stared at that line for a long time
+
+14
+00:00:29,733 --> 00:00:31,866
+and felt it wasn't really about math
+
+15
+00:00:31,900 --> 00:00:32,833
+What it's really asking is
+
+16
+00:00:32,833 --> 00:00:35,100
+when something gets more powerful
+
+17
+00:00:35,133 --> 00:00:38,966
+where do the people who made a living from it go
+
+18
+00:00:39,833 --> 00:00:40,866
+Framed that way
+
+19
+00:00:40,866 --> 00:00:42,833
+the only answer seems to be nowhere
+
+20
+00:00:43,100 --> 00:00:44,700
+But after a whole night of reading up
+
+21
+00:00:44,700 --> 00:00:47,266
+I found that what's actually happening and that question
+
+22
+00:00:47,300 --> 00:00:48,333
+are pretty far apart
+
+23
+00:00:48,733 --> 00:00:50,266
+This is Pixel Breath
+
+24
+00:00:50,366 --> 00:00:51,900
+Today let's talk about
+
+25
+00:00:52,066 --> 00:00:53,466
+as AI gets stronger
+
+26
+00:00:53,600 --> 00:00:55,333
+what becomes more valuable
+
+27
+00:00:55,500 --> 00:00:56,933
+First, I'll admit
+
+28
+00:00:57,133 --> 00:00:59,266
+this worry is totally fair
+
+29
+00:00:59,766 --> 00:01:01,466
+Behind it is an unspoken assumption
+
+30
+00:01:01,700 --> 00:01:03,166
+when something gets cheaper
+
+31
+00:01:03,233 --> 00:01:06,300
+everything connected to it loses value too
+
+32
+00:01:06,733 --> 00:01:08,333
+That reasoning is usually right
+
+33
+00:01:08,466 --> 00:01:10,300
+If several shops sell the same thing
+
+34
+00:01:10,500 --> 00:01:12,200
+and one cuts its price
+
+35
+00:01:12,266 --> 00:01:13,400
+the others follow
+
+36
+00:01:13,533 --> 00:01:15,800
+and nobody on the street makes money
+
+37
+00:01:16,000 --> 00:01:16,900
+That's called substitution
+
+38
+00:01:16,900 --> 00:01:19,833
+You and that thing are doing the same job
+
+39
+00:01:20,166 --> 00:01:22,000
+Say there's a street of clothing shops
+
+40
+00:01:22,033 --> 00:01:24,600
+you sell for 30 and I sell for 50
+
+41
+00:01:25,033 --> 00:01:27,433
+then I'm clearly losing on price
+
+42
+00:01:27,466 --> 00:01:29,000
+so I have to cut my price too
+
+43
+00:01:29,033 --> 00:01:33,933
+and as prices keep falling, nobody on the street does well
+
+44
+00:01:34,166 --> 00:01:36,466
+But if they're two different things that just get used together
+
+45
+00:01:36,466 --> 00:01:38,100
+the conclusion flips
+
+46
+00:01:38,133 --> 00:01:39,966
+when one gets cheaper, the other gets pricier
+
+47
+00:01:40,700 --> 00:01:44,800
+Back in my hometown, high-speed rail made it 40 minutes from the provincial capital
+
+48
+00:01:44,833 --> 00:01:46,866
+In theory, getting there got cheaper
+
+49
+00:01:46,933 --> 00:01:49,066
+so things in a small town should get cheaper too
+
+50
+00:01:49,100 --> 00:01:51,633
+But the county's hotels raised prices first
+
+51
+00:01:51,766 --> 00:01:54,666
+On weekends you have to book two days ahead
+
+52
+00:01:54,833 --> 00:01:58,033
+I even looked into it to see if I was imagining things
+
+53
+00:01:58,100 --> 00:01:59,266
+One study ran the numbers
+
+54
+00:01:59,433 --> 00:02:03,033
+tourist numbers in cities along the line rose 18.5%
+
+55
+00:02:03,033 --> 00:02:05,433
+and tourism revenue rose 25%
+
+56
+00:02:05,466 --> 00:02:08,500
+Another team looked at 178 cities
+
+57
+00:02:08,733 --> 00:02:10,766
+and found revenue up 12% on average
+
+58
+00:02:10,800 --> 00:02:13,400
+High-speed rail didn't make the county cheaper
+
+59
+00:02:13,433 --> 00:02:15,966
+instead it squeezed demand into the county
+
+60
+00:02:16,000 --> 00:02:18,033
+Once high-speed rail reaches a county
+
+61
+00:02:18,066 --> 00:02:20,933
+more and more people start coming
+
+62
+00:02:20,933 --> 00:02:22,266
+and with more people
+
+63
+00:02:22,300 --> 00:02:24,000
+all that demand comes with them
+
+64
+00:02:24,300 --> 00:02:25,700
+An even more extreme case is solar
+
+65
+00:02:25,700 --> 00:02:27,966
+At the end of 2022, solar modules
+
+66
+00:02:27,966 --> 00:02:30,366
+averaged 2.1 yuan per watt
+
+67
+00:02:30,366 --> 00:02:32,200
+By March 2025
+
+68
+00:02:32,233 --> 00:02:33,833
+going solar should be getting easier
+
+69
+00:02:34,266 --> 00:02:36,600
+But the International Energy Agency's data says otherwise
+
+70
+00:02:36,633 --> 00:02:40,633
+Over the past five years, grid cables and transformers nearly doubled in price
+
+71
+00:02:40,633 --> 00:02:40,800
+Over the past five years, grid cables and transformers nearly doubled in price
+
+72
+00:02:40,833 --> 00:02:43,666
+Transformer lead times went from a few months to two or three years
+
+73
+00:02:44,066 --> 00:02:46,200
+Solar panels got cheaper
+
+74
+00:02:46,200 --> 00:02:49,266
+but getting the power out got more expensive
+
+75
+00:02:49,666 --> 00:02:50,966
+Put simply
+
+76
+00:02:50,966 --> 00:02:52,500
+when one thing gets cheaper
+
+77
+00:02:52,533 --> 00:02:55,033
+it doesn't make the whole world cheaper
+
+78
+00:02:55,033 --> 00:02:56,933
+it pushes demand onto whatever sits next to it
+
+79
+00:02:57,433 --> 00:02:59,333
+So once AI gets cheaper
+
+80
+00:02:59,333 --> 00:03:01,333
+what gets squeezed
+
+81
+00:03:01,566 --> 00:03:03,566
+A hundred years ago, electricity seemed just as useless
+
+82
+00:03:03,700 --> 00:03:05,333
+Edison lit up the light bulb
+
+83
+00:03:05,866 --> 00:03:08,933
+In 1882, New York's Pearl Street Station started supplying power
+
+84
+00:03:09,133 --> 00:03:10,733
+Engineers back then already knew
+
+85
+00:03:11,000 --> 00:03:12,500
+electricity would transform factories
+
+86
+00:03:12,633 --> 00:03:14,300
+But for the next 30 years
+
+87
+00:03:14,466 --> 00:03:16,800
+factory productivity barely moved
+
+88
+00:03:17,366 --> 00:03:19,766
+Power got cheaper, the machines were replaced
+
+89
+00:03:19,966 --> 00:03:21,933
+so why wasn't work getting any faster
+
+90
+00:03:22,366 --> 00:03:25,033
+why was productivity still flat
+
+91
+00:03:25,633 --> 00:03:26,866
+A 19th-century factory
+
+92
+00:03:26,866 --> 00:03:28,233
+ran entirely on a single line shaft
+
+93
+00:03:28,500 --> 00:03:31,666
+A water wheel or steam engine turned outside the building
+
+94
+00:03:32,000 --> 00:03:34,433
+driving a long shaft along the ceiling
+
+95
+00:03:34,900 --> 00:03:36,800
+with belts hung all along it
+
+96
+00:03:37,066 --> 00:03:39,566
+and the belts dropped down to drive machine after machine
+
+97
+00:03:40,000 --> 00:03:41,800
+That was the iron rule back then
+
+98
+00:03:41,933 --> 00:03:44,633
+every machine had to sit around that shaft
+
+99
+00:03:45,033 --> 00:03:47,100
+So the floor was laid out by power
+
+100
+00:03:47,366 --> 00:03:49,033
+not by the order of the work
+
+101
+00:03:50,033 --> 00:03:51,566
+When electricity came along
+
+102
+00:03:51,766 --> 00:03:53,200
+what did a lot of factories do
+
+103
+00:03:53,766 --> 00:03:57,366
+They swapped the steam engine outside for one huge electric motor
+
+104
+00:03:57,500 --> 00:04:00,033
+The shaft stayed, the belts stayed
+
+105
+00:04:00,266 --> 00:04:02,833
+and the machines still had to sit around the shaft
+
+106
+00:04:02,933 --> 00:04:04,433
+This is called group drive
+
+107
+00:04:04,666 --> 00:04:07,733
+but the floor still ran by the old rules
+
+108
+00:04:08,300 --> 00:04:10,166
+Start the shaft and the whole plant turns
+
+109
+00:04:10,633 --> 00:04:13,500
+Friction along the shaft ate more power than the actual work
+
+110
+00:04:14,233 --> 00:04:15,666
+even if you only want one machine running
+
+111
+00:04:15,666 --> 00:04:16,800
+Machines could only go in two rows
+
+112
+00:04:17,066 --> 00:04:19,733
+Materials got hauled across and then hauled back again
+
+113
+00:04:20,266 --> 00:04:21,400
+To really get the benefits of electricity
+
+114
+00:04:21,566 --> 00:04:23,900
+you had to tear the factory down and rebuild it
+
+115
+00:04:23,933 --> 00:04:26,433
+Give every machine its own small motor
+
+116
+00:04:26,733 --> 00:04:28,133
+and run whichever one you want
+
+117
+00:04:28,266 --> 00:04:31,366
+The floor no longer had to revolve around the shaft
+
+118
+00:04:31,900 --> 00:04:33,333
+it could be laid out in the order of the work
+
+119
+00:04:33,366 --> 00:04:35,000
+Materials go in one end
+
+120
+00:04:35,133 --> 00:04:36,100
+and out the other
+
+121
+00:04:36,700 --> 00:04:38,100
+How long did that take
+
+122
+00:04:38,566 --> 00:04:40,833
+Power was available from 1882
+
+123
+00:04:40,966 --> 00:04:44,666
+but factories didn't really transform until the 1920s
+
+124
+00:04:44,700 --> 00:04:46,100
+Nearly 40 years
+
+125
+00:04:46,566 --> 00:04:47,833
+Those 40 years weren't for lack of power
+
+126
+00:04:47,933 --> 00:04:49,400
+people just didn't dare tear things down
+
+127
+00:04:49,533 --> 00:04:52,033
+The building cost money, the shaft cost money
+
+128
+00:04:52,600 --> 00:04:55,633
+and shutting down to rearrange cost even more
+
+129
+00:04:55,800 --> 00:04:58,600
+Only in the 1920s, when the investment climate improved
+
+130
+00:04:58,600 --> 00:05:01,533
+did people start building whole new factories
+
+131
+00:05:02,133 --> 00:05:05,300
+Electricity's share of factory power in 1919
+
+132
+00:05:05,600 --> 00:05:08,733
+was just over half, and by 1929 it was nearly 80%
+
+133
+00:05:08,966 --> 00:05:13,433
+Manufacturing productivity growth in the 1920s far outpaced the previous 20 years
+
+134
+00:05:13,433 --> 00:05:16,166
+Economic historians who study this period estimate
+
+135
+00:05:16,600 --> 00:05:20,433
+at least half of that came from getting rid of the line shaft
+
+136
+00:05:21,200 --> 00:05:24,600
+Put simply, what made factories faster was redesigning the whole plant
+
+137
+00:05:24,766 --> 00:05:27,166
+electricity just made the redesign worth it
+
+138
+00:05:27,433 --> 00:05:29,666
+Once electricity got cheaper, what got expensive wasn't electricity
+
+139
+00:05:29,866 --> 00:05:32,033
+it was the people who knew how to redesign
+
+140
+00:05:32,233 --> 00:05:33,833
+and the time to shut down and rebuild
+
+141
+00:05:34,533 --> 00:05:36,033
+So where's the hard part
+
+142
+00:05:36,766 --> 00:05:38,266
+The technology was ready early on
+
+143
+00:05:38,266 --> 00:05:40,866
+but redesign wasn't on anyone's shopping list
+
+144
+00:05:41,400 --> 00:05:42,866
+No quotes, no suppliers
+
+145
+00:05:42,900 --> 00:05:45,933
+no one can invoice you for "a new layout"
+
+146
+00:05:45,933 --> 00:05:48,166
+That's what held things up for 40 years
+
+147
+00:05:49,200 --> 00:05:50,033
+Now back to AI
+
+148
+00:05:50,200 --> 00:05:52,300
+Let's look at it the same way
+
+149
+00:05:52,500 --> 00:05:55,600
+What AI makes cheap is the doing
+
+150
+00:05:56,000 --> 00:05:58,366
+writing a passage, drawing a picture
+
+151
+00:05:58,566 --> 00:06:00,200
+Once doing gets cheap
+
+152
+00:06:00,266 --> 00:06:01,500
+demand gets pushed to the side
+
+153
+00:06:01,666 --> 00:06:03,833
+My take is it gets pushed onto checking
+
+154
+00:06:04,333 --> 00:06:06,866
+AI can write in a day what used to take you a week
+
+155
+00:06:07,000 --> 00:06:09,166
+but the amount you have to review goes up too
+
+156
+00:06:09,333 --> 00:06:12,533
+The more it writes, the more you have to check line by line
+
+157
+00:06:12,800 --> 00:06:14,233
+Check for what
+
+158
+00:06:14,433 --> 00:06:15,966
+Whether it made up data
+
+159
+00:06:16,033 --> 00:06:17,266
+whether it hallucinated
+
+160
+00:06:17,400 --> 00:06:20,933
+whether anything in it contradicts reality
+
+161
+00:06:21,433 --> 00:06:23,366
+and whether the conclusion actually holds up
+
+162
+00:06:23,366 --> 00:06:25,566
+We didn't use to be this picky
+
+163
+00:06:25,700 --> 00:06:29,700
+because when I wrote it myself, I knew where I hadn't checked
+
+164
+00:06:29,733 --> 00:06:33,700
+the data, or where I'd made up some numbers
+
+165
+00:06:33,700 --> 00:06:35,800
+But now the weak spots
+
+166
+00:06:35,800 --> 00:06:36,733
+are ones AI left for me
+
+167
+00:06:36,966 --> 00:06:39,100
+Being able to write isn't scarce anymore
+
+168
+00:06:39,200 --> 00:06:42,100
+what's scarce is spotting which part is wrong
+
+169
+00:06:42,800 --> 00:06:44,266
+If something gets cheaper
+
+170
+00:06:44,433 --> 00:06:46,833
+and there's nothing scarce that goes with it
+
+171
+00:06:46,966 --> 00:06:48,600
+then it's simply cheaper, nothing more
+
+172
+00:06:48,600 --> 00:06:50,533
+Say salt gets cheaper
+
+173
+00:06:50,600 --> 00:06:54,900
+nobody learns to cook just to eat more salt
+
+174
+00:06:54,900 --> 00:06:58,900
+Same with AI: if nothing around you gets
+
+175
+00:06:58,900 --> 00:07:00,800
+tight when you use it, you're just saving money
+
+176
+00:07:00,800 --> 00:07:02,400
+My own sense is
+
+177
+00:07:02,533 --> 00:07:04,666
+what's tight now is trust
+
+178
+00:07:04,666 --> 00:07:06,500
+Before, when I finished an article
+
+179
+00:07:06,566 --> 00:07:07,700
+I could just publish it
+
+180
+00:07:08,033 --> 00:07:11,066
+because I'd typed every word myself
+
+181
+00:07:11,066 --> 00:07:13,300
+But now, after AI writes it
+
+182
+00:07:13,400 --> 00:07:15,266
+I have to check here and check there
+
+183
+00:07:15,633 --> 00:07:17,400
+and verify the examples in it
+
+184
+00:07:17,433 --> 00:07:19,766
+That's the most expensive part right now
+
+185
+00:07:20,333 --> 00:07:21,433
+This week I'm going to set aside some time
+
+186
+00:07:21,433 --> 00:07:23,466
+to take the articles AI wrote for me
+
+187
+00:07:23,500 --> 00:07:24,533
+and the work it's done
+
+188
+00:07:25,000 --> 00:07:26,866
+and go through them carefully
+
+189
+00:07:26,866 --> 00:07:28,433
+to see where it falls short
+
+190
+00:07:28,433 --> 00:07:31,033
+and where it can truly replace me
+
+191
+00:07:31,633 --> 00:07:32,166
+Back to where we started
+
+192
+00:07:32,200 --> 00:07:35,433
+so do we still need math departments and mathematicians
+
+193
+00:07:36,166 --> 00:07:37,366
+My answer has changed a bit
+
+194
+00:07:37,366 --> 00:07:40,833
+If AI really can produce hundreds of results at once
+
+195
+00:07:40,833 --> 00:07:43,366
+what runs short first is
+
+196
+00:07:43,400 --> 00:07:46,800
+experts who can judge whether those results apply to real life
+
+197
+00:07:47,433 --> 00:07:50,366
+Last time we said the cheaper AI gets, the more you use it
+
+198
+00:07:50,966 --> 00:07:52,466
+Now here's the second half
+
+199
+00:07:52,500 --> 00:07:53,800
+The more you use it
+
+200
+00:07:54,133 --> 00:07:56,233
+the more you need someone who can say "this is wrong"
+
+201
+00:07:56,233 --> 00:07:58,333
+And that person is still pretty expensive
+
+202
+00:07:58,333 --> 00:07:59,733
+See you next time

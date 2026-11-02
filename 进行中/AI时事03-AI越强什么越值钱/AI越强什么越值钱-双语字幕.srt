@@ -1,0 +1,1009 @@
+1
+00:00:00,233 --> 00:00:00,733
+Hello大家好
+Hi everyone
+
+2
+00:00:01,000 --> 00:00:04,066
+前两天群里有个人丢了问题
+A couple of days ago, someone in a group chat threw out a question
+
+3
+00:00:04,433 --> 00:00:05,933
+AI都能做题了
+AI can already solve math problems
+
+4
+00:00:06,233 --> 00:00:08,000
+那么还要数学系干什么呢
+so what's the point of a math department
+
+5
+00:00:08,766 --> 00:00:11,833
+这件事的起因是OpenAI一次放出了近400
+It started when OpenAI released nearly 400
+
+6
+00:00:11,833 --> 00:00:14,833
+项数学成果 有的数学家看完之后觉得
+math results at once, and one mathematician said
+
+7
+00:00:15,066 --> 00:00:17,800
+这些东西已经够他消化好多年了
+there was enough there for him to digest for years
+
+8
+00:00:17,833 --> 00:00:20,033
+群里的反应其实很分裂
+The group was pretty divided
+
+9
+00:00:20,033 --> 00:00:21,466
+有一半人欢呼
+Half of them were cheering
+
+10
+00:00:21,600 --> 00:00:23,900
+哇 又能少写一些代码了
+wow, even less code to write
+
+11
+00:00:24,433 --> 00:00:25,833
+另一半人会担心
+The other half were worried
+
+12
+00:00:25,933 --> 00:00:27,666
+轮到我被迭代了
+now it's my turn to be replaced
+
+13
+00:00:27,700 --> 00:00:29,733
+我听着那句话看了很久
+I stared at that line for a long time
+
+14
+00:00:29,733 --> 00:00:31,866
+觉得他问的不是数学
+and felt it wasn't really about math
+
+15
+00:00:31,900 --> 00:00:32,833
+他问的是
+What it's really asking is
+
+16
+00:00:32,833 --> 00:00:35,100
+如果有一样东西变强了
+when something gets more powerful
+
+17
+00:00:35,133 --> 00:00:38,966
+那么原来靠这件东西吃饭的人会去哪呢
+where do the people who made a living from it go
+
+18
+00:00:39,833 --> 00:00:40,866
+按照这个问法
+Framed that way
+
+19
+00:00:40,866 --> 00:00:42,833
+答案好像只剩无处可去
+the only answer seems to be nowhere
+
+20
+00:00:43,100 --> 00:00:44,700
+但我翻了一晚上资料
+But after a whole night of reading up
+
+21
+00:00:44,700 --> 00:00:47,266
+发现发生的这件事和这个问法
+I found that what's actually happening and that question
+
+22
+00:00:47,300 --> 00:00:48,333
+其实离得很远
+are pretty far apart
+
+23
+00:00:48,733 --> 00:00:50,266
+这里是像素呼吸
+This is Pixel Breath
+
+24
+00:00:50,366 --> 00:00:51,900
+今天我们一起聊一聊
+Today let's talk about
+
+25
+00:00:52,066 --> 00:00:53,466
+当AI越来越强
+as AI gets stronger
+
+26
+00:00:53,600 --> 00:00:55,333
+什么东西会变得值钱呢
+what becomes more valuable
+
+27
+00:00:55,500 --> 00:00:56,933
+首先我想跟大家承认的是
+First, I'll admit
+
+28
+00:00:57,133 --> 00:00:59,266
+这个担心真的没什么问题
+this worry is totally fair
+
+29
+00:00:59,766 --> 00:01:01,466
+它的背后有一个默认推理
+Behind it is an unspoken assumption
+
+30
+00:01:01,700 --> 00:01:03,166
+一个东西便宜了
+when something gets cheaper
+
+31
+00:01:03,233 --> 00:01:06,300
+那么和它有关的一切东西都跟着不值钱
+everything connected to it loses value too
+
+32
+00:01:06,733 --> 00:01:08,333
+这个推理通常是对的
+That reasoning is usually right
+
+33
+00:01:08,466 --> 00:01:10,300
+同样一个东西如果有好几家做
+If several shops sell the same thing
+
+34
+00:01:10,500 --> 00:01:12,200
+那么一家降价
+and one cuts its price
+
+35
+00:01:12,266 --> 00:01:13,400
+别家就跟着降
+the others follow
+
+36
+00:01:13,533 --> 00:01:15,800
+整条街都不赚钱
+and nobody on the street makes money
+
+37
+00:01:16,000 --> 00:01:16,900
+这叫替代
+That's called substitution
+
+38
+00:01:16,900 --> 00:01:19,833
+你和那件东西干的其实是一件事
+You and that thing are doing the same job
+
+39
+00:01:20,166 --> 00:01:22,000
+比如一条卖衣服的街
+Say there's a street of clothing shops
+
+40
+00:01:22,033 --> 00:01:24,600
+你卖30 那么我卖50
+you sell for 30 and I sell for 50
+
+41
+00:01:25,033 --> 00:01:27,433
+我一定在价格上其实是不占优势的
+then I'm clearly losing on price
+
+42
+00:01:27,466 --> 00:01:29,000
+那我也要降价
+so I have to cut my price too
+
+43
+00:01:29,033 --> 00:01:33,933
+那降着降着其实整条街都不太能有很好的收益
+and as prices keep falling, nobody on the street does well
+
+44
+00:01:34,166 --> 00:01:36,466
+如果是两件事只是搭在一起用
+But if they're two different things that just get used together
+
+45
+00:01:36,466 --> 00:01:38,100
+那么结论会反过来
+the conclusion flips
+
+46
+00:01:38,133 --> 00:01:39,966
+一个便宜 那么另一个就贵
+when one gets cheaper, the other gets pricier
+
+47
+00:01:40,700 --> 00:01:44,800
+老家的县城 高铁通了从省城回去需要40分钟
+Back in my hometown, high-speed rail made it 40 minutes from the provincial capital
+
+48
+00:01:44,833 --> 00:01:46,866
+按理路程更便宜了
+In theory, getting there got cheaper
+
+49
+00:01:46,933 --> 00:01:49,066
+小城里的东西也应该更便宜
+so things in a small town should get cheaper too
+
+50
+00:01:49,100 --> 00:01:51,633
+可是县城的酒店会先涨价
+But the county's hotels raised prices first
+
+51
+00:01:51,766 --> 00:01:54,666
+每个周末订房得提前两天去预订
+On weekends you have to book two days ahead
+
+52
+00:01:54,833 --> 00:01:58,033
+我还专门查了资料看看是不是错觉
+I even looked into it to see if I was imagining things
+
+53
+00:01:58,100 --> 00:01:59,266
+有研究计算过
+One study ran the numbers
+
+54
+00:01:59,433 --> 00:02:03,033
+如果沿线城市的旅游人数涨了百分之18点5
+tourist numbers in cities along the line rose 18.5%
+
+55
+00:02:03,033 --> 00:02:05,433
+那么旅游收入会涨百分之25
+and tourism revenue rose 25%
+
+56
+00:02:05,466 --> 00:02:08,500
+另一个团队去算了178个城市
+Another team looked at 178 cities
+
+57
+00:02:08,733 --> 00:02:10,766
+平均收入涨了百分之12
+and found revenue up 12% on average
+
+58
+00:02:10,800 --> 00:02:13,400
+高铁没有让县城变得更便宜
+High-speed rail didn't make the county cheaper
+
+59
+00:02:13,433 --> 00:02:15,966
+反而它却把需求都挤进了县城
+instead it squeezed demand into the county
+
+60
+00:02:16,000 --> 00:02:18,033
+当高铁能通往这个县城
+Once high-speed rail reaches a county
+
+61
+00:02:18,066 --> 00:02:20,933
+那么这里的人流量就会越变越大
+more and more people start coming
+
+62
+00:02:20,933 --> 00:02:22,266
+当人流量多了
+and with more people
+
+63
+00:02:22,300 --> 00:02:24,000
+这些需求也被带了进来
+all that demand comes with them
+
+64
+00:02:24,300 --> 00:02:25,700
+更狠的一个是光伏
+An even more extreme case is solar
+
+65
+00:02:25,700 --> 00:02:27,966
+它的组件2022年底
+At the end of 2022, solar modules
+
+66
+00:02:27,966 --> 00:02:30,366
+平均下来两块一毛钱一瓦
+averaged 2.1 yuan per watt
+
+67
+00:02:30,366 --> 00:02:32,200
+2025年3月份
+By March 2025
+
+68
+00:02:32,233 --> 00:02:33,833
+光伏越来越轻松
+going solar should be getting easier
+
+69
+00:02:34,266 --> 00:02:36,600
+可国际能源署的数据却不是这样的
+But the International Energy Agency's data says otherwise
+
+70
+00:02:36,633 --> 00:02:40,633
+过去五年电网用的电缆和变压器的价格几乎翻倍
+Over the past five years, grid cables and transformers nearly doubled in price
+
+71
+00:02:40,633 --> 00:02:40,800
+过去五年电网用的电缆和变压器的价格几乎翻倍
+Over the past five years, grid cables and transformers nearly doubled in price
+
+72
+00:02:40,833 --> 00:02:43,666
+变压器的交期从几个月变成两三年
+Transformer lead times went from a few months to two or three years
+
+73
+00:02:44,066 --> 00:02:46,200
+光伏这里的板子变便宜了
+Solar panels got cheaper
+
+74
+00:02:46,200 --> 00:02:49,266
+但是把电送出去这件事就变贵了
+but getting the power out got more expensive
+
+75
+00:02:49,666 --> 00:02:50,966
+翻译一下
+Put simply
+
+76
+00:02:50,966 --> 00:02:52,500
+如果一个东西降价
+when one thing gets cheaper
+
+77
+00:02:52,533 --> 00:02:55,033
+那么不会让全世界都变便宜
+it doesn't make the whole world cheaper
+
+78
+00:02:55,033 --> 00:02:56,933
+它会把需求挤到一旁
+it pushes demand onto whatever sits next to it
+
+79
+00:02:57,433 --> 00:02:59,333
+那么如果AI被降价之后
+So once AI gets cheaper
+
+80
+00:02:59,333 --> 00:03:01,333
+被挤的是哪一样东西呢
+what gets squeezed
+
+81
+00:03:01,566 --> 00:03:03,566
+一百年前 电也这么没用过
+A hundred years ago, electricity seemed just as useless
+
+82
+00:03:03,700 --> 00:03:05,333
+爱迪生点亮了电灯
+Edison lit up the light bulb
+
+83
+00:03:05,866 --> 00:03:08,933
+1882年 纽约珍珠街的电厂才供电
+In 1882, New York's Pearl Street Station started supplying power
+
+84
+00:03:09,133 --> 00:03:10,733
+那会儿的工程师就明白
+Engineers back then already knew
+
+85
+00:03:11,000 --> 00:03:12,500
+电会改掉工厂
+electricity would transform factories
+
+86
+00:03:12,633 --> 00:03:14,300
+可接下来的30年
+But for the next 30 years
+
+87
+00:03:14,466 --> 00:03:16,800
+工厂的生产效率几乎没有怎么动
+factory productivity barely moved
+
+88
+00:03:17,366 --> 00:03:19,766
+电便宜了 机器也换了
+Power got cheaper, the machines were replaced
+
+89
+00:03:19,966 --> 00:03:21,933
+为什么活还没有变快呢
+so why wasn't work getting any faster
+
+90
+00:03:22,366 --> 00:03:25,033
+为什么我们的效率依然没有增加呢
+why was productivity still flat
+
+91
+00:03:25,633 --> 00:03:26,866
+十九世纪的工厂
+A 19th-century factory
+
+92
+00:03:26,866 --> 00:03:28,233
+整体只依靠一根总轴
+ran entirely on a single line shaft
+
+93
+00:03:28,500 --> 00:03:31,666
+水轮或蒸汽机都在工厂外面去转
+A water wheel or steam engine turned outside the building
+
+94
+00:03:32,000 --> 00:03:34,433
+带动厂房顶上的那条长轴
+driving a long shaft along the ceiling
+
+95
+00:03:34,900 --> 00:03:36,800
+轴上挂了一圈皮带
+with belts hung all along it
+
+96
+00:03:37,066 --> 00:03:39,566
+皮带垂下来连着一台又一台的机器
+and the belts dropped down to drive machine after machine
+
+97
+00:03:40,000 --> 00:03:41,800
+这个是之前的死规矩
+That was the iron rule back then
+
+98
+00:03:41,933 --> 00:03:44,633
+所有机器都会围着这根总轴转
+every machine had to sit around that shaft
+
+99
+00:03:45,033 --> 00:03:47,100
+车间只能按照动力去排
+So the floor was laid out by power
+
+100
+00:03:47,366 --> 00:03:49,033
+不能按照工序去排
+not by the order of the work
+
+101
+00:03:50,033 --> 00:03:51,566
+当电走入人们的生活
+When electricity came along
+
+102
+00:03:51,766 --> 00:03:53,200
+很多工厂干了什么
+what did a lot of factories do
+
+103
+00:03:53,766 --> 00:03:57,366
+首先 把外面的蒸汽机换成一个特别大的电动机
+They swapped the steam engine outside for one huge electric motor
+
+104
+00:03:57,500 --> 00:04:00,033
+总轴还在 皮带也没变
+The shaft stayed, the belts stayed
+
+105
+00:04:00,266 --> 00:04:02,833
+机器还是要围着那根总轴去转
+and the machines still had to sit around the shaft
+
+106
+00:04:02,933 --> 00:04:04,433
+这叫成组驱动
+This is called group drive
+
+107
+00:04:04,666 --> 00:04:07,733
+而车间依然还是原来的那套运行规则
+but the floor still ran by the old rules
+
+108
+00:04:08,300 --> 00:04:10,166
+总轴一开 全厂都转
+Start the shaft and the whole plant turns
+
+109
+00:04:10,633 --> 00:04:13,500
+长轴上摩擦消耗的力比干活的还多
+Friction along the shaft ate more power than the actual work
+
+110
+00:04:14,233 --> 00:04:15,666
+哪怕只想开一台
+even if you only want one machine running
+
+111
+00:04:15,666 --> 00:04:16,800
+机器只能摆两排
+Machines could only go in two rows
+
+112
+00:04:17,066 --> 00:04:19,733
+物料从这头搬过去再运回来
+Materials got hauled across and then hauled back again
+
+113
+00:04:20,266 --> 00:04:21,400
+吃到电的好处
+To really get the benefits of electricity
+
+114
+00:04:21,566 --> 00:04:23,900
+那么就需要把整个工厂拆掉重建
+you had to tear the factory down and rebuild it
+
+115
+00:04:23,933 --> 00:04:26,433
+每个机器配一个小电机
+Give every machine its own small motor
+
+116
+00:04:26,733 --> 00:04:28,133
+想开哪台就开哪台
+and run whichever one you want
+
+117
+00:04:28,266 --> 00:04:31,366
+并且车间也不用围着这一根总轴去转
+The floor no longer had to revolve around the shaft
+
+118
+00:04:31,900 --> 00:04:33,333
+按照工序进行排布
+it could be laid out in the order of the work
+
+119
+00:04:33,366 --> 00:04:35,000
+物料也从一头进
+Materials go in one end
+
+120
+00:04:35,133 --> 00:04:36,100
+从另一头出
+and out the other
+
+121
+00:04:36,700 --> 00:04:38,100
+时间花了多久呢
+How long did that take
+
+122
+00:04:38,566 --> 00:04:40,833
+1882年已经开始了供电
+Power was available from 1882
+
+123
+00:04:40,966 --> 00:04:44,666
+直到1920年代才真正开始进行工厂的迭代
+but factories didn't really transform until the 1920s
+
+124
+00:04:44,700 --> 00:04:46,100
+将近40年
+Nearly 40 years
+
+125
+00:04:46,566 --> 00:04:47,833
+那这40年不是没电
+Those 40 years weren't for lack of power
+
+126
+00:04:47,933 --> 00:04:49,400
+而是大家都不敢拆
+people just didn't dare tear things down
+
+127
+00:04:49,533 --> 00:04:52,033
+厂房是钱 总轴也是钱
+The building cost money, the shaft cost money
+
+128
+00:04:52,600 --> 00:04:55,633
+停产重排更是一些资金的消耗
+and shutting down to rearrange cost even more
+
+129
+00:04:55,800 --> 00:04:58,600
+一直到1920年代 投资环境变好了
+Only in the 1920s, when the investment climate improved
+
+130
+00:04:58,600 --> 00:05:01,533
+才有人整片的重新盖起新的厂房
+did people start building whole new factories
+
+131
+00:05:02,133 --> 00:05:05,300
+电作为工厂动力的份额在1919年的时候
+Electricity's share of factory power in 1919
+
+132
+00:05:05,600 --> 00:05:08,733
+只刚过一半 在1929年接近八成
+was just over half, and by 1929 it was nearly 80%
+
+133
+00:05:08,966 --> 00:05:13,433
+制造业生产增速1920年代远超之前20年
+Manufacturing productivity growth in the 1920s far outpaced the previous 20 years
+
+134
+00:05:13,433 --> 00:05:16,166
+研究这一段的经济学家估算
+Economic historians who study this period estimate
+
+135
+00:05:16,600 --> 00:05:20,433
+其中至少一半能归结到拆总轴这件事情上
+at least half of that came from getting rid of the line shaft
+
+136
+00:05:21,200 --> 00:05:24,600
+翻译一下 让工厂变快的是重构整个厂房
+Put simply, what made factories faster was redesigning the whole plant
+
+137
+00:05:24,766 --> 00:05:27,166
+电只是让重构变得更划算
+electricity just made the redesign worth it
+
+138
+00:05:27,433 --> 00:05:29,666
+电变便宜之后 跟着变贵的不是电
+Once electricity got cheaper, what got expensive wasn't electricity
+
+139
+00:05:29,866 --> 00:05:32,033
+而是怎么知道重构的那批人
+it was the people who knew how to redesign
+
+140
+00:05:32,233 --> 00:05:33,833
+和愿意停产重构的时间
+and the time to shut down and rebuild
+
+141
+00:05:34,533 --> 00:05:36,033
+那么难点在哪里呢
+So where's the hard part
+
+142
+00:05:36,766 --> 00:05:38,266
+技术很早就到位了
+The technology was ready early on
+
+143
+00:05:38,266 --> 00:05:40,866
+重构却不在大家的采购清单上
+but redesign wasn't on anyone's shopping list
+
+144
+00:05:41,400 --> 00:05:42,866
+没有报价 没有供应商
+No quotes, no suppliers
+
+145
+00:05:42,900 --> 00:05:45,933
+没有人能给你开一张换一种排法的发票
+no one can invoice you for "a new layout"
+
+146
+00:05:45,933 --> 00:05:48,166
+这40年卡的就是这个
+That's what held things up for 40 years
+
+147
+00:05:49,200 --> 00:05:50,033
+我们回到AI
+Now back to AI
+
+148
+00:05:50,200 --> 00:05:52,300
+用同一套看法再去看一遍
+Let's look at it the same way
+
+149
+00:05:52,500 --> 00:05:55,600
+AI变便宜变的是做那件事
+What AI makes cheap is the doing
+
+150
+00:05:56,000 --> 00:05:58,366
+写一段文字 画一张画
+writing a passage, drawing a picture
+
+151
+00:05:58,566 --> 00:06:00,200
+当做变便宜了
+Once doing gets cheap
+
+152
+00:06:00,266 --> 00:06:01,500
+需求就被挤到一边
+demand gets pushed to the side
+
+153
+00:06:01,666 --> 00:06:03,833
+我的判断是挤到看上
+My take is it gets pushed onto checking
+
+154
+00:06:04,333 --> 00:06:06,866
+AI一天可以写出你之前一周写的量
+AI can write in a day what used to take you a week
+
+155
+00:06:07,000 --> 00:06:09,166
+但你要看的量也跟着上涨
+but the amount you have to review goes up too
+
+156
+00:06:09,333 --> 00:06:12,533
+它写的越多 你越得需要逐条去检验
+The more it writes, the more you have to check line by line
+
+157
+00:06:12,800 --> 00:06:14,233
+那么去检验什么呢
+Check for what
+
+158
+00:06:14,433 --> 00:06:15,966
+检验它有没有编数据
+Whether it made up data
+
+159
+00:06:16,033 --> 00:06:17,266
+有没有产生幻觉
+whether it hallucinated
+
+160
+00:06:17,400 --> 00:06:20,933
+有没有出现一些违反现实的一些反例
+whether anything in it contradicts reality
+
+161
+00:06:21,433 --> 00:06:23,366
+这句结论能不能落到账上呢
+and whether the conclusion actually holds up
+
+162
+00:06:23,366 --> 00:06:25,566
+以前会不那么较真
+We didn't use to be this picky
+
+163
+00:06:25,700 --> 00:06:29,700
+因为自己写的大概都知道哪个地方我没有去查
+because when I wrote it myself, I knew where I hadn't checked
+
+164
+00:06:29,733 --> 00:06:33,700
+数据 或者哪个地方我去进行了一些数据的构造
+the data, or where I'd made up some numbers
+
+165
+00:06:33,700 --> 00:06:35,800
+但现在虚的地方是
+But now the weak spots
+
+166
+00:06:35,800 --> 00:06:36,733
+AI替我留的
+are ones AI left for me
+
+167
+00:06:36,966 --> 00:06:39,100
+会写现在已经不是很稀缺
+Being able to write isn't scarce anymore
+
+168
+00:06:39,200 --> 00:06:42,100
+稀缺的是如何能看出哪个部分不对
+what's scarce is spotting which part is wrong
+
+169
+00:06:42,800 --> 00:06:44,266
+一件东西变便宜
+If something gets cheaper
+
+170
+00:06:44,433 --> 00:06:46,833
+那么旁边没有配套的稀缺环节
+and there's nothing scarce that goes with it
+
+171
+00:06:46,966 --> 00:06:48,600
+那就只是单纯变便宜
+then it's simply cheaper, nothing more
+
+172
+00:06:48,600 --> 00:06:50,533
+比如当盐降价了
+Say salt gets cheaper
+
+173
+00:06:50,600 --> 00:06:54,900
+没有人会因为想去多吃一点盐而去学做饭
+nobody learns to cook just to eat more salt
+
+174
+00:06:54,900 --> 00:06:58,900
+AI也一样 用它的时候身边没有别的东西变得
+Same with AI: if nothing around you gets
+
+175
+00:06:58,900 --> 00:07:00,800
+紧张 那你就是纯省钱
+tight when you use it, you're just saving money
+
+176
+00:07:00,800 --> 00:07:02,400
+我自己的感受是
+My own sense is
+
+177
+00:07:02,533 --> 00:07:04,666
+现在的紧张是相信这件事
+what's tight now is trust
+
+178
+00:07:04,666 --> 00:07:06,500
+以前当我写完文章
+Before, when I finished an article
+
+179
+00:07:06,566 --> 00:07:07,700
+可以直接发出去
+I could just publish it
+
+180
+00:07:08,033 --> 00:07:11,066
+因为文章是我一个字一个字敲出来的
+because I'd typed every word myself
+
+181
+00:07:11,066 --> 00:07:13,300
+但现在 AI写完之后
+But now, after AI writes it
+
+182
+00:07:13,400 --> 00:07:15,266
+我需要这儿看一下那儿看一下
+I have to check here and check there
+
+183
+00:07:15,633 --> 00:07:17,400
+并且去验证其中的例子
+and verify the examples in it
+
+184
+00:07:17,433 --> 00:07:19,766
+这些就是眼下最贵的地方
+That's the most expensive part right now
+
+185
+00:07:20,333 --> 00:07:21,433
+这周我需要找一个时间
+This week I'm going to set aside some time
+
+186
+00:07:21,433 --> 00:07:23,466
+去把AI帮我写过的文章
+to take the articles AI wrote for me
+
+187
+00:07:23,500 --> 00:07:24,533
+以及干过的事
+and the work it's done
+
+188
+00:07:25,000 --> 00:07:26,866
+仔仔细细地剖析一遍
+and go through them carefully
+
+189
+00:07:26,866 --> 00:07:28,433
+它到底哪里不行
+to see where it falls short
+
+190
+00:07:28,433 --> 00:07:31,033
+到底哪里是真正可以替代我的地方
+and where it can truly replace me
+
+191
+00:07:31,633 --> 00:07:32,166
+回到开头
+Back to where we started
+
+192
+00:07:32,200 --> 00:07:35,433
+那现在还需要数学系和这些数学专家干什么
+so do we still need math departments and mathematicians
+
+193
+00:07:36,166 --> 00:07:37,366
+我的答案变了一点
+My answer has changed a bit
+
+194
+00:07:37,366 --> 00:07:40,833
+如果AI一次真的能产出几百项成果
+If AI really can produce hundreds of results at once
+
+195
+00:07:40,833 --> 00:07:43,366
+那么最先不够用的是这些
+what runs short first is
+
+196
+00:07:43,400 --> 00:07:46,800
+能判断这些成果是否用到我们生活中的专家
+experts who can judge whether those results apply to real life
+
+197
+00:07:47,433 --> 00:07:50,366
+上期我们说了 AI越便宜你用的越多
+Last time we said the cheaper AI gets, the more you use it
+
+198
+00:07:50,966 --> 00:07:52,466
+现在我要补后半句
+Now here's the second half
+
+199
+00:07:52,500 --> 00:07:53,800
+当你用的越多
+The more you use it
+
+200
+00:07:54,133 --> 00:07:56,233
+越需要一个能说这条不对的人
+the more you need someone who can say "this is wrong"
+
+201
+00:07:56,233 --> 00:07:58,333
+那个人现在还挺贵的
+And that person is still pretty expensive
+
+202
+00:07:58,333 --> 00:07:59,733
+我们下期聊
+See you next time
