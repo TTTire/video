@@ -149,8 +149,9 @@ export const TactileCardShell: React.FC<{kind?: CardKind; label?: string; sub?: 
 
 // ---------- graph：卡片之间拉发光连线，表示关系 ----------
 // nodes 的位置用相对于容器的像素；edges 在两端节点都出现后，从 a 向 b 生长（stroke-dashoffset）
-export type GraphNode = {id: string; x: number; y: number; w?: number; h?: number; at: number; node: React.ReactNode};
-export type GraphEdge = {from: string; to: string; at?: number; label?: string; color?: string};
+// at 是第几条要点，delay 是那条开始后再过几帧（同一条要点里先后出）
+export type GraphNode = {id: string; x: number; y: number; w?: number; h?: number; at: number; delay?: number; node: React.ReactNode};
+export type GraphEdge = {from: string; to: string; at?: number; delay?: number; label?: string; color?: string};
 export const Graph: React.FC<{w: number; h: number; nodes: GraphNode[]; edges: GraphEdge[]; stepAt: (i: number) => number; step: number}> = ({w, h, nodes, edges, stepAt, step}) => {
   const C = useC();
   const f = useCurrentFrame();
@@ -165,7 +166,7 @@ export const Graph: React.FC<{w: number; h: number; nodes: GraphNode[]; edges: G
         </defs>
         {edges.map((e, i) => {
           const a = nodes.find((n) => n.id === e.from)!, b = nodes.find((n) => n.id === e.to)!;
-          const start = stepAt(e.at ?? Math.max(a.at, b.at)) + 10;
+          const start = (e.at !== undefined ? stepAt(e.at) + (e.delay ?? 0) : Math.max(stepAt(a.at) + (a.delay ?? 0), stepAt(b.at) + (b.delay ?? 0))) + 10;
           if (step < (e.at ?? Math.max(a.at, b.at))) return null;
           const k = interpolate(f, [start, start + 26], [0, 1], clamp);
           const p1 = pos[e.from], p2 = pos[e.to];
@@ -185,7 +186,7 @@ export const Graph: React.FC<{w: number; h: number; nodes: GraphNode[]; edges: G
       </svg>
       {nodes.map((n) => step >= n.at ? (
         <div key={n.id} style={{position: 'absolute', left: n.x, top: n.y, width: n.w}}>
-          <CardEnter at={stepAt(n.at)} dir={n.x < w / 2 ? 'left' : 'right'} dist={120}>{n.node}</CardEnter>
+          <CardEnter at={stepAt(n.at) + (n.delay ?? 0)} dir={n.x < w / 2 ? 'left' : 'right'} dist={120}>{n.node}</CardEnter>
         </div>
       ) : null)}
     </div>

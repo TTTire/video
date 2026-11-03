@@ -15,7 +15,8 @@ export type {BoxSpec, CardKind} from './kit';
 // ---------- 类型 ----------
 type Dir = 'left' | 'right' | 'up' | 'down';
 // font：单个元素换字体（title 得意黑 / song 锦书宋 / kai 文楷 / num 数黑体 / sans 思源黑）；quote：对白，走文楷 + 金色引号
-type Base = {at?: number; delay?: number; until?: number; dir?: Dir; box?: string; sfx?: SfxName | null; vol?: number; font?: FontKey; quote?: boolean; size?: number; card?: CardKind; label?: string; tabColor?: string; stagger?: number; textfx?: 'outline' | 'gradient' | 'reveal'};
+// at / until / swap.at / strikeAt / orderAt 都是场景内第几条要点（讲稿卡期，AI03 起；ep8 及以前、AI01/AI02 是第几句）。同一条要点里的先后：delay = at 那条开始后再过几帧出，untilDelay = until 那条开始后再过几帧收
+type Base = {at?: number; delay?: number; until?: number; untilDelay?: number; dir?: Dir; box?: string; sfx?: SfxName | null; vol?: number; font?: FontKey; quote?: boolean; size?: number; card?: CardKind; label?: string; tabColor?: string; stagger?: number; textfx?: 'outline' | 'gradient' | 'reveal'};
 export type Item = Base & (
   | {type: 'h'; text: string; size?: number; color?: string; strikeAt?: number; em?: [number, number]}
   | {type: 't'; text: string; size?: number; color?: string}
@@ -36,8 +37,8 @@ export type Item = Base & (
   // ---- 2026-10-29 新增：实物卡 + 数值动效 ----
   // photo 卡：一个实体一张。img 是 public/<ep>/cards/<img>.jpg（C01…）；title 中文大词；sub 英文小字；w 卡宽（默认 420）
   | {type: 'photocard'; img: string; title?: string; sub?: string; w?: number; imgH?: number}
-  // 一排 photo 卡（2–4 张并排），each 里每张可以自己写 at（相对本元素的 at 偏移句数）
-  | {type: 'photorow'; cards: {img: string; title?: string; sub?: string; at?: number}[]; w?: number; gap?: number}
+  // 一排 photo 卡（2–4 张并排），each 里每张可以自己写 at（相对本元素的 at 偏移几条要点）和 delay（那条开始后几帧）；不写就跟本元素一起出（本元素的 delay），每张错开 6 帧
+  | {type: 'photorow'; cards: {img: string; title?: string; sub?: string; at?: number; delay?: number}[]; w?: number; gap?: number}
   // 里程表：from/to 字符串（"¥16" → "¥23"、"2011" → "2024"）
   | {type: 'odometer'; from: string; to: string; size?: number; color?: string; dur?: number; label?: string}
   // 翻牌：旧值翻走新值翻来
@@ -50,8 +51,8 @@ export type Item = Base & (
   | {type: 'units'; n: number; unit: string; cols?: number; size?: number; max?: number; label?: string; color?: string}
   // 液面：pct 0–100
   | {type: 'fill'; pct: number; w?: number; h?: number; color?: string; label?: string; horizontal?: boolean}
-  // 关系图：nodes 每个是一张卡（photocard 或纯字），edges 连线；坐标相对 box 左上角
-  | {type: 'graph'; w?: number; h?: number; nodes: {id: string; x: number; y: number; w?: number; at?: number; img?: string; title?: string; sub?: string; text?: string}[]; edges: {from: string; to: string; at?: number; label?: string; color?: string}[]}
+  // 关系图：nodes 每个是一张卡（photocard 或纯字），edges 连线；坐标相对 box 左上角。节点 at / delay 同 photorow 的卡：不写就跟本元素一起出
+  | {type: 'graph'; w?: number; h?: number; nodes: {id: string; x: number; y: number; w?: number; at?: number; delay?: number; img?: string; title?: string; sub?: string; text?: string}[]; edges: {from: string; to: string; at?: number; delay?: number; label?: string; color?: string}[]}
 );
 // origin 可以写区域名（"MR"）或百分比（"68% 62%"）
 export type PhotoLayer = {photo: string; zoom?: [number, number]; move?: 'in' | 'out' | 'still'; origin?: string; grad?: Grad; dim?: number; blur?: number; pos?: string};
@@ -171,6 +172,9 @@ const NumCell: React.FC<{at: number; label?: string; value: string; size: number
   );
 };
 
+// until 到了没有：过了 until 那条要点，或者在那条里过了 untilDelay 帧
+const gone = (it: Item, p: P, f: number) => it.until !== undefined && (p.step > it.until || (p.step === it.until && f >= at(p, it.until) + (it.untilDelay ?? 0)));
+
 // ---------- 单个元素 ----------
 const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec: SceneSpec}> = ({it, p, box, custom, spec}) => {
   const C = useC();
@@ -179,7 +183,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
   const f = useCurrentFrame();
   const step = it.at ?? 0;
   if (p.step < step) return null;
-  if (it.until !== undefined && p.step >= it.until) return null;
+  if (gone(it, p, f)) return null;
   const a = at(p, step) + (it.delay ?? 0);
   const dir = it.dir ?? DEFAULT_DIR(box);
   const align = box.align ?? 'left';
@@ -304,7 +308,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
           {it.cards.map((c, i) => {
             const st = step + (c.at ?? 0);
             if (p.step < st) return <div key={i} style={{width: w}} />;
-            const aa = at(p, st) + (c.at ? 0 : i * 6);
+            const aa = at(p, st) + (c.delay ?? (c.at ? 0 : (it.delay ?? 0) + i * 6));
             return <React.Fragment key={i}>{aa > 2 && <Sfx at={aa} name="pop" vol={0.25} />}<CardEnter at={aa} dir={i < it.cards.length / 2 ? 'left' : 'right'} dist={120}><TPhoto src={staticFile(`${cards}/${c.img}.jpg`)} title={c.title ? rich(c.title, C) : undefined} sub={c.sub} w={w} seed={i} /></CardEnter></React.Fragment>;
           })}
         </div>
@@ -336,7 +340,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
     case 'graph': {
       const {cards} = React.useContext(SkinCtx);
       const nodes: GraphNode[] = it.nodes.map((n) => ({
-        id: n.id, x: n.x, y: n.y, w: n.w ?? 360, h: n.img ? Math.round((n.w ?? 360) * 0.72) + 130 : 150, at: step + (n.at ?? 0),
+        id: n.id, x: n.x, y: n.y, w: n.w ?? 360, h: n.img ? Math.round((n.w ?? 360) * 0.72) + 130 : 150, at: step + (n.at ?? 0), delay: n.delay ?? (n.at ? undefined : it.delay),
         node: n.img
           ? <TPhoto src={staticFile(`${cards}/${n.img}.jpg`)} title={n.title ? rich(n.title, C) : undefined} sub={n.sub} w={n.w ?? 360} seed={n.x % 5} />
           : <TactileCardShell kind="notch" w={n.w ?? 360} seed={n.y % 5}><H size={44}>{rich(n.text ?? n.title ?? '', C)}</H>{n.sub && <T size={22}>{n.sub}</T>}</TactileCardShell>,
@@ -447,7 +451,7 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
           const shellK = kind ? interpolate(f, [firstAt, firstAt + FADE_FRAMES], [0, 1], clamp) : 1;
           if (kind && p.step < firstStep) return null;
           // 组里的字全都 until 过期了，卡壳也别留着（不然屏上挂一张空卡）
-          if (kind && !list.some((it) => it.until === undefined || p.step < it.until)) return null;
+          if (kind && list.every((it) => gone(it, p, f))) return null;
           return (
             <Box key={k} x={b.x} y={b.bottom === undefined ? b.y : undefined} w={b.w} right={b.right}
               style={{bottom: b.bottom, alignItems: center ? 'center' : b.align === 'right' ? 'flex-end' : 'flex-start', opacity: boxOpacity(k) * shellK}}>
@@ -483,14 +487,17 @@ const SeriesCard: React.FC<{p: P; spec: SceneSpec; ep: EpisodeSpec; box?: BoxSpe
   const C = useC();
   const f = useCurrentFrame();
   const n = spec.num ?? parseInt(ep.badge, 10);
-  const s1 = at(p, 1), s2 = p.steps.length > 2 ? at(p, 2) : s1 + 45;  // 只有两句时 tagline 晚 1.5 秒出
+  // 逐字稿期（ep8 及以前）栏目卡占三句，序号、tagline 跟第 2、3 句出；讲稿卡期它只占「栏目句」一条要点（一个 step），改按时间出：序号 1.5 秒，tagline 再晚 1.5 秒
+  const byTime = p.steps.length < 2;
+  const s1 = byTime ? 45 : at(p, 1), s2 = p.steps.length > 2 ? at(p, 2) : s1 + 45;  // 只有两句时 tagline 晚 1.5 秒出
+  const on1 = byTime ? f >= s1 : p.step >= 1, on2 = byTime ? f >= s2 : p.step >= 2;
   const num = Math.min(n, Math.max(1, Math.floor(interpolate(f, [s1, s1 + 18], [1, n + 0.99], clamp))));
   const b = box ?? regionBox(spec.box, DEFAULT_BOX);
   return (
     <>
       <Sfx at={0} name="flip" vol={0.4} />
-      {p.step >= 1 && <><Sfx at={s1} name="tick" dur={0.65} vol={0.4} /><Sfx at={s1 + 20} name="ding" vol={0.3} /></>}
-      {p.step >= 2 && spec.tagline && <Sfx at={s2} name="cash" vol={0.3} />}
+      {on1 && <><Sfx at={s1} name="tick" dur={0.65} vol={0.4} /><Sfx at={s1 + 20} name="ding" vol={0.3} /></>}
+      {on2 && spec.tagline && <Sfx at={s2} name="cash" vol={0.3} />}
       <Box x={b.x} y={b.y} w={b.w} style={{alignItems: b.align === 'right' ? 'flex-end' : b.align === 'center' ? 'center' : 'flex-start'}}>
         <FlyIn at={0} dir="left" dist={120}>
           {spec.label
@@ -500,7 +507,7 @@ const SeriesCard: React.FC<{p: P; spec: SceneSpec; ep: EpisodeSpec; box?: BoxSpe
                 <span style={{fontFamily: FONTS.title, fontSize: 40, color: C.dim, letterSpacing: 4, textShadow: SHADOW}}>· {ep.series ?? '100 个经济学原理'}</span>
               </div>}
         </FlyIn>
-        {p.step >= 1 && (
+        {on1 && (
           <FlyIn at={s1} dir="up" dist={160}>
             <div style={{display: 'flex', alignItems: 'baseline', gap: 28}}>
               <H size={230} color={C.gold} style={{lineHeight: 1, fontFamily: FONTS.num, letterSpacing: 0}}>{String(num).padStart(2, '0')}</H>
@@ -508,7 +515,7 @@ const SeriesCard: React.FC<{p: P; spec: SceneSpec; ep: EpisodeSpec; box?: BoxSpe
             </div>
           </FlyIn>
         )}
-        {p.step >= 2 && spec.tagline && <FlyIn at={s2} dir="up" dist={100}><H size={56} color={C.dim}>{rich(spec.tagline, C)}</H></FlyIn>}
+        {on2 && spec.tagline && <FlyIn at={s2} dir="up" dist={100}><H size={56} color={C.dim}>{rich(spec.tagline, C)}</H></FlyIn>}
       </Box>
     </>
   );

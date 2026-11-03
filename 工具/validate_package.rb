@@ -3,40 +3,25 @@
 
 require 'pathname'
 
-# 用法：
-#   ruby 工具/validate_package.rb <选题文件夹>                  检查三件套
-#   ruby 工具/validate_package.rb <选题文件夹> --write-jianying 先由口播稿生成剪映版，再检查
+# 用法：ruby 工具/validate_package.rb <选题文件夹>
+# 检查讲稿卡 + 发布清单（2026-11 起不写口播逐字稿和剪映版）。
+# 分场景表的起始要点逐条核对交给 工具/video-render/scripts/scenes_from_checklist.py，这里只查列名。
 
-write_jianying = ARGV.delete('--write-jianying')
 topic_dir = Pathname(ARGV.fetch(0) do
-  warn 'Usage: ruby 工具/validate_package.rb <topic-directory> [--write-jianying]'
+  warn 'Usage: ruby 工具/validate_package.rb <topic-directory>'
   exit 2
 end).expand_path
-
-# 口播稿一行 → 剪映版一行：小数读作“点”，百分号读作“百分之”，去掉所有标点和符号
-def normalize_line(line)
-  line.gsub(/(\d+)\.(\d+)/, '\\1点\\2')
-      .gsub(/(\d+(?:点\d+)?)%/, '百分之\\1')
-      .gsub(/[\p{P}\p{S}]/, '')
-      .gsub(/[ \t]+/, ' ')
-      .strip
-end
 
 unless topic_dir.directory?
   warn "FAIL: topic directory not found: #{topic_dir}"
   exit 2
 end
 
-script_files = topic_dir.glob('*-口播逐字稿.md').reject { |path| path.basename.to_s.include?('剪映版') }
-clip_files = topic_dir.glob('*-口播逐字稿-剪映版.md')
-if write_jianying && script_files.length == 1 && clip_files.empty?
-  clip_files = [Pathname(script_files.first.to_s.sub(/-口播逐字稿\.md\z/, '-口播逐字稿-剪映版.md'))]
-end
+card_files = topic_dir.glob('*-讲稿卡.md')
 checklist_files = topic_dir.glob('*-发布清单.md')
 
 errors = []
-errors << "expected 1 script, found #{script_files.length}" unless script_files.length == 1
-errors << "expected 1 Jianying export, found #{clip_files.length}" unless clip_files.length == 1
+errors << "expected 1 讲稿卡, found #{card_files.length}" unless card_files.length == 1
 errors << "expected 1 publish checklist, found #{checklist_files.length}" unless checklist_files.length == 1
 
 unless errors.empty?
@@ -44,52 +29,48 @@ unless errors.empty?
   exit 1
 end
 
-script = script_files.first.read(encoding: 'UTF-8')
-clip = clip_files.first.exist? ? clip_files.first.read(encoding: 'UTF-8') : ''
+card = card_files.first.read(encoding: 'UTF-8')
 checklist = checklist_files.first.read(encoding: 'UTF-8')
 
-chapter_numbers = script.scan(/^## 第([0-9]+)章：/).flatten.map(&:to_i)
-errors << "chapter sequence must be 1,2,3; got #{chapter_numbers.inspect}" unless chapter_numbers == [1, 2, 3]
+# 讲稿卡：## 开头 → ## 第 1 章 → ## 第 2 章 → ## 第 3 章，每段下面顶格的 `1.` / `-` 是一条要点（规则同 video-render/scripts/card.py）
+# 禁用词、句式只查这几段要讲的内容（「## 别说」里本来就列着禁用词）
+sections = [] # [[段名, 要点数]]
+current = nil
+spoken = +''
+point_han_count = 0
+card.each_line do |line|
+  if line.start_with?('## ')
+    current = nil
+    if line.match?(/\A##\s*开头/)
+      current = ['开头', 0]
+    elsif (m = line.match(/\A##\s*第\s*(\d+)\s*章/))
+      current = ["第#{m[1]}章", 0]
+    end
+    sections << current if current
+  elsif current
+    spoken << line
+    next unless line.match?(/\A(?:\d+[.、]|[-*])\s+\S/)
 
-first_chapter_offset = script.index(/^## 第1章：/)
-intro = first_chapter_offset ? script[0...first_chapter_offset] : ''
-intro_body = intro.lines.reject { |line| line.strip.empty? || line.start_with?('# ') }
-errors << 'independent opening is empty' if intro_body.empty?
-
-blocks = [[]]
-script.each_line do |line|
-  stripped = line.strip
-  next if stripped.empty? || stripped.start_with?('# ')
-
-  if stripped.match?(/^## 第[123]章：/)
-    blocks << [] unless blocks.last.empty?
-    next
+    current[1] += 1
+    point_han_count += line.scan(/\p{Han}/).length
   end
-
-  clean = normalize_line(stripped)
-  blocks.last << clean unless clean.empty?
+end
+section_names = sections.map(&:first)
+errors << "讲稿卡的段落要依次是 开头、第1章、第2章、第3章；现在是 #{section_names.inspect}" unless section_names == %w[开头 第1章 第2章 第3章]
+sections.each do |name, count|
+  range = name == '开头' ? (4..7) : (4..10)
+  errors << "讲稿卡「#{name}」没有要点（顶格写 `1.` 或 `-`）" if count.zero?
+  warn "WARN: 讲稿卡「#{name}」有 #{count} 条要点，一般 #{range.min}–#{range.max} 条" if count.positive? && !range.cover?(count)
+end
+['**一句话反转**', '## 数字表', '## 别说', '## 录制'].each do |part|
+  errors << "讲稿卡缺少 #{part}" unless card.include?(part)
 end
 
-blocks.reject!(&:empty?)
-expected_clip = blocks.map { |block| block.join("\n") }.join("\n\n") + "\n"
-if write_jianying
-  clip_files.first.write(expected_clip, encoding: 'UTF-8')
-  clip = expected_clip
-  puts "wrote=#{clip_files.first}"
-end
-errors << "Jianying export must contain 4 text groups; got #{blocks.length}" unless blocks.length == 4
-errors << 'Jianying export differs from normalized script' unless clip == expected_clip
-errors << 'Jianying export contains punctuation or symbols' unless clip.scan(/[\p{P}\p{S}]/).empty?
-
-# 剪映导入字幕后一行一条：太长会自动换行。汉字算 1，数字 / 字母 / 空格算 0.5
-MAX_SUBTITLE_WIDTH = (ENV['MAX_SUBTITLE_WIDTH'] || 16).to_f
-def subtitle_width(text)
-  text.each_char.sum { |c| c.match?(/[\p{Han}\u3000-\u303F\uFF00-\uFFEF]/) ? 1.0 : 0.5 }
-end
-too_long = blocks.flatten.select { |line| subtitle_width(line) > MAX_SUBTITLE_WIDTH }
-unless too_long.empty?
-  too_long.each { |line| warn format('  过长(%.1f)：%s', subtitle_width(line), line) }
-  errors << "#{too_long.length} Jianying lines exceed #{MAX_SUBTITLE_WIDTH.to_i} width; split them in the script at a natural pause"
+scene_header = checklist[/^\|\s*#\s*\|\s*场景 id\s*\|.*$/]
+if scene_header.nil?
+  errors << 'publish checklist missing 分场景表（列：# | 场景 id | 起始要点 | 这段在讲什么 | 图 | 叠字 | 环境声）'
+elsif !scene_header.include?('起始要点')
+  errors << '分场景表第 3 列要是「起始要点」，填讲稿卡的要点 id（0.1、1.0、2.3）；口播稿行号的「起始句」已停用'
 end
 
 required_sections = [
@@ -117,8 +98,8 @@ def validate_title_length(errors, label, title)
   errors << "#{label} Chinese visible title has #{count} Han characters; maximum is 13" if count > 13
 end
 
-script_title = script.lines.first.to_s.sub(/^#\s*/, '')
-validate_title_length(errors, 'script title', script_title)
+card_title = card.lines.first.to_s.sub(/^#\s*/, '').sub(/\s*[—–-]+\s*讲稿卡\s*\z/, '')
+validate_title_length(errors, '讲稿卡 title', card_title)
 
 checklist_title = checklist.lines.first.to_s.sub(/^#\s*/, '').sub(/\s+[—-]\s+发布清单\s*$/, '')
 validate_title_length(errors, 'publish checklist title', checklist_title)
@@ -155,33 +136,21 @@ suno_limits.each do |limit|
 end
 
 forbidden_terms = %w[深度赋能 认知升级 底层逻辑 显著提升 闭环 抓手 高维度 本质上 不难发现 值得注意的是 在这个时代]
-forbidden_hits = forbidden_terms.to_h { |term| [term, script.scan(term).length] }.reject { |_term, count| count.zero? }
+forbidden_hits = forbidden_terms.to_h { |term| [term, spoken.scan(term).length] }.reject { |_term, count| count.zero? }
 errors << "forbidden AI-style terms found: #{forbidden_hits}" unless forbidden_hits.empty?
 
-han_count = script.scan(/\p{Han}/).length
-spoken_han_count = blocks.flatten.join.scan(/\p{Han}/).length
-declared_han_count = checklist[/(?:可口播)?正文约?\s*(\d+)\s*个汉字/, 1]&.to_i
-if declared_han_count && (declared_han_count - spoken_han_count).abs > 50
-  warn "WARN: 发布清单写的正文字数是 #{declared_han_count}，实际口播约 #{spoken_han_count}"
-end
-
 template_counts = ['不是', '而是', '真正', '你以为', '这就是', '很多人'].to_h do |phrase|
-  [phrase, script.scan(phrase).length]
+  [phrase, spoken.scan(phrase).length]
 end
 
-puts "script=#{script_files.first}"
-puts "han_count=#{han_count}"
-puts "spoken_han_count=#{spoken_han_count}"
-puts "declared_spoken_han_count=#{declared_han_count || 'not_found'}"
-puts "chapters=#{chapter_numbers.join(',')}"
-puts "opening_lines=#{intro_body.length}"
-puts "jianying_blocks=#{blocks.length}"
-puts "jianying_exact_match=#{clip == expected_clip}"
-puts "max_subtitle_width=#{blocks.flatten.map { |l| subtitle_width(l) }.max}"
+puts "card=#{card_files.first}"
+puts "points=#{sections.map { |name, count| "#{name} #{count}" }.join(', ')}"
+puts "point_han_count=#{point_han_count}"
+puts format('estimated_minutes=%.1f（卡上约 200 字/分，AI03 实录）', point_han_count / 200.0)
 puts "template_phrase_counts=#{template_counts}"
 
 # “不是”是正常口语词，只在“不是……而是……”成串出现时才提醒
-not_but = script.scan(/不是[^。\n]{0,20}而是/).length
+not_but = spoken.scan(/不是[^。\n]{0,20}而是/).length
 warn format('WARN: 「不是…而是」出现 %d 次; 检查是否重复使用同一反转句式', not_but) if not_but > 3
 
 if errors.empty?

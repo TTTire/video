@@ -39,8 +39,8 @@
   "dim": 0.3, "blur": 10,          // 整体压暗 0–1、虚化 px（做底纹时用）
   "pos": "left center",            // objectPosition，照片比例不对时决定保留哪边
 
-  "swap": {"at": 2, "photo": "S02", "grad": "left", "move": "in", "delay": 0},   // 第 2 句时淡入切换到另一张图
-  "split": {"at": [2, 3], "photos": ["S20A", "S20B"]},                            // 第 2 句左半推入 S20A，第 3 句右半推入 S20B；配合 box "L" / "R"
+  "swap": {"at": 2, "photo": "S02", "grad": "left", "move": "in", "delay": 0},   // 场景内第 2 条要点时淡入切换到另一张图
+  "split": {"at": [2, 3], "photos": ["S20A", "S20B"]},                            // 第 2 条要点左半推入 S20A，第 3 条要点右半推入 S20B；配合 box "L" / "R"
 
   "box": "TL",                     // 文字框：区域名（见下面「画面区域」）或像素框 {"x": 90, "y": 120, "w": 900}；不写走 style.layout 母版
   "boxes": {"right": "MR", "bottom": "BW"},  // 命名文字框，元素用 "box": "right" 指定；也可以写像素框
@@ -52,7 +52,7 @@
 }
 ```
 
-栏目卡（`type: "series"`）：`"num": 7, "title": "需求定律", "tagline": "一句话"`，第 0 句出栏目名，第 1 句数字滚到本期并出标题，第 2 句出 tagline。
+栏目卡（`type: "series"`）：`"num": 7, "title": "需求定律", "tagline": "一句话"`，场景内第 0 条要点出栏目名，第 1 条数字滚到本期并出标题，第 2 条出 tagline。
 
 ## style（每期视觉方案）
 
@@ -71,9 +71,9 @@
 
 | 字段 | 含义 |
 |---|---|
-| `at` | 场景内第几句开始时出现（0 起，默认 0） |
-| `delay` | 再延后几帧（30 帧 = 1 秒） |
-| `until` | 到第几句时消失（做"前半段 / 后半段"换内容） |
+| `at` | 场景内第几条要点开始时出现（场景内 step，0 起，默认 0） |
+| `delay` | 再延后几帧（30 帧 = 1 秒）；同一条要点里的先后用它排 |
+| `until` | 到第几条要点时消失（做"前半段 / 后半段"换内容） |
 | `dir` | 飞入方向 left / right / up / down，默认按文字框位置自动 |
 | `box` | 放进哪个命名文字框，默认 main |
 | `card` | 卡片：`solid` 结论 / `paper` 原文 / `notch` 前提定义 / `tab` 一条数据。写在 `box` 上（`{"card": "tab", "label": "数据"}`）或场景顶上（`"card": "solid"`） |
@@ -87,7 +87,7 @@
 
 | type | 字段 | 用途 |
 |---|---|---|
-| `h` | `text` `size`(88 v2 / 66 v1) `color`(white) `strikeAt` `stagger` `textfx` `em` | 得意黑标题。`strikeAt: n` 第 n 句被划掉；`stagger: 3` 逐字入场；`textfx: outline / gradient / reveal`；`em: [起, 止]` 给逐字的某几个字上强调色 |
+| `h` | `text` `size`(88 v2 / 66 v1) `color`(white) `strikeAt` `stagger` `textfx` `em` | 得意黑标题。`strikeAt: n` 第 n 条要点时被划掉；`stagger: 3` 逐字入场；`textfx: outline / gradient / reveal`；`em: [起, 止]` 给逐字的某几个字上强调色 |
 | `t` | `text` `size`(44 v2 / 38 v1) `color`(dim) | 小字说明、英文副题 |
 | `tag` | `text` `size`(42) `color`(gold) `dark` | 标签块：金底黑字；`dark: true` 黑底白字 |
 | `stamp` | `text` `size`(60) `color`(coral) `rotate`(-5) | 从天上砸下来的印章 |
@@ -103,14 +103,14 @@
 | `sfx` | `name` `variant` `dur` `endAt` `fade` | 任意音效。`riser` 用 `endAt` 对齐揭晓点 |
 | `custom` | `name` | 调 `src/epN/custom.tsx` 里注册的组件，全屏覆盖 |
 | **`photocard`** | `img`(C01) `title` `sub` `w`(420) `imgH` | **一个实体一张**：上半小图、下半中文大词 + 英文小字。公司 / 国家 / 人 / 商品 |
-| **`photorow`** | `cards: [{img, title, sub, at?}]` `w`(380) `gap`(28) | 2–4 张 photo 卡并排；每张可以自己写 `at`（相对本元素 at 的句数偏移），不写则同句依次 6 帧错开 |
+| **`photorow`** | `cards: [{img, title, sub, at?, delay?}]` `w`(380) `gap`(28) | 2–4 张 photo 卡并排；每张可以自己写 `at`（相对本元素 at 的要点数偏移）和 `delay`（那条要点开始后几帧）；都不写就跟本元素一起出（用本元素的 `delay`），依次错开 6 帧 |
 | **`odometer`** | `from` `to`（字符串）`size` `color` `dur`(28) `label` | 里程表：每位数字独立上/下滚，右位先动左位晚 3 帧。`"¥16" → "¥23"`、`"2011" → "2024"`、`"$2.15" → "$0.11"`。非数字字符原位不动 |
 | **`flap`** | `from` `to` `size`(88) `color` `toColor` `label` | 机场翻牌：牌从中线分两半，旧值翻下去新值翻上来。**一个判断被另一个替换**（"涨得离谱" → "只涨了 6%"），和 `strikeAt` 同语义、另一种长相 |
 | **`slam`** | `text` `size`(big) `color` `label` | 大数从 2.8× 砸到 1×，到位震 6 帧 + impact。**本期核心数字，一期 1–2 次** |
-| **`rank`** | `rows: [{id, label, value, color}]` `orders: [[id…], …]` `orderAt: [句…]` `hi` `w` `rowH`(92) | 排名：rows 固定，到 `orderAt[i]` 那句换成 `orders[i]` 的顺序，行平滑换位（往下的右移、往上的左移，中途不叠）。`hi` 高亮某行 |
+| **`rank`** | `rows: [{id, label, value, color}]` `orders: [[id…], …]` `orderAt: [要点…]` `hi` `w` `rowH`(92) | 排名：rows 固定，到 `orderAt[i]` 那条要点换成 `orders[i]` 的顺序，行平滑换位（往下的右移、往上的左移，中途不叠）。`hi` 高亮某行 |
 | **`units`** | `n` `unit`(`person` / `bill` / 任意字符) `cols`(10) `size`(48) `max`(50) `label` `color` | 实物堆叠：n 个一个一个落下（整堆约 40 帧落完），从下往上填。超过 `max` 的写 `+N` |
 | **`fill`** | `pct` `w`(160) `h`(320) `color` `label` `horizontal` | 容器液面升到 pct%，数字跟着滚，液面有轻微波动 |
-| **`graph`** | `nodes: [{id, x, y, w, at, img?, title?, sub?, text?}]` `edges: [{from, to, at?, label?, color?}]` `w` `h` | 关系图：节点是 photo 卡（有 `img`）或字卡（`text`），坐标相对 box 左上角；边在两端都出现后从 from 向 to 生长、带光晕；`label` 写在线中间 |
+| **`graph`** | `nodes: [{id, x, y, w, at?, delay?, img?, title?, sub?, text?}]` `edges: [{from, to, at?, delay?, label?, color?}]` `w` `h` | 关系图：节点是 photo 卡（有 `img`）或字卡（`text`），坐标相对 box 左上角；节点的 `at` / `delay` 同 photorow 的卡，都不写就跟本元素一起出；边默认在两端都出现后从 from 向 to 生长、带光晕（写了 `at` 就按 `at` + `delay`）；`label` 写在线中间 |
 
 新元素都自带音效（odometer tick、flap flip、slam impact、units drop、fill riser），不用再写 `sfx`。
 
@@ -166,25 +166,25 @@ BL  BC  BR     BW
   "bubbleView": 0.62,               // 小圆直径装下 A-roll 画面高度的多少：0.62 ≈ 头到胸口的半身（默认）；0.31 = 只有一张脸（10-29 旧版）。头顶离画面上沿 ≤ 20% 的实拍（ep8）用 0.72，不然头发被圆切掉
   "bubbleFaceAt": 0.32,             // 脸放在圆里从上往下的位置（默认 0.32，留出下面的肩膀和身子）；bubbleView 调大时同步到 0.34 左右
   "halfView": 0.8,                  // 半屏卡只显示 A-roll 画面上面这一截（默认 1）。A-roll 底部烧了字幕时设 0.8 裁掉
-  "cues": [                         // at 是口播稿行号 [起, 止)，和场景表同口径
-    {"at": [0, 7],     "mode": "full"},
-    {"at": [47, 49],   "mode": "half"},
-    {"at": [241, 257], "mode": "full"}
+  "cues": [                         // at 是要点 id [起, 止)，和场景表同口径；止写 "end" 到片尾。老期（ep8 及以前）写的数字是口播稿行号，引擎照旧认
+    {"at": ["0.1", "0.4"], "mode": "full"},
+    {"at": ["1.3", "1.5"], "mode": "half"},
+    {"at": ["3.8", "end"], "mode": "full"}
   ]
 }
 ```
 
 | mode | 长相 | 用在 |
 |---|---|---|
-| `full` | 全屏 | 开场第一句（观众先见人）、第一人称判断（"我猜"、"我自己的感受"）、结尾 |
+| `full` | 全屏 | 开场第一条要点（观众先见人）、第一人称判断（"我猜"、"我自己的感受"）、结尾 |
 | `half` | 左侧 640×720 圆角卡（x 60–700、y 90–810），不碰右侧字列和字幕区 | 讲自己经历、带情绪的段落，又不想丢掉 B-roll 的字 |
 | `bubble` | 直径 260 小圆（左下圆心 220,650 / 右上 1770,290），3px 暖白细边 + 软投影（照小Lin说的做法），默认取半身（`bubbleView`） | 数据、历史、图表段——B-roll 是主角，你在角落 |
-| `hide` | 不出现 | 章节卡、栏目卡（`hideOn` 默认就是这两个场景，不用写行号） |
+| `hide` | 不出现 | 章节卡、栏目卡（`hideOn` 默认就是这两个场景，不用写要点 id） |
 
 - **小圆放哪边自动躲字**：`style.layout=right`（字在右）→ 小圆左下；否则右上。右上这个位置整个圆都在 B-roll 不放字的 `SAFE_RIGHT` 区（x≥1620）里，和任何母版的字都不碰。某个场景字在另一边，场景里写 `"arollSide": "right"` 单独指定；要放别处写 `"arollPos": [x, y]` 直接给圆心。**右下角不能放**——抖音右侧图标列和「全屏观看」按钮压在那里（依据和换算见 `douyin-safe-zone.md`）。两个场景小圆换位置时平滑滑过去，不响。**每个场景都要单独看**：拼图每场只抽 4 帧，后出现的字容易漏，交付前把成片按 2 秒一帧抽一遍
 - **切换动效**（24 帧，慢进慢出，每次 whoosh）：bubble ⇄ full 是圆形 iris——圆从小圆位置长大到盖满屏 / 缩回，边缘一圈白光跟着扩；→ half 是卡从左 wipe 开、前沿一道亮线，小圆缩进卡里脸的位置；half → full 是圆从卡里的脸长出来
 - 节奏经验：每段 bubble 别超过 40–60 秒，中间切回 full 露 6–10 秒，不然像配音 PPT
-- 查表：`python3 scripts/aroll_cues.py <epN>` 打印每段的模式 / 行号 / 时间 / 第一句，粘进剪辑说明
+- 查表：`python3 scripts/aroll_cues.py <epN>` 打印每段的模式 / 要点 / 时间 / 第一条要点，粘进剪辑说明
 - 合成：有 `aroll` 时多出 `EpNFull`（交付）/ `EpNFullCheck`（带字幕）/ `EpNFullSheet`（拼图）；`render.py <epN> aroll | arollcheck | arollsheet | arollclip <起> <止>`
 - 性能：叠 A-roll 比纯 B-roll 慢约 18%（@remotion/media 的 `<Video>`）
 
@@ -197,8 +197,8 @@ BL  BC  BR     BW
 
 ## 套路
 
-- **开场**：时钟 + 一句大字 + 第 2 句 tag（对白）+ 第 3 句 dim 的疑问。`ambience` 铺环境声，`enterSfx: null`。
-- **否定旧判断**：第 0 句 `h`(dim) 写旧判断并 `strikeAt: 1`；第 1 句 `spot` 指向照片里的真凶 + `h` 大字揭晓，`sfx: "impact"`。
+- **开场**：时钟 + 一句大字 + 第 2 条要点 tag（对白）+ 第 3 条要点 dim 的疑问。`ambience` 铺环境声，`enterSfx: null`。
+- **否定旧判断**：第 0 条要点 `h`(dim) 写旧判断并 `strikeAt: 1`；第 1 条要点 `spot` 指向照片里的真凶 + `h` 大字揭晓，`sfx: "impact"`。场景只有一条要点时，用 `delay` 把揭晓排在后面。
 - **数字一路变化**：`custom` 柱状图；或 `nums` 一排。
 - **定义卡**：`blur: 10, dim: 0.55, center: true`，`t` 英文 + `h` 150 大词 + 等号句。
 - **前提 / 边界**：`notch` 卡带 `label: "前提"`、`sub: "PREMISE"`（实物皮肤下标签旁出英文小字）。
@@ -208,11 +208,11 @@ BL  BC  BR     BW
 - **人数 / 钱数**：`units`（`person` / `bill`），一个单位 = 多少写在 `label` 里。
 - **占比**：`fill`。
 - **三件事 / 因果 / 关系**：`graph`，中心一张字卡，周围 photo 卡，边上写一句关系。
-- **分屏对比**：`split` + `box: "L"` / `box: "R"` 各放 tag + 两句；收尾 `panel` 放 `bottom` 框。
+- **分屏对比**：`split` + `box: "L"` / `box: "R"` 各放 tag + 两条字；收尾 `panel` 放 `bottom` 框。
 - **结果揭晓**：`count` 带 `before`（85 → 120+），`sfx` 用 `riser` 的 `endAt` 卡在数字出现。
-- **金句**：`center` 或左侧 1100 宽，第 0 句 `t` + `h`(dim, 划掉旧问题)，第 1 句 `h` 96 大字，`rings` 指向照片里的"机器"。
+- **金句**：`center` 或左侧 1100 宽，第 0 条要点 `t` + `h`(dim, 划掉旧问题)，第 1 条要点 `h` 96 大字，`rings` 指向照片里的"机器"。
 - **下期预告**：开场图 `blur: 6, dim: 0.5, center`，`tag` 下期 + 两句 + 价格对比。
 
 ## 时间轴（timeline.json，脚本生成，不手改）
 
-每个场景 `{scene, from, dur, steps:[...]}`，`steps[i]` 是场景内第 i 句开始的帧（相对场景起点）。元素的 `at` 就是对这个数组的下标；`custom` 组件里用 `at(p, i)` 取帧、`p.step` 取当前到第几句。
+每个场景 `{scene, from, dur, steps:[...]}`，`steps[i]` 是场景内第 i 条要点开始的帧（相对场景起点；章节卡场景只有 `N.0` 一个 step）。`points` 是展平后每个 step 对应的要点 id；`source` 是 `estimate`（录前 `make_timeline.py` 按讲稿卡字数估）或 `starts`（录后按 `src/<ep>/starts.json` 要点起点表）。`subs` 在 estimate 时是「要点 id + 要点开头」，只给拼图预览用；starts 时取 `--srt` 的字幕条。元素的 `at` 就是对 `steps` 的下标；同一条要点里的先后用 `delay`（帧）；`custom` 组件里用 `at(p, i)` 取帧、`p.step` 取当前到第几条要点。

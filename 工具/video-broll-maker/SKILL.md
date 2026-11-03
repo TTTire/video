@@ -1,6 +1,6 @@
 ---
 name: video-broll-maker
-description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片铺底 + 得意黑大字 + 代码图表，Remotion 渲染）。两个阶段：写稿时在发布清单里写「画面与素材清单」（用户据此出图）；收到用户的字幕 srt 和图片后，对齐口播时间轴渲染动画轨和剪辑说明。
+description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片铺底 + 得意黑大字 + 代码图表，Remotion 渲染）。两个阶段：写稿时在发布清单里写「画面与素材清单」（用户据此出图）；收到用户的粗剪（mp4 + srt）和图片后，填要点起点表、对齐口播时间轴，渲染动画轨和剪辑说明。
 ---
 
 # 像素呼吸 B-roll 动画轨
@@ -19,7 +19,7 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 
 出镜怎么合：两条路，用户选——
 1. **用户自己叠**：拿 B-roll 动画轨和 A-roll 在剪映里从 0 秒对齐，想露脸的地方切掉动画轨（第 8 期及以前都这么干）
-2. **引擎合**（2026-10-29 起）：用户给对齐 srt 的粗剪 A-roll，photo.json 写 `aroll.cues`（行号 → full / half / bubble），引擎渲出 B-roll + 出镜层的成片，小圆 ⇄ 全屏之间是圆形 iris 切换。A-roll **静音**，人声和字幕仍由用户在剪映加。字段见 `references/photo-json.md`「出镜层」
+2. **引擎合**（2026-10-29 起）：用户给粗剪 A-roll（和 srt 同一条时间线），photo.json 写 `aroll.cues`（要点 id → full / half / bubble），引擎渲出 B-roll + 出镜层的成片，小圆 ⇄ 全屏之间是圆形 iris 切换。A-roll **静音**，人声和字幕仍由用户在剪映加。字段见 `references/photo-json.md`「出镜层」
 
 ## 两个栏目，分开做
 
@@ -28,7 +28,7 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 | 期号目录 | `ep7` `ep8`… | `ai01` `ai02`… |
 | 角标 | **2026-10 起不再打角标** | **不再打角标** |
 | 栏目卡 `type: series` | 有，开场钩子之后 | **没有**，开场用普通 `title` 场景 |
-| 口播稿标题 | `# 8/100｜标题` | `# 标题` |
+| 讲稿卡标题 | `# 8/100｜标题 — 讲稿卡` | `# 标题 — 讲稿卡` |
 
 脚本按期号前缀自动分（`new_episode.py ai01` 就全对）；发布清单里写 `<!-- SERIES xxx -->` 可以覆盖栏目名。两个栏目的照片风格、字体、音效都一样，只有这几处身份标识不同。
 
@@ -38,16 +38,16 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 
 | 阶段 | 我做 | 用户做 |
 |---|---|---|
-| ① 写稿 | 口播稿 + 发布清单（含画面与素材清单） | 确认稿子 |
+| ① 写稿 | 讲稿卡 + 发布清单（含画面与素材清单） | 确认讲稿卡 |
 | ② 出图 | — | 按出图清单用即梦 / MJ 出图，放进一个文件夹 |
-| ③ 录音 | — | 照剪映版念，剪映导出 srt（中文，一行一句） |
-| ④ 渲染 | 入库 → 对齐时间轴 → 填 photo.json → 拼图给用户看 → 40 秒小样 → 全片 + 剪辑说明 | 看拼图和小样提意见 |
+| ③ 录制 | — | 拿讲稿卡自由讲，相机 + 录音笔；`工具/aroll-prep` 出粗剪 mp4 + srt + words.json |
+| ④ 渲染 | 入库 → 填要点起点表 → make_timeline → 填 photo.json → 拼图给用户看 → 40 秒小样 → 全片 + 剪辑说明 | 看拼图和小样提意见 |
 
 ---
 
 ## 写稿阶段：画面与素材清单
 
-写在发布清单 `## 画面与素材清单` 下，三部分。完整样例见第 6 期发布清单。
+写在发布清单 `## 画面与素材清单` 下，三部分。完整样例见第 6 期发布清单（它的分场景表还是老的行号口径，场景表按下面第 2 节写）。
 
 ### 1. 全局风格
 
@@ -103,18 +103,18 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 ```markdown
 ### 分场景
 
-| # | 场景 id | 起始句 | 这段在讲什么 | 图 | 叠字 | 环境声 |
+| # | 场景 id | 起始要点 | 这段在讲什么 | 图 | 叠字 | 环境声 |
 |---|---|---|---|---|---|---|
-| 01 | shop | 0 | 晚七点排队，老板再叫一个人 | S01 | 「门口排了十几个人」「老板：再叫一个人 +1」「这下总该快了吧？」 | 奶茶店 |
-| 05 | chapter | 10 | 第 1 章 章节卡 | — | — | — |
-| 07 | bars | 13 | 1→5 人出杯 30/60/80/85/87?，柱状图 | S08 S02 | 柱状图（代码）「第四个人：只多了 5 杯」 | — |
+| 01 | shop | 0.1 | 晚七点排队，老板再叫一个人 | S01 | 「门口排了十几个人」「老板：再叫一个人 +1」「这下总该快了吧？」 | 奶茶店 |
+| 05 | chapter | 1.0 | 第 1 章 章节卡 | — | — | — |
+| 06 | bars | 1.1 | 1→5 人出杯 30/60/80/85/87?，柱状图 | S08 S02 | 柱状图（代码）「第四个人：只多了 5 杯」 | — |
 ```
 
 - **场景 id**：小写英文，之后就是代码里的名字。章节标题行固定 `chapter`。
-- **起始句**：口播稿行号，从 0 起，章节标题也占一号。写之前先跑 `python 工具/video-render/scripts/build_timeline.py <口播稿.md> epN --list` 看编号。第一行必须是 0。
-- **切分粒度**：一个场景 = 一个画面主体，通常 4–12 行（口播稿一行最多 16 字宽，见 AGENTS.md）、10–30 秒；一段话里数字连续变化（柱状图、表格）可以放一个长场景。5 分钟的片子 20–25 个场景。
+- **起始要点**：讲稿卡的要点 id（`章.序`：开头 `0.1` 起，第 N 章 `N.1` 起）。第一行必须是 `0.1`；章节卡行写 `1.0` / `2.0` / `3.0`，场景 id `chapter`，三章都要有；章节卡的下一行必须从 `N.1` 开始。讲稿卡增删要点会让后面的 id 变，场景表跟着改（脚本会报不存在的 id）。
+- **切分粒度**：一个场景 = 一个画面主体，从它的起始要点讲到下一个场景的起始要点之前，通常 1–3 条要点、10–30 秒；一段话里数字连续变化（柱状图、表格）可以放一个长场景。场景只能从要点开头开始，想在一条要点中间换画面，就在讲稿卡里把它拆成两条。
 - **图**：可以写多张（第一张是底，第二张在场景中途淡入切换），可以复用别的场景的图。纯文字卡写 `—`。
-- **叠字**：每条「」一句，按出现顺序挂到场景内的句子上；图表写「柱状图（代码）」这类说明。叠字不是字幕，是**提炼**：短、有数字、有对比。
+- **叠字**：每条「」一句，按顺序挂到场景内的要点上（第 i 条叠字 → 第 i 条要点；多出来的挂在最后一条上，每条再晚 3 秒）；图表写「柱状图（代码）」这类说明。叠字不是字幕，是**提炼**：短、有数字、有对比。
 - **环境声**：按 `工具/音效库/补充音效清单.md` 里的名字写（奶茶店 / 街道夜晚 / 森林 / 办公室 / 商场 / 厨房 / 雨 / 咖啡馆），只在开场、金句、结尾这类需要氛围的场景写。
 
 
@@ -181,14 +181,14 @@ description: 为像素呼吸的口播视频做 B-roll 动画轨（写实照片�
 
 **「文字放哪侧」写画面区域名**（3 列 × 3 行：`TL TC TR / ML MC MR / BL BC BR`，整行居中用 `TW MW BW`）。这一列同时是给用户出图时的留白提示和脚本填 `box` / `grad` 的依据——同一套词，出图、填 JSON、看拼图提意见都用它，不用再翻译"上 1/3"是多少像素。详见 `references/photo-json.md`「画面区域」。
 
-写完跑一次校验（起始句、id、列出要出的图），并且**顺手把渲染工程搭起来、先用占位图渲一张拼图**——版式问题在用户出图之前就能发现：
+写完跑一次校验（起始要点、id、列出要出的图），并且**顺手把渲染工程搭起来、先用占位图渲一张拼图**——版式问题在用户出图之前就能发现：
 
 ```bash
 # 从工作区根目录进来；Windows 把所有 python3 换成 python
 cd 工具/video-render
 python3 scripts/new_episode.py epN        # AI经济学期用 ai01、ai02
-python3 scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" epN     # → scenemap / scene-names / photo.json 骨架
-python3 scripts/estimate_timeline.py "<口播稿.md>" epN src/epN/scenemap.json   # 按字数估算的预览时间轴（录完音会被 srt 版覆盖）
+python3 scripts/scenes_from_checklist.py "<发布清单.md>" "<讲稿卡.md>" epN     # → scenemap / scene-names / photo.json 骨架，打印每个场景的要点范围
+python3 scripts/make_timeline.py "<讲稿卡.md>" epN [--cpm 200]                # 录前：按要点字数估时的预览时间轴（录完用 --starts 覆盖）
 python3 scripts/placeholder_photos.py epN                                     # 没到的图先用占位图
 # 把 photo.json 从骨架填成正式版（见渲染阶段第 2 步），然后：
 python3 scripts/render.py epN sheet
@@ -198,35 +198,35 @@ python3 scripts/render.py epN sheet
 
 ---
 
-## 渲染阶段：收到字幕和图之后
+## 渲染阶段：收到粗剪和图之后
 
 ### 0. 收料检查
 
-- srt：中文、一行一句、和剪映版一一对应。双语的也行（只取第一行）。
+- 粗剪：`工具/aroll-prep` 出的粗剪 mp4 + srt + words.json（分段录的先拼成一条）。字幕从录音来，不从讲稿卡导；srt 用 aroll-prep 的或剪映识别的都行。
 - 图：一个文件夹，文件名里有编号。
-- 用户如果临场改了词：脚本能容忍少量改词、漏一两句（会打印出入），出入太多会停下 → 先把口播稿改成实际念的版本。
+- 要点起点表 `src/<ep>/starts.json`（录完后手填）：对照粗剪 srt / words.json，记下每条要点开口的时间——`{"0.1": "00:00.0", "0.2": "00:07.4", …, "1.0": "01:00.2", …, "end": "08:19.5"}`。讲稿卡里每个 id 都要有（含 `N.0`），值是秒数或 `mm:ss.s`，时间以和 A-roll 同一条时间线的粗剪为准；`N.0` = 上一章最后一句说完；`end` = 最后一句说完（给了 `--srt` 可省）。
 
 ### 1. 建期 + 入库 + 时间轴
 
 ```bash
 cd 工具/video-render
 python3 scripts/new_episode.py ep7                                            # 写稿阶段没建的话：建 src/ep7/、public/ep7/photos/，注册 Ep7Photo / Ep7PhotoCheck / Ep7Sheet
-python3 scripts/scenes_from_checklist.py "<发布清单.md>" "<口播稿.md>" ep7       # → scenemap.json、scene-names.json、photo.json 骨架（已有 photo.json 不覆盖）
+python3 scripts/scenes_from_checklist.py "<发布清单.md>" "<讲稿卡.md>" ep7       # → scenemap.json、scene-names.json、photo.json 骨架（已有 photo.json 不覆盖）
 python3 scripts/import_photos.py "<用户的图片文件夹>" ep7 --need "<发布清单.md>"  # 裁 16:9、统一命名 → public/ep7/photos/，报缺图；会覆盖同名占位图
-python3 scripts/timeline_from_srt.py "<口播稿.md>" "<口播.srt>" ep7 src/ep7/scenemap.json   # → timeline.json（覆盖估算版）
+python3 scripts/make_timeline.py "<讲稿卡.md>" ep7 --starts src/ep7/starts.json --srt "<粗剪.srt>"   # → timeline.json（source=starts，覆盖估算版）
 ```
 
 缺图时先告诉用户缺哪几张；能用别的图顶就在 photo.json 里改 `photo`，别等。
 
 ### 2. 填 photo.json
 
-骨架已经有场景、照片、叠字。逐个场景补：推拉方向、压暗侧、每条字的大小 / 颜色 / 出现句、强调标记、音效。字段说明和套路见 `references/photo-json.md`。原则：
+骨架已经有场景、照片、叠字。逐个场景补：推拉方向、压暗侧、每条字的大小 / 颜色 / 出现在第几条要点、强调标记、音效。字段说明和套路见 `references/photo-json.md`。原则：
 
 - **场景不写 `box` / `grad` 就走本期 `style.layout` 的母版**；只在照片主体位置和母版冲突时单独给 `box`。别每个场景都手写 `box`，否则换母版就不生效了。
 - 字压在照片相对干净的一侧（和出图清单里的留白一致），`grad` 设成同一侧。
-- 一个场景内：第一句出小字（dim）铺垫，关键句出大字（白 / 金），数字单独做 `big` 或 `count`。
+- 一个场景内：第一条要点出小字（dim）铺垫，关键要点出大字（白 / 金），数字单独做 `big` 或 `count`。
 - 要划掉的旧判断用 `strikeAt`；两个对立项用 `compare` 或 `split`；盖章式关键词用 `stamp`。
-- 柱状图、表格、折线这类按句子逐步出现的图表写进 `src/ep7/custom.tsx`，参考 `src/ep6/custom.tsx`；photo.json 里 `{"type":"custom","name":"xxx"}` 引用。
+- 柱状图、表格、折线这类按要点逐步出现的图表写进 `src/ep7/custom.tsx`，参考 `src/ep6/custom.tsx`；photo.json 里 `{"type":"custom","name":"xxx"}` 引用。
 - 音效默认已经配好（字出现 pop、盖章 impact、数字 ding…），只在揭晓点手动加 `impact` / `error` / `cash`，别处不用管。
 
 ### 3. 看图 → 小样 → 全片
@@ -253,7 +253,7 @@ python3 scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选�
 1. 遮脸 / 遮主体：字压在照片里的人脸、产品、手上 → 换 `box` 到另一个区域，或改 `origin` 把主体推开
 2. 出界：字超出画面边缘、换行后撑出文字框 → 缩 `size` 或改 `w`
 3. 进字幕区：任何字的底边越过 y=820 红线 → 挪上去；`center` 和 `bottom` 布局重点查最后一条
-4. 该收没收：上一句的字还留在屏上，和下一句的字叠在同一区域 → 给前一条加 `until`
+4. 该收没收：上一条要点的字还留在屏上，和下一条要点的字叠在同一区域 → 给前一条加 `until`
 5. 空档：一个场景连续 8 秒以上没有任何字出现或变化 → 补一条小字，或拆场景
 6. 同图同动：连续三个场景用同一张图、同一个推拉方向 → 换 `move` 或 `origin`
 7. 对比度：字压在照片亮部看不清 → `grad` 设到字那一侧，或加 `dim`
@@ -268,7 +268,7 @@ python3 scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选�
 # 用户原片不动，剪映里照用原片的声音
 ffmpeg -i "<A-roll.mp4>" -vf scale=1920:1080 -r 30 -an -c:v libx264 -crf 18 -preset fast public/epN/aroll.mp4
 # 核对：代理时长和 srt 最后一条结束时间差不超过 1 秒，否则先问用户是不是换过剪辑
-# photo.json 顶层写 aroll（src / idle / face / cues），cues 的 at 是口播稿行号
+# photo.json 顶层写 aroll（src / idle / face / cues），cues 的 at 是要点 id：["0.1", "0.4"] = [起, 止)，止写 "end" 到片尾（老期写的是口播稿行号，照旧认）
 python3 scripts/aroll_cues.py epN            # 看每段模式 / 时间，核对节奏
 python3 scripts/render.py epN arollsheet     # 拼图：小圆有没有压到字
 python3 scripts/render.py epN arollclip 3070 3250   # 单看一处切换
@@ -291,7 +291,7 @@ rm -rf out/epN-seq
 
 **换机器重渲**（`public/` 和 `*.mp4` 都不进仓库）：pull 之后 `public/epN/` 是空的，先 `import_photos.py`（图在选题文件夹 `图片素材/`，已入库）、有卡再 `import_cards.py`、`import_sfx.py`，再按上面 ffmpeg 一行转 A-roll 代理；然后按上面整片渲 + 切段。`render_seq.py` 第一次跑要 `npx remotion browser ensure`。
 
-cue 怎么写：开场第一句 `full`；"我猜 / 我的感受 / 我打算"这类第一人称判断 `full` 或 `half`；数据、历史、图表段留 `bubble`（默认）；章节卡自动 `hide`。每段 bubble 超过 60 秒就插一段 full。
+cue 怎么写：开场第一条要点 `full`；"我猜 / 我的感受 / 我打算"这类第一人称判断 `full` 或 `half`；数据、历史、图表段留 `bubble`（默认）；章节卡自动 `hide`。每段 bubble 超过 60 秒就插一段 full。
 
 ### 4. 交付
 
@@ -301,7 +301,7 @@ cue 怎么写：开场第一句 `full`；"我猜 / 我的感受 / 我打算"这�
 python3 scripts/split_scenes.py out/ep7-photo.mp4 ep7 "<选题文件夹>/剪辑素材-分场景-仅音效" src/ep7/scene-names.json
 ```
 
-写 `<选题名>-剪辑说明.md`（格式照第 6 期的）：文件用法、推荐剪法、分场景起点表（场景号 / 名 / 口播起点 / 时长 / 第一句）、重新生成命令。
+写 `<选题名>-剪辑说明.md`（格式照第 6 期的）：文件用法、推荐剪法、分场景起点表（场景号 / 名 / 口播起点 / 时长 / 第一条要点）、重新生成命令。
 
 最后提交 `工具/video-render` 的改动。
 

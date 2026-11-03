@@ -6,18 +6,27 @@ import {useTitleFont} from './kit';
 import {Sheet, pickThumbs, sheetHeight} from './sheet';
 import {ArollLayer, buildArollSegs} from './aroll';
 
-// 口播稿行号 → 帧：每个场景的 steps 和稿子的行一一对应（章节标题也占一行）
-export const lineFrames = (tl: Timeline): number[] => {
-  const out: number[] = [];
-  tl.scenes.forEach((sc) => (sc.steps as number[]).forEach((st) => out.push(sc.from + st)));
-  return out;
+// A-roll cue 的 at → 帧。讲稿卡期写要点 id（"1.3"，"end" = 片尾），查 make_timeline.py 写的 timeline.points；
+// ep8 及以前写口播稿行号：每个场景的 steps 和稿子的行一一对应（章节标题也占一行），展平后第 i 个就是第 i 行
+export const cueFrame = (tl: Timeline) => {
+  const lines: number[] = [];
+  tl.scenes.forEach((sc) => (sc.steps as number[]).forEach((st) => lines.push(sc.from + st)));
+  return (at: number | string): number => {
+    // 第一句 / 第一条要点从第 0 帧算（开口前有几帧静音，别让 idle 闪一下）
+    if (typeof at === 'number') return at <= 0 ? 0 : at >= lines.length ? tl.total : lines[at];
+    if (at === '0.1') return 0;
+    if (at === 'end') return tl.total;
+    const fr = tl.points?.[at];
+    if (fr === undefined) throw new Error(`aroll cue 里的要点 id「${at}」timeline.points 里没有：讲稿卡改过要点就改 cue，再重跑 make_timeline.py`);
+    return fr;
+  };
 };
 
 export type Comp = {id: string; total: number; C: React.FC; width?: number; height?: number};
 
 export const photoComps = (id: string, timeline: Timeline, spec: EpisodeSpec, custom: CustomMap = {}, names: Record<string, string> = {}): Comp[] => {
   const built = buildPhotoEpisode(spec, custom);
-  const segs = spec.aroll ? buildArollSegs(spec.aroll, lineFrames(timeline), timeline.total, timeline.scenes.map((sc: any) => ({...sc, side: spec.scenes.find((x) => x.id === sc.scene)?.arollSide, pos: spec.scenes.find((x) => x.id === sc.scene)?.arollPos}))) : [];
+  const segs = spec.aroll ? buildArollSegs(spec.aroll, cueFrame(timeline), timeline.total, timeline.scenes.map((sc: any) => ({...sc, side: spec.scenes.find((x) => x.id === sc.scene)?.arollSide, pos: spec.scenes.find((x) => x.id === sc.scene)?.arollPos}))) : [];
   const Ep: React.FC<{subtitles?: boolean; grid?: boolean; aroll?: boolean}> = ({subtitles, grid, aroll}) => {
     useTitleFont();
     const overlay = aroll && spec.aroll ? <ArollLayer spec={{...spec.aroll, layout: spec.aroll.layout ?? spec.style?.layout}} segs={segs} /> : undefined;

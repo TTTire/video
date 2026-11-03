@@ -3,7 +3,7 @@
   期号：《100 个经济学原理》用 ep7、ep8…（角标显示期号）；AI经济学用 ai01、ai02…（角标不显示期号，栏目名自动是「AI经济学」）
 
 生成（已存在的不覆盖）：
-- src/<epN>/timeline.json   占位（跑 timeline_from_srt.py 后会被覆盖）
+- src/<epN>/timeline.json   占位（跑 make_timeline.py 后会被覆盖）
 - src/<epN>/scenemap.json / scene-names.json / photo.json   占位（跑 scenes_from_checklist.py 后会被覆盖）
 - src/<epN>/custom.tsx      特殊图表写这里
 - public/<epN>/photos/      照片入库目录
@@ -34,7 +34,7 @@ write_if_absent(f"{d}/scenemap.json", "{}")
 write_if_absent(f"{d}/scene-names.json", "{}")
 write_if_absent(f"{d}/photo.json", json.dumps({"ep": ep, "badge": badge, "series": series, "photos": f"{ep}/photos", "chapterPhoto": "S01", "style": {"badge": False, "scale": "v2", "textEnter": "fade", "cardSkin": "tactile"}, "scenes": []}, ensure_ascii=False, indent=2))
 write_if_absent(f"{d}/custom.tsx", f'''// 第 {n} 期的特殊图表（柱状图、表格、对比图等）。photo.json 里用 {{"type":"custom","name":"xxx"}} 引用。
-// 组件拿到 P（steps/step/dur）：p.step 是当前到了场景内第几句，at(p, i) 是第 i 句开始的帧。参考 src/ep6/custom.tsx。
+// 组件拿到 P（steps/step/dur）：p.step 是当前到了场景内第几条要点，at(p, i) 是第 i 条要点开始的帧（同一条要点里的先后自己加帧数）。参考 src/ep6/custom.tsx。
 import React from 'react';
 import {{P}} from '../photo/kit';
 import {{CustomMap}} from '../photo/engine';
