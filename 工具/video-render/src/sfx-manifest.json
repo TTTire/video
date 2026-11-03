@@ -9,6 +9,18 @@
   {
    "file": "impact_2.wav",
    "dur": 1.6,
+   "from": "impact-脆.mp3",
+   "variant": "脆"
+  },
+  {
+   "file": "impact_3.wav",
+   "dur": 1.6,
+   "from": "impact-闷.mp3",
+   "variant": "闷"
+  },
+  {
+   "file": "impact_4.wav",
+   "dur": 1.6,
    "from": "重击- impact.mp3",
    "variant": "重击"
   }
@@ -16,6 +28,18 @@
  "ambience": [
   {
    "file": "ambience_1.wav",
+   "dur": 60.0,
+   "from": "ambience-商场.wav",
+   "variant": "商场"
+  },
+  {
+   "file": "ambience_2.wav",
+   "dur": 47.08,
+   "from": "ambience-街道夜晚.wav",
+   "variant": "街道夜晚"
+  },
+  {
+   "file": "ambience_3.wav",
    "dur": 60.0,
    "from": "ambience.mp3",
    "variant": null

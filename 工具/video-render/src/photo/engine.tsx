@@ -48,8 +48,8 @@ export type Item = Base & (
   | {type: 'rank'; rows: RankRow[]; orders: string[][]; orderAt?: number[]; w?: number; rowH?: number; size?: number; hi?: string}
   // 实物堆叠：n 个 unit（emoji 或字符），cols 列
   | {type: 'units'; n: number; unit: string; cols?: number; size?: number; max?: number; label?: string; color?: string}
-  // 液面：pct 0–100
-  | {type: 'fill'; pct: number; w?: number; h?: number; color?: string; label?: string; horizontal?: boolean}
+  // 液面：pct 0–100；showPct false 时不显示百分数（来源只给了“刚过一半”这种口径、没有精确数时用，label 写口径）
+  | {type: 'fill'; pct: number; w?: number; h?: number; color?: string; label?: string; horizontal?: boolean; showPct?: boolean}
   // 关系图：nodes 每个是一张卡（photocard 或纯字），edges 连线；坐标相对 box 左上角
   | {type: 'graph'; w?: number; h?: number; nodes: {id: string; x: number; y: number; w?: number; at?: number; img?: string; title?: string; sub?: string; text?: string}[]; edges: {from: string; to: string; at?: number; label?: string; color?: string}[]}
 );
@@ -332,7 +332,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
       return <div style={{opacity: f >= a ? 1 : 0}}><Rank rows={it.rows} orders={it.orders.slice(0, idx + 1)} stepAt={(i) => at(p, orderAt[i] ?? step)} step={idx} w={it.w ?? (box.w ?? 860)} rowH={it.rowH} size={it.size} hi={it.hi} /></div>;
     }
     case 'units': return <StackUnits n={it.n} at={a} unit={it.unit} cols={it.cols} size={it.size} max={it.max} label={it.label} color={it.color ? col(it.color, C.gold, C) : undefined} />;
-    case 'fill': return <div style={{opacity: f >= a ? 1 : 0}}><Fill pct={it.pct} at={a} w={it.w} h={it.h} color={it.color ? col(it.color, C.gold, C) : undefined} label={it.label} horizontal={it.horizontal} /></div>;
+    case 'fill': return <div style={{opacity: f >= a ? 1 : 0}}><Fill pct={it.pct} at={a} w={it.w} h={it.h} color={it.color ? col(it.color, C.gold, C) : undefined} label={it.label} horizontal={it.horizontal} showPct={it.showPct} /></div>;
     case 'graph': {
       const {cards} = React.useContext(SkinCtx);
       const nodes: GraphNode[] = it.nodes.map((n) => ({

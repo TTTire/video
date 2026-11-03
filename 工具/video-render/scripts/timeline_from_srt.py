@@ -3,6 +3,9 @@
 
 - 逐字稿每一句对应 srt 的一条字幕。比对时去掉标点、数字按原样；默认允许少量出入（相似度 ≥ 0.8），
   句数对不上时自动按内容对齐，并把漏念 / 多念 / 改词的句子列出来；--strict 时任何不一致都报错停下。
+- 逐字稿和字幕不是一句对一条时（口播稿按停顿断行、一条字幕拆成几行，或自由讲后把口播稿改成实际念的版本），
+  句级对齐出入太多会自动退到逐字对齐：每条字幕的时间按字数均摊到每个字，逐字稿每行取它匹配到的首尾字的时间；
+  匹配到的字不足九成仍然停下。
 - 双语字幕（中文一行 + 英文一行）只取第一行比对。
 - 章节标题口播里不念：章节卡放在上一句结束后 0.1 秒，显示 2.2 秒，盖住新章节第一句的开头。
 - 输出 src/<期号>/timeline.json；总时长 = 最后一句结束 + 2 秒，从 0 秒起和口播对齐。
@@ -71,6 +74,47 @@ def align(lines, cues):
     return pairs[::-1]
 
 
+def align_chars(lines, cues):
+    """逐字对齐：给每行写 start/end，返回出入列表。单字匹配不当锚点（太容易撞上“的”“了”）。"""
+    # 剪映会把一句长话导成前后两条文字一模一样的字幕（第二条常常只有零点几秒）：并成一条，
+    # 不然逐字匹配会贴到和下一条连着的第二份，整句晚 1–4 秒
+    merged = []
+    for a, b, txt in cues:
+        if merged and norm(merged[-1][2]) == norm(txt): merged[-1] = (merged[-1][0], b, merged[-1][2])
+        else: merged.append((a, b, txt))
+    cues = merged
+    ct, cc = [], []  # 字幕每个字的 (start, end, 条号) / 字
+    for j, (a, b, txt) in enumerate(cues):
+        t = norm(txt)
+        for i, ch in enumerate(t):
+            ct.append((a + (b - a) * i / len(t), a + (b - a) * (i + 1) / len(t), j)); cc.append(ch)
+    lc, owner = [], []
+    for li, it in enumerate(lines):
+        it.pop("start", None); it.pop("end", None)
+        t = norm(it["text"]); lc.extend(t); owner.extend([li] * len(t))
+    hit = [None] * len(lc)
+    for i, j, n in difflib.SequenceMatcher(None, lc, cc, autojunk=False).get_matching_blocks():
+        if n >= 2:
+            for k in range(n): hit[i + k] = j + k
+    problems, missing = [], []
+    for li, it in enumerate(lines):
+        hs = [h for h, o in zip(hit, owner) if o == li and h is not None]
+        n = owner.count(li)
+        if not hs:
+            missing.append(li); problems.append(f"  漏念  稿：{it['text']}"); continue
+        it.update(start=ct[hs[0]][0], end=ct[hs[-1]][1])
+        if len(hs) < n * 0.5: problems.append(f"  不像({len(hs)}/{n} 字)  稿：{it['text']}")
+    for li in missing:
+        prev = next((lines[k] for k in range(li - 1, -1, -1) if "start" in lines[k]), None)
+        nxt = next((lines[k] for k in range(li + 1, len(lines)) if "start" in lines[k]), None)
+        t0 = prev["end"] if prev else 0.0
+        lines[li].update(start=t0, end=nxt["start"] if nxt else t0)
+    used = set(h for h in hit if h is not None)
+    for j, (a, b, txt) in enumerate(cues):
+        extra = "".join(ch for k, ch in enumerate(cc) if ct[k][2] == j and k not in used)
+        if len(extra) >= 3: problems.append(f"  多念  字幕：{txt}（没对上的字：{extra}）")
+    return sum(h is not None for h in hit) / max(1, len(lc)), problems
+
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
     strict = "--strict" in sys.argv
@@ -105,13 +149,17 @@ def main():
             t1 = nxt["start"] if nxt else t0
             lines[li].update(start=t0, end=t1)
         if len(lines) != len(cues): problems.insert(0, f"  句数：逐字稿 {len(lines)} 句，字幕 {len(cues)} 条")
+        bad = sum(p.lstrip().startswith(("不像", "漏念", "多念")) for p in problems)
+        if bad > max(3, len(lines) * 0.05) and not strict:
+            cover, problems = align_chars(lines, cues)
+            print(f"句级对齐出入 {bad} 处，改为逐字对齐：逐字稿 {len(lines)} 句 / 字幕 {len(cues)} 条，{cover:.0%} 的字对上了")
+            if cover < 0.9:
+                print("\n".join(problems)); sys.exit("对上的字不足九成，先把口播稿改成实际念的版本再跑（或确认字幕文件对）。")
 
     if problems:
         print(f"逐字稿和字幕有 {len(problems)} 处出入：")
         print("\n".join(problems))
-        if strict or any(p.lstrip().startswith(("不像", "漏念", "多念", "句数")) for p in problems):
-            if strict or sum(p.lstrip().startswith(("不像", "漏念", "多念")) for p in problems) > max(3, len(lines) * 0.05):
-                sys.exit("出入太多，先把口播稿改成实际念的版本再跑（或确认字幕文件对）。")
+        if strict: sys.exit("--strict：有出入就停。")
         print("（已按内容对齐继续生成；建议把口播稿改成实际念的版本，保持两边一致）")
 
     # 章节卡：上一句结束后 0.1 秒开始
