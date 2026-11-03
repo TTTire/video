@@ -1,0 +1,550 @@
+{
+  "ep": "ai04",
+  "badge": "",
+  "series": "AI经济学",
+  "photos": "ai04/photos",
+  "chapterPhoto": "S18",
+  "scenes": [
+    {
+      "id": "app",
+      "name": "电商平台上-AI-面试助手热销-60",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "全网热销 60 万+",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "实时听题 · 照着念",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "back",
+      "name": "公司往回走：谷歌-麦肯锡搬回线下",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "发 offer 前，至少见一面",
+          "at": 0
+        }
+      ],
+      "box": "TL",
+      "grad": "left",
+      "ambience": "办公室"
+    },
+    {
+      "id": "post",
+      "name": "Anthropic-招聘经理：不考编",
+      "photo": "S03",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "不考编程题了",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "Claude 做这些题，已经比人强",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "panic",
+      "name": "刷题的人第一反应：白刷了？",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "白刷了？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "题考的，是另一样东西",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "title",
+      "name": "片头",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "刷题为什么突然没用了",
+          "at": 0
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "interview",
+      "name": "面试一小时看不见干活的样子-只能看替",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "看不见干活的样子",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "只能看替身",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left",
+      "ambience": "办公室"
+    },
+    {
+      "id": "spence",
+      "name": "斯宾塞-1973-文凭这个替身",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "信号传递 · Spence 1973",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "一张文凭，不一定更会干活，但管用",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "costly",
+      "name": "假的贵-信号才管用",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "能力强 · 拿到它便宜",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "能力弱 · 拿到它很贵",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "信号管用，因为假的贵",
+          "at": 2
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "sixhundred",
+      "name": "刷题-600-小时-三个多月",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "600 小时",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "≈ 三个多月的上班时间",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "肯不肯，能不能",
+          "at": 2
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "ask",
+      "name": "题考的是假的有多贵；假的变便宜呢",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "假的，到底有多贵",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "假的要是变便宜了呢？",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "coder",
+      "name": "21-岁学生一周做出作弊软件-挂在后",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "2025 年 3 月 · 21 岁",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "用 AI 不到一周",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "录屏看不见 · 摄像头看不见",
+          "at": 2
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "rescind",
+      "name": "过了亚马逊面试-offer-全撤-软",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "offer → 撤回",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "$60 / 月，照卖",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "townhall",
+      "name": "谷歌内部会-Pichai：一部分放回",
+      "photo": "S09",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "“能不能把线下面试要回来”",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "Pichai：一部分面试放回线下",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "bank",
+      "name": "国内银行-AI-面试-助手-138-",
+      "photo": "S10",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "138 元 · 2 小时",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "398 元起 · 眼神矫正",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "pooling",
+      "name": "信号逻辑变了：混同",
+      "photo": "S11",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "600 小时 → 138 元",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "混同 POOLING",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "信号都一样，分不出谁是谁",
+          "at": 2
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "blind",
+      "name": "题还在-答案还对-但不再告诉公司任何",
+      "photo": "S11",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "题目还在，答案还对",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "但不再告诉公司任何事",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "newsignal",
+      "name": "麦肯锡-谷歌-Anthropic-换",
+      "photo": "S12",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "麦肯锡：发 offer 前见一面",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "谷歌：至少一轮线下",
+          "at": 1,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "Anthropic：看周末做出来的小原型",
+          "at": 2
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "amazon",
+      "name": "亚马逊准则：token-数靠不住-看",
+      "photo": "S13",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "deeply flawed · 靠不住",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "看长期的业务结果",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "5 月关掉内部排行榜",
+          "at": 2
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "twosignals",
+      "name": "旧信号-vs-新信号",
+      "photo": "S14",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "会不会做题 → 做出过什么",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "AI 一晚上能替你做 / 到今天还不行",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "stillworks",
+      "name": "线下笔试-白板没失效；银行抬高造假成",
+      "photo": "S15",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "造假还是贵的",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "失效的，是隔着屏幕那一类",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "question",
+      "name": "问自己：别人用-AI-一晚上能不能做",
+      "photo": "S16",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "别人用 AI 一晚上，能不能做出来？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "能 · 不值钱了",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "不能 · 正在变贵",
+          "at": 2
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "pku",
+      "name": "北大蹭课-三个筛选器-非共识判断",
+      "photo": "S17",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "“你有什么非共识的判断？”",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "答不上来，算正常",
+          "at": 1
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "selfconsistent",
+      "name": "判断怎么形成-AI-能编-追两句就散",
+      "photo": "S17",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "怎么形成的？一步一步讲",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "追两句，就散了",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "它贵，就贵在这",
+          "at": 2
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "close",
+      "name": "题没白刷-公司不再隔屏认凭证；留给自",
+      "photo": "S18",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "题没白刷",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "公司不再隔着屏幕认凭证",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "我有什么非共识的判断",
+          "at": 2
+        }
+      ],
+      "box": "TL",
+      "grad": "left",
+      "ambience": "办公室"
+    }
+  ],
+  "style": {
+    "layout": "topleft",
+    "tint": "#0F1A22",
+    "tintOpacity": 0.22,
+    "enter": "blur",
+    "letterbox": true,
+    "grain": false,
+    "badge": false,
+    "scale": "v2",
+    "textEnter": "fade",
+    "cardSkin": "tactile",
+    "theme": {
+      "gold": "#E3B04B",
+      "coral": "#D4553F",
+      "teal": "#5FA8A0",
+      "bg": "#0B0F14",
+      "dim": "#C4CBD3"
+    }
+  }
+}
