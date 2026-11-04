@@ -624,7 +624,7 @@
       "move": "in",
       "origin": "MR",
       "boxes": {
-        "chain": "ML"
+        "cards": "ML"
       },
       "items": [
         {
@@ -636,24 +636,29 @@
           "untilDelay": 395
         },
         {
-          "type": "stack",
+          "type": "photorow",
           "at": 0,
-          "delay": 165,
-          "box": "chain",
-          "items": [
+          "box": "cards",
+          "w": 280,
+          "gap": 28,
+          "cards": [
             {
-              "big": "麦肯锡",
-              "small": "发 offer 前，至少线下见一面",
-              "color": "white"
+              "img": "C01",
+              "title": "线下见面",
+              "sub": "McKinsey",
+              "delay": 160
             },
             {
-              "big": "谷歌",
-              "small": "至少一轮线下面试",
-              "color": "white"
+              "img": "C02",
+              "title": "线下面试",
+              "sub": "Google",
+              "delay": 275
             },
             {
-              "big": "Anthropic",
-              "small": "那位经理：看周末小原型"
+              "img": "C03",
+              "title": "看小原型",
+              "sub": "Anthropic 一位经理",
+              "delay": 350
             }
           ]
         },
