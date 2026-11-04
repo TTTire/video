@@ -18,7 +18,8 @@
     "theme": {"gold": "#D9C49C", "coral": "#C9545A", "teal": "#9DB9CF", "bg": "#070B14", "dim": "#B9C0CC"},
     "tint": "#1B2A44", "tintOpacity": 0.3,   // 所有照片统一罩色
     "letterbox": true, "grain": false,       // 2.35:1 黑边 / 胶片颗粒
-    "enter": "cut"                 //   场景入场：blur | cut | slideL | zoom | slideUp
+    "enter": "cut",                //   场景入场：blur | cut | slideL | zoom | slideUp
+    "sfx": "sparse"                //   音效精简：字出现不响，只有变化响（2026-11 起新期默认）；不写 = 每条字一声 pop
   },
   "scenes": [ ... ]
 }
@@ -64,6 +65,7 @@
 | `letterbox` `grain` | true / false | 2.35:1 黑边 / 胶片颗粒 |
 | `cardSkin` | `tactile` / 不写 | 卡片质感。`tactile` = 实物感：厚底边、细金边、四角角花、±6px 漂动、从侧面飞入带轻回弹（**2026-10-29 起新期默认**）；不写 = 旧的扁平半透明，已发布各期不变 |
 | `cards` | 路径 | 卡内小图目录（`public/` 下），`photocard` / `photorow` / `graph` 的 `img` 从这里取；默认 `<ep>/cards` |
+| `sfx` | `sparse` / 不写 | 音效密度。`sparse` = 精简（**2026-11 起新期默认**，`new_episode.py` / `scenes_from_checklist.py` 自动写上）：`h` `t` `tag` `photocard` `photorow` 出现不响，响的只剩变化——场景开头 pop（`enterSfx`）、章节卡 / 栏目卡、`stamp` `big` `count` `nums` `panel` `compare`、`strikeAt`、`swap` / `split`、`odometer` `flap` `slam` `units` `fill`、元素上显式写的 `sfx`；出镜层切换正好落在换场景那一帧时不再叠一声 whoosh。不写 = 旧的每条字一声 pop，已发布各期不变 |
 | `tint` `tintOpacity` | `#hex` / 0–1 | 统一罩色 |
 | `theme` | `{gold, coral, teal, bg, white, dim}` | 本期配色 |
 
@@ -80,7 +82,7 @@
 | `label` `tabColor` | 卡片上的分类签文字 / 签底色（不写走 dim；只允许 `dim` `gold`，teal/coral 留给正负对比） |
 | `font` | 单个元素换字体：`song` 锦书宋（定义卡大词）/ `kai` 文楷 / `num` 数黑体 / `sans` 思源黑 / `title` 得意黑 |
 | `quote` | `true` = 对白：文楷 + 金色引号（h / t / tag 都支持；原文自带的引号会自动去掉） |
-| `sfx` | 出现时的音效名；`null` 不响；默认按类型（h/t/tag→pop，stamp→stamp/impact，big/count→ding，panel→page/flip，compare→swipe，nums→drop/impact，clock→click/tick） |
+| `sfx` | 出现时的音效名；`null` 不响；默认按类型（h/t/tag→pop，stamp→stamp/impact，big/count→ding，panel→page/flip，compare→swipe，nums→drop/impact，clock→click/tick）；`style.sfx = "sparse"` 时 h / t / tag / photocard 默认不响，写了 `sfx` 照响 |
 | `vol` | 音量 0–1 |
 
 ## 元素类型
@@ -178,11 +180,12 @@ BL  BC  BR     BW
 |---|---|---|
 | `full` | 全屏 | 开场第一条要点（观众先见人）、第一人称判断（"我猜"、"我自己的感受"）、结尾 |
 | `half` | 左侧 640×720 圆角卡（x 60–700、y 90–810），不碰右侧字列和字幕区 | 讲自己经历、带情绪的段落，又不想丢掉 B-roll 的字 |
-| `bubble` | 直径 260 小圆（左下圆心 220,650 / 右上 1770,290），3px 暖白细边 + 软投影（照小Lin说的做法），默认取半身（`bubbleView`） | 数据、历史、图表段——B-roll 是主角，你在角落 |
+| `bubble` | 直径 260 小圆（左下圆心 220,650 / 右上圆心 1770,290），3px 暖白细边 + 软投影（照小Lin说的做法），默认取半身（`bubbleView`）；场景写 `arollSize` 放大 | 数据、历史、图表段——B-roll 是主角，你在角落 |
 | `hide` | 不出现 | 章节卡、栏目卡（`hideOn` 默认就是这两个场景，不用写要点 id） |
 
 - **小圆放哪边自动躲字**：`style.layout=right`（字在右）→ 小圆左下；否则右上。右上这个位置整个圆都在 B-roll 不放字的 `SAFE_RIGHT` 区（x≥1620）里，和任何母版的字都不碰。某个场景字在另一边，场景里写 `"arollSide": "right"` 单独指定；要放别处写 `"arollPos": [x, y]` 直接给圆心。**右下角不能放**——抖音右侧图标列和「全屏观看」按钮压在那里（依据和换算见 `douyin-safe-zone.md`）。两个场景小圆换位置时平滑滑过去，不响。**每个场景都要单独看**：拼图每场只抽 4 帧，后出现的字容易漏，交付前把成片按 2 秒一帧抽一遍
-- **切换动效**（24 帧，慢进慢出，每次 whoosh）：bubble ⇄ full 是圆形 iris——圆从小圆位置长大到盖满屏 / 缩回，边缘一圈白光跟着扩；→ half 是卡从左 wipe 开、前沿一道亮线，小圆缩进卡里脸的位置；half → full 是圆从卡里的脸长出来
+- **小圆大小**（2026-11 起）：场景写 `"arollSize": "m"`（1.3 倍 = 338）或 `"l"`（1.6 倍 = 416），不写是 `bubble.d`（默认 260）。放大时外沿贴住默认小圆的外沿往画面里长，不出画、不进字幕区：右上圆 m 占 x 1562–1900 / y 160–498，l 占 x 1484–1900 / y 160–576；左下圆 m 占 x 90–428 / y 442–780，l 占 x 90–506 / y 364–780。多出来的部分进了字列和照片那一侧：topleft 母版只用 L 列（x ≤ 990）的场景放得下，有 TR / MR / TW 字的别放大；right 母版的左下圆放大会碰 L 列和 BL 的字。写了 `arollPos` 时以它为圆心原地放大。什么时候放大见 SKILL.md 3b
+- **切换动效**（24 帧，慢进慢出，每次 whoosh）：bubble ⇄ full 是圆形 iris——圆从小圆位置长大到盖满屏 / 缩回，边缘一圈白光跟着扩；→ half 是卡从左 wipe 开、前沿一道亮线，小圆缩进卡里脸的位置；half → full 是圆从卡里的脸长出来。bubble 之间换位置、换大小是平滑滑过去，不响；`style.sfx = "sparse"` 时，正好落在换场景那一帧（±3 帧）的切换也不响——那一下场景自己有 pop / 章节卡 flip
 - 节奏经验：每段 bubble 别超过 40–60 秒，中间切回 full 露 6–10 秒，不然像配音 PPT
 - 查表：`python3 scripts/aroll_cues.py <epN>` 打印每段的模式 / 要点 / 时间 / 第一条要点，粘进剪辑说明
 - 合成：有 `aroll` 时多出 `EpNFull`（交付）/ `EpNFullCheck`（带字幕）/ `EpNFullSheet`（拼图）；`render.py <epN> aroll | arollcheck | arollsheet | arollclip <起> <止>`

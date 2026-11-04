@@ -9,7 +9,7 @@ import {CountUp, FlyIn, Sfx, SfxName, Stamp, StrikeLine, useSpringAt, TextEnter,
 import {at, Box, BoxSpec, CardKind, CardShell, useInk, Clock, Em, FONTS, FontKey, Grad, H, P, Panel, Photo, PHOTO_THEME, Quote, Rings, SHADOW, Spot, T, Tag, TITLE_FONT, TITLE_FONTS, clamp, ease, regionBox, regionOrigin, regionXY, SAFE_RIGHT_X} from './kit';
 import {CardEnter, Graph, GraphEdge, GraphNode, TactileCardShell, TPhoto} from './tactile';
 import {Fill, Flap, Odometer, Rank, RankRow, RowSweep, Slam, StackUnits} from './numfx';
-import type {ArollSpec} from './aroll';
+import type {ArollSize, ArollSpec} from './aroll';
 export type {BoxSpec, CardKind} from './kit';
 
 // ---------- 类型 ----------
@@ -68,6 +68,7 @@ export type SceneSpec = PhotoLayer & {
   // 出镜小圆在这个场景放哪边（这场的字在左就写 "right"）；不写按 style.layout 反向
   arollSide?: 'left' | 'right';
   arollPos?: [number, number];   // 小圆圆心，两边都有字时用
+  arollSize?: ArollSize;          // 小圆放大：m 1.3 倍 / l 1.6 倍（外沿贴角往画面里长，这场的字和照片主体要让得开）
   center?: boolean; ambience?: boolean | string; enterSfx?: SfxName | null;
   items?: Item[];
   // type: 'series'
@@ -92,6 +93,9 @@ export type Style = {
   cardSkin?: 'flat' | 'tactile';
   // 卡内小图目录（public/ 下），photocard / graph 的 img 从这里取；默认 <ep>/cards
   cards?: string;
+  // 音效密度：sparse = 精简（2026-11 起新期默认写这个）——字（h / t / tag）和 photo 卡出现不响，只有"变化"响：
+  // 换场景、盖章、砸入、翻牌、里程表、数字、划掉、换图、显式 sfx；出镜层切换落在换场景那一帧也不再叠响。不写 = 每条字一声 pop（已发布各期不变）
+  sfx?: 'sparse';
 };
 export type EpisodeSpec = {
   ep: string; badge: string; photos: string; chapterPhoto: string;
@@ -126,6 +130,7 @@ const SCALES: Record<'v1' | 'v2', Scale> = {
 };
 const ScaleCtx = React.createContext<Scale>(SCALES.v1);
 const SkinCtx = React.createContext<{skin: 'flat' | 'tactile'; cards: string}>({skin: 'flat', cards: ''});
+const SparseSfxCtx = React.createContext(false);
 const DEFAULT_BOX: BoxSpec = {x: 90, y: 120, w: 900};
 const CENTER_BOX: BoxSpec = {x: 90, y: 110, w: 1740, align: 'center'};
 // 文字母版：每期在 style.layout 里选一个，场景里不写 box / grad 时按它来
@@ -138,6 +143,8 @@ const LAYOUTS: Record<NonNullable<Style['layout']>, {box: BoxSpec; grad: Grad}> 
 const GRAIN_SVG = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>\")";
 const Grain: React.FC = () => <AbsoluteFill style={{opacity: 0.12, mixBlendMode: 'overlay', backgroundImage: GRAIN_SVG, backgroundSize: '300px 300px'}} />;
 const DEFAULT_SFX: Partial<Record<Item['type'], SfxName>> = {h: 'pop', t: 'pop', tag: 'pop', stamp: 'stamp', big: 'ding', count: 'ding', panel: 'page', compare: 'swipe', nums: 'drop', clock: 'click', photocard: 'pop'};
+// 精简音效（style.sfx = "sparse"）下这些类型出现时默认不响；元素上显式写了 sfx 照响
+const QUIET_WHEN_SPARSE: Partial<Record<Item['type'], true>> = {h: true, t: true, tag: true, photocard: true};
 const DEFAULT_DIR = (b: BoxSpec): Dir => (b.align === 'center' ? 'up' : b.right !== undefined || (b.x ?? 0) > 960 ? 'right' : 'left');
 
 // 叠卡的一行：自己带弹簧入场，不能用 FlyIn 包 —— wrapper 的 transform 会重置 absolute 定位的基准。
@@ -181,13 +188,14 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
   const SCALE = React.useContext(ScaleCtx);
   const ink = useInk();   // 卡内黑字 / 卡外白字
   const f = useCurrentFrame();
+  const sparse = React.useContext(SparseSfxCtx);
   const step = it.at ?? 0;
   if (p.step < step) return null;
   if (gone(it, p, f)) return null;
   const a = at(p, step) + (it.delay ?? 0);
   const dir = it.dir ?? DEFAULT_DIR(box);
   const align = box.align ?? 'left';
-  const sfxName = it.sfx === null ? null : it.sfx ?? DEFAULT_SFX[it.type] ?? null;
+  const sfxName = it.sfx === null ? null : it.sfx ?? (sparse && QUIET_WHEN_SPARSE[it.type] ? null : DEFAULT_SFX[it.type] ?? null);
   // 场景第一帧出现的元素不响（场景切换已经有声音）
   const snd = sfxName && a > 2 ? <Sfx at={a} name={sfxName} vol={it.vol ?? (sfxName === 'impact' ? 0.45 : 0.3)} /> : null;
   const fly = (node: React.ReactNode, dist = 120) => <>{snd}<FlyIn at={a} dir={dir} dist={dist}>{node}</FlyIn></>;
@@ -309,7 +317,7 @@ const ItemView: React.FC<{it: Item; p: P; box: BoxSpec; custom: CustomMap; spec:
             const st = step + (c.at ?? 0);
             if (p.step < st) return <div key={i} style={{width: w}} />;
             const aa = at(p, st) + (c.delay ?? (c.at ? 0 : (it.delay ?? 0) + i * 6));
-            return <React.Fragment key={i}>{aa > 2 && <Sfx at={aa} name="pop" vol={0.25} />}<CardEnter at={aa} dir={i < it.cards.length / 2 ? 'left' : 'right'} dist={120}><TPhoto src={staticFile(`${cards}/${c.img}.jpg`)} title={c.title ? rich(c.title, C) : undefined} sub={c.sub} w={w} seed={i} /></CardEnter></React.Fragment>;
+            return <React.Fragment key={i}>{!sparse && aa > 2 && <Sfx at={aa} name="pop" vol={0.25} />}<CardEnter at={aa} dir={i < it.cards.length / 2 ? 'left' : 'right'} dist={120}><TPhoto src={staticFile(`${cards}/${c.img}.jpg`)} title={c.title ? rich(c.title, C) : undefined} sub={c.sub} w={w} seed={i} /></CardEnter></React.Fragment>;
           })}
         </div>
       );
@@ -473,9 +481,11 @@ const makeScene = (spec: SceneSpec, ep: EpisodeSpec, custom: CustomMap): React.F
   const SceneView: React.FC<P> = (p) => (
     <ScaleCtx.Provider value={scale}>
       <SkinCtx.Provider value={skin}>
+      <SparseSfxCtx.Provider value={st.sfx === 'sparse'}>
       <TextEnterCtx.Provider value={st.textEnter ?? 'fly'}>
         <SceneViewInner {...p} />
       </TextEnterCtx.Provider>
+      </SparseSfxCtx.Provider>
       </SkinCtx.Provider>
     </ScaleCtx.Provider>
   );

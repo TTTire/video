@@ -26,10 +26,16 @@ export type Comp = {id: string; total: number; C: React.FC; width?: number; heig
 
 export const photoComps = (id: string, timeline: Timeline, spec: EpisodeSpec, custom: CustomMap = {}, names: Record<string, string> = {}): Comp[] => {
   const built = buildPhotoEpisode(spec, custom);
-  const segs = spec.aroll ? buildArollSegs(spec.aroll, cueFrame(timeline), timeline.total, timeline.scenes.map((sc: any) => ({...sc, side: spec.scenes.find((x) => x.id === sc.scene)?.arollSide, pos: spec.scenes.find((x) => x.id === sc.scene)?.arollPos}))) : [];
+  // 出镜层跟本期的版式和音效密度走（aroll 里单独写了就以它为准）
+  const ar = spec.aroll && {...spec.aroll, layout: spec.aroll.layout ?? spec.style?.layout, sfx: spec.aroll.sfx ?? spec.style?.sfx};
+  const segs = ar ? buildArollSegs(ar, cueFrame(timeline), timeline.total, timeline.scenes.map((sc: {scene: string; from: number; dur: number}) => {
+    const s = spec.scenes.find((x) => x.id === sc.scene);
+    // sound：这个场景开头自己响（章节卡 / 栏目卡 flip，普通场景 enterSfx 默认 pop）
+    return {...sc, side: s?.arollSide, pos: s?.arollPos, size: s?.arollSize, sound: sc.scene === 'chapter' || s?.type === 'chapter' || s?.type === 'series' || s?.enterSfx !== null};
+  })) : [];
   const Ep: React.FC<{subtitles?: boolean; grid?: boolean; aroll?: boolean}> = ({subtitles, grid, aroll}) => {
     useTitleFont();
-    const overlay = aroll && spec.aroll ? <ArollLayer spec={{...spec.aroll, layout: spec.aroll.layout ?? spec.style?.layout}} segs={segs} /> : undefined;
+    const overlay = aroll && ar ? <ArollLayer spec={ar} segs={segs} /> : undefined;
     return <Episode timeline={timeline} scenes={built.scenes} theme={built.theme} audio="" badge={spec.badge} series={spec.series} cornerBadge={spec.style?.badge !== false} fx={built.fx} narration={false} plain subtitles={subtitles} grid={grid} overlay={overlay} />;
   };
   const thumbs = pickThumbs(timeline, names);

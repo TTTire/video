@@ -227,7 +227,7 @@ python3 scripts/make_timeline.py "<讲稿卡.md>" ep7 --starts src/ep7/starts.js
 - 一个场景内：第一条要点出小字（dim）铺垫，关键要点出大字（白 / 金），数字单独做 `big` 或 `count`。
 - 要划掉的旧判断用 `strikeAt`；两个对立项用 `compare` 或 `split`；盖章式关键词用 `stamp`。
 - 柱状图、表格、折线这类按要点逐步出现的图表写进 `src/ep7/custom.tsx`，参考 `src/ep6/custom.tsx`；photo.json 里 `{"type":"custom","name":"xxx"}` 引用。
-- 音效默认已经配好（字出现 pop、盖章 impact、数字 ding…），只在揭晓点手动加 `impact` / `error` / `cash`，别处不用管。
+- 音效走精简（`style.sfx: "sparse"`，2026-11 起新期默认，骨架自动写上）：字（h / t / tag）和 photo 卡出现不响，只有"变化"响——换场景 pop、章节卡 flip、盖章、砸入、翻牌、里程表、数字 ding、划掉、换图 whoosh、出镜层切换 whoosh（正好落在换场景那一帧的不再叠一声）。AI03 前 90 秒实测：26 声 → 10 声。揭晓点（答案、反转、结论出现那一刻）手动加 `impact` / `error` / `cash`；别给普通字加 `sfx`，那等于把精简关掉。已发布各期不写 `sfx`，重渲照旧每条字一声 pop。
 
 ### 3. 看图 → 小样 → 全片
 
@@ -292,6 +292,12 @@ rm -rf out/epN-seq
 **换机器重渲**（`public/` 和 `*.mp4` 都不进仓库）：pull 之后 `public/epN/` 是空的，先 `import_photos.py`（图在选题文件夹 `图片素材/`，已入库）、有卡再 `import_cards.py`、`import_sfx.py`，再按上面 ffmpeg 一行转 A-roll 代理；然后按上面整片渲 + 切段。`render_seq.py` 第一次跑要 `npx remotion browser ensure`。
 
 cue 怎么写：开场第一条要点 `full`；"我猜 / 我的感受 / 我打算"这类第一人称判断 `full` 或 `half`；数据、历史、图表段留 `bubble`（默认）；章节卡自动 `hide`。每段 bubble 超过 60 秒就插一段 full。
+
+小圆大小分情况定，写在场景上：`"arollSize": "m"`（1.3 倍）/ `"l"`（1.6 倍），不写是默认 260。圆贴着默认落点的外角往画面里长，多占的是字列和照片那一侧（各档占哪块见 `references/photo-json.md`「出镜层」）：
+- 放大：这场的字只在一侧列里（topleft 母版只用 L 列），照片在小圆那一角是空景（天空、墙面、虚化），讲的是第一人称判断、自己的经历，又不值得切 full / half
+- 保持默认：数据卡、stack、两张以上的卡、图表；字是整行宽（TW / MW）或落在小圆同一侧；照片主体就在那一角
+- 相邻场景换大小是平滑缩放、不响；别每场都换，一段 bubble 里大小来回跳比一直小更乱
+- 写完出 `arollsheet`，按拼图检查单第 1 条看小圆有没有压到字和脸
 
 ### 4. 交付
 

@@ -34,6 +34,7 @@ photo.json 里 `box` / `origin` / `spot.region` / `rings.region` 可以写区域
 - 音效原文件放在 `工具/音效库/`，文件名里包含类型词即可：whoosh、pop、impact、swipe、tick、ding、riser、flip、cash、error、typing、notify、boom、shutter、ambience。
 - 新增或替换后运行 `python scripts/import_sfx.py`：自动裁掉首尾静音、按类型限制时长、统一响度，写入 `public/sfx/` 和 `src/sfx-manifest.json`。
 - 场景里用 `<Sfx at={帧} name="pop" />`；同类多个版本会轮流使用。`dur` 截断连续音，`endAt` 让 riser 在揭晓点结束，`fade` 给环境声淡入淡出。
+- 音效密度：新期 photo.json 的 `style.sfx = "sparse"`（骨架默认写上）——字和 photo 卡出现不再 pop，只有变化响；不写就是旧的每条字一声 pop（已发布各期不变）。规则见 `工具/video-broll-maker/references/photo-json.md` 的 style 表。
 
 ## 给剪辑用的分场景片段
 
