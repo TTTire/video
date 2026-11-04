@@ -773,16 +773,24 @@
           "delay": 115
         },
         {
-          "type": "h",
-          "text": "前者，((AI 一晚上能替你做))",
+          "type": "t",
+          "text": "追问：上线没 · 谁在用 · 你做哪块",
           "at": 0,
-          "delay": 175
+          "delay": 255,
+          "until": 0,
+          "untilDelay": 520
         },
         {
           "type": "h",
-          "text": "后者，[[到今天还不行]]",
+          "text": "前者，((AI 一晚上能替你做))",
           "at": 0,
-          "delay": 275
+          "delay": 525
+        },
+        {
+          "type": "h",
+          "text": "后者，[[追问得你自己答]]",
+          "at": 0,
+          "delay": 625
         }
       ]
     },
@@ -967,10 +975,26 @@
           "delay": 355
         },
         {
+          "type": "t",
+          "text": "有人 AI 面试高分，一追就露短板",
+          "at": 0,
+          "delay": 540,
+          "until": 0,
+          "untilDelay": 715
+        },
+        {
+          "type": "t",
+          "text": "不少 HR 已不敢直接信 AI 面试高分",
+          "at": 0,
+          "delay": 720,
+          "until": 0,
+          "untilDelay": 832
+        },
+        {
           "type": "h",
           "text": "它贵，就**贵在这**",
           "at": 0,
-          "delay": 420
+          "delay": 837
         }
       ]
     },
