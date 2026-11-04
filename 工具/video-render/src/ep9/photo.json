@@ -1,0 +1,835 @@
+{
+  "ep": "ep9",
+  "badge": "09",
+  "series": "100 个经济学原理",
+  "photos": "ep9/photos",
+  "chapterPhoto": "S06",
+  "scenes": [
+    {
+      "id": "live",
+      "name": "直播间喊五斤九十九包邮；广州批发价两",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "“五斤车厘子，九十九，包邮”",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "广州批发价 · 1 月下旬 · 每公斤",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "前年 ¥70–80",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "去年 ¥60–70",
+          "at": 0,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "今年 < ¥50",
+          "at": 0,
+          "delay": 360
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "swap": {
+        "at": 0,
+        "delay": 180,
+        "photo": "S02"
+      },
+      "ambience": "商场"
+    },
+    {
+      "id": "buyers",
+      "name": "第一反应看买的人：手头紧了-舍不得了",
+      "photo": "S03",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "大家手头紧了？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "舍不得买了？",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "mismatch",
+      "name": "量反而多了三成：价往下-量往上-动的",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "价 ↓ 两年快四成",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "量 ↑ 37.6 → 49.4 万吨",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "动的是卖的人那一头",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "newseason",
+      "name": "10-月-18-日新一季第一批飞到上",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "新一季第一批，到了",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "这一季预计：再多运一成半",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "卖的人怎么一下多了？",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "series",
+      "name": "栏目卡：第-9-个-供给定律",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "09 供给定律",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "LAW OF SUPPLY",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "价格涨了，卖的人呢",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "premium",
+      "name": "贵了十多年：春节前运到就高利润-贵久",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "果中贵客",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "十多年，赶在春节前运到",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "利润就特别高",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "贵久了，像它自带的",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "law",
+      "name": "市场两头；供给定律：价格越高-卖的人",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "供给定律",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "价格越高",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "卖的人越愿意多拿出来",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "价格也在喊卖的人",
+          "at": 0,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "“这儿有钱赚”",
+          "at": 0,
+          "delay": 360,
+          "quote": true
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "shine",
+      "name": "阳光玫瑰-300-块一斤-一亩赚十几",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "超市一度 ¥300 / 斤",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "最火那几年：一亩赚十几万",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "5 亩 · 2017 · 净赚 68 万",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "“5 亩换大奔”",
+          "at": 0,
+          "delay": 270,
+          "quote": true
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "rush",
+      "name": "2-万亩到-80-万亩-七年四十倍；",
+      "photo": "S09",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "全国阳光玫瑰面积",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "2013 年 · 约 2 万亩",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "2020 年 · 80 万亩",
+          "at": 1,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "七年，翻了四十倍",
+          "at": 1,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "¥300 → ¥4.5 / 斤",
+          "at": 1,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "“10 元 3 斤”",
+          "at": 1,
+          "delay": 360,
+          "quote": true
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "swap": {
+        "at": 1,
+        "photo": "S10"
+      }
+    },
+    {
+      "id": "chile",
+      "name": "智利车厘子园-3.8-万到-7.8-",
+      "photo": "S11",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "智利车厘子园",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "3.8 → 7.8 万公顷",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "≈ 57 万亩 → 117 万亩",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "智利种得最多的水果",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "ambience": "森林"
+    },
+    {
+      "id": "where",
+      "name": "贵把卖的人叫来；可车厘子贵了十多年-",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "贵把卖的人叫来",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "卖的人再把价钱拉回去",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "车厘子却贵了十多年",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "那些年，货在哪儿？",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "tree",
+      "name": "种下去到开始结果要四到五年",
+      "photo": "S12",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "种下去 → 开始结果",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "4–5 年",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "今天种，最早四五年后才结果",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "ambience": "森林"
+    },
+    {
+      "id": "elastic",
+      "name": "供给弹性：今年动不了-五年才动得了；",
+      "photo": "S13",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "供给弹性",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "价格动一下",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "卖的人能多拿出多少",
+          "at": 1,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "几乎动不了",
+          "at": 1,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "动得了",
+          "at": 1,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "卖的人早听见了",
+          "at": 1,
+          "delay": 360
+        },
+        {
+          "type": "h",
+          "text": "货还在树上长",
+          "at": 1,
+          "delay": 450
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "flood",
+      "name": "新果园一起结果：出口一季-+51%-",
+      "photo": "S14",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "智利车厘子出口 · 万吨",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "22/23 季 41.5",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "23/24 季 41.4",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "24/25 季 62.5",
+          "at": 0,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "一季 +51%，创纪录",
+          "at": 0,
+          "delay": 360
+        },
+        {
+          "type": "h",
+          "text": "进中国 56.8 万吨 ≈ 每人八两",
+          "at": 0,
+          "delay": 450
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "glut",
+      "name": "美国农业部：短时间大量到港压价；果农",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "大量的货，很短时间里到港",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "供过于求，价格被压下去",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "一些果农货更多，赚得更少",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "shower",
+      "name": "酒店淋浴：拧了半天还凉-再拧-突然烫",
+      "photo": "S15",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "拧到热水，半天还是凉的",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "再拧，再拧",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "热水一到，烫",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "价格 = 水龙头 · 果树 = 长管子",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "pipe",
+      "name": "新种大幅放慢；2021–2023-种",
+      "photo": "S11",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "新种的面积：大幅放慢",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "2021–2023 种的树：越结越多",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "这一季产量预计：72.7 万吨 · 新高",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "when",
+      "name": "价格决定来不来-树决定什么时候来",
+      "photo": "S12",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "价格决定来不来",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "树决定什么时候来",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "boundary",
+      "name": "边界：不全是树-海运-价格战-到港提",
+      "photo": "S14",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "不全是树的事",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "海运直航比空运便宜六成多",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "电商价格战",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "到港一年比一年早",
+          "at": 0,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "买的人更挑、更看价",
+          "at": 0,
+          "delay": 360
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "never",
+      "name": "供给定律不保证便宜回去：铺面-一个人",
+      "photo": "S16",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "贵了会有人来",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "没说一定会便宜回去",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "某条街的铺面 · 某个人的时间",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "它的贵，等不掉",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "howlong",
+      "name": "多问一句：卖的人多拿出一份要多久-三",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "卖的人多拿一份，要多久？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "几个星期 · 多摆一个摊",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "四五年 · 种一片树",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "永远 · 那条街的铺面",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "seller",
+      "name": "自己当卖的人：刷到-5-亩换大奔-先",
+      "photo": "S09",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "刷到“5 亩换大奔”",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "你的货，几年以后才到？",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "同一天到的，有多少人？",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "close",
+      "name": "回到那箱五斤九十九：五六年前的贵喊来",
+      "photo": "S17",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "五斤九十九",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "五六年前的贵",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "喊来了一片果园",
+          "at": 1,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "今天的便宜",
+          "at": 1,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "是当年的贵种下的",
+          "at": 1,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "为什么还是一起冲进去？",
+          "at": 1,
+          "delay": 360
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "ambience": "街道夜晚"
+    },
+    {
+      "id": "next",
+      "name": "下期：车厘子便宜了-买的人多得了什么",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "车厘子便宜了",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "买的人多得了什么？",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "下期 · 消费者剩余",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    }
+  ],
+  "style": {
+    "layout": "right",
+    "tint": "#26301A",
+    "tintOpacity": 0.18,
+    "enter": "slideL",
+    "letterbox": false,
+    "grain": true,
+    "badge": false,
+    "scale": "v2",
+    "textEnter": "fade",
+    "cardSkin": "tactile",
+    "theme": {
+      "gold": "#D9E06B",
+      "coral": "#C8324A",
+      "teal": "#7CC48A",
+      "bg": "#09110C",
+      "dim": "#C8D2C2"
+    },
+    "sfx": "sparse"
+  }
+}

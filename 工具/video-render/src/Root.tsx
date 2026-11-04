@@ -20,6 +20,7 @@ import ai01 from './ai01/timeline.json';
 import ai02 from './ai02/timeline.json';
 import ai03 from './ai03/timeline.json';
 import ai04 from './ai04/timeline.json';
+import ep9 from './ep9/timeline.json';
 // ---- 通用照片引擎的期数（由 scripts/new_episode.py 追加，别删这几行标记） ----
 import ep6photo from './ep6/photo.json';
 import ep6names from './ep6/scene-names.json';
@@ -42,6 +43,9 @@ import {CUSTOMAI03} from './ai03/custom';
 import ai04photo from './ai04/photo.json';
 import ai04names from './ai04/scene-names.json';
 import {CUSTOMAI04} from './ai04/custom';
+import ep9photo from './ep9/photo.json';
+import ep9names from './ep9/scene-names.json';
+import {CUSTOMEP9} from './ep9/custom';
 // ---- /imports ----
 
 // subtitles 默认关闭：字幕在剪映里自己加
@@ -98,6 +102,7 @@ const photoEps: {id: string; tl: any; spec: EpisodeSpec; custom?: any; names?: a
   {id: 'Ai02', tl: ai02, spec: ai02photo as EpisodeSpec, custom: CUSTOMAI02, names: ai02names},
   {id: 'Ai03', tl: ai03, spec: ai03photo as EpisodeSpec, custom: CUSTOMAI03, names: ai03names},
   {id: 'Ai04', tl: ai04, spec: ai04photo as EpisodeSpec, custom: CUSTOMAI04, names: ai04names},
+  {id: 'Ep9', tl: ep9, spec: ep9photo as EpisodeSpec, custom: CUSTOMEP9, names: ep9names},
   // ---- /episodes ----
 ];
 photoEps.forEach((e) => comps.push(...photoComps(e.id, e.tl as any, e.spec, e.custom, e.names)));
