@@ -1,0 +1,1085 @@
+{
+  "ep": "ai04",
+  "badge": "",
+  "series": "AI经济学",
+  "photos": "ai04/photos",
+  "chapterPhoto": "S18",
+  "scenes": [
+    {
+      "id": "app",
+      "name": "电商平台上-AI-面试助手热销-60",
+      "photo": "S01",
+      "move": "in",
+      "origin": "MR",
+      "box": {
+        "card": "tab",
+        "label": "电商平台 · AI 面试助手"
+      },
+      "items": [
+        {
+          "type": "t",
+          "text": "页面写着：全网热销",
+          "at": 0,
+          "delay": 135
+        },
+        {
+          "type": "big",
+          "text": "60 万+",
+          "at": 0,
+          "delay": 215
+        },
+        {
+          "type": "h",
+          "text": "实时听题 · 照着念",
+          "at": 0,
+          "delay": 258
+        }
+      ]
+    },
+    {
+      "id": "back",
+      "name": "公司往回走：谷歌-麦肯锡搬回线下",
+      "photo": "S02",
+      "move": "out",
+      "origin": "MR",
+      "ambience": "办公室",
+      "items": [
+        {
+          "type": "t",
+          "text": "谷歌、麦肯锡：面试搬回线下",
+          "at": 0,
+          "delay": 75
+        },
+        {
+          "type": "h",
+          "text": "发 offer 前，**至少见一面**",
+          "at": 0,
+          "delay": 190
+        }
+      ]
+    },
+    {
+      "id": "post",
+      "name": "Anthropic-招聘经理：不考编",
+      "photo": "S03",
+      "move": "in",
+      "origin": "MR",
+      "box": {
+        "card": "paper"
+      },
+      "items": [
+        {
+          "type": "t",
+          "text": "10 月底 · Anthropic 招聘经理",
+          "at": 0,
+          "delay": 100
+        },
+        {
+          "type": "h",
+          "text": "他的团队**不考编程题了**",
+          "at": 0,
+          "delay": 115
+        },
+        {
+          "type": "h",
+          "text": "Claude 做这些题，已经比人强",
+          "at": 0,
+          "delay": 265,
+          "size": 64
+        }
+      ]
+    },
+    {
+      "id": "panic",
+      "name": "刷题的人第一反应：白刷了？",
+      "photo": "S04",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "t",
+          "text": "刷了几百道题的人",
+          "at": 0,
+          "delay": 40
+        },
+        {
+          "type": "h",
+          "text": "白刷了？",
+          "at": 0,
+          "delay": 215,
+          "size": 112,
+          "stagger": 3
+        },
+        {
+          "type": "h",
+          "text": "题考的，是另一样东西",
+          "at": 1,
+          "delay": 25
+        },
+        {
+          "type": "t",
+          "text": "那样东西，刚刚变便宜了",
+          "at": 1,
+          "delay": 120
+        }
+      ]
+    },
+    {
+      "id": "title",
+      "name": "片头",
+      "photo": "S04",
+      "move": "out",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "t",
+          "text": "像素呼吸 · AI经济学",
+          "at": 0,
+          "delay": 20
+        },
+        {
+          "type": "h",
+          "text": "刷题为什么\n**突然没用了**",
+          "at": 0,
+          "delay": 110,
+          "size": 112
+        }
+      ]
+    },
+    {
+      "id": "interview",
+      "name": "面试一小时看不见干活的样子-只能看替",
+      "photo": "S05",
+      "move": "in",
+      "origin": "MR",
+      "ambience": "办公室",
+      "items": [
+        {
+          "type": "t",
+          "text": "面试官出题，你当场做出来",
+          "at": 0,
+          "delay": 25
+        },
+        {
+          "type": "h",
+          "text": "看起来：题在考能力",
+          "at": 0,
+          "delay": 115,
+          "color": "dim",
+          "strikeAt": 1
+        },
+        {
+          "type": "h",
+          "text": "看不见干活的样子",
+          "at": 1,
+          "delay": 150
+        },
+        {
+          "type": "h",
+          "text": "只能看**替身**",
+          "at": 1,
+          "delay": 310
+        }
+      ]
+    },
+    {
+      "id": "spence",
+      "name": "斯宾塞-1973-文凭这个替身",
+      "photo": "S06",
+      "move": "in",
+      "origin": "MR",
+      "box": {
+        "card": "notch",
+        "label": "斯宾塞 1973",
+        "sub": "SIGNALING"
+      },
+      "boxes": {
+        "ex": "BL",
+        "strong": {
+          "x": 90,
+          "w": 420,
+          "card": "tab",
+          "label": "能力强的人拿到它",
+          "cardW": 420
+        },
+        "weak": {
+          "x": 570,
+          "w": 420,
+          "card": "tab",
+          "label": "能力弱的人拿到它",
+          "cardW": 420
+        }
+      },
+      "items": [
+        {
+          "type": "h",
+          "text": "信号传递",
+          "at": 0,
+          "delay": 15,
+          "size": 112,
+          "font": "song",
+          "until": 0,
+          "untilDelay": 350
+        },
+        {
+          "type": "t",
+          "text": "一张文凭，不一定让你更会干活",
+          "at": 0,
+          "delay": 195,
+          "box": "ex"
+        },
+        {
+          "type": "h",
+          "text": "但它**管用**",
+          "at": 0,
+          "delay": 310,
+          "box": "ex"
+        },
+        {
+          "type": "h",
+          "text": "[[便宜]]",
+          "at": 0,
+          "delay": 375,
+          "size": 112,
+          "box": "strong"
+        },
+        {
+          "type": "h",
+          "text": "((很贵))",
+          "at": 0,
+          "delay": 465,
+          "size": 112,
+          "box": "weak"
+        }
+      ]
+    },
+    {
+      "id": "costly",
+      "name": "假的贵-信号才管用",
+      "photo": "S06",
+      "move": "still",
+      "origin": "MR",
+      "box": {
+        "card": "solid",
+        "bottom": 290
+      },
+      "boxes": {
+        "strong": {
+          "x": 90,
+          "w": 420,
+          "card": "tab",
+          "label": "能力强的人拿到它",
+          "cardW": 420
+        },
+        "weak": {
+          "x": 570,
+          "w": 420,
+          "card": "tab",
+          "label": "能力弱的人拿到它",
+          "cardW": 420
+        }
+      },
+      "items": [
+        {
+          "type": "h",
+          "text": "[[便宜]]",
+          "at": 0,
+          "delay": -30,
+          "size": 112,
+          "box": "strong"
+        },
+        {
+          "type": "h",
+          "text": "((很贵))",
+          "at": 0,
+          "delay": -30,
+          "size": 112,
+          "box": "weak"
+        },
+        {
+          "type": "h",
+          "text": "信号管用，因为**假的贵**",
+          "at": 0,
+          "delay": 140,
+          "textfx": "reveal"
+        },
+        {
+          "type": "t",
+          "text": "公司看文凭，看的是你付了多少",
+          "at": 0,
+          "delay": 195
+        }
+      ]
+    },
+    {
+      "id": "sixhundred",
+      "name": "刷题-600-小时-三个多月",
+      "photo": "S07",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "t",
+          "text": "哥大一个学生，为进大厂刷题",
+          "at": 0,
+          "delay": 70
+        },
+        {
+          "type": "slam",
+          "text": "600 小时",
+          "at": 0,
+          "delay": 220
+        },
+        {
+          "type": "t",
+          "text": "≈ 三个多月的上班时间（每天 8 小时）",
+          "at": 0,
+          "delay": 285
+        },
+        {
+          "type": "t",
+          "text": "面试官那一小时看到的",
+          "at": 0,
+          "delay": 430
+        },
+        {
+          "type": "h",
+          "text": "肯不肯，能不能",
+          "at": 0,
+          "delay": 535
+        }
+      ]
+    },
+    {
+      "id": "ask",
+      "name": "题考的是假的有多贵；假的变便宜呢",
+      "photo": "S07",
+      "move": "out",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "t",
+          "text": "题考的一直是",
+          "at": 0,
+          "delay": 20
+        },
+        {
+          "type": "h",
+          "text": "假的，到底**有多贵**",
+          "at": 0,
+          "delay": 65
+        },
+        {
+          "type": "h",
+          "text": "假的要是变便宜了呢？",
+          "at": 0,
+          "delay": 130
+        }
+      ]
+    },
+    {
+      "id": "coder",
+      "name": "21-岁学生一周做出作弊软件-挂在后",
+      "photo": "S08",
+      "move": "in",
+      "origin": "MR",
+      "box": {
+        "card": "tab",
+        "label": "2025 年 3 月 · 21 岁"
+      },
+      "boxes": {
+        "said": "BL"
+      },
+      "items": [
+        {
+          "type": "t",
+          "text": "就是那个刷了 600 小时的学生",
+          "at": 0,
+          "delay": 40
+        },
+        {
+          "type": "h",
+          "text": "用 AI，**不到一周**",
+          "at": 0,
+          "delay": 120
+        },
+        {
+          "type": "t",
+          "text": "做出软件，面试时挂在后台。他说：",
+          "at": 0,
+          "delay": 170
+        },
+        {
+          "type": "h",
+          "text": "录屏看不见，摄像头看不见",
+          "quote": true,
+          "size": 64,
+          "at": 0,
+          "delay": 265,
+          "box": "said"
+        }
+      ]
+    },
+    {
+      "id": "rescind",
+      "name": "过了亚马逊面试-offer-全撤-软",
+      "photo": "S08",
+      "move": "out",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "t",
+          "text": "过了亚马逊面试，还录下来发到网上",
+          "at": 0,
+          "delay": 40
+        },
+        {
+          "type": "flap",
+          "from": "offer 到手",
+          "to": "offer 全撤",
+          "color": "teal",
+          "toColor": "coral",
+          "label": "亚马逊和另外几家",
+          "at": 0,
+          "delay": 195
+        },
+        {
+          "type": "h",
+          "text": "软件没停，**$60 / 月**照卖",
+          "at": 0,
+          "delay": 315
+        }
+      ]
+    },
+    {
+      "id": "townhall",
+      "name": "谷歌内部会-Pichai：一部分放回",
+      "photo": "S09",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "t",
+          "text": "谷歌内部会，有员工问",
+          "at": 0,
+          "delay": 50
+        },
+        {
+          "type": "h",
+          "text": "能不能把线下面试要回来",
+          "quote": true,
+          "size": 64,
+          "at": 0,
+          "delay": 105
+        },
+        {
+          "type": "t",
+          "text": "Pichai 当场说：值得想想",
+          "at": 0,
+          "delay": 240
+        },
+        {
+          "type": "h",
+          "text": "一部分面试，**放回线下**",
+          "at": 0,
+          "delay": 310
+        }
+      ]
+    },
+    {
+      "id": "bank",
+      "name": "国内银行-AI-面试-助手-138-",
+      "photo": "S10",
+      "move": "out",
+      "origin": "MR",
+      "box": {
+        "card": "tab",
+        "label": "电商平台 · AI 面试助手"
+      },
+      "boxes": {
+        "intro": "TL"
+      },
+      "items": [
+        {
+          "type": "t",
+          "text": "国内：今年银行招应届生",
+          "at": 0,
+          "delay": 30,
+          "box": "intro",
+          "until": 0,
+          "untilDelay": 325
+        },
+        {
+          "type": "h",
+          "text": "好几家，加进了 AI 面试",
+          "at": 0,
+          "delay": 105,
+          "box": "intro",
+          "until": 0,
+          "untilDelay": 325
+        },
+        {
+          "type": "h",
+          "text": "**138 元** · 2 小时",
+          "at": 0,
+          "delay": 330
+        },
+        {
+          "type": "h",
+          "text": "398 元起 · 眼神矫正",
+          "at": 0,
+          "delay": 400
+        },
+        {
+          "type": "t",
+          "text": "看答案的时候，别像在看答案",
+          "at": 0,
+          "delay": 525
+        }
+      ]
+    },
+    {
+      "id": "pooling",
+      "name": "信号逻辑变了：混同",
+      "photo": "S11",
+      "move": "out",
+      "origin": "MR",
+      "boxes": {
+        "def": {
+          "y": 400,
+          "card": "notch",
+          "label": "经济学管这叫",
+          "sub": "POOLING"
+        }
+      },
+      "items": [
+        {
+          "type": "h",
+          "text": "信号的逻辑变了",
+          "at": 0,
+          "delay": 15,
+          "until": 0,
+          "untilDelay": 90
+        },
+        {
+          "type": "t",
+          "text": "原来要 600 小时才发得出来",
+          "at": 0,
+          "delay": 95
+        },
+        {
+          "type": "flap",
+          "from": "600 小时",
+          "to": "138 元",
+          "toColor": "coral",
+          "label": "现在",
+          "at": 0,
+          "delay": 250
+        },
+        {
+          "type": "h",
+          "text": "混同",
+          "at": 0,
+          "delay": 375,
+          "size": 140,
+          "font": "song",
+          "textfx": "gradient",
+          "sfx": "impact",
+          "box": "def"
+        },
+        {
+          "type": "t",
+          "text": "信号都一样，分不出谁是谁",
+          "at": 0,
+          "delay": 450,
+          "box": "def"
+        }
+      ]
+    },
+    {
+      "id": "blind",
+      "name": "题还在-答案还对-但不再告诉公司任何",
+      "photo": "S11",
+      "move": "in",
+      "origin": "80% 55%",
+      "items": [
+        {
+          "type": "h",
+          "text": "题目还在，答案还对",
+          "at": 0,
+          "delay": 40
+        },
+        {
+          "type": "h",
+          "text": "但不再告诉公司**任何事**",
+          "at": 0,
+          "delay": 105
+        }
+      ]
+    },
+    {
+      "id": "newsignal",
+      "name": "麦肯锡-谷歌-Anthropic-换",
+      "photo": "S12",
+      "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "cards": "ML"
+      },
+      "items": [
+        {
+          "type": "h",
+          "text": "换一个假的还贵的信号",
+          "at": 0,
+          "delay": 45,
+          "until": 0,
+          "untilDelay": 395
+        },
+        {
+          "type": "photorow",
+          "at": 0,
+          "box": "cards",
+          "w": 280,
+          "gap": 28,
+          "cards": [
+            {
+              "img": "C01",
+              "title": "线下见面",
+              "sub": "McKinsey",
+              "delay": 160
+            },
+            {
+              "img": "C02",
+              "title": "线下面试",
+              "sub": "Google",
+              "delay": 275
+            },
+            {
+              "img": "C03",
+              "title": "看小原型",
+              "sub": "Anthropic 一位经理",
+              "delay": 350
+            }
+          ]
+        },
+        {
+          "type": "t",
+          "text": "看简历、作品集里周末做的东西",
+          "at": 0,
+          "delay": 405
+        },
+        {
+          "type": "t",
+          "text": "有没有品味，有没有替用户想过",
+          "at": 0,
+          "delay": 580
+        }
+      ]
+    },
+    {
+      "id": "amazon",
+      "name": "亚马逊准则：token-数靠不住-看",
+      "photo": "S13",
+      "move": "out",
+      "origin": "MR",
+      "box": {
+        "card": "tab",
+        "label": "亚马逊 · 工程师准则"
+      },
+      "boxes": {
+        "intro": "TL",
+        "after": "TL"
+      },
+      "items": [
+        {
+          "type": "t",
+          "text": "同一天，亚马逊把准则挂上了官网",
+          "at": 0,
+          "delay": 30,
+          "box": "intro",
+          "until": 0,
+          "untilDelay": 150
+        },
+        {
+          "type": "t",
+          "text": "token 用了多少、AI 用得多不多",
+          "at": 0,
+          "delay": 160,
+          "until": 0,
+          "untilDelay": 445
+        },
+        {
+          "type": "h",
+          "text": "deeply flawed",
+          "quote": true,
+          "size": 64,
+          "at": 0,
+          "delay": 245,
+          "until": 0,
+          "untilDelay": 445
+        },
+        {
+          "type": "h",
+          "text": "((靠不住))",
+          "at": 0,
+          "delay": 320,
+          "until": 0,
+          "untilDelay": 445
+        },
+        {
+          "type": "h",
+          "text": "看[[长期的业务结果]]",
+          "at": 0,
+          "delay": 350,
+          "until": 0,
+          "untilDelay": 445
+        },
+        {
+          "type": "h",
+          "text": "5 月，关掉内部排行榜",
+          "at": 0,
+          "delay": 450,
+          "box": "after"
+        },
+        {
+          "type": "t",
+          "text": "有人为了上榜，狂刷 token",
+          "at": 0,
+          "delay": 605,
+          "box": "after"
+        }
+      ]
+    },
+    {
+      "id": "twosignals",
+      "name": "旧信号-vs-新信号",
+      "photo": "S14",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "t",
+          "text": "旧信号：你会不会做题",
+          "at": 0,
+          "delay": 10
+        },
+        {
+          "type": "flap",
+          "from": "会不会做题",
+          "to": "做出过什么",
+          "label": "新信号",
+          "at": 0,
+          "delay": 95
+        },
+        {
+          "type": "sfx",
+          "name": "impact",
+          "at": 0,
+          "delay": 115
+        },
+        {
+          "type": "t",
+          "text": "追问：上线没 · 谁在用 · 你做哪块",
+          "at": 0,
+          "delay": 305,
+          "until": 0,
+          "untilDelay": 520
+        },
+        {
+          "type": "h",
+          "text": "前者，((AI 一晚上能替你做))",
+          "at": 0,
+          "delay": 525
+        },
+        {
+          "type": "h",
+          "text": "后者，[[追问得你自己答]]",
+          "at": 0,
+          "delay": 625
+        }
+      ]
+    },
+    {
+      "id": "stillworks",
+      "name": "线下笔试-白板没失效；银行抬高造假成",
+      "photo": "S15",
+      "move": "out",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "t",
+          "text": "线下笔试、现场白板：没失效",
+          "at": 0,
+          "delay": 25
+        },
+        {
+          "type": "h",
+          "text": "造假还是贵的",
+          "at": 0,
+          "delay": 115
+        },
+        {
+          "type": "t",
+          "text": "银行：加了眼球追踪、人工复核",
+          "at": 0,
+          "delay": 260
+        },
+        {
+          "type": "h",
+          "text": "失效的，是**隔着屏幕**那一类",
+          "at": 0,
+          "delay": 405
+        }
+      ]
+    },
+    {
+      "id": "question",
+      "name": "问自己：别人用-AI-一晚上能不能做",
+      "photo": "S16",
+      "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "yes": {
+          "x": 90,
+          "y": 420,
+          "w": 420,
+          "card": "tab",
+          "label": "能",
+          "cardW": 420
+        },
+        "no": {
+          "x": 570,
+          "y": 420,
+          "w": 420,
+          "card": "tab",
+          "label": "不能",
+          "cardW": 420
+        }
+      },
+      "items": [
+        {
+          "type": "t",
+          "text": "问自己：你手上攒的那个信号",
+          "at": 0,
+          "delay": 20,
+          "until": 0,
+          "untilDelay": 155
+        },
+        {
+          "type": "h",
+          "text": "别人用 AI **一晚上**",
+          "at": 0,
+          "delay": 160
+        },
+        {
+          "type": "h",
+          "text": "能不能做出来？",
+          "at": 0,
+          "delay": 230
+        },
+        {
+          "type": "h",
+          "text": "((不值钱了))",
+          "at": 0,
+          "delay": 285,
+          "box": "yes"
+        },
+        {
+          "type": "h",
+          "text": "[[正在变贵]]",
+          "at": 0,
+          "delay": 355,
+          "box": "no"
+        }
+      ]
+    },
+    {
+      "id": "pku",
+      "name": "北大蹭课-三个筛选器-非共识判断",
+      "photo": "S17",
+      "move": "out",
+      "origin": "MC",
+      "items": [
+        {
+          "type": "t",
+          "text": "北大蹭课 · 有同学问杨锦方老师",
+          "at": 0,
+          "delay": 65
+        },
+        {
+          "type": "h",
+          "text": "一小时，怎么看一个人？",
+          "at": 0,
+          "delay": 150,
+          "until": 0,
+          "untilDelay": 440
+        },
+        {
+          "type": "t",
+          "text": "三个筛选器，头一个是个问题",
+          "at": 0,
+          "delay": 290,
+          "until": 0,
+          "untilDelay": 440
+        },
+        {
+          "type": "h",
+          "text": "你有什么非共识的判断？",
+          "quote": true,
+          "size": 64,
+          "at": 0,
+          "delay": 450
+        },
+        {
+          "type": "h",
+          "text": "答不上来，算正常",
+          "at": 0,
+          "delay": 545
+        },
+        {
+          "type": "t",
+          "text": "我坐在下面想了一下，也没答上来",
+          "at": 0,
+          "delay": 635
+        }
+      ]
+    },
+    {
+      "id": "selfconsistent",
+      "name": "判断怎么形成-AI-能编-追两句就散",
+      "photo": "S17",
+      "move": "in",
+      "origin": "TC",
+      "items": [
+        {
+          "type": "t",
+          "text": "第二个问题",
+          "at": 0,
+          "delay": 20,
+          "until": 0,
+          "untilDelay": 245
+        },
+        {
+          "type": "h",
+          "text": "怎么形成的？一步一步讲",
+          "at": 0,
+          "delay": 110,
+          "until": 0,
+          "untilDelay": 245
+        },
+        {
+          "type": "t",
+          "text": "这个问题，AI 也能替你编",
+          "at": 0,
+          "delay": 250
+        },
+        {
+          "type": "h",
+          "text": "追两句，就散了",
+          "at": 0,
+          "delay": 355
+        },
+        {
+          "type": "t",
+          "text": "有人 AI 面试高分，一追就露短板",
+          "at": 0,
+          "delay": 540,
+          "until": 0,
+          "untilDelay": 715
+        },
+        {
+          "type": "t",
+          "text": "不少 HR 已不敢直接信 AI 面试高分",
+          "at": 0,
+          "delay": 720,
+          "until": 0,
+          "untilDelay": 832
+        },
+        {
+          "type": "h",
+          "text": "它贵，就**贵在这**",
+          "at": 0,
+          "delay": 837
+        }
+      ]
+    },
+    {
+      "id": "close",
+      "name": "题没白刷-公司不再隔屏认凭证；留给自",
+      "photo": "S18",
+      "move": "out",
+      "origin": "MR",
+      "ambience": "办公室",
+      "items": [
+        {
+          "type": "h",
+          "text": "题没白刷",
+          "at": 0,
+          "delay": 65,
+          "size": 112,
+          "textfx": "reveal",
+          "sfx": "impact",
+          "until": 1
+        },
+        {
+          "type": "t",
+          "text": "600 小时练出来的东西，还在你身上",
+          "at": 0,
+          "delay": 110,
+          "until": 1
+        },
+        {
+          "type": "h",
+          "text": "公司不再隔着屏幕认凭证",
+          "at": 0,
+          "delay": 255,
+          "until": 1
+        },
+        {
+          "type": "t",
+          "text": "它要看你做出来的东西",
+          "at": 0,
+          "delay": 400,
+          "until": 1
+        },
+        {
+          "type": "t",
+          "text": "我把那个问题，也留给了自己",
+          "at": 1,
+          "delay": 55
+        },
+        {
+          "type": "h",
+          "text": "我有什么非共识的判断",
+          "at": 1,
+          "delay": 165,
+          "stagger": 3,
+          "em": [
+            4,
+            7
+          ]
+        }
+      ]
+    }
+  ],
+  "style": {
+    "layout": "topleft",
+    "tint": "#0F1A22",
+    "tintOpacity": 0.22,
+    "enter": "blur",
+    "letterbox": true,
+    "grain": false,
+    "badge": false,
+    "scale": "v2",
+    "textEnter": "fade",
+    "cardSkin": "tactile",
+    "sfx": "sparse",
+    "theme": {
+      "gold": "#E3B04B",
+      "coral": "#D4553F",
+      "teal": "#5FA8A0",
+      "bg": "#0B0F14",
+      "dim": "#C4CBD3"
+    }
+  }
+}

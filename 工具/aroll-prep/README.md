@@ -26,6 +26,8 @@ xxx-同步-成片.mp4      ← 1080p30 h264 + AAC 192k
 xxx-同步-成片.srt / .words.json / 剪辑映射.json
 ```
 
+粗剪的 `xxx-同步-成片.srt`（和同名 `.words.json`）用来填 video-render 的要点起点表 `src/<ep>/starts.json`，见 `工具/video-broll-maker/SKILL.md`「渲染阶段」。
+
 ## 0. 安装（一次）
 
 ```

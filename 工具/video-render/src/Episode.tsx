@@ -5,7 +5,8 @@ import {Enter, FxBackground, SceneMotion} from './fx';
 import {AutoSfxCtx, Sfx, SfxName} from './sfx';
 import {FONTS, GridOverlay} from './photo/kit';
 
-export type Timeline = {fps: number; total: number; scenes: any[]; subs: {from: number; dur: number; text: string}[]};
+// points：{要点 id: 开始帧}（讲稿卡期，make_timeline.py 写）；source：estimate 录前估时 | starts 录后按要点起点表 | srt / tts 老期
+export type Timeline = {fps: number; total: number; scenes: any[]; subs: {from: number; dur: number; text: string}[]; points?: Record<string, number>; source?: string};
 export type EpisodeProps = {
   timeline: Timeline; scenes: Record<string, React.FC<any>>; theme: Theme;
   audio: string; badge: string; subtitles?: boolean; // badge 为空字串 = 角标不显示期号（AI经济学这类没编号的栏目）

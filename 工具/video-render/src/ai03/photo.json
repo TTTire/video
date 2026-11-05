@@ -15,6 +15,7 @@
     "scale": "v2",
     "textEnter": "fade",
     "cardSkin": "tactile",
+    "sfx": "sparse",
     "theme": {
       "gold": "#C8A16B",
       "coral": "#B5544A",

@@ -1,0 +1,751 @@
+{
+  "ep": "ep9",
+  "badge": "09",
+  "series": "100 个经济学原理",
+  "photos": "ep9/photos",
+  "chapterPhoto": "S04",
+  "scenes": [
+    {
+      "id": "broken",
+      "name": "安卓报废机以前五六十-3-月有回收点",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "¥50–60 → ¥400+",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "屏幕碎了，也没关系",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "hot",
+      "name": "两条热搜",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "“曾经只值 10 元，现在回收价 500”",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "“3 个旧手机能换一台 iPhone”",
+          "at": 0,
+          "delay": 90,
+          "quote": true
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "hype",
+      "name": "第一反应：回收商炒作-电子产品只会越",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "回收商在炒作吧？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "电子产品，哪有越放越值钱？",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "slump",
+      "name": "涨了半年-3-月-27-日起五天跌三",
+      "photo": "S03",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "涨了半年",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "3 月 27 日起，五天 −30%+",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "有的机型直接腰斩",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "ambience": "街道夜晚"
+    },
+    {
+      "id": "series",
+      "name": "栏目卡：第-9-个-供给定律",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "09 供给定律",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "LAW OF SUPPLY",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "价格涨了，卖的人呢",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "platform",
+      "name": "说炒作不冤：大平台说噱头；个人回收点",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "大平台店员：“传言就是噱头”",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "个人回收点：部分安卓涨五六倍",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "chip",
+      "name": "A93-一百多到快三百；256G-芯",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "OPPO A93 · ¥100+ → ¥300",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "256G 芯片单颗 ¥300–400",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "老人机没有芯片，没动",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "涨的是里面那颗芯片",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "ai",
+      "name": "回指内存条那期：AI-抢走产能；旧芯",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "AI 抢走了内存产能",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "普通内存跟着缺",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "旧手机里的芯片，也有人要",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "law",
+      "name": "供给定律：价格越高-愿意卖的越多；这",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "供给定律",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "价格越高",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "愿意卖的越多",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "这回，卖的人是你",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "stock",
+      "name": "一年淘汰六七亿部；一半多留在家；约-",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "一年淘汰六七亿部手机",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "≈ 每两个人一部",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "一半多，留在家里",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "进正规回收，约 5%",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "flood",
+      "name": "一家回收平台日处理量-20-万到近-",
+      "photo": "S09",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "一家回收平台 · 每天处理的手机",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "2025 年 9 月 · 20 万部",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "2026 年 3 月 · 近 150 万部",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "七倍多",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "everyone",
+      "name": "干回收的十万到百万；理发的也收",
+      "photo": "S10",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "干回收的人 · 十万 → 百万+",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "“理发的也收，卖水果的也收”",
+          "at": 0,
+          "delay": 90,
+          "quote": true
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "why",
+      "name": "卖的收的一起涌进来；芯片还缺-为何五",
+      "photo": "S03",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "卖的和收的，一起涌进来",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "芯片还在缺",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "旧手机为什么五天就塌了？",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "tworoads",
+      "name": "供给弹性；内存两条来路：工厂-抽屉",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "供给弹性",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "价格动一下",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "卖的量动多少、多快",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "抽屉 · 现成的",
+          "at": 0,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "工厂 · 要新建",
+          "at": 0,
+          "delay": 360
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "rubber",
+      "name": "抽屉：货现成-几个月翻几倍；很软的橡",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "货是现成的",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "只差一个价格",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "几个月，翻好几倍",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "抽屉 = 一根很软的橡皮筋",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "fab",
+      "name": "工厂是铁丝：SK-海力士产能到-20",
+      "photo": "S11",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "到 2029 年，产能差不多卖完",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "紧张延续到 2030 年",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "先盖外壳，洁净车间分批上",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "工厂 = 铁丝",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "swap": {
+        "at": 0,
+        "delay": 180,
+        "photo": "S12"
+      }
+    },
+    {
+      "id": "first",
+      "name": "抽屉先回答-工厂几年后；快的一下全到",
+      "photo": "S09",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "抽屉先回答",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "工厂好几年后才回答",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "快的那一路，一下全到",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "buyers",
+      "name": "旧芯片买主少：几万颗对上百万颗；品牌",
+      "photo": "S13",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "一个工厂一天用掉 · 几万颗",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "一天流进来 · 上百万颗",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "几乎没有品牌用二手芯片",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "crash",
+      "name": "3-月-27-日起五天跌三成：荣耀-",
+      "photo": "S14",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "3 月 27 日起，五天 −30%+",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "荣耀 X9 · ¥320 → ¥130",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "4 月 1 日，华强北不少回收商停收",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "封仓不卖，卖了要亏 100 多万",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "snap",
+      "name": "橡皮筋拉得快弹得快；价格叫得出抽屉-",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "橡皮筋拉得快，弹回来也快",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "收的人先停手，抽屉又关上",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "价格叫得出抽屉",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "叫不出新工厂",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "boundary",
+      "name": "边界：苹果没动-6s-五十块-老人机",
+      "photo": "S15",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "苹果基本没动",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "iPhone 6s，五十块左右",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "老人机没芯片，不动",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "安卓中低端，平台均涨一成",
+          "at": 0,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "“五十倍”是极端说法",
+          "at": 0,
+          "delay": 360
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "ask",
+      "name": "先问：有它的人多少-多快拿出来；抽屉",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "有它的人，有多少？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "多快能拿出来？",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "家家都有 · 高价撑不久",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "要建新厂 · 会贵很久",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "back",
+      "name": "回到热搜：撑不住-三个旧手机家家抽屉",
+      "photo": "S16",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "“3 个旧手机能换一台 iPhone”",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "炒作只是一部分",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "三个旧手机，家家抽屉里都有",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "close",
+      "name": "结尾：翻自己的抽屉-或问观众抽屉里有",
+      "photo": "S16",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "你抽屉里，躺着几部旧手机？",
+          "at": 0
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "ambience": "街道夜晚"
+    },
+    {
+      "id": "next",
+      "name": "下期：华强北花-1399-买到原价近",
+      "photo": "S17",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "华强北二手手机店",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "花 ¥1399，买原价近 ¥3000",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "下期 · 消费者剩余",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    }
+  ],
+  "style": {
+    "layout": "right",
+    "tint": "#1B1230",
+    "tintOpacity": 0.2,
+    "enter": "cut",
+    "letterbox": false,
+    "grain": true,
+    "badge": false,
+    "scale": "v2",
+    "textEnter": "fade",
+    "cardSkin": "tactile",
+    "theme": {
+      "gold": "#FF5FA2",
+      "coral": "#FF7A45",
+      "teal": "#5FD3A8",
+      "bg": "#08070D",
+      "dim": "#C3C1D0"
+    },
+    "sfx": "sparse"
+  }
+}
