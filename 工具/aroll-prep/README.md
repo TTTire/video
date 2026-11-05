@@ -52,7 +52,7 @@ python scripts/sync.py <原片文件夹> [--out 输出目录] [--concat] [--reco
 - 输出音轨：录音笔按偏移裁到相机段长度（录音笔晚开机就前补静音、早停就后补静音并警告）；段尾累计钟漂 > 20ms 时用 `aresample=384000,asetrate=384000*(1+ppm),aresample=48000` 修正（整数采样率在 384k 上取整，误差 < 1.5ppm）；
   再响度归一到 I=-16 LUFS / TP=-1.5：第一遍 `loudnorm print_format=json` 测量，第二遍能线性增益就 `loudnorm linear=true`（目标 LRA 抬到 ≥ 源 LRA，否则 loudnorm 会悄悄退回 dynamic 模式）；
   线性增益会顶破真峰值时改用 `volume + alimiter(-2.5dBTP, latency 补偿)`，成品响度会略低于 -16，报告里写明。AAC 192k 48k。
-- `--concat`：按文件名顺序拼成 `A-roll-同步-全部.mp4`。编码参数全一致 → concat demuxer `-c copy`；不一致（例如某段 4K 某段 1080p）→ filter_complex concat 重编码（h264_nvenc，没有就 libx264），统一到第一段高度、30fps。
+- `--concat`：按文件名顺序拼成 `A-roll-同步-全部.mp4`。编码参数全一致 → 视频走 concat demuxer `-c copy`，音频逐段解码、按该段视频时长补齐/截断后拼接再编一次 AAC（音频跟着 copy 的话，每段开头的 AAC priming 在接缝处不会被跳过，每过一个接缝音频晚约 21ms，AI04 四段拼完第 4 段晚 94ms）；不一致（例如某段 4K 某段 1080p）→ filter_complex concat 重编码（h264_nvenc，没有就 libx264），统一到第一段高度、30fps。
 
 ### 同步报告怎么看
 

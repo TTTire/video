@@ -15,8 +15,8 @@ import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _common import (AUDIO_EXT, VIDEO_EXT, ensure_venv, ffmpeg_bin, fmt_time, h264_args, media_duration,  # noqa: E402
-                     pick_h264_encoder, read_audio, run, stream_kinds, video_params, write_json)
+from _common import (AUDIO_EXT, VIDEO_EXT, ensure_venv, ffmpeg_bin, ffprobe_json, fmt_time, h264_args,  # noqa: E402
+                     media_duration, pick_h264_encoder, read_audio, run, stream_kinds, video_params, write_json)
 
 ensure_venv()
 import numpy as np  # noqa: E402
@@ -278,9 +278,22 @@ def concat_all(files: list[Path], out: Path) -> str:
     lst = out.with_suffix(".txt")
     lst.write_text("".join(f"file '{f.resolve().as_posix()}'\n" for f in files), encoding="utf-8")
     if same:
-        run([ffmpeg_bin(), "-nostdin", "-f", "concat", "-safe", "0", "-i", str(lst), "-c", "copy",
-             "-movflags", "+faststart", str(out)])
-        mode = "copy（编码参数一致）"
+        # 视频走 concat demuxer 直接 copy；音频不能跟着 copy：每段 AAC 开头的 priming 采样在接缝处不会被跳过，
+        # 每过一个接缝音频就比画面晚约 21ms（AI04 四段拼完，第 4 段晚 94ms）。音频逐段解码，按该段视频时长补齐/截断后再拼，只编一次码。
+        durs = [float(next(s for s in ffprobe_json(f)["streams"] if s["codec_type"] == "video")["duration"]) for f in files]
+        # concat demuxer 输入按全部流里最早的时间戳（AAC priming，-0.0213s）整体平移，拿出来的视频因此从 +0.0213s 开始；音频补同样的延迟
+        probe = json.loads(subprocess.run([ffmpeg_bin("ffprobe"), "-v", "error", "-f", "concat", "-safe", "0", "-i", str(lst),
+                                           "-show_entries", "stream=codec_type,start_time", "-of", "json"],
+                                          capture_output=True, text=True, check=True).stdout)["streams"]
+        st = {s["codec_type"]: float(s.get("start_time") or 0.0) for s in probe}
+        shift = max(0.0, st.get("video", 0.0) - min(st.values()))
+        fc = ";".join(f"[{i + 1}:a]aresample=48000,apad,atrim=end={d:.6f},asetpts=N/SR/TB[a{i}]" for i, d in enumerate(durs))
+        fc += ";" + "".join(f"[a{i}]" for i in range(len(files))) + f"concat=n={len(files)}:v=0:a=1"
+        fc += f",adelay=delays={round(shift * 48000)}S:all=1[a]" if shift > 0 else "[a]"
+        run([ffmpeg_bin(), "-nostdin", "-f", "concat", "-safe", "0", "-i", str(lst),
+             *[x for f in files for x in ("-i", str(f))], "-filter_complex", fc, "-map", "0:v:0", "-map", "[a]",
+             "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", str(out)])
+        mode = "视频 copy + 音频逐段对齐后重编码（编码参数一致）"
     else:
         enc = pick_h264_encoder()
         h = params[0]["height"] or 1080
