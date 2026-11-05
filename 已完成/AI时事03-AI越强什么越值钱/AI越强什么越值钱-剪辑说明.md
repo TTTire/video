@@ -124,7 +124,7 @@
 ```bash
 cd 工具/video-render
 npm install && npx remotion browser ensure                      # 新机器一次
-P="../../进行中/AI时事03-AI越强什么越值钱"
+P="../../已完成/AI时事03-AI越强什么越值钱"
 python scripts/import_photos.py "$P/图片素材" ai03 --need "$P/AI越强什么越值钱-发布清单.md"
 python scripts/import_cards.py "$P/图片素材" ai03 --need "$P/AI越强什么越值钱-发布清单.md"
 python scripts/import_sfx.py
@@ -136,4 +136,4 @@ python scripts/glitch_check.py out/ai03-full.mp4                # 应为 坏帧 
 cp out/ai03-full.mp4 "$P/AI越强什么越值钱-动画轨+出镜-仅音效-全片.mp4"
 ```
 
-字幕或口播改了：`python scripts/timeline_from_srt.py "$P/AI越强什么越值钱-口播逐字稿.md" "<新的.srt>" ai03 src/ai03/scenemap.json`，再整片重渲。出镜表：`python scripts/aroll_cues.py ai03`。改叠字 / 版式：改 `src/ai03/photo.json`，先 `python scripts/render.py ai03 arollsheet` 看拼图，再渲全片。
+字幕或口播改了：本期场景表按口播稿行号，`make_timeline.py` 只认讲稿卡要点 id，得用已删的 `timeline_from_srt.py`（讲稿卡流程里删掉，c906d74），先从历史取回：`git show a6dec55:工具/video-render/scripts/timeline_from_srt.py > scripts/timeline_from_srt.py`，再 `python scripts/timeline_from_srt.py "$P/_work/AI越强什么越值钱-口播逐字稿.md" "<新的.srt>" ai03 src/ai03/scenemap.json`，用完删掉，整片重渲。出镜表：`python scripts/aroll_cues.py ai03`。改叠字 / 版式：改 `src/ai03/photo.json`，先 `python scripts/render.py ai03 arollsheet` 看拼图，再渲全片。
