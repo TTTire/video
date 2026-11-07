@@ -1,0 +1,627 @@
+1
+00:00:00,236 --> 00:00:01,036
+Hi everyone
+
+2
+00:00:01,556 --> 00:00:02,533
+This spring
+
+3
+00:00:02,601 --> 00:00:05,896
+an e-commerce platform listed an AI interview assistant
+
+4
+00:00:06,265 --> 00:00:07,925
+The product's official page said
+
+5
+00:00:08,282 --> 00:00:10,442
+"Bestseller online, over 600,000 sold"
+
+6
+00:00:10,862 --> 00:00:12,782
+"Hears questions live, just read it out"
+
+7
+00:00:13,133 --> 00:00:15,893
+But hiring companies are going the other way
+
+8
+00:00:16,177 --> 00:00:19,277
+Google and McKinsey moved interviews back in person
+
+9
+00:00:19,377 --> 00:00:22,877
+and even require at least one in-person meeting before an offer
+
+10
+00:00:23,397 --> 00:00:26,549
+In late October, a hiring manager at Anthropic posted
+
+11
+00:00:26,957 --> 00:00:29,117
+that his team no longer gives coding tests
+
+12
+00:00:29,417 --> 00:00:30,457
+They didn't get harder
+
+13
+00:00:30,761 --> 00:00:33,741
+what changed is that models now do them far better than people
+
+14
+00:00:34,069 --> 00:00:36,929
+After hundreds of practice problems, your first thought is
+
+15
+00:00:37,153 --> 00:00:39,015
+So all these months, or even years
+
+16
+00:00:39,015 --> 00:00:42,193
+of experience and problems I built up, was it all wasted
+
+17
+00:00:42,633 --> 00:00:43,573
+Don't panic yet
+
+18
+00:00:43,893 --> 00:00:46,313
+The problems were always testing something else
+
+19
+00:00:46,413 --> 00:00:48,733
+and that something just got cheap
+
+20
+00:00:49,111 --> 00:00:50,471
+This is Pixel Breath
+
+21
+00:00:50,531 --> 00:00:52,089
+Today let's talk about
+
+22
+00:00:52,205 --> 00:00:54,211
+why grinding problems suddenly stopped working
+
+23
+00:00:56,536 --> 00:00:58,838
+The interviewer poses a problem, you solve it live
+
+24
+00:00:58,958 --> 00:01:00,298
+they nod and figure you'll do
+
+25
+00:01:00,627 --> 00:01:02,689
+It looks like the test is measuring ability
+
+26
+00:01:02,929 --> 00:01:06,809
+but what the company wants to buy is how you'll work once you're in
+
+27
+00:01:06,929 --> 00:01:09,669
+That's something no one can see in a one-hour interview
+
+28
+00:01:09,989 --> 00:01:12,527
+If you can't see it, you need something else
+
+29
+00:01:13,147 --> 00:01:14,247
+to show it
+
+30
+00:01:14,827 --> 00:01:18,604
+Spence's 1973 paper is about exactly this stand-in
+
+31
+00:01:19,007 --> 00:01:20,189
+His example: the diploma
+
+32
+00:01:20,538 --> 00:01:23,120
+A diploma doesn't stand for your ability to do the job
+
+33
+00:01:23,380 --> 00:01:24,740
+But it works, so why is that
+
+34
+00:01:25,080 --> 00:01:27,402
+Because for the capable, it's cheap to get
+
+35
+00:01:27,642 --> 00:01:29,442
+while for the less able, it's expensive
+
+36
+00:01:29,582 --> 00:01:31,540
+and some can hardly get one at all
+
+37
+00:01:31,863 --> 00:01:35,345
+Put simply, a signal works not because it resembles some ability
+
+38
+00:01:35,565 --> 00:01:37,605
+but because faking it is expensive
+
+39
+00:01:37,956 --> 00:01:41,758
+What a company sees in a diploma is how much you put into it
+
+40
+00:01:42,138 --> 00:01:43,596
+Grinding problems is the same
+
+41
+00:01:44,076 --> 00:01:46,214
+There was a student at Columbia University
+
+42
+00:01:46,321 --> 00:01:48,758
+who spent 600 hours grinding to get into Big Tech
+
+43
+00:01:48,838 --> 00:01:51,456
+about three months of full-time work
+
+44
+00:01:51,996 --> 00:01:55,056
+What the interviewer sees in that hour is whether you're willing
+
+45
+00:01:55,322 --> 00:01:58,780
+or able to put 600 hours into this job
+
+46
+00:01:59,133 --> 00:02:02,135
+What the problems always tested is how costly faking is
+
+47
+00:02:02,462 --> 00:02:04,642
+So what if faking gets cheap
+
+48
+00:02:07,019 --> 00:02:08,523
+That same student
+
+49
+00:02:08,584 --> 00:02:10,027
+In March 2025
+
+50
+00:02:10,149 --> 00:02:10,982
+at 21
+
+51
+00:02:11,310 --> 00:02:13,473
+he used AI to build an app in under a week
+
+52
+00:02:13,573 --> 00:02:15,673
+and ran it in the background during interviews
+
+53
+00:02:15,733 --> 00:02:17,013
+He said screen capture misses it
+
+54
+00:02:17,073 --> 00:02:18,273
+and so does the webcam
+
+55
+00:02:18,605 --> 00:02:20,297
+The moment a question was asked
+
+56
+00:02:20,440 --> 00:02:22,765
+the answer would pop up right beside it
+
+57
+00:02:23,111 --> 00:02:25,301
+He used it to pass Amazon's interview
+
+58
+00:02:25,401 --> 00:02:28,114
+and recorded the whole thing and posted it online
+
+59
+00:02:28,354 --> 00:02:31,534
+Amazon and several other companies pulled their offers
+
+60
+00:02:31,794 --> 00:02:33,514
+But the app kept going
+
+61
+00:02:33,849 --> 00:02:35,172
+at $60 a month
+
+62
+00:02:35,311 --> 00:02:36,751
+and plenty still bought it
+
+63
+00:02:37,112 --> 00:02:38,452
+Around that same time
+
+64
+00:02:38,732 --> 00:02:40,032
+at an internal Google meeting
+
+65
+00:02:40,152 --> 00:02:43,131
+an employee asked if in-person interviews could come back
+
+66
+00:02:43,532 --> 00:02:44,852
+Pichai said on the spot
+
+67
+00:02:44,992 --> 00:02:47,909
+worth thinking about, and some interviews went back in person
+
+68
+00:02:48,246 --> 00:02:49,629
+It's the same in China
+
+69
+00:02:49,709 --> 00:02:51,369
+This year, as banks hired new grads
+
+70
+00:02:51,584 --> 00:02:54,247
+several added AI interviews to the process
+
+71
+00:02:54,607 --> 00:02:58,027
+and AI interview assistants on e-commerce sites took off
+
+72
+00:02:58,367 --> 00:03:00,247
+138 yuan for two hours
+
+73
+00:03:00,466 --> 00:03:04,249
+plans from 398 yuan up even correct your gaze
+
+74
+00:03:04,451 --> 00:03:06,174
+so when you read answers in the test
+
+75
+00:03:06,234 --> 00:03:07,534
+it won't show on the call
+
+76
+00:03:07,914 --> 00:03:10,414
+At this point, the logic of the signal has changed
+
+77
+00:03:10,746 --> 00:03:13,414
+That signal used to take 600 hours of effort
+
+78
+00:03:13,414 --> 00:03:14,769
+before it showed results
+
+79
+00:03:15,108 --> 00:03:17,871
+Now, with 138 yuan and two hours
+
+80
+00:03:17,931 --> 00:03:18,888
+anyone can get it
+
+81
+00:03:19,348 --> 00:03:21,391
+Economists call this pooling
+
+82
+00:03:21,731 --> 00:03:23,594
+When everyone's signal is the same
+
+83
+00:03:23,694 --> 00:03:25,634
+you can't tell who's who
+
+84
+00:03:26,054 --> 00:03:28,394
+The way I see it, the problem is still there
+
+85
+00:03:28,494 --> 00:03:29,994
+and so is the answer
+
+86
+00:03:30,212 --> 00:03:33,172
+but it no longer lets companies see your ability
+
+87
+00:03:33,772 --> 00:03:34,975
+Companies still look
+
+88
+00:03:35,155 --> 00:03:37,438
+they've just switched to another signal
+
+89
+00:03:37,658 --> 00:03:40,818
+McKinsey wants at least one in-person meeting before an offer
+
+90
+00:03:41,258 --> 00:03:43,498
+Google has at least one in-person round too
+
+91
+00:03:43,853 --> 00:03:48,176
+That Anthropic manager no longer gives coding tests
+
+92
+00:03:48,496 --> 00:03:52,056
+he looks at weekend prototypes in resumes and portfolios
+
+93
+00:03:52,196 --> 00:03:55,733
+for taste, and whether you've thought a feature through for users
+
+94
+00:03:56,098 --> 00:03:57,021
+That same day
+
+95
+00:03:57,081 --> 00:03:59,981
+Amazon posted its engineering guidelines on its website
+
+96
+00:04:00,321 --> 00:04:01,658
+How many tokens you use
+
+97
+00:04:02,020 --> 00:04:03,221
+how much you use AI
+
+98
+00:04:03,565 --> 00:04:05,585
+in Amazon's words, are these numbers reliable
+
+99
+00:04:06,205 --> 00:04:08,148
+From now on, it's long-term business results
+
+100
+00:04:08,268 --> 00:04:10,788
+This May, they also shut down an internal leaderboard
+
+101
+00:04:11,134 --> 00:04:13,914
+because some people burned tokens like crazy to get on it
+
+102
+00:04:14,271 --> 00:04:15,914
+The old signal was
+
+103
+00:04:15,994 --> 00:04:17,634
+can you actually solve the problem
+
+104
+00:04:17,935 --> 00:04:19,558
+The new signal is
+
+105
+00:04:19,678 --> 00:04:21,338
+what have you actually produced
+
+106
+00:04:21,540 --> 00:04:23,560
+and it must survive follow-up questions
+
+107
+00:04:23,911 --> 00:04:26,934
+Did your software or product actually launch
+
+108
+00:04:27,034 --> 00:04:28,694
+Who are its users right now
+
+109
+00:04:28,834 --> 00:04:30,351
+Which part was yours
+
+110
+00:04:30,682 --> 00:04:33,645
+The first one, AI can do for you overnight
+
+111
+00:04:33,867 --> 00:04:36,095
+But the second, about products and users
+
+112
+00:04:36,095 --> 00:04:37,668
+you have to answer yourself
+
+113
+00:04:40,087 --> 00:04:42,107
+So what should we actually do now
+
+114
+00:04:42,607 --> 00:04:44,187
+Let's first pin down the limits
+
+115
+00:04:44,827 --> 00:04:47,441
+Whiteboards at in-person interviews still work
+
+116
+00:04:47,801 --> 00:04:48,867
+faking is still costly
+
+117
+00:04:49,215 --> 00:04:51,309
+And banks haven't dropped AI interviews
+
+118
+00:04:51,529 --> 00:04:53,869
+instead, they added eye tracking and human review
+
+119
+00:04:54,249 --> 00:04:56,275
+pushing the cost of faking back up
+
+120
+00:04:56,755 --> 00:04:58,269
+What fails is the on-screen kind
+
+121
+00:04:58,589 --> 00:05:00,215
+with standard answers to look up
+
+122
+00:05:00,557 --> 00:05:02,297
+So here's a question to ask yourself
+
+123
+00:05:02,656 --> 00:05:04,150
+That signal you've been building
+
+124
+00:05:04,310 --> 00:05:06,576
+could someone else make it with AI overnight
+
+125
+00:05:07,056 --> 00:05:09,250
+If they can, it's already worthless
+
+126
+00:05:09,630 --> 00:05:12,356
+If not, its price keeps going up
+
+127
+00:05:12,703 --> 00:05:14,051
+In a Peking University class
+
+128
+00:05:14,313 --> 00:05:16,063
+a student asked Professor Yang Jinfang
+
+129
+00:05:16,391 --> 00:05:18,325
+An interview is only half an hour to an hour
+
+130
+00:05:18,525 --> 00:05:20,231
+how can you really read a person
+
+131
+00:05:20,567 --> 00:05:22,021
+The professor gave three filters
+
+132
+00:05:22,301 --> 00:05:23,427
+each one a question
+
+133
+00:05:23,789 --> 00:05:25,383
+What non-consensus view do you hold
+
+134
+00:05:25,623 --> 00:05:27,843
+The professor also said it's normal not to know
+
+135
+00:05:28,123 --> 00:05:30,349
+From my seat, I tried and couldn't answer either
+
+136
+00:05:30,849 --> 00:05:32,183
+The second question follows
+
+137
+00:05:32,543 --> 00:05:34,649
+How exactly did you reach that view
+
+138
+00:05:34,975 --> 00:05:37,915
+You have to lay out the whole logic step by step
+
+139
+00:05:38,435 --> 00:05:40,695
+This one, AI can make up for you too
+
+140
+00:05:41,275 --> 00:05:43,449
+But once the interviewer presses a few times
+
+141
+00:05:43,629 --> 00:05:44,715
+your answer falls apart
+
+142
+00:05:45,048 --> 00:05:46,442
+Recruiters already see this
+
+143
+00:05:46,782 --> 00:05:49,602
+There are reports of people scoring high in AI interviews
+
+144
+00:05:49,907 --> 00:05:52,361
+then showing their gaps when grilled in person
+
+145
+00:05:52,711 --> 00:05:55,225
+Many HR people no longer trust those scores outright
+
+146
+00:05:55,445 --> 00:05:56,591
+That's why it's expensive
+
+147
+00:05:57,091 --> 00:05:58,545
+Back to the opening story
+
+148
+00:05:58,865 --> 00:05:59,965
+The grind wasn't wasted
+
+149
+00:06:00,185 --> 00:06:03,404
+look, what those 600 hours built is still in you
+
+150
+00:06:03,745 --> 00:06:06,965
+It's just that companies won't verify it through a screen anymore
+
+151
+00:06:07,385 --> 00:06:09,540
+They want to see what you've really made
+
+152
+00:06:09,540 --> 00:06:10,935
+and what's at its core
+
+153
+00:06:11,251 --> 00:06:12,333
+Back to that class
+
+154
+00:06:12,397 --> 00:06:13,925
+a question I can't answer either
+
+155
+00:06:14,185 --> 00:06:16,171
+What non-consensus view do I actually hold
+
+156
+00:06:16,731 --> 00:06:18,845
+I won't answer it in this episode
+
+157
+00:06:19,085 --> 00:06:20,531
+I'll tell you once I know
