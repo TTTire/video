@@ -164,9 +164,10 @@ BL  BC  BR     BW
 "aroll": {
   "src": "ai03/aroll.mp4",          // public/ 下。必须是和 srt 同一条时间线的粗剪成片，从 0 秒对齐，30fps；放进来的是 ffmpeg 转好的 1080p 静音代理（用户原片可以是 4K，见 SKILL.md 3b）。一律静音（人声用户在剪映放原音轨）
   "idle": "bubble",                 // cue 之外的状态：bubble 小圆 | hide 不出现
-  "face": [0.5, 0.42],              // 脸在 A-roll 画面里的位置（比例）。bubble / half 态以它为中心裁
+  "faceTrack": true,                // 跟脸（默认，不写就是）：scripts/aroll_face.py 逐帧找脸 → src/<epN>/aroll-face.json，bubble / half 态按它把人对到中间，跳剪换位那一帧取景跟着硬切。false = 不跟、一直用 face（ep8 / ai03 / ai04 写了，重渲不变样）
+  "face": [0.5, 0.42],              // 没有脸轨时（faceTrack: false，或还没跑 aroll_face.py）才用：脸在 A-roll 画面里的位置（比例；x 脸的水平中心，y 两眼连线）
   "bubbleView": 0.62,               // 小圆直径装下 A-roll 画面高度的多少：0.62 ≈ 头到胸口的半身（默认）；0.31 = 只有一张脸（10-29 旧版）。头顶离画面上沿 ≤ 20% 的实拍（ep8）用 0.72，不然头发被圆切掉
-  "bubbleFaceAt": 0.32,             // 脸放在圆里从上往下的位置（默认 0.32，留出下面的肩膀和身子）；bubbleView 调大时同步到 0.34 左右
+  "bubbleFaceAt": 0.32,             // 两眼放在圆里从上往下的位置（默认 0.32，留出下面的肩膀和身子）；bubbleView 调大时同步到 0.34 左右
   "halfView": 0.8,                  // 半屏卡只显示 A-roll 画面上面这一截（默认 1）。A-roll 底部烧了字幕时设 0.8 裁掉
   "cues": [                         // at 是要点 id [起, 止)，和场景表同口径；止写 "end" 到片尾。老期（ep8 及以前）写的数字是口播稿行号，引擎照旧认
     {"at": ["0.1", "0.4"], "mode": "full"},

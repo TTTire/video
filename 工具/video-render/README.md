@@ -13,6 +13,7 @@ python3 scripts/scenes_from_checklist.py "<发布清单.md>" "<讲稿卡.md>" ep
 python3 scripts/import_photos.py <图片文件夹> epN --need <发布清单.md>                   # 图入库（裁 16:9、统一命名、报缺图）
 python3 scripts/make_timeline.py "<讲稿卡.md>" epN [--cpm 200]                        # 录前：按要点字数估时（AI03 实录：卡上每分钟约 200 字）
 python3 scripts/make_timeline.py "<讲稿卡.md>" epN --starts src/epN/starts.json --srt "<粗剪.srt>"   # 录后：按要点起点表
+python3 scripts/aroll_face.py epN                                                      # 出镜层跟脸 → src/epN/aroll-face.json（渲出镜层合成时缺了会自动跑；要 pip install opencv-python-headless）
 python3 scripts/aroll_cues.py epN                                                      # 出镜表，列名「要点」
 python3 scripts/render.py epN sheet | check 40 | full | fullcheck                     # 拼图 / 40 秒小样 / 全片 / 全片带字幕
 ```

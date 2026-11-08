@@ -1757,6 +1757,7 @@
   "aroll": {
     "src": "ai03/aroll.mp4",
     "idle": "bubble",
+    "faceTrack": false,
     "face": [
       0.53,
       0.3

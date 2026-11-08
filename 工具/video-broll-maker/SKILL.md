@@ -268,12 +268,20 @@ python3 scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选�
 # 用户原片不动，剪映里照用原片的声音
 ffmpeg -i "<A-roll.mp4>" -vf scale=1920:1080 -r 30 -an -c:v libx264 -crf 18 -preset fast public/epN/aroll.mp4
 # 核对：代理时长和 srt 最后一条结束时间差不超过 1 秒，否则先问用户是不是换过剪辑
-# photo.json 顶层写 aroll（src / idle / face / cues），cues 的 at 是要点 id：["0.1", "0.4"] = [起, 止)，止写 "end" 到片尾（老期写的是口播稿行号，照旧认）
+# photo.json 顶层写 aroll（src / idle / cues，face 不用写），cues 的 at 是要点 id：["0.1", "0.4"] = [起, 止)，止写 "end" 到片尾（老期写的是口播稿行号，照旧认）
+python3 scripts/aroll_face.py epN            # 跟脸：逐帧找脸 → src/epN/aroll-face.json，看报告（约 1 分钟；忘了跑，渲出镜层时也会自动跑）
 python3 scripts/aroll_cues.py epN            # 看每段模式 / 时间，核对节奏
 python3 scripts/render.py epN arollsheet     # 拼图：小圆有没有压到字
 python3 scripts/render.py epN arollclip 3070 3250   # 单看一处切换
 python3 scripts/render.py epN aroll          # 成片 out/epN-full.mp4
 ```
+
+**跟脸：小圆 / 半屏卡里人始终在中间**（2026-11-08 起）。分几条录、中间挪过位置，粗剪里人在画面的位置会跳（AI04：6 处跳剪换了位置，脸的横向位置在画面宽的 0.43–0.54 之间，固定一个 `face` 时 260 圆里最多偏 70 px）。`aroll_face.py` 用 OpenCV 的 YuNet 逐帧找脸：跳剪换位的那一帧取景跟着硬切（画面本来就在跳，看不出来）；同一条里人慢慢挪出 ±36 px 才用 1 秒慢进慢出平移补位，说话时的晃动不跟。AI04 实测跟脸后最多偏 15 px。
+- 报告列出每一段取景（跳剪 / 平移）；带 ⚠ 的段是人太靠画面边、圆盖不满，对不到中间——告诉用户下次录的时候往中间坐
+- `render.py` 的 arollcheck / arollsheet / arollclip 和 `render_seq.py` 渲 `EpNFull*` 之前都会检查：没有脸轨，或者代理换过（文件大小和脸轨记的不一样），就先跑一遍；`render_seq.py` 这时自动从头渲（之前的帧是旧取景）
+- 全屏（full）态是 A-roll 原画面，不裁也不挪；人在全屏里偏了，只能录的时候摆正
+- 老期（ep8 / ai03 / ai04）的 aroll 写了 `"faceTrack": false`，重渲照旧用固定 `face`，不变样
+- 依赖 `pip install opencv-python-headless`（Mac 用 `pip3`），模型在 `assets/models/`
 
 **交付：整条成片为主，按章 4 段为辅**（2026-10-30 起）。整片只渲一次，加 `--keep` 留下图片序列和 wav，4 段用 `split_chapters.py` 从同一套帧 + 同一条 wav 切出来：
 
@@ -289,7 +297,7 @@ rm -rf out/epN-seq
 
 为什么不再各渲各段（ep8 实测）：每段单独渲、单独编 AAC，音轨比画面多 12–19 ms 末尾补零 + 21 ms 编码延迟，剪辑软件按音频长度首尾相接时每个接缝约 40 ms 声画错位或一声咔；画面本身逐帧一致，没问题。用户主用整条；哪章要改，可以只渲那一章的帧区间原位替换，但那段就是独立音轨，替换完要听接缝，稳妥是整片重渲。
 
-**换机器重渲**（`public/` 和 `*.mp4` 都不进仓库）：pull 之后 `public/epN/` 是空的，先 `import_photos.py`（图在选题文件夹 `图片素材/`，已入库）、有卡再 `import_cards.py`、`import_sfx.py`，再按上面 ffmpeg 一行转 A-roll 代理；然后按上面整片渲 + 切段。`render_seq.py` 第一次跑要 `npx remotion browser ensure`。
+**换机器重渲**（`public/` 和 `*.mp4` 都不进仓库）：pull 之后 `public/epN/` 是空的，先 `import_photos.py`（图在选题文件夹 `图片素材/`，已入库）、有卡再 `import_cards.py`、`import_sfx.py`，再按上面 ffmpeg 一行转 A-roll 代理；然后按上面整片渲 + 切段。`render_seq.py` 第一次跑要 `npx remotion browser ensure`。脸轨在 `src/` 里跟仓库走；新机器转出来的代理文件大小对不上时，渲之前会自动重新跟一遍。
 
 cue 怎么写：开场第一条要点 `full`；"我猜 / 我的感受 / 我打算"这类第一人称判断 `full` 或 `half`；数据、历史、图表段留 `bubble`（默认）；章节卡自动 `hide`。每段 bubble 超过 60 秒就插一段 full。`half` 卡位置固定在画面左边（x 60–700、y 90–810），只配 `right` 母版（字在右）；`topleft` / `center` 母版的期（比如 AI04）用它会盖住左列的字，第一人称段改用 `full` 或放大的小圆。
 

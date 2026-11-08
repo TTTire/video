@@ -58,7 +58,7 @@ def detect(path):
                                       "-of", "json", path], capture_output=True, text=True, check=True).stdout)["streams"][0]
     w, h, total = info["width"], info["height"], int(info.get("nb_frames") or 0)
     W, H = DET_W, round(DET_W * h / w / 2) * 2
-    cv2.setLogLevel(2)   # 只报错误：OpenCV 5 的新推理引擎建检测器时打一行 "Targets are not supported" 的 WARN，无害
+    cv2.utils.logging.setLogLevel(cv2.utils.logging.LOG_LEVEL_ERROR)   # OpenCV 5 的新推理引擎建检测器时打一行 "Targets are not supported" 的 WARN，无害
     # 模型按字节读进去：cv2 直接读路径在 Windows 中文路径（E:\视频脚本）下会失败
     det = cv2.FaceDetectorYN.create("onnx", np.fromfile(MODEL, np.uint8), np.zeros(0, np.uint8), (W, H), 0.6, 0.3, 50)
     p = subprocess.Popen(["ffmpeg", "-v", "error", "-i", path, "-an", "-vf", f"scale={W}:{H}:flags=area",

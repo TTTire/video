@@ -1411,6 +1411,7 @@
   "aroll": {
     "src": "ep8/aroll.mp4",
     "idle": "bubble",
+    "faceTrack": false,
     "face": [
       0.5,
       0.36
