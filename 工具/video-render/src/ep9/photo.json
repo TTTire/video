@@ -747,5 +747,14 @@
       "dim": "#C3C1D0"
     },
     "sfx": "sparse"
+  },
+  "aroll": {
+    "src": "ep9/aroll.mp4",
+    "idle": "bubble",
+    "bubbleView": 0.66,
+    "bubbleFaceAt": 0.34,
+    "cues": [
+      {"at": ["0.1", "0.2"], "mode": "full", "max": 5.5}
+    ]
   }
 }

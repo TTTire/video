@@ -1,0 +1,555 @@
+1
+00:00:00,190 --> 00:00:01,950
+An Android phone left unused for years
+
+2
+00:00:02,000 --> 00:00:04,690
+used to fetch just a few dozen yuan from recyclers
+
+3
+00:00:04,750 --> 00:00:07,560
+But this March, something strange happened
+
+4
+00:00:07,610 --> 00:00:09,020
+A recycling stall owner said
+
+5
+00:00:09,070 --> 00:00:11,860
+these phones now go for over 400
+
+6
+00:00:11,970 --> 00:00:13,700
+even with a cracked screen
+
+7
+00:00:13,760 --> 00:00:16,020
+Two lines were trending for days
+
+8
+00:00:16,070 --> 00:00:18,140
+Used phones once worth just 10 yuan
+
+9
+00:00:18,190 --> 00:00:19,770
+now fetch 500 from recyclers
+
+10
+00:00:19,880 --> 00:00:22,040
+Three old phones can get you an iPhone
+
+11
+00:00:22,090 --> 00:00:23,760
+Seeing news like this
+
+12
+00:00:23,810 --> 00:00:26,800
+most people's first thought: recyclers are hyping it
+
+13
+00:00:26,850 --> 00:00:29,670
+How could electronics gain value just sitting there
+
+14
+00:00:29,720 --> 00:00:31,030
+Stranger still
+
+15
+00:00:31,080 --> 00:00:33,520
+after rising for half a year, starting March 27
+
+16
+00:00:33,570 --> 00:00:35,840
+recycling prices fell 30% in five days
+
+17
+00:00:35,900 --> 00:00:37,740
+and some models were cut in half
+
+18
+00:00:37,810 --> 00:00:41,200
+This is Pixel Breath's 100 Principles of Economics, number 9
+
+19
+00:00:41,250 --> 00:00:42,360
+the law of supply
+
+20
+00:00:42,450 --> 00:00:43,960
+Last time I left a question
+
+21
+00:00:44,010 --> 00:00:47,380
+Prices rose and fewer people bought, but what about sellers
+
+22
+00:00:49,490 --> 00:00:51,310
+Calling it hype isn't unfair
+
+23
+00:00:51,360 --> 00:00:54,700
+CCTV reporters asked two big platforms in Beijing, and staff said
+
+24
+00:00:54,750 --> 00:00:57,740
+old phones hadn't gone up much, the rumors were just hype
+
+25
+00:00:57,800 --> 00:00:58,820
+Experts also said
+
+26
+00:00:58,870 --> 00:01:01,840
+that "three for an iPhone" talk was an emotional bubble
+
+27
+00:01:01,890 --> 00:01:04,920
+But in the same report, several recycling stalls said
+
+28
+00:01:04,970 --> 00:01:07,490
+some Android phones really were up 5 to 6 times
+
+29
+00:01:07,800 --> 00:01:11,070
+A phone repair shop owner in Hangzhou did the math best
+
+30
+00:01:11,150 --> 00:01:15,750
+an OPPO A93 256G went from just over 100 to 300
+
+31
+00:01:15,820 --> 00:01:19,410
+One 256G memory chip alone sells for 300 to 400
+
+32
+00:01:19,520 --> 00:01:20,850
+Cracked screens don't matter
+
+33
+00:01:20,900 --> 00:01:24,330
+Basic keypad phones have no memory chip, and their price didn't budge
+
+34
+00:01:24,570 --> 00:01:28,070
+It's not the phone that went up, it's the memory chip inside
+
+35
+00:01:28,120 --> 00:01:29,380
+Why are chips so valuable
+
+36
+00:01:29,430 --> 00:01:32,670
+I covered that in my video on why memory suddenly got pricey
+
+37
+00:01:32,720 --> 00:01:35,250
+AI took over memory makers' capacity
+
+38
+00:01:35,320 --> 00:01:36,890
+so regular memory ran short
+
+39
+00:01:36,980 --> 00:01:39,960
+so short that even chips in old phones are wanted
+
+40
+00:01:40,120 --> 00:01:42,780
+They get pulled out and put into cheap electronics
+
+41
+00:01:42,830 --> 00:01:44,470
+sold in Southeast Asia and Africa
+
+42
+00:01:44,520 --> 00:01:46,600
+Let me translate that for you
+
+43
+00:01:46,660 --> 00:01:51,060
+The higher the price, the more people are willing and able to sell
+
+44
+00:01:51,130 --> 00:01:53,440
+Last episode ended asking: what about sellers
+
+45
+00:01:53,550 --> 00:01:54,950
+This time, the seller is you
+
+46
+00:01:55,060 --> 00:01:57,530
+and that old phone of yours
+
+47
+00:01:57,580 --> 00:02:00,370
+So how many old phones have piled up in your drawer
+
+48
+00:02:00,420 --> 00:02:02,970
+China retires 600 to 700 million phones a year
+
+49
+00:02:03,020 --> 00:02:05,390
+about one for every two people
+
+50
+00:02:05,440 --> 00:02:09,230
+Stats say once phones are retired, over half stay at home
+
+51
+00:02:09,280 --> 00:02:11,550
+only about 5% go to formal recycling
+
+52
+00:02:11,600 --> 00:02:13,880
+Once the price is called out, drawers open
+
+53
+00:02:13,930 --> 00:02:16,260
+One recycling platform, Shuma Huishou Wang
+
+54
+00:02:16,310 --> 00:02:19,249
+went from handling 200,000 phones a day last September
+
+55
+00:02:19,250 --> 00:02:21,970
+to 1.5 million a day this March
+
+56
+00:02:22,030 --> 00:02:23,400
+a jump of over 7 times
+
+57
+00:02:23,460 --> 00:02:25,120
+Collectors rushed in too
+
+58
+00:02:25,170 --> 00:02:26,760
+One veteran recycler estimates
+
+59
+00:02:26,810 --> 00:02:29,470
+the trade had about 100,000 people last year
+
+60
+00:02:29,520 --> 00:02:31,110
+and over a million this year
+
+61
+00:02:31,160 --> 00:02:32,480
+Someone joked online
+
+62
+00:02:32,530 --> 00:02:35,310
+barbers are buying, fruit sellers are buying
+
+63
+00:02:35,360 --> 00:02:38,440
+Once the price is called out, sellers and buyers flood in
+
+64
+00:02:38,490 --> 00:02:39,830
+But chips are still scarce
+
+65
+00:02:39,870 --> 00:02:43,610
+so why did old phone prices collapse in just five days
+
+66
+00:02:44,530 --> 00:02:46,360
+Let me bring in a concept
+
+67
+00:02:46,410 --> 00:02:48,590
+What exactly is elasticity of supply
+
+68
+00:02:48,640 --> 00:02:52,390
+When price moves, how much can supply move, and how fast
+
+69
+00:02:52,440 --> 00:02:53,900
+Memory comes from two places
+
+70
+00:02:53,950 --> 00:02:55,380
+One is the factory
+
+71
+00:02:55,430 --> 00:02:57,580
+the other is your drawer
+
+72
+00:02:57,760 --> 00:02:59,990
+The drawer supply already exists
+
+73
+00:03:00,040 --> 00:03:02,840
+the phones were made long ago, they're just old
+
+74
+00:03:03,030 --> 00:03:05,010
+All it takes is a price to call them out
+
+75
+00:03:05,060 --> 00:03:06,990
+so it can multiply in just a few months
+
+76
+00:03:07,040 --> 00:03:10,220
+Last time I said buyers can be rubber bands or steel wire
+
+77
+00:03:10,270 --> 00:03:11,640
+Sellers are the same
+
+78
+00:03:11,710 --> 00:03:15,300
+The drawer is a soft rubber band, it stretches at a tug
+
+79
+00:03:15,360 --> 00:03:17,110
+The factory is the steel wire
+
+80
+00:03:17,160 --> 00:03:19,810
+SK hynix said on its October earnings call
+
+81
+00:03:19,860 --> 00:03:23,499
+that through 2029, its DRAM and HBM capacity
+
+82
+00:03:23,500 --> 00:03:25,010
+is almost sold out
+
+83
+00:03:25,100 --> 00:03:27,200
+New fabs take a long time to build
+
+84
+00:03:27,260 --> 00:03:29,540
+and the crunch will last into 2030
+
+85
+00:03:29,590 --> 00:03:32,130
+Even new fabs get the shell built first
+
+86
+00:03:32,180 --> 00:03:35,010
+with clean rooms added in phases, for fear of a glut
+
+87
+00:03:35,070 --> 00:03:37,810
+The way I see it, when the same memory chip gets pricier
+
+88
+00:03:37,860 --> 00:03:40,150
+the first to answer is always your drawer
+
+89
+00:03:40,200 --> 00:03:43,700
+By the time factories catch up, years have passed
+
+90
+00:03:43,940 --> 00:03:46,640
+But salvaged chips have only a few buyers
+
+91
+00:03:46,690 --> 00:03:48,480
+factories that make cheap electronics
+
+92
+00:03:48,530 --> 00:03:51,750
+Reports say almost no brand will use second-hand chips
+
+93
+00:03:51,800 --> 00:03:53,430
+A chip recycler said
+
+94
+00:03:53,480 --> 00:03:55,760
+a factory can use tens of thousands a day
+
+95
+00:03:55,810 --> 00:03:57,880
+but over a million flow in
+
+96
+00:03:57,950 --> 00:03:59,910
+So starting March 27
+
+97
+00:03:59,960 --> 00:04:01,500
+down over 30% in five days
+
+98
+00:04:01,550 --> 00:04:04,030
+the Honor X9 dropped from 320 to 130
+
+99
+00:04:04,160 --> 00:04:07,540
+On April 1, many Huaqiangbei recyclers stopped buying
+
+100
+00:04:07,590 --> 00:04:10,880
+One recycler has a warehouse of phones he paid over 5 million for
+
+101
+00:04:10,930 --> 00:04:13,990
+He sealed it up, since selling would lose him over 1 million
+
+102
+00:04:14,040 --> 00:04:17,360
+The faster a rubber band stretches, the faster it snaps back
+
+103
+00:04:17,410 --> 00:04:19,800
+When prices fall, the buyers stop first
+
+104
+00:04:19,890 --> 00:04:21,430
+and the drawers close again
+
+105
+00:04:21,590 --> 00:04:25,020
+Price can open drawers, but it can't conjure a new factory
+
+106
+00:04:25,560 --> 00:04:27,520
+I'll state the limits just once
+
+107
+00:04:27,570 --> 00:04:29,620
+Not every old phone went up
+
+108
+00:04:29,730 --> 00:04:30,990
+Apple phones barely moved
+
+109
+00:04:31,040 --> 00:04:33,870
+an 8-year-old iPhone 6s is worth only about 50 yuan
+
+110
+00:04:33,930 --> 00:04:35,250
+Basic phones stayed flat too
+
+111
+00:04:35,300 --> 00:04:39,170
+Platforms say budget and mid-range Androids rose about 10% on average
+
+112
+00:04:39,250 --> 00:04:42,060
+the big gainers were scrapped phones with lots of storage
+
+113
+00:04:42,190 --> 00:04:46,290
+Trending claims like "50 times" or "three for an iPhone"
+
+114
+00:04:46,340 --> 00:04:49,920
+were called extreme by CCTV's investigation
+
+115
+00:04:50,110 --> 00:04:52,770
+So next time something you own suddenly gains value
+
+116
+00:04:52,820 --> 00:04:54,130
+ask one question first
+
+117
+00:04:54,290 --> 00:04:56,900
+How many people have the same thing as me
+
+118
+00:04:56,980 --> 00:04:59,240
+and how fast can they bring it out
+
+119
+00:04:59,430 --> 00:05:01,120
+If every home has one in a drawer
+
+120
+00:05:01,170 --> 00:05:04,610
+high prices won't last, so don't wait for the peak to sell
+
+121
+00:05:04,720 --> 00:05:07,670
+If more needs new factories, prices stay high for long
+
+122
+00:05:07,740 --> 00:05:09,300
+Memory sticks are like that
+
+123
+00:05:09,510 --> 00:05:11,040
+Back to that trending post
+
+124
+00:05:11,090 --> 00:05:13,010
+"Three phones can get you an iPhone"
+
+125
+00:05:13,060 --> 00:05:15,130
+My take: it won't hold
+
+126
+00:05:15,180 --> 00:05:16,720
+Hype is only part of it
+
+127
+00:05:16,820 --> 00:05:19,050
+The bigger reason is, three old phones
+
+128
+00:05:19,100 --> 00:05:20,620
+are in every household's drawer
+
+129
+00:05:20,720 --> 00:05:24,310
+While writing this episode, I went through my own drawers
+
+130
+00:05:24,390 --> 00:05:25,950
+and found a few old phones
+
+131
+00:05:26,000 --> 00:05:29,370
+but when I checked, their real prices hadn't gone up
+
+132
+00:05:29,420 --> 00:05:32,510
+So how many used phones are in your drawer
+
+133
+00:05:32,560 --> 00:05:34,720
+At a used phone shop in Huaqiangbei
+
+134
+00:05:34,770 --> 00:05:36,680
+someone paid 1399
+
+135
+00:05:36,730 --> 00:05:39,170
+for a model that cost nearly 3000 new
+
+136
+00:05:39,220 --> 00:05:41,310
+That "I got a deal" feeling a buyer has
+
+137
+00:05:41,360 --> 00:05:43,060
+economics has a name for that too
+
+138
+00:05:43,110 --> 00:05:46,440
+Next time, we'll look at principle number 10
+
+139
+00:05:46,520 --> 00:05:47,860
+consumer surplus
