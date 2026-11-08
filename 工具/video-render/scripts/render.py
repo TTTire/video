@@ -23,6 +23,9 @@ arg = sys.argv[3] if len(sys.argv) > 3 else None
 comp = ("Ep" + ep[2:].upper()) if ep.lower().startswith("ep") else ("Ai" + ep[2:]) if ep.lower().startswith("ai") else ep
 os.makedirs(f"{ROOT}/out/_check", exist_ok=True)
 base = ["npx", "remotion"]
+if mode in ("arollcheck", "arollsheet", "arollclip"):   # 出镜层合成先确认脸轨（aroll 走 render_seq.py，在那边查）
+    import aroll_face
+    aroll_face.ensure(ep)
 if mode == "sheet":
     cmd = base + ["still", "src/index.ts", f"{comp}Sheet", f"out/{ep}-sheet.jpg", "--frame=0", "--jpeg-quality=85"]
 elif mode == "still":

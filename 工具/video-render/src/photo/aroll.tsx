@@ -21,6 +21,17 @@ import {Sfx} from '../sfx';
 const clamp = {extrapolateLeft: 'clamp', extrapolateRight: 'clamp'} as const;
 const easeInOut = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2);
 const easeOut = (t: number) => 1 - Math.pow(1 - t, 3);
+// 脸轨（scripts/aroll_face.py 生成，register.tsx 从 faces.ts 塞进 spec.faceKeys）：[帧, x, y]，x 脸框中心、y 两眼连线，A-roll 画面比例。
+// 相邻两个关键帧之间慢进慢出：值相同 = 停住，帧号只差 1 = 跳剪处硬切，隔 30 帧 = 同一条里人挪了、平移重新对中
+export type FaceKey = [number, number, number];
+const faceAt = (keys: FaceKey[], f: number): [number, number] => {
+  if (f <= keys[0][0]) return [keys[0][1], keys[0][2]];
+  let lo = 0, hi = keys.length - 1;
+  if (f >= keys[hi][0]) return [keys[hi][1], keys[hi][2]];
+  while (hi - lo > 1) { const mid = (lo + hi) >> 1; if (keys[mid][0] <= f) lo = mid; else hi = mid; }
+  const a = keys[lo], b = keys[hi], k = easeInOut((f - a[0]) / (b[0] - a[0]));
+  return [a[1] + (b[1] - a[1]) * k, a[2] + (b[2] - a[2]) * k];
+};
 
 export type ArollMode = 'full' | 'half' | 'bubble' | 'hide';
 export type ArollCue = {at: [number | string, number | string]; mode: ArollMode; max?: number};
@@ -28,11 +39,12 @@ export type ArollCue = {at: [number | string, number | string]; mode: ArollMode;
 // 放大时外沿贴住默认小圆的外沿（右上圆贴右上、左下圆贴左下），圆往画面里长：不出画、不进字幕区，但会多占字列和照片主体那一侧
 export const BUBBLE_SIZE = {m: 1.3, l: 1.6} as const;
 export type ArollSize = keyof typeof BUBBLE_SIZE;
-// face: 脸在 A-roll 画面里的位置（0–1 比例，默认 [0.5, 0.42]），bubble 态放大时以它为中心、把它对到圆心
-// bubbleView: 小圆直径装下 A-roll 画面高度的多少（默认 0.62 = 半身；0.31 = 只有脸，旧版效果）；bubbleFaceAt: 脸在圆里从上往下的位置（默认 0.32）
+// face: 脸在 A-roll 画面里的位置（0–1 比例，默认 [0.5, 0.42]；x 脸的水平中心，y 两眼连线），bubble / half 态以它为中心裁。
+//   有脸轨（faceKeys）时逐帧用脸轨、不看 face；photo.json 写 faceTrack: false 就不跟脸、一直用 face（老期都写了，重渲不变样）
+// bubbleView: 小圆直径装下 A-roll 画面高度的多少（默认 0.62 = 半身；0.31 = 只有脸，旧版效果）；bubbleFaceAt: 两眼在圆里从上往下的位置（默认 0.32）
 // hideOn: 这些场景 id 自动 hide（默认 ["chapter", "series"]：章节卡和栏目卡不露脸），不用手写 cue
 // sfx: 跟 style.sfx（register.tsx 传进来），"sparse" 时落在换场景那一帧的切换不响
-export type ArollSpec = {src: string; idle?: ArollMode; bubble?: {d?: number; x?: number; y?: number}; cues: ArollCue[]; dur?: number; pos?: string; ring?: boolean; face?: [number, number]; layout?: 'right' | 'topleft' | 'center' | 'bottom'; hideOn?: string[]; halfView?: number; bubbleView?: number; bubbleFaceAt?: number; sfx?: 'sparse'};
+export type ArollSpec = {src: string; idle?: ArollMode; bubble?: {d?: number; x?: number; y?: number}; cues: ArollCue[]; dur?: number; pos?: string; ring?: boolean; face?: [number, number]; faceTrack?: boolean; faceKeys?: FaceKey[]; layout?: 'right' | 'topleft' | 'center' | 'bottom'; hideOn?: string[]; halfView?: number; bubbleView?: number; bubbleFaceAt?: number; sfx?: 'sparse'};
 
 // 把 cue 换成帧区间：frameOf(要点 id 或老期行号) = 它开始的帧（register.tsx 的 cueFrame）
 export type ArollSeg = {from: number; to: number; mode: ArollMode; side?: 'left' | 'right'; pos?: [number, number]; size?: ArollSize; quiet?: boolean};
@@ -103,7 +115,7 @@ export const ArollLayer: React.FC<{spec: ArollSpec; segs: ArollSeg[]}> = ({spec,
     const g = (d - b.d) / 2;
     return {...b, d, x: b.x + (s === 'right' ? -g : g), y: b.y + (s === 'right' ? g : -g)};
   };
-  const [fx, fy] = spec.face ?? [0.5, 0.42];
+  const [fx, fy] = spec.faceKeys?.length ? faceAt(spec.faceKeys, f) : spec.face ?? [0.5, 0.42];
   let idx = segs.findIndex((s) => f >= s.from && f < s.to);
   if (idx < 0) idx = segs.length - 1;
   const cur = segs[idx], prev = segs[idx - 1];

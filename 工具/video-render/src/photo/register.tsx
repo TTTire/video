@@ -5,6 +5,7 @@ import {CustomMap, EpisodeSpec, buildPhotoEpisode} from './engine';
 import {useTitleFont} from './kit';
 import {Sheet, pickThumbs, sheetHeight} from './sheet';
 import {ArollLayer, buildArollSegs} from './aroll';
+import {FACE_TRACKS} from './faces';
 
 // A-roll cue 的 at → 帧。讲稿卡期写要点 id（"1.3"，"end" = 片尾），查 make_timeline.py 写的 timeline.points；
 // ep8 及以前写口播稿行号：每个场景的 steps 和稿子的行一一对应（章节标题也占一行），展平后第 i 个就是第 i 行
@@ -26,8 +27,8 @@ export type Comp = {id: string; total: number; C: React.FC; width?: number; heig
 
 export const photoComps = (id: string, timeline: Timeline, spec: EpisodeSpec, custom: CustomMap = {}, names: Record<string, string> = {}): Comp[] => {
   const built = buildPhotoEpisode(spec, custom);
-  // 出镜层跟本期的版式和音效密度走（aroll 里单独写了就以它为准）
-  const ar = spec.aroll && {...spec.aroll, layout: spec.aroll.layout ?? spec.style?.layout, sfx: spec.aroll.sfx ?? spec.style?.sfx};
+  // 出镜层跟本期的版式和音效密度走（aroll 里单独写了就以它为准）；脸轨按合成 id 从 faces.ts 取，photo.json 写 faceTrack: false 的期不跟
+  const ar = spec.aroll && {...spec.aroll, layout: spec.aroll.layout ?? spec.style?.layout, sfx: spec.aroll.sfx ?? spec.style?.sfx, faceKeys: spec.aroll.faceTrack === false ? undefined : FACE_TRACKS[id]};
   const segs = ar ? buildArollSegs(ar, cueFrame(timeline), timeline.total, timeline.scenes.map((sc: {scene: string; from: number; dur: number}) => {
     const s = spec.scenes.find((x) => x.id === sc.scene);
     // sound：这个场景开头自己响（章节卡 / 栏目卡 flip，普通场景 enterSfx 默认 pop）

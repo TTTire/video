@@ -88,6 +88,10 @@ def main():
     work = f"{ROOT}/out/{ep}-seq/{comp}"
     frames_dir = f"{work}/frames"
     bundle = f"{ROOT}/out/{ep}-seq/bundle"
+    if comp.endswith(("Full", "FullCheck")):   # 出镜层合成：脸轨没有或 A-roll 代理换过就先跟脸（aroll_face.py）
+        import aroll_face
+        if aroll_face.ensure(ep):
+            a.fresh = True                     # 脸轨刚重新生成，之前渲好的帧是旧取景，从头渲
     if a.fresh:
         shutil.rmtree(work, ignore_errors=True)
     os.makedirs(frames_dir, exist_ok=True)
