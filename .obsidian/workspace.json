@@ -41,6 +41,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "进行中/9-100-供给定律-旧手机为什么突然值钱了/9-100-供给定律-旧手机为什么突然值钱了-发布清单.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "9-100-供给定律-旧手机为什么突然值钱了-发布清单"
+            }
+          },
+          {
+            "id": "95091528db42f5ca",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "进行中/9-100-供给定律-旧手机为什么突然值钱了/9-100-供给定律-旧手机为什么突然值钱了-讲稿卡.md",
                 "mode": "source",
                 "source": false
@@ -48,9 +62,23 @@
               "icon": "lucide-file",
               "title": "9-100-供给定律-旧手机为什么突然值钱了-讲稿卡"
             }
+          },
+          {
+            "id": "179e03a3f9bf560b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "conflict-files-obsidian-git.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "conflict-files-obsidian-git"
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -224,34 +252,41 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3d13ab9cd71d05ec",
+  "active": "179e03a3f9bf560b",
   "lastOpenFiles": [
-    "工具/video-render/src/ai04/aroll-face.json",
-    "工具/video-render/out/ai04-face-compare.jpg",
-    "工具/video-render/out/_face/flag-900.jpg",
-    "工具/video-render/out/_face/bundle/public/ep7-narration.wav",
-    "工具/video-render/out/_face/bundle/304.bundle.js.map",
-    "工具/video-render/out/_face/bundle/208.bundle.js.map",
-    "工具/video-render/out/_face/bundle/328.bundle.js.map",
-    "工具/video-render/out/_face/bundle/138.bundle.js.map",
-    "工具/video-render/out/_face/bundle/161.bundle.js.map",
-    "工具/video-render/out/_face/bundle/392.bundle.js.map",
-    "工具/video-render/out/_face/bundle/252.bundle.js.map",
-    "工具/video-render/out/_face/bundle/e253e357e57e739a.jpg",
-    "工具/video-render/out/_face/bundle/3d02a8ec4f59218b.jpg",
-    "工具/video-render/out/_face/bundle/03e739a6e4d158d7.jpg",
-    "工具/video-render/out/_face/bundle/62580ec1dcaf265f.jpg",
-    "工具/video-render/out/_face/bundle/4024415e1bbf2324.jpg",
-    "工具/video-render/out/_face/bundle/e11e3836e11472ff.jpg",
-    "工具/video-render/out/_face/bundle/3cd48d57a7a9f840.jpg",
-    "工具/video-render/out/_face/bundle/f42abb4b461d9cb6.jpg",
-    "工具/video-render/out/_check/ai04-aroll-640-700.mp4",
-    "工具/video-render/out/_face/bundle/favicon.ico",
+    "进行中/9-100-供给定律-旧手机为什么突然值钱了/9-100-供给定律-旧手机为什么突然值钱了-讲稿卡.md",
+    "conflict-files-obsidian-git.md",
+    "进行中/9-100-供给定律-旧手机为什么突然值钱了/9-100-供给定律-旧手机为什么突然值钱了-发布清单.md",
+    "已完成/AI时事04-刷题为什么突然没用了/粗剪素材/MVI_9099.MOV",
+    "已完成/AI时事04-刷题为什么突然没用了/粗剪素材/MVI_9098.MOV",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S17.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/粗剪素材/2.wav",
+    "已完成/AI时事04-刷题为什么突然没用了/粗剪素材/MVI_9097.MOV",
+    "已完成/AI时事04-刷题为什么突然没用了/粗剪素材/MVI_9096.MOV",
+    "已完成/AI时事04-刷题为什么突然没用了/粗剪素材/4.wav",
+    "已完成/AI时事04-刷题为什么突然没用了/粗剪素材/1.wav",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S18.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/粗剪素材/0.wav",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S16.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S15.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S14.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S13.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S12.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S11.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S10.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/图片素材/S09.jpeg",
+    "已完成/AI时事04-刷题为什么突然没用了/同步/同步报告.md",
+    "已完成/AI时事04-刷题为什么突然没用了/同步/同步报告.json",
+    "已完成/AI时事04-刷题为什么突然没用了/同步/剪切清单.md",
+    "已完成/AI时事04-刷题为什么突然没用了/同步/MVI_9099-同步.mp4",
+    "已完成/AI时事04-刷题为什么突然没用了/_work/刷题为什么突然没用了-口播逐字稿.md",
+    "已完成/AI时事04-刷题为什么突然没用了/_work/刷题为什么突然没用了-口播逐字稿-剪映版.md",
+    "已完成/AI时事04-刷题为什么突然没用了/刷题为什么突然没用了-讲稿卡.md",
+    "已完成/AI时事04-刷题为什么突然没用了/刷题为什么突然没用了-发布清单.md",
     "进行中/AI时事04-刷题为什么突然没用了/刷题为什么突然没用了-发布清单.md",
     "进行中/AI时事04-刷题为什么突然没用了/刷题为什么突然没用了-讲稿卡.md",
     "进行中/AI时事04-刷题为什么突然没用了/同步/剪切清单.md",
     "进行中/AI时事04-刷题为什么突然没用了/同步/同步报告.md",
-    "conflict-files-obsidian-git.md",
     "进行中/AI时事03-AI越强什么越值钱/AI越强什么越值钱-讲稿卡.md",
     "进行中/AI时事03-AI越强什么越值钱/实验/同步-第3段/剪切清单.md",
     "进行中/AI时事03-AI越强什么越值钱/实验/同步-第2段/剪切清单.md",
@@ -263,14 +298,6 @@
     "进行中/AI时事03-AI越强什么越值钱/实验/同步/同步报告.md",
     "进行中/AI时事03-AI越强什么越值钱/AI越强什么越值钱-口播逐字稿.md",
     "进行中/8-100-需求价格弹性-海底捞涨价为什么要道歉/8-100-需求价格弹性-海底捞涨价为什么要道歉-发布清单.md",
-    "已完成/8-100-需求价格弹性-海底捞涨价为什么要道歉/_work/重出图提示词.md",
-    "已完成/8-100-需求价格弹性-海底捞涨价为什么要道歉/_work/过程报告-2026-10-27.md",
-    "已完成/8-100-需求价格弹性-海底捞涨价为什么要道歉/_work/定题与候选例子.md",
-    "已完成/8-100-需求价格弹性-海底捞涨价为什么要道歉/8-100-需求价格弹性-海底捞涨价为什么要道歉-口播逐字稿.md",
-    "已完成/8-100-需求价格弹性-海底捞涨价为什么要道歉/8-100-需求价格弹性-海底捞涨价为什么要道歉-口播逐字稿-剪映版.md",
-    "已完成/8-100-需求价格弹性-海底捞涨价为什么要道歉/8-100-需求价格弹性-海底捞涨价为什么要道歉-发布清单.md",
-    "已完成/8-100-需求价格弹性-海底捞涨价为什么要道歉/8-100-需求价格弹性-海底捞涨价为什么要道歉-剪辑说明.md",
-    "进行中/8-100-需求价格弹性-海底捞涨价为什么要道歉/8-100-需求价格弹性-海底捞涨价为什么要道歉-口播逐字稿.md",
-    "进行中/8-100-需求价格弹性-海底捞涨价为什么要道歉/8-100-需求价格弹性-海底捞涨价为什么要道歉-剪辑说明.md"
+    "已完成/8-100-需求价格弹性-海底捞涨价为什么要道歉/_work/重出图提示词.md"
   ]
 }
