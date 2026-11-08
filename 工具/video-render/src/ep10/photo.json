@@ -1,0 +1,657 @@
+{
+  "ep": "ep10",
+  "badge": "10",
+  "series": "100 个经济学原理",
+  "photos": "ep10/photos",
+  "chapterPhoto": "S15",
+  "scenes": [
+    {
+      "id": "post",
+      "name": "网上有人晒：终于在华强北拿下-xs-",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "“终于在华强北拿下 xs max 了”",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "哪家？多少钱？",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "market",
+      "name": "央视财经：卖场刚开门就来了不少人-1",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "花 ¥1399 就能买到",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "原价近 ¥3000 的机型",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "ambience": "商场"
+    },
+    {
+      "id": "math",
+      "name": "上期留的问题；第一反应：赚了一千六",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "上期留的：那份“赚到了”",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "¥3000 − ¥1399",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "赚了 ¥1600？",
+          "at": 1,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "wrong",
+      "name": "名字是对的-账算错了",
+      "photo": "S03",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "名字是对的",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "这笔账，算错了",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "series",
+      "name": "栏目卡：第-10-个-消费者剩余",
+      "photo": "S03",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "10 消费者剩余",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "CONSUMER SURPLUS",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "那份“赚到了”，赚了多少",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "tag",
+      "name": "原价减现价谁都会-商家最希望你这么算",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "原价 − 现价",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "谁都会算",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "商家也最希望你这么算",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "ambience": "商场"
+    },
+    {
+      "id": "rule",
+      "name": "规定：没写清楚的原价不能高于前七天最",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "标出来比的“原价”",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "不能高于前七天的最低成交价",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "这个数，是卖家写的",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "define",
+      "name": "消费者剩余：愿意付的减实际付的",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "消费者剩余",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "你本来愿意付的",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "− 你实际付的",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "invisible",
+      "name": "这个数只在你心里-经济学家都难算",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "这个数只在你心里",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "价签上没有，卖家也看不见",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "twobuyers",
+      "name": "同一部-1399-两个假设的买家",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "假设一下：同一部 ¥1399",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "赚了 ¥600",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "亏了 ¥400",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "notag",
+      "name": "看心里的数不看价签；没价签的东西呢",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "看心里那个数，不看价签",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "要是根本没有价签呢？",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "free",
+      "name": "地图-搜索-邮箱：原价-0-现价-0",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "地图 · 搜索 · 邮箱",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "原价 ¥0，现价 ¥0",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "按折扣算：一分没赚",
+          "at": 0,
+          "delay": 180,
+          "quote": true
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "pnas",
+      "name": "PNAS-2019：给多少钱肯一整年",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "给你多少钱",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "你肯一整年不用它？",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "rank",
+      "name": "搜索-17,530-邮箱-8,414",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "$17,530",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "搜索引擎 $17,530",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "邮箱 $8,414",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "地图 $3,648",
+          "at": 0,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "差出来的那一大截，全归你",
+          "at": 0,
+          "delay": 360
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "wta",
+      "name": "口径：给多少才肯放弃-只当数量级",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "“给多少钱才肯放弃”",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "只当数量级看",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "facebook",
+      "name": "真兑现的那组：停用-Facebook",
+      "photo": "S09",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "停用 Facebook 一个月",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "中位数：$40 上下",
+          "at": 0,
+          "delay": 90,
+          "quote": true
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "local",
+      "name": "换成微信-导航呢？自己估一下",
+      "photo": "S10",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "换成微信、导航、搜索呢？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "你自己估一下",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "biggest",
+      "name": "剩余最大的地方-最不觉得赚",
+      "photo": "S10",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "剩余最大的地方",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "最不觉得“赚了”",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "needit",
+      "name": "回到手机：看你有多需要它",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "盯着省了多少 → 看你有多需要它",
+          "at": 0
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "ambience": "商场"
+    },
+    {
+      "id": "howknow",
+      "name": "怎么知道自己心里那个数",
+      "photo": "S11",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "剩余藏在你心里那个数里",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "掏钱之前，怎么知道它是多少？",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "boundary",
+      "name": "边界：同样省一千分量不同；车票和时间",
+      "photo": "S12",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "同样省一千块，分量不一样",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "车票和一天的时间，也是“实际付出”",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "number",
+      "name": "先想好一个数-再看价签",
+      "photo": "S13",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "掏钱之前，先想好一个数",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "这东西，我最多肯出多少？",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "价签比它低，才是真赚",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "cart",
+      "name": "双十一购物车试一下",
+      "photo": "S14",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "双十一刚过",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "每一件：先问最多肯出多少",
+          "at": 0,
+          "delay": 90,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "现价比它高的，不算赚",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "mine",
+      "name": "自己那次以为赚了（讲自己的）",
+      "photo": "S14",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "叠字录完按实际说的补，先空着",
+          "at": 0
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "back",
+      "name": "回到华强北：价签说了不算",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "专程来给家人买的：可能真赚了",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "冲着原价来的：未必",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "赚没赚，价签说了不算",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right",
+      "ambience": "商场"
+    },
+    {
+      "id": "next",
+      "name": "下期：店老板知道你心里的数呢？价格歧",
+      "photo": "S15",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "¥1399 这个价签，对谁都一样",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "要是店老板知道，你心里愿意出 ¥2000 呢？",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "下期 · 第 11 个 · 价格歧视",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    }
+  ],
+  "style": {
+    "layout": "right",
+    "tint": "#2A1A0F",
+    "tintOpacity": 0.2,
+    "enter": "zoom",
+    "letterbox": false,
+    "grain": true,
+    "badge": false,
+    "scale": "v2",
+    "textEnter": "fade",
+    "cardSkin": "tactile",
+    "theme": {
+      "gold": "#F4D35E",
+      "coral": "#EE6C4D",
+      "teal": "#4ECDC4",
+      "bg": "#0B0A08",
+      "dim": "#CFC6B8"
+    },
+    "sfx": "sparse"
+  }
+}
