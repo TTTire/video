@@ -240,17 +240,18 @@
   },
   "active": "95091528db42f5ca",
   "lastOpenFiles": [
-    "工具/video-render/out/_check/v3_m13.jpg",
-    "工具/video-render/out/_check/v3_m12.jpg",
-    "工具/video-render/out/_check/v3_m11.jpg",
-    "工具/video-render/out/_check/v3_m10.jpg",
-    "工具/video-render/out/_check/v3_m09.jpg",
-    "工具/video-render/out/_check/v3_m08.jpg",
-    "工具/video-render/out/_check/v3_m07.jpg",
-    "工具/video-render/out/_check/v3_m06.jpg",
-    "工具/video-render/out/_check/v3_m01.jpg",
-    "工具/video-render/out/_check/v2_m06.jpg",
-    "工具/video-render/out/_check/v2_m00.jpg",
+    "工具/video-render/out/_check/x_m13.jpg",
+    "工具/video-render/out/_check/x_m12.jpg",
+    "工具/video-render/out/_check/x_m11.jpg",
+    "工具/video-render/out/_check/x_m10.jpg",
+    "工具/video-render/out/_check/x_m09.jpg",
+    "工具/video-render/out/_check/x_m07.jpg",
+    "工具/video-render/out/_check/x_m06.jpg",
+    "工具/video-render/out/_check/x_m05.jpg",
+    "工具/video-render/out/_check/x_m00.jpg",
+    "工具/video-render/out/_check/w_m13.jpg",
+    "工具/video-render/out/_check/w_m12.jpg",
+    "工具/视频剪辑管线优化审计-2026-11-11.md",
     "工具/video-render/out/_check/ai05r",
     "工具/video-render/out/_check/ai05r_frames.json",
     "工具/video-render/out/ai05-seq/bundle/public/ep8/photos",
@@ -284,7 +285,6 @@
     "进行中/AI时事03-AI越强什么越值钱/AI越强什么越值钱-讲稿卡.md",
     "进行中/AI时事03-AI越强什么越值钱/实验/同步-第3段/剪切清单.md",
     "进行中/AI时事03-AI越强什么越值钱/实验/同步-第2段/剪切清单.md",
-    "进行中/AI时事03-AI越强什么越值钱/实验/同步-第2段/同步报告.md",
-    "进行中/AI时事03-AI越强什么越值钱/实验/同步-第3段/同步报告.md"
+    "进行中/AI时事03-AI越强什么越值钱/实验/同步-第2段/同步报告.md"
   ]
 }
