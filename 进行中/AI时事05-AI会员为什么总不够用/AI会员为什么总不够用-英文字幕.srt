@@ -1,0 +1,555 @@
+1
+00:00:00,194 --> 00:00:04,222
+In mid-October, an R&D director spent 1908 yuan
+
+2
+00:00:04,272 --> 00:00:06,202
+to renew his Kimi plan for a full year
+
+3
+00:00:06,352 --> 00:00:09,862
+The next day, he asked Kimi to make a 5-minute video
+
+4
+00:00:09,942 --> 00:00:13,562
+The task ran for 20-plus minutes and his quota fell from 100% to 0
+
+5
+00:00:13,622 --> 00:00:15,172
+and the video never got made
+
+6
+00:00:15,411 --> 00:00:17,382
+He asked customer service, and was told
+
+7
+00:00:17,432 --> 00:00:20,179
+20-plus intermediate videos were generated along the way
+
+8
+00:00:20,229 --> 00:00:22,329
+The quota was used up and can't be restored
+
+9
+00:00:22,559 --> 00:00:25,679
+Anyone's first reaction would be: isn't this a rip-off
+
+10
+00:00:25,739 --> 00:00:29,163
+They took a year's money, then cut you off after 20 minutes
+
+11
+00:00:29,213 --> 00:00:32,293
+But that same month, the company sent out an apology letter
+
+12
+00:00:32,343 --> 00:00:34,303
+and topped up every member's quota
+
+13
+00:00:34,354 --> 00:00:38,054
+If it were just stinginess, why apologize while taking your money
+
+14
+00:00:38,214 --> 00:00:40,324
+The problem is using it one more time
+
+15
+00:00:40,386 --> 00:00:42,126
+For you, it costs nothing
+
+16
+00:00:42,202 --> 00:00:44,842
+But for the AI, every computation costs money
+
+17
+00:00:45,042 --> 00:00:46,342
+This is Pixel Breath
+
+18
+00:00:46,392 --> 00:00:50,142
+Today, let's talk about why AI memberships never seem to be enough
+
+19
+00:00:51,047 --> 00:00:54,047
+First, where does the idea that they're stingy come from
+
+20
+00:00:54,397 --> 00:00:56,377
+We've used the internet for decades
+
+21
+00:00:56,431 --> 00:00:59,128
+and one more user costs almost nothing extra
+
+22
+00:00:59,178 --> 00:01:02,590
+A textbook example: once an album is recorded
+
+23
+00:01:02,640 --> 00:01:05,500
+pressing one more CD costs less than 1 dollar
+
+24
+00:01:05,610 --> 00:01:08,730
+and one more download online costs almost nothing
+
+25
+00:01:09,060 --> 00:01:12,163
+That's why apps dare to be free and promise unlimited use
+
+26
+00:01:12,213 --> 00:01:14,806
+Giving you one more costs them almost nothing
+
+27
+00:01:14,856 --> 00:01:18,066
+If something like that still runs out, that's truly stingy
+
+28
+00:01:18,326 --> 00:01:19,810
+But AI is different
+
+29
+00:01:19,860 --> 00:01:22,416
+Every answer it gives really runs the GPUs
+
+30
+00:01:22,466 --> 00:01:23,736
+to do the computation
+
+31
+00:01:23,886 --> 00:01:25,136
+and burns real electricity
+
+32
+00:01:25,186 --> 00:01:28,416
+Kimi's own top-up pack says: ask it to recommend a song
+
+33
+00:01:28,466 --> 00:01:30,052
+and it costs about 3 cents
+
+34
+00:01:30,102 --> 00:01:33,282
+Ask it to plan a week's road trip from Chengdu to west Sichuan
+
+35
+00:01:33,332 --> 00:01:34,812
+and it costs about 1.6 yuan
+
+36
+00:01:34,872 --> 00:01:36,502
+Put simply
+
+37
+00:01:36,552 --> 00:01:38,882
+every extra answer has a price
+
+38
+00:01:38,953 --> 00:01:41,222
+In economics, this is called marginal cost
+
+39
+00:01:41,272 --> 00:01:44,087
+That is, the extra money it takes to make one more
+
+40
+00:01:44,137 --> 00:01:47,847
+Episode 3 of 100 Principles of Economics covered marginal analysis
+
+41
+00:01:48,087 --> 00:01:50,460
+This time, the margin falls on the seller's side
+
+42
+00:01:50,510 --> 00:01:54,070
+But a monthly plan takes the price off your side, like a buffet
+
+43
+00:01:54,220 --> 00:01:57,440
+Once you've paid, another plate doesn't cost you a cent
+
+44
+00:01:57,720 --> 00:02:00,655
+So you keep taking until you're satisfied
+
+45
+00:02:00,705 --> 00:02:03,686
+It's not just in China. In early November, OpenAI said
+
+46
+00:02:03,736 --> 00:02:07,419
+from December, ChatGPT and Codex will share one quota
+
+47
+00:02:07,469 --> 00:02:08,829
+counted in tokens
+
+48
+00:02:08,880 --> 00:02:10,990
+Elon Musk also said in a reply to a user
+
+49
+00:02:11,061 --> 00:02:13,721
+that Grok Bot's serving costs relative to revenue
+
+50
+00:02:13,911 --> 00:02:15,231
+are unsustainably high
+
+51
+00:02:15,292 --> 00:02:18,912
+The way I see it, on the seller's side every reply has a price
+
+52
+00:02:19,082 --> 00:02:21,562
+while on your side every reply costs zero
+
+53
+00:02:21,614 --> 00:02:25,304
+The two sides don't add up, so what can rein you in
+
+54
+00:02:26,219 --> 00:02:27,483
+With ordinary goods
+
+55
+00:02:27,533 --> 00:02:29,939
+when more people want something, demand goes up
+
+56
+00:02:30,089 --> 00:02:32,459
+and when demand goes up, prices rise
+
+57
+00:02:32,609 --> 00:02:34,573
+Once it's too expensive for anyone
+
+58
+00:02:34,623 --> 00:02:36,319
+it stops rising
+
+59
+00:02:36,385 --> 00:02:38,415
+Price does the queuing for everyone
+
+60
+00:02:38,465 --> 00:02:40,485
+When a monthly plan fixes the price
+
+61
+00:02:40,535 --> 00:02:42,315
+other tools are all that's left
+
+62
+00:02:42,405 --> 00:02:45,127
+like usage caps, queues, halting sales
+
+63
+00:02:45,177 --> 00:02:46,527
+or giving you a little less
+
+64
+00:02:46,592 --> 00:02:48,422
+In economics, this is called rationing
+
+65
+00:02:48,479 --> 00:02:52,549
+Not price, but rules decide how much everyone gets
+
+66
+00:02:52,599 --> 00:02:55,820
+Within a monthly quota, some people always use it really hard
+
+67
+00:02:55,870 --> 00:02:58,880
+When Anthropic added limits for subscribers last year, it said
+
+68
+00:02:59,040 --> 00:03:02,028
+fewer than 5% of users would actually hit them
+
+69
+00:03:02,288 --> 00:03:04,138
+But a few eat up the lion's share
+
+70
+00:03:04,188 --> 00:03:06,105
+and most wait in line with them
+
+71
+00:03:06,155 --> 00:03:09,075
+Over the past six months, Kimi has tried all of these
+
+72
+00:03:09,125 --> 00:03:11,070
+each time right after a model launch
+
+73
+00:03:11,120 --> 00:03:14,745
+In April, as soon as a new model launched, members had to queue
+
+74
+00:03:14,995 --> 00:03:17,685
+In July, just two days after a new model launched
+
+75
+00:03:17,737 --> 00:03:21,357
+requests far exceeded forecasts, so they simply stopped selling memberships
+
+76
+00:03:21,430 --> 00:03:25,212
+In their words, to allocate current computing power to existing members
+
+77
+00:03:25,362 --> 00:03:28,382
+In late October, two days after yet another model launched
+
+78
+00:03:28,433 --> 00:03:30,393
+Kimi publicly apologized to everyone
+
+79
+00:03:30,443 --> 00:03:33,353
+and gave all members back a quarter of a month's quota
+
+80
+00:03:33,406 --> 00:03:35,837
+In the same letter, Kimi also said
+
+81
+00:03:35,887 --> 00:03:39,667
+we're cutting unnecessary Agent calls and output length
+
+82
+00:03:39,807 --> 00:03:43,355
+In plain words: with the same quota, the AI does a bit less
+
+83
+00:03:43,405 --> 00:03:45,112
+and burns fewer unneeded tokens
+
+84
+00:03:45,162 --> 00:03:46,311
+The way I see it
+
+85
+00:03:46,361 --> 00:03:49,409
+writing those few lines less is also a form of rationing
+
+86
+00:03:49,459 --> 00:03:51,559
+Textbooks on price controls say so too
+
+87
+00:03:51,614 --> 00:03:55,044
+once prices are capped, quality may also go down
+
+88
+00:03:55,394 --> 00:03:57,878
+Why does it always happen when a new model launches
+
+89
+00:03:57,928 --> 00:04:00,128
+New models can do more and spend more
+
+90
+00:04:00,192 --> 00:04:02,132
+Our director asked it for a video
+
+91
+00:04:02,182 --> 00:04:04,833
+and it made 20 intermediate videos in one go
+
+92
+00:04:04,883 --> 00:04:07,233
+That time in October, Kimi itself admitted
+
+93
+00:04:07,283 --> 00:04:09,510
+part of it was unnecessary quota consumption
+
+94
+00:04:09,560 --> 00:04:11,280
+This isn't unique to AI either
+
+95
+00:04:11,360 --> 00:04:14,622
+At the end of 1996, America's AOL changed dial-up internet
+
+96
+00:04:14,657 --> 00:04:17,547
+to 19.95 dollars a month, use as much as you like
+
+97
+00:04:17,667 --> 00:04:20,154
+Daily time online rose from 14 minutes in September
+
+98
+00:04:20,204 --> 00:04:22,714
+to 32 minutes by January the next year
+
+99
+00:04:23,104 --> 00:04:24,524
+Dial-up lines were all busy
+
+100
+00:04:24,774 --> 00:04:27,024
+The CEO publicly asked people to log on less
+
+101
+00:04:27,100 --> 00:04:30,830
+Later, more than 30 states forced it to refund users by time online
+
+102
+00:04:30,898 --> 00:04:33,768
+When price isn't in play, someone has to wait in line
+
+103
+00:04:34,078 --> 00:04:35,398
+And who's waiting in line
+
+104
+00:04:35,448 --> 00:04:36,688
+You, the paying member
+
+105
+00:04:37,411 --> 00:04:40,481
+Not every shortage means compute is really short
+
+106
+00:04:40,671 --> 00:04:41,841
+Like in October
+
+107
+00:04:41,891 --> 00:04:45,171
+Kimi itself said part of it was the AI spending too much
+
+108
+00:04:45,361 --> 00:04:47,741
+And in April, they even deducted quota by mistake
+
+109
+00:04:47,931 --> 00:04:50,091
+then restored everyone to 100% that night
+
+110
+00:04:50,391 --> 00:04:52,051
+Wrong bills, unclear rules
+
+111
+00:04:52,101 --> 00:04:54,071
+can also make you feel ripped off
+
+112
+00:04:54,331 --> 00:04:57,292
+The other path is to let price do its job again
+
+113
+00:04:57,357 --> 00:04:59,107
+Heavy users and peak-hour users
+
+114
+00:04:59,157 --> 00:05:01,217
+should pay a bit more accordingly
+
+115
+00:05:01,477 --> 00:05:04,867
+DeepSeek tried it last year: when people used it off-peak
+
+116
+00:05:04,937 --> 00:05:06,647
+prices went as low as 75% off
+
+117
+00:05:06,837 --> 00:05:08,917
+How to take that path is another story
+
+118
+00:05:09,217 --> 00:05:11,177
+You've bought unlimited before
+
+119
+00:05:11,227 --> 00:05:12,827
+In September 2019
+
+120
+00:05:12,877 --> 00:05:16,107
+China Telecom stopped selling throttled unlimited plans
+
+121
+00:05:16,163 --> 00:05:18,804
+the kind that slows down after a certain amount
+
+122
+00:05:18,854 --> 00:05:20,204
+The plans were changed
+
+123
+00:05:20,254 --> 00:05:23,476
+so data over the limit is charged by usage
+
+124
+00:05:23,526 --> 00:05:24,846
+and ads could no longer say
+
+125
+00:05:24,896 --> 00:05:27,356
+speeds get throttled after a certain amount of data
+
+126
+00:05:27,406 --> 00:05:29,656
+So next time you see the word unlimited
+
+127
+00:05:29,706 --> 00:05:31,226
+Please ask one more question
+
+128
+00:05:31,416 --> 00:05:34,171
+Does giving me one more actually cost them anything
+
+129
+00:05:34,221 --> 00:05:37,631
+If it costs almost nothing, unlimited might be real
+
+130
+00:05:37,821 --> 00:05:39,731
+But if every single use costs money
+
+131
+00:05:39,781 --> 00:05:43,247
+unlimited will sooner or later turn into caps, queues, or price hikes
+
+132
+00:05:43,297 --> 00:05:46,865
+Back to the start: no one stole that director's quota
+
+133
+00:05:46,915 --> 00:05:49,644
+It was spent because doing one more cost him nothing
+
+134
+00:05:49,694 --> 00:05:52,324
+A membership has always sold a fixed amount of quota
+
+135
+00:05:52,376 --> 00:05:54,106
+just not written in plain sight
+
+136
+00:05:54,286 --> 00:05:55,836
+What I still can't figure out is
+
+137
+00:05:55,886 --> 00:05:57,754
+if one day an extra AI answer
+
+138
+00:05:57,755 --> 00:05:59,676
+got so cheap it cost almost nothing
+
+139
+00:05:59,756 --> 00:06:02,166
+would unlimited plans come back
