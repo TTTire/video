@@ -111,7 +111,7 @@
 | **`slam`** | `text` `size`(big) `color` `label` | 大数从 2.8× 砸到 1×，到位震 6 帧 + impact。**本期核心数字，一期 1–2 次** |
 | **`rank`** | `rows: [{id, label, value, color}]` `orders: [[id…], …]` `orderAt: [要点…]` `hi` `w` `rowH`(92) | 排名：rows 固定，到 `orderAt[i]` 那条要点换成 `orders[i]` 的顺序，行平滑换位（往下的右移、往上的左移，中途不叠）。`hi` 高亮某行 |
 | **`units`** | `n` `unit`(`person` / `bill` / 任意字符) `cols`(10) `size`(48) `max`(50) `label` `color` | 实物堆叠：n 个一个一个落下（整堆约 40 帧落完），从下往上填。超过 `max` 的写 `+N` |
-| **`fill`** | `pct` `w`(160) `h`(320) `color` `label` `horizontal` `showPct`(true) | 容器液面升到 pct%，数字跟着滚，液面有轻微波动。来源只给了口径（"刚过一半""接近八成"）、没有精确数时写 `showPct: false`，口径写进 `label`，`pct` 只管液面高度 |
+| **`fill`** | `pct` `from`(0) `w`(160) `h`(320) `color` `label` `horizontal` `showPct`(true) | 容器液面从 `from` 升到 / 降到 pct%，数字跟着滚，液面有轻微波动。额度掉光这类"从满到空"写 `from: 100, pct: 0`。来源只给了口径（"刚过一半""接近八成"）、没有精确数时写 `showPct: false`，口径写进 `label`，`pct` 只管液面高度 |
 | **`graph`** | `nodes: [{id, x, y, w, at?, delay?, img?, title?, sub?, text?}]` `edges: [{from, to, at?, delay?, label?, color?}]` `w` `h` | 关系图：节点是 photo 卡（有 `img`）或字卡（`text`），坐标相对 box 左上角；节点的 `at` / `delay` 同 photorow 的卡，都不写就跟本元素一起出；边默认在两端都出现后从 from 向 to 生长、带光晕（写了 `at` 就按 `at` + `delay`）；`label` 写在线中间 |
 
 新元素都自带音效（odometer tick、flap flip、slam impact、units drop、fill riser），不用再写 `sfx`。

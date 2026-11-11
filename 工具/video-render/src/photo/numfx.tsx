@@ -195,11 +195,11 @@ export const StackUnits: React.FC<{n: number; at: number; unit: React.ReactNode;
 };
 
 // ---------- Fill ----------
-// 容器（圆角竖筒或横条）里液面升到 pct（0–100），液面有轻微波动；数字跟着滚。
-export const Fill: React.FC<{pct: number; at: number; dur?: number; w?: number; h?: number; color?: string; label?: string; horizontal?: boolean; showPct?: boolean}> = ({pct, at: a, dur = 40, w = 160, h = 320, color, label, horizontal = false, showPct = true}) => {
+// 容器（圆角竖筒或横条）里液面从 from 升到 / 降到 pct（0–100，from 默认 0），液面有轻微波动；数字跟着滚。
+export const Fill: React.FC<{pct: number; from?: number; at: number; dur?: number; w?: number; h?: number; color?: string; label?: string; horizontal?: boolean; showPct?: boolean}> = ({pct, from = 0, at: a, dur = 40, w = 160, h = 320, color, label, horizontal = false, showPct = true}) => {
   const C = useC();
   const f = useCurrentFrame();
-  const k = interpolate(f, [a, a + dur], [0, pct / 100], {...clamp, easing: easeOut});
+  const k = interpolate(f, [a, a + dur], [from / 100, pct / 100], {...clamp, easing: easeOut});
   const col = color ?? C.gold;
   const wave = Math.sin(f / 6) * 3;
   const W = horizontal ? h : w, Hh = horizontal ? w : h;

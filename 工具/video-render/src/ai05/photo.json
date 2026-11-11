@@ -7,676 +7,1270 @@
   "scenes": [
     {
       "id": "renew",
-      "name": "研发总监花-1908-续了一年-Ki",
       "photo": "S01",
       "move": "in",
+      "origin": "MR",
+      "ambience": "办公室",
+      "box": {
+        "card": "tab",
+        "label": "10 月中旬 · 一位研发总监"
+      },
       "items": [
         {
-          "type": "h",
+          "type": "big",
           "text": "¥1908",
-          "at": 0
+          "at": 0,
+          "delay": 48
         },
         {
-          "type": "h",
-          "text": "Kimi 会员，续一整年",
+          "type": "t",
+          "text": "把 Kimi 会员续了一整年",
           "at": 0,
-          "delay": 90
+          "delay": 118
         }
       ],
-      "box": "TL",
-      "grad": "left",
-      "ambience": "办公室"
+      "name": "研发总监花-1908-续了一年-Ki"
     },
     {
       "id": "drain",
-      "name": "做视频-20-分钟-额度-100%-",
       "photo": "S02",
       "move": "in",
+      "origin": "MR",
+      "box": {
+        "card": "tab",
+        "label": "第二天"
+      },
+      "boxes": {
+        "cs": "TL"
+      },
       "items": [
         {
           "type": "h",
-          "text": "额度 100% → 0",
-          "at": 0
+          "text": "让它做一个 5 分钟的视频",
+          "size": 64,
+          "until": 1,
+          "at": 0,
+          "delay": 22
+        },
+        {
+          "type": "fill",
+          "from": 100,
+          "pct": 0,
+          "horizontal": true,
+          "w": 64,
+          "h": 560,
+          "color": "coral",
+          "label": "额度",
+          "until": 1,
+          "at": 0,
+          "delay": 151
+        },
+        {
+          "type": "t",
+          "text": "视频也没做出来",
+          "until": 1,
+          "at": 0,
+          "delay": 215
+        },
+        {
+          "type": "t",
+          "text": "客服说",
+          "box": "cs",
+          "at": 1,
+          "delay": 27
         },
         {
           "type": "h",
-          "text": "客服：“生成了 20 多个中间视频”",
+          "text": "生成了 20 多个中间视频",
+          "box": "cs",
+          "quote": true,
+          "size": 60,
           "at": 1,
-          "quote": true
+          "delay": 57
         },
         {
           "type": "h",
-          "text": "额度不恢复",
+          "text": "额度用掉了，不恢复",
+          "box": "cs",
+          "color": "coral",
           "at": 1,
-          "delay": 90
+          "delay": 141
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "做视频-20-分钟-额度-100%-"
     },
     {
       "id": "leek",
-      "name": "第一反应：割韭菜？同一个月却道歉补额",
       "photo": "S03",
       "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "letter": {
+          "x": 90,
+          "y": 120,
+          "w": 900,
+          "card": "paper"
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "割韭菜吧？",
-          "at": 0
+          "until": 1,
+          "at": 0,
+          "delay": 45
+        },
+        {
+          "type": "t",
+          "text": "一年的钱收了，20 分钟就不给用了",
+          "until": 1,
+          "at": 0,
+          "delay": 91
         },
         {
           "type": "h",
-          "text": "同一个月，这家公司发了道歉信",
-          "at": 1
+          "text": "同一个月，它发了道歉信",
+          "box": "letter",
+          "size": 64,
+          "at": 1,
+          "delay": 0
         },
         {
-          "type": "h",
+          "type": "t",
           "text": "给所有会员补额度",
+          "box": "letter",
           "at": 1,
           "delay": 90
+        },
+        {
+          "type": "t",
+          "text": "只是抠门的话，犯不着又收钱又道歉",
+          "box": "letter",
+          "at": 1,
+          "delay": 151
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "第一反应：割韭菜？同一个月却道歉补额"
     },
     {
       "id": "hook",
-      "name": "多用一次：对你不要钱-对它要钱",
       "photo": "S04",
       "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "you": {
+          "x": 90,
+          "y": 420,
+          "w": 420,
+          "card": "tab",
+          "label": "对你",
+          "cardW": 420
+        },
+        "it": {
+          "x": 570,
+          "y": 420,
+          "w": 420,
+          "card": "tab",
+          "label": "对它",
+          "cardW": 420
+        }
+      },
       "items": [
         {
           "type": "h",
-          "text": "不要钱",
-          "at": 0
+          "text": "问题出在“多用一次”",
+          "at": 0,
+          "delay": 0
         },
         {
           "type": "h",
-          "text": "每一次都要钱",
+          "text": "不要钱",
+          "box": "you",
+          "color": "teal",
+          "size": 72,
           "at": 0,
-          "delay": 90
+          "delay": 62
+        },
+        {
+          "type": "h",
+          "text": "每一次\n都要钱",
+          "box": "it",
+          "color": "coral",
+          "size": 64,
+          "at": 0,
+          "delay": 116
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "多用一次：对你不要钱-对它要钱"
     },
     {
       "id": "title",
-      "name": "片头",
       "photo": "S04",
-      "move": "in",
+      "move": "out",
+      "origin": "MR",
       "items": [
         {
+          "type": "t",
+          "text": "像素呼吸 · AI经济学",
+          "at": 0,
+          "delay": 0
+        },
+        {
           "type": "h",
-          "text": "AI会员为什么总不够用",
-          "at": 0
+          "text": "AI 会员\n为什么总不够用",
+          "size": 112,
+          "at": 0,
+          "delay": 82
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "片头"
     },
     {
       "id": "cd",
-      "name": "互联网多一份几乎不花钱；App-敢说",
       "photo": "S05",
       "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "cd": {
+          "x": 90,
+          "y": 400,
+          "w": 900,
+          "card": "tab",
+          "label": "经济学教材里的例子"
+        },
+        "app": "TL"
+      },
       "items": [
         {
           "type": "h",
+          "text": "“抠门”从哪来？",
+          "at": 0,
+          "until": 1
+        },
+        {
+          "type": "t",
+          "text": "互联网：多一个人用，几乎不多花钱",
+          "until": 1,
+          "at": 0,
+          "delay": 128
+        },
+        {
+          "type": "t",
+          "text": "一张唱片录好以后",
+          "box": "cd",
+          "until": 1,
+          "at": 0,
+          "delay": 258
+        },
+        {
+          "type": "h",
           "text": "多压一张 CD：不到 $1",
-          "at": 0
+          "box": "cd",
+          "size": 72,
+          "until": 1,
+          "at": 0,
+          "delay": 314
+        },
+        {
+          "type": "t",
+          "text": "网上多下载一份：几乎是 0",
+          "box": "cd",
+          "until": 1,
+          "at": 0,
+          "delay": 403
+        },
+        {
+          "type": "t",
+          "text": "所以 App 敢免费、敢说“不限量”",
+          "box": "app",
+          "at": 1,
+          "delay": 14
         },
         {
           "type": "h",
           "text": "多给你一份，几乎不花钱",
-          "at": 1
+          "box": "app",
+          "size": 80,
+          "at": 1,
+          "delay": 90
         },
         {
           "type": "h",
           "text": "这样还说不够用，才是抠门",
+          "box": "app",
+          "size": 80,
+          "color": "gold",
           "at": 1,
-          "delay": 90
+          "delay": 170
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "互联网多一份几乎不花钱；App-敢说"
     },
     {
       "id": "price",
-      "name": "Kimi-加油包价目：一首歌-3-分",
       "photo": "S06",
       "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "kimi": {
+          "x": 90,
+          "y": 370,
+          "w": 900
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "AI 每答一次，都要花钱",
-          "at": 0
+          "at": 0,
+          "delay": 42
         },
         {
-          "type": "h",
-          "text": "推荐一首歌 ≈ ¥0.03",
+          "type": "t",
+          "text": "真跑一遍显卡，真烧一份电",
           "at": 0,
-          "delay": 90
+          "delay": 89
         },
         {
-          "type": "h",
-          "text": "规划一周自驾 ≈ ¥1.6",
+          "type": "t",
+          "text": "Kimi 加油包价目",
+          "box": "kimi",
           "at": 0,
-          "delay": 180
+          "delay": 202
+        },
+        {
+          "type": "photorow",
+          "box": "kimi",
+          "w": 280,
+          "at": 0,
+          "delay": 202,
+          "cards": [
+            {
+              "img": "C01",
+              "title": "≈ ¥0.03",
+              "sub": "推荐一首歌",
+              "delay": 262
+            },
+            {
+              "img": "C02",
+              "title": "≈ ¥1.6",
+              "sub": "规划一周自驾",
+              "delay": 349
+            }
+          ]
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "Kimi-加油包价目：一首歌-3-分"
     },
     {
       "id": "marginal",
-      "name": "边际成本-第-3-个讲过边际分析",
       "photo": "S06",
-      "move": "in",
+      "move": "out",
+      "origin": "MR",
+      "boxes": {
+        "def": {
+          "x": 90,
+          "y": 330,
+          "w": 900,
+          "card": "notch",
+          "label": "经济学管这叫",
+          "sub": "MARGINAL COST"
+        },
+        "ep3": "BL"
+      },
       "items": [
+        {
+          "type": "h",
+          "text": "多答一次，有价钱",
+          "at": 0,
+          "delay": 47
+        },
         {
           "type": "h",
           "text": "边际成本",
-          "at": 0
+          "box": "def",
+          "font": "song",
+          "size": 112,
+          "at": 0,
+          "delay": 157
         },
         {
-          "type": "h",
+          "type": "t",
           "text": "多做一份，要多花的钱",
+          "box": "def",
           "at": 0,
-          "delay": 90
+          "delay": 188
+        },
+        {
+          "type": "t",
+          "text": "《100 个经济学原理》第 3 个讲过：边际分析",
+          "box": "ep3",
+          "at": 0,
+          "delay": 280
         },
         {
           "type": "h",
-          "text": "第 3 个讲过：边际分析",
+          "text": "这回，边际落在卖家那边",
+          "box": "ep3",
+          "size": 64,
           "at": 0,
-          "delay": 180
+          "delay": 393
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "边际成本-第-3-个讲过边际分析"
     },
     {
       "id": "buffet",
-      "name": "包月像自助餐-多拿一盘不多花",
       "photo": "S07",
       "move": "in",
+      "origin": "MR",
+      "ambience": "咖啡馆",
       "items": [
+        {
+          "type": "h",
+          "text": "包月：你这边的价钱没了",
+          "at": 0,
+          "size": 80
+        },
         {
           "type": "h",
           "text": "像自助餐",
-          "at": 0
+          "color": "gold",
+          "at": 0,
+          "delay": 74
         },
         {
-          "type": "h",
-          "text": "多拿一盘，不多花一分",
+          "type": "t",
+          "text": "交了钱，多拿一盘不多花一分",
           "at": 0,
-          "delay": 90
+          "delay": 108
         },
         {
-          "type": "h",
-          "text": "拿到再拿也没意思为止",
+          "type": "t",
+          "text": "就一直拿，拿到满意为止",
           "at": 0,
-          "delay": 180
+          "delay": 213
         }
       ],
-      "box": "TL",
-      "grad": "left",
-      "ambience": "咖啡馆"
+      "name": "包月像自助餐-多拿一盘不多花"
     },
     {
       "id": "overseas",
-      "name": "OpenAI-12-月起共用额度；马",
       "photo": "S08",
       "move": "in",
+      "origin": "MR",
+      "box": {
+        "card": "tab",
+        "label": "11 月初 · OpenAI"
+      },
+      "boxes": {
+        "musk": {
+          "x": 90,
+          "y": 500,
+          "w": 900
+        }
+      },
       "items": [
         {
           "type": "h",
-          "text": "OpenAI：12 月起额度共用",
-          "at": 0
+          "text": "12 月起，额度共用",
+          "size": 72,
+          "at": 0,
+          "delay": 87
+        },
+        {
+          "type": "t",
+          "text": "ChatGPT 和 Codex · 按 token 算",
+          "at": 0,
+          "delay": 199
+        },
+        {
+          "type": "t",
+          "text": "马斯克回复用户：Grok Bot 的服务成本",
+          "box": "musk",
+          "at": 0,
+          "delay": 241
         },
         {
           "type": "h",
-          "text": "按 token 算",
+          "text": "相对收入高得难以为继",
+          "box": "musk",
+          "quote": true,
+          "size": 64,
           "at": 0,
-          "delay": 90
-        },
-        {
-          "type": "h",
-          "text": "马斯克：成本“相对收入高得难以为继”",
-          "at": 0,
-          "delay": 180,
-          "quote": true
+          "delay": 350
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "OpenAI-12-月起共用额度；马"
     },
     {
       "id": "mismatch",
-      "name": "两头对不上-它拿什么管住你",
       "photo": "S08",
-      "move": "in",
+      "move": "out",
+      "origin": "MR",
+      "arollSize": "m",
+      "boxes": {
+        "seller": {
+          "x": 90,
+          "y": 400,
+          "w": 420,
+          "card": "tab",
+          "label": "卖家那边",
+          "cardW": 420
+        },
+        "buyer": {
+          "x": 570,
+          "y": 400,
+          "w": 420,
+          "card": "tab",
+          "label": "你这边",
+          "cardW": 420
+        }
+      },
       "items": [
         {
           "type": "h",
-          "text": "每一句都有价",
-          "at": 0
+          "text": "每一句\n都有价",
+          "box": "seller",
+          "color": "coral",
+          "size": 56,
+          "at": 0,
+          "delay": 37
         },
         {
           "type": "h",
-          "text": "每一句都是 0",
+          "text": "每一句\n都是 0",
+          "box": "buyer",
+          "color": "teal",
+          "size": 56,
           "at": 0,
-          "delay": 90
+          "delay": 109
         },
         {
           "type": "h",
-          "text": "那它拿什么管住你？",
+          "text": "账，两头对不上",
           "at": 0,
-          "delay": 180
+          "delay": 185
+        },
+        {
+          "type": "h",
+          "text": "拿什么管住你？",
+          "color": "gold",
+          "at": 0,
+          "delay": 248
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "两头对不上-它拿什么管住你"
     },
     {
       "id": "queue",
-      "name": "平常的东西-价格替大家排队",
       "photo": "S09",
       "move": "in",
+      "origin": "MR",
+      "ambience": "街道夜晚",
       "items": [
         {
           "type": "h",
           "text": "想要的人一多，价格就涨",
-          "at": 0
+          "size": 80,
+          "at": 0,
+          "delay": 6
         },
         {
           "type": "h",
-          "text": "涨到有人不要，就不挤了",
+          "text": "涨到买不起，就不涨了",
+          "size": 80,
           "at": 0,
-          "delay": 90
+          "delay": 158
         },
         {
           "type": "h",
           "text": "价格在替大家排队",
+          "color": "gold",
           "at": 0,
-          "delay": 180
+          "delay": 272
         }
       ],
-      "box": "TL",
-      "grad": "left",
-      "ambience": "街道夜晚"
+      "name": "平常的东西-价格替大家排队"
     },
     {
       "id": "ration",
-      "name": "价格钉死-只能配给：限额-排队-停卖",
       "photo": "S10",
       "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "def": {
+          "x": 90,
+          "y": 430,
+          "w": 900,
+          "card": "notch",
+          "label": "经济学管这叫",
+          "sub": "RATIONING"
+        }
+      },
       "items": [
         {
           "type": "h",
-          "text": "价格钉死",
+          "text": "价格钉死了",
           "at": 0
         },
         {
           "type": "h",
-          "text": "用到饱",
+          "text": "只剩别的办法",
           "at": 0,
-          "delay": 90
+          "delay": 58
         },
         {
-          "type": "h",
-          "text": "只能配给",
+          "type": "t",
+          "text": "限额 · 排队 · 停卖 · 少给一点",
           "at": 0,
-          "delay": 180
+          "delay": 114
         },
         {
           "type": "h",
           "text": "配给",
+          "box": "def",
+          "font": "song",
+          "size": 120,
+          "textfx": "gradient",
           "at": 0,
-          "delay": 270
+          "delay": 274
         },
         {
-          "type": "h",
+          "type": "t",
           "text": "不靠价格，靠规矩分",
+          "box": "def",
           "at": 0,
-          "delay": 360
-        },
-        {
-          "type": "h",
-          "text": "限额 · 排队 · 停卖 · 少给",
-          "at": 0,
-          "delay": 450
+          "delay": 296
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "价格钉死-只能配给：限额-排队-停卖"
     },
     {
       "id": "heavy",
-      "name": "Anthropic：会碰到限额的不到",
       "photo": "S11",
       "move": "in",
+      "origin": "MR",
+      "ambience": "咖啡馆",
+      "boxes": {
+        "fill": {
+          "x": 90,
+          "y": 300,
+          "w": 900,
+          "card": "tab",
+          "label": "Anthropic · 去年加限额"
+        },
+        "after": "BL"
+      },
       "items": [
         {
           "type": "h",
+          "text": "总有人用得特别狠",
+          "at": 0,
+          "delay": 52
+        },
+        {
+          "type": "fill",
+          "pct": 5,
+          "horizontal": true,
+          "w": 56,
+          "h": 560,
+          "color": "coral",
+          "showPct": false,
+          "label": "会碰到限额的",
+          "box": "fill",
+          "at": 0,
+          "delay": 94
+        },
+        {
+          "type": "h",
           "text": "不到 5% 的订阅用户",
-          "at": 0
+          "box": "fill",
+          "size": 64,
+          "at": 0,
+          "delay": 233
         },
         {
-          "type": "h",
+          "type": "t",
           "text": "少数人吃掉大头",
+          "box": "after",
           "at": 0,
-          "delay": 90
+          "delay": 287
         },
         {
-          "type": "h",
+          "type": "t",
           "text": "大多数人陪着排队",
+          "box": "after",
           "at": 0,
-          "delay": 180
+          "delay": 344
         }
       ],
-      "box": "TL",
-      "grad": "left",
-      "ambience": "咖啡馆"
+      "name": "Anthropic：会碰到限额的不到"
     },
     {
       "id": "kimi",
-      "name": "Kimi-4-月会员排队-7-月暂停",
       "photo": "S12",
       "move": "in",
+      "origin": "MR",
+      "ambience": "办公室",
+      "boxes": {
+        "tl": {
+          "x": 90,
+          "y": 330,
+          "w": 900,
+          "card": "tab",
+          "label": "Kimi · 新模型上线之后"
+        }
+      },
+      "items": [
+        {
+          "type": "t",
+          "text": "Kimi 这半年，几种办法都用了一遍",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "每次都在新模型上线之后",
+          "at": 0,
+          "delay": 85
+        },
+        {
+          "type": "h",
+          "text": "4 月：会员排队",
+          "box": "tl",
+          "size": 64,
+          "at": 0,
+          "delay": 145
+        },
+        {
+          "type": "h",
+          "text": "7 月：暂停卖新会员",
+          "box": "tl",
+          "size": 64,
+          "at": 1,
+          "delay": 135
+        },
+        {
+          "type": "h",
+          "text": "算力留给已有会员",
+          "box": "tl",
+          "quote": true,
+          "size": 56,
+          "at": 1,
+          "delay": 189
+        }
+      ],
+      "name": "Kimi-4-月会员排队-7-月暂停"
+    },
+    {
+      "id": "kimioct",
+      "photo": "S12",
+      "move": "out",
+      "origin": "MR",
+      "box": {
+        "card": "tab",
+        "label": "Kimi · 新模型上线之后"
+      },
+      "boxes": {
+        "letter": {
+          "x": 90,
+          "y": 590,
+          "w": 900
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "4 月：会员排队",
           "at": 0,
-          "quote": true
+          "size": 56,
+          "color": "dim"
         },
         {
           "type": "h",
           "text": "7 月：暂停卖新会员",
-          "at": 1,
-          "quote": true
+          "at": 0,
+          "size": 56,
+          "color": "dim",
+          "delay": 6
         },
         {
           "type": "h",
-          "text": "“算力留给已有会员”",
-          "at": 1,
-          "delay": 90,
-          "quote": true
-        }
-      ],
-      "box": "TL",
-      "grad": "left",
-      "ambience": "办公室"
-    },
-    {
-      "id": "kimioct",
-      "name": "10-月底道歉补额度-少开子-Age",
-      "photo": "S12",
-      "move": "in",
-      "items": [
+          "text": "10 月底：公开道歉",
+          "size": 64,
+          "at": 0,
+          "delay": 88
+        },
         {
-          "type": "h",
-          "text": "10 月底：补回 1/4 个月的额度",
-          "at": 0
+          "type": "t",
+          "text": "补回 1/4 个月的额度",
+          "at": 0,
+          "delay": 148
+        },
+        {
+          "type": "t",
+          "text": "同一封信里说",
+          "box": "letter",
+          "at": 0,
+          "delay": 237
         },
         {
           "type": "h",
           "text": "少开子 Agent，少写几句",
+          "box": "letter",
+          "size": 72,
           "at": 0,
-          "delay": 90
+          "delay": 312
+        },
+        {
+          "type": "t",
+          "text": "同样的额度，让 AI 少干点",
+          "box": "letter",
+          "at": 0,
+          "delay": 429
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "10-月底道歉补额度-少开子-Age"
     },
     {
       "id": "quality",
-      "name": "少写几句也是配给；限价时质量下降",
       "photo": "S13",
       "move": "in",
+      "origin": "ML",
+      "box": "TR",
+      "grad": "right",
+      "arollSide": "left",
       "items": [
         {
-          "type": "h",
-          "text": "少写几句，也是配给",
+          "type": "t",
+          "text": "我的理解是",
           "at": 0
         },
         {
           "type": "h",
-          "text": "教材：限价时，“质量也可能下降”",
+          "text": "少写几句，也是配给",
           "at": 0,
-          "delay": 90,
-          "quote": true
+          "delay": 32
+        },
+        {
+          "type": "t",
+          "text": "教材讲限价时说",
+          "at": 0,
+          "delay": 125
+        },
+        {
+          "type": "h",
+          "text": "质量也可能下降",
+          "quote": true,
+          "size": 64,
+          "at": 0,
+          "delay": 237
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "少写几句也是配给；限价时质量下降"
     },
     {
       "id": "newmodel",
-      "name": "新模型更能干也更能花；20-多个中间",
       "photo": "S13",
-      "move": "in",
+      "move": "out",
+      "origin": "ML",
+      "box": "TR",
+      "grad": "right",
+      "arollSide": "left",
+      "boxes": {
+        "case": {
+          "x": 760,
+          "y": 450,
+          "w": 860,
+          "align": "right",
+          "card": "tab",
+          "label": "开头那位总监",
+          "cardW": 860
+        },
+        "oct": "BR"
+      },
       "items": [
         {
-          "type": "h",
-          "text": "新模型：更能干，也更能花",
-          "at": 0,
-          "quote": true
+          "type": "t",
+          "text": "为什么偏偏是新模型上线时？",
+          "at": 0
         },
         {
           "type": "h",
-          "text": "后台一口气 20 多个中间结果",
+          "text": "更能干，也更能花",
           "at": 0,
-          "delay": 90
+          "delay": 72
+        },
+        {
+          "type": "t",
+          "text": "后台一口气生成 20 多个中间视频",
+          "box": "case",
+          "at": 0,
+          "delay": 199
+        },
+        {
+          "type": "t",
+          "text": "10 月那次，Kimi 自己也认了",
+          "box": "oct",
+          "at": 0,
+          "delay": 280
         },
         {
           "type": "h",
-          "text": "“不必要的额度消耗”",
+          "text": "不必要的额度消耗",
+          "box": "oct",
+          "quote": true,
+          "size": 64,
           "at": 0,
-          "delay": 180,
-          "quote": true
+          "delay": 378
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "新模型更能干也更能花；20-多个中间"
     },
     {
       "id": "aol",
-      "name": "AOL-1996-包月：在线-14-",
       "photo": "S14",
       "move": "in",
+      "origin": "MR",
+      "box": {
+        "card": "tab",
+        "label": "1996 年底 · AOL"
+      },
+      "boxes": {
+        "after": "TL"
+      },
       "items": [
         {
           "type": "h",
           "text": "$19.95 / 月，随便上",
-          "at": 0
+          "size": 72,
+          "until": 0,
+          "untilDelay": 402,
+          "at": 0,
+          "delay": 149
         },
         {
-          "type": "h",
-          "text": "每天在线：14 分钟 → 32 分钟",
-          "at": 0,
-          "delay": 90,
-          "quote": true
+          "type": "custom",
+          "name": "aolbars",
+          "at": 0
         },
         {
           "type": "h",
           "text": "拨号全是忙音",
+          "box": "after",
+          "color": "coral",
           "at": 0,
-          "delay": 180
+          "delay": 402
+        },
+        {
+          "type": "t",
+          "text": "老板公开请大家少上一会儿",
+          "box": "after",
+          "at": 0,
+          "delay": 452
         },
         {
           "type": "h",
           "text": "三十多个州：按在线时长退钱",
+          "box": "after",
+          "size": 64,
           "at": 0,
-          "delay": 270
+          "delay": 522
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "AOL-1996-包月：在线-14-"
     },
     {
       "id": "youqueue",
-      "name": "价格不在场-排队的是你",
       "photo": "S09",
-      "move": "in",
+      "move": "out",
+      "origin": "MR",
+      "arollSize": "m",
+      "box": {
+        "card": "solid"
+      },
       "items": [
         {
           "type": "h",
           "text": "价格不在场，就得有人排队",
-          "at": 0
+          "at": 0,
+          "size": 64
+        },
+        {
+          "type": "t",
+          "text": "排队的是谁？",
+          "at": 0,
+          "delay": 91
         },
         {
           "type": "h",
-          "text": "排队的是你",
+          "text": "是你",
           "at": 0,
-          "delay": 90
+          "delay": 132
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "价格不在场-排队的是你"
     },
     {
       "id": "boundary",
-      "name": "边界：不全是算力不够-也有扣错-写不",
       "photo": "S02",
-      "move": "in",
+      "move": "out",
+      "origin": "MR",
+      "box": {
+        "card": "notch",
+        "label": "边界"
+      },
       "items": [
         {
           "type": "h",
           "text": "不是每回都是算力不够",
-          "at": 0
+          "at": 0,
+          "size": 64
         },
         {
-          "type": "h",
-          "text": "4 月：额度扣错，当晚恢复",
+          "type": "t",
+          "text": "10 月：有一部分是 AI 多花了",
           "at": 0,
-          "delay": 90,
-          "quote": true
+          "delay": 58
+        },
+        {
+          "type": "t",
+          "text": "4 月：额度扣错，当晚恢复 100%",
+          "at": 0,
+          "delay": 199
+        },
+        {
+          "type": "t",
+          "text": "账算错、规则写不清，一样像被割",
+          "at": 0,
+          "delay": 350
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "边界：不全是算力不够-也有扣错-写不"
     },
     {
       "id": "offpeak",
-      "name": "另一条路：让价格回来管事-DeepS",
       "photo": "S15",
       "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "ds": {
+          "x": 90,
+          "y": 400,
+          "w": 900,
+          "card": "tab",
+          "label": "DeepSeek · 去年"
+        },
+        "later": "BL"
+      },
       "items": [
         {
           "type": "h",
           "text": "另一条路：让价格回来管事",
           "at": 0,
-          "quote": true
+          "size": 72
+        },
+        {
+          "type": "t",
+          "text": "用得多、挤高峰的，多付一点",
+          "at": 0,
+          "delay": 87
         },
         {
           "type": "h",
-          "text": "DeepSeek：半夜错峰，最低 2.5 折",
+          "text": "错峰用，最低 2.5 折",
+          "box": "ds",
+          "size": 72,
           "at": 0,
-          "delay": 90
+          "delay": 266
+        },
+        {
+          "type": "t",
+          "text": "这条路怎么走，另说",
+          "box": "later",
+          "at": 0,
+          "delay": 371
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "另一条路：让价格回来管事-DeepS"
     },
     {
       "id": "telecom",
-      "name": "电信-2019-停售达量限速套餐",
       "photo": "S16",
       "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "tel": {
+          "x": 90,
+          "y": 320,
+          "w": 900,
+          "card": "tab",
+          "label": "2019 年 9 月 · 中国电信"
+        }
+      },
       "items": [
         {
           "type": "h",
+          "text": "你早就买过“不限量”",
+          "at": 0,
+          "size": 80
+        },
+        {
+          "type": "h",
           "text": "停售“达量限速”不限量套餐",
-          "at": 0
+          "box": "tel",
+          "size": 60,
+          "at": 0,
+          "delay": 105
+        },
+        {
+          "type": "t",
+          "text": "用到一定量就降速的那种",
+          "box": "tel",
+          "at": 0,
+          "delay": 204
         },
         {
           "type": "h",
           "text": "超出部分，按 GB 收钱",
+          "box": "tel",
+          "size": 64,
           "at": 0,
-          "delay": 90
+          "delay": 285
+        },
+        {
+          "type": "t",
+          "text": "宣传里不许再写“达量降速”",
+          "box": "tel",
+          "at": 0,
+          "delay": 425
         }
       ],
-      "box": "TL",
-      "grad": "left"
+      "name": "电信-2019-停售达量限速套餐"
     },
     {
       "id": "ask",
-      "name": "看到不限量先问一句：多给一次要不要多",
       "photo": "S17",
       "move": "in",
+      "origin": "MR",
+      "ambience": "商场",
+      "boxes": {
+        "cheap": {
+          "x": 90,
+          "y": 470,
+          "w": 420,
+          "card": "tab",
+          "label": "几乎不花钱",
+          "cardW": 420
+        },
+        "costly": {
+          "x": 570,
+          "y": 470,
+          "w": 420,
+          "card": "tab",
+          "label": "每次都花钱",
+          "cardW": 420
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "看到“不限量”，先问一句",
-          "at": 0
+          "at": 0,
+          "size": 80
         },
         {
           "type": "h",
-          "text": "它多给我一次，要不要多花钱？",
+          "text": "它多给我一次，\n要不要多花钱？",
+          "size": 64,
           "at": 0,
-          "delay": 90
+          "delay": 116
         },
         {
           "type": "h",
           "text": "可能是真的",
+          "box": "cheap",
+          "color": "teal",
+          "size": 56,
           "at": 0,
-          "delay": 180
+          "delay": 201
         },
         {
           "type": "h",
-          "text": "迟早限额、排队、涨价",
+          "text": "迟早限额、\n排队、涨价",
+          "box": "costly",
+          "color": "coral",
+          "size": 52,
           "at": 0,
-          "delay": 270
+          "delay": 309
         }
       ],
-      "box": "TL",
-      "grad": "left",
-      "ambience": "商场"
+      "name": "看到不限量先问一句：多给一次要不要多"
     },
     {
       "id": "mine",
-      "name": "自己撞上限额那次（讲自己的）",
       "photo": "S06",
       "move": "in",
-      "items": [
-        {
-          "type": "h",
-          "text": "叠字录完按实际说的补，先空着",
-          "at": 0
-        }
-      ],
-      "box": "TL",
-      "grad": "left"
+      "items": [],
+      "name": "自己撞上限额那次（讲自己的）"
     },
     {
       "id": "close",
-      "name": "回到开头：额度是\"多做一次不要钱\"花",
       "photo": "S01",
-      "move": "in",
+      "move": "out",
+      "origin": "MR",
+      "ambience": "办公室",
+      "arollSize": "m",
+      "boxes": {
+        "q": "TL"
+      },
       "items": [
         {
           "type": "h",
           "text": "额度不是被偷走的",
-          "at": 0
+          "until": 1,
+          "at": 0,
+          "delay": 26
+        },
+        {
+          "type": "t",
+          "text": "是“多做一次不要钱”花掉的",
+          "until": 1,
+          "at": 0,
+          "delay": 104
+        },
+        {
+          "type": "t",
+          "text": "会员卖的，一直是一份有数的额度",
+          "until": 1,
+          "at": 0,
+          "delay": 188
+        },
+        {
+          "type": "t",
+          "text": "只是数没写在明处",
+          "until": 1,
+          "at": 0,
+          "delay": 268
         },
         {
           "type": "h",
-          "text": "要是有一天，多答一次真不花钱了",
-          "at": 1
+          "text": "要是有一天，\n多答一次真不花钱了",
+          "box": "q",
+          "size": 72,
+          "at": 1,
+          "delay": 44
         },
         {
           "type": "h",
           "text": "“不限量”会回来吗？",
+          "box": "q",
+          "color": "gold",
           "at": 1,
-          "delay": 90
+          "delay": 160
         }
       ],
-      "box": "TL",
-      "grad": "left",
-      "ambience": "办公室"
+      "name": "回到开头：额度是\"多做一次不要钱\"花"
     }
   ],
   "style": {
@@ -698,5 +1292,68 @@
       "dim": "#BFC8D6"
     },
     "sfx": "sparse"
+  },
+  "aroll": {
+    "src": "ai05/aroll.mp4",
+    "idle": "bubble",
+    "bubbleView": 0.66,
+    "bubbleFaceAt": 0.34,
+    "cues": [
+      {
+        "at": [
+          "0.1",
+          "0.2"
+        ],
+        "mode": "full",
+        "max": 2.4
+      },
+      {
+        "at": [
+          "1.1",
+          "1.2"
+        ],
+        "mode": "full",
+        "max": 4.5
+      },
+      {
+        "at": [
+          "1.4",
+          "1.5"
+        ],
+        "mode": "full",
+        "max": 4
+      },
+      {
+        "at": [
+          "2.4",
+          "2.5"
+        ],
+        "mode": "full",
+        "max": 4
+      },
+      {
+        "at": [
+          "2.7",
+          "2.8"
+        ],
+        "mode": "full",
+        "max": 4
+      },
+      {
+        "at": [
+          "3.4",
+          "3.5"
+        ],
+        "mode": "full",
+        "max": 4
+      },
+      {
+        "at": [
+          "3.7",
+          "end"
+        ],
+        "mode": "full"
+      }
+    ]
   }
 }
