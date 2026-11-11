@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "进行中/AI时事05-AI会员为什么总不够用/AI会员为什么总不够用-讲稿卡.md",
+                "file": "进行中/AI时事05-AI会员为什么总不够用/AI会员为什么总不够用-发布清单.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "AI会员为什么总不够用-讲稿卡"
+              "title": "AI会员为什么总不够用-发布清单"
             }
           }
         ],
@@ -240,29 +240,32 @@
   },
   "active": "95091528db42f5ca",
   "lastOpenFiles": [
+    "进行中/AI时事05-AI会员为什么总不够用/_work/进度.md",
+    "进行中/AI时事05-AI会员为什么总不够用/_work/words_fixed.json",
+    "进行中/AI时事05-AI会员为什么总不够用/_work/utt_asr_turbo.json",
+    "进行中/AI时事05-AI会员为什么总不够用/_work/utt_asr_plain.json",
+    "进行中/AI时事05-AI会员为什么总不够用/_work/utt_asr_hot.json",
+    "进行中/AI时事05-AI会员为什么总不够用/_work/utts_view.txt",
+    "进行中/AI时事05-AI会员为什么总不够用/_work/utts.json",
+    "进行中/AI时事05-AI会员为什么总不够用/_work/plan.json",
+    "进行中/AI时事05-AI会员为什么总不够用/_work",
+    "进行中/AI时事05-AI会员为什么总不够用/同步/A-roll-同步-全部.txt",
+    "进行中/AI时事05-AI会员为什么总不够用/同步/_MVI_9107-同步-new.mp4",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/C02.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/C01.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/S17.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/S16.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/S15.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/S14.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/S13.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/S12.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/S11.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/同步/同步报告.md",
+    "进行中/AI时事05-AI会员为什么总不够用/图片素材/S10.jpg",
+    "进行中/AI时事05-AI会员为什么总不够用/AI会员为什么总不够用-讲稿卡.md",
     "进行中/10-100-消费者剩余-半价买的手机真赚到了吗/10-100-消费者剩余-半价买的手机真赚到了吗-发布清单.md",
     "进行中/9-100-供给定律-旧手机为什么突然值钱了/9-100-供给定律-旧手机为什么突然值钱了-讲稿卡.md",
     "进行中/9-100-供给定律-旧手机为什么突然值钱了/9-100-供给定律-旧手机为什么突然值钱了-发布清单.md",
-    "进行中/9-100-供给定律-旧手机为什么突然值钱了/9-100-供给定律-旧手机为什么突然值钱了-成片.mp4",
-    "工具/video-render/out/ep9-full.mp4",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009201.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009655.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009200.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009654.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009199.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009198.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009653.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009647.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009181.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/frames/009627.jpeg",
-    "工具/video-render/out/ep9-seq/Ep9Full/f900-036bpy98",
-    "工具/video-render/out/ep9-seq/Ep9Full/f300-vicn3wkr",
-    "工具/video-render/out/ep9-seq/Ep9Full/f600-whefa_7v",
-    "工具/video-render/out/ep9-seq/Ep9Full/f0-34rnj73n",
-    "工具/video-render/out/ep9-seq/bundle/public/sfx/whoosh_3.wav",
-    "工具/video-render/out/ep9-seq/bundle/public/sfx/whoosh_2.wav",
-    "工具/video-render/out/ep9-seq/bundle/public/sfx/whoosh_1.wav",
-    "工具/video-render/out/ep9-seq/bundle/public/sfx/whoosh.wav",
     "进行中/9-100-供给定律-旧手机为什么突然值钱了/同步/剪切清单.md",
     "进行中/9-100-供给定律-旧手机为什么突然值钱了/同步/同步报告.md",
     "conflict-files-obsidian-git.md",
@@ -282,9 +285,6 @@
     "进行中/AI时事03-AI越强什么越值钱/实验/同步-第2段/同步报告.md",
     "进行中/AI时事03-AI越强什么越值钱/实验/同步-第3段/同步报告.md",
     "进行中/AI时事03-AI越强什么越值钱/实验/同步-第1段/剪切清单.md",
-    "进行中/AI时事03-AI越强什么越值钱/实验/同步-第1段/同步报告.md",
-    "进行中/AI时事03-AI越强什么越值钱/实验/同步/剪切清单.md",
-    "进行中/AI时事03-AI越强什么越值钱/实验/同步/同步报告.md",
-    "进行中/AI时事03-AI越强什么越值钱/AI越强什么越值钱-口播逐字稿.md"
+    "进行中/AI时事03-AI越强什么越值钱/实验/同步-第1段/同步报告.md"
   ]
 }
