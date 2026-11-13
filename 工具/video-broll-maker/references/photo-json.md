@@ -1,6 +1,6 @@
 # photo.json 字段说明
 
-渲染引擎 `src/photo/engine.tsx`。一期一个 `src/epN/photo.json`。完整样例 `src/ep6/photo.json`。
+渲染引擎 `src/photo/engine.tsx`。一期一个 `src/epN/photo.json`。样例：`src/ep9/photo.json`（《100 个经济学原理》：栏目卡、right 母版、实物卡、出镜层跟脸）、`src/ai04/photo.json`（《AI经济学》：topleft + 黑边、实物卡、固定 face）。`src/ep6/photo.json` 是 2026-10 以前的写法（没有 `style`：扁平卡、v1 字号、飞入），只看字段。
 
 ## 顶层
 
@@ -45,15 +45,15 @@
 
   "box": "TL",                     // 文字框：区域名（见下面「画面区域」）或像素框 {"x": 90, "y": 120, "w": 900}；不写走 style.layout 母版
   "boxes": {"right": "MR", "bottom": "BW"},  // 命名文字框，元素用 "box": "right" 指定；也可以写像素框
-  "center": true,                  // 文字整体居中（定义卡、金句、结尾）；等价于 box 设全宽 + align center
+  "center": true,                  // 文字整体居中（定义卡、金句、结尾）：固定用居中框 x 90 / y 110 / 宽 1740，压暗默认 none。写了 center，场景的 box 就不生效；要居中又要调高低，别写 center，写 box（"MW" 或像素框加 "align": "center"）和 grad
 
-  "ambience": "奶茶店",             // 铺环境声（按音效库的词；true = 随机一个）
+  "ambience": "街道夜晚",           // 铺环境声：只写音效库已导入的词（src/sfx-manifest.json 的 ambience，现在只有 商场 / 街道夜晚）；true = 随机一个
   "enterSfx": null,                // 场景开头的音效，默认 pop；null 关掉；"tick" / "flip" 等
   "items": [ ... ]                 // 元素，按出现顺序写
 }
 ```
 
-栏目卡（`type: "series"`）：`"num": 7, "title": "需求定律", "tagline": "一句话"`，场景内第 0 条要点出栏目名，第 1 条数字滚到本期并出标题，第 2 条出 tagline。
+栏目卡（`type: "series"`）：`"num": 7, "title": "需求定律", "tagline": "一句话"`。出场节奏看场景里有几条要点：1 条（讲稿卡期都是这样）→ 栏目名先出，1.5 秒后数字滚到本期并出标题，再过 1.5 秒出 tagline；3 条及以上 → 第 0 条出栏目名、第 1 条出数字和标题、第 2 条出 tagline；**正好 2 条时 tagline 不出**（ep7 就是这样，已发布，没改），所以栏目卡场景别跨 2 条要点。
 
 ## style（每期视觉方案）
 
@@ -61,6 +61,9 @@
 |---|---|---|
 | `layout` | `topleft` / `right` / `center` / `bottom` | 文字母版，场景不写 box 时按它 |
 | `scale` | `v2` / 不写 | 字号档位。`v2` = h88 / t44 / big180（2026-10 起新期默认写上）；不写 = 旧档 h66 / t38 / big150，已发布各期都走这个 |
+| `badge` | `false` / 不写 | 左上角标（像素呼吸 · 栏目名）。`false` = 不显示（2026-10 起新期默认）；不写 = 显示，已发布各期照旧 |
+| `textEnter` | `fade` / 不写 | 文字入场。`fade` = 纯渐显 10 帧、不动位置（2026-10 起新期默认）；不写 = 旧的弹簧飞入，已发布各期不变。只管字，照片推拉和场景切换不受影响 |
+| `titleFont` | `smiley` | 标题字体，固定得意黑，不要换 |
 | `enter` | `cut` / `blur` / `slideL` / `zoom` / `slideUp` / `flip` | 场景入场 |
 | `letterbox` `grain` | true / false | 2.35:1 黑边 / 胶片颗粒 |
 | `cardSkin` | `tactile` / 不写 | 卡片质感。`tactile` = 实物感：厚底边、细金边、四角角花、±6px 漂动、从侧面飞入带轻回弹（**2026-10-29 起新期默认**）；不写 = 旧的扁平半透明，已发布各期不变 |
@@ -128,8 +131,8 @@ ML  MC  MR     MW
 BL  BC  BR     BW
 ```
 
-- 列：L 左 x=90 / C 中 / R 右（右对齐）/ W 整行 1740 宽居中；行：T 顶 y=120 / M 中 y=400 / B 底（距字幕区上方）。
-- 出图清单的「文字放哪侧」直接写区域名，`scenes_from_checklist.py` 会按每张图的区域自动填场景的 `box` 和 `grad`；只有照片主体和它冲突时再手改。
+- 列：L 左 x=90 / C 中 / R 右（右对齐）/ W 整行 1740 宽居中；行：T 顶 y=120 / M 中 y=400 / B 底（框的底边在 y=810，字幕区上方）。
+- 出图清单的「文字放哪侧」直接写区域名，`scenes_from_checklist.py` 会按每张图的区域自动填场景的 `box` 和 `grad`；只有照片主体和它冲突时再手改。它填的 `grad` 有两处不对（`BW` 填成 top；没写区域的图也写死 left），见 SKILL.md「2. 填 photo.json」。
 - 像素框仍然可用（`{"x":…,"y":…,"w":…}`），但新写的优先用区域名，换母版才生效。
 
 ## 字体
@@ -142,7 +145,7 @@ BL  BC  BR     BW
 | 所有数字：`big`（纯数字）/ `count` / `nums`、角标期号 | 阿里妈妈数黑体 | 自动 |
 | 定义卡大词 | 寒蝉锦书宋 Heavy | `big` 或 `h` 加 `"font": "song"`，一期只出现一两次 |
 | 对白、人说的话、角标「像素呼吸」 | 霞鹜文楷 Medium | `"quote": true` |
-| 小字 `t` / `tag` / `panel` / 字幕 | 思源黑体 | 自动 |
+| 小字 `t` / `tag`、`panel` 的小标题、字幕 | 思源黑体 | 自动（`panel` 的正文行走得意黑，和 `h` 一样） |
 
 ## 文本标记
 
@@ -164,7 +167,7 @@ BL  BC  BR     BW
 "aroll": {
   "src": "ai03/aroll.mp4",          // public/ 下。必须是和 srt 同一条时间线的粗剪成片，从 0 秒对齐，30fps；放进来的是 ffmpeg 转好的 1080p 静音代理（用户原片可以是 4K，见 SKILL.md 3b）。一律静音（人声用户在剪映放原音轨）
   "idle": "bubble",                 // cue 之外的状态：bubble 小圆 | hide 不出现
-  "faceTrack": true,                // 跟脸（默认，不写就是）：scripts/aroll_face.py 逐帧找脸 → src/<epN>/aroll-face.json，bubble / half 态按它把人对到中间，跳剪换位那一帧取景跟着硬切。false = 不跟、一直用 face（ep8 / ai03 / ai04 写了，重渲不变样）
+  "faceTrack": true,                // 跟脸（默认，不写就是）：scripts/aroll_face.py 逐帧找脸 → src/<epN>/aroll-face.json，bubble / half 态按它把人对到中间，跳剪换位那一帧取景跟着硬切。false = 不跟、一直用 face（ep8 / ai03 / ai04 写了，重渲不变样）。注意：没写 false 但这一期没有脸轨（src/photo/faces.ts 里没有它）时引擎不报错，直接用 face（没写就是 [0.5, 0.42]），小圆里的脸会偏；出镜层合成一律用 render.py / render_seq.py 渲，它们会先确认脸轨
   "face": [0.5, 0.42],              // 没有脸轨时（faceTrack: false，或还没跑 aroll_face.py）才用：脸在 A-roll 画面里的位置（比例；x 脸的水平中心，y 两眼连线）
   "bubbleView": 0.62,               // 小圆直径装下 A-roll 画面高度的多少：0.62 ≈ 头到胸口的半身（默认）；0.31 = 只有一张脸（10-29 旧版）。头顶离画面上沿 ≤ 20% 的实拍（ep8）用 0.72，不然头发被圆切掉
   "bubbleFaceAt": 0.32,             // 两眼放在圆里从上往下的位置（默认 0.32，留出下面的肩膀和身子）；bubbleView 调大时同步到 0.34 左右
@@ -184,7 +187,7 @@ BL  BC  BR     BW
 | `bubble` | 直径 260 小圆（左下圆心 220,650 / 右上圆心 1770,290），3px 暖白细边 + 软投影（照小Lin说的做法），默认取半身（`bubbleView`）；场景写 `arollSize` 放大 | 数据、历史、图表段——B-roll 是主角，你在角落 |
 | `hide` | 不出现 | 章节卡、栏目卡（`hideOn` 默认就是这两个场景，不用写要点 id） |
 
-- **小圆放哪边自动躲字**：`style.layout=right`（字在右）→ 小圆左下；否则右上。右上这个位置整个圆都在 B-roll 不放字的 `SAFE_RIGHT` 区（x≥1620）里，和任何母版的字都不碰。某个场景字在另一边，场景里写 `"arollSide": "right"` 单独指定；要放别处写 `"arollPos": [x, y]` 直接给圆心。**右下角不能放**——抖音右侧图标列和「全屏观看」按钮压在那里（依据和换算见 `douyin-safe-zone.md`）。两个场景小圆换位置时平滑滑过去，不响。**每个场景都要单独看**：拼图每场只抽 4 帧，后出现的字容易漏，交付前把成片按 2 秒一帧抽一遍
+- **小圆放哪边自动躲字**：`style.layout=right`（字在右）→ 小圆左下；否则右上。右上这个位置整个圆都在 B-roll 不放字的 `SAFE_RIGHT` 区（x≥1620）里，和任何母版的字都不碰。某个场景字在另一边，场景里写 `"arollSide": "right"` 单独指定；要放别处写 `"arollPos": [x, y]` 直接给圆心。**右下角不能放**——抖音右侧图标列和「全屏观看」按钮压在那里（依据和换算见 `douyin-safe-zone.md`）。两个场景小圆换位置时平滑滑过去，不响。拼图只抽几帧，后出现的字容易漏看，交付前的逐帧抽查见 SKILL.md 3b
 - **小圆大小**（2026-11 起）：场景写 `"arollSize": "m"`（1.3 倍 = 338）或 `"l"`（1.6 倍 = 416），不写是 `bubble.d`（默认 260）。放大时外沿贴住默认小圆的外沿往画面里长，不出画、不进字幕区：右上圆 m 占 x 1562–1900 / y 160–498，l 占 x 1484–1900 / y 160–576；左下圆 m 占 x 90–428 / y 442–780，l 占 x 90–506 / y 364–780。多出来的部分进了字列和照片那一侧：topleft 母版只用 L 列（x ≤ 990）的场景放得下，有 TR / MR / TW 字的别放大；right 母版的左下圆放大会碰 L 列和 BL 的字。写了 `arollPos` 时以它为圆心原地放大。什么时候放大见 SKILL.md 3b
 - **切换动效**（24 帧，慢进慢出，每次 whoosh）：bubble ⇄ full 是圆形 iris——圆从小圆位置长大到盖满屏 / 缩回，边缘一圈白光跟着扩；→ half 是卡从左 wipe 开、前沿一道亮线，小圆缩进卡里脸的位置；half → full 是圆从卡里的脸长出来。bubble 之间换位置、换大小是平滑滑过去，不响；`style.sfx = "sparse"` 时，正好落在换场景那一帧（±3 帧）的切换也不响——那一下场景自己有 pop / 章节卡 flip
 - 节奏经验：每段 bubble 别超过 40–60 秒，中间切回 full 露 6–10 秒，不然像配音 PPT
@@ -219,4 +222,4 @@ BL  BC  BR     BW
 
 ## 时间轴（timeline.json，脚本生成，不手改）
 
-每个场景 `{scene, from, dur, steps:[...]}`，`steps[i]` 是场景内第 i 条要点开始的帧（相对场景起点；章节卡场景只有 `N.0` 一个 step）。`points` 是展平后每个 step 对应的要点 id；`source` 是 `estimate`（录前 `make_timeline.py` 按讲稿卡字数估）或 `starts`（录后按 `src/<ep>/starts.json` 要点起点表）。`subs` 在 estimate 时是「要点 id + 要点开头」，只给拼图预览用；starts 时取 `--srt` 的字幕条。元素的 `at` 就是对 `steps` 的下标；同一条要点里的先后用 `delay`（帧）；`custom` 组件里用 `at(p, i)` 取帧、`p.step` 取当前到第几条要点。
+每个场景 `{scene, from, dur, steps:[...]}`，`steps[i]` 是场景内第 i 条要点开始的帧（相对场景起点；章节卡场景只有 `N.0` 一个 step）。`points` 是展平后每个 step 对应的要点 id；`source` 是 `estimate`（录前 `make_timeline.py` 按讲稿卡字数估）或 `starts`（录后按 `src/<ep>/starts.json` 要点起点表）。`subs` 在 estimate 时是「要点 id + 要点开头」，只给拼图预览用；starts 时取 `--srt` 的字幕条。元素的 `at` 就是对 `steps` 的下标；同一条要点里的先后用 `delay`（帧）；`custom` 组件里用 `at(p, i)` 取帧、`p.step` 取当前到第几条要点。录的时候跳过的要点和下一条是同一帧（`steps` 里两个值一样），挂在它上面的字会和下一条的字同时出来，要删掉或改挂。

@@ -63,6 +63,8 @@
 
 **净增只有 2 个元素**（document、pyramid）+ 1 个转场（pageflip），其余全是现有元素的变体增强（photorow skin、units 变体、tagwall 布局、graph 光效）。符合「元素少而语义固定」的既有原则。
 
+**对现有元素的增强一律加开关、默认关**：photorow 徽章 skin、units 百分比变体、graph 连线光效、给章节卡用的「标题翻落」，不写开关时渲染结果要和现在逐帧一样（graph 已经用在已发布的 ai03，章节卡每期都有）。只有新期按需打开。
+
 ## 4. photo.json 字段草案
 
 ```json
@@ -79,7 +81,7 @@
 }
 ```
 
-- `src`：页面截图（入库用 import_photos 同流程，单独 `doc/` 目录；宽 ≥ 1440，越高清越好）
+- `src`：页面截图（入库用 import_photos 同流程，单独 `doc/` 目录）。宽度 ≥ 页面在画面里的显示宽度 × `zoom`，否则放大后字是糊的；全屏（`pos: full`）一律 ≥ 2560，PDF 按 ≥ 2560 宽导出，别拿小截图放大
 - `box`：高亮句在页面截图上的归一化坐标 [x, y, w, h]
 - `zoom`：聚焦放大倍数，默认 1.1，范围 1.05–1.15；不写则只高亮不放大
 - `fact`：发布清单「事实核对」条目号，**必填**——校验时双向核对（引用句 ↔ 来源链接）
@@ -120,3 +122,4 @@
 - 第一批（阶段 5）：document（滑动 + 高亮 + 聚焦）+ pageflip 硬翻 + validate 规则 + SKILL/photo-json.md 同步
 - 第二批：pyramid、photorow 徽章 skin、units 百分比变体、tagwall、graph 光效、pageflip 软翻
 - 每批验收：渲染小样 + 拼图检查单过一遍；document 用 AI05 的事实核对条目做第一个真实用例
+- 每批实现前后按 `golden-baseline.md` 渲基线对比：已发布各期零差异，新元素只在新期出现。和引擎结构改动（拆 engine.tsx 等）别同时进行，一次只进一批，差异才分得清是谁带来的
