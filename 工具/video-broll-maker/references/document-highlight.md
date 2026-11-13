@@ -103,7 +103,19 @@
 - 高亮句 `box` 必须在页面截图范围内；`zoom` 超范围报 warn
 - 一期 document 场景数 ≤ 3，超过 warn（防止变 PPT）
 
-## 6. 实现排期
+## 7. 素材需求与来源（用户可找矢量图/素材）
+
+入库方式照音效库的模式：素材放进 `工具/图标库/`，实现阶段加 `import_icons.py` 统一裁切/命名/进工程。
+
+| 素材 | 用途 | 规格（找素材时按这个） | 优先级 | 来源建议 |
+|---|---|---|---|---|
+| 线条图标集（人、钱币、房子、工厂、芯片、箭头、天平、队列……约 20–40 个） | pyramid 层级图图标、photorow 徽章、tagwall 角标 | **单色** SVG 或透明底 PNG ≥ 512；线宽统一；无文字；**可商用**；整组风格统一（线条风，呼应 document 的黑底白线审美；引擎能改色） | 高 | Lucide / Tabler / Phosphor / Feather（MIT 或 Apache 开源图标集，可直接商用）；iconfont 注意个别图标授权限制 |
+| 纸纹 / 纸面纹理 | document 页面底色、paper 卡质感增强 | 无缝平铺 JPG/PNG ≥ 1024，灰度，可商用 | 低（代码噪点可替代，有素材更高级） | Pixabay 纹理类（免费可商用） |
+| 实物小图（钞票堆、硬币堆） | units 变体 | 透明底 PNG ≥ 1024，无文字、无品牌标识 | 中（也可用即梦出图代替，风格更贴照片铺底） | 用户出图或 Pixabay |
+
+找齐后放到 `工具/图标库/`（参照 `工具/音效库/` 的模式），实现阶段写 `import_icons.py` 入库。
+
+## 8. 实现排期
 
 - 第一批（阶段 5）：document（滑动 + 高亮 + 聚焦）+ pageflip 硬翻 + validate 规则 + SKILL/photo-json.md 同步
 - 第二批：pyramid、photorow 徽章 skin、units 百分比变体、tagwall、graph 光效、pageflip 软翻
