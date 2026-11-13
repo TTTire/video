@@ -34,13 +34,15 @@
 |---|---|
 | ep6 | 时钟 / 聚光 / 响声圈、center + box、3 条要点的栏目卡 |
 | ep7 | 2 条要点的栏目卡、center + box、分屏、扁平卡、v1 字号、飞入、panel |
-| ep8 | 5 条要点的栏目卡、分屏、固定 face 的出镜层、reveal 字效 |
+| ep8 | 5 条要点的栏目卡、分屏、黑边 + right 母版、固定 face 的出镜层、reveal 字效 |
 | ep9 | 1 条要点的栏目卡、跟脸的出镜层、里程表、砸入 |
 | ai02 | center 母版、zoom 入场 |
-| ai03 | right 母版、graph / stack / photocard / odometer / flap / slam、固定 face 的出镜层 |
-| ai05 | topleft + 黑边、液面、跟脸的出镜层（定稿后加入，内容还在变的期不当基线） |
+| ai03 | right 母版、graph / stack / photocard / odometer / flap / slam / 液面、固定 face 的出镜层 |
+| ai01 | slideL 入场、center + box、v1 字号 + 扁平卡 + 飞入、panel / nums / stamp（照片都在 git 里：`已完成/AI时事01-…/素材图`；S01 有两张，`import_photos` 按文件名排序会选中「去品牌」那张，和交付版一致） |
 
-另外，每一期都渲一张拼图（`render.py <ep> sheet`，有出镜层的再渲一张 `arollsheet`），一张 10 秒。以后哪一期用了新元素或新开关，就补进上面这张表。
+AI05 已发布、不再渲染，不放进基线：它用到的跟脸出镜层、液面、黑边分别由 ep9、ai03、ep8 覆盖，slideL 入场由 ai01 覆盖。
+
+另外，除 AI05 以外的每一期都渲一张拼图（`render.py <ep> sheet`，有出镜层的再渲一张 `arollsheet`），一张 10 秒。以后哪一期用了新元素或新开关，就补进上面这张表。
 
 ## 怎么渲
 
