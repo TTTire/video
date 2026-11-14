@@ -1,0 +1,539 @@
+1
+00:00:00,207 --> 00:00:01,167
+Hi everyone
+
+2
+00:00:01,357 --> 00:00:03,527
+There's a concert coming up soon in Hangzhou
+
+3
+00:00:03,579 --> 00:00:04,970
+Its discounted public-benefit tickets, face value 50 yuan
+
+4
+00:00:04,970 --> 00:00:08,429
+have been listed on the resale market at 988 each
+
+5
+00:00:08,809 --> 00:00:10,329
+That's nearly 20 times the price
+
+6
+00:00:10,379 --> 00:00:12,019
+The singer had been out of the spotlight for years
+
+7
+00:00:12,069 --> 00:00:13,679
+but a variety show made her popular again
+
+8
+00:00:13,959 --> 00:00:16,509
+It's a show marking 20 years since her debut
+
+9
+00:00:16,581 --> 00:00:19,371
+No one expected ticket prices to multiply like this
+
+10
+00:00:19,422 --> 00:00:21,112
+At the end of the last episode
+
+11
+00:00:21,162 --> 00:00:24,182
+we talked about that Huaqiangbei phone, remember
+
+12
+00:00:24,238 --> 00:00:27,818
+1399 buys a phone with an original price of nearly 3000 yuan
+
+13
+00:00:28,028 --> 00:00:30,752
+Your first reaction: wow, I saved 1600
+
+14
+00:00:30,842 --> 00:00:34,132
+But here, the 50-yuan ticket is listed at 988
+
+15
+00:00:34,392 --> 00:00:36,822
+Your first reaction: what a rip-off, nearly 20 times over
+
+16
+00:00:36,934 --> 00:00:38,304
+One's a win, the other's a loss
+
+17
+00:00:38,400 --> 00:00:40,700
+But did you get the math wrong
+
+18
+00:00:40,790 --> 00:00:44,010
+How much you gain actually has little to do with the price tag
+
+19
+00:00:44,099 --> 00:00:46,349
+Neither one should be calculated this way
+
+20
+00:00:46,434 --> 00:00:49,024
+This is Pixel Breath's 100 Principles of Economics
+
+21
+00:00:49,074 --> 00:00:51,234
+number 10, consumer surplus
+
+22
+00:00:51,484 --> 00:00:53,564
+Last time we left you with a question
+
+23
+00:00:53,614 --> 00:00:56,524
+That "I got a deal" feeling, how much did you actually gain
+
+24
+00:00:57,429 --> 00:01:00,400
+A price tag shows an original price and a current price
+
+25
+00:01:00,570 --> 00:01:03,223
+Anyone can subtract one from the other
+
+26
+00:01:03,273 --> 00:01:06,543
+And that's exactly the math sellers want you to do
+
+27
+00:01:06,943 --> 00:01:09,733
+But who writes the original price? The seller, of course
+
+28
+00:01:10,043 --> 00:01:12,403
+The government even set special rules to regulate it
+
+29
+00:01:12,495 --> 00:01:15,865
+In economics, "getting a deal" uses a different number
+
+30
+00:01:16,275 --> 00:01:18,495
+the most you'd really be willing to pay
+
+31
+00:01:18,635 --> 00:01:20,735
+minus the money you actually spend
+
+32
+00:01:20,785 --> 00:01:23,805
+and what's left over is called consumer surplus
+
+33
+00:01:23,881 --> 00:01:25,771
+And that number exists only in your head
+
+34
+00:01:25,891 --> 00:01:28,281
+it doesn't show up on the price tag
+
+35
+00:01:28,401 --> 00:01:30,070
+and the seller really can't see it
+
+36
+00:01:30,341 --> 00:01:32,621
+Even economists find it hard to calculate
+
+37
+00:01:32,688 --> 00:01:34,198
+If you really wanted to calculate it
+
+38
+00:01:34,248 --> 00:01:37,258
+you'd have to find the number in everyone's head
+
+39
+00:01:37,314 --> 00:01:39,504
+And there's an even finer breakdown of the concert's prices
+
+40
+00:01:39,894 --> 00:01:42,278
+820-yuan tickets were being offered at 5000
+
+41
+00:01:42,328 --> 00:01:45,854
+320-yuan tickets, two bundled together for 3600
+
+42
+00:01:46,114 --> 00:01:49,115
+And the cheapest tier was actually marked up by the highest multiple
+
+43
+00:01:49,197 --> 00:01:51,087
+One survey on live-show ticketing
+
+44
+00:01:51,137 --> 00:01:53,227
+asked 1000 ticket buyers
+
+45
+00:01:53,547 --> 00:01:56,847
+For shows they really love, over 80% of people would accept
+
+46
+00:01:56,897 --> 00:02:00,617
+paying 10% to 80% above face value
+
+47
+00:02:00,967 --> 00:02:02,627
+One ticket, two prices
+
+48
+00:02:03,017 --> 00:02:07,037
+Does the organizer's price really match the price in your head
+
+49
+00:02:07,135 --> 00:02:09,935
+Whether you got a deal depends on the number in your head
+
+50
+00:02:09,985 --> 00:02:11,965
+not on its actual price
+
+51
+00:02:12,024 --> 00:02:14,894
+So what if something has no price at all
+
+52
+00:02:15,846 --> 00:02:18,766
+If you work it out as original price minus current price
+
+53
+00:02:18,816 --> 00:02:21,356
+there's one kind of thing where you'd think you gained nothing
+
+54
+00:02:21,576 --> 00:02:24,426
+yet you use it every day without spending a cent
+
+55
+00:02:24,786 --> 00:02:28,786
+like the maps, search engines and email we use daily
+
+56
+00:02:29,026 --> 00:02:31,696
+Their original price is zero, and so is their current price
+
+57
+00:02:31,756 --> 00:02:33,374
+And in your head, there isn't really
+
+58
+00:02:33,374 --> 00:02:35,489
+any expectation of what they're worth
+
+59
+00:02:35,539 --> 00:02:38,736
+In 2019, in the Proceedings of the National Academy of Sciences
+
+60
+00:02:38,736 --> 00:02:40,799
+a paper ran a big experiment
+
+61
+00:02:40,859 --> 00:02:43,249
+They asked American internet users, how much would it take
+
+62
+00:02:43,249 --> 00:02:46,059
+for you to go a year without a certain kind of free thing
+
+63
+00:02:46,409 --> 00:02:47,429
+Let's start with the most extreme
+
+64
+00:02:47,589 --> 00:02:50,079
+Giving up search engines alone for a whole year
+
+65
+00:02:50,144 --> 00:02:53,534
+the median answer was 17,530 dollars
+
+66
+00:02:53,894 --> 00:02:56,764
+For email, it was 8,414 dollars
+
+67
+00:02:57,034 --> 00:03:01,214
+and for maps, around 3,600 dollars
+
+68
+00:03:01,287 --> 00:03:03,747
+And you haven't paid a cent for any of these
+
+69
+00:03:03,897 --> 00:03:05,677
+yet the price in your head is this high
+
+70
+00:03:05,727 --> 00:03:08,372
+and that whole big gap is all yours
+
+71
+00:03:08,422 --> 00:03:11,837
+The question was how much you'd have to be paid to give up
+
+72
+00:03:11,837 --> 00:03:13,269
+this kind of free app
+
+73
+00:03:13,319 --> 00:03:15,419
+not how much you'd be willing to pay
+
+74
+00:03:15,469 --> 00:03:17,809
+And it was the same for the group with real payouts
+
+75
+00:03:17,909 --> 00:03:20,109
+One in every 200 people was picked at random
+
+76
+00:03:20,163 --> 00:03:23,453
+and whoever got picked had their choice carried out
+
+77
+00:03:23,544 --> 00:03:26,494
+Whatever amount they chose, they really got that much
+
+78
+00:03:26,734 --> 00:03:28,214
+and they really had to stop using it
+
+79
+00:03:28,394 --> 00:03:30,467
+For example, quitting Facebook for a month
+
+80
+00:03:30,517 --> 00:03:33,018
+the median was around 40 dollars
+
+81
+00:03:33,068 --> 00:03:35,238
+That's the price American internet users would accept
+
+82
+00:03:35,448 --> 00:03:38,538
+And what about WeChat, navigation or search in China
+
+83
+00:03:38,818 --> 00:03:40,728
+Nobody has really calculated that
+
+84
+00:03:41,118 --> 00:03:42,818
+You can estimate it for yourself
+
+85
+00:03:43,228 --> 00:03:45,598
+The way I see it, where the surplus is biggest
+
+86
+00:03:45,648 --> 00:03:47,908
+is often where you don't feel you got a deal
+
+87
+00:03:48,218 --> 00:03:49,928
+because there's no price to remind you
+
+88
+00:03:49,978 --> 00:03:51,918
+how much you've actually saved there
+
+89
+00:03:51,968 --> 00:03:53,598
+Back to the two stories from the start
+
+90
+00:03:53,818 --> 00:03:56,248
+A phone with an original price of 3000 has you thinking
+
+91
+00:03:56,298 --> 00:03:58,778
+I got it for 1500, I saved 1500
+
+92
+00:03:58,854 --> 00:04:01,694
+while a face value of 50 has you fixated on the markup
+
+93
+00:04:01,744 --> 00:04:03,054
+Whether it's a gain or a loss
+
+94
+00:04:03,364 --> 00:04:06,084
+depends on how much you really need it
+
+95
+00:04:06,163 --> 00:04:09,113
+And consumer surplus is hidden in that number in your head
+
+96
+00:04:09,247 --> 00:04:12,067
+Before you pay, do you know what it is
+
+97
+00:04:12,982 --> 00:04:16,006
+But consumer surplus doesn't mean the more you save
+
+98
+00:04:16,046 --> 00:04:17,092
+the more you gain
+
+99
+00:04:17,442 --> 00:04:18,842
+Saving the same 1000 yuan
+
+100
+00:04:18,892 --> 00:04:21,202
+for someone short on cash and someone well-off
+
+101
+00:04:21,252 --> 00:04:22,622
+doesn't carry the same weight
+
+102
+00:04:22,706 --> 00:04:24,726
+And what you pay isn't just money
+
+103
+00:04:24,781 --> 00:04:27,671
+That milk tea shop by West Lake, about 10 yuan a cup
+
+104
+00:04:27,721 --> 00:04:29,501
+and the line takes over an hour
+
+105
+00:04:29,701 --> 00:04:32,861
+The sandwich shop next door has a line 70 to 80 meters long
+
+106
+00:04:32,917 --> 00:04:35,127
+Someone made a special trip from Wuxi
+
+107
+00:04:35,197 --> 00:04:37,817
+and waited an hour in line for that treat
+
+108
+00:04:37,907 --> 00:04:40,927
+That hour-plus is a price he paid too
+
+109
+00:04:40,980 --> 00:04:42,510
+So, before you pay
+
+110
+00:04:42,560 --> 00:04:46,200
+first form a rough expectation in your head
+
+111
+00:04:46,540 --> 00:04:48,380
+How much am I willing to pay for this
+
+112
+00:04:48,560 --> 00:04:50,880
+Decide first, then look at its price tag
+
+113
+00:04:51,130 --> 00:04:53,900
+Only if the price is lower is it a real deal
+
+114
+00:04:54,270 --> 00:04:55,240
+Double 11 just ended
+
+115
+00:04:55,290 --> 00:04:57,530
+so the stuff in your cart is perfect for practice
+
+116
+00:04:57,623 --> 00:05:01,123
+For each item, first ask yourself the most you'd really pay
+
+117
+00:05:01,503 --> 00:05:04,603
+then compare that with what we actually pay
+
+118
+00:05:04,963 --> 00:05:07,543
+If the current price is higher, it doesn't count as a deal
+
+119
+00:05:07,803 --> 00:05:10,433
+This year, Tmall dropped its cross-store spend-and-save discounts
+
+120
+00:05:10,713 --> 00:05:13,558
+and switched to a straight discount per item, up to 15% off
+
+121
+00:05:14,283 --> 00:05:17,415
+The current price is shown upfront, so comparing is easier
+
+122
+00:05:17,465 --> 00:05:19,615
+Back to that ticket and that phone
+
+123
+00:05:19,745 --> 00:05:21,845
+The 50-yuan ticket going for 988
+
+124
+00:05:22,105 --> 00:05:24,145
+if deep down you'd be willing to pay 1500
+
+125
+00:05:24,205 --> 00:05:27,085
+then getting it at 988 is still a good deal
+
+126
+00:05:27,455 --> 00:05:29,335
+And the 1399 phone
+
+127
+00:05:29,425 --> 00:05:31,385
+for someone who came specifically to buy a phone
+
+128
+00:05:31,454 --> 00:05:32,594
+might really be a good deal
+
+129
+00:05:32,874 --> 00:05:34,644
+But whether it's really a deal or not
+
+130
+00:05:34,694 --> 00:05:36,984
+depends on the price you have in your head
+
+131
+00:05:37,039 --> 00:05:39,369
+And the ticket price is the same for everyone
+
+132
+00:05:39,608 --> 00:05:41,029
+But what if the organizer knew
+
+133
+00:05:41,079 --> 00:05:43,169
+deep down you'd be willing to pay 5000 yuan
+
+134
+00:05:43,228 --> 00:05:45,278
+Next time, let's talk about
+
+135
+00:05:45,278 --> 00:05:47,988
+topic number 11, price discrimination

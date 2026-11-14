@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>像素呼吸 · 渲染流水线 —— 拿到 A-roll 和图片之后</title>
+<style>
+/* ============ 字体：直接引用渲染工程打包的五款字体 ============ */
+@font-face{
+  font-family:"SmileySans";
+  src:url("工具/video-render/assets/fonts/SmileySans-Oblique.ttf.woff2") format("woff2");
+  font-display:swap;
+}
+@font-face{
+  font-family:"ShuHei";
+  src:url("工具/video-render/assets/fonts/AlimamaShuHeiTi-Bold.woff2") format("woff2");
+  font-display:swap;
+}
+
+:root{
+  --bg0:#0b0c0f;
+  --bg1:#101218;
+  --card:#15171d;
+  --card2:#1a1d24;
+  --line:#262a33;
+  --line-soft:#1e2129;
+  --gold:#e2b35c;
+  --gold-strong:#f2ca72;
+  --gold-dim:#8a6f3a;
+  --ink:#ece7da;
+  --ink-dim:#a9a391;
+  --ink-faint:#6f6c60;
+  --red:#ff5d5d;
+  --green:#5ecf8e;
+  --teal:#4fd6c8;
+  --mono:"Cascadia Code","JetBrains Mono",Consolas,"Courier New",monospace;
+  --disp:"SmileySans","得意黑","PingFang SC","HarmonyOS Sans SC","Microsoft YaHei",sans-serif;
+  --num:"ShuHei","AlimamaShuHeiTi","PingFang SC","Microsoft YaHei",sans-serif;
+  --body:"PingFang SC","HarmonyOS Sans SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg0);
+  color:var(--ink);
+  font-family:var(--body);
+  font-size:15.5px;
+  line-height:1.75;
+  letter-spacing:.02em;
+  overflow-x:hidden;
+  background-image:
+    radial-gradient(1100px 520px at 78% -10%, rgba(226,179,92,.07), transparent 60%),
+    radial-gradient(900px 480px at 8% 8%, rgba(79,214,200,.04), transparent 60%);
+}
+/* 胶片颗粒 */
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:60;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E");
+}
+/* 顶部阅读进度 */
+#progress{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--gold-dim),var(--gold-strong));z-index:80;transition:width .1s linear}
+
+.wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+
+/* ============ 顶栏 ============ */
+.topbar{
+  position:sticky;top:0;z-index:70;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:13px 0;border-bottom:1px solid var(--line-soft);
+  background:rgba(11,12,15,.82);backdrop-filter:blur(10px);
+}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--disp);font-size:17px;color:var(--ink)}
+.brand .mark{
+  width:26px;height:26px;border-radius:6px;flex:none;
+  background:linear-gradient(135deg,#1c1f26,#0e1013);
+  border:1px solid var(--gold-dim);
+  display:grid;place-items:center;font-size:11px;color:var(--gold);
+  font-family:var(--num);
+}
+.tc{
+  font-family:var(--num);font-size:13px;color:var(--gold);
+  letter-spacing:.14em;background:rgba(226,179,92,.08);
+  border:1px solid rgba(226,179,92,.22);border-radius:5px;
+  padding:4px 10px;white-space:nowrap;
+}
+.tc i{font-style:normal;color:var(--ink-faint);letter-spacing:0}
+
+/* ============ HERO ============ */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding:72px 0 58px}
+.kicker{
+  display:inline-flex;align-items:center;gap:9px;
+  font-size:12.5px;color:var(--gold);letter-spacing:.3em;text-transform:uppercase;
+  margin-bottom:22px;
+}
+.kicker::before{content:"";width:34px;height:1px;background:var(--gold-dim)}
+.hero h1{
+  font-family:var(--disp);font-weight:400;
+  font-size:52px;line-height:1.22;letter-spacing:.01em;
+  margin-bottom:20px;
+}
+.hero h1 .g{color:var(--gold-strong)}
+.hero p.lead{color:var(--ink-dim);font-size:16.5px;max-width:560px;margin-bottom:30px}
+.statrow{display:flex;flex-wrap:wrap;gap:10px}
+.stat{
+  border:1px solid var(--line);background:var(--bg1);border-radius:8px;
+  padding:9px 14px;font-size:13px;color:var(--ink-dim);
+  display:flex;align-items:baseline;gap:7px;
+}
+.stat b{font-family:var(--num);color:var(--ink);font-size:15px;font-weight:400}
+
+/* ---- 16:9 模拟帧 ---- */
+.mockside{position:relative}
+.frame{
+  position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;
+  border:1px solid var(--gold-dim);
+  box-shadow:0 30px 80px -20px rgba(0,0,0,.75), 0 0 0 6px rgba(226,179,92,.05);
+}
+.frame .photo{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(120% 90% at 20% 12%, rgba(240,180,90,.28), transparent 55%),
+    radial-gradient(90% 80% at 85% 100%, rgba(90,60,140,.25), transparent 60%),
+    linear-gradient(150deg,#3a2d1d 0%,#171a21 48%,#241d2e 100%);
+}
+.frame .stage{position:absolute;inset:0;background:linear-gradient(105deg,rgba(0,0,0,.52) 0%,transparent 42%,rgba(0,0,0,.42) 100%)}
+/* 画面大字 */
+.frame .btext{
+  position:absolute;left:6%;top:9%;z-index:2;
+  font-family:var(--disp);color:#fff;font-size:clamp(16px,2.2vw,26px);
+  line-height:1.5;text-shadow:0 2px 14px rgba(0,0,0,.6);
+}
+.frame .btext .gold{color:var(--gold-strong);font-family:var(--num);font-size:1.35em}
+/* 出镜小圆 */
+.bubble{
+  position:absolute;left:6%;bottom:12%;z-index:2;
+  width:88px;height:88px;border-radius:50%;
+  border:3px solid rgba(255,255,255,.92);
+  box-shadow:0 0 0 3px rgba(0,0,0,.35), 0 6px 24px rgba(0,0,0,.5);
+  background:linear-gradient(160deg,#4a4238,#23262e);
+  overflow:hidden;
+}
+.bubble .person{position:absolute;inset:0}
+.bubble .person::before{content:"";position:absolute;left:50%;top:20px;width:26px;height:26px;border-radius:50%;background:#caa;transform:translateX(-50%)}
+.bubble .person::after{content:"";position:absolute;left:50%;bottom:-16px;width:52px;height:52px;border-radius:50%;background:#caa;transform:translateX(-50%)}
+/* 字幕禁区线 */
+.subline{
+  position:absolute;left:0;right:0;top:76%;z-index:3;border-top:1px dashed var(--red);
+}
+.subline span{
+  position:absolute;right:8px;top:-20px;font-size:10.5px;color:var(--red);
+  font-family:var(--num);letter-spacing:.08em;background:rgba(0,0,0,.55);padding:1px 6px;border-radius:3px;
+}
+.subzone{
+  position:absolute;left:0;right:0;bottom:0;top:76%;z-index:2;
+  background:rgba(8,9,12,.62);
+  display:flex;align-items:flex-end;justify-content:center;padding-bottom:10px;
+  font-size:11px;color:var(--ink-faint);letter-spacing:.24em;
+}
+/* 胶片齿孔 */
+.sprock{position:absolute;top:0;bottom:0;width:14px;z-index:4;background:rgba(11,12,15,.92)}
+.sprock.l{left:0}.sprock.r{right:0}
+.sprock::before{
+  content:"";position:absolute;left:2px;top:0;bottom:0;width:10px;
+  background:repeating-linear-gradient(to bottom,#0b0c0f 0 6px,transparent 6px 16px);
+}
+/* 角标 */
+.corner{position:absolute;z-index:4;color:var(--gold-dim);font-family:var(--num);font-size:11px}
+.corner.tl{top:8px;left:20px}.corner.tr{top:8px;right:20px}
+.corner.bl{bottom:8px;left:20px}.corner.br{bottom:8px;right:20px}
+.framelegend{margin-top:14px;display:flex;gap:18px;flex-wrap:wrap;font-size:12px;color:var(--ink-faint)}
+.framelegend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:0}
+.framelegend i.b{background:var(--gold);box-shadow:0 0 0 2px rgba(226,179,92,.2)}
+.framelegend i.r{background:var(--red);border-radius:0;width:12px;height:2px}
+
+/* ============ 通用区块 ============ */
+section{padding:34px 0 44px;border-top:1px solid var(--line-soft)}
+.sechead{display:flex;align-items:baseline;gap:18px;margin-bottom:30px}
+.sechead .no{font-family:var(--num);color:var(--gold);font-size:15px;letter-spacing:.12em;flex:none}
+.sechead h2{font-family:var(--disp);font-weight:400;font-size:30px;letter-spacing:.02em}
+.sechead .en{margin-left:auto;color:var(--ink-faint);font-size:12px;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap}
+.sechead .rule{flex:1;height:1px;background:linear-gradient(90deg,var(--line),transparent);margin-left:8px;min-width:40px}
+
+/* 渐入动画 */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+/* ============ 全流程 stepper ============ */
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;counter-reset:f}
+.fstep{
+  position:relative;background:var(--card);border:1px solid var(--line);
+  border-radius:12px;padding:20px 18px 18px;overflow:hidden;
+}
+.fstep::before{
+  content:"0" counter(f);counter-increment:f;
+  position:absolute;right:10px;top:6px;font-family:var(--num);
+  font-size:44px;color:rgba(226,179,92,.08);line-height:1;
+}
+.fstep h3{font-family:var(--disp);font-weight:400;font-size:21px;margin-bottom:4px}
+.fstep .who{
+  display:inline-block;font-size:11px;letter-spacing:.1em;border-radius:4px;
+  padding:1px 8px;margin-bottom:10px;
+}
+.fstep .who.me{background:rgba(226,179,92,.12);color:var(--gold);border:1px solid rgba(226,179,92,.28)}
+.fstep .who.you{background:rgba(79,214,200,.1);color:var(--teal);border:1px solid rgba(79,214,200,.25)}
+.fstep p{font-size:13px;color:var(--ink-dim);line-height:1.65}
+.fstep.hot{border-color:rgba(226,179,92,.5);box-shadow:inset 0 0 0 1px rgba(226,179,92,.18), 0 12px 40px -18px rgba(226,179,92,.28)}
+.fstep.hot::after{
+  content:"这次的重点";position:absolute;top:0;left:0;right:0;
+  background:linear-gradient(90deg,var(--gold-dim),transparent);
+  color:#0b0c0f;font-size:10.5px;letter-spacing:.2em;text-align:center;padding:2px 0;
+}
+.flowarrow{display:none}
+
+/* ============ 八步主流程 ============ */
+.steps{position:relative;margin-top:14px}
+.steps::before{
+  content:"";position:absolute;left:23px;top:12px;bottom:12px;width:1px;
+  background:linear-gradient(to bottom,var(--gold-dim),rgba(138,111,58,.12) 88%);
+}
+.stepcard{
+  position:relative;display:grid;grid-template-columns:56px 1fr;
+  gap:18px;padding:0 0 30px 0;
+}
+.stepcard .sn{
+  width:47px;height:47px;border-radius:50%;flex:none;
+  background:var(--bg0);border:1px solid var(--gold-dim);
+  display:grid;place-items:center;font-family:var(--num);
+  color:var(--gold-strong);font-size:17px;position:relative;z-index:2;
+  box-shadow:0 0 0 6px var(--bg0);
+}
+.stepcard .body{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;
+  padding:20px 24px 16px;position:relative;
+}
+.stepcard .head{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:12px}
+.stepcard .head h3{font-family:var(--disp);font-weight:400;font-size:23px}
+.stepcard .tags{display:flex;gap:7px;flex-wrap:wrap}
+.tag{
+  font-size:11px;letter-spacing:.06em;color:var(--ink-dim);
+  border:1px solid var(--line);border-radius:4px;padding:1px 8px;
+}
+.tag.gold{color:var(--gold);border-color:rgba(226,179,92,.35);background:rgba(226,179,92,.06)}
+.tag.green{color:var(--green);border-color:rgba(94,207,142,.3);background:rgba(94,207,142,.05)}
+.tag.teal{color:var(--teal);border-color:rgba(79,214,200,.3);background:rgba(79,214,200,.05)}
+.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.sgrid h4{
+  font-size:12px;color:var(--ink-faint);letter-spacing:.22em;margin-bottom:8px;
+  text-transform:uppercase;font-family:var(--num);font-weight:400;
+}
+.sgrid h4::before{content:"◆ ";color:var(--gold-dim);font-size:9px}
+.sgrid ul{list-style:none}
+.sgrid li{
+  position:relative;padding-left:16px;margin-bottom:7px;
+  font-size:13.8px;color:var(--ink-dim);line-height:1.7;
+}
+.sgrid li::before{content:"";position:absolute;left:2px;top:9px;width:5px;height:5px;border-radius:1px;background:var(--gold-dim)}
+.sgrid li b{color:var(--ink);font-weight:600}
+.cmd{
+  display:block;font-family:var(--mono);font-size:12px;line-height:1.6;
+  background:#0e1014;border:1px solid var(--line);border-left:2px solid var(--gold-dim);
+  border-radius:6px;padding:8px 12px;margin:6px 0;color:#c9d2c0;
+  overflow-x:auto;white-space:pre;
+}
+.cmd .p{color:var(--gold)}.cmd .cm{color:#8f9a85}
+.gate{
+  margin-top:14px;border-top:1px dashed var(--line);
+  padding-top:10px;font-size:13px;color:var(--ink-dim);
+  display:flex;gap:10px;align-items:flex-start;
+}
+.gate b{color:var(--gold);font-family:var(--num);font-weight:400;letter-spacing:.08em;flex:none;margin-top:2px}
+.note{
+  margin-top:10px;font-size:12.5px;color:var(--ink-faint);
+  border-left:2px solid var(--line);padding-left:12px;
+}
+
+/* ============ 两条出镜路 ============ */
+.twoways{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.way{
+  background:var(--card);border:1px solid var(--line);border-radius:14px;
+  padding:26px;position:relative;overflow:hidden;
+}
+.way .flag{
+  position:absolute;top:0;right:0;font-size:11px;letter-spacing:.14em;
+  padding:4px 14px;border-bottom-left-radius:8px;
+}
+.way.a .flag{background:rgba(169,163,145,.12);color:var(--ink-faint)}
+.way.b .flag{background:rgba(226,179,92,.14);color:var(--gold);border:1px solid rgba(226,179,92,.3);border-top:0;border-right:0}
+.way h3{font-family:var(--disp);font-weight:400;font-size:24px;margin-bottom:6px}
+.way .sub{font-size:12.5px;color:var(--ink-faint);margin-bottom:16px;letter-spacing:.05em}
+.way ul{list-style:none}
+.way li{position:relative;padding-left:18px;margin-bottom:9px;font-size:13.8px;color:var(--ink-dim);line-height:1.7}
+.way li::before{content:"›";position:absolute;left:2px;color:var(--gold-dim);font-family:var(--num)}
+.way li b{color:var(--ink)}
+.iris{display:flex;align-items:center;gap:10px;margin-top:18px;padding-top:16px;border-top:1px dashed var(--line)}
+.irisframe{
+  aspect-ratio:16/9;border:1px solid var(--gold-dim);border-radius:5px;position:relative;
+  overflow:hidden;background:linear-gradient(150deg,#2c2417,#14161c 60%,#221b2c);flex:1;
+}
+.iriscirc{
+  position:absolute;border-radius:50%;border:2px solid rgba(255,255,255,.9);
+  left:50%;top:50%;transform:translate(-50%,-50%);
+  background:linear-gradient(160deg,#4a4238,#23262e);
+}
+.irisframe i{position:absolute;left:50%;bottom:8%;transform:translateX(-50%);font-size:10px;color:var(--ink-faint);font-style:normal;letter-spacing:.08em}
+.iris .arr{color:var(--gold);font-family:var(--num);flex:none}
+
+/* ============ 交付表 ============ */
+table.files{width:100%;border-collapse:collapse;font-size:13.5px}
+table.files th{
+  text-align:left;font-family:var(--num);font-weight:400;letter-spacing:.14em;
+  color:var(--gold);font-size:11.5px;padding:10px 14px;border-bottom:1px solid var(--gold-dim);
+  text-transform:uppercase;
+}
+table.files td{padding:11px 14px;border-bottom:1px solid var(--line-soft);color:var(--ink-dim);vertical-align:top}
+table.files td.f{font-family:var(--mono);font-size:12px;color:var(--ink);white-space:normal;word-break:break-all}
+table.files td b{color:var(--ink)}
+table.files tr:hover td{background:rgba(226,179,92,.03)}
+.srtdemo{
+  background:#0e1014;border:1px solid var(--line);border-left:2px solid var(--gold-dim);
+  border-radius:8px;padding:14px 18px;font-family:var(--mono);font-size:12.5px;
+  color:#c9d2c0;white-space:pre;line-height:1.7;margin-top:14px;
+}
+.srtdemo .t{color:var(--gold)}
+.chipwrap{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chip{
+  font-size:12.5px;border:1px solid var(--line);border-radius:20px;padding:3px 13px;
+  color:var(--ink-dim);background:var(--bg1);
+}
+.chip b{color:var(--ink);font-weight:600}
+
+/* ============ ep10 进度 ============ */
+.prog{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.progit{
+  display:flex;align-items:flex-start;gap:11px;background:var(--card);
+  border:1px solid var(--line);border-radius:10px;padding:13px 15px;font-size:13.5px;
+}
+.progit .st{
+  width:20px;height:20px;border-radius:50%;flex:none;margin-top:3px;
+  display:grid;place-items:center;font-size:11px;
+}
+.progit.done .st{background:rgba(94,207,142,.12);color:var(--green);border:1px solid rgba(94,207,142,.4)}
+.progit.now .st{background:rgba(226,179,92,.12);color:var(--gold);border:1px solid rgba(226,179,92,.45);animation:pulse 1.6s infinite}
+.progit.todo .st{background:transparent;color:var(--ink-faint);border:1px solid var(--line)}
+.progit.done{color:var(--ink-dim)}
+.progit.now{color:var(--ink);border-color:rgba(226,179,92,.4)}
+.progit.todo{color:var(--ink-faint)}
+.progit small{display:block;font-size:11px;color:var(--ink-faint);margin-top:2px;font-family:var(--num);letter-spacing:.04em}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(226,179,92,.35)}50%{box-shadow:0 0 0 6px rgba(226,179,92,0)}}
+.nextup{
+  margin-top:16px;background:linear-gradient(90deg,rgba(226,179,92,.09),transparent 70%);
+  border:1px solid rgba(226,179,92,.3);border-radius:10px;padding:14px 18px;
+  font-size:14px;color:var(--ink-dim);
+}
+.nextup b{color:var(--gold-strong);font-family:var(--disp);font-weight:400}
+
+/* ============ 规矩速查 ============ */
+.rulegrid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.rule{
+  background:var(--card);border:1px solid var(--line);border-radius:10px;
+  padding:15px 16px;font-size:13px;color:var(--ink-dim);line-height:1.65;
+}
+.rule b{display:block;color:var(--ink);font-size:13.5px;margin-bottom:4px}
+.rule b::before{content:"§ ";color:var(--gold-dim);font-family:var(--num)}
+.rule .warn{color:var(--red)}
+
+/* ============ 页脚 ============ */
+footer{
+  border-top:1px solid var(--line-soft);margin-top:20px;
+  padding:26px 0 44px;color:var(--ink-faint);font-size:12.5px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+}
+footer .mono{font-family:var(--num);letter-spacing:.1em}
+
+@media (max-width:1000px){
+  .hero{grid-template-columns:1fr;gap:34px;padding-top:46px}
+  .hero h1{font-size:40px}
+  .flow{grid-template-columns:repeat(2,1fr)}
+  .twoways{grid-template-columns:1fr}
+  .prog{grid-template-columns:repeat(2,1fr)}
+  .rulegrid{grid-template-columns:repeat(2,1fr)}
+  .sgrid{grid-template-columns:1fr}
+}
+@media (max-width:560px){
+  .hero h1{font-size:32px}
+  .prog{grid-template-columns:1fr}
+  .rulegrid{grid-template-columns:1fr}
+  .sechead .en{display:none}
+}
+</style>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<!-- ================= 顶栏 ================= -->
+<header class="topbar">
+  <div class="wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;width:100%">
+    <div class="brand"><span class="mark">像</span>像素呼吸 · 渲染流水线</div>
+    <div class="tc">TC <i>00:00:00</i><span id="tc">:00</span></div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" style="border-top:0;padding-top:56px">
+    <div class="rv">
+      <div class="kicker">Render Pipeline · Remotion</div>
+      <h1>你把 A-roll 和图片给我，<br>剩下的事<span class="g">按这页的顺序发生</span></h1>
+      <p class="lead">成片是一段 <b style="color:var(--ink)">1920×1080 / 30fps</b>、和你口播等长、<b style="color:var(--ink)">只有音效没有配音</b>的动画轨。画面文字压在上 2/3，底部 70px 永远留给剪映里的字幕。你的 A-roll 和图片，在引擎里被合进同一条时间轴。</p>
+      <div class="statrow">
+        <span class="stat"><b>1920×1080</b> 30fps</span>
+        <span class="stat"><b>仅音效</b> 人声剪映加</span>
+        <span class="stat"><b>y ≤ 820</b> 字幕禁区线</span>
+        <span class="stat"><b>Remotion</b> headless 渲染</span>
+      </div>
+    </div>
+    <div class="mockside rv" style="--d:.12s">
+      <div class="frame">
+        <div class="photo"></div>
+        <div class="stage"></div>
+        <div class="corner tl">1920×1080 · 30fps</div>
+        <div class="corner tr">REC</div>
+        <div class="corner bl">PX BREATHING</div>
+        <div class="corner br">S05</div>
+        <div class="btext">你省下的钱<br>藏在你心里 <span class="gold">¥1500</span></div>
+        <div class="bubble"><div class="person"></div></div>
+        <div class="subline"><span>字幕禁区 y=820</span></div>
+        <div class="subzone">剪映字幕区 · 中英双语</div>
+        <div class="sprock l"></div><div class="sprock r"></div>
+      </div>
+      <div class="framelegend">
+        <span><i class="b"></i>出镜小圆（bubble）</span>
+        <span><i class="r"></i>红虚线以下不落画面文字</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 全流程 ================= -->
+  <section id="flow">
+    <div class="sechead rv">
+      <span class="no">01</span><h2>一期视频的完整流水线</h2>
+      <span class="rule"></span><span class="en">Five Stages</span>
+    </div>
+    <div class="flow rv" style="--d:.05s">
+      <div class="fstep">
+        <h3>写稿</h3><span class="who me">我写 · 你确认</span>
+        <p>讲稿卡 + 发布清单（含画面与素材清单）。清单同时是出图清单和渲染场景表，占位图先拼一版查版式。</p>
+      </div>
+      <div class="fstep">
+        <h3>出图</h3><span class="who you">你做</span>
+        <p>按出图清单用即梦 / MJ 出图：S01、S02… 铺底图，C01… 卡内小图。所有图无文字、16:9、宽 ≥ 2560。</p>
+      </div>
+      <div class="fstep">
+        <h3>录制</h3><span class="who you">你做</span>
+        <p>拿讲稿卡自由讲，相机 + 录音笔。工具 aroll-prep 出粗剪 mp4 + srt + words.json，同一条时间线。</p>
+      </div>
+      <div class="fstep hot">
+        <h3>渲染</h3><span class="who me">我做</span>
+        <p>收到粗剪和图之后：收料 → 时间轴 → 入库 → 写画面 → 拼图 → 小样 → 全片。本页的主体就是这段。</p>
+      </div>
+      <div class="fstep">
+        <h3>交付</h3><span class="who me">我交 · 你剪</span>
+        <p>成片 + 剪辑说明 + 双语字幕；跳过 / 改说的要点回写进讲稿卡。你在剪映加人声、字幕、BGM。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 八步 ================= -->
+  <section id="steps">
+    <div class="sechead rv">
+      <span class="no">02</span><h2>拿到 A-roll 和图片之后：八步</h2>
+      <span class="rule"></span><span class="en">The Handover</span>
+    </div>
+    <p class="rv" style="color:var(--ink-dim);margin-bottom:26px">每一关的判据不满足就停下来修，不带着问题进下一步。下面命令都在 <span class="cmd" style="display:inline;padding:2px 8px;font-size:12px">工具/video-render</span> 目录跑，Windows 用 <b style="color:var(--ink)">python</b>，Mac 换 <b style="color:var(--ink)">python3</b>。以 ep10（消费者剩余）为例。</p>
+
+    <div class="steps">
+
+      <div class="stepcard rv">
+        <div class="sn">00</div>
+        <div class="body">
+          <div class="head"><h3>收料检查</h3>
+            <div class="tags"><span class="tag gold">入口</span><span class="tag">你交给我</span></div>
+          </div>
+          <div class="sgrid">
+            <div>
+              <h4>我收到的东西</h4>
+              <ul>
+                <li><b>A-roll 粗剪</b>：mp4 + srt + words.json，同一条时间线（分段录的先拼成一条）</li>
+                <li><b>图片文件夹</b>：文件名带编号 S01、S02…，卡内小图 C01…</li>
+                <li>图存进选题文件夹的 <b>图片素材/</b>（进 git，换机器可重新入库）</li>
+              </ul>
+            </div>
+            <div>
+              <h4>当场核对</h4>
+              <ul>
+                <li>图编号对照出图清单，<b>缺哪几张</b>报给你</li>
+                <li>每张图<b>宽 ≥ 2560</b>，不够要重出；图里不能有文字</li>
+                <li>A-roll 时长和 srt 最后一条<b>差 ≤ 1 秒</b>，否则先问你换没换过剪辑</li>
+                <li>分场景表写的环境声（商场 / 街道夜晚）已在音效库里</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gate"><b>过关</b><span>编号齐 · 尺寸够 · 三条时间轴对得上。缺料当场说，不用别的图硬顶。</span></div>
+        </div>
+      </div>
+
+      <div class="stepcard rv">
+        <div class="sn">01</div>
+        <div class="body">
+          <div class="head"><h3>要点起点表 starts.json</h3>
+            <div class="tags"><span class="tag gold">对齐口播</span><span class="tag">src/ep10/starts.json</span></div>
+          </div>
+          <div class="sgrid">
+            <div>
+              <h4>在写什么</h4>
+              <ul>
+                <li>对照粗剪 srt 和 words.json，记下讲稿卡<b>每条要点开口的时间</b>：<span class="cmd" style="display:inline;padding:1px 8px;font-size:12px">{"0.1":"00:00.2", …, "end":"05:47.2"}</span></li>
+                <li>章节卡 <b>N.0</b> = 上一章最后一句说完；<b>end</b> = 最后一句说完</li>
+                <li>画面上的字按「第几条要点」挂，所以这一步定了<b>每行字和每张图的出场时刻</b></li>
+              </ul>
+            </div>
+            <div>
+              <h4>录的时候没讲的要点</h4>
+              <ul>
+                <li>填成<b>和下一条完全相同的时间</b>——它要是场景起点，整个场景时长归零自动跳过</li>
+                <li>别填只差零点几秒：那个场景会闪几帧还带一声 pop</li>
+                <li>没讲 / 改说的要点自己记下来，交付时回写进讲稿卡（标 ⊘跳过）</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gate"><b>过关</b><span>讲稿卡每个 id 都有（含 3 张章节卡），时间不往回走；make_timeline 报的「时长为 0 已跳过」全是有意跳过。</span></div>
+        </div>
+      </div>
+
+      <div class="stepcard rv">
+        <div class="sn">02</div>
+        <div class="body">
+          <div class="head"><h3>生成时间轴 timeline.json</h3>
+            <div class="tags"><span class="tag green">机器可读</span><span class="tag">source = starts</span></div>
+          </div>
+          <div class="sgrid">
+            <div>
+              <h4>这一步在做什么</h4>
+              <ul>
+                <li>把 starts.json 换算成<b>每个场景的帧区间</b>（from / dur）</li>
+                <li>把粗剪 srt 切成<b>每条字幕的帧区间</b>，带字幕的小样和字幕合成靠它</li>
+                <li>算出全片 <b>total</b> 总帧数——ep10 是 <b style="font-family:var(--num)">10476 帧 ≈ 5:49</b></li>
+                <li>录前那份按字数估时的预览时间轴被正式覆盖，之后一切渲染以这份为准</li>
+              </ul>
+            </div>
+            <div>
+              <h4>命令与产出</h4>
+              <span class="cmd">python scripts/make_timeline.py "10-100-消费者剩余-半价买的手机真赚到了吗-讲稿卡.md" ep10 --starts src/ep10/starts.json --srt "A-roll粗剪/*.srt"</span>
+              <ul>
+                <li>产出 <b>src/ep10/timeline.json</b>：场景区间 + 字幕 + 总帧数</li>
+                <li>渲染最后拿「输出帧数 = total」当完整性的硬判据</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gate"><b>过关</b><span>命令不报错；打印的每个场景起点、时长和口播对得上；total 在合理范围。</span></div>
+        </div>
+      </div>
+
+      <div class="stepcard rv">
+        <div class="sn">03</div>
+        <div class="body">
+          <div class="head"><h3>素材入库</h3>
+            <div class="tags"><span class="tag teal">三件事</span><span class="tag">public/ep10/</span></div>
+          </div>
+          <div class="sgrid">
+            <div>
+              <h4>图片进工程</h4>
+              <span class="cmd">python scripts/import_photos.py "进行中/10-100-消费者剩余-半价买的手机真赚到了吗/图片素材" ep10 --need "发布清单.md"</span>
+              <ul>
+                <li>裁成 16:9、统一命名 → <b>public/ep10/photos/</b>，覆盖同名占位图</li>
+                <li>缺图会报清单；「占位图」和真图同名，所以要<b>看拼图确认没有占位图残留</b></li>
+                <li>卡内小图走 import_cards.py，裁 1:1 → <b>public/ep10/cards/</b></li>
+              </ul>
+            </div>
+            <div>
+              <h4>A-roll 转代理</h4>
+              <span class="cmd">ffmpeg -i "A-roll粗剪.mp4" -vf scale=1920:1080 -r 30 -an -c:v libx264 -crf 18 -preset fast public/ep10/aroll.mp4</span>
+              <ul>
+                <li>一律转 <b>1080p 静音 30fps 代理</b>进工程：4K 解码拖慢渲染，成片本来就是 1080p</li>
+                <li>你的原片<b>一个字都不动</b>，剪映里照用原片的人声</li>
+                <li>代理时长和 srt 结尾差 > 1 秒 → 停下来问你</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gate"><b>过关</b><span>出图清单的编号全到 public/ 里、没有占位图；aroll.mp4 存在且时长对得上 srt。</span></div>
+        </div>
+      </div>
+
+      <div class="stepcard rv">
+        <div class="sn">04</div>
+        <div class="body">
+          <div class="head"><h3>填 photo.json —— 写画面</h3>
+            <div class="tags"><span class="tag gold">核心步骤</span><span class="tag">src/ep10/photo.json</span></div>
+          </div>
+          <div class="sgrid">
+            <div>
+              <h4>每个场景写什么</h4>
+              <ul>
+                <li>哪张照片、推拉方向（in / out）、压暗在哪一侧（字和出图清单的留白同侧）</li>
+                <li>叠字：<b>h 大字 88</b> / <b>t 小字 44</b> / <b>big 数字 180</b>；小字铺陈、大字定结论、数字单独放大</li>
+                <li>卡片是「信息性质」的标签：<b>solid</b> 结论（一期 ≤2）· <b>paper</b> 原文（≤1）· <b>notch</b> 前提定义 · <b>tab</b> 一条数据</li>
+                <li>数值动效一场一种：<b>odometer</b> 里程表 / <b>flap</b> 翻牌 / <b>slam</b> 砸入 / <b>rank</b> 排名 / <b>units</b> 堆叠 / <b>fill</b> 液面 / <b>graph</b> 连线</li>
+              </ul>
+            </div>
+            <div>
+              <h4>克制项和出镜层</h4>
+              <ul>
+                <li>字效只有三个半：<b>outline</b> 空心对比 · <b>gradient</b> 渐变（一期只给一处，核心概念词）· <b>reveal</b> 擦出揭晓 · <b>stagger</b> 逐字（一期 ≤2 次，只给开场钩子和结尾金句）</li>
+                <li>音效走 <b>sparse</b> 精简：字和卡出现不响，只有「变化」响；揭晓点手动加 impact / error / cash</li>
+                <li>出镜层 <b>aroll.cues</b>：要点 id → full / half / bubble，见下一节</li>
+                <li>复杂图表写进 <b>src/ep10/custom.tsx</b>，photo.json 里用 <span class="cmd" style="display:inline;padding:1px 8px;font-size:12px">{"type":"custom","name":"xxx"}</span> 引用</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gate"><b>过关</b><span>禁用清单零违例：不压字幕线、不过时出字、一场一种数值动效、不出现第六种字体……（页末速查）。</span></div>
+        </div>
+      </div>
+
+      <div class="stepcard rv">
+        <div class="sn">05</div>
+        <div class="body">
+          <div class="head"><h3>拼图 → 小样 → 全片</h3>
+            <div class="tags"><span class="tag green">三道看图关卡</span><span class="tag">顺序不跳</span></div>
+          </div>
+          <div class="sgrid">
+            <div>
+              <h4>① 拼图 sheet</h4>
+              <span class="cmd">python scripts/render.py ep10 sheet</span>
+              <ul>
+                <li>10 秒出一张 <b>out/ep10-sheet.jpg</b>：每个场景 1–4 格，叠着区域网格和红色字幕禁区线</li>
+                <li>我先按检查单 8 条自己过一遍再给你：遮脸、出界、进字幕区、该收没收、空档、同图同动、对比度、字体对不对</li>
+                <li>改完重渲拼图，<b>不要动不动渲全片</b></li>
+              </ul>
+            </div>
+            <div>
+              <h4>② 40 秒小样 → ③ 全片</h4>
+              <span class="cmd">python scripts/render.py ep10 check 40</span>
+              <span class="cmd">python scripts/render.py ep10 full</span>
+              <ul>
+                <li>你认可拼图 → 出前 40 秒带字幕核对版 → 再认可 → 全片</li>
+                <li>全片走分段渲染：2 进程 × 并发 2 出图片序列 → 查花屏帧 → 编码 → 合音频（7 分钟片约 8 分钟）</li>
+                <li>中途崩了<b>直接重跑同一条命令</b>，已出的帧不重出；改过 photo.json / custom.tsx / 时间轴重渲必须加 <b>--fresh</b></li>
+              </ul>
+            </div>
+          </div>
+          <div class="gate"><b>过关</b><span>拼图 8 条全过、你点头；全片坏帧 0、输出帧数 = timeline.json 的 total；只用 Remotion 自带 chrome-headless-shell（本机 Chrome 会随机花屏）。</span></div>
+        </div>
+      </div>
+
+      <div class="stepcard rv">
+        <div class="sn">06</div>
+        <div class="body">
+          <div class="head"><h3>出镜层合成</h3>
+            <div class="tags"><span class="tag gold">A-roll 合进动画轨</span><span class="tag">引擎合</span></div>
+          </div>
+          <div class="sgrid">
+            <div>
+              <h4>跟脸 + 核对节奏</h4>
+              <span class="cmd">python scripts/aroll_face.py ep10</span>
+              <ul>
+                <li>OpenCV 逐帧找脸 → <b>小圆 / 半屏里人始终居中</b>：跳剪换位那一帧取景硬切（画面本来就在跳），慢慢挪出 ±36px 才平移补位</li>
+                <li>报告里带 ⚠ 的段 = 你录的时候人太靠边，圆盖不满——下次往中间坐</li>
+                <li><span class="cmd" style="display:inline;padding:1px 8px;font-size:12px">python scripts/aroll_cues.py ep10</span> 打印每段出镜模式和时间，核对节奏</li>
+              </ul>
+            </div>
+            <div>
+              <h4>拼图 → 单点 → 成片</h4>
+              <span class="cmd">python scripts/render.py ep10 arollsheet</span>
+              <span class="cmd">python scripts/render.py ep10 arollclip 3070 3250</span>
+              <span class="cmd">python scripts/render.py ep10 aroll</span>
+              <ul>
+                <li>arollsheet：小圆有没有压到字和脸；arollclip：单看一处小圆 ⇄ 全屏的<b>圆形 iris 切换</b></li>
+                <li>aroll → <b>out/ep10-full.mp4</b>（B-roll + 出镜层的成片；A-roll 静音）</li>
+                <li>小圆不放右下角（抖音按钮区）；bubble 段超过 60 秒插一段 full</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gate"><b>过关</b><span>脸轨存在、arollsheet 上小圆不压字不压脸；切换点、章节卡（自动 hide）节奏对。</span></div>
+        </div>
+      </div>
+
+      <div class="stepcard rv">
+        <div class="sn">07</div>
+        <div class="body">
+          <div class="head"><h3>交付 + 回写</h3>
+            <div class="tags"><span class="tag teal">放进选题文件夹</span><span class="tag">validate 收尾</span></div>
+          </div>
+          <div class="sgrid">
+            <div>
+              <h4>出片与切段</h4>
+              <span class="cmd">python scripts/split_chapters.py ep10 out/ep10-full.mp4 "进行中/10-100-消费者剩余-半价买的手机真赚到了吗/10-100-消费者剩余-半价买的手机真赚到了吗-动画轨+出镜-仅音效" --verify</span>
+              <ul>
+                <li>整片只渲一次，从同一套帧 + 同一条音轨切出 <b>4 段</b>：-0开头 / -1第1章 / -2第2章 / -3第3章</li>
+                <li>--verify：接缝 SSIM ≥ 0.98、音频偏差 &lt; 10% 才算过；切点在章节卡上，出镜层正好 hide</li>
+                <li>为什么整片切而不是各渲各段：每段单独编 AAC 会在接缝处声画错位约 40ms</li>
+              </ul>
+            </div>
+            <div>
+              <h4>文档三件套 + 回写</h4>
+              <ul>
+                <li><b>剪辑说明.md</b>：时间轴依据、文件表、剪法、出镜表、各章帧区间、场景起点表、跳过 / 改说要点、本期跑过的完整命令</li>
+                <li><b>双语字幕.srt</b>：中文去标点、英文去句末标点，每条两行；两份条数和时间轴一致才合并</li>
+                <li>回写讲稿卡：没讲的要点行末标 <b>⊘跳过</b>（不删行）；临场改说的按成片改卡和数字表；事实核对同步</li>
+                <li><span class="cmd" style="display:inline;padding:1px 8px;font-size:12px">ruby 工具/validate_package.rb "进行中/10-100-消费者剩余-半价买的手机真赚到了吗"</span> 再跑一遍 PASS</li>
+              </ul>
+            </div>
+          </div>
+          <div class="gate"><b>过关</b><span>文件按命名表全部就位；成片和讲稿卡、发布清单一致（改说的要点已回写）。</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= 两条出镜路 ================= -->
+  <section id="aroll">
+    <div class="sechead rv">
+      <span class="no">03</span><h2>你的 A-roll 有两条合入路线</h2>
+      <span class="rule"></span><span class="en">Two Ways</span>
+    </div>
+    <div class="twoways">
+      <div class="way a rv">
+        <span class="flag">第 8 期及以前</span>
+        <h3>路 A · 你自己叠</h3>
+        <div class="sub">交付只有动画轨，出镜全在剪映里完成</div>
+        <ul>
+          <li>我交 <b>动画轨</b>（只有音效），你在剪映里把 A-roll 放另一条轨，<b>从 0 秒对齐</b></li>
+          <li>想露脸的地方，把动画轨那一截切掉，露出底下的 A-roll</li>
+          <li>好处是全手动、想怎么切怎么切；代价是每个露脸点都要自己抠</li>
+        </ul>
+      </div>
+      <div class="way b rv" style="--d:.08s">
+        <span class="flag">2026-10-29 起 · 默认</span>
+        <h3>路 B · 引擎合</h3>
+        <div class="sub">photo.json 里写 aroll.cues，引擎把出镜层直接合进成片</div>
+        <ul>
+          <li><b>cues</b> 按要点 id 写三档：<b>full</b> 全屏（我的判断、感受、打算；开场第一条）· <b>half</b> 半屏（画面左边卡位，只配 right 母版）· <b>bubble</b> 小圆（数据、历史、图表段默认；章节卡自动 hide）</li>
+          <li>小圆 ⇄ 全屏之间是<b>圆形 iris 切换</b>；跟脸引擎让小圆里的脸始终居中</li>
+          <li>A-roll 在成片里<b>是静音的</b>，人声和字幕你在剪映加——口型时间轴已经对齐</li>
+        </ul>
+        <div class="iris">
+          <div class="irisframe"><div class="iriscirc" style="width:34%;height:60%"></div><i>bubble 小圆</i></div>
+          <span class="arr">→</span>
+          <div class="irisframe"><div class="iriscirc" style="width:62%;height:96%"></div><i>half 半屏</i></div>
+          <span class="arr">→</span>
+          <div class="irisframe"><div class="iriscirc" style="width:102%;height:102%;border:none;border-radius:0"></div><i>full 全屏</i></div>
+        </div>
+      </div>
+    </div>
+    <p class="note rv" style="margin-top:16px">现在的新期都走路 B。老期（ep8 / ai03 / ai04）写了 faceTrack:false，重渲照旧用固定取景，不变样。</p>
+  </section>
+
+  <!-- ================= 交付 ================= -->
+  <section id="deliver">
+    <div class="sechead rv">
+      <span class="no">04</span><h2>交付到你手里的东西</h2>
+      <span class="rule"></span><span class="en">Deliverables</span>
+    </div>
+    <div class="rv">
+      <table class="files">
+        <tr><th style="width:44%">文件</th><th>用途</th></tr>
+        <tr><td class="f">10-100-消费者剩余-…-动画轨+出镜-仅音效-全片.mp4</td><td><b>主交付</b>：B-roll + 出镜层合好的成片，只有音效。剪映里铺底，配人声字幕 BGM</td></tr>
+        <tr><td class="f">…-动画轨+出镜-仅音效-0开头.mp4 / -1第1章.mp4 / -2第2章.mp4 / -3第3章.mp4</td><td>按章 4 段，从整片同一套帧切出，接缝已校验；想分章改或单独用某章时用</td></tr>
+        <tr><td class="f">…-剪辑说明.md</td><td>时间轴依据、文件对照表、剪映里怎么放轨、出镜表、各章帧区间、场景起点表、跳过 / 改说要点、本期全部命令</td></tr>
+        <tr><td class="f">…-双语字幕.srt</td><td>中英两条字幕已对齐合并，剪映直接导入；格式见下</td></tr>
+      </table>
+      <div class="srtdemo"><span class="t">1</span>
+00:00:00,166 --> 00:00:02,366
+你有没有觉得AI特别懂你
+Do you ever feel like AI really gets you</div>
+      <div class="chipwrap">
+        <span class="chip">字幕<b>中文去标点</b> · 英文去句末标点</span>
+        <span class="chip">专有名词保留原名<b>（ChatGPT、Kahneman）</b></span>
+        <span class="chip">数字和百分比<b>保留原格式</b></span>
+        <span class="chip">两条的<b>条数和时间轴一致</b>才合并</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= 剪映 ================= -->
+  <section id="capcut">
+    <div class="sechead rv">
+      <span class="no">05</span><h2>成片到了剪映，只剩三件事</h2>
+      <span class="rule"></span><span class="en">In CapCut</span>
+    </div>
+    <div class="flow rv" style="grid-template-columns:repeat(3,1fr)">
+      <div class="fstep">
+        <h3>① 铺轨</h3><span class="who you">你做</span>
+        <p>成片放主轨；需要出镜露脸的分段已经合在成片里，不用再叠轨（老期路 A 才需要自己叠）。</p>
+      </div>
+      <div class="fstep">
+        <h3>② 人声 + 字幕</h3><span class="who you">你做</span>
+        <p>人声从原片来（口型已对齐）；导入双语字幕.srt。画面文字没压进底部字幕区，不会打架。</p>
+      </div>
+      <div class="fstep">
+        <h3>③ BGM</h3><span class="who you">你做</span>
+        <p>发布清单里的 Suno 背景音乐铺上，音量给人声让路。音效在成片里已经埋好了。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ep10 进度 ================= -->
+  <section id="ep10">
+    <div class="sechead rv">
+      <span class="no">06</span><h2>本期 ep10 · 消费者剩余 —— 现在到哪了</h2>
+      <span class="rule"></span><span class="en">Live Status</span>
+    </div>
+    <div class="prog">
+      <div class="progit done rv"><span class="st">✓</span><div>写稿：讲稿卡 + 发布清单（画面与素材清单）<small>validate PASS</small></div></div>
+      <div class="progit done rv" style="--d:.03s"><span class="st">✓</span><div>录制：A-roll 粗剪 mp4 + srt + words.json<small>进行中/…/A-roll粗剪/</small></div></div>
+      <div class="progit done rv" style="--d:.06s"><span class="st">✓</span><div>出图：S02–S15 已放进 图片素材/<small>14 张 · 无卡内小图</small></div></div>
+      <div class="progit done rv" style="--d:.09s"><span class="st">✓</span><div>starts.json 填完：30 条要点 + end<small>每条开口时间已对齐粗剪</small></div></div>
+      <div class="progit done rv" style="--d:.12s"><span class="st">✓</span><div>timeline.json 生成<small>10476 帧 ≈ 5:49 · source=starts</small></div></div>
+      <div class="progit done rv" style="--d:.15s"><span class="st">✓</span><div>图片入库 public/ep10/photos/<small>S02–S15 · import_photos 完成</small></div></div>
+      <div class="progit now rv" style="--d:.18s"><span class="st">●</span><div>填 photo.json（第 4 步）<small>风格：right 母版 · v2 字号 · tactile 卡片 · sparse 音效</small></div></div>
+      <div class="progit todo rv" style="--d:.21s"><span class="st">○</span><div>A-roll 代理 + aroll.cues<small>ffmpeg 转 1080p 静音代理；写 full/half/bubble</small></div></div>
+      <div class="progit todo rv" style="--d:.24s"><span class="st">○</span><div>拼图 sheet → 给你过目<small>检查单 8 条先自查再发你</small></div></div>
+      <div class="progit todo rv" style="--d:.27s"><span class="st">○</span><div>40 秒小样 → 全片渲染<small>坏帧 0 · 帧数 = 10476 · 约 8 分钟</small></div></div>
+      <div class="progit todo rv" style="--d:.3s"><span class="st">○</span><div>交付：成片 + 剪辑说明 + 双语字幕<small>切 4 章段 · 回写讲稿卡 · validate 收尾</small></div></div>
+      <div class="progit todo rv" style="--d:.33s"><span class="st">○</span><div>你在剪映：人声 + 字幕 + BGM<small>发布清单里的 Suno 配乐</small></div></div>
+    </div>
+    <div class="nextup rv">
+      <b>下一步：</b>把 photo.json 的场景收尾（含 aroll.cues）→ 渲一张拼图给你过目。你这边不用做任何事，等拼图点头就行。
+    </div>
+  </section>
+
+  <!-- ================= 规矩速查 ================= -->
+  <section id="rules">
+    <div class="sechead rv">
+      <span class="no">07</span><h2>硬规矩速查（违例就否决）</h2>
+      <span class="rule"></span><span class="en">Hard Rules</span>
+    </div>
+    <div class="rulegrid">
+      <div class="rule rv"><b>字幕线</b><span class="warn">画面文字 y ≤ 820</span>，底部 70px 留给剪映字幕；出镜小圆不放右下角（抖音按钮区）。</div>
+      <div class="rule rv" style="--d:.03s"><b>字号不缩</b>h88 大字一行最多 12 字，超了<b>拆句</b>，不缩字号。</div>
+      <div class="rule rv" style="--d:.06s"><b>卡片是语义标签</b>solid 结论 ≤2 次 · paper 原文 ≤1 次 · teal / coral 只表示正负，不当装饰。</div>
+      <div class="rule rv" style="--d:.09s"><b>数值动效</b>一场一种；slam 一期 ≤2；动画每一帧都是合法数据状态。</div>
+      <div class="rule rv" style="--d:.12s"><b>音效 sparse</b>字和卡出现不响，只「变化」响；揭晓点才手动加 impact。</div>
+      <div class="rule rv" style="--d:.15s"><b>重渲 --fresh</b>改过 photo.json / custom.tsx / 图 / 时间轴后必须加，否则新旧帧混在一起。</div>
+      <div class="rule rv" style="--d:.18s"><b>渲染引擎</b>只用 Remotion 自带 chrome-headless-shell；交付前 glitch_check 坏帧 0。</div>
+      <div class="rule rv" style="--d:.21s"><b>五款字体</b>得意黑标题 · 数黑体数字 · 锦书宋定义大词 · 文楷对白 · 思源黑小字，不加第六种。</div>
+      <div class="rule rv" style="--d:.24s"><b>无字空档</b>一个场景连续 8 秒以上无字要补一条小字或拆场景；同图同推拉最多连两场。</div>
+      <div class="rule rv" style="--d:.27s"><b>图里无文字</b>招牌、价签、数字都要重出或用压暗盖掉；宽 ≥ 2560。</div>
+      <div class="rule rv" style="--d:.3s"><b>gradient / stagger</b>渐变一期 1 处、逐字一期 ≤2 次（开场 + 结尾）；强调色一场最多一处 gold 大字。</div>
+      <div class="rule rv" style="--d:.33s"><b>接缝校验</b>分章切段 --verify：SSIM ≥ 0.98、音频偏差 &lt; 10%，不过就整片重渲。</div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;width:100%">
+    <span>像素呼吸 · 渲染流水线讲解页 —— 依据 <span class="mono">工具/video-broll-maker/SKILL.md</span> 与 ep10 实际工程状态写成</span>
+    <span class="mono">PX BREATHING · RENDER PIPELINE · 2026-11</span>
+  </div>
+</footer>
+
+<script>
+// 阅读进度条
+const bar=document.getElementById('progress');
+addEventListener('scroll',()=>{
+  const h=document.documentElement;
+  bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
+},{passive:true});
+
+// 时码器：30fps 跑帧
+const tc=document.getElementById('tc');
+let f=0;
+setInterval(()=>{
+  f=(f+1)%(30*60*60);
+  const fr=f%30, s=Math.floor(f/30)%60, m=Math.floor(f/1800)%60, h=Math.floor(f/54000);
+  tc.textContent=':'+String(fr).padStart(2,'0');
+  document.querySelector('.tc i').textContent=
+    String(h).padStart(2,'0')+':'+String(m).padStart(2,'0')+':'+String(s).padStart(2,'0');
+},1000/30);
+
+// 滚动渐入
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
