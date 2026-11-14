@@ -1,0 +1,663 @@
+{
+  "ep": "ep11",
+  "badge": "",
+  "series": "100 个经济学原理",
+  "photos": "ep11/photos",
+  "chapterPhoto": "S03",
+  "scenes": [
+    {
+      "id": "queue",
+      "name": "2024-08-31 绿洲复出开票，几十万人在队列里",
+      "photo": "S01",
+      "move": "in",
+      "origin": "BC",
+      "box": "MC",
+      "grad": "all",
+      "card": "tab",
+      "label": "2024 年 8 月 31 日 · 英国",
+      "items": [
+        {
+          "type": "h",
+          "text": "绿洲复出开票",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "几十万人在购票队列里",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "ambience": "街道夜晚"
+    },
+    {
+      "id": "surge",
+      "name": "同样的站票：135 → 355，什么都没变",
+      "photo": "S02",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "odometer",
+          "from": "£135",
+          "to": "£355",
+          "label": "官方站票",
+          "at": 0,
+          "delay": 30,
+          "color": "coral"
+        },
+        {
+          "type": "h",
+          "text": "同样的站票",
+          "at": 0,
+          "delay": 150
+        },
+        {
+          "type": "t",
+          "text": "座位没换，服务没加",
+          "at": 0,
+          "delay": 220
+        }
+      ]
+    },
+    {
+      "id": "explain",
+      "name": "票务网站的解释只有一句话",
+      "photo": "S02",
+      "move": "out",
+      "origin": "BC",
+      "box": "MC",
+      "grad": "all",
+      "card": "paper",
+      "items": [
+        {
+          "type": "h",
+          "text": "票价可以是固定的",
+          "at": 0,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "也可以是基于市场需求的",
+          "at": 0,
+          "delay": 90,
+          "quote": true
+        }
+      ]
+    },
+    {
+      "id": "doubt",
+      "name": "第一反应：趁火打劫？",
+      "photo": "S01",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "趁火打劫吧？",
+          "at": 0,
+          "size": 96
+        }
+      ],
+      "ambience": "街道夜晚"
+    },
+    {
+      "id": "student",
+      "name": "同一套逻辑藏在学生票里",
+      "photo": "S04",
+      "move": "in",
+      "origin": "BL",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "同一套逻辑，藏在学生票里",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "国铁刚把它改得更“讲究”",
+          "at": 0,
+          "delay": 90
+        }
+      ]
+    },
+    {
+      "id": "title",
+      "name": "片头",
+      "photo": "S01",
+      "move": "out",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "同一张票凭什么卖两个价",
+          "at": 0
+        }
+      ],
+      "ambience": "街道夜晚"
+    },
+    {
+      "id": "cost",
+      "name": "旧判断：差价 = 成本差",
+      "photo": "S05",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "一等座和二等座不一样",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "这部分没错，但只是小头",
+          "at": 0,
+          "delay": 90
+        }
+      ]
+    },
+    {
+      "id": "same",
+      "name": "Oasis 那张票：220 英镑没买来任何服务",
+      "photo": "S03",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "同一个站位、同一场演出",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "多出来的 220 英镑",
+          "at": 0,
+          "delay": 90,
+          "color": "coral"
+        },
+        {
+          "type": "t",
+          "text": "没有一分钱对应多出来的服务",
+          "at": 0,
+          "delay": 180
+        }
+      ]
+    },
+    {
+      "id": "twoprice",
+      "name": "排队的和刚进队的，两个价",
+      "photo": "S03",
+      "move": "out",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "排了几小时的人，和刚进队的人",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "看到的是两个价",
+          "at": 0,
+          "delay": 90,
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "term",
+      "name": "术语：价格歧视",
+      "photo": "S01",
+      "move": "still",
+      "origin": "BC",
+      "blur": 10,
+      "dim": 0.55,
+      "center": true,
+      "items": [
+        {
+          "type": "t",
+          "text": "PRICE DISCRIMINATION",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "价格歧视",
+          "at": 0,
+          "delay": 60,
+          "size": 140,
+          "font": "song",
+          "textfx": "gradient",
+          "sfx": "impact"
+        },
+        {
+          "type": "h",
+          "text": "同一样东西，对不同的人收不同的价",
+          "at": 0,
+          "delay": 180
+        }
+      ]
+    },
+    {
+      "id": "rail",
+      "name": "学生票新规：七五折 / 四折 / 五折 / 4 次",
+      "photo": "S04",
+      "move": "out",
+      "origin": "BL",
+      "box": "MC",
+      "grad": "all",
+      "card": "tab",
+      "label": "国铁 · 2025 年 8 月新规",
+      "items": [
+        {
+          "type": "h",
+          "text": "动车组：执行票价七五折",
+          "at": 0,
+          "color": "teal"
+        },
+        {
+          "type": "h",
+          "text": "最低到公布票价四折",
+          "at": 0,
+          "delay": 90,
+          "color": "teal"
+        },
+        {
+          "type": "t",
+          "text": "普速硬座五折 · 每学年 4 次",
+          "at": 0,
+          "delay": 180
+        }
+      ]
+    },
+    {
+      "id": "why",
+      "name": "凭什么？凭一张学生证",
+      "photo": "S04",
+      "move": "in",
+      "origin": "BL",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "凭一张学生证",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "卖家不知道你愿意出多少",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "t",
+          "text": "它让你自己亮出来",
+          "at": 0,
+          "delay": 180,
+          "color": "gold"
+        }
+      ]
+    },
+    {
+      "id": "wish",
+      "name": "它最想要你心里那个最高价",
+      "photo": "S06",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "出得起 5000 的收 5000",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "出得起 200 的收 200",
+          "at": 0,
+          "delay": 90,
+          "color": "dim"
+        }
+      ]
+    },
+    {
+      "id": "readmind",
+      "name": "读不了心，印一个价两头不讨好",
+      "photo": "S06",
+      "move": "out",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "可它读不了心",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "价高了劝退别人，价低了少赚你的",
+          "at": 0,
+          "delay": 90
+        }
+      ]
+    },
+    {
+      "id": "question",
+      "name": "设题让你自己答：学生证是一道题",
+      "photo": "S05",
+      "move": "out",
+      "origin": "BC",
+      "box": "MC",
+      "grad": "all",
+      "card": "notch",
+      "label": "设题",
+      "sub": "SELF-SELECTION",
+      "items": [
+        {
+          "type": "h",
+          "text": "学生证是一道题",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "掏出来的那一刻，等于在说付不起全价",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "t",
+          "text": "假证的成本，比省下的票钱高",
+          "at": 0,
+          "delay": 180
+        }
+      ]
+    },
+    {
+      "id": "queue2",
+      "name": "排队是另一道题：等到最后的更想要",
+      "photo": "S01",
+      "move": "out",
+      "origin": "BC",
+      "box": "MC",
+      "grad": "all",
+      "card": "tab",
+      "label": "BBC · 排队 6 小时",
+      "items": [
+        {
+          "type": "h",
+          "text": "愿意等 6 小时的人，比点开就走的人更想要",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "355 那批票，卖给等到最后的人",
+          "at": 0,
+          "delay": 90,
+          "color": "coral"
+        }
+      ],
+      "ambience": "街道夜晚"
+    },
+    {
+      "id": "tiers",
+      "name": "订阅档位也是题：ChatGPT 三档",
+      "photo": "S06",
+      "move": "in",
+      "origin": "BC",
+      "box": "MC",
+      "grad": "all",
+      "card": "tab",
+      "label": "ChatGPT · 同一个模型",
+      "items": [
+        {
+          "type": "h",
+          "text": "免费",
+          "at": 0,
+          "color": "dim"
+        },
+        {
+          "type": "h",
+          "text": "Plus $20",
+          "at": 0,
+          "delay": 90,
+          "color": "teal"
+        },
+        {
+          "type": "h",
+          "text": "Pro $200",
+          "at": 0,
+          "delay": 180,
+          "color": "coral"
+        },
+        {
+          "type": "t",
+          "text": "档位替你说了收入",
+          "at": 0,
+          "delay": 270
+        }
+      ]
+    },
+    {
+      "id": "three",
+      "name": "三级分类一句话：按人 / 按量 / 按“最想要”",
+      "photo": "S06",
+      "move": "out",
+      "origin": "BC",
+      "box": "MC",
+      "grad": "all",
+      "card": "notch",
+      "label": "教科书三级",
+      "sub": "PIGOU 1920",
+      "items": [
+        {
+          "type": "h",
+          "text": "按你是谁 · 按买多少 · 按你有多想要",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "同一句话：读不了心，就让你自己填",
+          "at": 0,
+          "delay": 120
+        }
+      ]
+    },
+    {
+      "id": "quiz",
+      "name": "落点：不是偷看手机，是光明正大出题",
+      "photo": "S01",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "大半不是偷看你的手机",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "是光明正大地出题",
+          "at": 0,
+          "delay": 90,
+          "color": "gold"
+        }
+      ],
+      "ambience": "街道夜晚"
+    },
+    {
+      "id": "premise",
+      "name": "边界：题目摆明面、答案能反悔；Oasis 被整改",
+      "photo": "S04",
+      "move": "in",
+      "origin": "BL",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "题目要摆在明面上，答案要能反悔",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "学生票：白纸黑字，退票返还次数",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "t",
+          "text": "查了一年，票务公司答应整改",
+          "at": 0,
+          "delay": 180
+        }
+      ]
+    },
+    {
+      "id": "kill",
+      "name": "杀熟：用你的消费记录，超四成遇到过",
+      "photo": "S07",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "杀熟：题目换成了你手机里的消费记录",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "超四成遇到过“大数据差异化营销”",
+          "at": 0,
+          "delay": 120,
+          "color": "coral",
+          "box": "MC",
+          "card": "tab",
+          "label": "京津冀消协 2024"
+        }
+      ]
+    },
+    {
+      "id": "law",
+      "name": "消保条例第九条 + 童叟无欺",
+      "photo": "S07",
+      "move": "out",
+      "origin": "BC",
+      "box": "MC",
+      "grad": "all",
+      "card": "notch",
+      "label": "2024 年 7 月 · 消保条例第九条",
+      "items": [
+        {
+          "type": "h",
+          "text": "不知情 · 同等条件 · 不同价，违法",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "童叟无欺、真不二价",
+          "at": 0,
+          "delay": 90,
+          "quote": true
+        }
+      ]
+    },
+    {
+      "id": "judge",
+      "name": "判断一句：先问“题目是什么”",
+      "photo": "S03",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "先问：题目是什么",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "摆上台面、你还能选：价格歧视",
+          "at": 0,
+          "delay": 90,
+          "color": "teal"
+        },
+        {
+          "type": "h",
+          "text": "藏在算法里、你不知情：杀熟",
+          "at": 0,
+          "delay": 180,
+          "color": "coral"
+        }
+      ]
+    },
+    {
+      "id": "back",
+      "name": "回到开头：挨骂不是贵，是题目没提前说",
+      "photo": "S02",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "135 变 355 挨骂，不是贵",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "是题目没提前说",
+          "at": 0,
+          "delay": 90
+        }
+      ]
+    },
+    {
+      "id": "next",
+      "name": "钩子：两个平台两个价，价差被谁赚走",
+      "photo": "S01",
+      "move": "in",
+      "origin": "BC",
+      "grad": "all",
+      "items": [
+        {
+          "type": "h",
+          "text": "同一张票，这个平台 100、那个平台 130",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "价差会被谁赚走？",
+          "at": 0,
+          "delay": 90,
+          "color": "gold"
+        }
+      ],
+      "ambience": "街道夜晚"
+    }
+  ],
+  "style": {
+    "layout": "center",
+    "enter": "cut",
+    "letterbox": true,
+    "grain": false,
+    "badge": false,
+    "scale": "v2",
+    "textEnter": "fade",
+    "cardSkin": "tactile",
+    "theme": {
+      "gold": "#E6C46A",
+      "coral": "#F0645A",
+      "teal": "#5FC9A8",
+      "bg": "#060A12",
+      "dim": "#B9C3D4"
+    },
+    "sfx": "sparse"
+  }
+}
