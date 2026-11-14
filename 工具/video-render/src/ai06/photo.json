@@ -1,0 +1,649 @@
+{
+  "ep": "ai06",
+  "badge": "",
+  "series": "AI经济学",
+  "photos": "ai06/photos",
+  "chapterPhoto": "S03",
+  "scenes": [
+    {
+      "id": "survey",
+      "name": "1000 人调查：66.7% 用 AI 辅助购物",
+      "photo": "S04",
+      "move": "in",
+      "card": "tab",
+      "label": "双十一前 · 1000 人调查",
+      "items": [
+        {
+          "type": "h",
+          "text": "66.7% 用 AI 辅助购物",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "比价 · 算满减 · 凑单",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TL",
+      "grad": "left",
+      "ambience": "商场"
+    },
+    {
+      "id": "easypay",
+      "name": "85.7% 觉得更省力省钱省心",
+      "photo": "S05",
+      "move": "in",
+      "card": "tab",
+      "label": "同一份调查",
+      "items": [
+        {
+          "type": "h",
+          "text": "85.7% 觉得更省力 · 省钱 · 省心",
+          "at": 0
+        }
+      ],
+      "box": "TL",
+      "grad": "left",
+      "ambience": "商场"
+    },
+    {
+      "id": "wrong",
+      "name": "记者照 AI 最优方案结算：三单全错",
+      "photo": "S02",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "照着 AI 的最优方案结算",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "三单，没有一单对得上",
+          "at": 0,
+          "delay": 90,
+          "stagger": 3,
+          "sfx": "impact"
+        },
+        {
+          "type": "h",
+          "text": "连“哪家最便宜”都是反的",
+          "at": 1,
+          "color": "coral"
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "doubt",
+      "name": "第一反应：AI 也能算错？",
+      "photo": "S01",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "AI 也能算错？",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "它把全网规则都读了一遍吗",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "hook",
+      "name": "它错在看不到的东西上",
+      "photo": "S03",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "它错在看不到的东西上",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "那东西才要命",
+          "at": 0,
+          "delay": 90,
+          "color": "gold"
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "title",
+      "name": "片头",
+      "photo": "S01",
+      "move": "out",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "AI算的优惠为什么不对",
+          "at": 0,
+          "size": 112
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "rules",
+      "name": "规则叠规则，凑单像做奥数",
+      "photo": "S06",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "定金立减 · 店铺券 · 跨店满减",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "88VIP · 红包 · 国补",
+          "at": 0,
+          "delay": 90,
+          "color": "dim"
+        },
+        {
+          "type": "h",
+          "text": "凑单像做奥数题",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "push",
+      "name": "平台把 AI 导购推到最前面",
+      "photo": "S04",
+      "move": "out",
+      "items": [
+        {
+          "type": "h",
+          "text": "淘宝首页接千问",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "京东“东东”",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "豆包开购物板块",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TL",
+      "grad": "left",
+      "ambience": "商场"
+    },
+    {
+      "id": "scale",
+      "name": "规模：近 5000 万需求，JoyAI ×3.2",
+      "photo": "S05",
+      "move": "out",
+      "card": "tab",
+      "label": "平台数据",
+      "items": [
+        {
+          "type": "h",
+          "text": "AI 万能搜：近 5000 万个需求",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "JoyAI 调用量 × 3.2",
+          "at": 0,
+          "delay": 90,
+          "color": "teal"
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "lens",
+      "name": "索尼镜头：人工 1349 / 1358，AI 算到 1215",
+      "photo": "S07",
+      "move": "in",
+      "origin": "MR",
+      "card": "tab",
+      "label": "金华晚报 · 记者实测",
+      "items": [
+        {
+          "type": "h",
+          "text": "人工：1349 · 1358",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "AI：1215 的路",
+          "at": 0,
+          "delay": 90,
+          "color": "teal"
+        },
+        {
+          "type": "t",
+          "text": "官方立减 · 会员折扣 · 淘金币",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "crack",
+      "name": "小周照 AI 方案结算：两张券互斥；临涨、券回收",
+      "photo": "S07",
+      "move": "out",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "快 ≠ 对",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "两张券互相排斥，叠不了",
+          "at": 0,
+          "delay": 90,
+          "color": "coral"
+        },
+        {
+          "type": "t",
+          "text": "临时涨价 · 大额券被回收",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "AI 的表上一个字没提",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "quote",
+      "name": "AI 报价：7769 / 7822 / 8110，抖音最便宜",
+      "photo": "S02",
+      "move": "in",
+      "origin": "MR",
+      "card": "tab",
+      "label": "AI 报价 · 某主流 AI 平台",
+      "items": [
+        {
+          "type": "h",
+          "text": "抖音 7769 · 京东 7822 · 天猫 8110",
+          "at": 0,
+          "color": "teal"
+        },
+        {
+          "type": "t",
+          "text": "抖音最便宜，价差 341",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "actual",
+      "name": "实付预览：9398 / 8620.6 / 8885，差 1629，排序反",
+      "photo": "S02",
+      "move": "out",
+      "origin": "MR",
+      "boxes": {
+        "prices": {
+          "x": 90,
+          "w": 900,
+          "card": "tab",
+          "label": "提交订单前一步"
+        }
+      },
+      "items": [
+        {
+          "type": "photorow",
+          "at": 0,
+          "w": 380,
+          "gap": 28,
+          "cards": [
+            {
+              "img": "C01",
+              "title": "AI 报价",
+              "sub": "QUOTE",
+              "delay": 30
+            },
+            {
+              "img": "C02",
+              "title": "实付预览",
+              "sub": "CHECKOUT",
+              "delay": 120
+            }
+          ]
+        },
+        {
+          "type": "h",
+          "text": "抖音 9398 · 京东 8620.6 · 天猫 8885",
+          "at": 0,
+          "delay": 150,
+          "color": "coral",
+          "box": "prices"
+        },
+        {
+          "type": "slam",
+          "text": "1629",
+          "label": "最高差",
+          "at": 0,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "排序反了：最便宜的变最贵",
+          "at": 0,
+          "delay": 360,
+          "color": "coral"
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "why",
+      "name": "明文规则 vs 登录后最后一步才看得到",
+      "photo": "S06",
+      "move": "out",
+      "origin": "MR",
+      "box": {
+        "card": "notch",
+        "label": "读得到的 vs 读不到的",
+        "sub": "PUBLIC VS CHECKOUT"
+      },
+      "items": [
+        {
+          "type": "h",
+          "text": "页面上印的规则：券、门槛",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "账号里 · 最后一步才有的",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "t",
+          "text": "互斥 · 发完 · 临涨",
+          "at": 0,
+          "delay": 180,
+          "color": "coral"
+        }
+      ],
+      "grad": "left"
+    },
+    {
+      "id": "asym",
+      "name": "信息不对称：买的没有卖的精",
+      "photo": "S06",
+      "move": "still",
+      "origin": "MR",
+      "blur": 10,
+      "dim": 0.55,
+      "center": true,
+      "items": [
+        {
+          "type": "t",
+          "text": "ASYMMETRIC INFORMATION",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "信息不对称",
+          "at": 0,
+          "delay": 60,
+          "size": 140,
+          "font": "song",
+          "textfx": "gradient",
+          "sfx": "impact"
+        },
+        {
+          "type": "h",
+          "text": "卖的人有底牌，买的人看不到",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "t",
+          "text": "AI 也替你补不上",
+          "at": 0,
+          "delay": 270
+        }
+      ]
+    },
+    {
+      "id": "table",
+      "name": "表太整齐，反而不核对了",
+      "photo": "S03",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "几秒钟 · 三行数 · 一个“最优”",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "你连实付页都不点开了",
+          "at": 0,
+          "delay": 90,
+          "color": "coral"
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "wrap",
+      "name": "落点：信息差被包成“看起来很确定”",
+      "photo": "S03",
+      "move": "out",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "信息差还在",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "只是包成了“看起来很确定”",
+          "at": 0,
+          "delay": 90,
+          "color": "gold"
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "boundary",
+      "name": "边界：AI 快是真快，1215 的路真存在",
+      "photo": "S07",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "AI 不是没用",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "1215 的路是真的",
+          "at": 0,
+          "delay": 90,
+          "color": "teal"
+        },
+        {
+          "type": "t",
+          "text": "省下的时间是真的",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "draft",
+      "name": "用法：表当草稿，实付页才是答案",
+      "photo": "S03",
+      "move": "in",
+      "origin": "MR",
+      "boxes": {
+        "answer": {
+          "x": 90,
+          "w": 900,
+          "card": "solid"
+        }
+      },
+      "items": [
+        {
+          "type": "h",
+          "text": "表当草稿，不当成交价",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "AI 给候选和上限",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "实付预览页，才是答案",
+          "at": 0,
+          "delay": 180,
+          "box": "answer",
+          "stagger": 3
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "mine",
+      "name": "我的理解是：别让 AI 替你做最后一步",
+      "photo": "S01",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "别让它替你做最后一步",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "它看不见的那一半，你自己走完",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "back",
+      "name": "回到开头三单：躲开 1629 的坑",
+      "photo": "S02",
+      "move": "in",
+      "origin": "MR",
+      "items": [
+        {
+          "type": "h",
+          "text": "差的不是 AI 的智力",
+          "at": 0
+        },
+        {
+          "type": "t",
+          "text": "是那张底牌",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "走到实付页，坑就躲开了",
+          "at": 0,
+          "delay": 180,
+          "color": "teal"
+        }
+      ],
+      "box": "TL",
+      "grad": "left"
+    },
+    {
+      "id": "next",
+      "name": "钩子：美联航已把 AI 助手挡在订票外",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "那直接替你下单付款呢？",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "美联航：已把 AI 助手挡在订票系统外",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TL",
+      "grad": "left",
+      "ambience": "商场"
+    }
+  ],
+  "style": {
+    "layout": "topleft",
+    "enter": "blur",
+    "badge": false,
+    "scale": "v2",
+    "textEnter": "fade",
+    "cardSkin": "tactile",
+    "theme": {
+      "gold": "#F0A85C",
+      "coral": "#E4574B",
+      "teal": "#3FAF9F",
+      "bg": "#0D0B09",
+      "dim": "#CFC8BD"
+    },
+    "sfx": "sparse"
+  }
+}
