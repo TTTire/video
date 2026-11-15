@@ -181,7 +181,7 @@ python3 scripts/render.py epN sheet
 ### 0. 收料检查
 
 - 粗剪：`工具/aroll-prep` 出的粗剪 mp4 + srt + words.json（分段录的先拼成一条）。字幕从录音来，不从讲稿卡导；srt 用 aroll-prep 的或剪映识别的都行。
-- 图：一个文件夹，文件名里有编号（S01…，卡内小图 C01…）。收到后放进选题文件夹的 `图片素材/`（进 git，换机器时从这里重新入库）。
+- 图：一个文件夹，文件名里有编号（S01…，卡内小图 C01…）。收到后放进选题文件夹的 `图片素材/`（进 git，换机器时从这里重新入库）。文档页 D01… 是写稿时自己截的，已经在 `图片素材/` 里；发布清单有「补图清单（录后）」的，对一下补的图到齐没有。
 - 环境声：photo.json 里写的 `ambience` 都要在 `src/sfx-manifest.json` 的 ambience 里有（现在只有「商场」「街道夜晚」）。没有的，先让用户按 `工具/音效库/补充音效清单.md` 补，或者改成现有的。写了库里没有的名字不报错，引擎会在现有几条里按位置挑一条，声音和画面对不上。
 - 要点起点表 `src/<ep>/starts.json`（录完后手填）：对照粗剪 srt / words.json，记下每条要点开口的时间——`{"0.1": "00:00.0", "0.2": "00:07.4", …, "1.0": "01:00.2", …, "end": "08:19.5"}`。
   - 讲稿卡里每个 id 都要有（含 `N.0`）；值写秒数或 `mm:ss.s`，在 0 和 `end` 之间，按讲稿卡顺序不往回走。时间以和 A-roll 同一条时间线的粗剪为准。
@@ -216,7 +216,7 @@ python3 scripts/make_timeline.py "<讲稿卡.md>" ep7 --starts src/ep7/starts.js
 - 一个场景内：第一条要点出小字（dim）铺垫，关键要点出大字（白 / 金），数字单独做 `big` 或 `count`。
 - 要划掉的旧判断用 `strikeAt`；两个对立项用 `compare` 或 `split`；盖章式关键词用 `stamp`。
 - 柱状图、表格、折线这类按要点逐步出现的图表写进 `src/ep7/custom.tsx`，参考 `src/ep9/custom.tsx`（按逐字时间对口播）或 `src/ep6/custom.tsx`（按要点逐步出）；photo.json 里 `{"type":"custom","name":"xxx"}` 引用。
-- **文档页**（论文、报告、规定原文）：黑底 + 原文页滑入 + 金色高亮 + 聚焦放大 + 翻页，用 `src/photo/docpage.tsx` 的 `DocPage`。本期 `custom.tsx` 里 `import {DocPage} from '../photo/docpage'` 并注册成 `doc`，场景写 `doc` 配置 + `{"type": "custom", "name": "doc"}`；中文摘句 / 短译用普通 `h` / `t` 放左列，只用白 / dim。字段和例子见 `references/document-highlight.md`「DocPage」，样例 ep10 的 pnas 场景。一期 1–3 处，和照片段交替。
+- **文档页**（论文、报告、规定原文）：黑底网格（`工具/论文背景.png`）+ 原文页滑入 + 荧光黄 `#F2F10A` 高亮（固定这个黄，不跟本期 `gold`，用户 2026-11-15 定）+ 聚焦放大 + 翻页，用 `src/photo/docpage.tsx` 的 `DocPage`，背景和高亮色组件里已经写死，不用每期配。本期 `custom.tsx` 里 `import {DocPage} from '../photo/docpage'` 并注册成 `doc`，场景写 `doc` 配置 + `{"type": "custom", "name": "doc"}`；中文摘句 / 短译用普通 `h` / `t` 放左列，只用白 / dim。字段和例子见 `references/document-highlight.md`「DocPage」，样例 ep10 的 pnas 场景。一期 1–3 处，和照片段交替。
 - 音效走精简（`style.sfx: "sparse"`，2026-11 起新期默认，骨架自动写上）：字（h / t / tag）和 photo 卡出现不响，只有"变化"响——换场景 pop、章节卡 flip、盖章、砸入、翻牌、里程表、数字 ding、划掉、换图 whoosh、出镜层切换 whoosh（正好落在换场景那一帧的不再叠一声）。AI03 前 90 秒实测：26 声 → 10 声。揭晓点（答案、反转、结论出现那一刻）手动加 `impact` / `error` / `cash`；别给普通字加 `sfx`，那等于把精简关掉。已发布各期不写 `sfx`，重渲照旧每条字一声 pop。
 
 **骨架里要手改的 `grad`**（脚本按出图清单的「文字放哪侧」填，有两处填得不对）：

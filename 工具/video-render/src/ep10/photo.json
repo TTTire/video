@@ -24,7 +24,7 @@
           "align": "left",
           "card": "tab",
           "cardW": 860,
-          "label": "新浪新闻 · 2026-11"
+          "label": "杭州 · 一场演唱会"
         },
         "calc": {
           "x": 760,
@@ -100,7 +100,7 @@
           "align": "left",
           "card": "tab",
           "cardW": 860,
-          "label": "上期 · 央视财经 2026-10"
+          "label": "上期结尾 · 华强北"
         },
         "this": {
           "x": 760,
@@ -225,7 +225,7 @@
           "align": "left",
           "card": "paper",
           "cardW": 860,
-          "label": "市场监管总局 · 2022"
+          "label": "国家规定"
         }
       },
       "items": [
@@ -304,24 +304,12 @@
       "photo": "S05",
       "move": "out",
       "origin": "ML",
-      "boxes": {
-        "nber": {
-          "x": 760,
-          "y": 120,
-          "w": 860,
-          "align": "left",
-          "card": "tab",
-          "cardW": 860,
-          "label": "NBER 工作论文 · 2016"
-        }
-      },
       "items": [
         {
           "type": "h",
           "text": "经济学家也难算",
           "at": 0,
-          "delay": 194,
-          "box": "nber"
+          "delay": 194
         }
       ]
     },
@@ -342,7 +330,7 @@
           "align": "left",
           "card": "tab",
           "cardW": 860,
-          "label": "微博话题 · 2026-11"
+          "label": "二手行情"
         },
         "survey": {
           "x": 760,
@@ -351,7 +339,7 @@
           "align": "left",
           "card": "tab",
           "cardW": 860,
-          "label": "艾瑞咨询 · 2023"
+          "label": "演出票务调研"
         },
         "end": {
           "x": 760,
@@ -473,68 +461,56 @@
       "id": "pnas",
       "name": "PNAS 2019：给多少钱肯一整年",
       "photo": "S08",
-      "move": "in",
-      "origin": "ML",
+      "move": "still",
       "boxes": {
-        "q": {
-          "x": 760,
-          "y": 120,
+        "left": {
+          "x": 90,
+          "y": 160,
           "w": 860,
-          "align": "left",
-          "card": "tab",
-          "cardW": 860,
-          "label": "PNAS · 2019"
+          "align": "left"
+        },
+        "end": {
+          "x": 90,
+          "y": 300,
+          "w": 860,
+          "align": "left"
         }
       },
       "items": [
         {
+          "type": "custom",
+          "name": "doc"
+        },
+        {
           "type": "t",
-          "text": "问美国网民",
+          "text": "论文：用大规模在线选择实验，\\n衡量福利的变化",
           "at": 0,
-          "delay": 160,
-          "box": "q"
+          "delay": 81,
+          "box": "left",
+          "until": 0,
+          "untilDelay": 160
         },
         {
           "type": "h",
-          "text": "给你多少钱",
+          "text": "给你多少钱，",
           "at": 0,
           "delay": 204,
-          "box": "q",
-          "quote": true
+          "box": "left",
+          "quote": true,
+          "size": 72,
+          "until": 1,
+          "untilDelay": 0
         },
         {
           "type": "h",
           "text": "你肯一整年不用它？",
           "at": 0,
           "delay": 231,
-          "box": "q",
-          "quote": true
-        }
-      ]
-    },
-    {
-      "id": "rank",
-      "name": "搜索 17,530 邮箱 8,414",
-      "photo": "S08",
-      "move": "out",
-      "origin": "ML",
-      "boxes": {
-        "end": {
-          "x": 760,
-          "y": 610,
-          "w": 860,
-          "align": "right"
-        }
-      },
-      "items": [
-        {
-          "type": "slam",
-          "text": "$17,530",
-          "label": "一整年不用搜索引擎 · 中位数",
-          "at": 0,
-          "delay": 151,
-          "until": 0,
-          "untilDelay": 255
+          "box": "left",
+          "quote": true,
+          "size": 72,
+          "until": 1,
+          "untilDelay": 0
         },
         {
           "type": "custom",
@@ -542,13 +518,137 @@
         },
         {
           "type": "h",
-          "text": "差出来的那一大截，全归你",
-          "at": 0,
+          "text": "差出来的那一大截，\\n全归你",
+          "at": 1,
           "delay": 580,
           "box": "end",
-          "size": 72
+          "size": 88
         }
-      ]
+      ],
+      "grad": "none",
+      "arollSide": "right",
+      "doc": {
+        "pages": [
+          {
+            "src": "ep10/docs/D01.png",
+            "w": 2601,
+            "h": 3593
+          },
+          {
+            "src": "ep10/docs/D02.png",
+            "w": 2601,
+            "h": 3612
+          }
+        ],
+        "beats": [
+          {
+            "at": 0,
+            "delay": 0,
+            "page": 0
+          },
+          {
+            "at": 0,
+            "delay": 77,
+            "page": 0,
+            "hl": [
+              [
+                0.0194,
+                0.0074,
+                0.9273,
+                0.0329
+              ],
+              [
+                0.0194,
+                0.0398,
+                0.3865,
+                0.033
+              ]
+            ]
+          },
+          {
+            "at": 0,
+            "delay": 160,
+            "page": 1,
+            "focus": [
+              0.49,
+              0.19,
+              0.49,
+              0.07
+            ],
+            "hl": [
+              [
+                0.7665,
+                0.2063,
+                0.2034,
+                0.0153
+              ],
+              [
+                0.5026,
+                0.2201,
+                0.4675,
+                0.0153
+              ],
+              [
+                0.5026,
+                0.2336,
+                0.0355,
+                0.0153
+              ]
+            ]
+          },
+          {
+            "at": 1,
+            "delay": 112,
+            "page": 1,
+            "clear": true,
+            "focus": [
+              0.1507,
+              0.7346,
+              0.3335,
+              0.1221
+            ]
+          },
+          {
+            "at": 1,
+            "delay": 151,
+            "page": 1,
+            "hl": [
+              [
+                0.1525,
+                0.8143,
+                0.3297,
+                0.0128
+              ]
+            ]
+          },
+          {
+            "at": 1,
+            "delay": 263,
+            "page": 1,
+            "hl": [
+              [
+                0.1525,
+                0.8277,
+                0.3297,
+                0.0128
+              ]
+            ]
+          },
+          {
+            "at": 1,
+            "delay": 380,
+            "page": 1,
+            "hl": [
+              [
+                0.1525,
+                0.8412,
+                0.3297,
+                0.0128
+              ]
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "wta",
@@ -601,7 +701,7 @@
           "align": "left",
           "card": "tab",
           "cardW": 860,
-          "label": "PNAS · 真兑现组"
+          "label": "真兑现的那一组"
         }
       },
       "items": [
@@ -732,8 +832,7 @@
           "align": "left",
           "card": "notch",
           "cardW": 860,
-          "label": "边界",
-          "sub": "CORE ECON 7.7"
+          "label": "边界"
         },
         "q": {
           "x": 760,
@@ -742,7 +841,7 @@
           "align": "left",
           "card": "tab",
           "cardW": 860,
-          "label": "潮新闻 · 2026-11"
+          "label": "西湖边排队"
         },
         "end": {
           "x": 760,
@@ -871,7 +970,7 @@
           "align": "left",
           "card": "tab",
           "cardW": 860,
-          "label": "财联社 · 2026-10"
+          "label": "天猫双十一"
         }
       },
       "items": [
