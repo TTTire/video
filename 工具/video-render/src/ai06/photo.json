@@ -133,10 +133,11 @@
     {
       "id": "why", "name": "明文规则 vs 登录后最后一步才看得到", "photo": "S06", "move": "out", "origin": "MR",
       "box": {"card": "notch", "label": "AI 读得到的", "sub": "ON THE PAGE"},
-      "boxes": {"hidden": {"x": 90, "w": 900, "bottom": 270, "card": "notch", "label": "AI 读不到的", "sub": "AT CHECKOUT"}},
+      "boxes": {"hidden": {"x": 90, "w": 900, "bottom": 290, "card": "notch", "label": "AI 读不到的", "sub": "AT CHECKOUT"}},
       "items": [
         {"type": "h", "text": "页面上的明文规则", "at": 0, "delay": 91},
-        {"type": "t", "text": "登录你的账号，走到最后一步才看到：", "at": 0, "delay": 291, "size": 44, "box": "hidden"},
+        {"type": "t", "text": "券面：满多少减多少 · 门槛多少", "at": 0, "delay": 166},
+        {"type": "t", "text": "登录账号、走到最后一步才看到：", "at": 0, "delay": 291, "size": 44, "box": "hidden"},
         {"type": "t", "text": "这张券和那张券互斥", "at": 0, "delay": 435, "size": 48, "color": "white", "box": "hidden"},
         {"type": "t", "text": "券今天已发完 · 价五分钟前刚变", "at": 0, "delay": 558, "size": 48, "color": "white", "box": "hidden"}
       ],
@@ -148,7 +149,6 @@
         {"type": "t", "text": "ASYMMETRIC INFORMATION", "at": 0},
         {"type": "h", "text": "信息不对称", "at": 0, "delay": 11, "size": 140, "font": "song", "textfx": "gradient", "sfx": "impact"},
         {"type": "h", "text": "卖的人有底牌，买的人看不到", "at": 0, "delay": 42},
-        {"type": "t", "text": "AI 站在买的人这边，读的却是卖的人公开的那一半", "at": 0, "delay": 159},
         {"type": "h", "text": "买的没有卖的精", "at": 0, "delay": 314, "quote": true, "size": 64},
         {"type": "t", "text": "AI 也替你补不上", "at": 0, "delay": 391}
       ]
@@ -185,7 +185,7 @@
     },
     {
       "id": "draft", "name": "用法：表当草稿，实付页才是答案", "photo": "S03", "move": "in", "origin": "MR",
-      "boxes": {"answer": {"x": 90, "w": 900, "bottom": 270, "card": "solid"}},
+      "boxes": {"answer": {"x": 90, "w": 900, "bottom": 290, "card": "solid"}},
       "items": [
         {"type": "h", "text": "表当草稿，不当成交价", "at": 0, "delay": 23},
         {"type": "t", "text": "AI 给候选和上限", "at": 0, "delay": 132},

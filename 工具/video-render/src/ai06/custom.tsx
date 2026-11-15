@@ -13,7 +13,7 @@ import {Slam} from '../photo/numfx';
 import {CustomMap} from '../photo/engine';
 
 const CW = 900;                       // 和引擎主卡同一栅格（L 列 x 90、宽 900）
-const COLS = [128, 230, 238, 200];    // 平台 | AI 报价 | 实付预览 | 相差，合计 796 = 卡内宽（TTab 左右内边距各 52）
+const COLS = [120, 250, 250, 176];    // 平台 | AI 报价 | 实付预览 | 相差，合计 796 = 卡内宽（TTab 左右内边距各 52）；报价、实付两列要装下「数 + 最低/最贵签」
 const ROW_H = 92;
 const NUM: React.CSSProperties = {fontFamily: FONTS.num, fontVariantNumeric: 'tabular-nums', letterSpacing: 0, lineHeight: 1};
 const ROWS = [
@@ -29,7 +29,7 @@ const Pill: React.FC<{on: number; bg: string; children: React.ReactNode}> = ({on
   const C = useC();
   const f = useCurrentFrame();
   if (f < on) return null;
-  return <span style={{opacity: fade(f, on), background: bg, color: C.bg, fontFamily: C.font, fontWeight: 900, fontSize: 24, letterSpacing: 2, padding: '5px 12px 6px', borderRadius: 10, whiteSpace: 'nowrap'}}>{children}</span>;
+  return <span style={{opacity: fade(f, on), background: bg, color: C.bg, fontFamily: C.font, fontWeight: 900, fontSize: 22, letterSpacing: 2, padding: '4px 10px 5px', borderRadius: 9, whiteSpace: 'nowrap'}}>{children}</span>;
 };
 
 const PriceTable: React.FC<{p: P; b: Beats; label: string}> = ({p, b, label}) => {
@@ -46,7 +46,6 @@ const PriceTable: React.FC<{p: P; b: Beats; label: string}> = ({p, b, label}) =>
     <div style={{position: 'absolute', left: 90, top: 120, width: CW}}>
       {b.ai.map((n, i) => !pay && f >= A(n) && <Sfx key={'a' + i} at={A(n)} name="ding" vol={0.2} />)}
       {b.pay?.map((n, i) => f >= A(n) && <Sfx key={'p' + i} at={A(n)} name="ding" vol={0.24} />)}
-      {b.diff?.slice(1).map((n, i) => f >= A(n) && <Sfx key={'d' + i} at={A(n)} name="tick" vol={0.25} />)}
       {b.high !== undefined && f >= A(b.high) && <Sfx at={A(b.high)} name="error" vol={0.32} />}
       <CardEnter at={A(b.card)} dir="left" dist={140}>
         <TTab label={label} w={CW} seed={3}>
@@ -63,20 +62,20 @@ const PriceTable: React.FC<{p: P; b: Beats; label: string}> = ({p, b, label}) =>
                 background: i === 0 ? `rgba(228, 87, 75, ${0.16 * hot})` : 'transparent', borderRadius: 8}}>
                 <div style={{width: COLS[0]}}><H size={50}>{r.name}</H></div>
                 <div style={{width: COLS[1], display: 'flex', alignItems: 'center', gap: 12, opacity: pay ? 1 : fade(f, A(b.ai[i]))}}>
-                  <span style={{...NUM, fontSize: 60, color: C.teal}}>{r.ai}</span>
+                  <span style={{...NUM, fontSize: 54, color: C.teal}}>{r.ai}</span>
                   {i === 0 && <Pill on={A(b.low)} bg={C.teal}>最低</Pill>}
                 </div>
                 {pay && (
                   <div style={{width: COLS[2], display: 'flex', alignItems: 'center', gap: 12, opacity: fade(f, A(b.pay![i]))}}>
-                    <span style={{...NUM, fontSize: 60, color: C.coral}}>{r.pay}</span>
+                    <span style={{...NUM, fontSize: 54, color: C.coral}}>{r.pay}</span>
                     {i === 0 && b.high !== undefined && <Pill on={A(b.high)} bg={C.coral}>最贵</Pill>}
                   </div>
                 )}
                 {pay && b.diff && (
                   <div style={{width: COLS[3]}}>
                     {i === 0
-                      ? <Slam at={A(b.diff[0])} size={60} color={C.gold} shake={8}>{r.diff}</Slam>
-                      : <span style={{...NUM, fontSize: 52, color: C.white, opacity: fade(f, A(b.diff[i]))}}>{r.diff}</span>}
+                      ? <Slam at={A(b.diff[0])} size={56} color={C.gold} shake={8}>{r.diff}</Slam>
+                      : <span style={{...NUM, fontSize: 48, color: C.white, opacity: fade(f, A(b.diff[i]))}}>{r.diff}</span>}
                   </div>
                 )}
               </div>
