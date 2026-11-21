@@ -1,20 +1,19 @@
 {
   "userName": "",
   "permissionMode": "yolo",
-  "model": "gpt-5.5",
-  "thinkingBudget": "off",
+  "model": "openai-codex/gpt-5.5",
   "effortLevel": "high",
   "serviceTier": "default",
   "enableAutoTitleGeneration": true,
   "titleGenerationLocale": "",
   "titleGenerationModel": "",
+  "showTabTitlesByDefault": true,
+  "chatFontScale": 100,
   "excludedTags": [],
   "mediaFolder": "",
   "systemPrompt": "",
   "sharedEnvironmentVariables": "",
   "envSnippets": [],
-  "customContextLimits": {},
-  "customModelAliases": {},
   "keyboardNavigation": {
     "scrollUpKey": "w",
     "scrollDownKey": "s",
@@ -28,11 +27,32 @@
       "safeMode": "workspace-write",
       "cliPath": "C:\\Users\\14490\\AppData\\Local\\OpenAI\\Codex\\bin\\7dea4a003bc76627\\codex.exe",
       "cliPathsByHost": {},
-      "customModels": "",
-      "discoveredModels": [
+      "modelAliases": {},
+      "visibleModels": [
+        "gpt-6.1-sol",
+        "gpt-6-astra",
+        "gpt-6-sol",
+        "gpt-6-luna",
+        "gpt-5.6-sol",
+        "gpt-5.6-terra",
+        "gpt-5.6-luna",
+        "gpt-5.5"
+      ],
+      "enableUltraEffort": false,
+      "responseStyle": "pragmatic",
+      "responseVerbosity": "default",
+      "reasoningSummary": "detailed",
+      "environmentVariables": "CODEX_HOME=C:\\Users\\14490\\.codex",
+      "environmentHash": "runtime-input:v1:aa5906cc75990e9d803884877336cfa9269f79d7f29c238bd46af7535779051a",
+      "installationMethodsByHost": {
+        "device:adfec557-6caf-4da1-b748-3f12f74cc649": "native-windows",
+        "device-6c08ea5796bf42e1da4a4d80d5e96fce4d1f5254f080cb0b6e45f1e942ff4563": "native-windows"
+      },
+      "wslDistroOverridesByHost": {},
+      "selectedModels": [
         {
           "model": "gpt-6.1-sol",
-          "displayName": "GPT-6.1-Sol",
+          "displayName": "GPT-6.1 Sol",
           "description": "Latest workhorse model for coding and everyday work.",
           "supportedReasoningEfforts": [
             {
@@ -77,7 +97,7 @@
         },
         {
           "model": "gpt-6-astra",
-          "displayName": "GPT-6-Astra",
+          "displayName": "GPT-6 Astra",
           "description": "Frontier intelligence for the most demanding work.",
           "supportedReasoningEfforts": [
             {
@@ -122,7 +142,7 @@
         },
         {
           "model": "gpt-6-sol",
-          "displayName": "GPT-6-Sol",
+          "displayName": "GPT-6 Sol",
           "description": "Previous generation workhorse model.",
           "supportedReasoningEfforts": [
             {
@@ -167,7 +187,7 @@
         },
         {
           "model": "gpt-6-luna",
-          "displayName": "GPT-6-Luna",
+          "displayName": "GPT-6 Luna",
           "description": "Fast and affordable model for easier tasks.",
           "supportedReasoningEfforts": [
             {
@@ -208,7 +228,7 @@
         },
         {
           "model": "gpt-5.6-sol",
-          "displayName": "GPT-5.6-Sol",
+          "displayName": "GPT-5.6 Sol",
           "description": "Older generation workhorse model.",
           "supportedReasoningEfforts": [
             {
@@ -253,7 +273,7 @@
         },
         {
           "model": "gpt-5.6-terra",
-          "displayName": "GPT-5.6-Terra",
+          "displayName": "GPT-5.6 Terra",
           "description": "Older balanced model for straightforward work.",
           "supportedReasoningEfforts": [
             {
@@ -298,7 +318,7 @@
         },
         {
           "model": "gpt-5.6-luna",
-          "displayName": "GPT-5.6-Luna",
+          "displayName": "GPT-5.6 Luna",
           "description": "Older fast and efficient model.",
           "supportedReasoningEfforts": [
             {
@@ -374,37 +394,97 @@
           ],
           "isDefault": false
         }
-      ],
-      "modelAliases": {},
-      "visibleModels": null,
-      "enableUltraEffort": false,
-      "responseStyle": "pragmatic",
-      "reasoningSummary": "detailed",
-      "environmentVariables": "CODEX_HOME=C:\\Users\\14490\\.codex",
-      "environmentHash": "runtime-input:v1:838b8d27b791a4eefa2715e91244a72630e2177d22509a3a933e18befe64ea4f",
-      "catalogTimestamp": 1791464843177,
-      "catalogFingerprint": "2:1fc556f027c70590e3c2e068b6f2165b75a4ea671efa0d79ea78317754116a75",
-      "installationMethodsByHost": {
-        "device:adfec557-6caf-4da1-b748-3f12f74cc649": "native-windows",
-        "device-6c08ea5796bf42e1da4a4d80d5e96fce4d1f5254f080cb0b6e45f1e942ff4563": "native-windows"
-      },
-      "wslDistroOverridesByHost": {}
+      ]
     },
     "claude": {
       "enabled": true,
-      "responseStyle": "Default",
       "safeMode": "acceptEdits",
       "cliPath": "",
       "cliPathsByHost": {},
       "loadUserSettings": true,
       "enableChrome": false,
       "customModels": "",
-      "defaultModel": "opus",
       "lastModel": "haiku",
       "modelEnvironmentType": "",
       "titleModelEnvironmentType": "",
       "environmentVariables": "",
-      "environmentHash": ""
+      "environmentHash": "",
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "outputStyle": null,
+      "promptSuggestions": false,
+      "discoveredOutputStyles": [
+        "default",
+        "Proactive",
+        "Concise",
+        "Explanatory",
+        "Learning"
+      ],
+      "modelAliases": {},
+      "visibleModels": [
+        "haiku",
+        "sonnet",
+        "opus",
+        "fable"
+      ],
+      "selectedModels": [
+        {
+          "value": "opus",
+          "label": "claude-opus-5",
+          "description": "Custom Opus model (1M context)",
+          "resolvedModel": "claude-opus-5",
+          "reasoningMetadataResolved": true,
+          "supportedEffortLevels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        {
+          "value": "fable",
+          "label": "claude-fable-5-1",
+          "description": "Custom Fable model",
+          "resolvedModel": "claude-fable-5-1",
+          "reasoningMetadataResolved": true,
+          "supportedEffortLevels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        {
+          "value": "sonnet",
+          "label": "claude-opus-5-5",
+          "description": "Custom Sonnet model (1M context)",
+          "resolvedModel": "claude-opus-5-5",
+          "reasoningMetadataResolved": true,
+          "supportedEffortLevels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        {
+          "value": "haiku",
+          "label": "claude-opus-5",
+          "description": "Custom Haiku model",
+          "resolvedModel": "claude-opus-5",
+          "reasoningMetadataResolved": true,
+          "supportedEffortLevels": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        }
+      ]
     },
     "opencode": {
       "cliPath": "",
@@ -414,24 +494,28 @@
       "environmentVariables": "",
       "modelAliases": {},
       "preferredThinkingByModel": {},
-      "selectedMode": "",
       "thinkingOptionsByModel": {},
-      "visibleModels": []
+      "visibleModels": [],
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "selectedModels": []
     },
     "pi": {
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
       "cliPath": "",
       "cliPathsByHost": {},
-      "discoveredModels": [],
       "enabled": false,
       "environmentHash": "",
       "environmentVariables": "",
       "modelAliases": {},
       "preferredThinkingByModel": {},
-      "toolMode": "all",
-      "visibleModels": []
+      "visibleModels": [],
+      "selectedModels": []
     },
     "grok": {
-      "catalogsByHost": {},
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
       "cliPath": "",
       "cliPathsByHost": {},
       "enabled": false,
@@ -439,7 +523,36 @@
       "environmentVariables": "",
       "modelAliases": {},
       "preferredReasoningByModel": {},
-      "visibleModels": null
+      "visibleModels": [],
+      "selectedModelsByHost": {}
+    },
+    "antigravity": {
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "enabled": false,
+      "environmentHash": "",
+      "environmentVariables": "",
+      "installationMethodsByHost": {},
+      "modelAliases": {},
+      "preferredReasoningByModel": {},
+      "visibleModels": [],
+      "wslDistroOverridesByHost": {},
+      "selectedModelsByHost": {}
+    },
+    "deepseek": {
+      "installationMethodsByHost": {},
+      "wslDistroOverridesByHost": {},
+      "enabled": false,
+      "codeMode": false,
+      "presetPlugins": "",
+      "cliPath": "",
+      "cliPathsByHost": {},
+      "environmentVariables": "",
+      "environmentHash": "",
+      "visibleModels": [],
+      "modelAliases": {},
+      "preferredReasoningByModel": {},
+      "selectedModels": []
     }
   },
   "settingsProvider": "codex",
@@ -447,8 +560,9 @@
     "providerId": "codex",
     "model": "gpt-5.5"
   },
+  "inlineEditModel": null,
   "savedProviderModel": {
-    "codex": "gpt-5.5"
+    "codex": "openai-codex/gpt-5.5"
   },
   "savedProviderEffort": {
     "codex": "high"
@@ -456,28 +570,32 @@
   "savedProviderServiceTier": {
     "codex": "default"
   },
-  "savedProviderThinkingBudget": {},
   "savedProviderPermissionMode": {
     "codex": "yolo"
   },
-  "pendingProviderSessionInvalidations": {},
-  "lastCustomModel": "",
-  "maxWarmAgentProcesses": 5,
   "enableAutoScroll": true,
-  "showMessageTimestamps": false,
   "deferMathRenderingDuringStreaming": true,
+  "pluginRenderedFenceLanguages": [],
   "expandFileEditsByDefault": false,
   "chatViewPlacement": "right-sidebar",
+  "enableZenMode": true,
+  "zenModePosition": null,
   "enableDualPane": true,
   "dualPaneSide": "right",
   "restoreTabsOnStartup": true,
+  "skillsSynced": false,
+  "sessionManagerOrganization": "list",
+  "sessionManagerSort": "last-updated",
+  "sessionAutoArchiveAfter": "off",
+  "pinnedLinkedContentPaths": [],
+  "hiddenCommands": [],
+  "thinkingBudget": "off",
+  "customModelAliases": {},
+  "savedProviderThinkingBudget": {},
+  "lastCustomModel": "",
   "collabEnabled": false,
   "collabProjectsFolder": "workspace",
   "collabGitPath": "",
-  "sessionManagerOrganization": "list",
-  "sessionManagerSort": "last-updated",
-  "pinnedLinkedContentPaths": [],
-  "hiddenProviderCommands": {},
   "maxTabs": 3,
   "tabBarPosition": "input"
 }
