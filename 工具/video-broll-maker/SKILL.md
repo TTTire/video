@@ -237,6 +237,8 @@ python3 scripts/render.py ep7 full         # 正式版（只有音效）out/ep7-
 python3 scripts/render.py ep7 fullcheck    # 全片带字幕核对版（可选）
 ```
 
+拼图每个场景只抽开头几帧，晚出的字、收卡后的字看不到。要看指定帧，用 `node scripts/stills.mjs <合成 id> <输出目录> 名字=帧号 …`（如 `node scripts/stills.mjs Ep11FullCheck out/ep11-keys card=462 row=2902`）：一次打包、连渲多张单帧到那个目录，二十来张约 45 秒，比逐帧跑 `npx remotion still` 快十倍。帧号按 `timeline.json` 的场景 `from` + 要点 `steps` + `delay` 算，或者直接取字幕条时间 × 30。
+
 `full` / `fullcheck` 走分段渲染（`scripts/render_seq.py`）：默认 2 个进程 × 并发 2 出图片序列 → 查花屏帧兜底 → 编码 → 合音频。
 - 中途崩了、卡死了：**直接重跑同一条命令**，已出好的帧不重出；单段卡死会自动超时重试
 - **脚本只按帧号判断帧在不在，不看内容。** 改过 photo.json、custom.tsx、引擎代码，换过图（包括占位图换真图），重跑过 make_timeline 之后重出全片，都要加 `--fresh`（`python3 scripts/render.py ep7 full --fresh`），否则会沿用旧帧，新旧画面混在一起

@@ -1,38 +1,30 @@
-// 一次打包、渲多张单帧，拼成一张核对图（比逐帧跑 npx remotion still 快 10 倍）。
-// 用法：node scripts/stills.mjs <合成 id> <输出 jpg> <帧号或 名字=帧号，空格分隔…> [--cols 3]
-//   node scripts/stills.mjs Ep11FullCheck out/ep11-keys.jpg define=303 card=462 series=1156
+// 一次打包、连渲多张单帧（比逐帧跑 npx remotion still 快十倍）。拼图每个场景只抽开头几帧，晚出的字要靠这个看。
+// 用法：node scripts/stills.mjs <合成 id> <输出目录> <名字=帧号 …>
+//   node scripts/stills.mjs Ep11FullCheck out/ep11-keys define=303 card=462 series=1156
+// 每帧一张 <输出目录>/<名字>-<帧号>.jpg
 import {bundle} from '@remotion/bundler';
 import {renderStill, selectComposition} from '@remotion/renderer';
 import fs from 'node:fs';
-import os from 'node:os';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const args = process.argv.slice(2);
-const cols = args.includes('--cols') ? parseInt(args[args.indexOf('--cols') + 1], 10) : 3;
-const pos = args.filter((a, i) => !a.startsWith('--') && args[i - 1] !== '--cols');
-const [compId, outPath, ...specs] = pos;
-if (!compId || !outPath || !specs.length) {
-  console.error('用法：node scripts/stills.mjs <合成 id> <输出 jpg> <名字=帧号 …> [--cols 3]');
+const [compId, outDir, ...specs] = process.argv.slice(2);
+const frames = specs.map((s) => {
+  const [label, frame] = s.includes('=') ? s.split('=') : [s, s];
+  return {label, frame: parseInt(frame, 10)};
+});
+if (!compId || !outDir || !frames.length || frames.some((f) => Number.isNaN(f.frame))) {
+  console.error('用法：node scripts/stills.mjs <合成 id> <输出目录> <名字=帧号 …>');
   process.exit(1);
 }
-const frames = specs.map((s) => {
-  const [a, b] = s.includes('=') ? s.split('=') : [s, s];
-  return {label: a, frame: parseInt(b, 10)};
-});
 
-const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'stills-'));
+const dir = path.resolve(ROOT, outDir);
+fs.mkdirSync(dir, {recursive: true});
 const serveUrl = await bundle({entryPoint: path.join(ROOT, 'src/index.ts'), publicDir: path.join(ROOT, 'public')});
 const composition = await selectComposition({serveUrl, id: compId});
-const files = [];
 for (const {label, frame} of frames) {
-  const output = path.join(tmp, `${label}-${frame}.jpg`);
+  const output = path.join(dir, `${label}-${frame}.jpg`);
   await renderStill({composition, serveUrl, output, frame, imageFormat: 'jpeg', jpegQuality: 88});
-  files.push({label, frame, output});
-  process.stdout.write(`  ${label} @${frame}\n`);
+  console.log(`  ${label} @${frame} → ${path.relative(ROOT, output)}`);
 }
-// 拼图交给 Python/PIL（Node 这边不依赖图像库）：写一份清单，由调用方拼
-fs.writeFileSync(path.join(tmp, 'list.json'), JSON.stringify({cols, files}, null, 1));
-console.log(`STILLS_DIR=${tmp}`);
-console.log(`STILLS_OUT=${outPath}`);
