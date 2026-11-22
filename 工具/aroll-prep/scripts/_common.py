@@ -153,7 +153,7 @@ def h264_args(enc: str) -> list[str]:
 # ---------------------------------------------------------------- 时间格式
 def fmt_time(sec: float, ms_digits: int = 3) -> str:
     """秒 -> mm:ss.sss（超过 1 小时写成 h:mm:ss.sss）。"""
-    sec = max(0.0, float(sec))
+    sec = round(max(0.0, float(sec)), ms_digits)  # 先按精度取整，否则 119.96 会写成 01:60.0
     h = int(sec // 3600)
     m = int((sec % 3600) // 60)
     s = sec % 60
