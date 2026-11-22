@@ -7,504 +7,930 @@
   "scenes": [
     {
       "id": "define",
-      "name": "一句话定义：同一样东西-对不同的人-",
+      "name": "一句话定义：同一样东西，对不同的人、数量、场合收不同的价",
       "photo": "S01",
       "move": "in",
+      "origin": "BC",
+      "grad": "top",
+      "ambience": "商场",
+      "enterSfx": null,
+      "boxes": {
+        "title": "TW",
+        "def": {
+          "x": 510,
+          "y": 350,
+          "w": 900,
+          "align": "left",
+          "card": "notch",
+          "cardW": 900,
+          "label": "一句话定义",
+          "sub": "PRICE DISCRIMINATION"
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "价格歧视",
-          "at": 0
+          "box": "title",
+          "font": "song",
+          "textfx": "gradient",
+          "size": 140,
+          "delay": 164
         },
         {
           "type": "h",
           "text": "同一个商品或服务",
-          "at": 0,
-          "delay": 90
+          "box": "def",
+          "size": 64,
+          "delay": 263
         },
         {
           "type": "h",
-          "text": "不同的人、数量、场合",
-          "at": 0,
-          "delay": 180
+          "text": "对不同的人、数量、场合",
+          "box": "def",
+          "size": 64,
+          "delay": 306
         },
         {
           "type": "h",
-          "text": "收不同的价",
-          "at": 0,
-          "delay": 270
+          "text": "收**不同的价**",
+          "box": "def",
+          "size": 64,
+          "delay": 422
         }
-      ],
-      "box": "TW",
-      "grad": "top",
-      "ambience": "商场"
+      ]
     },
     {
       "id": "same",
-      "name": "关键一：卖的是同一种东西-或者实质上",
+      "name": "关键一：卖的是同一种东西，或者实质上一样",
       "photo": "S02",
       "move": "in",
+      "origin": "BC",
+      "grad": "top",
       "items": [
         {
           "type": "h",
           "text": "① 同一样东西",
-          "at": 0
+          "delay": 66
         },
         {
-          "type": "h",
+          "type": "t",
           "text": "或者实质上一样",
-          "at": 0,
-          "delay": 90
+          "delay": 151
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "cost",
       "name": "关键二：价差不能用成本解释",
       "photo": "S02",
-      "move": "in",
+      "move": "out",
+      "origin": "BR",
+      "grad": "top",
       "items": [
         {
           "type": "h",
-          "text": "② 价差，不能用成本解释",
-          "at": 0
+          "text": "② 价差，不能用**成本**解释",
+          "delay": 6
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "series",
-      "name": "栏目卡：第-11-个-价格歧视",
+      "name": "栏目卡：第 11 个，价格歧视",
+      "type": "series",
+      "num": 11,
+      "title": "价格歧视",
+      "tagline": "商家怎么知道你心里的价",
       "photo": "S01",
-      "move": "in",
+      "move": "out",
+      "origin": "MC",
+      "blur": 4,
+      "dim": 0.35,
+      "grad": "none",
+      "box": "TW",
+      "boxes": {
+        "en": {
+          "x": 90,
+          "y": 620,
+          "w": 1740,
+          "align": "center"
+        }
+      },
       "items": [
         {
-          "type": "h",
-          "text": "11 价格歧视",
-          "at": 0
-        },
-        {
-          "type": "h",
+          "type": "t",
           "text": "PRICE DISCRIMINATION",
-          "at": 0,
-          "delay": 90
-        },
-        {
-          "type": "h",
-          "text": "商家怎么知道你心里的价",
-          "at": 0,
-          "delay": 180
+          "box": "en",
+          "delay": 60
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "pigou",
-      "name": "庇古-1920《福利经济学》的三级分",
+      "name": "庇古 1920《福利经济学》的三级分法，讲了一百多年",
       "photo": "S03",
-      "move": "in",
+      "move": "still",
+      "grad": "none",
+      "arollSide": "right",
+      "enterSfx": null,
+      "boxes": {
+        "left": {
+          "x": 90,
+          "y": 170,
+          "w": 860,
+          "align": "left"
+        }
+      },
+      "doc": {
+        "pages": [
+          {
+            "src": "ep11/docs/D01.png",
+            "w": 2808,
+            "h": 946
+          },
+          {
+            "src": "ep11/docs/D02.png",
+            "w": 2808,
+            "h": 2178
+          }
+        ],
+        "beats": [
+          {
+            "at": 0,
+            "delay": 0,
+            "page": 0
+          },
+          {
+            "at": 0,
+            "delay": 119,
+            "page": 0,
+            "focus": [
+              0.03,
+              0.25,
+              0.49,
+              0.12
+            ],
+            "hl": [
+              [
+                0.0424,
+                0.2843,
+                0.4562,
+                0.0856
+              ]
+            ]
+          },
+          {
+            "at": 0,
+            "delay": 253,
+            "page": 1,
+            "focus": [
+              0.039,
+              0.4706,
+              0.4238,
+              0.0643
+            ],
+            "hl": [
+              [
+                0.8511,
+                0.4408,
+                0.0666,
+                0.0294
+              ],
+              [
+                0.041,
+                0.4725,
+                0.3554,
+                0.0294
+              ],
+              [
+                0.0417,
+                0.5041,
+                0.4195,
+                0.0294
+              ]
+            ]
+          }
+        ]
+      },
       "items": [
         {
-          "type": "h",
-          "text": "庇古 · 1920",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "《福利经济学》",
-          "at": 0,
-          "delay": 90
+          "type": "custom",
+          "name": "doc"
         },
         {
           "type": "h",
           "text": "三级价格歧视",
-          "at": 0,
-          "delay": 180
+          "box": "left",
+          "delay": 24
+        },
+        {
+          "type": "h",
+          "text": "庇古 · 1920",
+          "box": "left",
+          "delay": 119
+        },
+        {
+          "type": "t",
+          "text": "《福利经济学》",
+          "box": "left",
+          "delay": 166
         },
         {
           "type": "h",
           "text": "一百多年，教科书还在用",
-          "at": 0,
-          "delay": 270
+          "box": "left",
+          "size": 72,
+          "delay": 269
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "core",
-      "name": "难点不是想多收钱-是怎么知道你心里那",
+      "name": "难点不是想多收钱，是怎么知道你心里那个价；三级对应三种信息来源",
       "photo": "S03",
       "move": "in",
+      "origin": "MC",
+      "grad": "top",
+      "boxes": {
+        "ans": {
+          "x": 510,
+          "y": 330,
+          "w": 900,
+          "align": "center",
+          "card": "solid",
+          "cardW": 900
+        },
+        "src": {
+          "x": 510,
+          "y": 330,
+          "w": 900,
+          "align": "left",
+          "card": "tab",
+          "cardW": 900,
+          "label": "三种信息来源"
+        }
+      },
       "items": [
+        {
+          "type": "t",
+          "text": "价格歧视的关键难点",
+          "delay": 327,
+          "until": 0,
+          "untilDelay": 422
+        },
         {
           "type": "h",
           "text": "想多收钱",
-          "at": 0
+          "color": "dim",
+          "delay": 352,
+          "until": 0,
+          "untilDelay": 422
+        },
+        {
+          "type": "h",
+          "text": "~~想多收钱~~",
+          "color": "dim",
+          "delay": 422,
+          "until": 1
         },
         {
           "type": "h",
           "text": "怎么知道你心里那个价",
-          "at": 1
+          "box": "ans",
+          "size": 72,
+          "textfx": "reveal",
+          "delay": 432,
+          "until": 1,
+          "sfx": "impact"
         },
         {
           "type": "h",
           "text": "一级 · 认识你",
+          "box": "src",
+          "size": 60,
           "at": 1,
-          "delay": 90
+          "delay": 12
         },
         {
           "type": "h",
           "text": "二级 · 让你自己挑",
+          "box": "src",
+          "size": 60,
           "at": 1,
-          "delay": 180
+          "delay": 30
         },
         {
           "type": "h",
           "text": "三级 · 看你是哪群人",
+          "box": "src",
+          "size": 60,
           "at": 1,
-          "delay": 270
+          "delay": 48
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "first",
-      "name": "第一级：认识你-一个人一个价；菜市场",
+      "name": "第一级：认识你，一个人一个价；菜市场砍价、拍卖、大数据杀熟",
       "photo": "S04",
       "move": "in",
+      "origin": "BC",
+      "grad": "top",
+      "boxes": {
+        "lv": {
+          "x": 510,
+          "y": 200,
+          "w": 900,
+          "align": "left",
+          "card": "notch",
+          "cardW": 900,
+          "label": "第一级 · 认识你"
+        },
+        "row": {
+          "x": 90,
+          "y": 280,
+          "w": 1740,
+          "align": "center"
+        },
+        "end": {
+          "x": 90,
+          "y": 700,
+          "w": 1740,
+          "align": "center"
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "知道你最多肯出多少",
-          "at": 0
+          "box": "lv",
+          "size": 64,
+          "delay": 97,
+          "until": 1
         },
         {
           "type": "h",
-          "text": "一个人，一个价",
-          "at": 1
+          "text": "一个人，**一个价**",
+          "box": "lv",
+          "size": 64,
+          "delay": 170,
+          "until": 1
         },
         {
-          "type": "h",
-          "text": "菜市场砍价",
+          "type": "photorow",
+          "box": "row",
+          "w": 400,
           "at": 1,
-          "delay": 90
+          "cards": [
+            {
+              "img": "C01",
+              "title": "菜市场砍价",
+              "delay": 4
+            },
+            {
+              "img": "C02",
+              "title": "拍卖",
+              "delay": 61
+            },
+            {
+              "img": "C03",
+              "title": "大数据杀熟",
+              "delay": 97
+            }
+          ]
         },
         {
           "type": "h",
-          "text": "拍卖",
+          "text": "按你心里的最高价成交",
+          "box": "end",
+          "size": 64,
           "at": 1,
-          "delay": 180
-        },
-        {
-          "type": "h",
-          "text": "大数据杀熟",
-          "at": 1,
-          "delay": 270
+          "delay": 173
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "second",
-      "name": "第二级：不认识你-摆几个版本让你自己",
+      "name": "第二级：不认识你，摆几个版本让你自己挑；第二件半价、专业版和普通版、三种舱位",
       "photo": "S05",
       "move": "in",
+      "origin": "MC",
+      "grad": "top",
+      "boxes": {
+        "lv": {
+          "x": 510,
+          "y": 200,
+          "w": 900,
+          "align": "left",
+          "card": "notch",
+          "cardW": 900,
+          "label": "第二级 · 让你自己挑"
+        },
+        "row": {
+          "x": 90,
+          "y": 280,
+          "w": 1740,
+          "align": "center"
+        },
+        "end": {
+          "x": 90,
+          "y": 700,
+          "w": 1740,
+          "align": "center"
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "不认识你，就摆几个版本",
-          "at": 0
+          "box": "lv",
+          "size": 64,
+          "delay": 86,
+          "until": 1
         },
         {
           "type": "h",
-          "text": "挑哪个，就暴露了你",
-          "at": 1
+          "text": "挑哪个，就**暴露了你**",
+          "box": "lv",
+          "size": 64,
+          "delay": 123,
+          "until": 1
         },
         {
-          "type": "h",
-          "text": "第二件半价",
+          "type": "photorow",
+          "box": "row",
+          "w": 400,
           "at": 1,
-          "delay": 90
+          "cards": [
+            {
+              "img": "C04",
+              "title": "第二件半价",
+              "delay": 4
+            },
+            {
+              "img": "C05",
+              "title": "专业版 · 普通版",
+              "delay": 64
+            },
+            {
+              "img": "C06",
+              "title": "三种舱位",
+              "delay": 174
+            }
+          ]
         },
         {
           "type": "h",
-          "text": "专业版 · 普通版",
+          "text": "都是价格歧视",
+          "box": "end",
+          "size": 64,
           "at": 1,
-          "delay": 180
-        },
-        {
-          "type": "h",
-          "text": "三种舱位",
-          "at": 1,
-          "delay": 270
+          "delay": 320
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "third",
-      "name": "第三级：按看得出来的身份分群；学生-",
+      "name": "第三级：按看得出来的身份分群；学生、成人、老年票和本地人优惠；三种都是价格歧视",
       "photo": "S06",
-      "move": "in",
+      "zoom": [
+        1.14,
+        1.2
+      ],
+      "origin": "MR",
+      "grad": "top",
+      "boxes": {
+        "lv": {
+          "x": 510,
+          "y": 200,
+          "w": 900,
+          "align": "left",
+          "card": "notch",
+          "cardW": 900,
+          "label": "第三级 · 看你是哪群人"
+        },
+        "end": {
+          "x": 90,
+          "y": 400,
+          "w": 1740,
+          "align": "center"
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "按看得出来的身份分群",
-          "at": 0
+          "box": "lv",
+          "size": 64,
+          "delay": 53,
+          "until": 1
         },
         {
           "type": "h",
           "text": "学生票 · 成人票 · 老年票",
-          "at": 1
+          "box": "lv",
+          "size": 64,
+          "delay": 163,
+          "until": 1
         },
         {
           "type": "h",
           "text": "本地人优惠",
-          "at": 1,
-          "delay": 90
+          "box": "lv",
+          "size": 64,
+          "delay": 363,
+          "until": 1
         },
         {
           "type": "h",
-          "text": "三种，都是价格歧视",
+          "text": "三种，**都是价格歧视**",
+          "box": "end",
+          "textfx": "reveal",
           "at": 1,
-          "delay": 180
+          "delay": 323
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "power",
-      "name": "商家凭什么能这么做：三个条件；条件一",
+      "name": "商家凭什么能这么做：三个条件；条件一，定价权",
       "photo": "S07",
       "move": "in",
+      "origin": "BC",
+      "grad": "top",
+      "boxes": {
+        "c1": {
+          "x": 510,
+          "y": 330,
+          "w": 900,
+          "align": "left",
+          "card": "notch",
+          "cardW": 900,
+          "label": "条件一"
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "三个条件，缺一不可",
-          "at": 0
+          "delay": 157
         },
         {
           "type": "h",
-          "text": "定价权",
-          "at": 1
+          "text": "**定价权**",
+          "box": "c1",
+          "at": 1,
+          "delay": 14
         },
         {
           "type": "h",
           "text": "只有垄断、强势的商家才有",
+          "box": "c1",
+          "size": 60,
           "at": 1,
-          "delay": 90
+          "delay": 145
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "sort",
       "name": "条件二：分得清谁愿意多付",
       "photo": "S08",
       "move": "in",
+      "origin": "BC",
+      "grad": "top",
+      "boxes": {
+        "c2": {
+          "x": 510,
+          "y": 330,
+          "w": 900,
+          "align": "left",
+          "card": "notch",
+          "cardW": 900,
+          "label": "条件二"
+        }
+      },
       "items": [
         {
           "type": "h",
-          "text": "分得清谁愿意多付",
-          "at": 0
+          "text": "分得清**谁愿意多付**",
+          "box": "c2",
+          "delay": 12
         },
         {
           "type": "h",
           "text": "学生证 · 大数据 · 消费记录",
-          "at": 0,
-          "delay": 90
+          "box": "c2",
+          "size": 60,
+          "delay": 120
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "resale",
-      "name": "条件三：防得住转卖-配庇古原文",
+      "name": "条件三：防得住转卖，配庇古原文",
       "photo": "S08",
-      "move": "in",
+      "move": "still",
+      "grad": "none",
+      "arollSide": "right",
+      "enterSfx": null,
+      "boxes": {
+        "left": {
+          "x": 90,
+          "y": 170,
+          "w": 860,
+          "align": "left"
+        }
+      },
+      "doc": {
+        "pages": [
+          {
+            "src": "ep11/docs/D01.png",
+            "w": 2808,
+            "h": 946
+          },
+          {
+            "src": "ep11/docs/D02.png",
+            "w": 2808,
+            "h": 2178
+          }
+        ],
+        "beats": [
+          {
+            "at": 0,
+            "delay": 0,
+            "page": 1,
+            "focus": [
+              0.035,
+              0.05,
+              0.57,
+              0.1
+            ],
+            "hl": [
+              [
+                0.0413,
+                0.0588,
+                0.8775,
+                0.0294
+              ],
+              [
+                0.041,
+                0.0904,
+                0.5509,
+                0.0294
+              ]
+            ]
+          }
+        ]
+      },
       "items": [
+        {
+          "type": "custom",
+          "name": "doc"
+        },
         {
           "type": "h",
           "text": "条件三 · 防得住转卖",
-          "at": 0
+          "box": "left",
+          "size": 72,
+          "delay": 8
         },
         {
           "type": "h",
           "text": "低价买的，没法高价倒卖",
-          "at": 0,
-          "delay": 90
+          "box": "left",
+          "size": 64,
+          "delay": 62
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "rice",
-      "name": "电影票能歧视-大米不能：大米的价谁都",
+      "name": "电影票能歧视，大米不能：大米的价谁都知道",
       "photo": "S09",
       "move": "in",
+      "origin": "BL",
+      "grad": "top",
       "items": [
         {
           "type": "h",
-          "text": "电影票能，大米不能",
-          "at": 0
+          "text": "电影票能，**大米不能**",
+          "delay": 10
         },
         {
-          "type": "h",
+          "type": "t",
           "text": "大米的价，谁都知道",
-          "at": 0,
-          "delay": 90
+          "delay": 112
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "movie",
-      "name": "电影票渠道多-折扣多：《生化危机》3",
+      "name": "电影票渠道多、折扣多：《生化危机》30 多拿到 70 的票",
       "photo": "S10",
       "move": "in",
+      "origin": "BC",
+      "grad": "top",
       "items": [
-        {
-          "type": "h",
-          "text": "¥70 → 30 多",
-          "at": 0
-        },
         {
           "type": "h",
           "text": "渠道 + 折扣，叠在一起",
-          "at": 0,
-          "delay": 90
+          "delay": 122
+        },
+        {
+          "type": "custom",
+          "name": "ticket"
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "ride",
-      "name": "三个生活例子；打车：按消费记录报价-",
+      "name": "三个生活例子；打车：按消费记录报价，数字时代的一级",
       "photo": "S11",
       "move": "in",
+      "origin": "BC",
+      "grad": "top",
+      "ambience": "街道夜晚",
+      "boxes": {
+        "eg": {
+          "x": 510,
+          "y": 300,
+          "w": 900,
+          "align": "left",
+          "card": "tab",
+          "cardW": 900,
+          "label": "打车"
+        },
+        "st": {
+          "x": 1180,
+          "y": 560,
+          "w": 300,
+          "align": "left"
+        }
+      },
       "items": [
         {
           "type": "h",
-          "text": "生活里的三个例子",
-          "at": 0
+          "text": "**大数据杀熟**",
+          "box": "eg",
+          "at": 1,
+          "delay": 236
         },
         {
           "type": "h",
           "text": "按你的消费记录报价",
-          "at": 1
-        },
-        {
-          "type": "h",
-          "text": "大数据杀熟",
+          "box": "eg",
+          "size": 60,
           "at": 1,
-          "delay": 90
+          "delay": 305
         },
         {
-          "type": "h",
+          "type": "stamp",
           "text": "一级",
+          "box": "st",
           "at": 1,
-          "delay": 180
+          "delay": 477
         }
-      ],
-      "box": "TW",
-      "grad": "top",
-      "ambience": "街道夜晚"
+      ]
     },
     {
       "id": "software",
-      "name": "软件按版本定价：砍掉几个按钮-便宜一",
+      "name": "软件按版本定价：砍掉几个按钮，便宜一半",
       "photo": "S12",
       "move": "in",
+      "origin": "BC",
+      "grad": "top",
+      "boxes": {
+        "eg": {
+          "x": 510,
+          "y": 300,
+          "w": 900,
+          "align": "left",
+          "card": "tab",
+          "cardW": 900,
+          "label": "假设"
+        },
+        "st": {
+          "x": 1180,
+          "y": 560,
+          "w": 300,
+          "align": "left"
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "功能一样，砍掉几个按钮",
-          "at": 0
+          "box": "eg",
+          "size": 60,
+          "delay": 143
         },
         {
           "type": "h",
-          "text": "价格便宜一半",
-          "at": 0,
-          "delay": 90
+          "text": "价格**便宜一半**",
+          "box": "eg",
+          "delay": 185
         },
         {
-          "type": "h",
+          "type": "stamp",
           "text": "二级",
-          "at": 0,
-          "delay": 180
+          "box": "st",
+          "delay": 257
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "local",
-      "name": "同一个景区本地人半价-凭身份证分群",
+      "name": "同一个景区本地人半价，凭身份证分群",
       "photo": "S06",
-      "move": "in",
+      "zoom": [
+        1.2,
+        1.14
+      ],
+      "origin": "MR",
+      "grad": "top",
+      "boxes": {
+        "eg": {
+          "x": 510,
+          "y": 300,
+          "w": 900,
+          "align": "left",
+          "card": "tab",
+          "cardW": 900,
+          "label": "同一个景区"
+        },
+        "st": {
+          "x": 1180,
+          "y": 560,
+          "w": 300,
+          "align": "left"
+        }
+      },
       "items": [
         {
           "type": "h",
-          "text": "本地人半价",
-          "at": 0
+          "text": "本地人**半价**",
+          "box": "eg",
+          "delay": 14
         },
         {
           "type": "h",
           "text": "凭身份证分群",
-          "at": 0,
-          "delay": 90
+          "box": "eg",
+          "size": 60,
+          "delay": 64
         },
         {
-          "type": "h",
+          "type": "stamp",
           "text": "三级",
-          "at": 0,
-          "delay": 180
+          "box": "st",
+          "delay": 161
         }
-      ],
-      "box": "TW",
-      "grad": "top"
+      ]
     },
     {
       "id": "bye",
-      "name": "收尾：三级各是什么-下期见",
+      "name": "收尾：三级各是什么，下期见",
       "photo": "S01",
       "move": "in",
+      "origin": "BL",
+      "grad": "top",
+      "ambience": "商场",
+      "boxes": {
+        "sum": {
+          "x": 510,
+          "y": 300,
+          "w": 900,
+          "align": "left",
+          "card": "tab",
+          "cardW": 900,
+          "label": "价格歧视 · 三级"
+        }
+      },
       "items": [
         {
           "type": "h",
           "text": "一级 · 认识你",
-          "at": 0
+          "box": "sum",
+          "size": 60,
+          "delay": 12
         },
         {
           "type": "h",
           "text": "二级 · 让你自己挑",
-          "at": 0,
-          "delay": 90
+          "box": "sum",
+          "size": 60,
+          "delay": 30
         },
         {
           "type": "h",
           "text": "三级 · 看你是哪群人",
-          "at": 0,
-          "delay": 180
+          "box": "sum",
+          "size": 60,
+          "delay": 48
         }
-      ],
-      "box": "TW",
-      "grad": "top",
-      "ambience": "商场"
+      ]
     }
   ],
   "style": {
@@ -524,5 +950,60 @@
       "dim": "#B9C3D4"
     },
     "sfx": "sparse"
+  },
+  "aroll": {
+    "src": "ep11/aroll.mp4",
+    "idle": "bubble",
+    "bubbleView": 0.66,
+    "bubbleFaceAt": 0.34,
+    "cues": [
+      {
+        "at": [
+          "0.1",
+          "0.2"
+        ],
+        "mode": "full",
+        "max": 5.0
+      },
+      {
+        "at": [
+          "1.2",
+          "1.3"
+        ],
+        "mode": "full",
+        "max": 10.0
+      },
+      {
+        "at": [
+          "1.6",
+          "1.7"
+        ],
+        "mode": "full",
+        "max": 2.5
+      },
+      {
+        "at": [
+          "1.9",
+          "2.0"
+        ],
+        "mode": "full",
+        "max": 9.0
+      },
+      {
+        "at": [
+          "2.1",
+          "2.2"
+        ],
+        "mode": "full",
+        "max": 5.0
+      },
+      {
+        "at": [
+          "3.1",
+          "3.2"
+        ],
+        "mode": "full"
+      }
+    ]
   }
 }
