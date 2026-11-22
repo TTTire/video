@@ -1,0 +1,475 @@
+1
+00:00:00,196 --> 00:00:00,836
+哈喽大家好
+Hi everyone
+
+2
+00:00:01,326 --> 00:00:04,896
+本期我们一起来学习一下价格歧视这个名词
+This episode we're learning a term: price discrimination
+
+3
+00:00:05,475 --> 00:00:08,385
+价格歧视这个名词一句话的定义呢是
+The one-line definition of price discrimination is
+
+4
+00:00:08,770 --> 00:00:12,650
+同一个商品或服务对于不同的人的数量
+the same product or service, sold to different people, in different quantities
+
+5
+00:00:13,029 --> 00:00:16,119
+或者不同的场合去收取不同的价格
+or on different occasions, at different prices
+
+6
+00:00:16,475 --> 00:00:19,795
+而价格的差异并不是因为它们的成本不同
+and the price gap isn't because their costs differ
+
+7
+00:00:20,168 --> 00:00:21,978
+这里有两个关键的节点
+There are two key points here
+
+8
+00:00:22,379 --> 00:00:24,849
+第一 卖的是同一种东西
+First, it's the same thing being sold
+
+9
+00:00:25,189 --> 00:00:27,199
+或者是本质上相同的一样东西
+or essentially the same thing
+
+10
+00:00:27,999 --> 00:00:31,161
+第二是 价差不能用成本去解释
+Second, the price gap can't be explained by cost
+
+11
+00:00:31,486 --> 00:00:34,456
+不是因为成本升值而导致价格差异
+It's not that costs went up and so the price changed
+
+12
+00:00:35,196 --> 00:00:36,310
+这里是像素呼吸的
+This is Pixel Breath's
+
+13
+00:00:36,310 --> 00:00:38,646
+100个经济学原理第11个
+100 Principles of Economics, number 11
+
+14
+00:00:39,246 --> 00:00:40,066
+价格歧视
+Price discrimination
+
+15
+00:00:41,290 --> 00:00:44,360
+价格歧视呢 其实有三种不同的形式
+Price discrimination actually comes in three forms
+
+16
+00:00:44,716 --> 00:00:45,849
+这种三级的分法呢
+This three-degree classification
+
+17
+00:00:45,950 --> 00:00:50,346
+是庇古在1920年福利经济学里提出来的
+was proposed by Pigou in The Economics of Welfare in 1920
+
+18
+00:00:50,696 --> 00:00:51,431
+讲了一百多年
+It's been taught for over a hundred years
+
+19
+00:00:51,496 --> 00:00:54,926
+教科书依旧在用这个非常经典的分法
+and textbooks still use this classic framework
+
+20
+00:00:55,325 --> 00:00:57,685
+它有用的原因不是因为传统
+It's useful not because of tradition
+
+21
+00:00:58,245 --> 00:01:02,035
+而是它切中的是价格歧视中最核心的那个问题
+but because it hits the core question of price discrimination
+
+22
+00:01:02,661 --> 00:01:05,111
+商家为什么知道该收谁的钱
+how does a seller know whom to charge more?
+
+23
+00:01:05,467 --> 00:01:09,007
+价格歧视的关键难点不是我想多收钱
+The hard part isn't wanting to charge more
+
+24
+00:01:09,409 --> 00:01:12,659
+而是我怎么知道用户心里的那个价格呢
+it's how do I know the price in the customer's head?
+
+25
+00:01:13,011 --> 00:01:16,231
+这三级正好对应三种不同的信息来源
+The three degrees match three different sources of information
+
+26
+00:01:16,951 --> 00:01:17,881
+首先第一级是
+The first degree is
+
+27
+00:01:18,233 --> 00:01:19,783
+商家认识你这个人
+the seller knows you personally
+
+28
+00:01:20,203 --> 00:01:22,003
+知道你最多愿意出多少
+knows the most you're willing to pay
+
+29
+00:01:22,623 --> 00:01:24,623
+所以会按照人头去定价
+so it sets a price per head
+
+30
+00:01:24,993 --> 00:01:29,933
+对每个顾客去收取他愿意付的最高价
+charging each customer the highest price they'd pay
+
+31
+00:01:30,306 --> 00:01:31,976
+比如 菜市场的砍价
+For example, haggling at the market
+
+32
+00:01:32,328 --> 00:01:35,059
+或者拍卖 再或者大数据杀熟
+or auctions, or big-data price gouging
+
+33
+00:01:35,394 --> 00:01:39,267
+这都是卖家期望用买家心里的最高价
+In all of these, the seller hopes to close the deal
+
+34
+00:01:39,479 --> 00:01:40,759
+去进行一次交易
+at the top price in the buyer's mind
+
+35
+00:01:41,131 --> 00:01:43,111
+第二级是 商家不认识你
+The second degree: the seller doesn't know you
+
+36
+00:01:43,411 --> 00:01:44,941
+所以只好摆出几个版本
+so it has to lay out several versions
+
+37
+00:01:45,231 --> 00:01:47,281
+去让你暴露自己的意图
+to make you reveal your intent
+
+38
+00:01:47,635 --> 00:01:49,215
+比如 第二件半价
+For example, second item half price
+
+39
+00:01:49,755 --> 00:01:53,074
+再比如 软件会区分为专业版和普通版
+or software split into Pro and Standard editions
+
+40
+00:01:53,422 --> 00:01:55,772
+同一架飞机上区分了经济舱
+or the same plane divided into economy
+
+41
+00:01:56,012 --> 00:01:57,282
+商务舱和头等舱
+business and first class
+
+42
+00:01:57,642 --> 00:02:00,142
+其实 本质上都是一种价格歧视
+At heart, these are all price discrimination
+
+43
+00:02:00,504 --> 00:02:01,894
+最后一级是按照
+The last degree sorts people
+
+44
+00:02:02,260 --> 00:02:05,280
+可识别的群体特征进行一次区分
+by identifiable group characteristics
+
+45
+00:02:05,920 --> 00:02:08,401
+比如同一个景区分为学生票
+For example, the same scenic spot has student tickets
+
+46
+00:02:08,971 --> 00:02:10,360
+成人票和老年票
+adult tickets and senior tickets
+
+47
+00:02:10,694 --> 00:02:12,400
+而不同的地方性景区
+and some local attractions
+
+48
+00:02:12,611 --> 00:02:14,802
+还会存在本地人门票优惠
+also offer discounts to residents
+
+49
+00:02:15,015 --> 00:02:17,839
+当然它们都是针对于不同的人群
+All of these target different groups
+
+50
+00:02:17,839 --> 00:02:20,335
+去进行不同的价格收取
+and charge them different prices
+
+51
+00:02:20,867 --> 00:02:22,367
+这个因素会有很多
+There are many factors behind this
+
+52
+00:02:22,617 --> 00:02:24,437
+比如会有国家的支持等等
+such as government support
+
+53
+00:02:24,764 --> 00:02:26,359
+当然 以上三种方式
+Of course, all three
+
+54
+00:02:26,359 --> 00:02:30,224
+其实都是价格歧视的不同体现
+are different forms of price discrimination
+
+55
+00:02:31,425 --> 00:02:33,745
+那么这里我们要想的其实就是
+So what we need to ask here is
+
+56
+00:02:34,185 --> 00:02:36,015
+为什么商家可以这样做呢
+why can sellers do this?
+
+57
+00:02:36,675 --> 00:02:39,995
+其实 有三点决定了商家拥有这样的权利
+Three things give sellers this power
+
+58
+00:02:40,362 --> 00:02:41,606
+第一是 它有定价权
+First, pricing power
+
+59
+00:02:41,606 --> 00:02:44,852
+这部分不是所有的竞争市场都可以做的
+Not every competitive market allows this
+
+60
+00:02:45,195 --> 00:02:47,331
+只有垄断或者一些强势的商家
+Only monopolies or some strong sellers
+
+61
+00:02:47,331 --> 00:02:50,425
+才可以进行一些定价权上的操作
+can play with pricing like that
+
+62
+00:02:50,781 --> 00:02:54,351
+第二 它可以区分顾客谁愿意多付一些价钱
+Second, it can tell which customers will pay more
+
+63
+00:02:54,771 --> 00:02:56,777
+比如学生证 比如大数据杀熟
+through a student ID, through big data
+
+64
+00:02:56,854 --> 00:02:58,321
+比如消费记录
+through purchase history
+
+65
+00:02:58,671 --> 00:03:00,391
+第三是防止转卖
+Third, it prevents resale
+
+66
+00:03:00,743 --> 00:03:03,973
+低价买到的人没有办法再进行高价的倒卖
+Whoever bought cheap can't resell at a higher price
+
+67
+00:03:04,393 --> 00:03:05,783
+所以电影票可以歧视
+So movie tickets can be price-discriminated
+
+68
+00:03:06,033 --> 00:03:07,493
+但是大米却不能歧视
+but rice can't
+
+69
+00:03:08,123 --> 00:03:10,240
+因为大米大家的价格都是透明的
+because everyone knows the price of rice
+
+70
+00:03:10,317 --> 00:03:13,073
+即使再低也不会低到哪去
+and even the cheapest won't be much cheaper
+
+71
+00:03:13,436 --> 00:03:17,116
+但是电影票就有不同的渠道以及不同的折扣
+But movie tickets have different channels and different discounts
+
+72
+00:03:17,506 --> 00:03:18,616
+叠加在一起之后
+and once you stack them
+
+73
+00:03:18,926 --> 00:03:20,956
+有可能会买到一个非常低的价格
+you might get a very low price
+
+74
+00:03:21,492 --> 00:03:23,742
+像上上周我们一起去看的生化危机
+Like Resident Evil, which we saw together two weeks ago
+
+75
+00:03:23,742 --> 00:03:26,892
+就以30多的价格拿到了70块钱的电影票
+I got a 70-yuan ticket for just 30-something
+
+76
+00:03:27,312 --> 00:03:30,082
+这就是一个非常典型的价格歧视
+That's a textbook case of price discrimination
+
+77
+00:03:31,306 --> 00:03:34,296
+接下来我们会举一些简单的生活中的例子
+Next, let's look at some simple everyday examples
+
+78
+00:03:34,659 --> 00:03:36,409
+去一起看一下价格歧视
+of price discrimination
+
+79
+00:03:36,762 --> 00:03:38,300
+最简单的莫不过于
+The simplest one is
+
+80
+00:03:38,300 --> 00:03:41,911
+安卓手机打车和iOS手机打车
+ride-hailing on an Android phone versus on an iPhone
+
+81
+00:03:41,911 --> 00:03:43,712
+在定价上是不一样的
+the pricing isn't the same
+
+82
+00:03:44,312 --> 00:03:46,042
+这叫做大数据杀熟
+This is called big-data price gouging
+
+83
+00:03:46,612 --> 00:03:47,935
+App会根据你的消费
+The app looks at your spending
+
+84
+00:03:47,935 --> 00:03:51,502
+给新老用户或者给苹果用户更高的价格
+and quotes new or old users, or iPhone users, a higher price
+
+85
+00:03:51,876 --> 00:03:54,266
+这是数字时代的一级价格歧视
+This is first-degree price discrimination in the digital age
+
+86
+00:03:54,644 --> 00:03:57,644
+同一个软件按照不同的版本进行定价
+The same software priced by edition
+
+87
+00:03:57,904 --> 00:03:59,144
+比如它们功能都一样
+the features are all the same
+
+88
+00:03:59,394 --> 00:04:00,514
+但砍掉几个按钮
+but cut a few buttons
+
+89
+00:04:00,814 --> 00:04:02,004
+价格就会便宜一半
+and the price drops by half
+
+90
+00:04:02,394 --> 00:04:04,314
+这其实是二级歧视
+That's second-degree discrimination
+
+91
+00:04:04,693 --> 00:04:06,774
+同一个景区 本地人半价
+The same scenic spot, half price for locals
+
+92
+00:04:06,832 --> 00:04:08,913
+而用身份证去区分不同的群体
+using ID cards to separate the groups
+
+93
+00:04:09,253 --> 00:04:11,663
+这其实是三级价格歧视
+That's third-degree price discrimination
+
+94
+00:04:12,027 --> 00:04:16,117
+本期带大家一起去见识了价格歧视这个名词
+This episode introduced you to the term price discrimination
+
+95
+00:04:16,486 --> 00:04:17,926
+那么我们下期再见
+See you next time
+
