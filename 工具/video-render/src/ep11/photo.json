@@ -1,645 +1,510 @@
 {
   "ep": "ep11",
-  "badge": "",
+  "badge": "11",
   "series": "100 个经济学原理",
   "photos": "ep11/photos",
-  "chapterPhoto": "S03",
+  "chapterPhoto": "S01",
   "scenes": [
     {
-      "id": "queue",
-      "name": "2024-08-31 绿洲复出开票，几十万人在队列里",
+      "id": "define",
+      "name": "一句话定义：同一样东西-对不同的人-",
       "photo": "S01",
       "move": "in",
-      "origin": "BC",
-      "box": "MC",
-      "grad": "all",
-      "card": "tab",
-      "label": "2024 年 8 月 31 日 · 英国",
       "items": [
-        {
-          "type": "h",
-          "text": "绿洲复出开票",
-          "at": 0
-        },
-        {
-          "type": "t",
-          "text": "几十万人在购票队列里",
-          "at": 0,
-          "delay": 90
-        }
-      ],
-      "ambience": "街道夜晚"
-    },
-    {
-      "id": "surge",
-      "name": "同样的站票：135 → 355，什么都没变",
-      "photo": "S02",
-      "move": "in",
-      "origin": "BC",
-      "grad": "all",
-      "items": [
-        {
-          "type": "odometer",
-          "from": "£135",
-          "to": "£355",
-          "label": "官方站票",
-          "at": 0,
-          "delay": 30,
-          "color": "coral"
-        },
-        {
-          "type": "h",
-          "text": "同样的站票",
-          "at": 0,
-          "delay": 150
-        },
-        {
-          "type": "t",
-          "text": "座位没换，服务没加",
-          "at": 0,
-          "delay": 220
-        }
-      ]
-    },
-    {
-      "id": "explain",
-      "name": "票务网站的解释只有一句话",
-      "photo": "S02",
-      "move": "out",
-      "origin": "BC",
-      "box": "MC",
-      "grad": "all",
-      "card": "paper",
-      "items": [
-        {
-          "type": "h",
-          "text": "票价可以是固定的",
-          "at": 0,
-          "quote": true
-        },
-        {
-          "type": "h",
-          "text": "也可以是基于市场需求的",
-          "at": 0,
-          "delay": 90,
-          "quote": true
-        }
-      ]
-    },
-    {
-      "id": "doubt",
-      "name": "第一反应：趁火打劫？",
-      "photo": "S01",
-      "move": "in",
-      "origin": "BC",
-      "grad": "all",
-      "items": [
-        {
-          "type": "h",
-          "text": "趁火打劫吧？",
-          "at": 0,
-          "size": 96
-        }
-      ],
-      "ambience": "街道夜晚"
-    },
-    {
-      "id": "student",
-      "name": "同一套逻辑藏在学生票里",
-      "photo": "S04",
-      "move": "in",
-      "origin": "BL",
-      "grad": "all",
-      "items": [
-        {
-          "type": "h",
-          "text": "同一套逻辑，藏在学生票里",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "国铁刚把它改得更“讲究”",
-          "at": 0,
-          "delay": 90
-        }
-      ]
-    },
-    {
-      "id": "title",
-      "name": "片头",
-      "photo": "S01",
-      "move": "out",
-      "origin": "BC",
-      "grad": "all",
-      "items": [
-        {
-          "type": "h",
-          "text": "同一张票凭什么卖两个价",
-          "at": 0
-        }
-      ],
-      "ambience": "街道夜晚"
-    },
-    {
-      "id": "cost",
-      "name": "旧判断：差价 = 成本差",
-      "photo": "S05",
-      "move": "in",
-      "origin": "BC",
-      "grad": "all",
-      "items": [
-        {
-          "type": "h",
-          "text": "一等座和二等座不一样",
-          "at": 0
-        },
-        {
-          "type": "t",
-          "text": "这部分没错，但只是小头",
-          "at": 0,
-          "delay": 90
-        }
-      ]
-    },
-    {
-      "id": "same",
-      "name": "Oasis 那张票：220 英镑没买来任何服务",
-      "photo": "S03",
-      "move": "in",
-      "origin": "BC",
-      "grad": "all",
-      "items": [
-        {
-          "type": "h",
-          "text": "同一个站位、同一场演出",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "多出来的 220 英镑",
-          "at": 0,
-          "delay": 90,
-          "color": "coral"
-        },
-        {
-          "type": "t",
-          "text": "没有一分钱对应多出来的服务",
-          "at": 0,
-          "delay": 180
-        }
-      ]
-    },
-    {
-      "id": "twoprice",
-      "name": "排队的和刚进队的，两个价",
-      "photo": "S03",
-      "move": "out",
-      "origin": "BC",
-      "grad": "all",
-      "items": [
-        {
-          "type": "h",
-          "text": "排了几小时的人，和刚进队的人",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "看到的是两个价",
-          "at": 0,
-          "delay": 90,
-          "color": "gold"
-        }
-      ]
-    },
-    {
-      "id": "term",
-      "name": "术语：价格歧视",
-      "photo": "S01",
-      "move": "still",
-      "origin": "BC",
-      "blur": 10,
-      "dim": 0.55,
-      "center": true,
-      "items": [
-        {
-          "type": "t",
-          "text": "PRICE DISCRIMINATION",
-          "at": 0
-        },
         {
           "type": "h",
           "text": "价格歧视",
-          "at": 0,
-          "delay": 60,
-          "size": 140,
-          "font": "song",
-          "textfx": "gradient",
-          "sfx": "impact"
-        },
-        {
-          "type": "h",
-          "text": "同一样东西，对不同的人收不同的价",
-          "at": 0,
-          "delay": 180
-        }
-      ]
-    },
-    {
-      "id": "rail",
-      "name": "学生票新规：七五折 / 四折 / 五折 / 4 次",
-      "photo": "S04",
-      "move": "out",
-      "origin": "BL",
-      "box": "MC",
-      "grad": "all",
-      "card": "tab",
-      "label": "国铁 · 2025 年 8 月新规",
-      "items": [
-        {
-          "type": "h",
-          "text": "动车组：执行票价七五折",
-          "at": 0,
-          "color": "teal"
-        },
-        {
-          "type": "h",
-          "text": "最低到公布票价四折",
-          "at": 0,
-          "delay": 90,
-          "color": "teal"
-        },
-        {
-          "type": "t",
-          "text": "普速硬座五折 · 每学年 4 次",
-          "at": 0,
-          "delay": 180
-        }
-      ]
-    },
-    {
-      "id": "why",
-      "name": "凭什么？凭一张学生证",
-      "photo": "S04",
-      "move": "in",
-      "origin": "BL",
-      "grad": "all",
-      "items": [
-        {
-          "type": "h",
-          "text": "凭一张学生证",
           "at": 0
         },
         {
           "type": "h",
-          "text": "卖家不知道你愿意出多少",
+          "text": "同一个商品或服务",
           "at": 0,
           "delay": 90
         },
         {
-          "type": "t",
-          "text": "它让你自己亮出来",
-          "at": 0,
-          "delay": 180,
-          "color": "gold"
-        }
-      ]
-    },
-    {
-      "id": "wish",
-      "name": "它最想要你心里那个最高价",
-      "photo": "S06",
-      "move": "in",
-      "origin": "BC",
-      "grad": "all",
-      "items": [
-        {
           "type": "h",
-          "text": "出得起 5000 的收 5000",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "出得起 200 的收 200",
-          "at": 0,
-          "delay": 90,
-          "color": "dim"
-        }
-      ]
-    },
-    {
-      "id": "readmind",
-      "name": "读不了心，印一个价两头不讨好",
-      "photo": "S06",
-      "move": "out",
-      "origin": "BC",
-      "grad": "all",
-      "items": [
-        {
-          "type": "h",
-          "text": "可它读不了心",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "价高了劝退别人，价低了少赚你的",
-          "at": 0,
-          "delay": 90
-        }
-      ]
-    },
-    {
-      "id": "question",
-      "name": "设题让你自己答：学生证是一道题",
-      "photo": "S05",
-      "move": "out",
-      "origin": "BC",
-      "box": "MC",
-      "grad": "all",
-      "card": "notch",
-      "label": "设题",
-      "sub": "SELF-SELECTION",
-      "items": [
-        {
-          "type": "h",
-          "text": "学生证是一道题",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "掏出来的那一刻，等于在说付不起全价",
-          "at": 0,
-          "delay": 90
-        },
-        {
-          "type": "t",
-          "text": "假证的成本，比省下的票钱高",
+          "text": "不同的人、数量、场合",
           "at": 0,
           "delay": 180
-        }
-      ]
-    },
-    {
-      "id": "queue2",
-      "name": "排队是另一道题：等到最后的更想要",
-      "photo": "S01",
-      "move": "out",
-      "origin": "BC",
-      "box": "MC",
-      "grad": "all",
-      "card": "tab",
-      "label": "BBC · 排队 6 小时",
-      "items": [
-        {
-          "type": "h",
-          "text": "愿意等 6 小时的人，比点开就走的人更想要",
-          "at": 0
         },
         {
           "type": "h",
-          "text": "355 那批票，卖给等到最后的人",
-          "at": 0,
-          "delay": 90,
-          "color": "coral"
-        }
-      ],
-      "ambience": "街道夜晚"
-    },
-    {
-      "id": "tiers",
-      "name": "订阅档位也是题：ChatGPT 三档",
-      "photo": "S06",
-      "move": "in",
-      "origin": "BC",
-      "box": "MC",
-      "grad": "all",
-      "card": "tab",
-      "label": "ChatGPT · 同一个模型",
-      "items": [
-        {
-          "type": "h",
-          "text": "免费",
-          "at": 0,
-          "color": "dim"
-        },
-        {
-          "type": "h",
-          "text": "Plus $20",
-          "at": 0,
-          "delay": 90,
-          "color": "teal"
-        },
-        {
-          "type": "h",
-          "text": "Pro $200",
-          "at": 0,
-          "delay": 180,
-          "color": "coral"
-        },
-        {
-          "type": "t",
-          "text": "档位替你说了收入",
+          "text": "收不同的价",
           "at": 0,
           "delay": 270
         }
-      ]
+      ],
+      "box": "TW",
+      "grad": "top",
+      "ambience": "商场"
     },
     {
-      "id": "three",
-      "name": "三级分类一句话：按人 / 按量 / 按“最想要”",
-      "photo": "S06",
-      "move": "out",
-      "origin": "BC",
-      "box": "MC",
-      "grad": "all",
-      "card": "notch",
-      "label": "教科书三级",
-      "sub": "PIGOU 1920",
-      "items": [
-        {
-          "type": "h",
-          "text": "按你是谁 · 按买多少 · 按你有多想要",
-          "at": 0
-        },
-        {
-          "type": "t",
-          "text": "同一句话：读不了心，就让你自己填",
-          "at": 0,
-          "delay": 120
-        }
-      ]
-    },
-    {
-      "id": "quiz",
-      "name": "落点：不是偷看手机，是光明正大出题",
-      "photo": "S01",
+      "id": "same",
+      "name": "关键一：卖的是同一种东西-或者实质上",
+      "photo": "S02",
       "move": "in",
-      "origin": "BC",
-      "grad": "all",
       "items": [
         {
           "type": "h",
-          "text": "大半不是偷看你的手机",
+          "text": "① 同一样东西",
           "at": 0
         },
         {
           "type": "h",
-          "text": "是光明正大地出题",
+          "text": "或者实质上一样",
           "at": 0,
-          "delay": 90,
-          "color": "gold"
+          "delay": 90
         }
       ],
-      "ambience": "街道夜晚"
+      "box": "TW",
+      "grad": "top"
     },
     {
-      "id": "premise",
-      "name": "边界：题目摆明面、答案能反悔；Oasis 被整改",
-      "photo": "S04",
+      "id": "cost",
+      "name": "关键二：价差不能用成本解释",
+      "photo": "S02",
       "move": "in",
-      "origin": "BL",
-      "grad": "all",
       "items": [
         {
           "type": "h",
-          "text": "题目要摆在明面上，答案要能反悔",
+          "text": "② 价差，不能用成本解释",
+          "at": 0
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "series",
+      "name": "栏目卡：第-11-个-价格歧视",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "11 价格歧视",
           "at": 0
         },
         {
-          "type": "t",
-          "text": "学生票：白纸黑字，退票返还次数",
+          "type": "h",
+          "text": "PRICE DISCRIMINATION",
           "at": 0,
           "delay": 90
         },
         {
-          "type": "t",
-          "text": "查了一年，票务公司答应整改",
+          "type": "h",
+          "text": "商家怎么知道你心里的价",
           "at": 0,
           "delay": 180
         }
-      ]
+      ],
+      "box": "TW",
+      "grad": "top"
     },
     {
-      "id": "kill",
-      "name": "杀熟：用你的消费记录，超四成遇到过",
-      "photo": "S07",
-      "move": "in",
-      "origin": "BC",
-      "grad": "all",
-      "items": [
-        {
-          "type": "h",
-          "text": "杀熟：题目换成了你手机里的消费记录",
-          "at": 0
-        },
-        {
-          "type": "h",
-          "text": "超四成遇到过“大数据差异化营销”",
-          "at": 0,
-          "delay": 120,
-          "color": "coral",
-          "box": "MC",
-          "card": "tab",
-          "label": "京津冀消协 2024"
-        }
-      ]
-    },
-    {
-      "id": "law",
-      "name": "消保条例第九条 + 童叟无欺",
-      "photo": "S07",
-      "move": "out",
-      "origin": "BC",
-      "box": "MC",
-      "grad": "all",
-      "card": "notch",
-      "label": "2024 年 7 月 · 消保条例第九条",
-      "items": [
-        {
-          "type": "h",
-          "text": "不知情 · 同等条件 · 不同价，违法",
-          "at": 0
-        },
-        {
-          "type": "t",
-          "text": "童叟无欺、真不二价",
-          "at": 0,
-          "delay": 90,
-          "quote": true
-        }
-      ]
-    },
-    {
-      "id": "judge",
-      "name": "判断一句：先问“题目是什么”",
+      "id": "pigou",
+      "name": "庇古-1920《福利经济学》的三级分",
       "photo": "S03",
       "move": "in",
-      "origin": "BC",
-      "grad": "all",
       "items": [
         {
           "type": "h",
-          "text": "先问：题目是什么",
+          "text": "庇古 · 1920",
           "at": 0
         },
         {
           "type": "h",
-          "text": "摆上台面、你还能选：价格歧视",
+          "text": "《福利经济学》",
           "at": 0,
-          "delay": 90,
-          "color": "teal"
+          "delay": 90
         },
         {
           "type": "h",
-          "text": "藏在算法里、你不知情：杀熟",
+          "text": "三级价格歧视",
           "at": 0,
-          "delay": 180,
-          "color": "coral"
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "一百多年，教科书还在用",
+          "at": 0,
+          "delay": 270
         }
-      ]
+      ],
+      "box": "TW",
+      "grad": "top"
     },
     {
-      "id": "back",
-      "name": "回到开头：挨骂不是贵，是题目没提前说",
-      "photo": "S02",
+      "id": "core",
+      "name": "难点不是想多收钱-是怎么知道你心里那",
+      "photo": "S03",
       "move": "in",
-      "origin": "BC",
-      "grad": "all",
       "items": [
         {
           "type": "h",
-          "text": "135 变 355 挨骂，不是贵",
+          "text": "想多收钱",
           "at": 0
         },
         {
           "type": "h",
-          "text": "是题目没提前说",
+          "text": "怎么知道你心里那个价",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "一级 · 认识你",
+          "at": 1,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "二级 · 让你自己挑",
+          "at": 1,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "三级 · 看你是哪群人",
+          "at": 1,
+          "delay": 270
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "first",
+      "name": "第一级：认识你-一个人一个价；菜市场",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "知道你最多肯出多少",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "一个人，一个价",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "菜市场砍价",
+          "at": 1,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "拍卖",
+          "at": 1,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "大数据杀熟",
+          "at": 1,
+          "delay": 270
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "second",
+      "name": "第二级：不认识你-摆几个版本让你自己",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "不认识你，就摆几个版本",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "挑哪个，就暴露了你",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "第二件半价",
+          "at": 1,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "专业版 · 普通版",
+          "at": 1,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "三种舱位",
+          "at": 1,
+          "delay": 270
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "third",
+      "name": "第三级：按看得出来的身份分群；学生-",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "按看得出来的身份分群",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "学生票 · 成人票 · 老年票",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "本地人优惠",
+          "at": 1,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "三种，都是价格歧视",
+          "at": 1,
+          "delay": 180
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "power",
+      "name": "商家凭什么能这么做：三个条件；条件一",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "三个条件，缺一不可",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "定价权",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "只有垄断、强势的商家才有",
+          "at": 1,
+          "delay": 90
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "sort",
+      "name": "条件二：分得清谁愿意多付",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "分得清谁愿意多付",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "学生证 · 大数据 · 消费记录",
           "at": 0,
           "delay": 90
         }
-      ]
+      ],
+      "box": "TW",
+      "grad": "top"
     },
     {
-      "id": "next",
-      "name": "钩子：两个平台两个价，价差被谁赚走",
-      "photo": "S01",
+      "id": "resale",
+      "name": "条件三：防得住转卖-配庇古原文",
+      "photo": "S08",
       "move": "in",
-      "origin": "BC",
-      "grad": "all",
       "items": [
         {
           "type": "h",
-          "text": "同一张票，这个平台 100、那个平台 130",
+          "text": "条件三 · 防得住转卖",
           "at": 0
         },
         {
           "type": "h",
-          "text": "价差会被谁赚走？",
+          "text": "低价买的，没法高价倒卖",
           "at": 0,
-          "delay": 90,
-          "color": "gold"
+          "delay": 90
         }
       ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "rice",
+      "name": "电影票能歧视-大米不能：大米的价谁都",
+      "photo": "S09",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "电影票能，大米不能",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "大米的价，谁都知道",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "movie",
+      "name": "电影票渠道多-折扣多：《生化危机》3",
+      "photo": "S10",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "¥70 → 30 多",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "渠道 + 折扣，叠在一起",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "ride",
+      "name": "三个生活例子；打车：按消费记录报价-",
+      "photo": "S11",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "生活里的三个例子",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "按你的消费记录报价",
+          "at": 1
+        },
+        {
+          "type": "h",
+          "text": "大数据杀熟",
+          "at": 1,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "一级",
+          "at": 1,
+          "delay": 180
+        }
+      ],
+      "box": "TW",
+      "grad": "top",
       "ambience": "街道夜晚"
+    },
+    {
+      "id": "software",
+      "name": "软件按版本定价：砍掉几个按钮-便宜一",
+      "photo": "S12",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "功能一样，砍掉几个按钮",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "价格便宜一半",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "二级",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "local",
+      "name": "同一个景区本地人半价-凭身份证分群",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "本地人半价",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "凭身份证分群",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "三级",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TW",
+      "grad": "top"
+    },
+    {
+      "id": "bye",
+      "name": "收尾：三级各是什么-下期见",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "一级 · 认识你",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "二级 · 让你自己挑",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "三级 · 看你是哪群人",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TW",
+      "grad": "top",
+      "ambience": "商场"
     }
   ],
   "style": {
