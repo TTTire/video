@@ -1,0 +1,790 @@
+{
+  "ep": "ai07",
+  "badge": "",
+  "series": "AI经济学",
+  "photos": "ai07/photos",
+  "chapterPhoto": "S08",
+  "scenes": [
+    {
+      "id": "open",
+      "name": "11-23-开盘跳涨约-30%",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "股价跳涨约 30%",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "不是新芯片，也不是财报",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "resign",
+      "name": "11-12-辞任-CFO-接棒-33",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "黄仁勋辞任 CEO",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "CFO 克雷斯接棒",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "33 年来第一次",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "petition",
+      "name": "一周跌-14%-请愿到-18-万",
+      "photo": "S03",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "辞任后一周",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "股价跌 14%",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "复职请愿",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "11.5 万 → 18 万",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "earnings",
+      "name": "财报创纪录-董事会说不",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "营收 1158 亿",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "净利 653 亿",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "董事会：无意复职",
+          "at": 0,
+          "delay": 180,
+          "quote": true
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "doubt",
+      "name": "第一反应：人情戏？",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "—（整段全屏出镜）",
+          "at": 0
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "hook",
+      "name": "市场在给报表外的东西定价",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "市场不会为“人情”给 30%",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "它在给报表外的东西定价",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "title",
+      "name": "片头",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "像素呼吸 · AI经济学",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "一家公司 / 为什么离不开一个人",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "timeline",
+      "name": "辞任-接棒-首任董事长",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "11-12 辞任",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "克雷斯临时接棒",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "哈维·琼斯 · 首任董事长",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "路线图不变，合同不断",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "myth",
+      "name": "我原来也这么想：制度比人可靠",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "我原来也这么想",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "大公司靠制度，不靠人",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "drop",
+      "name": "★-一周跌-14%-请愿翻到-18-",
+      "photo": "S03",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "财报还没出",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "股价先跌 14%",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "请愿：11.5 万 → 18 万",
+          "at": 0,
+          "delay": 180,
+          "quote": true
+        },
+        {
+          "type": "h",
+          "text": "几千人自称员工",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "numbers",
+      "name": "财报：1158-/-653-/-10",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "营收 1158 亿 · +103%",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "净利 653 亿",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "数据中心 1076 亿",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "Q4 指引 1300 亿",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "board",
+      "name": "拒绝复职-+-监督委员会",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "无意让他复职",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "同日新设出口管制监督委员会",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "怕的是合规",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "split",
+      "name": "公司能转-人不在了大家不信",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "公司能转",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "人不在了，大家不信",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "两件事同时成立",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "assets",
+      "name": "会计资产里没有人",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "厂房 · 设备 · 专利 · 现金 · 商誉",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "人不在表里",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "price",
+      "name": "复任当天开盘涨约-30%",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "11 月 23 日 · 董事会一致决定",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "恢复职务",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "开盘涨约 30%",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "不是给财报的",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "keyrisk",
+      "name": "关键人风险定义",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "关键人风险",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "公司价值过度依赖一个人",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "判断 · 关系 · 声望，成了资产",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "jobs",
+      "name": "我让-AI-调研了一圈-翻到乔布斯",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "我让 AI 先调研了一圈",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "一个老案例：乔布斯",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "switch",
+      "name": "★-乔布斯：1985-走-1997-",
+      "photo": "S07",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "离开 12 年",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "份额掉到 3%",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "1996 年亏 15 亿美元",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "每周都在猜谁会买走它",
+          "at": 0,
+          "delay": 270
+        },
+        {
+          "type": "h",
+          "text": "差的是谁在拍板",
+          "at": 0,
+          "delay": 360
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "network",
+      "name": "英伟达-33-年的关系网",
+      "photo": "S02",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "对华产品 · 跟监管谈 · 优先供货",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "靠他个人的判断和关系网",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "不写在报表里，市场天天定价",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "yang",
+      "name": "杨锦方：关键位置放错人最贵",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "听杨锦方老师讲识人",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "关键位置放错了人，最贵",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "人决定资金的去向",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "worth",
+      "name": "落点：最值钱的资产是判断力",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "最值钱的资产",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "是一个人的判断力",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "不在表上，但在股价里",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "reverse",
+      "name": "离不开一个人：好事还是坏事",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "离不开一个人",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "对股东是好事，还是坏事？",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "badnews",
+      "name": "好消息与坏消息",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "判断还在，魂就在",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "他总会走，制度没能独立运转",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "board2",
+      "name": "★-先拒绝-后请回-只隔六天",
+      "photo": "S04",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "11-17 说不",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "11-23 请回",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "中间只隔六天",
+          "at": 0,
+          "delay": 180
+        },
+        {
+          "type": "h",
+          "text": "治理在给个人让路",
+          "at": 0,
+          "delay": 270
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "callback",
+      "name": "放对人也是风险",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "放错人，最贵",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "放对人，公司离不开他",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "也是风险",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "ordinary",
+      "name": "你公司里那个不能走的人",
+      "photo": "S08",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "走了就转不动的人",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "是资产，也是风险",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "是安全感，也是天花板",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "invest",
+      "name": "投资要看人走了会怎样",
+      "photo": "S06",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "看财报，也看人走了会怎样",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "继任 · 治理 · 关键人依赖度",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "proof",
+      "name": "离不开创始人-也还没找到第二个",
+      "photo": "S01",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "离不开创始人",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "还没找到第二个",
+          "at": 0,
+          "delay": 90
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    },
+    {
+      "id": "moat",
+      "name": "落点：护城河-vs-溢价",
+      "photo": "S05",
+      "move": "in",
+      "items": [
+        {
+          "type": "h",
+          "text": "离了谁都能转 / 离了谁就不一样",
+          "at": 0
+        },
+        {
+          "type": "h",
+          "text": "两句话同时成立，最难",
+          "at": 0,
+          "delay": 90
+        },
+        {
+          "type": "h",
+          "text": "你那个不能走的人，是好事吗？",
+          "at": 0,
+          "delay": 180
+        }
+      ],
+      "box": "TR",
+      "grad": "right"
+    }
+  ],
+  "style": {
+    "layout": "right",
+    "tint": "#101C2E",
+    "tintOpacity": 0.28,
+    "enter": "cut",
+    "letterbox": false,
+    "grain": false,
+    "badge": false,
+    "scale": "v2",
+    "textEnter": "fade",
+    "cardSkin": "tactile",
+    "theme": {
+      "gold": "#D8B36A",
+      "coral": "#E05A4E",
+      "teal": "#4FB3A8",
+      "bg": "#070B12",
+      "dim": "#B8C2D0"
+    },
+    "sfx": "sparse"
+  }
+}
