@@ -13,6 +13,9 @@ export const easeInOutQuad = Easing.inOut(Easing.quad);
 
 /** 关键帧表按帧号从小到大排好，帧号重了就往后挪一点，不然插值会出 NaN。 */
 export const tidyKeys = (keys: Key[]): Key[] => {
+  if (keys.length === 0) {
+    throw new Error('关键帧表是空的：至少要给一个 [帧, 值]'); // 不拦的话算出来是 NaN，画面上什么都看不见，难查
+  }
   const out: Key[] = [];
   for (const [f, v] of [...keys].sort((a, b) => a[0] - b[0])) {
     out.push([out.length ? Math.max(f, out[out.length - 1][0] + 0.01) : f, v]);

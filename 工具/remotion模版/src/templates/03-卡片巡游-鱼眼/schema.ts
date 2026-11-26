@@ -29,7 +29,7 @@ export const schema = z.object({
     )
     .length(4)
     .describe('四站。前三站的主角落在一起定死：横条卡、发票卡、清单卡；第四站是总览，五张卡片都在'),
-  introTravel: z.number().describe('开场总览停多久，也就是从第一帧到镜头开始飞向第一张主角卡的帧数'),
+  introTravel: z.number().min(12).describe('开场总览停多久，也就是从第一帧到镜头开始飞向第一张主角卡的帧数'),
   cards: z.object({
     bars: list.describe('第一站的主角：每一行有一根条'),
     invoice: z
@@ -38,6 +38,8 @@ export const schema = z.object({
         docLabel: z.string().describe('右上角的大字'),
         meta: z.string().describe('大字下面的单号'),
         status: z.string().describe('单号后面的状态，橙色'),
+        billLabel: z.string().describe('买方那一栏的小标题，默认 Bill to'),
+        fromLabel: z.string().describe('卖方那一栏的小标题，默认 From'),
         billTo: three.describe('买方：名字、地址、邮箱'),
         from: three.describe('卖方：名字、地址、邮箱'),
         issueDate: z.string().describe('开票日期'),
@@ -107,6 +109,8 @@ export const defaultProps: TemplateProps = {
       docLabel: 'INVOICE',
       meta: 'INV-2025-001',
       status: 'Pending',
+      billLabel: 'Bill to',
+      fromLabel: 'From',
       billTo: ['Acme Corp', 'New York, NY', 'contact@acme.com'],
       from: ['Alex Rivera', 'San Francisco, CA', 'alex@riviera.co'],
       issueDate: '2025-06-01',

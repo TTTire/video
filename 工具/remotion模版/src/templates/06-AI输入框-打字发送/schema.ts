@@ -39,7 +39,7 @@ export const schema = z.object({
   clickAt: z.number().describe('指针点下发送钮的那一帧。参考是第 105 帧。指针淡入（比它早 27.5 帧）、滑过去（比它早 17 帧起，滑 15 帧）、淡出（比它晚 5 帧走完）都从它起算'),
   sendAt: z.number().describe('发送后的变化从哪一帧开始：打好的字往上淡出、模型标签收起、三个点出现。参考是第 111 帧，比 clickAt 晚 6 帧'),
   caretPeriod: z.number().min(4).describe('光标闪烁一个来回多少帧（亮一半、灭一半）。参考量出来是 28 帧，从第 0 帧亮起'),
-  fontStretch: z.string().describe('拉丁字母用多宽的字（Archivo 可变字体，62% 到 125%）。参考的字比较紧，默认 82%；中文不受影响'),
+  fontStretch: z.string().describe('拉丁字母用多宽的字（Archivo 可变字体，62% 到 125%）。参考的字比 Archivo 默认的窄一成，默认 89%；中文不受影响'),
   motionBlur: z.boolean().describe('指针滑得快时带不带动态模糊。参考里指针再快也是清楚的，所以默认关；想要更顺可以打开'),
 });
 
@@ -63,6 +63,6 @@ export const defaultProps: TemplateProps = {
   clickAt: 105,
   sendAt: 111,
   caretPeriod: 28,
-  fontStretch: '82%',
+  fontStretch: '89%',
   motionBlur: false,
 };

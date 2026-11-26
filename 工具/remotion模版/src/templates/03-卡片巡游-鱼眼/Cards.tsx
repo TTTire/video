@@ -28,40 +28,50 @@ const CARD: React.CSSProperties = {
 
 /** 横条卡：标题、右上角的 View All、下面几行“名字 + 数 + 一根条”。内容量自参考第 110 帧（那时卡片宽 665，这里按 860 从头排）。 */
 export const BarsCard: React.FC<{d: ListData; color: string}> = ({d, color}) => (
-  <div style={{...CARD, width: 860, height: 480, padding: '42px 48px'}}>
+  <div style={{...CARD, width: 860, height: 480, padding: '42px 48px', display: 'flex', flexDirection: 'column'}}>
     <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'baseline'}}>
       <span style={{fontSize: 27, fontWeight: 700}}>{d.heading}</span>
       <span style={{fontSize: 22, color: MUTED}}>{d.viewAll}</span>
     </div>
-    {d.rows.map((r, i) => (
-      <div key={i} style={{marginTop: 26}}>
-        <div style={{display: 'flex', justifyContent: 'space-between', fontSize: 27}}>
-          <span>{r.name}</span>
-          <span style={{fontWeight: 500}}>{r.value}</span>
+    {/* 行数变了，各行还是在这一块里均匀排开，卡片大小不变 */}
+    <div style={{flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly'}}>
+      {d.rows.map((r, i) => (
+        <div key={i}>
+          <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', fontSize: 27}}>
+            <span>{r.name}</span>
+            <span style={{marginLeft: 24, whiteSpace: 'nowrap', fontWeight: 500}}>{r.value}</span>
+          </div>
+          {r.bar === undefined ? null : (
+            <>
+              <div style={{fontSize: 15, color: FAINT, margin: '6px 0 3px'}}>{r.note ?? ''}</div>
+              <div style={{height: 9, borderRadius: 5, background: '#e8e9e4'}}>
+                <div style={{width: `${Math.max(0, Math.min(1, r.bar)) * 100}%`, height: '100%', borderRadius: 5, background: color}} />
+              </div>
+            </>
+          )}
         </div>
-        <div style={{fontSize: 15, color: FAINT, margin: '6px 0 3px'}}>{r.note ?? ''}</div>
-        <div style={{height: 9, borderRadius: 5, background: '#e8e9e4'}}>
-          <div style={{width: `${Math.max(0, Math.min(1, r.bar ?? 0)) * 100}%`, height: '100%', borderRadius: 5, background: color}} />
-        </div>
-      </div>
-    ))}
+      ))}
+    </div>
   </div>
 );
 
 /** 清单卡：标题、View All、几行“行首小圆圈 + 名字和类别 + 右边的数”，行与行之间有一条细线。量自参考第 216 帧（卡片 660×570）。 */
 export const ListCard: React.FC<{d: ListData}> = ({d}) => (
-  <div style={{...CARD, width: 650, height: 560, padding: '38px 42px'}}>
+  <div style={{...CARD, width: 650, height: 560, padding: '38px 42px', display: 'flex', flexDirection: 'column'}}>
     <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'baseline'}}>
       <span style={{fontSize: 25, fontWeight: 700}}>{d.heading}</span>
       <span style={{fontSize: 20, color: MUTED}}>{d.viewAll}</span>
     </div>
+    {/* 行数变了，各行还是在这一块里均匀排开，卡片大小不变。五行最合适 */}
+    <div style={{flex: 1, display: 'flex', flexDirection: 'column'}}>
     {d.rows.map((r, i) => (
       <div
         key={i}
         style={{
+          flex: 1,
+          minHeight: 0,
           display: 'flex',
           alignItems: 'center',
-          height: 90,
           marginTop: i === 0 ? 10 : 0,
           borderTop: i === 0 ? 'none' : `1px solid ${LINE}`,
         }}
@@ -85,14 +95,18 @@ export const ListCard: React.FC<{d: ListData}> = ({d}) => (
           <div style={{fontSize: 25, lineHeight: '28px'}}>{r.name}</div>
           <div style={{fontSize: 17, color: MUTED, marginTop: 2}}>{r.note ?? ''}</div>
         </div>
-        <div style={{fontSize: 24, fontWeight: 500, color: r.tone === 'neg' ? RED : r.tone === 'pos' ? GREEN : INK}}>{r.value}</div>
+        <div style={{fontSize: 24, fontWeight: 500, marginLeft: 24, whiteSpace: 'nowrap', color: r.tone === 'neg' ? RED : r.tone === 'pos' ? GREEN : INK}}>{r.value}</div>
       </div>
     ))}
+    </div>
   </div>
 );
 
 /** 发票卡。量自参考第 165 帧（卡片差不多是方的）。 */
-export const InvoiceCard: React.FC<{d: Data['invoice']}> = ({d}) => (
+export const InvoiceCard: React.FC<{d: Data['invoice']}> = ({d}) => {
+  // 明细表的表头和那一行，四列，依次是百分之 46、18、18、18
+  const cells: string[][] = [Array.from(d.cols as string[]), [d.item.desc, d.item.qty, d.item.rate, d.item.amount]];
+  return (
   <div style={{...CARD, width: 640, height: 650, padding: '38px 40px'}}>
     <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start'}}>
       <div style={{fontSize: 31, fontWeight: 700}}>{d.company}</div>
@@ -107,7 +121,7 @@ export const InvoiceCard: React.FC<{d: Data['invoice']}> = ({d}) => (
     <div style={{marginTop: 20, padding: '20px 26px', borderRadius: 12, background: '#f5f5f2', display: 'flex'}}>
       {[d.billTo, d.from].map((col, i) => (
         <div key={i} style={{width: '50%'}}>
-          <div style={{fontSize: 16, color: MUTED}}>{i === 0 ? 'Bill to' : 'From'}</div>
+          <div style={{fontSize: 16, color: MUTED}}>{i === 0 ? d.billLabel : d.fromLabel}</div>
           <div style={{fontSize: 21, fontWeight: 700, marginTop: 6}}>{col[0]}</div>
           <div style={{fontSize: 19, marginTop: 4}}>{col[1]}</div>
           <div style={{fontSize: 19, marginTop: 2}}>{col[2]}</div>
@@ -122,20 +136,26 @@ export const InvoiceCard: React.FC<{d: Data['invoice']}> = ({d}) => (
         </div>
       ))}
     </div>
-    <div style={{marginTop: 24, fontSize: 16, color: MUTED, background: '#f8f8f5', padding: '10px 16px', display: 'flex'}}>
-      {[46, 18, 18, 18].map((w, i) => (
-        <div key={i} style={{width: `${w}%`, textAlign: i === 0 ? 'left' : 'right'}}>
-          {d.cols[i]}
-        </div>
-      ))}
-    </div>
-    <div style={{padding: '16px 16px 14px', fontSize: 21, borderBottom: `1px solid ${LINE}`, display: 'flex'}}>
-      {[46, 18, 18, 18].map((w, i) => (
-        <div key={i} style={{width: `${w}%`, textAlign: i === 0 ? 'left' : 'right'}}>
-          {[d.item.desc, d.item.qty, d.item.rate, d.item.amount][i]}
-        </div>
-      ))}
-    </div>
+    {cells.map((row, r) => (
+      <div
+        key={r}
+        style={{
+          display: 'flex',
+          fontSize: r === 0 ? 16 : 21,
+          color: r === 0 ? MUTED : INK,
+          background: r === 0 ? '#f8f8f5' : undefined,
+          padding: r === 0 ? '10px 16px' : '16px 16px 14px',
+          marginTop: r === 0 ? 24 : 0,
+          borderBottom: r === 0 ? undefined : `1px solid ${LINE}`,
+        }}
+      >
+        {[46, 18, 18, 18].map((w, i) => (
+          <div key={i} style={{width: `${w}%`, textAlign: i === 0 ? 'left' : 'right'}}>
+            {row[i]}
+          </div>
+        ))}
+      </div>
+    ))}
     <div style={{marginTop: 14, marginLeft: 'auto', width: 260, fontSize: 18}}>
       <div style={{display: 'flex', justifyContent: 'space-between'}}>
         <span style={{color: MUTED}}>{d.subtotalLabel}</span>
@@ -151,7 +171,8 @@ export const InvoiceCard: React.FC<{d: Data['invoice']}> = ({d}) => (
       </div>
     </div>
   </div>
-);
+  );
+};
 
 /** 环形图卡。参考里它只有很小的一块能看清（第 216、256 帧），字号是按比例放大的。 */
 export const DonutCard: React.FC<{d: Data['donut']}> = ({d}) => {

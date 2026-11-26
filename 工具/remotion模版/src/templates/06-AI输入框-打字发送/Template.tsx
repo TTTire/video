@@ -26,7 +26,7 @@ export const Template: React.FC<TemplateProps> = (props) => {
   const tail = view(frame + SHUTTER / 2).pointer;
   const motion = Math.hypot(tail.x - head.x, tail.y - head.y);
   const samples = props.motionBlur && now.pointer.opacity > 0.002 && motion >= 3 ? Math.min(MAX_SAMPLES, Math.ceil(motion / BLUR_STEP) + 1) : 1;
-  const glow = hexToRgba(T.accent, 0.28); // 指针外头很淡的一圈光晕
+  const glow = hexToRgba(T.accent, 0.18); // 指针外头很淡的一圈光晕（参考里指针周围的底色比别处亮一点、偏暖）
 
   return (
     <AbsoluteFill style={{background: T.bg}}>

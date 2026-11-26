@@ -31,7 +31,7 @@ export const THEMES: Record<ThemeName, Theme> = {
     accent: '#d87756',
     muted: '#55504d',
     line: '#dedede',
-    shadow: 'rgba(92, 84, 76, 0.5)',
+    shadow: 'rgba(101, 93, 85, 0.5)',
     sendIcon: 'up',
   },
   // 浅底：接近常见的白底聊天页（底是浅灰，框是白的，发送钮是黑的）

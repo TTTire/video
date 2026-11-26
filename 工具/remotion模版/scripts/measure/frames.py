@@ -12,7 +12,7 @@ import subprocess
 import sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from _common import parse_rect, video_length  # noqa: E402
+from _common import lead_frames, parse_rect, timeline_index, video_length  # noqa: E402
 
 
 def default_out(video):
@@ -40,13 +40,19 @@ def main():
     a = ap.parse_args()
 
     end = a.end if a.end is not None else video_length(a.video) - 1
-    frames = list(range(a.start, end + 1, a.every))
+    # 视频这一轨从时间轴的第 lead 帧才开始，前面那几帧是空的、没有图可取（大多是 0）。不挑掉的话格子会往后错位、帧号全标错
+    lead = lead_frames(a.video)
+    frames = [f for f in range(a.start, end + 1, a.every) if f >= lead]
     if not frames:
-        raise SystemExit('这个范围里没有帧（帧号从 0 数）。')
+        raise SystemExit('这个范围里没有帧（帧号从 0 数，是时间轴上的）。')
+    if a.start < lead:
+        print(f'这一轨视频从时间轴的第 {lead} 帧才开始，前面是空的，总览图从第 {frames[0]} 帧起')
     out = a.out or default_out(a.video)
     os.makedirs(out, exist_ok=True)
 
-    vf = f"select='between(n\\,{a.start}\\,{end})*not(mod(n-{a.start}\\,{a.every}))'"
+    # 帧号按时间轴算（见 _common.timeline_index），别用 select 自带的 n
+    ti = timeline_index(a.video)
+    vf = f"select='between({ti}\\,{a.start}\\,{end})*not(mod({ti}-{a.start}\\,{a.every}))'"
     if a.crop:
         x, y, w, h = parse_rect(a.crop, '')['rect']
         vf += f',crop={w}:{h}:{x}:{y}'

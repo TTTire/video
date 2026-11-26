@@ -1,0 +1,14 @@
+{
+  "sender": "示例通知",
+  "titleLine": "示意 · 不是真实消息",
+  "timeLine": "今天 09:30",
+  "badge": "1",
+  "battery": "80",
+  "body": "【示例图书馆】你预约的《经济学原理》\n已经到馆，请在11月30日之前到三楼\n服务台凭取书码领取，过期会自动取消。\n这只是一条用来排版的示意文字。",
+  "typeAt": 2,
+  "charsPerFrame": 1.2,
+  "link": "11月30日",
+  "highlights": [{"text": "经济学原理", "at": 30.5, "wipe": 21, "end": null, "color": null}],
+  "highlightColor": "#e8cf2e",
+  "durationInFrames": 70
+}

@@ -6,9 +6,15 @@
   --单独：不走装着所有模版的 src/index.ts，只用一个只装这一个模版的小入口。别的模版正改到一半、整包打不起来的时候用
 不给示例就用模版的默认内容。输出默认放 out/<模版文件夹>/，文件名是 默认.mp4 / xxx.mp4（--still 时是同名的 png）。
 不带任何参数运行，会列出所有模版和各自的示例。
+
+模版可以在自己的 index.ts 里写 `export const renderScale = 2;`，声明它要按 2 倍渲染再缩回成片尺寸。用了 Lens（鱼眼镜头）的模版
+都要这样：Chrome 做置换时位移是取整像素的，1 倍渲出来卡片边上有一像素的台阶，2 倍渲再缩回去就没了。这里会自动加 --scale、
+渲完用 ffmpeg 缩回去、删掉那份大的，交给你的还是成片尺寸的文件（静态图也是）；一帧的等待上限也放宽到 4 分钟（这类模版一帧要算十几秒到几十秒）。
+透传的参数里自己给了 --scale（比如 `-- --scale 1` 先快速看一遍），就按你给的来，也不帮你缩回。
 """
 import glob
 import os
+import re
 import subprocess
 import sys
 
@@ -45,9 +51,35 @@ def print_list():
         for label, _ in samples(folder):
             print(f"      示例：{label}")
     print("\n出片：python scripts/render.py <编号> [示例名]    只出一帧：加 --still <帧号>    指定输出：加 --out <文件>")
+    print("单独出一个（别的模版打不起来的时候）：加 --单独")
+
+
+def declared(folder, const):
+    """读 index.ts 里 `export const <名字> = 数;` 那一行，没有就返回 None。"""
+    source = open(f"{folder}/index.ts", encoding="utf-8").read()
+    m = re.search(rf'export\s+const\s+{const}\s*=\s*([0-9.]+)\s*;', source)
+    return float(m.group(1)) if m else None
+
+
+def shrink(raw, out, still):
+    """把按几倍渲出来的文件缩回成片尺寸（lanczos），缩完删掉那份大的。成片尺寸 按 原始尺寸 / 倍数 算。"""
+    probe = subprocess.run(['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width,height,r_frame_rate',
+                            '-of', 'csv=p=0', raw], capture_output=True, text=True, check=True).stdout.strip().split(',')
+    w, h = int(probe[0]) // SCALE, int(probe[1]) // SCALE  # noqa: E231  按倍数反过来说不一定是个整数，取整
+    if still:
+        cmd = ['ffmpeg', '-v', 'error', '-y', '-i', raw, '-vf', f'scale={w}:{h}:flags=lanczos', '-update', '1', out]
+    else:
+        cmd = ['ffmpeg', '-v', 'error', '-y', '-i', raw, '-vf', f'scale={w}:{h}:flags=lanczos', '-c:v', 'libx264', '-crf', '16',
+               '-preset', 'medium', '-pix_fmt', 'yuv420p', '-c:a', 'copy', '-movflags', '+faststart', out]
+    subprocess.run(cmd, check=True)
+    os.remove(raw)
+
+
+SCALE = 1
 
 
 def main():
+    global SCALE
     args = sys.argv[1:]
     passthrough = []
     if '--' in args:
@@ -83,6 +115,9 @@ def main():
         print_list()
         sys.exit(1)
     name, no, folder = hit[0]
+    SCALE = declared(folder, 'renderScale') or 1  # 这个模版声明了要按几倍渲染
+    if any(a == '--scale' or a.startswith('--scale=') for a in passthrough):
+        SCALE = 1  # 你自己给了 --scale：按你的来，不加也不缩
 
     props = None
     label = '默认'
@@ -114,14 +149,23 @@ def main():
         entry = f"{ROOT}/out/{name}/单独入口.ts"
         os.makedirs(os.path.dirname(entry), exist_ok=True)
         open(entry, "w", encoding="utf-8").write(STANDALONE.replace('{name}', name))
-    cmd = [remotion, 'still' if still is not None else 'render', entry, name, out]
+    # 要按几倍渲的，先渲到旁边一个带 .x2 的文件里，渲完缩回成片尺寸
+    raw = f"{out[:-4]}.x{SCALE:g}{out[-4:]}" if SCALE != 1 else out  # noqa: E231
+    cmd = [remotion, 'still' if still is not None else 'render', entry, name, raw]
     if still is not None:
         cmd += ['--frame', str(still)]
     if props:
         cmd += ['--props', props]
+    if SCALE != 1:
+        cmd += ['--scale', f'{SCALE:g}']
+        if not any(a == '--timeout' or a.startswith('--timeout=') for a in passthrough):
+            cmd += ['--timeout', '240000']  # 这类模版一帧要算十几秒到几十秒，Remotion 默认只等 30 秒，会半路放弃；给到 4 分钟
     cmd += passthrough
     print(' '.join(cmd))
     subprocess.run(cmd, cwd=ROOT).returncode and sys.exit(1)
+    if SCALE != 1:
+        shrink(raw, out, still is not None)
+        print(f'按 {SCALE:g} 倍渲完，已经缩回成片尺寸：{os.path.relpath(out, ROOT)}')
 
 
 main()

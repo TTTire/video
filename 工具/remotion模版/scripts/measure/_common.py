@@ -24,15 +24,16 @@ def probe_size(path):
 
 
 def video_length(path):
-    """视频一共多少帧。容器没记帧数时按时长×帧率估。"""
+    """视频在时间轴上一共多少帧（开头空出来的那几帧也算在内）。容器没记帧数时按时长×帧率估。"""
     out = subprocess.run(
-        ['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=nb_frames,r_frame_rate:format=duration',
-         '-of', 'json', path], capture_output=True, text=True, check=True).stdout
+        ['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries',
+         'stream=nb_frames,r_frame_rate,start_time:format=duration', '-of', 'json', path], capture_output=True, text=True, check=True).stdout
     info = json.loads(out)
     s = info['streams'][0]
-    if s.get('nb_frames') not in (None, 'N/A'):
-        return int(s['nb_frames'])
     num, den = s['r_frame_rate'].split('/')
+    lead = round(float(s.get('start_time') or 0) * int(num) / int(den))  # 开头空了几帧，见 lead_frames()
+    if s.get('nb_frames') not in (None, 'N/A'):
+        return int(s['nb_frames']) + lead
     return int(round(float(info['format']['duration']) * int(num) / int(den)))
 
 
@@ -46,20 +47,47 @@ def video_fps(path):
     return int(m.group(1)) / int(m.group(2))
 
 
+def timeline_index(path):
+    """ffmpeg 表达式：当前帧在时间轴上是第几帧（时间戳 × 帧率，四舍五入）。给 select 用，里面的逗号已经转义好可以直接拼：
+    select=eq(<这个>\\,12)。
+    不要用 select 自带的 n：那是“第几个解出来的帧”，视频这一轨不是从 0 秒开始时（录屏、剪辑软件导出的常这样），它比时间轴上的帧号小。
+    05 的参考开头空了 5 帧：用 n 取“第 12 帧”其实是时间轴上的第 17 帧，并排一比，参考永远比成片快 5 帧。"""
+    out = subprocess.run(
+        ['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=r_frame_rate', '-of', 'default=noprint_wrappers=1:nokey=1', path],
+        capture_output=True, text=True, check=True).stdout
+    m = re.search(r'(\d+)\s*/\s*(\d+)', out)
+    if not m:
+        raise SystemExit(f'读不出 {path} 的帧率')
+    num, den = int(m.group(1)), int(m.group(2))
+    return f'floor(t*{num}/{den}+0.5)' if den != 1 else f'floor(t*{num}+0.5)'
+
+
+def lead_frames(path):
+    """这一轨视频从时间轴的第几帧才开始（前面是空的）。一般都是 0。"""
+    s = json.loads(subprocess.run(
+        ['ffprobe', '-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=start_time,r_frame_rate', '-of', 'json', path],
+        capture_output=True, text=True, check=True).stdout)['streams'][0]
+    if s.get('start_time') in (None, 'N/A'):
+        return 0
+    num, den = (int(v) for v in s['r_frame_rate'].split('/'))
+    return int(round(float(s['start_time']) * num / den))
+
+
 def read_frame(path, n=0):
-    """读一帧，返回 (高, 宽, 3) 的 uint8 数组。path 是图片就忽略帧号。"""
+    """读时间轴上的第 n 帧，返回 (高, 宽, 3) 的 uint8 数组（帧号怎么算见 timeline_index）。path 是图片就忽略帧号。"""
     w, h = probe_size(path)
     cmd = ['ffmpeg', '-v', 'error', '-i', path]
     if not is_image(path):
-        cmd += ['-vf', f'select=eq(n\\,{n})', '-frames:v', '1']
+        cmd += ['-vf', f'select=eq({timeline_index(path)}\\,{n})', '-fps_mode', 'passthrough', '-frames:v', '1']
     raw = subprocess.run(cmd + ['-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'], capture_output=True, check=True).stdout
     if len(raw) < w * h * 3:
-        raise SystemExit(f'{path} 里没有第 {n} 帧')
+        raise SystemExit(f'{path} 里没有时间轴上的第 {n} 帧')
     return np.frombuffer(raw, np.uint8).reshape(h, w, 3)
 
 
 def video_frames(path, start=0, end=None, step=1):
-    """逐帧读视频，只在 start 到 end 之间每隔 step 帧让出一对 (帧号, 数组)。帧号是从 0 数的真实帧号。"""
+    """逐帧读视频，只在 start 到 end 之间每隔 step 帧让出一对 (帧号, 数组)。帧号是时间轴上的：开头空出来的几帧用第一帧补上，
+    所以和 read_frame、timeline_index 是同一套帧号。"""
     w, h = probe_size(path)
     p = subprocess.Popen(['ffmpeg', '-v', 'error', '-i', path, '-f', 'rawvideo', '-pix_fmt', 'rgb24', '-'],
                          stdout=subprocess.PIPE, stderr=subprocess.DEVNULL)
