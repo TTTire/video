@@ -790,6 +790,9 @@
       "photo": "S07",
       "move": "still",
       "origin": "ML",
+      "boxes": {
+        "hyp": "TL"
+      },
       "items": [
         {
           "type": "custom",
@@ -810,6 +813,15 @@
           "at": 0,
           "delay": 126,
           "vol": 0.3
+        },
+        {
+          "type": "t",
+          "text": "假设：提示词按口播复述",
+          "at": 0,
+          "delay": 8,
+          "until": 0,
+          "untilDelay": 145,
+          "box": "hyp"
         },
         {
           "type": "t",
