@@ -1,0 +1,149 @@
+{
+  "stations": [
+    {
+      "title": "一级 歧视",
+      "at": 33,
+      "until": 56
+    },
+    {
+      "title": "二级 歧视",
+      "at": 71,
+      "until": 90
+    },
+    {
+      "title": "三级 歧视",
+      "at": 107,
+      "until": 123
+    },
+    {
+      "title": "同一杯咖啡\n几个价",
+      "at": 137
+    }
+  ],
+  "cards": {
+    "bars": {
+      "heading": "同一杯拿铁，标价有几种",
+      "viewAll": "假设的价目 ›",
+      "rows": [
+        {
+          "name": "带学生证",
+          "value": "¥9.9",
+          "note": "假设",
+          "bar": 0.55
+        },
+        {
+          "name": "工作日上午",
+          "value": "¥12.9",
+          "note": "假设",
+          "bar": 0.72
+        },
+        {
+          "name": "傍晚原价",
+          "value": "¥17.9",
+          "note": "假设",
+          "bar": 1
+        }
+      ]
+    },
+    "invoice": {
+      "company": "示意：街角咖啡店",
+      "docLabel": "小票",
+      "meta": "NO.0001",
+      "status": "假设",
+      "billLabel": "卖给",
+      "fromLabel": "卖家",
+      "billTo": [
+        "一位学生",
+        "堂食",
+        "校园卡支付"
+      ],
+      "from": [
+        "街角咖啡店",
+        "大学路 1 号",
+        "示意"
+      ],
+      "issueDate": "2026-01-01",
+      "dueDate": "当场付清",
+      "cols": [
+        "品名",
+        "数量",
+        "单价",
+        "小计"
+      ],
+      "item": {
+        "desc": "一杯拿铁（学生价）",
+        "qty": "1",
+        "rate": "¥9.9",
+        "amount": "¥9.9"
+      },
+      "subtotalLabel": "小计",
+      "subtotal": "¥9.9",
+      "taxLabel": "服务费",
+      "tax": "¥0",
+      "totalLabel": "合计",
+      "total": "¥9.9"
+    },
+    "transactions": {
+      "heading": "同一个上午进店的人",
+      "viewAll": "假设 ›",
+      "rows": [
+        {
+          "name": "带学生证的人",
+          "value": "¥9.9",
+          "note": "按人群定价",
+          "icon": "学"
+        },
+        {
+          "name": "在 App 里领了券的人",
+          "value": "¥12.9",
+          "note": "按做法定价",
+          "icon": "券"
+        },
+        {
+          "name": "买了两杯的人",
+          "value": "¥19.9",
+          "note": "按数量定价",
+          "icon": "二"
+        },
+        {
+          "name": "什么都没带的人",
+          "value": "¥17.9",
+          "note": "原价",
+          "icon": "人"
+        }
+      ]
+    },
+    "donut": {
+      "heading": "示意：一上午的单子",
+      "center": "100 单",
+      "centerLabel": "假设的构成",
+      "legend": [
+        {
+          "name": "学生",
+          "value": "45 单",
+          "color": "#f6a723",
+          "share": 0.45
+        },
+        {
+          "name": "上班族",
+          "value": "35 单",
+          "color": "#a8d62a",
+          "share": 0.35
+        },
+        {
+          "name": "其他人",
+          "value": "20 单",
+          "color": "#3d6bf5",
+          "share": 0.2
+        }
+      ]
+    },
+    "expense": {
+      "heading": "示意",
+      "button": "看各家的价",
+      "buttonColor": "#3d6bf5",
+      "label": "都不是真实数据"
+    }
+  },
+  "titleColor": "#d9fb86"
+}

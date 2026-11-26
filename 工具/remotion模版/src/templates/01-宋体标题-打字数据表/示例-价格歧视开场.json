@@ -1,0 +1,15 @@
+{
+  "title": [
+    {"text": "价", "size": 229, "scaleY": 1.63, "gap": 0, "dy": 0},
+    {"text": "格歧视", "size": 235, "gap": 9, "dy": -8}
+  ],
+  "subtitle": "Price discrimination",
+  "header": "上上周 · 《生化危机》",
+  "rows": [
+    {"name": "票面价", "value": "70块", "strong": true, "nameAt": 1, "valueAt": 12},
+    {"name": "我实付", "value": "30多块", "strong": true, "nameAt": 15, "valueAt": 29}
+  ],
+  "highlights": [{"at": 51, "from": 2, "to": 2}],
+  "backgroundImage": "t01/示例-背景-电影票.jpg",
+  "wash": 0.62
+}

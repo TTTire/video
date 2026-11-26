@@ -1,0 +1,47 @@
+{
+  "orientation": "横屏",
+  "colors": {
+    "paper": "#f1f5f3",
+    "paperMid": "#d2d9d7",
+    "paperEdge": "#a6aaa8",
+    "ribbon": "#1f6f8b",
+    "ink": "#12201f",
+    "inkSoft": "#3c4644",
+    "inkGrey": "#525a58",
+    "shape": "#24242a"
+  },
+  "opening": {
+    "image": "",
+    "cupAt": 10,
+    "titleSmall": "这是",
+    "titleBig": "一家卖椅子的公司",
+    "titleAt": 10,
+    "ribbonAt": 27,
+    "tagSmall": "下面用",
+    "tagBig": "四张照片",
+    "tagAt": 31
+  },
+  "beats": [
+    {"photo": "", "color": "#5a4632", "style": "圆环", "transition": "切入", "at": 68, "caption": "先看它的一把椅子", "captionBelow": "只是一把椅子"},
+    {"photo": "", "color": "#3c2b21", "style": "小卡", "transition": "升入", "at": 105, "caption": "这是示意用的门店照片", "captionBelow": ""},
+    {"photo": "", "color": "#14333b", "style": "大卡", "transition": "升入", "at": 174, "caption": "这是示意用的顾客照片", "captionBelow": ""},
+    {"photo": "", "color": "#8a5630", "style": "大卡", "transition": "闪白", "at": 207, "caption": "这是示意用的店内照片", "captionBelow": ""},
+    {"photo": "", "color": "#a86d34", "style": "大卡", "transition": "切入", "at": 242, "caption": "这是示意用的日常照片", "captionBelow": ""}
+  ],
+  "ending": {
+    "at": 273,
+    "image": "",
+    "near": [
+      {"text": "它卖的", "bold": false, "at": 276},
+      {"text": "不只是", "bold": false, "at": 288},
+      {"text": "椅子", "bold": true, "at": 292}
+    ],
+    "zoomAt": 297,
+    "close": [
+      {"text": "还有", "bold": false, "at": 306},
+      {"text": "坐下来的", "bold": false, "at": 311},
+      {"text": "那份", "bold": false, "at": 320},
+      {"text": "自在", "bold": true, "at": 324}
+    ]
+  }
+}

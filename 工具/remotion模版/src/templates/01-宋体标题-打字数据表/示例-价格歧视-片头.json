@@ -1,0 +1,11 @@
+{
+  "durationInFrames": 150,
+  "title": [
+    {"text": "价", "size": 229, "scaleY": 1.63, "gap": 0, "dy": 0},
+    {"text": "格歧视", "size": 235, "gap": 9, "dy": -8}
+  ],
+  "subtitle": "Price discrimination",
+  "rows": [],
+  "backgroundImage": "t01/示例-背景-电影票.jpg",
+  "wash": 0.62
+}
