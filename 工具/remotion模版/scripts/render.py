@@ -141,7 +141,8 @@ def main():
         out = f"{ROOT}/out/{name}/{label}-第{still}帧.png"
     os.makedirs(os.path.dirname(out), exist_ok=True)
 
-    remotion = f"{ROOT}/node_modules/.bin/remotion"
+    # Windows 上 .bin/remotion 是 sh 脚本，subprocess 起不来，要用同目录的 remotion.cmd
+    remotion = f"{ROOT}/node_modules/.bin/remotion" + ('.cmd' if os.name == 'nt' else '')
     if not os.path.exists(remotion):
         sys.exit("还没装依赖。先在库根目录跑一次 npm install")
     entry = ENTRY
