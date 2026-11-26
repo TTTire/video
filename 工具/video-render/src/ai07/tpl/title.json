@@ -1,0 +1,29 @@
+{
+  "durationInFrames": 150,
+  "title": [
+    {
+      "text": "一家公司为什么",
+      "size": 150,
+      "gap": 0,
+      "dy": 0
+    },
+    {
+      "text": "离不开",
+      "size": 229,
+      "scaleY": 1.45,
+      "gap": 14,
+      "dy": 0
+    },
+    {
+      "text": "一个人",
+      "size": 150,
+      "gap": 14,
+      "dy": 0
+    }
+  ],
+  "titleCenter": true,
+  "subtitle": "Key-person risk",
+  "rows": [],
+  "backgroundImage": "ai07/S01.jpg",
+  "wash": 0.7
+}

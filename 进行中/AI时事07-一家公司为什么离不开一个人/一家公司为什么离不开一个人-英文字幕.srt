@@ -1,0 +1,667 @@
+1
+00:00:00,020 --> 00:00:01,940
+On November 23, as US markets opened
+
+2
+00:00:02,380 --> 00:00:04,500
+Nvidia's stock jumped 30%
+
+3
+00:00:04,960 --> 00:00:05,970
+Not because of a new chip
+
+4
+00:00:06,020 --> 00:00:07,460
+and not because earnings beat expectations
+
+5
+00:00:07,960 --> 00:00:09,520
+but because someone who had just resigned
+
+6
+00:00:09,990 --> 00:00:11,600
+was invited back by the board
+
+7
+00:00:11,980 --> 00:00:13,100
+On November 12
+
+8
+00:00:13,150 --> 00:00:15,720
+Jensen Huang stepped down as Nvidia's CEO and director
+
+9
+00:00:16,140 --> 00:00:18,760
+CFO Colette Kress took over in the interim
+
+10
+00:00:19,190 --> 00:00:20,680
+For the first time in the company's 33 years
+
+11
+00:00:21,170 --> 00:00:22,500
+his name wasn't on it
+
+12
+00:00:22,920 --> 00:00:25,560
+That week, Nvidia's stock plunged 14%
+
+13
+00:00:25,960 --> 00:00:27,540
+and signatures on a petition for his return
+
+14
+00:00:28,070 --> 00:00:30,000
+grew from about 110,000 to 180,000
+
+15
+00:00:30,400 --> 00:00:32,620
+Several thousand of them said they were Nvidia employees
+
+16
+00:00:33,040 --> 00:00:35,400
+Even stranger was the November 17 earnings report
+
+17
+00:00:35,830 --> 00:00:37,480
+Revenue of $115.8 billion
+
+18
+00:00:37,980 --> 00:00:39,500
+and net profit of $65.3 billion
+
+19
+00:00:39,880 --> 00:00:40,900
+Not a single order was lost
+
+20
+00:00:41,290 --> 00:00:43,860
+Yet that same day, the board said it had no plans to reinstate him
+
+21
+00:00:44,310 --> 00:00:45,280
+Most people's first reaction is
+
+22
+00:00:45,750 --> 00:00:48,060
+isn't this just the founder's halo, a sentimental drama
+
+23
+00:00:48,560 --> 00:00:50,400
+What does this have to do with economics
+
+24
+00:00:50,820 --> 00:00:51,710
+But the market
+
+25
+00:00:51,760 --> 00:00:54,400
+doesn't hand out a 30% jump for sentiment
+
+26
+00:00:54,800 --> 00:00:55,570
+What it's really doing
+
+27
+00:00:55,620 --> 00:00:57,900
+is pricing something that never appears on the financial statements
+
+28
+00:00:58,290 --> 00:00:59,320
+This is Pixel Breath
+
+29
+00:00:59,720 --> 00:01:01,110
+Today, let's talk about
+
+30
+00:01:01,160 --> 00:01:03,080
+why a company can't do without one person
+
+31
+00:01:04,200 --> 00:01:05,880
+Let's start by laying out the timeline
+
+32
+00:01:06,300 --> 00:01:08,140
+November 12, Jensen Huang resigns
+
+33
+00:01:08,540 --> 00:01:09,890
+Kress steps in as interim CEO
+
+34
+00:01:09,940 --> 00:01:12,020
+Harvey Jones, a former CEO of another company
+
+35
+00:01:12,480 --> 00:01:14,320
+becomes the company's first-ever chairman
+
+36
+00:01:14,800 --> 00:01:16,760
+The company said its roadmap won't change
+
+37
+00:01:17,320 --> 00:01:18,510
+and its contracts won't be broken
+
+38
+00:01:18,900 --> 00:01:20,430
+Honestly, I used to think the same way
+
+39
+00:01:20,830 --> 00:01:22,820
+that the world's most valuable chip company
+
+40
+00:01:22,870 --> 00:01:25,690
+must rely on its products and customer loyalty
+
+41
+00:01:26,290 --> 00:01:28,450
+and its patents, not on any one person
+
+42
+00:01:28,940 --> 00:01:31,790
+and that systems should be more reliable than one person's reputation
+
+43
+00:01:32,180 --> 00:01:34,190
+But the market had no time to wait
+
+44
+00:01:34,630 --> 00:01:36,710
+That week, the stock plunged 14%
+
+45
+00:01:37,110 --> 00:01:38,580
+and signatures asking Jensen Huang to return
+
+46
+00:01:38,630 --> 00:01:40,510
+rose from 110,000 to 180,000
+
+47
+00:01:41,050 --> 00:01:41,960
+Before the earnings were even out
+
+48
+00:01:42,010 --> 00:01:44,430
+people had already voted with their feet
+
+49
+00:01:44,480 --> 00:01:46,330
+When the earnings came out on November 17
+
+50
+00:01:46,750 --> 00:01:47,550
+the numbers were rock solid
+
+51
+00:01:48,010 --> 00:01:49,970
+Total revenue was $115.8 billion
+
+52
+00:01:50,410 --> 00:01:52,320
+up 103% year over year
+
+53
+00:01:52,370 --> 00:01:53,850
+Data center revenue for the quarter
+
+54
+00:01:53,900 --> 00:01:56,030
+hit $107.6 billion
+
+55
+00:01:56,080 --> 00:01:58,280
+and Q4 guidance was about $130 billion
+
+56
+00:01:58,730 --> 00:01:59,810
+Not a single order was lost
+
+57
+00:02:00,240 --> 00:02:01,220
+But on the same earnings call
+
+58
+00:02:01,270 --> 00:02:03,570
+the chairman said they had no intention of reinstating him
+
+59
+00:02:03,950 --> 00:02:06,930
+and set up a new export control oversight committee
+
+60
+00:02:07,380 --> 00:02:09,170
+So what were they actually afraid of
+
+61
+00:02:09,630 --> 00:02:10,530
+Not performance
+
+62
+00:02:11,070 --> 00:02:13,220
+but keeping everything at the company compliant
+
+63
+00:02:13,660 --> 00:02:16,560
+Performance can prove the company keeps running
+
+64
+00:02:17,090 --> 00:02:18,790
+The stock price and the petition prove
+
+65
+00:02:19,190 --> 00:02:21,030
+that with him gone, people don't believe in it
+
+66
+00:02:21,610 --> 00:02:23,110
+Both things are true at the same time
+
+67
+00:02:24,030 --> 00:02:26,310
+From an accounting point of view
+
+68
+00:02:26,670 --> 00:02:29,320
+a company's assets are its plants, equipment
+
+69
+00:02:29,370 --> 00:02:31,810
+patents, cash, and goodwill
+
+70
+00:02:32,240 --> 00:02:34,450
+So do people go on the balance sheet
+
+71
+00:02:35,070 --> 00:02:35,770
+They don't
+
+72
+00:02:36,000 --> 00:02:37,530
+But the market does count them
+
+73
+00:02:37,900 --> 00:02:38,760
+On November 23
+
+74
+00:02:38,810 --> 00:02:41,430
+the board unanimously voted to reinstate him
+
+75
+00:02:41,870 --> 00:02:44,950
+As soon as the news broke, the stock opened up about 30%
+
+76
+00:02:45,510 --> 00:02:46,740
+That wasn't for the earnings
+
+77
+00:02:47,140 --> 00:02:48,440
+it was a welcome-back gift for him
+
+78
+00:02:48,860 --> 00:02:51,380
+Economics has a term for this: key-person risk
+
+79
+00:02:51,920 --> 00:02:54,450
+when a company's value depends too heavily on one person
+
+80
+00:02:54,970 --> 00:02:56,050
+In plain terms
+
+81
+00:02:56,650 --> 00:02:58,670
+that person's judgment, relationships, and reputation
+
+82
+00:02:59,110 --> 00:03:00,890
+have become part of the company's assets
+
+83
+00:03:01,450 --> 00:03:03,250
+I don't understand this area very deeply
+
+84
+00:03:03,680 --> 00:03:04,380
+so if I get anything wrong
+
+85
+00:03:04,430 --> 00:03:06,550
+please point it out in the comments
+
+86
+00:03:07,030 --> 00:03:07,830
+and we'll learn together
+
+87
+00:03:08,370 --> 00:03:10,060
+I had AI do some research first
+
+88
+00:03:10,520 --> 00:03:12,560
+going through the announcements and reports from these two weeks
+
+89
+00:03:13,080 --> 00:03:15,160
+and dug up an old case: Steve Jobs
+
+90
+00:03:15,800 --> 00:03:17,710
+He left Apple in 1985
+
+91
+00:03:17,760 --> 00:03:19,150
+and didn't come back until '97
+
+92
+00:03:19,630 --> 00:03:20,670
+12 years in between
+
+93
+00:03:21,220 --> 00:03:23,440
+Apple's market share fell to around 3%
+
+94
+00:03:23,970 --> 00:03:26,500
+In 1996 alone, it lost $1.5 billion
+
+95
+00:03:27,020 --> 00:03:28,480
+Every week, the market was guessing
+
+96
+00:03:28,860 --> 00:03:30,240
+who was going to buy it
+
+97
+00:03:30,640 --> 00:03:31,740
+The person was the same person
+
+98
+00:03:32,150 --> 00:03:33,320
+the company was the same company
+
+99
+00:03:33,750 --> 00:03:35,440
+The difference was never the product
+
+100
+00:03:35,880 --> 00:03:37,580
+it was who was making the calls
+
+101
+00:03:37,630 --> 00:03:39,900
+It's the same with Nvidia. Over the past 33 years
+
+102
+00:03:40,340 --> 00:03:41,520
+how to build products for China
+
+103
+00:03:41,950 --> 00:03:43,300
+how to deal with regulators
+
+104
+00:03:43,720 --> 00:03:45,240
+which customers get supply first
+
+105
+00:03:45,720 --> 00:03:48,640
+many decisions relied on his personal judgment and network
+
+106
+00:03:49,150 --> 00:03:51,300
+None of that shows up in the financial statements
+
+107
+00:03:51,760 --> 00:03:54,140
+but the market prices it every single day
+
+108
+00:03:54,190 --> 00:03:56,090
+It reminds me of a startup course at Peking University
+
+109
+00:03:56,140 --> 00:03:57,540
+where a teacher talked about judging people
+
+110
+00:03:57,960 --> 00:03:59,370
+He said the most expensive mistake early in a startup
+
+111
+00:03:59,420 --> 00:04:01,660
+isn't raising money at a low valuation
+
+112
+00:04:02,180 --> 00:04:03,900
+it's putting the wrong person in a key position
+
+113
+00:04:04,520 --> 00:04:07,030
+Core talent matters more fundamentally than financial leverage
+
+114
+00:04:07,610 --> 00:04:09,560
+because people decide where the money goes
+
+115
+00:04:10,060 --> 00:04:11,930
+I agreed with that wholeheartedly
+
+116
+00:04:11,980 --> 00:04:13,160
+So my takeaway is this
+
+117
+00:04:13,680 --> 00:04:15,640
+a company's most valuable asset
+
+118
+00:04:15,690 --> 00:04:17,660
+is sometimes just one person's judgment
+
+119
+00:04:18,040 --> 00:04:20,120
+It never shows up on the balance sheet
+
+120
+00:04:20,590 --> 00:04:22,960
+but you can see traces of it in the stock price
+
+121
+00:04:23,930 --> 00:04:25,530
+So let's flip the question
+
+122
+00:04:25,890 --> 00:04:27,340
+If a company can't do without one person
+
+123
+00:04:27,390 --> 00:04:30,370
+is that good or bad for shareholders
+
+124
+00:04:30,420 --> 00:04:32,660
+The good news: that person's judgment is still there
+
+125
+00:04:32,710 --> 00:04:34,290
+so the company still has its soul
+
+126
+00:04:34,770 --> 00:04:36,520
+The bad news: he'll leave eventually
+
+127
+00:04:36,980 --> 00:04:39,630
+And this time it was an investigation, a resignation, then a return
+
+128
+00:04:40,150 --> 00:04:42,430
+which shows the system can't run on its own
+
+129
+00:04:42,480 --> 00:04:44,900
+The board first said no, then asked him back
+
+130
+00:04:44,950 --> 00:04:46,650
+with only six days in between
+
+131
+00:04:47,250 --> 00:04:48,090
+But the way I see it
+
+132
+00:04:48,140 --> 00:04:50,680
+this wasn't a purely business decision
+
+133
+00:04:51,130 --> 00:04:53,330
+it was governance giving way to one person
+
+134
+00:04:53,380 --> 00:04:55,140
+Earlier I mentioned what the Peking University teacher said
+
+135
+00:04:55,540 --> 00:04:58,240
+putting the wrong person in a key position is the costliest call
+
+136
+00:04:58,620 --> 00:05:00,500
+Nvidia is the reverse case
+
+137
+00:05:00,550 --> 00:05:02,120
+The right person is in the key position
+
+138
+00:05:02,540 --> 00:05:03,600
+and the company can't do without him
+
+139
+00:05:03,970 --> 00:05:05,660
+That's a potentially fatal risk too
+
+140
+00:05:06,020 --> 00:05:06,860
+For ordinary people
+
+141
+00:05:07,390 --> 00:05:08,790
+that person at your company who, once they leave
+
+142
+00:05:08,840 --> 00:05:10,720
+brings the whole company to a halt
+
+143
+00:05:11,220 --> 00:05:13,240
+is an asset, and also the biggest risk
+
+144
+00:05:13,720 --> 00:05:14,500
+And for you
+
+145
+00:05:15,030 --> 00:05:16,980
+becoming that person is your security
+
+146
+00:05:17,350 --> 00:05:18,450
+and also your ceiling
+
+147
+00:05:18,500 --> 00:05:19,550
+As for investing
+
+148
+00:05:19,600 --> 00:05:22,190
+when you buy a company, besides its financials
+
+149
+00:05:22,240 --> 00:05:22,960
+and its business
+
+150
+00:05:23,350 --> 00:05:25,690
+you also need to look at what happens
+
+151
+00:05:25,740 --> 00:05:26,880
+when its decision-maker leaves
+
+152
+00:05:27,520 --> 00:05:29,020
+Succession plans, governance structure
+
+153
+00:05:29,490 --> 00:05:30,700
+how much it depends on key people
+
+154
+00:05:31,090 --> 00:05:32,260
+are all things to weigh in the decision
+
+155
+00:05:32,660 --> 00:05:35,640
+Nvidia proved this time that it can't do without its founder
+
+156
+00:05:36,080 --> 00:05:37,910
+and also that it still hasn't found
+
+157
+00:05:37,960 --> 00:05:39,320
+a better successor
+
+158
+00:05:39,370 --> 00:05:40,450
+A real moat is
+
+159
+00:05:40,500 --> 00:05:42,760
+when the project, the company, keeps running no matter who leaves
+
+160
+00:05:43,540 --> 00:05:44,460
+A real premium is
+
+161
+00:05:44,910 --> 00:05:46,700
+when losing one person turns it into something else
+
+162
+00:05:47,180 --> 00:05:48,810
+Both being true at once
+
+163
+00:05:48,860 --> 00:05:49,720
+is the hardest thing of all
+
+164
+00:05:50,240 --> 00:05:52,420
+If you are the person at your company who can't leave
+
+165
+00:05:52,920 --> 00:05:53,820
+is that a good thing
+
+166
+00:05:54,250 --> 00:05:56,300
+or something you should start planning for early
+
+167
+00:05:56,680 --> 00:05:58,340
+I'll leave that question for all of you

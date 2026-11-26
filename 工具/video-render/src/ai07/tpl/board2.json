@@ -1,0 +1,47 @@
+{
+  "durationInFrames": 175,
+  "title": [
+    {
+      "text": "先拒绝",
+      "size": 180,
+      "gap": 0,
+      "dy": 0
+    },
+    {
+      "text": "后请回",
+      "size": 200,
+      "scaleY": 1.45,
+      "gap": 50,
+      "dy": 0
+    }
+  ],
+  "titleCenter": true,
+  "subtitle": "First no, then yes",
+  "header": "英伟达董事会 · 中间只隔六天",
+  "tableAt": 76,
+  "rows": [
+    {
+      "name": "11月17日",
+      "value": "无意复职",
+      "strong": true,
+      "nameAt": 4,
+      "valueAt": 16
+    },
+    {
+      "name": "11月23日",
+      "value": "一致请回",
+      "strong": true,
+      "nameAt": 28,
+      "valueAt": 40
+    }
+  ],
+  "highlights": [
+    {
+      "at": 37,
+      "from": 2,
+      "to": 2
+    }
+  ],
+  "backgroundImage": "ai07/S04.jpg",
+  "wash": 0.7
+}

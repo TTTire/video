@@ -1,0 +1,31 @@
+{
+  "durationInFrames": 160,
+  "theme": "custom",
+  "customTheme": {
+    "bg": "#0B1424",
+    "title": "#EEF1F6",
+    "box": "#152238",
+    "boxBorder": "#25344D",
+    "text": "#E8EEF6",
+    "caret": "#D8B36A",
+    "accent": "#D8B36A",
+    "muted": "#9AA6B8",
+    "line": "#2B3A52",
+    "shadow": "rgba(0, 0, 0, 0.45)",
+    "sendIcon": "up"
+  },
+  "question": "想让 AI 帮你查什么？",
+  "showMark": true,
+  "prompt": "帮我把英伟达这两周的公告和报道捋一遍，再找一个类似的老案例",
+  "model": "",
+  "icons": [
+    "plus",
+    "globe"
+  ],
+  "thinking": true,
+  "showPointer": true,
+  "typeAt": 6,
+  "typeEnd": 116,
+  "clickAt": 126,
+  "sendAt": 132
+}

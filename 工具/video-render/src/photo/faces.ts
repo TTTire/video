@@ -2,6 +2,7 @@
 import type {FaceKey} from './aroll';
 import ai05 from '../ai05/aroll-face.json';
 import ai06 from '../ai06/aroll-face.json';
+import ai07 from '../ai07/aroll-face.json';
 import ep10 from '../ep10/aroll-face.json';
 import ep11 from '../ep11/aroll-face.json';
 import ep9 from '../ep9/aroll-face.json';
@@ -9,6 +10,7 @@ import ep9 from '../ep9/aroll-face.json';
 export const FACE_TRACKS: Record<string, FaceKey[]> = {
   Ai05: ai05.keys as FaceKey[],
   Ai06: ai06.keys as FaceKey[],
+  Ai07: ai07.keys as FaceKey[],
   Ep10: ep10.keys as FaceKey[],
   Ep11: ep11.keys as FaceKey[],
   Ep9: ep9.keys as FaceKey[],
