@@ -12,6 +12,7 @@
 | 画面与素材清单、做 B-roll 动画轨（照片铺底版） | `工具/video-broll-maker/SKILL.md` |
 | 封面 | `工具/pixel-breath-cover/SKILL.md` |
 | 背景音乐 | `工具/suno-background-music/SKILL.md` |
+| 做片头或数据对比卡（Remotion 模版）；保存新的参考动效 | `工具/remotion模版/README.md` |
 | 《100个经济学原理》系列 | `模板/选题库/100个经济学原理.md`、`模板/像素呼吸-100个经济学原理栏目开场模板.md` |
 | 检查讲稿卡和发布清单 | `ruby 工具/validate_package.rb "进行中/选题文件夹"` |
 
